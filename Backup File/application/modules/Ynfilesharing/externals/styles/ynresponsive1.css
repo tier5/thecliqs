@@ -1,0 +1,165 @@
+.ynfs_share_image
+{
+	float: left;
+	margin-top: 10px;
+}
+.ynfs_download_ctrl
+{
+	margin-left: 0px;
+	margin-right: 25px;
+	margin-top: 10px;
+}
+.ynfs_uploadItem span
+{
+	width: 85%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+body#global_page_ynfilesharing-index-move,
+body#global_page_ynfilesharing-folder-delete,
+body#global_page_ynfilesharing-link-delete
+{
+	overflow: hidden!important;
+}
+#ynfs_tree
+{
+	height: 290px;
+	width: 500px!important;
+	border: none;
+}
+.mif-tree-wrapper
+{
+	width: 95%!important;
+	border: solid 1px #b4b4b4;
+}
+#global_page_ynfilesharing-index-move > span
+{
+	margin: 5px;
+}
+.autogen_class_views_embeds_content #toolbar
+{
+	height: 50px;
+}
+#global_page_ynfilesharing-link-browse .ynfs_browse .ynfs_name_column
+{
+	width:50%;
+}
+.ynfs_browse .ynfs_owner_column
+{
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 640px)
+{
+	.ynfs_browse .ynfs_name_column > a
+	{
+		margin-left: 0px;
+		word-wrap: break-word;
+	}
+	.ynfs_owner_column > a
+	{
+		word-wrap: break-word;
+	}
+	.ynfs_folder_icon,
+	.ynfs_icon 
+	{
+		margin-right: 10px;
+	}
+	.ynfs_browse .ynfs_name_column
+	{
+		width: 25%;
+		margin-right: 3px;
+	}
+	.ynfs_browse .ynfs_type_column
+	{
+		width: 15%;
+	}
+	.ynfs_browse .ynfs_owner_column,
+	.ynfs_browse .ynfs_modifieddate_column
+	{
+		width: 17%;
+	}
+	.ynfs_view_download_column,
+	.ynfs_browse .ynfs_modifieddate_column
+	{
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.ynfs_download_ctrl,
+	.ynfs_share_image,
+	.ynfs_browse .ynfs_modifieddate_column
+	{
+		display: none!important;
+	}
+	.ynfs_browse .ynfs_owner_column
+	{
+		width:20%;
+	}
+	.ynfs_browse .ynfs_name_column
+	{
+		width:40%;
+	}
+	.ynfs_controls .buttonlink
+	{
+		display: block;
+	}
+	.ynfs_controls .buttonlink + .buttonlink
+	{
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	#ynfs_tree
+	{
+		width: 480px!important;
+	}
+}
+@media screen and (max-width: 480px)
+{
+	#ynfs_tree
+	{
+		width: 280px!important;
+	}
+	.ynfs_view_download_column,
+	.ynfs_view_download_column_share
+	{
+		display: none!important;
+	}
+	.ynfs_browse .ynfs_owner_column
+	{
+		width:25%;
+	}
+	.ynfs_browse .ynfs_name_column
+	{
+		width:44%;
+	}
+	.ynfs_folder_icon
+	{
+		background-size: 20px 20px;
+	}
+	#global_page_ynfilesharing-link-browse .ynfs_browse .ynfs_name_column
+	{
+		width:60%;
+	}
+	.ynfs_icon
+	{
+		width: 20px;
+		height: 20px;
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width: 320px)
+{
+	.ynfs_folder_icon
+	{
+		background-size: 16px 16px;
+	}
+	.ynfs_icon
+	{
+		width: 16px;
+		height: 16px;
+		margin-top: 8px;
+	}
+}
+

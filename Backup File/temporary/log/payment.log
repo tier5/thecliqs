@@ -1,0 +1,62 @@
+2016-08-04T22:28:27+00:00 DEBUG (7): Request:
+POST /nvp HTTP/1.1
+Accept: */*
+Host: api-3t.paypal.com
+Connection: close
+Accept-encoding: gzip, deflate
+User-Agent: Zend_Http_Client
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 192
+
+METHOD=BMButtonSearch&VERSION=65.0&USER=bryanjmorrissey_api1.gmail.com&PWD=7XGKCQABXXHFVHBF&SIGNATURE=AGzYgw0sk0pYcTtb7d-28mu2W6EBApo4mfv8TLRKiOBd0NFUDAKF0Qei&STARTDATE=2016-08-04+22%3A28%3A26
+Response:
+HTTP/1.1 200 OK
+Date: Thu, 04 Aug 2016 22:28:25 GMT
+Server: Apache
+X-paypal-operation-name: BMButtonSearch
+X-paypal-api-rc:  
+Connection: close
+Cache-control: max-age=0, no-cache, no-store, must-revalidate
+Cache-control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Pragma: no-cache
+Http_x_pp_az_locator: slcb.slc
+Paypal-debug-id: b1177c229f3cb
+Set-cookie: X-PP-SILOVER=name%3DLIVE6.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D2311168855%26HTTP_X_PP_AZ_LOCATOR%3Dslcb.slc; Expires=Thu, 04 Aug 2016 22:58:25 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Content-length: 106
+Content-type: text/plain; charset=utf-8
+
+TIMESTAMP=2016%2d08%2d04T22%3a28%3a25Z&CORRELATIONID=b1177c229f3cb&ACK=Success&VERSION=65%2e0&BUILD=000000
+
+2016-08-05T07:02:43+00:00 DEBUG (7): Request:
+POST /nvp HTTP/1.1
+Accept: */*
+Host: api-3t.paypal.com
+Connection: close
+Accept-encoding: gzip, deflate
+User-Agent: Zend_Http_Client
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 192
+
+METHOD=BMButtonSearch&VERSION=65.0&USER=bryanjmorrissey_api1.gmail.com&PWD=7XGKCQABXXHFVHBF&SIGNATURE=AGzYgw0sk0pYcTtb7d-28mu2W6EBApo4mfv8TLRKiOBd0NFUDAKF0Qei&STARTDATE=2016-08-05+07%3A02%3A42
+Response:
+HTTP/1.1 200 OK
+Date: Fri, 05 Aug 2016 07:02:43 GMT
+Server: Apache
+X-paypal-operation-name: BMButtonSearch
+X-paypal-api-rc:  
+Connection: close
+Cache-control: max-age=0, no-cache, no-store, must-revalidate
+Cache-control: max-age=0, no-cache, no-store, must-revalidate
+Pragma: no-cache
+Pragma: no-cache
+Http_x_pp_az_locator: dcg11.slc
+Paypal-debug-id: e6fda96745bf
+Set-cookie: X-PP-SILOVER=name%3DLIVE5.APIT.1%26silo_version%3D880%26app%3Dappdispatcher_apit%26TIME%3D322610263%26HTTP_X_PP_AZ_LOCATOR%3Ddcg11.slc; Expires=Fri, 05 Aug 2016 07:32:43 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Content-length: 105
+Content-type: text/plain; charset=utf-8
+
+TIMESTAMP=2016%2d08%2d05T07%3a02%3a43Z&CORRELATIONID=e6fda96745bf&ACK=Success&VERSION=65%2e0&BUILD=000000
+

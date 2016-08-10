@@ -1,0 +1,419 @@
+.headvmessages-loader-circle {
+  border-color: #677e87 #677e87 #677e87 rgba(103, 126, 135, 0.2);
+  border-image: none;
+  border-radius: 36px;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: relative;;
+  margin: 0 auto;
+  top: 170px;
+}
+
+.headvmessages-loader {
+  -moz-animation: spin 0.75s infinite linear;
+  -webkit-animation: spin 0.75s infinite linear;
+  animation: spin 0.75s infinite linear;
+
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+#headvmessages-wrapper {
+  width: 900px;
+  height: 400px;
+  z-index: 101;
+  background: #F5F5F5;
+  position: absolute;
+  right: 50px;
+
+  padding: 10px;
+  padding-right: 0;
+
+  margin-top: 10px;
+}
+
+#headvmessages-wrapper #headvmessages-body {
+  border: 1px solid #ccc;
+}
+
+#headvmessages-wrapper #compose-container {
+  display: none;
+}
+
+body #headvmessages-wrapper .list-group-item a,
+body #headvmessages-wrapper .list-group-item span,
+body #headvmessages-wrapper .list-group-item p,
+body #headvmessages-wrapper .list-group-item div {
+  font-size: 11px !important;
+}
+
+.headvmessages-span-wrapper {
+  display: inline;
+}
+
+#headvmessages-wrapper .conversations-list {
+  width: 270px;
+  float: left;
+}
+
+#headvmessages-wrapper .conversations-list div.panel.panel-default {
+  height: 370px;
+  overflow-y: scroll;
+}
+
+.list-group-item img {
+  border-radius: 0 !important;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  /*padding: 10px 15px;*/
+  margin-bottom: -1px;
+  background-color: #ffffff;
+  border: 1px solid #e2e9e6;
+
+  cursor: pointer;
+}
+
+.conversations-list .list-group-item a {
+  color: #212121;
+  display: block;
+  text-decoration: none;
+}
+
+.conversations-list .list-group-item .media-body {
+  padding: 5px;
+}
+
+.conversations-list .media-body {
+  height: 100%;
+}
+
+.media-object {
+  display: block;
+}
+
+img.media-object {
+  vertical-align: middle;
+}
+
+img.media-object {
+  border: 0;
+}
+
+.conversations-list .list-group-item .media-body .date {
+  float: right;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.4;
+}
+
+.conversations-list .list-group-item .media-body .user {
+  font-weight: 500;
+}
+
+.conversations-list .list-group-item .media-body .message {
+  opacity: 0.8;
+}
+
+.media-left, .media-right, .media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-body {
+  width: 10000px;
+}
+
+.media, .media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+
+.media-left, .media > .pull-left {
+  padding-right: 10px;
+}
+
+.media-left, .media-right, .media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-left, .media > .pull-left {
+  padding-right: 10px;
+}
+
+.messages-list {
+  float: left;
+  width: 620px;
+  margin-left: 10px;
+}
+
+.headvmessages-screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #fff;
+}
+
+.messages-list {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.headvmessage-item-icon {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.headvmessage-item-icon img {
+  border-radius: 0 !important;
+  width: 60px;
+  height: 60px;
+}
+
+.headvmessage-item-body-message,
+.headvmessage-item-body-title {
+  color: #333;
+  background-color: #fff;
+
+  padding: 10px 15px;
+  border: 1px solid #e2e9e6;
+}
+
+.headvmessage-item-body-message {
+  padding: 15px;
+  border-top: none;
+}
+
+.headvmessage-item-body {
+  width: 100%;
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+.headvmessage-item-body-time {
+  float: right;
+}
+
+.headvmessage-item-body-user {
+  color: #26a69a;
+}
+
+.messages-list-controls-wrapper {
+  margin-top: 10px;
+}
+
+.messages-list-controls-wrapper > div:first-child {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 510px;
+  float: left;
+  background-color: #fff;
+}
+
+.messages-list-controls-wrapper textarea {
+  width: 495px;
+  max-width: none;
+  border: none;
+}
+
+.messages-list-send {
+  float: left;
+  margin-left: 10px;
+}
+
+#messages-list-controls a {
+  color: #979393;
+  display: inline-block;
+  width: 17px;
+  text-decoration: none !important;
+  height: 17px;
+  padding: 3px 10px 3px 3px;
+  cursor: pointer;
+}
+
+#messages-list-controls-tray {
+  position: relative;
+}
+
+#messages-list-controls-tray span.swiff-uploader-box {
+  top: 30px !important;
+  left: 10px !important;
+}
+
+#messages-list-controls-tray div.compose-menu span {
+  padding-left: 20px;
+}
+
+#messages-list-controls a#compose-photo-activator:hover {
+  color: #4285F4;
+}
+
+#messages-list-controls a#compose-link-activator:hover {
+  color: #F4B400;
+}
+
+#messages-list-controls a#compose-music-activator:hover {
+  color: #03AEDA;
+}
+
+#messages-list-controls a#compose-video-activator:hover {
+  color: #D73D32;
+}
+#messages-list-controls a#compose-smile-activator:hover {
+  color: #F4B400;
+}
+
+
+.messages-list-controls a:hover {
+  text-decoration: none;
+}
+
+.headvmessages-compose-new-wrapper {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.headvmessages-compose-new-wrapper a {
+  color: #aaa;
+  cursor: pointer;
+}
+
+.headvmessages-compose-new-wrapper a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+.headvmessage-active-conversation div,
+.headvmessage-active-conversation a,
+.headvmessage-active-conversation span,
+.headvmessage-active-conversation {
+  color: #fff !important;
+  background-color: #26a69a;
+}
+
+.headvmessages-conversation-controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 2px;
+  padding-bottom: 5px;
+}
+
+.conversations-list .list-group-item .headvmessages-conversation-controls a {
+  font-size: 14px;
+  color: #979393;
+  display: inline-block;
+  width: 17px;
+  text-decoration: none;
+  height: 17px;
+  cursor: pointer;
+}
+
+.conversations-list .list-group-item .headvmessages-conversation-controls a.hei-times:hover,
+.conversations-list .list-group-item .headvmessages-conversation-controls a.hei-trash-o:hover {
+  color: #D73D32;
+}
+
+.conversations-list .list-group-item .headvmessages-conversation-controls a.hei-check-circle-o:hover {
+  color: #55BD0F;
+}
+
+.conversations-list .list-group-item .headvmessages-conversation-controls a.headvmessages-remove-confirm,
+.conversations-list .list-group-item .headvmessages-conversation-controls a.headvmessages-remove-cancel {
+  display: none;
+}
+
+.headvmessages-compose-form textarea {
+  height: 100px;;
+}
+
+.headvmessages-compose-form div.input input {
+  width: 580px;
+  max-width: none;
+}
+
+.headvmessages-compose-form div.input {
+  margin-bottom: 10px;
+}
+
+.messages-list-send #messages-list-send {
+  text-decoration: none;
+  background-color: #4193d0;
+  border-color: #4193d0;
+
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.messages-list-send #messages-list-send:hover {
+  background-color: #2c79b2;
+  border-color: #2a73aa;
+}
+
+.messages-list-send #messages-list-send i {
+  color: #fff;
+}
+
+.list-group-item .media,
+.list-group-item .media .media-left a {
+  height: 48px;
+}
+
+.headvmessages-new-conversation {
+  display: block;
+  position: absolute;
+  z-index: 999;
+  background-color: #f00;
+  color: #fff;
+  left: 0;
+  top: 0;
+
+  padding: 0 2px;
+}
+
+.headvmessages-no-active-dialogs {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: top;
+  font-size: 14pt;
+  font-weight: bold;
+  position: relative;
+  top: 45%;
+
+  cursor: pointer;
+}
+
+.headvmessages-close-popup {
+  font-size: 15px;
+  position: absolute;
+  right: 3px;
+  top: 0;
+
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.headvmessages-close-popup:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+.headvmessages_view_between {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 10px;
+}

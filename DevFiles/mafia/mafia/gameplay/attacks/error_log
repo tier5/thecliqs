@@ -1,0 +1,1 @@
+[03-Jul-2006 18:14:34] PHP Fatal error:  Call to undefined function:  fixinput() in /home/mafia/public_html/tru/attacks/driveby.php on line 22

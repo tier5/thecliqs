@@ -1,0 +1,150 @@
+.search form > div {
+	margin-bottom: 5px;
+}
+
+div.search div select {
+	min-height: 31px;
+}
+
+#global_page_ynbusinesspages-admin-settings-level {
+	#credit-wrapper,
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		padding-top: 0px;
+	}
+	#first_amount-wrapper,
+	#credit-wrapper
+	{
+		float: left;
+		min-width: 58%;
+	}
+	#first_credit-wrapper,
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		float: left;
+		clear: none;
+	}
+	#first_credit-label,
+	#max_credit-label,
+	#period-label
+	{
+		display: none;
+	}
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		width: 120px;
+	}
+	#max_credit-wrapper input,
+	#period-wrapper input
+	{
+		width: 100px;
+	}
+}
+
+body[id^=global_page_ynbusinesspages-admin]
+{
+	.tabs ul li
+	{
+		padding: 7px;
+	}
+	.settings .form-element .description, .settings .form-description
+	{
+		max-width: 100%!important;
+	}
+}
+#global_page_ynbusinesspages-admin-businesses-index{
+	#category_id{
+		width: 490px;
+	}
+}
+#demo-list tr{
+	cursor: move;
+}
+.ynbusinesspages_icon_back
+{
+	background-image: url(~/application/modules/Core/externals/images/back.png);
+}
+
+#comparison-fields {
+	width: 60%;
+	
+	li {
+		margin: 5px 0px;
+		padding: 10px;	
+	}
+	
+	li.header {
+		background-color: lightgray;
+	}
+	
+	.title {
+		font-weight: bold;
+	}
+	
+	.float-right {
+		float: right;
+		margin-left: 15px;
+	}
+}
+
+#toValues-wrapper .tag {
+	background-color: #D3E6EF;
+	border-radius: 3px 3px 3px 3px;
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin: 0 10px 5px 0;
+	padding: 0.4em 0.6em;
+	
+	& > a {
+		text-decoration: none;
+		padding-left: 6px;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+	& > a:hover {
+		color: #4e81a1;
+	}
+}
+body[id*="global_page_ynbusinesspages-admin-"]
+{
+	.add_link,
+	.admin_search,
+	.item-form-theme-choose
+	{
+		margin-bottom: 10px;
+	}
+	.result_count
+	{
+		font-size: 0.9em;
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+}
+body[id*="global_page_ynbusinesspages-admin-packages-"] div[id*="allow_"]
+{
+	padding: 0px 15px 0px 0;
+}
+
+#all_module_support-wrapper
+{
+	padding-bottom: 9px;
+	margin-bottom: -32px;
+}
+
+#all_module_support-wrapper label{
+	margin-left: -5px;
+}
+
+.add_faq {
+	background-image: url("~/application/modules/Ynbusinesspages/externals/images/add_faq.png");
+	background-repeat: no-repeat;
+}
+
+.yn_admin_form{
+	overflow: auto;
+}

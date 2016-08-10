@@ -1,0 +1,666 @@
+{
+  "type": "module",
+  "name": "mobi",
+  "version": "4.8.5",
+  "revision": "10267",
+  "path": "application\/modules\/Mobi",
+  "repository": null,
+  "date": "Tue, 10 Jun 2014 00:59:57 +0000",
+  "title": "Mobi",
+  "description": "Mobile",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.8.5": {
+      "layouts\/scripts\/default-simple.tpl": "Reduced the dependence on _ENGINE_SSL",
+      "layouts\/scripts\/default.tpl": "Reduced the dependence on _ENGINE_SSL",
+      "Plugin\/Menus.php": "Added all mobile profile options",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.8.3-4.8.4.sql": "Added all mobile profile options",
+      "settings\/my.sql": "Incremented version",
+      "settings\/changelog.php": "Incremented version"
+    },
+    "4.8.0": {
+      "externals\/styles\/mobile.css": "Added styles for link image previews",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.7.0": {
+      "Bootstrap.php": "Fixed a warning",
+      "settings\/my.sql": "Incremented version",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version"
+    },
+    "4.5.0": {
+      "layouts\/scripts\/default-simple.tpl": "Fixed incorrect stylesheet issue; added javascript property",
+      "layouts\/scripts\/default.tpl": "Added javascript property",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.2.2": {
+      "layouts\/scripts\/default-simple.tpl": "Upgrading to MooTools 1.4",
+      "layouts\/scripts\/default.tpl": "Upgrading to MooTools 1.4",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.2.0": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.8": {
+      "controllers\/IndexController.php": "Removed deprecated method calls",
+      "externals\/.htaccess": "Updated with far-future expires headers for static resources",
+      "Plugin\/Menus.php": "Removed deprecated routes",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/install.php": "Reformatted code",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "widgets\/mobi-footer\/Controller.php": "Added optional built-in affiliate banner",
+      "widgets\/mobi-footer\/index.tpl": "Added optional built-in affiliate banner"
+    },
+    "4.1.7": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "widgets\/mobi-menu-main\/index.tpl": "Fixed issue with active class"
+    },
+    "4.1.6": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.5p1": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "widgets\/mobi-profile-options\/index.tpl": "Fixed issue with profile page not rendering"
+    },
+    "4.1.5": {
+      "Api\/Core.php": "Fixed notices",
+      "controllers\/IndexController.php": "Fixed issues with member home page being accessible by the public",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/browse\/browse.tpl": "Fixed notices",
+      "widgets\/mobi-menu-main\/index.tpl": "Removed short php tags; Fixed notices being logged",
+      "widgets\/mobi-profile-options\/index.tpl": "Fixed notices being logged",
+      "widgets\/mobi-switch\/index.tpl": "Removed short php tags"
+    }
+  },
+  "meta": {
+    "date": "Tue, 10 Jun 2014 00:59:57 +0000",
+    "title": "Mobi",
+    "description": "Mobile",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Mobi\/settings\/install.php",
+    "class": "Mobi_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.2.0",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Mobi": {
+      "type": "directory",
+      "path": "application\/modules\/Mobi",
+      "structure": [
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 16103,
+          "sha1": "3497e9931618c5d431b2f7ee25e0d2922996fd9d"
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2967,
+          "sha1": "755532e5c571b133497ab2267c61c5e72a375fd5"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3383,
+          "sha1": "ced4775e63f23f63d8bf53e00cf323168c73c301"
+        },
+        {
+          "path": "controllers\/GroupController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1908,
+          "sha1": "29ece99f8485b53ba2792575f140441050bda944"
+        },
+        {
+          "path": "controllers\/EventController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2053,
+          "sha1": "11d32980c1e3b462b2da13eb0d30eebce15fcf6e"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 600,
+          "sha1": "9dd545af3afea5e791254bf7eb5904e917b8bfda"
+        },
+        {
+          "path": "controllers\/BrowseController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 716,
+          "sha1": "8dea43f9de18782c184a6c7c7ee9b16b7dc38919"
+        },
+        {
+          "path": "layouts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "layouts\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "layouts\/scripts\/default.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7482,
+          "sha1": "453b1bf81d13453eb11de92dbccffe9666a43f6e"
+        },
+        {
+          "path": "layouts\/scripts\/default-simple.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 6803,
+          "sha1": "0e264840a53e867682ebe1cc99d7ca5d682f28c1"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/mobi-switch",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/mobi-switch\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 686,
+          "sha1": "3eca2063c7c8a09a65c9c69200034f0ccbc43db0"
+        },
+        {
+          "path": "widgets\/mobi-switch\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 543,
+          "sha1": "c8a747a1578087c8d9b22c1d35851c678a2f0b74"
+        },
+        {
+          "path": "widgets\/mobi-footer",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/mobi-footer\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2272,
+          "sha1": "0792c66cfac123ce85cb92a589a5c438dd7da084"
+        },
+        {
+          "path": "widgets\/mobi-footer\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1685,
+          "sha1": "6630abb98564c3df1631fb3c1b15cd05289a80bd"
+        },
+        {
+          "path": "widgets\/mobi-profile-options",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/mobi-profile-options\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1141,
+          "sha1": "5fe286e13c69cad132f4989124489044330928c3"
+        },
+        {
+          "path": "widgets\/mobi-profile-options\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 918,
+          "sha1": "19b3a1e6be72ca1e955af1b7626fc59aba7a4bb7"
+        },
+        {
+          "path": "widgets\/mobi-menu-main",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/mobi-menu-main\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1141,
+          "sha1": "02525e9f38329c3f15acc79af71894898dbbf645"
+        },
+        {
+          "path": "widgets\/mobi-menu-main\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1406,
+          "sha1": "9c2bc3f09d28764866ebd871fa6f2a2680dda53b"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/mobile_arrow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 182,
+          "sha1": "7b0db729b57c986319238fba2ff142922b787b13"
+        },
+        {
+          "path": "externals\/images\/mobile_buttonbg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 113,
+          "sha1": "86f4d96879e62337717fc5d71acb41366f5c4f34"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1042,
+          "sha1": "6c835f103d253edf70bfd5ba2430ebe3fa8cacdd"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 951,
+          "sha1": "bfffa6a52e00356801593599939020821f366f73"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2463,
+          "sha1": "4d24d5137b203230c168f6d0a39ca1386f55465c"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1337,
+          "sha1": "896f7f93cc0ae821451ffc1b9c94c51ca6128822"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2666,
+          "sha1": "05b64fa77364ee3d7758fd42100b2ff0d96eb6b9"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1818,
+          "sha1": "7b16dac02694f5af3893ba075318f2444fd111f9"
+        },
+        {
+          "path": "settings\/my-upgrade-4.8.3-4.8.5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 688,
+          "sha1": "3e1875d8b5856b19a934b2c493159403afddef2b"
+        },
+        {
+          "path": "settings\/changelog.php~",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4060,
+          "sha1": "e0fe9672b67159f649b40403b35248361f976dcd"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 16519,
+          "sha1": "6ef19cb250610c4f5ee02e3c52c82fae8bf986a2"
+        },
+        {
+          "path": "settings\/manifest.php~",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1819,
+          "sha1": "be4987ad7494e2b1e28a491cec51220097d05b61"
+        },
+        {
+          "path": "settings\/changelog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4059,
+          "sha1": "5c21b15168067863971aa1b48958ea9c7cef1347"
+        },
+        {
+          "path": "settings\/my.sql~",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2666,
+          "sha1": "a4eec993fce7502206f48415f0bd2c3eaef1b4ee"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/event",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/event\/profile.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 292,
+          "sha1": "fc0d203e71944d0cedb884710822fcc650816cbb"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 330,
+          "sha1": "2ae1422552d300631f7f91251b775ef217337445"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/profile.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 292,
+          "sha1": "fc0d203e71944d0cedb884710822fcc650816cbb"
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 290,
+          "sha1": "85461702a54ec6d0fc76da2940306183fddc4d2f"
+        },
+        {
+          "path": "views\/scripts\/index\/userhome.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 293,
+          "sha1": "457d064fcc8e64da46331d74623f30fb645c4c74"
+        },
+        {
+          "path": "views\/scripts\/browse",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/browse\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 968,
+          "sha1": "a7d50115b06246049449e08f9b2851a92b6a91b1"
+        },
+        {
+          "path": "views\/scripts\/group",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/group\/profile.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 292,
+          "sha1": "fc0d203e71944d0cedb884710822fcc650816cbb"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 696,
+          "sha1": "5b2de64103765ef0486ae2bf692f48c3bc87c822"
+        }
+      ]
+    },
+    "application\/languages\/en\/mobi.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/mobi.csv",
+      "structure": {
+        "path": "mobi.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 52,
+        "sha1": "651c126612f03850397c71285cbe1ca06b336f4e"
+      }
+    }
+  }
+}

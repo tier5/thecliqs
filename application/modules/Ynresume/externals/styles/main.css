@@ -1,0 +1,4978 @@
+/*** ynresume mixin ***/
+*[class^=ynresume],
+*[class^=ynresume] li {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+
+#experience-description, 
+#education-description,
+#publication-description,
+#project-description
+{	
+	min-height: 125px;
+}
+
+.ynresume-clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.ynresume-clearfix {
+	display: inline-block;
+}
+
+.ynresume-container {
+	+foreground();
+}
+
+html[xmlns] .ynresume-clearfix {
+	display: block;
+}
+
+* html .ynresume-clearfix {
+	height: 1%;
+}
+
+=ynresume-box-sizing  
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+=ynresume-text-overflow 
+{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+=ynresume-border-radius($radius = 3px) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+=ynresume-text-clamp($line) {
+	word-break: break-word;
+	word-wrap: break-word; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	line-height: normal;        
+	-webkit-line-clamp: $line; 
+
+	line-height: 18px;
+	height: calc(18*$line)px;
+}
+
+=ynresume-clearfix-inline {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+/*** end mixin ***/
+.ynresume-description {
+	line-height: 1.2em;
+	word-break: break-word;
+	word-wrap: break-word;
+
+	img, video, iframe, object, embed {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/*FIX THEME DEFAULT*/
+body.default #ynresume-features-list .ynresume-features-item .ynresume-features-item-footer>div+div{
+	right: 5px;
+	left: inherit;
+}
+body.default #ynresume-features-list .ynresume-features-item .ynresume-features-item-footer>div{
+	left: 5px;
+}	
+body.default .ynresume-layout-list-modeview .ynresume-layout-content-grid-view .ynresume-layout-list-item:hover .ynresume-layout-list-item-description>div.ynresume-layout-list-item-description-action{
+	bottom: 5px;
+}
+/*END FIX THEME DEFAULT*/
+
+
+.ynresume-photo-span {
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+div[class*=layout_ynresume_]
+{
+	margin-bottom: 15px;
+}
+
+.button
+{
+	display: inline-block;
+	+rounded;
+	padding: 5px;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	text-align: center;
+	border: none;
+	background-color: $theme_button_background_color;
+	border: 1px solid $theme_button_border_color;
+	color: $theme_button_font_color !important;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+	background-image: url(~/application/themes/clean/images/buttonbg.png);
+	background-repeat: repeat-x;
+
+	&.bold {
+		font-weight: bold;
+	}
+
+	&.fullwidth {
+		display: block;
+	}
+}
+
+.button:hover
+{
+	text-decoration: none;
+	background-color: $theme_button_background_color_hover;
+	cursor: pointer;
+}
+
+body[id^=global_page_ynresume] {
+	.layout_main .layout_middle {
+		padding-bottom: 160px;
+	}
+
+	label {
+		font-weight: normal;
+	}
+}
+
+/*** resume style ***/
+.layout_ynresume_resume_search {
+	.form-description {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+	}
+
+	#location-element #location {
+		width: 80% !important;
+	}
+}
+
+.ynresume_location_icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.layout_page_ynresume_index_manage {
+	#theme-list {
+		margin: 10px 0px;
+
+		li {
+			display: inline-block;
+			margin-right: 10px;
+
+			img {
+				max-width: 120px;
+			}
+		}
+	}
+}
+
+#global_page_ynresume-resume-select-theme {
+	
+	h3{
+		margin: 10px;
+	}
+
+	#theme-list {
+		margin: 10px;
+
+		li {
+			display: inline-block;
+			margin-right: 10px;
+			
+			img {
+				max-width: 90px;
+				max-height: 90px;
+			}
+		}
+	}
+	
+	button {
+		margin-left: 10px;
+	}
+}
+
+.recomendation-wrapper .tag_user {
+	background-color: transparent !important;
+	position: relative;
+	padding: 0 !important;
+	width: 100px;
+	margin: 10px 10px 10px 0;
+
+	* {
+		display: block;
+	}
+
+	img {
+		border: 0;
+		width: 100px;
+		height: 100px;
+		margin-bottom: 5px;
+	}
+
+	& > a {
+		+ynresume-text-overflow();
+		padding: 0;
+	}
+
+	a + a {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 28px;
+		height: 28px;
+		line-height: 24px;
+		text-align: center;
+		border-left: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		background-color: #e93945;
+		font-size: 12px;
+		color: #fff;
+		+ynresume-border-radius(6px);
+
+		i.fa{
+			display: inline-block;
+		}
+	}
+}
+
+.recomendation-wrapper {
+
+	.relationship-item {
+		padding-bottom: 10px;
+	}
+
+	#toValues-wrapper {
+		display: none;
+	}
+}
+
+.ynresume-layout-list-modeview {
+	.ynresume-layout-header {
+		.ynresume_result_count {
+			float: left;
+			margin-right: 5px;	
+
+			&:first-child {
+				font-size: 1.1em;
+				color: $theme_link_color;
+			}
+		}
+		
+		text-align: right;
+
+		.ynresume-modeview-button {
+			display: inline-block;
+
+			span {
+				cursor: pointer;
+				display: inline-block;
+				width: 26px;
+				height: 26px;				
+				font-size: 15px;
+				line-height: 26px;
+				text-align: center;
+				background-color: $theme_list_background_color_alt;
+				color: $theme_font_color_light;
+
+				&:hover,
+				&.active {
+					background-color: $theme_button_background_color;
+					color: $theme_button_font_color;
+				}
+			}
+		}
+	}
+
+	.ynresume-layout-content-grid-view {
+		margin-left: -5px;
+		margin-right: -5px;
+
+		.ynresume-layout-maps {
+			display: none;
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+
+		& > ul > li {
+			float: left;
+			width: 25%;
+			padding: 10px;
+			+ynresume-box-sizing();
+		}
+
+		.ynresume-layout-list-item {
+			padding: 5px;
+			+ynresume-border-radius();
+			border: 1px solid $theme_border_color;
+
+			&:hover {
+				border: 1px solid $theme_border_medium_color;
+
+				-webkit-box-shadow: 0 0 3px $theme_border_dark_color;
+				-moz-box-shadow: 0 0 3px $theme_border_dark_color;
+				box-shadow: 0 0 3px $theme_border_dark_color;
+
+				.ynresume-layout-list-item-subline span.ynresume-layout-list-item-position {
+					background-color: $theme_link_color;
+					color: $theme_body_background_color;
+				}
+
+				.ynresume-layout-list-item-main {
+					position: relative;
+				}
+
+				.ynresume-layout-list-item-description {
+					background-color: rgba(0, 0, 0, 0.5);					
+					position: absolute;
+					width: 100%;		
+					padding-top: 100%;
+					left: 0;
+					bottom: 100%;			
+					display: block;
+
+					& > div {
+						position: absolute;
+						width: 100%;
+						text-align: center;
+						color: #fff;
+						padding: 0 5px;
+
+						&.ynresume-layout-list-item-description-title {
+							top: 20px;
+							font-weight: bold;
+						}
+
+						&.ynresume-description {
+							top: 50px;
+							+ynresume-text-clamp(3);
+						}
+
+						&.ynresume-layout-list-item-description-action {
+							bottom: 20px;
+
+							a {
+								display: block;
+								color: #fff;
+
+								& + a:before {
+									content: "";
+									display: block;
+									background-color: #fff;
+									height: 1px;
+									width: 50%;
+									margin: 5px auto 3px auto;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.ynresume-layout-list-item-thumb {
+				width: 100%;
+				padding-bottom: 100%;
+				position: relative;
+
+				.ynresume-photo-span {
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+
+			.ynresume-layout-list-item-title {
+				text-align: center;
+				padding: 10px 0;
+
+				a {
+					text-align: center;
+					display: inline-block;
+					vertical-align: middle;					
+					font-weight: bold;
+					font-size: 1.1em;
+					+ynresume-text-overflow();
+					max-width: 60%;
+				}
+
+				a + div {
+					display: inline-block;
+					vertical-align: middle;
+					color: #f67223;
+					font-size: 0.8em;
+					+ynresume-text-overflow();
+				}
+			}
+
+			.ynresume-layout-list-item-subline {
+				text-align: center;
+				font-size: 0.9em;
+				
+				span {
+					margin-bottom: 4px;
+					display: block;
+					height: 17px;
+					line-height: 1.5em;
+					+ynresume-text-overflow();
+
+					i.fa {
+						margin-right: 5px;
+					}
+
+					&.ynresume-layout-list-item-location {
+						color: $theme_font_color_light;
+					}
+
+					&.ynresume-layout-list-item-position {
+						font-size: 0.9em;
+						text-transform: uppercase;
+						+ynresume-border-radius();
+						display: inline-block;
+						padding: 1px 5px;
+						background-color: $theme_font_color_light;
+						color: $theme_body_background_color;
+					}
+				}
+			}
+
+			.ynresume-layout-list-item-description {
+				display: none;
+			}
+
+			.ynresume-layout-list-item-footer {
+				margin-top: 5px;
+				background-color: $theme_list_background_color_alt;
+				color: $theme_font_color_light;
+				height: 36px;
+
+				& > div {
+					line-height: 36px;
+					height: 36px;
+					width: 50%;
+					float: left;
+					text-align: center;
+					+ynresume-border-radius();
+					cursor: pointer;
+
+					& > a {
+						color: $theme_font_color_light;
+						white-space: nowrap;
+						padding: 0 5px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: block;
+					}
+
+					&.open-submenu,
+					&:hover {
+						background-color: $theme_link_color;
+						color: $theme_body_background_color;
+
+						& > a {
+							color: $theme_body_background_color;
+						} 
+					}
+				}
+			}
+		}
+	}
+
+	.ynresume-layout-content-list-view {
+
+		.ynresume-layout-maps {
+			display: none;
+		}
+
+		.ynresume-layout-list-item {
+			position: relative;
+			padding: 10px 0;
+
+			&:after {
+				+ynresume-clearfix-inline();				
+			}
+
+			&:hover {
+				.ynresume-layout-list-item-main {
+					border-bottom: 1px solid $theme_link_color;
+				}
+			}
+
+			.ynresume-layout-list-item-thumb {
+				width: 140px;
+				padding-bottom: 140px;
+				float: left;
+				margin-right: 15px;
+				margin-left: 5px;
+				position: relative;
+
+				.ynresume-layout-list-item-thumb-border {
+					position: absolute;
+					width: 130px;
+					height: 130px;
+					background-color: $theme_list_background_color_alt;
+
+					-webkit-box-shadow: 0 0 2px $theme_link_color;
+					-moz-box-shadow: 0 0 2px $theme_link_color;
+					box-shadow: 0 0 2px $theme_link_color;
+					
+					z-index: 1;
+					top: 5px;
+					left: 5px;
+
+					-ms-transform: rotate(-3deg);
+					-webkit-transform: rotate(-3deg);
+					-moz-transform: rotate(-3deg);
+					transform: rotate(-3deg);
+					+ynresume-box-sizing();
+
+					&:after {
+						content: "";
+						position: absolute;
+						width: 130px;
+						height: 130px;
+						border: 1px solid $theme_border_color;
+						background-color: $theme_body_background_color;						
+						
+						z-index: 0;
+						top: 0px;
+						left: 0px;						
+
+						-ms-transform: rotate(3deg);
+    					-webkit-transform: rotate(3deg);
+    					-moz-transform: rotate(3deg);
+    					transform: rotate(3deg);	
+    					+ynresume-box-sizing();					
+					}
+				}
+
+				.ynresume-photo-span {
+					width: 120px;
+					height: 120px;
+					position: absolute;
+					top: 10px;
+					left: 10px;
+					z-index: 2;
+				}
+			}
+
+			.ynresume-layout-list-item-main {
+				overflow: hidden;
+				padding-right: 70px;
+				min-height: 140px;
+				border-bottom: 1px solid $theme_border_color;
+			}
+
+			.ynresume-layout-list-item-title {
+				padding: 5px 0;
+
+				a {
+					display: inline-block;
+					vertical-align: middle;					
+					font-weight: bold;
+					font-size: 1.1em;
+					+ynresume-text-overflow();
+					max-width: 80%;
+				}
+
+				a + div {
+					display: inline-block;
+					vertical-align: middle;
+					color: #f67223;
+					font-size: 0.8em;
+					+ynresume-text-overflow();
+					max-width: 20%;
+				}
+			}
+
+			.ynresume-layout-list-item-subline {
+				font-size: 0.9em;
+
+				span + span {
+					margin-left: 15px;
+				}
+
+				span {
+					margin-bottom: 5px;
+					display: inline-block;					
+					max-width: 40%;
+					+ynresume-text-overflow();
+
+					i.fa {
+						margin-right: 5px;
+					}
+
+					&.ynresume-layout-list-item-location {
+						color: $theme_font_color_light;
+					}
+
+					&.ynresume-layout-list-item-position {
+						font-size: 0.9em;
+						text-transform: uppercase;
+						+ynresume-border-radius();
+						display: inline-block;
+						padding: 1px 5px;
+						background-color: $theme_font_color_light;
+						color: $theme_body_background_color;
+					}
+				}
+			}
+
+			.ynresume-layout-list-item-description {
+				.ynresume-description {
+					+ynresume-text-clamp(2);
+				}
+
+				.ynresume-layout-list-item-description-title,
+				.ynresume-layout-list-item-description-action {
+					display: none;
+				}
+			}
+
+			.ynresume-layout-list-item-footer {
+				position: absolute;
+				top: 20px;
+				right: 0;
+
+				& > div {
+					background-color: $theme_list_background_color_alt;
+					color: $theme_font_color_light;
+					display: block;
+					line-height: 50px;
+					height: 50px;
+					width: 50px;					
+					margin-bottom: 5px;
+					text-align: center;					
+					cursor: pointer;
+					+ynresume-border-radius();
+
+					& > a {
+						color: $theme_font_color_light;
+						text-decoration: none;
+					}
+
+					span > span {
+						display: none;
+					}
+
+					span > i.fa {
+						font-size: 20px;
+						display: block;
+						line-height: 50px;
+						height: 50px;
+						width: 50px;
+					}
+
+					&.open-submenu,
+					&:hover {
+						background-color: $theme_link_color;
+						color: $theme_body_background_color;
+
+						& > a {
+							color: $theme_body_background_color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.ynresume-layout-content-map-view {
+		ul { display: none; }
+	}
+}
+
+.ynresume-user-item-list {
+	margin-left: -10px;
+	margin-right: -10px;
+	list-style: none;
+
+	& > li {
+		padding: 10px;
+		width: 25%;
+		min-width: 200px;
+		float: left;
+		+ynresume-box-sizing();
+	}
+
+	.ynresume-user-item-more {
+		display: block;
+		padding: 50px 5px;
+		+ynresume-border-radius();
+		+ynresume-box-sizing();
+		border: 1px solid $theme_border_color;
+		text-align: center;
+
+		& > span {
+			font-weight: bold;
+			color: $theme_link_color;
+			display: block;
+
+			&:first-child {
+				font-size: 1.2em;
+			}
+		}
+
+		* {
+			text-align: center;
+		}
+
+		.register-who-viewed-me {
+			background-image: url(~/application/modules/Ynresume/externals/images/register-who-viewed-me.png);
+			background-position: center;
+			width: 70px;
+			height: 70px;
+			display: block;
+			margin: 10px auto;
+		}
+	}
+
+	&:after {
+		+ynresume-clearfix-inline()
+	}
+}
+
+.ynresume-user-item {
+	display: block;
+	padding: 5px;
+	+ynresume-border-radius();
+	border: 1px solid $theme_border_color;
+
+	&:hover {
+		border: 1px solid $theme_border_medium_color;
+
+		-webkit-box-shadow: 0 0 3px $theme_border_dark_color;
+		-moz-box-shadow: 0 0 3px $theme_border_dark_color;
+		box-shadow: 0 0 3px $theme_border_dark_color;
+	}
+
+	.ynresume-user-item-thumb {
+		width: 100%;
+		padding-bottom: 100%;
+		position: relative;
+
+		.ynresume-photo-span {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.ynresume-user-item-title {
+		text-align: center;
+		padding: 5px 0;
+
+		a {
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;					
+			font-weight: bold;
+			font-size: 1.1em;
+			+ynresume-text-overflow();
+			max-width: 60%;
+		}
+
+		a + div {
+			display: inline-block;
+			vertical-align: middle;
+			color: #f67223;
+			font-size: 0.8em;
+			+ynresume-text-overflow();
+		}
+	}
+
+	.ynresume-user-item-subline {
+		text-align: center;
+		font-size: 0.9em;
+		
+		span {
+			margin-bottom: 3px;
+			display: block;
+			+ynresume-text-overflow();
+
+			i.fa {
+				min-width: 15px;
+				margin-right: 3px;
+			}
+
+			&.ynresume-user-item-location {
+				color: $theme_font_color_light;
+				min-height: 18px;
+			}
+
+			&.ynresume-user-item-position {
+				font-size: 0.9em;
+				text-transform: uppercase;
+				+ynresume-border-radius();
+				display: inline-block;
+				padding: 1px 5px;
+				background-color: $theme_font_color_light;
+				color: $theme_body_background_color;
+			}
+		}
+	}
+
+	.ynresume-user-item-description {
+		display: none;
+	}
+
+	.ynresume-user-item-footer {
+		margin-top: 5px;
+		background-color: $theme_list_background_color_alt;
+		color: $theme_font_color_light;
+		height: 36px;
+
+		& > div {
+			line-height: 36px;
+			height: 36px;
+			width: 50%;
+			float: left;
+			text-align: center;
+			+ynresume-border-radius();
+			cursor: pointer;
+			color: $theme_font_color_light;
+
+			& > a {
+				color: $theme_font_color_light;
+			}
+
+			&.open-submenu,
+			&:hover {
+				background-color: $theme_link_color;
+				color: $theme_body_background_color;
+
+				& > a {
+					color: $theme_body_background_color;
+				}
+			}
+		}
+	}
+}
+
+.ynresume-show-option-reverse{
+	ul.ynresume-show-options {
+		bottom: 36px;
+	}
+}
+
+.ynresume-user-item-action,
+.ynresume-features-item-action,
+.ynresume-layout-list-item-action {
+	position: relative;
+
+	& > ul {
+		display: none;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		border: 2px solid $theme_border_medium_color;
+		background-color: $theme_body_background_color;
+		width: 180px;
+		overflow: hidden;
+		+ynresume-border-radius();
+
+		li a {
+			line-height: 28px;
+			padding: 0 10px;
+			display: block;
+			text-align: left;
+			text-decoration: none;
+			color: $theme_font_color;
+
+			&:hover {
+				background-color: $theme_link_color;
+				color: $theme_body_background_color;
+
+				i.fa {
+					color: $theme_body_background_color;
+				}
+			}
+
+			i.fa {
+				color: $theme_link_color;
+				min-width: 15px;
+				width: 
+				text-align: center;
+			}
+		}
+	}
+
+	&.open-submenu > ul {
+		display: block;
+	}
+}
+
+span.ynresume-who-view-me-title{
+	color: $theme_link_color;
+	font-weight: bold;
+}
+.layout_ynresume_who_viewed_your_resume {
+	.ynresume-who-viewed-resume-description {
+		padding: 10px 0;
+
+		span {
+			font-weight: bold;
+			color: $theme_link_color;
+		}
+	}
+
+	.ynresume-who-viewed-resume-item {
+		padding: 10px 0;
+		border-bottom: 1px solid $theme_border_color;
+
+		.ynresume-who-viewed-resume-thumb {
+			float: left;
+			margin-right: 10px;
+
+			img {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		.ynresume-who-viewed-resume-main {
+			overflow: hidden;
+
+			a {
+				line-height: 50px;
+				font-weight: bold;
+				display: block;
+				+ynresume-text-overflow();	
+			}			
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+}
+
+#ynresume-features-list {
+	background-image: url(~/application/modules/Ynresume/externals/images/background-featured.jpg);
+	background-size: cover;
+	padding: 25px 30px;
+	+ynresume-border-radius();
+	position: relative;
+	z-index: 1;
+
+	.flex-direction-nav a {
+		color: $theme_font_color_light;
+
+		&:hover {
+			background-color: $theme_link_color;
+			color: $theme_body_background_color;
+		}
+	}
+
+	.slides > li + li {
+		margin-left: 20px;
+	}
+
+	.ynresume-features-item {
+		position: relative;
+		min-width: 200px;
+
+		.ynresume-features-item-thumb {
+			background-color: $theme_body_background_color;
+			width: 160px;
+			height: 160px;
+			padding: 5px;			
+			margin: 0 auto -160px auto;			
+			position: relative;
+			z-index: 1;
+			
+			-webkit-box-shadow: 0 0 3px $theme_border_medium_color;
+			-moz-box-shadow: 0 0 3px $theme_border_medium_color;
+			box-shadow: 0 0 3px $theme_border_medium_color;
+		}
+
+		.ynresume-features-item-main {			
+			background-color: $theme_body_background_color;
+			padding: 80px 15px 10px 15px;
+			margin-top: 80px;
+
+			position: relative;
+			z-index: 0;
+
+			.ynresume-features-item-title {
+				text-align: center;
+				padding: 12px 0 10px 0;
+				font-size: 16px;
+
+				a {
+					text-align: center;
+					display: inline-block;
+					vertical-align: middle;					
+					font-weight: bold;
+					font-size: 1.1em;
+					+ynresume-text-overflow();
+					max-width: 80%;
+				}
+
+				a + div {
+					display: inline-block;
+					vertical-align: middle;
+					color: #f67223;
+					font-size: 0.8em;
+					+ynresume-text-overflow();
+					max-width: 20%;
+				}
+			}
+
+			.ynresume-features-item-info span {
+				display: block;
+				margin-bottom: 5px;
+				text-align: center;
+
+				+ynresume-text-overflow();
+			}
+
+			.ynresume-features-item-subline {
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				text-align: center;
+				color: $theme_font_color_light;
+				border-bottom: 1px dashed $theme_border_color;
+				+ynresume-text-overflow();
+
+				span {
+					padding: 0 5px;
+				}
+
+				span + span {
+					border-left: 1px solid $theme_font_color_light;
+					padding-left: 10px;
+				}
+			}
+
+			.ynresume-features-item-description {				
+				+ynresume-text-clamp(2);
+				text-align: center;
+			}
+		}
+
+		.ynresume-features-item-footer > div {
+			position: absolute;
+			top: 90px;
+			left: 15px;
+
+			width: 80px;
+			height: 70px;
+			padding-top: 10px;
+			color: $theme_font_color_light;
+			text-align: center;
+			border-bottom: 2px solid $theme_border_color;
+			+ynresume-box-sizing();
+			cursor: pointer;
+
+			& > a {
+				text-decoration: none;
+				color: $theme_font_color_light;
+			}
+
+			&:hover {
+				background-color: $theme_link_color;
+				border-bottom: 2px solid $theme_link_color;
+				color: $theme_body_background_color;
+
+				& > a {
+					color: $theme_body_background_color;
+				}
+			}
+
+			span > i.fa {
+				display: block;
+				font-size: 24px;
+				margin-bottom: 5px;
+			}
+
+			& + div {
+				right: 15px;
+				left: inherit;
+			}
+		}
+	}
+}
+
+#ynresume-manage-sections-box {
+	margin-bottom: 10px;
+
+	#sections-list {
+		margin-left: -5px;
+		margin-right: -5px;
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+
+		.section-item {
+			display: block;
+			width: 33.33%;
+			padding: 5px;
+			float: left;
+			+ynresume-box-sizing();
+
+			.section-item-content {
+				background-color: #F2F2F2;
+				overflow: hidden;
+				+ynresume-border-radius(5px 5px 0 0);	
+
+				.section-item-icon {					
+					float: left;
+					width: 60px;
+					height: 60px;
+					margin: 20px 15px;
+					text-align: center;
+					background-color: $theme_border_color;
+					color: $theme_body_background_color;
+					+ynresume-border-radius(30px);
+
+					i.fa {
+						line-height: 60px;
+						font-size: 28px;
+					}
+
+					img {
+						max-width: 60px;
+						max-height: 60px;
+						padding: 15px;
+						+ynresume-box-sizing();
+					}
+				}		
+
+				.section-item-title {
+					overflow: hidden;
+					padding: 15px 15px 5px 0;
+					font-size: 1.4em;
+					color: $theme_font_color_light;
+					+ynresume-text-overflow();
+				}		
+
+				.section-item-description {
+					padding-right: 15px;
+					font-size: 0.9em;
+					color: $theme_font_color_light;
+					overflow: hidden;
+					+ynresume-text-clamp(2);
+				}
+			}	
+
+			.section-item-add_button a {
+				+ynresume-border-radius(0 0 5px 5px);	
+				display: block;
+				background-color: #D8D8D8;
+				color: #FFF;
+				height: 26px;
+				line-height: 26px;
+				font-weight: bold;
+				text-align: center;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				&:hover {
+					background-color: #777777;
+				}
+			}	
+
+			&:nth-child(12n+1) .section-item-content .section-item-icon	{ background-color: #47c4ef; }
+			&:nth-child(12n+2) .section-item-content .section-item-icon	{ background-color: #e36f69; }
+			&:nth-child(12n+3) .section-item-content .section-item-icon	{ background-color: #45b0b7; }
+			&:nth-child(12n+4) .section-item-content .section-item-icon	{ background-color: #8156b0; }
+			&:nth-child(12n+5) .section-item-content .section-item-icon	{ background-color: #80c865; }
+			&:nth-child(12n+6) .section-item-content .section-item-icon	{ background-color: #848ea1; }
+			&:nth-child(12n+7) .section-item-content .section-item-icon	{ background-color: #f28b58; }
+			&:nth-child(12n+8) .section-item-content .section-item-icon	{ background-color: #d0bc96; }
+			&:nth-child(12n+9) .section-item-content .section-item-icon	{ background-color: #e764ad; }
+			&:nth-child(12n+10) .section-item-content .section-item-icon { background-color: #f6d019; }
+			&:nth-child(12n+11) .section-item-content .section-item-icon { background-color: #62968a; }
+			&:nth-child(12n) .section-item-content .section-item-icon { background-color: #71a3c3; }
+		}
+
+		.section-item.less:nth-child(n+4) {
+			display: none;
+		}
+
+		.section-item.more:nth-child(n+4) {
+			display: block;
+		}
+	}
+
+	#show-btn a {
+		display: block;
+		text-align: center;
+		line-height: 28px;
+
+		&#show-more-btn {
+			display: none;
+		}
+	}	
+}
+
+.layout_ynresume_view_sections,
+.layout_ynresume_manage_sections {
+	#ynresume-section-list-contact {
+		.contact-content {
+			padding-left: 15px;
+			border-left: 3px solid $theme_border_color;
+			+ynresume-box-sizing();
+
+
+			& > div {
+				float: left;
+				width: 50%;				
+				padding-right: 10px;
+				margin: 3px 0;
+				+ynresume-box-sizing();
+			}
+
+			&:after {
+				+ynresume-clearfix-inline();
+			}
+		}
+	}
+
+	#language-list {
+		margin-left: -10px;
+		margin-right: -10px;
+
+		& > li {
+			float: left;
+			width: 50%;				
+			padding: 10px;
+			+ynresume-box-sizing();
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+
+	.section-members {
+		padding-top: 10px;
+
+		.member-label {
+			min-width: 120px;
+			width: 138px;
+			font-weight: bold;
+			display: inline-block;
+		}
+
+		.member-list,
+		.member-list .member-item {
+			display: inline-block;
+		}
+
+		.member-list .member-item + .member-item {
+			margin-left: 5px;
+		}
+	}
+
+	.section-photos {
+		margin-top: 5px;
+
+		.photo-label {
+			font-weight: bold;
+			display: none;
+		}
+
+		.photo-lists {
+			margin-left: -10px;
+			margin-right: -10px;
+
+			& > li {
+				float: left;
+				width: 33.33%;				
+				padding: 10px;
+				+ynresume-box-sizing();
+
+				.photo-item {
+					width: 100%;
+					height: 175px;
+					+ynresume-box-sizing();
+				}
+
+				.photoSpan {
+					background-position: center;
+					background-size: cover;
+					display: block;
+					width: 100%;
+					height: 100%;
+					margin-bottom: -30px;
+				}
+
+				.photo-title {
+					display: none;
+					height: 30px;
+					line-height: 30px;
+					background-color: rgba(0, 0, 0, 0.5);
+					color: #fff;
+					padding: 0 10px;
+					+ynresume-text-overflow();
+				}
+			}
+
+			&:after {
+				+ynresume-clearfix-inline();
+			}
+		}
+	}
+}
+
+.layout_ynresume_manage_sections .section-photos .photo-lists > li .photoSpan {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#ynresume_cover_wrapper {
+	border: 1px solid $theme_border_color;
+	+ynresume-border-radius;
+	padding: 20px;
+	position: relative;
+
+	&:after {
+		+ynresume-clearfix-inline();
+	}
+
+	.ynresume-cover-photo {
+		float: left;
+		margin-right: 15px;
+		width: 200px;
+		height: 200px;
+
+		position: relative;
+
+		.ynresume-edit-cover-photo {
+			position: absolute;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #fff;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			padding: 5px;
+			font-size: 12px;
+			text-decoration: none;
+		}
+
+		.ynresume-photo-span {
+			-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+			-moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	.ynresume-cover-content {
+		overflow: hidden;
+	}
+
+	.ynresume-form-edit-cover {
+		.form-wrapper {
+			line-height: 26px;
+			margin-bottom: 5px;
+
+			&:after {
+				+ynresume-clearfix-inline();
+			}
+		}
+
+		.form-wrapper .form-label { 
+			float: left;
+			width: 200px;
+
+			label {
+				font-weight: normal;
+			}
+		}
+
+		.form-wrapper .form-element {
+			overflow: hidden;
+			padding-bottom: 5px;
+
+			input[type=checkbox],
+			input[type=checkbox] + label {
+				display: inline-block;
+				font-weight: normal;
+				float: none;
+				line-height: 26px;
+				vertical-align: middle;
+				margin: 0;
+			}
+
+			.error_cover {
+				color: #f00;
+				font-size: 0.9em;
+				padding: 0;
+				line-height: 18px;
+				font-style: italic;
+
+				p {
+					margin: 0;
+				}				
+			}
+		}		
+		
+		input[type=text], input[type=email], input[type=password], input.text {
+			line-height: 1em;
+			padding: 0.5em;
+			width: 100%;
+			+ynresume-box-sizing();
+
+			&#cover_location {
+				max-width: 80%;
+			}
+		}
+
+		select {
+			padding: 0.4em 0.5em;
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.form-element.form-element-2item {
+			overflow: visible;
+		}
+
+		.form-element.form-element-2item > * {
+			width: 30%;
+			margin-bottom: 2px;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	.ynresume-cover-description {		
+
+		a.button.bold {
+			margin-bottom: 5px;
+			padding: 6px 8px;
+		}
+
+		.ynresume-cover-edit-button {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+
+			width: 28px;
+			height: 28px;
+			text-align: center;
+			line-height: 28px;
+			background-color: $theme_list_background_color_alt;
+			+ynresume-border-radius();
+
+			cursor: pointer;
+
+			i.fa {
+				font-size: 18px;
+				color: $theme_font_color_light;
+			}
+		}
+
+		.ynresume-cover-description-title {
+			font-size: 1.5em;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: $theme_link_color;		
+			+ynresume-text-overflow();
+		}
+
+		.ynresume-cover-description-badge {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			z-index: 1;
+
+			img {
+				max-width: 60px;
+				max-height: 60px;
+				border: 0;
+			}
+		}
+
+		.ynresume-cover-description-position {
+			font-size: 1.4em;
+			margin-bottom: 5px;
+			color: $theme_link_color;
+			+ynresume-text-overflow();
+		}
+
+		.ynresume-cover-description-subline {
+			margin-bottom: 8px;
+			color: $theme_font_color_light;
+
+			i.fa {
+				margin-right: 3px;
+			}
+
+			& > span {
+				display: inline-block;
+				max-width: 45%;
+				margin-right: 3%;
+				+ynresume-text-overflow();
+				color: $theme_font_color_light;
+
+				i.fa {
+					margin-right: 5px;
+				}
+
+				a {
+					color: $theme_font_color_light;
+				}
+			}
+
+			.ynresume-cover-description-info {
+				margin-top: 5px;
+
+				i.fa {
+					display: none;
+				}
+
+				label {
+					display: inline-block;
+					margin-bottom: 0;
+					width: 75px;
+					color: $theme_font_color_light;
+					font-weight: bold;
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}
+
+/*css for FAQs*/
+.ynresume-faq-item {
+	+foreground;
+	+rounded();
+	padding: 20px;
+	border: 1px solid $theme_border_medium_color;
+	margin-bottom: 1em;
+	
+	.ynresume-faq-icon {
+		width: 20px;
+		height: 20px;        
+		background-image: url("~/application/modules/Ynresume/externals/images/icon-arrow.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 6px;
+		display: block;
+		vertical-align: middle;   
+		
+		transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		
+		cursor: pointer;
+		
+		float: left;
+	}
+	
+	.ynresume-faq-title {
+		font-size: 15px;
+		font-weight: bold;
+		
+		.ynresume-faq-title-item {
+			overflow: hidden;
+			padding-left: 5px;
+			padding-top: 3px;
+			word-break: break-word;
+			word-wrap: break-word;
+		}
+	}
+	
+	.ynresume-faq-content {
+		margin-top: 1em; 
+
+		object,
+		iframe,
+		img {
+			max-width: 100%;	
+			height: auto;		
+		}   
+	}
+
+	.ynresume_question_preview
+	{
+		display: none;
+	}
+	
+	&.ynresume-collapse 
+	{
+		.ynresume-faq-content,
+		.ynresume_question_full
+		{
+			display: none;
+		}
+		.ynresume_question_preview
+		{
+			display: block;
+		}
+		.ynresume-faq-icon {            
+			transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+		}
+	}
+}
+
+.ynresume-endorse-skill-list {
+	padding: 10px 0 5px 0;
+
+	.skill-item	{
+		border: 1px solid $theme_border_color;
+		background-color: $theme_list_background_color_alt;
+		color: $theme_link_color;
+		padding: 1px 5px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		display: inline-block;
+		+ynresume-border-radius();
+
+		.close-btn {
+			margin-left: 5px;
+			cursor: pointer;
+		}
+	}
+}
+
+#sections-content-items {
+	.sections-content-item {
+		outline: 0;
+		border: 1px solid $theme_border_color;
+		min-height: 60px;
+		padding: 15px;
+		margin-bottom: 20px;
+		+ynresume-border-radius();
+		+ynresume-box-sizing();
+		position: relative;
+
+		label.order {
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			z-index: 1;
+
+			.ynresume-section-collapse,
+			.ynresume-section-move {
+				float: right;
+				margin-left: 6px;
+				display: block;
+				background-color: $theme_border_color;
+				color: $theme_font_color_light;
+				width: 28px;
+				text-align: center;
+				height: 28px;
+				line-height: 28px;
+				font-size: 16px;
+				cursor: pointer;
+
+				+ynresume-border-radius();
+
+				&:hover {
+					background-color: $theme_link_color;
+					color: $theme_body_background_color;
+				}
+			}
+			.ynresume-section-move {
+				cursor:move;
+			}
+
+			.ynresume-section-collapse.section-collapsed {
+			    -webkit-transform: rotate(180deg);
+			    -moz-transform: rotate(180deg);
+			    -o-transform: rotate(180deg);
+			    -ms-transform: rotate(180deg);
+			    transform: rotate(180deg);
+			}
+		}
+
+		.section-form {
+			margin-bottom: 20px;
+
+			input[type=text], input[type=email], input[type=password], input.text {
+				padding: 0.5em;
+				line-height: 1em;
+				+ynresume-box-sizing();
+			}
+		}
+
+		.section-item {
+			min-height: 30px;
+			position: relative;
+
+			.label {
+				color: $theme_font_color_light;
+				font-weight: bold;
+				text-align: left;
+				font-size: 0.85em;
+				padding: 0;
+				min-width: 120px;
+				display: inline-block;
+			}
+
+			.contact-address .label {
+				width: 120px;
+
+				i.fa {
+					width: 18px;
+				}
+			}
+
+			.edit-section-btn {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				z-index: 1;
+
+				display: block;
+				background-color: $theme_border_color;
+				color: $theme_font_color_light;
+				width: 28px;
+				text-align: center;
+				height: 28px;
+				line-height: 28px;
+				font-size: 16px;
+				cursor: pointer;
+
+				+ynresume-border-radius();
+			}
+
+			.sub-section-item {
+				border-left: 3px solid $theme_border_color;
+				padding-left: 15px;	
+				margin-left: 15px;
+				+ynresume-box-sizing();
+				position: relative;
+
+				& > div + div {
+					margin-top: 3px;
+
+					.location {
+						margin-left: 10px;
+					}
+				}	
+
+				.company-photo {
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 100%;
+					z-index: 0;
+					text-align: right;
+
+					img {
+						max-height: 100%;
+						border: 0;
+					}
+				}	
+
+				.experience-time {
+					position: relative;
+				}
+			}			
+
+			.section-title {
+				font-size: 1.3em;
+				font-weight: bold;
+				color: $theme_font_color;
+				padding-bottom: 3px;
+			}
+
+			.section-head-title {
+				font-size: 1.2em;
+				padding-bottom: 5px;
+			}
+
+			.section-subline {
+				font-size: 0.9em;
+				color: $theme_font_color_light;
+			}
+
+			.section-description {
+				white-space: pre-wrap;
+				padding-top: 10px;
+
+				&.contact-address {
+					white-space: normal;
+				}
+			}
+
+			& + .section-item {
+				margin-top: 30px;
+			}
+
+			.experience-location,
+			.section-item-calendar {
+				display: none;
+			}
+
+			.ynresume-section-custom-field li {
+				line-height: 20px;
+
+				& > span:first-child {
+					color: $theme_font_color_light;
+					font-weight: bold;
+					text-align: left;
+					font-size: 0.85em;
+					padding: 0;
+					margin-right: 10px;
+					width: 120px;
+					float: left;
+				}
+
+				& > span + span {
+					display: block;
+					overflow: hidden;
+				}	
+
+				&:after {
+					+ynresume-clearfix-inline();
+				}
+			}
+
+			&:hover {
+				.sub-section-item,
+				.contact-content {
+					border-color: $theme_link_color;
+				}
+
+				.edit-section-btn { 
+					color: $theme_body_background_color;
+					background-color: $theme_link_color;
+				}
+			}
+
+			.section-course-item {
+				position: relative;
+				line-height: 30px;
+				min-height: 30px;
+				margin: 0;
+
+				& > span {
+					color: $theme_font_color_light;
+					font-size: 0.9em;
+
+					&:first-child {
+						font-size: 1em;
+						color: $theme_font_color;
+					}
+				}
+
+				.edit-section-btn {
+					background-color: $theme_border_color !important;
+					color: $theme_font_color_light !important;
+				}
+
+				&:hover {
+					.edit-section-btn { 
+						color: $theme_body_background_color !important;
+						background-color: $theme_link_color !important;
+					}
+				}
+			}
+		}
+
+		&:not(#sections-content-item_recommendation) {
+			.occupation-recommendations {
+				margin-top: 10px;
+
+				.recommendation-label {
+					display: inline-block;
+					padding: 3px 5px;
+					border: 1px solid $theme_link_color;
+					color: $theme_link_color;
+					+ynresume-border-radius();
+					margin-bottom: 10px;
+
+					&:after {
+						content: "\\f0d7";
+						display: inline-block;
+						font: normal normal normal 14px/1 FontAwesome;
+						font-size: inherit;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						transform: translate(0, 0);
+
+					  	color: $theme_link_color;
+					}
+				}
+
+				.recomendation-list {										
+					.recommendation-item {
+						width: 45%;
+						margin-bottom: 5px;
+						float: left;
+
+						.giver-avatar {
+							float: left;
+							margin-right: 10px;
+
+							img {
+								width: 40px;
+								height: 40px;
+							}
+						}
+
+						.giver-title {
+							line-height: 18px;
+							font-size: 0.9em;
+							color: $theme_link_color;
+							font-weight: bold;
+							+ynresume-text-overflow();
+						}
+
+						.giver-headline {
+							line-height: 22px;
+							color: $theme_font_color;							
+
+							span {
+								max-width: 45%;
+								display: inline-block;
+								+ynresume-text-overflow();
+							}
+
+							span + span {
+								margin-left: 2%;
+								color: $theme_font_color_light;
+								font-size: 0.9em
+							}
+						}
+
+						.recommendation-content {
+							width: 100%;
+							font-size: 0.9em;
+							line-height: 1.2em;
+							margin-top: 10px;
+						}
+
+						&:nth-child(2n+1) {
+							margin-right: 10%;
+							clear: left;
+						}
+					}
+
+					&:after {
+						+ynresume-clearfix-inline();
+					}
+				}				
+			}	
+		}		
+
+		&#sections-content-item_recommendation {
+			.section-title {
+				font-size: 1.5em;
+				color: $theme_link_color;
+			}
+
+			.recomendation-list {
+				margin-top: 10px;	
+			}			
+
+			.recommendation-item {
+				& + .recommendation-item {
+					margin-top: 15px;
+				}
+
+				.recommendation-item-top {
+					.receiver-avatar, .giver-avatar {
+						float: left;
+						margin-right: 10px;
+
+						img {
+							width: 40px;
+							height: 40px;
+						}
+					}
+
+					.receiver-title, .giver-title {
+						+ynresume-text-overflow();
+						color: $theme_link_color;
+						font-weight: bold;
+					}
+
+					.receiver-headline, .giver-headline {
+						+ynresume-text-overflow();
+						font-size: 1.2em;
+						color: $theme_font_color;
+						font-weight: bold;
+						margin-top: 3px;
+					}
+
+					&:after {
+						+ynresume-clearfix-inline();
+					}
+				}
+
+				.recommendation-item-content {
+					margin: 10px 0 10px 50px;
+					border-left: 3px solid $theme_border_color;
+					padding-left: 10px;
+
+					.recommendation-content:before {
+						content: "\\f10d";
+						display: inline-block;
+						font: normal normal normal 14px/1 FontAwesome;
+						font-size: inherit;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						transform: translate(0, 0);
+
+					  	color: $theme_font_color_light;
+					}
+
+					.recommendation-time-relationship {
+						color: $theme_font_color_light;
+						font-size: 0.9em;
+						margin-top: 3px;
+					}
+				}
+			}
+
+			.recommendation-btn {
+				margin-top: 10px;
+			}
+		}
+
+		.ynresume-section {
+			position: relative;
+
+			.ynresume-profile-fields {
+				min-height: 30px;
+
+				& + .edit-section-btn {
+					position: absolute;
+					right: 0px;
+					top: 32px;
+
+					display: block;
+					background-color: $theme_border_color;
+					color: $theme_font_color_light;
+					width: 28px;
+					text-align: center;
+					height: 28px;
+					line-height: 28px;
+					font-size: 16px;
+					cursor: pointer;
+
+					+ynresume-border-radius();
+				}
+			}
+		}		
+
+		.ynresume-section .ynresume-add-btn {
+			float: right;
+			margin-right: 68px;
+
+			display: block;
+			background-color: $theme_border_color;
+			color: $theme_link_color;
+			font-weight: bold;
+			text-align: center;
+			padding: 0 10px;
+			margin-left: 10px;
+			height: 28px;
+			line-height: 28px;
+			cursor: pointer;
+			text-decoration: none;
+
+			+ynresume-border-radius();
+
+			&:hover {
+				background-color: $theme_link_color;
+				color: $theme_body_background_color;
+			}
+
+			&.disable { 
+				background-color: $theme_border_color;
+				color: $theme_body_background_color;
+			}
+		}
+
+		.ynresume-section h3.section-label {
+			font-size: 1.5em;
+			background-color: transparent;
+			color: $theme_link_color;
+			padding: 0;
+			margin-top: 0;
+			margin-bottom: 15px;
+			overflow: hidden;
+			+ynresume-text-overflow();
+			+ynresume-border-radius(0);
+
+			img {
+				display: inline-block;
+				vertical-align: middle;
+				width: 24px;
+				height: 24px;
+			}
+
+			i.fa {
+				font-size: 1.4em;
+				vertical-align: middle;
+			}
+		}
+
+		label.order {
+			display: block;
+			background-color: #fff;
+		}		
+	}
+
+	.ynresume-form-wrapper {
+		& > label {
+			width: 200px;
+			float: left;
+		}
+
+		.ynresume-form-input {
+			overflow: hidden;			
+
+			li:after {
+				+ynresume-clearfix-inline();
+			}
+
+			.ynresume-form-input-checkbox {
+				margin-top: 5px;
+			}
+
+			&.ynresume-form-input-4item {
+				input[type=text], input[type=email], input[type=password], input.text {
+					width: 23%;
+				}				
+
+				textarea,
+				select {
+					width: 23%;
+				}
+			}
+
+			&.ynresume-form-input-3item {
+				input[type=text], input[type=email], input[type=password], input.text {
+					width: 30%;
+				}				
+
+				textarea,
+				select {
+					width: 30%;
+				}
+			}
+
+			&.ynresume-form-input-2item {
+				input[type=text], input[type=email], input[type=password], input.text {
+					width: 45%;
+				}				
+
+				textarea,
+				select {
+					width: 45%;
+				}
+			}
+
+			&.ynresume-form-input-map {
+				input[type=text], input[type=email], input[type=password], input.text {
+					width: 85%;
+				}			
+			}
+
+			&.ynresume-form-input-awesomplete {
+				overflow: visible;
+				display: inline-block;
+				min-width: 50%;
+
+				.awesomplete {
+					width: 50%;
+				}
+			}
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+
+		label {
+			font-weight: normal;
+		}
+
+		input[type=text], input[type=email], input[type=password], input.text {
+			line-height: 1em;
+			padding: 0.5em;
+			width: 100%;
+			+ynresume-box-sizing();
+		}
+
+		textarea,
+		select {
+			padding: 0.4em 0.5em;
+			width: 100%;
+			max-width: 100%;
+			+ynresume-box-sizing();
+		}
+	}
+
+	.ynresume-section-skill-form {
+		.ynresume-section-skill-form-header {
+			background-color: #eaf7ff;
+			padding: 10px 10px 0 10px;
+			margin-bottom: 10px;
+			+ynresume-border-radius();
+
+			.ynresume-skill-tab {
+				margin-top: 5px;
+				padding: 5px 10px;
+				color: $theme_link_color;
+				display: inline-block;
+				text-decoration: none;
+				font-weight: bold;
+
+				&.tab-active {
+					background-color: #fff;
+					+ynresume-border-radius(5px 5px 0 0);
+				}
+			}
+		}
+
+		.ynresume-section-skill-form-add {
+			position: relative;
+			margin-bottom: 5px;
+
+			.awesomplete {
+				width: 100%;
+				padding-right: 100px;
+
+				& > input {
+					width: 100%;
+				}
+			}
+
+			#ynresume-add-skill-btn {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 90px;
+			}
+		}
+
+		#ynresume-tab-content-manage-endorsements {
+			
+			.ynresume-section-skill-endorses-lists {
+				position: relative;
+				min-height: 150px;
+				margin-bottom: 10px;
+
+				.ynresume-section-skill-endorses-item {
+					margin-bottom: 5px ;
+
+					&.skill-active {
+						background-color: $theme_list_background_color_alt;
+
+						.ynresume-section-skill-endorses-content {
+							position: absolute;
+							top: 0;
+							right: 0;
+							height: 100%;
+							width: 50%;
+							padding: 10px;
+							overflow-y: auto;
+							display: block;
+
+							background-color: #fff;
+							border: 2px solid $theme_border_color;
+							+ynresume-border-radius(5px);
+							+ynresume-box-sizing();
+						}
+
+						.ynresume-section-skill-endorses-count {
+							background-color: #e93945;
+						}
+
+						.ynresume-section-skill-endorses-text {
+							border: 2px solid #e93945;
+						}
+					}
+
+					&:after {
+						+ynresume-clearfix-inline();	
+					}				
+				}	
+			}
+			
+			
+			.ynresume-section-skill-endorses {
+				display: inline-block;
+				cursor: pointer;
+
+				.ynresume-section-skill-endorses-count {
+					float: left;
+					display: inline-block;
+					background-color: $theme_link_color;
+					color: $theme_body_background_color;
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					text-align: center;
+					+ynresume-box-sizing();
+					font-weight: bold;
+				}
+
+				.ynresume-section-skill-endorses-text {
+					padding: 0 8px;
+					display: inline-block;
+					line-height: 26px;
+					height: 30px;
+					background-color: #f0f9ff;
+					border: 2px solid $theme_link_color;
+					
+					+ynresume-text-overflow();
+					+ynresume-box-sizing();
+				}
+
+				span:first-child {
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+					-webkit-border-top-left-radius: 5px;
+					-webkit-border-bottom-left-radius: 5px;
+					-moz-border-top-left-radius: 5px;
+					-moz-border-bottom-left-radius: 5px;
+				}
+
+				span:last-child {
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+					-webkit-border-top-right-radius: 5px;
+					-webkit-border-bottom-right-radius: 5px;
+					-moz-border-top-right-radius: 5px;
+					-moz-border-bottom-right-radius: 5px;
+				}
+			}
+
+			.ynresume-section-skill-endorses-content {
+				display: none;
+
+				.ynresume-section-skill-endorses-user {
+					margin-bottom: 5px;
+
+					& > * {
+						display: inline-block;
+						vertical-align: middle;
+						margin: 0;
+  						float: none;
+
+						& + * {
+							margin-left: 5px;
+						}
+					}
+
+					.ynresume-section-skill-endorses-username {
+						max-width: 60%;
+						+ynresume-text-overflow();
+					}
+
+					img {
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.ynresume-section-skill-item {
+		position: relative;
+		background-color: $theme_list_background_color_alt;
+		height: 30px;
+		margin-right: 20px;
+		margin-bottom: 5px;
+
+		.ynresume-section-skill-endorses {
+			float: left;
+
+			.ynresume-section-skill-endorses-count {
+				float: left;
+				display: inline-block;
+				background-color: $theme_link_color;
+				color: $theme_body_background_color;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				+ynresume-box-sizing();
+				font-weight: bold;
+			}
+
+			.ynresume-section-skill-endorses-text {
+				padding: 0 8px;
+				display: inline-block;
+				line-height: 26px;
+				height: 30px;
+				background-color: #f0f9ff;
+				border: 2px solid $theme_link_color;
+				
+				+ynresume-box-sizing();
+			}
+
+			span:first-child {
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+				-webkit-border-top-left-radius: 5px;
+				-webkit-border-bottom-left-radius: 5px;
+				-moz-border-top-left-radius: 5px;
+				-moz-border-bottom-left-radius: 5px;
+			}
+
+			span:last-child {
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				-webkit-border-top-right-radius: 5px;
+				-webkit-border-bottom-right-radius: 5px;
+				-moz-border-top-right-radius: 5px;
+				-moz-border-bottom-right-radius: 5px;
+			}
+		}
+
+		.add-endorse-btn {
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			color: $theme_link_color;
+			display: inline-block;
+			font-size: 20px;
+		}
+
+		.disable-endorse-btn {
+			line-height: 30px;
+			padding: 0 5px;	
+		}
+
+		.ynresume-section-skill-arrow {
+			position: absolute;
+			right: -20px;
+			top: 0;
+			line-height: 30px;
+			color: $theme_font_color_light;
+			font-size: 15px;
+		}
+
+		.ynresume-section-skill-user {
+			float: right;
+			height: 30px;
+			max-width: 50%;
+			overflow: hidden;
+
+			.add-endorse-btn {
+				display: none;
+			}
+
+			& > a {
+				border-left: 1px solid $theme_body_background_color;
+				float: left;
+				position: relative;
+
+				&:hover:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					background-color: transparent;
+					width: 30px;
+					height: 30px;
+					border: 3px solid $theme_link_color;
+					+ynresume-box-sizing();
+				}
+			}
+
+			.thumb_icon.item_photo_user {
+				width: 30px;
+				height: 30px;
+				border: 0;
+				+ynresume-box-sizing();
+			}
+		}		
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+
+	.ynresume-section-skill-title {
+		padding-bottom: 10px;
+		font-size: 1.1em;
+	}
+
+	.ynresume-section-skill-mini-item {
+		display: inline-block;
+		height: 30px;
+		margin-right: 10px;
+
+		.ynresume-section-skill-endorses {
+			float: left;
+
+			.ynresume-section-skill-endorses-count {
+				float: left;
+				display: inline-block;
+				background-color: $theme_link_color;
+				color: $theme_body_background_color;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				+ynresume-box-sizing();
+				font-weight: bold;
+			}
+
+			.ynresume-section-skill-endorses-text {
+				padding: 0 8px;
+				display: inline-block;
+				line-height: 26px;
+				height: 30px;
+				background-color: #f0f9ff;
+				border: 2px solid $theme_link_color;
+				
+				+ynresume-box-sizing();
+			}
+
+			span:first-child {
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+				-webkit-border-top-left-radius: 5px;
+				-webkit-border-bottom-left-radius: 5px;
+				-moz-border-top-left-radius: 5px;
+				-moz-border-bottom-left-radius: 5px;
+			}
+
+			span:last-child {
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				-webkit-border-top-right-radius: 5px;
+				-webkit-border-bottom-right-radius: 5px;
+				-moz-border-top-right-radius: 5px;
+				-moz-border-bottom-right-radius: 5px;
+			}
+		}
+
+		.add-endorse-btn {
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			color: $theme_link_color;
+			display: inline-block;
+			font-size: 20px;
+		}
+
+		.disable-endorse-btn {
+			line-height: 30px;
+			padding: 0 5px;	
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+}
+
+#ynresume-view-sections-content #sections-content-items .sections-content-item .section-item .section-course-item {
+	min-height: 0;
+	line-height: 1.2em;
+}
+
+.layout_ynresume_manage_sections #sections-content-items .sections-content-item .ynresume-section h3.section-label {
+	display: table;
+
+	& > span, 
+	&:after {
+    	display: table-cell;
+	}
+
+	&:after {
+	    width: 100%;
+	    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAABCAYAAAD9yd/wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVBNkNFOUFGRENEQjExRTRBOUQ2RjI1QUE0QUE1MzlDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVBNkNFOUIwRENEQjExRTRBOUQ2RjI1QUE0QUE1MzlDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUE2Q0U5QUREQ0RCMTFFNEE5RDZGMjVBQTRBQTUzOUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RUE2Q0U5QUVEQ0RCMTFFNEE5RDZGMjVBQTRBQTUzOUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4c1w67AAAAGElEQVR42mJ88ODBfwYokJeXZ4SxAQIMAFWFA/+JHTALAAAAAElFTkSuQmCC);
+		background-repeat: repeat-x;
+		background-position: left center;
+	    content: ' ';
+	}
+	
+	& > span {
+    	white-space: nowrap;
+    	padding-right: 10px;
+	}
+}
+
+/*style for section form*/
+.ynresume-section-form {
+	.error {
+		color: red;
+	}
+}
+
+
+/*FORMAT SUMMARY*/
+#ynresume-section-list-summary	{
+	.summary-summary{
+		ul{
+			list-style-type: initial;
+			padding: initial;
+			margin: initial;
+			margin-left: 40px;
+		}
+		ol{
+			list-style-type: decimal;
+			padding: initial;
+			margin: initial;
+			margin-left: 40px;
+		}
+	}
+}
+/*END FORMAT SUMMARY*/
+
+
+/*style for ask recommendation*/
+#recomendation-ask-form{
+	margin-top: 20px;
+	.recomendation-wrapper {
+		.recommendation-label{
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+		.recommendation-description{
+			font-size: 14px;
+			padding-left: 65px;
+		}
+		&>.element-wrapper{
+			padding-left: 65px;
+
+			.element-label{
+				margin-bottom: 10px;
+				font-weight: bold;
+				font-size: 14px;
+			}
+		}
+
+		.relationship-description{
+			font-size: 14px;
+		}
+		.tag_user{
+			margin-bottom: 0px;
+			margin-top: 20px;
+		}
+		.relationship-error{
+			font-size: 14px;
+			font-weight: bold;
+			padding-bottom: 20px;
+			margin-top: 15px;
+			width: 80%;
+			border-bottom: 1px solid $theme_border_color;
+		}
+	}
+	.recomendation-button{
+		padding-left: 65px;
+	}
+	
+}
+.recomendation-wrapper {
+	margin-bottom: 20px;
+	clear: both;
+
+	.recommendation-label {
+		font-weight: bold;
+		display: block;
+	}
+
+	.element-wrapper {
+		margin-top: 10px;
+
+		p.error {
+			color: #f00;
+			font-style: italic;
+			font-size: 0.9em
+
+			& + * {
+				margin-top: 5px;
+			}
+		}
+
+		textarea {
+			width: 80%;
+			height: 80px;
+		}
+		
+		input[type=text], input[type=email], input[type=password], input.text, select {
+			width: 80%;
+			max-width: 100%;
+		}
+	}
+
+	.element-description {
+		margin-bottom: 10px;
+	}
+
+	&:after {
+		+ynresume-clearfix-inline();
+	}
+}
+
+.layout_ynresume_recommendation_given {
+	.recommendation-form-wrapper {
+		display: none;
+	}
+}
+
+/* Upload photo HTML5*/
+.upload-photos-wrapper #form-upload > div
+{
+	width: 100%;
+}
+.upload-photos-wrapper #files
+{
+	clear: left;
+	display: none;	
+	list-style: none;
+	width: 450px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-height: 200px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+}
+.upload-photos-wrapper #files > li
+{
+	padding: 8px 8px 8px 28px;
+	font-size: .8em;
+	font-weight: normal;
+	background: #fff;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-position: 6px 7px;
+	background-image: url(~/externals/fancyupload/assets/waiting.png);
+	background-repeat: no-repeat;
+}
+.upload-photos-wrapper #files > li + li 
+{
+	border-top: 1px solid #ccc;
+}
+.upload-photos-wrapper #files li.file-success 
+{
+	background-image: url(~/externals/fancyupload/assets/finished.png);
+	background-repeat: no-repeat;
+}
+.upload-photos-wrapper #files li .file-remove 
+{
+	clear: right;
+	float: right;
+	font-weight: bold;
+	overflow: hidden;
+}
+.upload-photos-wrapper #files li .file-info 
+{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	font-weight: normal;
+}
+.upload-photos-wrapper .progress {
+  	margin-bottom: 10px;
+  	margin-right: 10px;
+}
+.upload-photos-wrapper .progress-bar-success 
+{
+	background-color: $theme_button_background_color!important;
+}
+.upload-photos-wrapper  button
+{
+		color: $theme_button_font_color!important;
+}
+.upload-photos-wrapper .global_form div.form-label
+{
+	padding: 0px;
+	width: 0px;
+}
+
+.upload-photos-wrapper .btn-success 
+{
+    background-color: $theme_button_background_color!important;
+    border-color: $theme_input_border_colors!important;
+    color: $theme_button_font_color!important;
+}
+.upload-photos-wrapper .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-color: $theme_button_background_color_hover!important;
+    border-color: $theme_input_border_colors!important;
+    color: $theme_button_font_color!important;
+}
+.upload-photos-wrapper .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-image: none!important;
+}
+
+.occupations-recommendation-item {
+	border-bottom: 1px solid $theme_border_color;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+
+	.occupation-title {
+		font-size: 1.1em;
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: $theme_link_color;
+	}
+
+	.recommendations-statistic {
+		padding-bottom: 10px;
+	}
+
+	.recommendation-btn {
+		margin: 5px 0 10px 0;
+	}
+
+	.recomendation-list {
+		margin-top: 10px;
+	}
+
+	.recommendation-item {
+		border-top: 1px dashed $theme_border_color;
+		padding: 20px 0 20px 20px;
+
+		.recommendation-item-top {		
+			
+			.show-hide-recommendation {
+				float: left;
+			}
+
+			.giver-avatar {
+				float: left;
+				margin-right: 10px;
+			}
+
+			.recommendation-item-author-info {
+				overflow: hidden;			
+
+				i.fa {
+					min-width: 15px;
+					text-align: center;
+				}
+
+				.giver-headline,
+				.recommendation-time-relationship {
+					font-size: 0.9em;
+					color: $theme_font_color_light;	
+					margin-top: 3px;
+				}
+
+				.giver-title {
+					font-weight: bold;
+					color: $theme_link_color;
+				}
+			}
+
+			&:after {
+				+ynresume-clearfix-inline();
+			}
+		}
+
+		.recommendation-content {
+			margin-top: 10px;
+			margin-left: 80px;
+			position: relative;
+
+			&:before {
+				content: "\\f10d";
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				transform: translate(0, 0);
+
+				position: absolute;
+				top: -3px;
+				left: -30px;
+			  	font-size: 20px;
+			  	color: $theme_font_color_light;
+			}
+		}
+	}
+}
+
+#TB_window {
+	-webkit-box-sizing: content-box;
+  	-moz-box-sizing: content-box;
+  	box-sizing: content-box;
+}
+
+form.ynresume-select-theme button {
+	padding: 3px 8px;
+}
+
+.mce-tinymce.mce-container.mce-panel {
+	padding-right: 1px; /* fix issue render of browser */
+}
+
+.ynresume-import {
+	min-height: 70px;
+	padding: 5px 0 5px 80px;
+	background-image: url("~/application/modules/Ynresume/externals/images/import-resume.png");
+	background-position: center left;
+	background-repeat: no-repeat;
+
+	margin-bottom: 20px;
+
+	button {
+		margin-top: 5px;
+	}
+}
+
+.ynresume-export {
+	min-height: 70px;
+	padding: 5px 0 5px 80px;
+	background-image: url("~/application/modules/Ynresume/externals/images/export-resume.png");
+	background-position: center left;
+	background-repeat: no-repeat;
+
+	button {
+		margin-top: 5px;
+	}
+}
+
+.ynresume-resume-count {
+	margin-bottom: 10px;	
+
+	span:first-child {
+		color: $theme_link_color;
+		font-weight: bold;
+		font-size: 1.1em;
+		margin-right: 5px;
+	}
+}
+
+/*** some function show layout ***/
+.hidden {
+	display: none;	
+}
+
+.ynresume-detail-section-theme_1 .visible_theme_1,
+.ynresume-detail-section-theme_2 .visible_theme_2,
+.ynresume-detail-section-theme_3 .visible_theme_3,
+.ynresume-detail-section-theme_4 .visible_theme_4 {
+	display: inline-block !important; 
+	visibility: visible !important;
+}
+
+.ynresume-detail-section-theme_1 .hidden_theme_1,
+.ynresume-detail-section-theme_2 .hidden_theme_2,
+.ynresume-detail-section-theme_3 .hidden_theme_3,
+.ynresume-detail-section-theme_4 .hidden_theme_4 {
+	display: none;
+}
+
+.ynresume-detail-section-theme_1 .inline_theme_1,
+.ynresume-detail-section-theme_2 .inline_theme_2,
+.ynresume-detail-section-theme_3 .inline_theme_3,
+.ynresume-detail-section-theme_4 .inline_theme_4 {
+	display: inline-block;
+	max-width: 40%;
+	margin-left: 8px;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+/********************************************************************************************************************/
+/*** style 1 ***/
+#ynresume_cover_wrapper.ynresume-detail-cover-theme_1 {
+	.ynresume-cover-location2 {
+		display: none;
+	}
+}
+
+#ynresume_cover_wrapper.ynresume-detail-cover-theme_1 .ynresume-cover-description .ynresume-cover-description-position,
+#ynresume_cover_wrapper.ynresume-detail-cover-theme_1 .ynresume-cover-description .ynresume-cover-description-title {
+	color: #619dbe;
+	margin-bottom: 12px;
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 {
+	border: 1px solid $theme_border_color;
+	padding: 20px;
+	+ynresume-border-radius(10px);
+
+	#sections-content-items .sections-content-item {
+		padding: 0;
+		border: 0;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section .ynresume-add-btn {
+		margin-right: 0;
+	}
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .sections-content-item .ynresume-section h3.section-label {
+    display: table;
+
+	& > span, 
+	&:after {
+    	display: table-cell;
+	}
+
+	&:after {
+	    width: 100%;
+	    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAABCAYAAAD9yd/wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVBNkNFOUFGRENEQjExRTRBOUQ2RjI1QUE0QUE1MzlDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVBNkNFOUIwRENEQjExRTRBOUQ2RjI1QUE0QUE1MzlDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUE2Q0U5QUREQ0RCMTFFNEE5RDZGMjVBQTRBQTUzOUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RUE2Q0U5QUVEQ0RCMTFFNEE5RDZGMjVBQTRBQTUzOUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4c1w67AAAAGElEQVR42mJ88ODBfwYokJeXZ4SxAQIMAFWFA/+JHTALAAAAAElFTkSuQmCC);
+		background-repeat: repeat-x;
+		background-position: left center;
+	    content: ' ';
+	}
+	
+	& > span {
+    	white-space: nowrap;
+    	padding-right: 10px;
+	}
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .ynresume-section-skill-mini-item .add-endorse-btn,
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .ynresume-section-skill-item .add-endorse-btn,
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .sections-content-item .ynresume-section h3.section-label {
+	color: #619dbe;
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .ynresume-section-skill-mini-item .ynresume-section-skill-endorses .ynresume-section-skill-endorses-count,
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .ynresume-section-skill-item .ynresume-section-skill-endorses .ynresume-section-skill-endorses-count {
+	background-color: #619dbe;
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .ynresume-section-skill-mini-item .ynresume-section-skill-endorses .ynresume-section-skill-endorses-text,
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .ynresume-section-skill-item .ynresume-section-skill-user > a:hover:after,
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .ynresume-section-skill-item .ynresume-section-skill-endorses .ynresume-section-skill-endorses-text {
+	border-color: #619dbe;
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 .ynresume-section-skill-mini-item .ynresume-section-skill-endorses .ynresume-section-skill-endorses-count + span {
+	border-left: 0;
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_1 #sections-content-items .sections-content-item .ynresume-section-content .section-photos .photo-lists > li .photo-item {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/********************************************************************************************************************/
+/*** style 2 ***/
+#ynresume_cover_wrapper.ynresume-detail-cover-theme_2 {
+	border: 0;
+	padding: 0;
+
+	.ynresume-cover-photo {
+		float: right;
+		width: 230px;
+		height: 230px;
+		padding: 10px;
+		margin-left: 15px;
+		margin-right: 0;
+		+ynresume-box-sizing();
+
+		&:before {
+			content: "";
+			position: absolute;
+			width: 210px;
+			height: 210px;
+			background-color: #f9f9f9;
+			-webkit-box-shadow: 0 0 2px #619dbe;
+			-moz-box-shadow: 0 0 2px #619dbe;
+			box-shadow: 0 0 2px #619dbe;
+			z-index: 1;
+			top: 10px;
+			left: 10px;
+			
+			-ms-transform: rotate(-3deg);
+			-webkit-transform: rotate(-3deg);
+			-moz-transform: rotate(-3deg);
+			transform: rotate(-3deg);
+		}
+
+		a {
+			display: block;
+			width: 210px;
+			height: 210px;
+			padding: 5px;
+			background-color: #fff;
+			-webkit-box-shadow: 0 0 3px $theme_border_dark_color;
+			-moz-box-shadow: 0 0 3px $theme_border_dark_color;
+			box-shadow: 0 0 3px $theme_border_dark_color;
+
+			+ynresume-box-sizing();
+			position: relative;
+			z-index: 1;
+		}		
+	}
+
+	.ynresume-cover-description-title {
+		background-color: #619dbe;
+		color: #fff;
+		padding: 3px 10px;
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 80%;
+	}
+
+	.ynresume-cover-description-badge {
+		position: static;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.ynresume-cover-location2 {
+		display: none;
+	}
+}
+
+#ynresume_cover_wrapper.ynresume-detail-cover-theme_2 .ynresume-cover-description .ynresume-cover-description-position {
+	color: #619dbe;
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_2 {
+
+	#sections-content-items .sections-content-item .ynresume-section .ynresume-add-btn {
+		margin-top: 15px;
+		margin-right: 0;
+	}
+
+	#ynresume-section-list-contact .contact-content, 
+	#sections-content-items .sections-content-item {
+		padding: 0;
+		border: 0;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section h3.section-label {
+		min-height: 60px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+
+		.section-label-icon {
+			display: block;
+			float: left;
+			width: 60px;
+			height: 60px;
+			line-height: 55px;
+			text-align: center;
+			background-color: #619dbe;
+			color: #fff;
+
+			i.fa {
+				font-size: 1.8em;
+			}
+
+			img {
+				height: 40px;
+				width: 40px;
+			}
+		}
+
+		.section-label-icon + span {
+			float: left;
+			background-color: #565657;
+			color: #fff;
+			height: 36px;
+			line-height: 36px;
+			padding: 0 10px;
+			margin: 12px 0;
+		}
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section-content {
+		padding-left: 70px;
+
+		.section-photos .photo-lists {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		.section-photos .photo-lists > li {
+			padding: 10px;
+		}
+
+		.section-photos .photo-lists > li .photo-item {
+			padding: 5px;
+			+ynresume-border-radius();
+			-webkit-box-shadow: 0 0 3px $theme_border_dark_color;
+			-moz-box-shadow: 0 0 3px $theme_border_dark_color;
+			box-shadow: 0 0 3px $theme_border_dark_color;
+		}
+
+		.section-item {
+			position: relative;
+		}
+
+		.section-item .sub-section-item {
+  			border-left: 0;
+  			padding-left: 0;
+  			margin-left: 0;
+		}
+
+		.section-item .contact-address .label,
+		.section-members .member-label {
+			width: auto;
+		}
+
+		.section-item-calendar {
+			display: block;
+			margin-top: 0;
+			background-color: #eeeeee;
+			padding: 5px;
+			width: 60px;
+			+ynresume-box-sizing();
+
+			position: absolute;
+			left: -70px;
+			top: 0;
+
+			& > div {			
+				padding: 2px 0;	
+				line-height: 1em;
+
+				span {
+					display: block;
+					text-align: center;
+					font-weight: bold;
+					color: #b8bec1;
+
+					&.month {
+						text-transform: uppercase;						
+						font-size: 1.3em;
+					}					
+
+					&.year {
+						font-size: 0.8em;
+					}
+				}
+			}
+
+			& > div + div {
+				border-top: 1px solid #dfe2e4;
+			}
+
+			& + .section-subline {
+				display: none;
+			}
+		}
+
+		.experience-location {
+			display: block;
+
+			span + span {
+				margin-left: 10px;
+			}
+		}
+
+		.ynresume-section-skill-item {
+			height: 60px;
+			background-color: transparent;
+			margin-right: 65px;
+
+			.add-endorse-btn {
+				display: block;
+				position: absolute;
+				right: 2px;
+				top: 29px;
+				color: #619dbe;
+			}
+
+			.ynresume-section-skill-arrow {
+				top: 30px;
+				right: -65px;
+				font-size: 15px;
+			}
+
+			.ynresume-section-skill-endorses {
+				float: none;
+
+				.ynresume-section-skill-endorses-count {
+					position: absolute;
+					border: 0px none;
+					+ynresume-border-radius(0);
+					background: #EEE;
+					color: #619dbe;
+					right: -48px;
+					width: 40px;
+					top: 31px;
+					height: 28px;
+					line-height: 28px;
+
+					&:before {
+						content: "";
+						width: 0px;
+						height: 0px;
+						position: absolute;
+						border-top: 10px solid transparent;
+						border-bottom: 10px solid transparent;
+						border-right: 10px solid #EEE;
+						left: -5px;
+						top: 4px;
+					}
+				}
+
+				.ynresume-section-skill-endorses-text {
+					border: 0px none;
+					+ynresume-border-radius(0);
+					background-color: transparent;
+					color: #619dbe;
+					line-height: 24px;
+					padding: 0px;
+					height: 24px;
+					font-weight: bold;
+					+ynresume-text-overflow();
+				}
+			}
+			
+			.ynresume-section-skill-user {
+				width: 100%;
+				max-width: 100%;
+				height: 36px;
+				padding: 1px;
+				border: 2px solid #E6E9EA;
+				+ynresume-box-sizing();
+				padding-right: 30px;
+				+ynresume-box-sizing();
+				overflow: hidden;
+
+				a {
+					border-left: 0;
+					float: left;
+					position: relative;
+
+					img {
+						border: 0;
+						width: 30px;
+						height: 30px;
+					}
+
+					&:after {
+						position: absolute;
+						top: 0;
+						left: 0;
+						content: "";
+						display: block;
+						width: 30px;
+						height: 30px;
+						background-color: #619dbe;
+						opacity: 0.5;
+					}
+
+					&:hover:after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.ynresume-section-skill-mini-item {
+			position: relative;
+			
+			.add-endorse-btn {
+				display: block;
+				position: absolute;
+				right: 50px;
+				top: 1px;
+				color: #619dbe;			
+			}
+
+			.ynresume-section-skill-endorses {
+				border: 2px solid #eeeeee;
+				height: 32px;
+				padding-right: 32px;
+				margin-right: 50px;
+				+ynresume-box-sizing();
+
+				.ynresume-section-skill-endorses-count {
+					position: absolute;
+					border: 0px none;
+					+ynresume-border-radius(0);
+					background: #EEE;
+					color: #619dbe;
+					right: 0;
+					width: 40px;
+					top: 0;
+					height: 32px;
+					line-height: 32px;
+
+					&:before {
+						content: "";
+						width: 0px;
+						height: 0px;
+						position: absolute;
+						border-top: 10px solid transparent;
+						border-bottom: 10px solid transparent;
+						border-right: 10px solid #EEE;
+						left: -5px;
+						top: 4px;
+					}
+				}
+
+				.ynresume-section-skill-endorses-text {
+					border: 0px none;
+					+ynresume-border-radius(0);
+					background-color: transparent;
+					color: #619dbe;
+					line-height: 30px;
+					padding: 0 5px;
+					height: 30px;
+					font-weight: bold;
+					+ynresume-text-overflow();
+				}
+			}
+		}
+	}
+} 
+
+/********************************************************************************************************************/
+/*** style 3 ***/
+#ynresume_cover_wrapper.ynresume-detail-cover-theme_3 {
+	border: 0;
+	padding: 0;
+
+	.ynresume-cover-description .ynresume-cover-description-badge {
+		top: 0;
+		right: 0;
+	}
+
+	.ynresume-cover-photo {
+		width: 210px;
+		height: 210px;
+
+		a {
+			display: block;
+			width: 210px;
+			height: 210px;
+			border: 5px solid #eeeeee;
+			background-color: #fff;
+			+ynresume-border-radius(110px);
+			+ynresume-box-sizing();
+
+			position: relative;
+			z-index: 1;
+
+			span {
+				+ynresume-border-radius(100px);
+			}
+		}		
+	}
+
+	.ynresume-cover-description-title {
+		color: #e95959;
+	}
+
+	.ynresume-cover-description-position {
+		display: inline-block;
+		color: #e95959;
+		max-width: 50%;
+		+ynresume-text-overflow();
+
+		float: left;
+		margin-right: 10px;
+	}
+
+	.ynresume-cover-description-position + .ynresume-cover-description-subline > span {
+		margin-top: 5px;
+	}
+
+	.ynresume-cover-description-position + .ynresume-cover-description-subline + .ynresume-cover-description-subline:after {
+		+ynresume-clearfix-inline();
+	}
+
+	.ynresume-cover-description-info {
+		position: relative;
+		display: block;
+		width: 50%;
+		min-height: 60px;
+		float: left;
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
+		margin-top: 0 !important;
+		padding: 10px 0;
+
+		label {
+			display: block !important;
+		}
+
+		span {
+			display: block;
+			+ynresume-text-overflow();
+		}
+	}	
+
+	.ynresume-cover-description-info:nth-child(odd):after {
+		content: "";
+		background-color: #e6e6e6;
+		width: 1px;
+		height: 80%;
+		position: absolute;
+		top: 10%;		
+		right: 0;
+	}
+
+	.ynresume-cover-description-info:nth-child(even) {
+		padding-left: 10px;
+	}
+
+	.ynresume-cover-description-info:nth-child(n+3) {
+		border-top: 0;
+	}
+
+	.ynresume-cover-location1 {
+		display: none !important;
+	}
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_3 {
+
+	#ynresume-section-list-contact .contact-content, 	
+	#sections-content-items .sections-content-item {
+		padding: 0;
+		border: 0;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section h3.section-label {
+		min-height: 60px;
+		margin-bottom: 10px;
+
+		.section-label-icon {
+			display: block;
+			float: left;
+			width: 70px;
+			height: 70px;			
+			line-height: 65px;
+			text-align: center;
+			margin-right: 10px;
+			background-color: #e95959;
+			color: #fff;
+			+ynresume-border-radius(35px);
+
+			i.fa {
+				font-size: 1.8em;
+			}
+
+			img {
+				height: 40px;
+				width: 40px;
+			}
+		}
+
+		.section-label-icon + span {
+			display: block;
+			overflow: hidden;
+			color: #e95959;
+			font-weight: bold;
+			border-top: 1px solid #e6e6e6;
+			border-bottom: 1px solid #e6e6e6;
+			height: 40px;
+			line-height: 40px;
+			margin: 15px 0;
+		}
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section .ynresume-add-btn {
+		margin-right: 0;
+		margin-top: 20px;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section-content {
+		margin-left: 80px;
+		padding-left: 15px;
+		border-left: 2px solid #e6e6e6;
+
+		.section-item {
+			padding-top: 10px;
+
+			& + .section-item {
+				margin-top: 20px;
+			}
+		}
+
+		.section-title:before {
+			content: "";
+			background-color: #fff;
+			border: 2px solid #e6e6e6;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 13px;
+			left: -26px;
+			display: block;
+			border-radius: 10px;
+			+ynresume-box-sizing();
+		}
+
+		.section-title:after {
+			content: "";
+			background-color: #e6e6e6;
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			top: 19px;
+  			left: -20px;
+			display: block;
+			border-radius: 4px;
+			+ynresume-box-sizing();
+		}
+
+		#ynresume-section-list-course {
+			.section-title:before {
+				top: 1px;
+			}
+
+			.section-title:after {
+				top: 7px;
+			}
+		}
+
+		.section-item .sub-section-item {
+  			border-left: 0;
+  			padding-left: 0;
+  			margin-left: 0;
+		}
+
+		.section-photos .photo-lists {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.section-photos .photo-lists > li {
+			padding: 0;
+		}
+
+		.section-photos .photo-lists > li .photo-item {
+			height: 175px;
+		}
+
+		.section-item .contact-address .label,
+		.section-members .member-label {
+			width: auto;
+		}
+
+		.section-item-calendar {
+			display: block;
+			margin-top: 0;
+			padding: 0;
+			width: 75px;
+			+ynresume-box-sizing();
+
+			position: absolute;
+			left: -100px;
+			top: -8px;
+
+			& > div {			
+				text-align: center;
+				padding: 8px 0;	
+				line-height: 1em;
+
+				span {				
+					color: $theme_font_color_light;
+
+					&.month {
+						text-transform: uppercase;						
+					}
+				}
+			}
+
+			& > div:first-child:after {
+				content: "";
+				display: block;
+				height: 2px;
+				width: 20px;
+				margin: 8px auto -8px auto;
+				background-color: #dfe2e4;
+			}
+
+			& + .section-subline {
+				display: none;
+			}
+		}
+
+		.experience-location {
+			display: block;
+
+			span + span {
+				margin-left: 10px;
+			}
+		}
+
+		.ynresume-section-skill-item {
+			height: 62px;
+			margin-left: 50px;
+			background-color: transparent;
+			margin-right: 35px;
+			margin-bottom: 15px;
+
+			.add-endorse-btn {
+				display: block;
+				position: absolute;
+				left: -50px;
+				top: 0;
+
+				width: 40px;
+				height: 62px;
+				line-height: 62px;
+				background-color: #e95959;
+				color: #fff;				
+				+ynresume-border-radius(5px 0 0 5px);
+			}
+
+			.ynresume-section-skill-arrow {
+				right: -35px;
+				line-height: 62px;
+				font-size: 20px;
+			}
+
+			.ynresume-section-skill-endorses {
+				float: none;
+
+				.ynresume-section-skill-endorses-count {
+					position: absolute;
+					border: 0;
+					color: #e95959;
+					right: 0px;
+					top: -4px;
+					height: 20px;
+					line-height: 20px;
+					background: transparent;
+					font-size: 1.3em;
+					width: auto;					
+
+					+ynresume-border-radius(0);
+				}
+
+				.ynresume-section-skill-endorses-text {
+					border: 0px none;
+					border-radius: 0px;
+					background-color: transparent;
+					color: #e95959;
+					line-height: 20px;
+					padding: 0px;
+					height: 20px;
+					font-weight: bold;
+					font-size: 1.2em;
+					margin-top: -4px;
+					+ynresume-text-overflow();
+					max-width: 80%;
+				}
+			}
+			
+			.ynresume-section-skill-user {
+				width: 100%;
+				height: 42px;
+				max-width: 100%;
+				+ynresume-box-sizing();
+				overflow: hidden;
+				position: relative;
+
+				&:before {
+					content: "";
+					background-color: #eee;
+					width: 100%;
+					height: 10px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+
+				a {
+					border-left: 0;
+					border-top: 10px solid #e95959;
+					height: 42px;
+					+ynresume-box-sizing();
+					float: left;
+					position: relative;
+
+					img {
+						border: 0;
+						width: 32px;
+						height: 32px;						
+					}
+
+					&:after {
+						position: absolute;
+						top: 0;
+						left: 0;
+						content: "";
+						display: block;
+						width: 32px;
+						height: 32px;
+						background-color: #fff;
+						opacity: 0.5;
+					}
+
+					&:hover:after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		.ynresume-section-skill-mini-item {
+			position: relative;
+			.add-endorse-btn {
+				display: block;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 32px;
+				height: 32px;
+				line-height: 32px;
+				background-color: #E95959;
+				color: #fff;
+				+ynresume-border-radius(5px 0 0 5px);			
+			}
+
+			.ynresume-section-skill-endorses {
+				border: 1px solid #e6e6e6;
+				margin-left: 32px;
+
+				.ynresume-section-skill-endorses-count {
+					float: right;
+					background-color: #eee;
+					color: #e95959;
+					+ynresume-border-radius(0);
+				}	
+
+				.ynresume-section-skill-endorses-text {
+					border: 0;
+					
+					color: #e95959;	
+					line-height: 32px;
+					background-color: transparent;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+} 
+
+/********************************************************************************************************************/
+/*** style 4 ***/
+#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 {
+	border: 0;
+	padding: 0;
+	position: relative;
+
+	.ynresume-cover-description .ynresume-cover-description-badge {
+		top: 0;
+		right: 0;
+	}
+
+	.ynresume-cover-photo {
+		width: 190px;
+		height: 190px;
+		position: absolute;
+		left: 50%;
+		margin-left: -95px;
+		top: 48%;
+		margin-top: -120px;
+
+		a {
+			display: block;
+			width: 190px;
+			height: 190px;
+			border: 5px solid #0cbba4;
+			background-color: #fff;
+			+ynresume-border-radius(95px);
+			+ynresume-box-sizing();
+
+			position: relative;
+			z-index: 1;
+
+			span {
+				+ynresume-border-radius(90px);
+			}
+		}		
+	}
+
+	.ynresume-cover-description {
+		text-align: center;
+	}
+
+	.ynresume-cover-description-title {
+		text-align: center;
+		color: #0cbba4;
+	}
+
+	.ynresume-cover-description-position {
+		text-align: center;
+		color: #0cbba4;
+		position: absolute;
+		bottom: 60px;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.ynresume-cover-description-position + .ynresume-cover-description-subline {
+		position: absolute;
+		width: 100%;
+  		text-align: center;
+  		bottom: 30px;
+  		padding: 0;
+
+  		span {
+  			width: 100%;
+  			margin: 0;
+  		}
+	}
+
+	.ynresume-cover-description-position + .ynresume-cover-description-subline + .ynresume-cover-description-subline {
+		min-height: 240px;
+		padding-bottom: 60px;
+		padding-top: 40px;
+		margin-bottom: 35px;
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+
+	.ynresume-cover-description-info {
+		position: relative;
+		display: block;
+		width: 50%;
+		min-height: 60px;
+		float: left;
+		margin-top: 0 !important;
+		padding: 10px 0;
+
+		i.fa {
+			display: block !important;
+			color: #afb6b9;
+		}
+
+		label {
+			display: block !important;
+		}
+
+		span {
+			display: block;
+			+ynresume-text-overflow();
+			font-size: 1.1em;
+			margin-top: 5px;
+		}
+	}	
+
+	.ynresume-cover-description-info:nth-child(odd) {
+		padding-right: 155px;
+		text-align: right;
+
+		* {
+			width: auto !important;
+			text-align: right;
+		}
+
+		i.fa {
+			position: absolute;
+			width: 40px !important;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 26px;
+			right: 110px;
+		}
+	}
+
+	.ynresume-cover-description-info:nth-child(even) {
+		padding-left: 155px;
+
+		i.fa {
+			position: absolute;
+			width: 40px !important;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 26px;
+			left: 110px;
+		}
+	}
+
+	.ynresume-cover-description-info:nth-child(n+3) {
+		border-top: 1px solid #e6e6e6;
+	}
+
+	.ynresume-cover-location1 {
+		display: none !important;
+	}
+}
+
+#ynresume-view-sections-content.ynresume-detail-section-theme_4 {
+	#sections-content-items .sections-content-item {
+		padding: 0;
+		border: 0;
+	}
+
+	.span-background-theme-4 {
+		background-color: #f5f8f9;
+		display: inline-block;
+		padding: 5px 10px;
+
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section h3.section-label {
+		text-align: center;
+		margin-bottom: 10px;
+		color: #0cbba4;
+		font-weight: bold;	
+		font-size: 1.5em;	
+		display: table;
+	    width: 100%;
+
+		& > span, 
+		&:before,
+		&:after {
+	    	display: table-cell;
+		}
+
+		&:before,
+		&:after {
+		    width: 50%;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjYzQzU0Q0Y4RENERDExRTRCQjJGOTVGRkU5QkFCQTVEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjYzQzU0Q0Y5RENERDExRTRCQjJGOTVGRkU5QkFCQTVEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjNDNTRDRjZEQ0REMTFFNEJCMkY5NUZGRTlCQUJBNUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjNDNTRDRjdEQ0REMTFFNEJCMkY5NUZGRTlCQUJBNUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ZnWPmAAAAD0lEQVR42mJ48OABQIABAAVEAqHduuROAAAAAElFTkSuQmCC);
+			background-repeat: repeat-x;
+			background-position: left center;
+		    content: ' ';
+		}
+		
+		& > span {
+	    	white-space: nowrap;
+	    	padding: 0 10px;
+
+	    	& + span {
+	    		padding-left: 0;
+	    	}
+		}
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section-content {
+		div {
+			text-align: center;
+
+			.experience-time .location {
+				margin-left: 10px;
+			}
+		}
+
+		.section-item .ynresume-section-custom-field li > span:first-child {
+			float: none;
+		}
+
+		.section-members .member-label,
+		.section-item .label {
+			min-width: 0;
+  			margin-right: 5px;
+		}
+
+		#ynresume-section-list-contact .contact-content,
+		.section-item .sub-section-item {
+			padding-left: 0;
+			margin-left: 0;
+			border-left: 0;
+		}
+
+		#language-list > li,
+		#ynresume-section-list-contact .contact-content > div {
+			float: none;
+			width: auto;
+		}
+
+		.section-photos .photo-lists {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		.section-photos .photo-lists > li {
+			padding: 10px;
+		}
+
+		.recommendation-item .recommendation-item-top .receiver-avatar, 
+		.recommendation-item .recommendation-item-top .giver-avatar {
+			float: none;
+			margin-right: 0;
+
+			img {
+				+ynresume-border-radius(22px);
+			}
+		}
+
+		.recommendation-item .recommendation-item-content {
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 0;
+			border-left: 0;
+		}
+
+		.section-item .contact-address .label {
+			width: auto;
+			min-width: 0;
+			margin-right: 10px;
+
+			i.fa {
+				min-width: 15px;
+			}
+		}
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section .ynresume-add-btn {
+		margin-right: 0;
+  		right: 0;
+	}
+
+	#sections-content-items .sections-content-item:not(#sections-content-item_recommendation) .occupation-recommendations .recomendation-list .recommendation-item .giver-avatar {
+		float: none;
+		margin-right: 0;
+
+		img {
+			+ynresume-border-radius(22px);
+		}
+	}
+
+	.ynresume-section-skill-item {
+		margin-bottom: 10px;
+		background-color: transparent;
+
+		.add-endorse-btn {
+			display: inline-block;
+			background-color: #f5f8f9;
+			color: #0cbba4;				
+			+ynresume-border-radius(16px);
+			display: none;
+		}
+
+		.ynresume-section-skill-endorses {
+			float: left;
+			margin-right: 10px;
+			font-size: 1.1em;
+
+			.ynresume-section-skill-endorses-count {
+				color: #0cbba4;
+				border: 1px solid #0cbba4;
+				width: 32px;
+				height: 32px;						
+				line-height: 30px;
+				margin-right: 5px;
+				background: transparent;
+
+				+ynresume-border-radius(16px);
+				+ynresume-box-sizing();
+			}
+
+			.ynresume-section-skill-endorses-text {
+				padding: 0;
+				border: 0px;				
+				background-color: transparent;
+				color: $theme_font_color;
+				line-height: 30px;
+				height: 32px;
+
+				+ynresume-border-radius(0);
+				+ynresume-text-overflow();
+			}
+		}
+		
+		.ynresume-section-skill-user {
+			.add-endorse-btn {
+				width: 32px;
+				height: 32px;						
+				display: block;
+				float: left;
+				margin-left: 10px;
+			}
+
+			a {
+				border-left: 0;
+				margin-left: 3px;
+
+				img {
+					+ynresume-border-radius(16px);
+					border: 0;
+					width: 32px;
+					height: 32px;						
+				}
+
+				&:hover:after {
+					display: none;
+				}
+			}
+		}
+
+		&:after {
+			content: "";
+			overflow: hidden;
+			visibility: visible;
+			height: 32px;
+			clear: none;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAABCAYAAAD9yd/wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVBNkNFOUFGRENEQjExRTRBOUQ2RjI1QUE0QUE1MzlDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVBNkNFOUIwRENEQjExRTRBOUQ2RjI1QUE0QUE1MzlDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUE2Q0U5QUREQ0RCMTFFNEE5RDZGMjVBQTRBQTUzOUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RUE2Q0U5QUVEQ0RCMTFFNEE5RDZGMjVBQTRBQTUzOUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4c1w67AAAAGElEQVR42mJ88ODBfwYokJeXZ4SxAQIMAFWFA/+JHTALAAAAAElFTkSuQmCC);
+			background-repeat: repeat-x;
+			background-position: left center;
+		}
+	}
+
+	.ynresume-section-skill-mini-item {
+		.add-endorse-btn {
+			background-color: #f5f8f9;
+			color: #0cbba4;				
+			+ynresume-border-radius(16px);
+		}
+
+		.ynresume-section-skill-endorses {
+			.ynresume-section-skill-endorses-count {
+				background-color: #0cbba4;
+
+				& + span {
+					border-left: 0;
+				}
+			}
+
+			.ynresume-section-skill-endorses-text {
+				border: 1px solid #c5c9c8;
+				background-color: transparent;
+				color: #0cbba4;
+				line-height: 28px;
+			}
+
+			span:first-child {
+				border-top-left-radius: 16px;
+				border-bottom-left-radius: 16px;
+				-webkit-border-top-left-radius: 16px;
+				-webkit-border-bottom-left-radius: 16px;
+				-moz-border-top-left-radius: 16px;
+				-moz-border-bottom-left-radius: 16px;
+			}
+
+			span:last-child {
+				border-top-right-radius: 16px;
+				border-bottom-right-radius: 16px;
+				-webkit-border-top-right-radius: 16px;
+				-webkit-border-bottom-right-radius: 16px;
+				-moz-border-top-right-radius: 16px;
+				-moz-border-bottom-right-radius: 16px;				
+			}
+		}
+	}
+}
+
+.ynresume-menu-top
+{
+	li > ul
+	{
+		display: none;
+		li
+		{
+			display: block;
+			margin-top:5px;
+			margin-right: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			clear: both;
+		}
+		li + li
+		{
+			border-top: 1px solid $theme_photo_border_color;
+			  padding-top: 5px;
+			  margin-left: 0px;
+			  width: 100%;
+		}
+		position:absolute;
+		z-index:99;
+		background-color: $theme_pulldown_contents_background_color;
+		padding-bottom: 5px;
+		margin-top: 10px;
+		border: 1px solid $theme_pulldown_border_color;
+		padding-top: 5px;
+	}
+	li.active ul li
+	{
+		font-weight: normal;
+	}
+}
+
+.tabs > ul li.ynresume_more_show
+{
+	vertical-align: top;
+	position: inherit;
+	ul
+	{
+		display: block;
+	}
+}
+
+/* Awesomplete */
+
+[hidden] { display: none; }
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+div.awesomplete {
+	display: inline-block;
+	position: relative;
+}
+
+div.awesomplete > input {
+	display: block;
+}
+div.awesomplete > ul {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	min-width: 100%;
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	border-radius: .3em;
+	margin: .2em 0 0;
+	background-color: $theme_pulldown_contents_background_color;
+	border: 1px solid $theme_border_color;
+	box-shadow: .05em .2em .6em rgba(0,0,0,.2);
+	text-shadow: none;
+}
+
+div.awesomplete > ul[hidden],
+div.awesomplete > ul:empty {
+	display: none;
+}
+
+@supports (transform: scale(0)) {
+	div.awesomplete > ul {
+		transition: .3s cubic-bezier(.4,.2,.5,1.4);
+		transform-origin: 1.43em -.43em;
+	}
+	
+	div.awesomplete > ul[hidden],
+	div.awesomplete > ul:empty {
+		opacity: 0;
+		transform: scale(0);
+		display: block;
+		transition-timing-function: ease;
+	}
+}
+
+/* Pointer */
+div.awesomplete > ul:before {
+	content: "";
+	position: absolute;
+	top: -.43em;
+	left: 1em;
+	width: 0; height: 0;
+	padding: .4em;
+	background: white;
+	border: inherit;
+	border-right: 0;
+	border-bottom: 0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+div.awesomplete > ul > li {
+	position: relative;
+	padding: .5em;
+	cursor: pointer;
+	border-top: 1px solid $theme_border_color;
+}
+
+div.awesomplete > ul > li:hover {
+	background-color: $theme_pulldown_contents_list_background_color_hover;
+	color: $theme_font_color;
+}
+
+div.awesomplete > ul > li[aria-selected="true"] {
+	background-color: $theme_button_background_color;
+	color: $theme_button_font_color;
+}
+
+div.awesomplete li[aria-selected="true"] mark {
+	background: hsl(86, 102%, 21%);
+	color: inherit;
+}
+
+li.view-more {
+	display: none;
+}
+
+.view-less-photos {
+	display: none;
+}
+
+.ynresume-photos-showmore {
+	text-align: center;
+	font-weight: bold;
+}
+
+.layout_core_container_tabs {
+	position: relative;
+
+	.ynresume-modeview-button {
+		position: absolute;
+		top: -5px;
+		right: 0;
+	}
+}
+
+#ynresume-given-recommendation {
+	.recommendation-item {
+		position: relative;
+
+		.recommendation-photo {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.recommendation-options {
+			float: right;
+			margin-left: 10px;			
+
+			a {
+				display: block;
+				padding: 5px 10px;
+				border-bottom: 1px solid $theme_border_color;
+				border-left: 1px solid $theme_border_color;
+				border-right: 1px solid $theme_border_color;
+
+				&:first-child {
+					border-top: 1px solid $theme_border_color;
+				}
+			}
+		}
+
+		.recommendation-main-content {
+			overflow: hidden;
+		}
+
+		.recommendation-title {
+			font-weight: bold;
+			margin-bottom: 3px;
+		}
+
+		.recommendation-time {
+			font-size: 0.9em;
+			padding: 10px 0;
+			color: $theme_font_color_light;
+		}
+
+		.recommendation-content {
+			color: $theme_font_color_light;
+		}		
+
+		.recommendation-form-wrapper .element-wrapper {
+			margin-left: 0;
+
+			textarea {
+				width: 80%;
+				height: 80px;
+			}
+
+			input[type=text], input[type=email], input[type=password], input.text, select {
+				width: 80%;
+				max-width: 100%;
+			}
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+
+	.recommendation-item + .recommendation-item {
+		border-top: 1px solid $theme_border_color;
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+}
+
+#recommendation-pending-wrapper {
+	.recommendation-item {
+		position: relative;
+
+		.recommendation-photo {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.recommendation-options {
+			float: right;
+			margin-left: 10px;			
+
+			a {
+				display: block;
+				padding: 5px 10px;
+				border-bottom: 1px solid $theme_border_color;
+				border-left: 1px solid $theme_border_color;
+				border-right: 1px solid $theme_border_color;
+
+				&:first-child {
+					border-top: 1px solid $theme_border_color;
+				}
+			}
+		}
+
+		.recommendation-main-content {
+			overflow: hidden;
+		}
+
+		.recommendation-title {
+			font-weight: bold;
+			margin-bottom: 3px;
+		}
+
+		.recommendation-time {
+			font-size: 0.9em;
+			padding: 10px 0;
+			color: $theme_font_color_light;
+		}
+
+		.recommendation-content {
+			color: $theme_font_color_light;
+		}		
+
+		.recommendation-form-wrapper .element-wrapper {
+			margin-left: 0;
+
+			textarea {
+				width: 80%;
+				height: 80px;
+			}
+
+			input[type=text], input[type=email], input[type=password], input.text, select {
+				width: 80%;
+				max-width: 100%;
+			}
+		}
+
+		.receiver-headline {
+			line-height: 30px;
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+
+	.recommendation-item + .recommendation-item {
+		border-top: 1px solid $theme_border_color;
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+}
+
+#recomendation-give-form {
+	background-image: url(~/application/modules/Ynresume/externals/images/pattern.png);
+	padding: 3px;
+	background-color: #333;
+
+	.recomendation-give-form {
+		background-color: $theme_body_background_color;
+		padding: 20px 30px;
+		padding-bottom: 40px;
+		
+	
+		.recomendation-button{
+			padding-left: 90px;
+		}
+		div#to-wrapper{
+			padding-left: 0px !important;
+		}
+		.recomendation-wrapper{
+			padding-left: 90px;
+			position: relative;
+
+			& > img{
+				position: absolute;
+				left: 0;
+				top: -15px;
+			}
+			.element-description{
+				font-size: 14px;
+				color: $theme_font_color_light;
+				margin-bottom: 15px;
+			}
+		}
+
+		.form-description{
+			font-size: 18px;
+			font-weight: bold;
+			padding-bottom: 25px;
+		}
+
+		.recommendation-info {
+			padding: 10px;
+			border: 1px solid $theme_border_color;
+			margin-bottom: 50px;
+
+			.receiver-photo {
+				float: left;
+				margin-right: 10px;
+			}
+
+			&:after {
+				+ynresume-clearfix-inline();
+			}
+		}
+
+		.recommendation-label {
+			font-size: 20px;
+			font-weight: bold;
+			color: $theme_link_color;
+		}
+
+		textarea {
+			width: 100%;
+			max-width: 100%;
+			height: 80px;
+		}
+		
+		input[type=text], input[type=email], input[type=password], input.text, select {
+			width: 100%;
+			max-width: 100%;
+		}
+		select{
+			width: 100%;
+		}
+	}
+}
+
+.recommendation-ask-success {
+	background-color: #80c865;
+	padding: 3px 10px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.recommendation-view-message-simple {
+	padding: 15px;
+
+	h3 {
+		margin-bottom: 5px;
+	}
+
+	.recommendation-view-message {
+		.receiver-photo {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.recommendation-info {
+			overflow: hidden;
+			margin-bottom: 10px;
+
+			.receiver-title {
+				font-weight: bold;
+			}
+
+			.receiver-headline {
+				line-height: 30px;
+			}
+
+			
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+
+	.receiver-ask-message {
+		margin-bottom: 20px;
+	}
+}
+
+.layout_ynresume_profile_suggestions {
+	.resume-item {
+		padding: 5px 0;
+
+		.resume-avatar {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.resume-info {
+			overflow: hidden;
+
+			.resume-title {
+				font-weight: bold;
+				color: $theme_link_color;
+				+ynresume-text-overflow();
+			}
+
+			.resume-position {
+				color: $theme_link_color;
+				+ynresume-text-overflow();
+			}
+
+			.resume-company {
+				color: $theme_font_color_light;
+				+ynresume-text-overflow();
+				font-size: 0.9em;
+			}
+
+			& > div + div {
+				margin-top: 3px;
+			}
+		}
+
+		& + .resume-item {
+			margin-top: 10px;
+			border-top: 1px solid $theme_border_color;
+			padding-top: 15px;
+		}
+
+		&:after {
+			+ynresume-clearfix-inline();
+		}
+	}
+}
+
+#summary-summary-wrapper {
+	margin-bottom: 10px;
+}
+
+#ynresume-section-form-publication #authorValues-wrapper label {
+	height: 0px;
+}
+
+.ynresume-import-linkedin li {
+	padding: 2px 0;
+}
+
+.ynresume-import-linkedin li:after {
+	+ynresume-clearfix-inline();
+}
+
+ul.feed .feed_item_attachments {
+	#ynresume_cover_wrapper {
+		padding: 10px;
+	}
+
+	#ynresume_cover_wrapper .ynresume-cover-photo {
+		width: 100px;
+		height: 100px;
+	}
+
+	#ynresume_cover_wrapper .ynresume-cover-description .ynresume-cover-description-title {
+		font-size: 1.1em;
+	}
+
+	#ynresume_cover_wrapper .ynresume-cover-description .ynresume-cover-description-position {
+		font-size: 1em;
+	}
+
+	#ynresume_cover_wrapper .ynresume-cover-description .ynresume-cover-description-subline .ynresume-cover-description-info {
+		margin-top: 0;
+	}
+
+	#ynresume_cover_wrapper .ynresume-cover-description .ynresume-cover-description-subline {
+		margin-bottom: 5px;
+		font-size: 0.9em;
+	}
+}
+
+
+.ynresume-detail-section-theme_1 li#sections-content-item_skill .ynresume-section-content {
+	padding-left: 15px;
+}
+.ynresume-detail-section-theme_3 li#sections-content-item_skill .ynresume-section-content {
+	padding-left: 0px !important;
+	border-left: 0 !important;
+	h4{
+		position: relative;
+		padding-left: 20px;
+
+		&:before {
+			content: "";
+			background-color: #fff;
+			border: 2px solid #e6e6e6;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 10px;
+			left: -9px;
+			display: block;
+			border-radius: 10px;
+			+ynresume-box-sizing();
+		}
+
+		&:after {
+			content: "";
+			background-color: #e6e6e6;
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			top: 16px;
+  			left: -3px;
+			display: block;
+			border-radius: 4px;
+			+ynresume-box-sizing();
+		}
+	}
+
+	.ynresume-section-skill-title{
+		padding-left: 20px;
+		position: relative;
+		&:before {
+			content: "";
+			background-color: #fff;
+			border: 2px solid #e6e6e6;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0px;
+			left: -9px;
+			display: block;
+			border-radius: 10px;
+			+ynresume-box-sizing();
+		}
+
+		&:after {
+			content: "";
+			background-color: #e6e6e6;
+			width: 8px;
+			height: 8px;
+			position: absolute;
+			top: 6px;
+  			left: -3px;
+			display: block;
+			border-radius: 4px;
+			+ynresume-box-sizing();
+		}
+
+	}
+}
+.ynresume-detail-section-theme_2 li#sections-content-item_certification{
+	.section-item{
+		margin-bottom: 50px;
+	}
+}
+.ynresume-detail-section-theme_2 li#sections-content-item_skill .ynresume-section-content {
+	padding-left: 70px !important;
+}
+
+.ynresume-detail-section-theme_4 li#sections-content-item_skill .ynresume-section-content {
+	h4{
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+}
+.ynresume-detail-section-theme_4 #sections-content-item_contact {
+	.ynresume-section-content{
+		.contact-content{
+			&>div{
+				white-space: nowrap;
+
+				.inline_theme_4{
+					max-width: 50%;
+					margin-left: 0px;
+					padding-left: 5px;
+
+					&:nth-child(even){
+						&:before{
+							content: "";
+							width: 1px;
+							height: 15px;
+							display: inline-block;
+							background: $theme_border_medium_color;
+							margin-right: 15px;
+							position: relative;
+							bottom: -2px;
+						}
+					}
+				}
+
+				span.value{
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+#sections-content-item_experience .occupation-recommendations .giver-headline{
+	min-height: 27px;
+}
+
+#sections-content-item_education .occupation-recommendations .giver-headline{
+	min-height: 27px;
+}
+
+li#sections-content-item_skill .ynresume-section-content{
+	h4{
+		font-weight: normal;
+		font-size: 18px;
+		border-bottom: 0;
+		margin-bottom: 5px;
+	}
+	.ynresume-section-skill-title{
+		font-size: 18px;
+		margin-top: 20px;
+	}
+}
+
+#global_page_ynresume-resume-select-theme{
+	text-align: center;
+
+	.ynresume-select-theme{
+		text-align: left;
+	}
+}
+
+.tabs_alt>ul>li.active{
+	bottom: 0;
+}
+.tabs_alt > ul > li > a{
+	display: initial;
+}
+.tabs_alt>ul {
+	padding: 3px 0 5px 7px;
+}
+
+#global_page_ynresume-index-compose-message .form-description{
+	display: none;
+}
+.layout_ynresume_view_resume_cover #ynresume_cover_wrapper.ynresume-detail-cover-theme_1 .ynresume-cover-photo
+{
+	width: 243px;
+  	height: 243px;
+}
+#ynresume_cover_wrapper .ynresume-form-edit-cover
+{
+	input[type="text"],
+	input[type="email"], 
+	input[type="password"],
+	input.text
+	{
+		min-height: 32px;
+	}
+}
+.item_icon_ynresume_resume {
+	background-image: url(~/application/modules/Ynresume/externals/images/resume_icon.png);
+}

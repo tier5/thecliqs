@@ -1,0 +1,1104 @@
+/* Id: main.css 03.02.12 12:25 TeaJay $ */
+
+.browse_gifts_container {
+  position: relative;
+  width: 100%;
+}
+
+.browse_gifts .hegift_widget_list_item {
+  text-align: center;
+}
+
+.hegift_widget_list_item {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: baseline;
+}
+
+.browse_gifts .expWrapper {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.expWrapper {
+  position: relative;
+}
+
+.gift {
+  border-radius: 3px 3px 3px 3px;
+  height: 150px;
+  padding-top: 2px;
+  position: relative;
+  width: 120px;
+  border: 1px solid transparent;
+}
+
+.gift:hover {
+  background-color: transparent;
+  border: 1px solid $theme_body_background_color;
+  +rounded(5px);
+  +shadow(0, 0, 10px);
+}
+
+html[dir="rtl"] .gift-thumbnail {
+  width: auto;
+}
+
+.gift-thumbnail {
+  border: medium none;
+  height: 80px;
+  position: relative;
+  width: 80px;
+  cursor: pointer;
+  margin: 5px 0 5px 20px;
+}
+
+.expAbsolute {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.expAbsolute span {
+  background-color: $theme_body_background_color;
+  font-size: 9px;
+  padding: 0 5px;
+}
+
+html[dir="rtl"] .gift-info {
+  text-align: center;
+}
+
+.gift-info {
+  overflow: hidden;
+  text-align: center;
+
+  -webkit-transition: opacity 0.3s ease-in-out 0s;
+  -moz-transition: opacity 0.3s ease-in-out 0s;
+  -ms-transition: opacity 0.3s ease-in-out 0s;
+  -o-transition: opacity 0.3s ease-in-out 0s;
+  transition: opacity 0.3s ease-in-out 0s;
+  opacity: 0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.gift:hover .gift-info {
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+
+.gift_amount {
+  color: $theme_link_color;
+}
+
+.gift_loader_browse {
+  position: absolute;
+  top:50%;
+  left:50%;
+}
+
+#giftsSendPopup {
+  padding: 5px;
+}
+
+#giftsSendPopup .contacts {
+  height: 180px;
+  width: 505px;
+}
+
+#giftsSendPopup .contacts .item {
+  width: 150px;
+}
+
+#giftsSendPopup .gift_send_content {
+  overflow: hidden;
+}
+
+#giftsSendPopup .gift_send_content .img_gift {
+  background-position: center center;
+  background-repeat: no-repeat;
+  float: left;
+  height: 150px;
+  position: relative;
+  width: 150px;
+}
+
+#giftsSendPopup .gift_send_content .img_gift img{
+  left: 65%;
+  position: absolute;
+  top: 65%;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+#giftsSendPopup .gift_send_content .form_send {
+  padding-left: 170px;
+}
+
+#giftsSendPopup .gift_send_content .form_send .message_header {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+#giftsSendPopup .gift_send_content .form_send textarea {
+  height: 50px;
+  width: 230px;
+}
+
+#giftsSendPopup .gift_send_content .form_send .checked_table {
+  left: -5px;
+  margin-top: 15px;
+  position: relative;
+}
+
+#giftsSendPopup .gift_send_content .form_send .checked_table tr td {
+  padding: 0 4px 10px 0;
+}
+
+#giftsSendPopup .gift_send_content .form_send .checked_table tr td input {
+  position: relative;
+  top: -2px;
+}
+
+#giftsSendPopup .gift_send_content .form_send .checked_table tr td span {
+  color: $theme_font_color_light;
+  font-size: 0.8em;
+}
+
+#global_page_hegift-index-index #TB_ajaxContent,
+#global_page_hegift-own-select-send #TB_ajaxContent,
+#global_page_hegift-temp-index #TB_ajaxContent,
+#global_page_hegift-index-manage #TB_ajaxContent
+{
+  padding: 1px 10px 11px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+VIEW MY GIFTS
+Styles for the member's own gifts
+management page.
+*/
+
+.manage_gift_list_item {
+  display: inline-block;
+  margin: 15px 25px;
+  vertical-align: baseline;
+  border: 1px solid transparent;
+  padding-top: 5px;
+  float: left;
+}
+
+.manage_gifts_list .expWrapper {
+  display: inline-block;
+  margin: 0 auto;
+  width: 133px;
+}
+
+.manage_gift_details {
+  float: left;
+  margin-left: 10px;
+}
+
+.manage_gift_tips_details {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.manage_gift_message {
+  border-top: 1px solid $theme_border_color;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.manage_gifts_list .manage_gift_options
+{
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: opacity 0.3s ease-in-out 0s;
+  -moz-transition: opacity 0.3s ease-in-out 0s;
+  -ms-transition: opacity 0.3s ease-in-out 0s;
+  -o-transition: opacity 0.3s ease-in-out 0s;
+  transition: opacity 0.3s ease-in-out 0s;
+  opacity: 0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+.manage_gift_list_item:hover .manage_gift_options {
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+
+.manage_gifts_list .manage_gift_options ul li {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.manage_gifts_list .manage_gift_options a
+{
+  clear: both;
+  font-size: 0.8em;
+  height: 16px;
+  margin: 15px 0 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.gift_type_position {
+  left: 65%;
+  position: absolute;
+  top: 0;
+}
+
+.manage_gifts_list .gift_manage_info_photo {
+  height: 80px;
+  text-align: center;
+}
+
+.active_gift, .manage_gift_list_item:hover, .active_gift_temp {
+  background-color: transparent;
+  border: 1px solid $theme_body_background_color;
+  +rounded(5px);
+  +shadow(0, 0, 10px);
+}
+
+.active_gift .manage_gift_options, .active_gift_temp .manage_gift_options{
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+
+
+.hegifts-tips {
+  position: absolute;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  z-index: 100;
+}
+.hegifts-tips .container {
+  background-color: $theme_list_background_color;
+  border: 5px solid $theme_border_dark_color;
+  +rounded(3px);
+}
+.hegifts-tips .data {
+  font-size: 8pt;
+  color: $theme_font_color;
+  max-width: 300px;
+  padding: 5px 15px;
+}
+
+.hegifts-tips .item_title {
+  border-bottom: 1px solid $theme_font_color;
+  padding: 5px 0;
+}
+.hegifts-tips .item_description {
+  padding: 5px 0;
+  font-size: 10pt;
+}
+.hegifts-tips .arrow_container {
+  width: 100%;
+  height: 5px;
+  position: relative;
+}
+.hegifts-tips .arrow {
+  background-image: url("~/application/modules/Hegift/externals/images/arrows.png");
+  position: absolute;
+}
+
+.hegifts-tips .arrow.top {
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 5px;
+}
+.hegifts-tips .arrow.bottom {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 5px;
+}
+
+
+
+ul.gift_manage
+{
+  overflow: hidden;
+}
+ul.gift_manage > li
+{
+  overflow: hidden;
+}
+ul.gift_manage > li + li
+{
+  padding-top: 10px;
+  border-top-width: 1px;
+  margin-top: 10px;
+}
+html[dir="rtl"] ul.gift_manage .gift_manage_photo {
+  float: right;
+}
+ul.gift_manage .gift_manage_photo
+{
+  float: left;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+ul.gift_manage .gift_manage_photo img
+{
+  margin: 3px;
+  display: block;
+  max-width: 48px;
+  max-height: 48px;
+}
+html[dir="rtl"] ul.gift_manage .gift_manage_info {
+  float: right;
+}
+ul.gift_manage .gift_manage_info
+{
+  overflow: hidden;
+  float: left;
+}
+
+ul.gift_manage .gift_manage_info > a,
+ul.gift_manage .gift_manage_info > span
+{
+  margin-top: 2px;
+  font-weight: bold;
+  float: left;
+  width: 200px;
+}
+
+.gift_manage_info_date {
+  color: $theme_font_color_light;
+  font-size: 0.8em;
+  margin-top: 3px;
+  font-weight: normal;
+}
+
+ul.gift_manage .gift_manage_info_photo
+{
+  font-size: .8em;
+  float: left;
+  margin: 3px 10px;
+}
+.gift_manage_info_photo img {
+  max-width: 80px;
+  max-height: 90px;
+}
+ul.gift_manage .gift_manage_info_photo img {
+  border: none;
+}
+
+ul.gift_manage .gift_manage_info_message
+{
+  float: left;
+  width: 300px;
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_topbar_menu_background_color;
+  border-radius: 5px 5px 5px 5px;
+  height: 55px;
+}
+ul.gift_manage .gift_manage_info_message div {
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+html[dir="rtl"] .gift_manage_options {
+  float: left;
+}
+.gift_manage_options
+{
+  float: right;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.gift_manage_options a
+{
+  clear: both;
+  font-size: 0.8em;
+  margin: 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.icon_gifts_decline {
+  background-image:url('~/application/modules/Core/externals/images/delete.png');
+}
+
+.icon_gifts_active {
+  background-image:url('~/application/modules/Hegift/externals/images/approved.png');
+}
+
+.icon_gifts_not_active {
+  background-image:url('~/application/modules/Hegift/externals/images/disapproved.png');
+}
+
+.icon_gifts_check {
+  background-image:url('~/application/modules/User/externals/images/friends/request.png');
+}
+
+.icon_gifts_view {
+  background-image:url('~/application/modules/Hegift/externals/images/gift.png');
+}
+
+.sent_status {
+  color: $theme_font_color_light;
+  font-weight: normal;
+}
+
+.gift_loader_rs {
+  position: absolute;
+  top:50%;
+  left:50%;
+}
+
+#profile_photo .gift_photo_position {
+  position: absolute;
+  left: 56%;
+  top: 53%;
+}
+
+#profile_photo .gift_photo_position img {
+  width: auto;
+  max-width: 80px;
+  max-height: 90px;
+}
+
+.item_icon_gift {
+  background-image:url('~/application/modules/Hegift/externals/images/send_gift.png');
+}
+
+ul.feed .feed_attachment_gift > div > a {
+  display: block;
+  float: left;
+  margin-right: 7px;
+}
+
+.notifications_menu .notification_type_send_gift, .notifications .notification_type_send_gift {
+  background-image:url('~/application/modules/Hegift/externals/images/send_gift.png');
+}
+
+/* Gift Buttons */
+
+.gift_buttons {
+  display: inline-block;
+}
+
+.gift_buttons > a {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px 3px 3px 3px;
+  padding: 12px 20px 12px 40px;
+  margin: 2px 4px 4px 10px;
+  float: left;
+  font-weight: bold;
+  color: $theme_buttontabs_font_color;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.gift_buttons a.gift_buttonlink {
+  background-position: 10px center;
+}
+
+.gift_button_text {
+  margin-left: 10px;
+}
+
+a.received_gift_button, a.received_gift_button:hover {
+  background-image:url('~/application/modules/Hegift/externals/images/received_gifts.png');
+}
+
+a.sent_gift_button, a.sent_gift_button:hover {
+  background-image:url('~/application/modules/Hegift/externals/images/sent_gifts.png');
+}
+
+a.not_active_received_gift_button {
+  background-image:url('~/application/modules/Hegift/externals/images/r_not_active.png');
+}
+
+a.not_active_sent_gift_button {
+  background-image:url('~/application/modules/Hegift/externals/images/s_not_active.png');
+}
+
+.received_gift_button:hover, .sent_gift_button:hover {
+  border: 1px solid $theme_buttontabs_background_color;
+  text-decoration: none;
+  color: $theme_buttontabs_font_color_hover;
+}
+
+.gift_buttons a.active_gift_button {
+  border: 1px solid $theme_buttontabs_background_color;
+  text-decoration: none;
+  color: $theme_buttontabs_font_color_hover;
+}
+
+.gift_description {
+  margin: 10px 0;
+}
+
+.gift-cols:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.gift-col {
+  width: 30%;
+  float: left;
+  margin: 0 1.4881% 20px;
+}
+
+.gift-col h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.gift-img {
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+html[dir="rtl"] .gift-type {
+  text-align: center;
+}
+
+.gift-type {
+  font-weight: bold;
+  text-align: center;
+}
+.gift-type-video {
+  color: #68003B;
+}
+.gift-type-photo {
+  color: #203b6b;
+}
+.gift-type-audio {
+  color: #85A923;
+}
+
+.gift-type-icon {
+  float: right;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 16px;
+  width: 16px;
+  margin: 1px;
+}
+.icon_gift_video_play {
+  background-image:url('~/application/modules/Hegift/externals/images/video_play.png');
+}
+.icon_gift_audio_play {
+  background-image:url('~/application/modules/Hegift/externals/images/play.png');
+}
+.icon_gift_audio_pause {
+  background-image:url('~/application/modules/Hegift/externals/images/pause.png');
+}
+.icon_photo_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/photo.png);
+}
+.icon_audio_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/audio.png);
+}
+.icon_video_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/video.png);
+}
+
+.gift_on_smoothbox {
+  padding: 12px 0 0 12px;
+}
+
+.song_wrapper_gift {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.custom_gift_position {
+  position: absolute;
+  left: 80%;
+  top: 0;
+}
+
+.image_focus:hover {
+  +shadow(0, 0, 10px);
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=0, Color='$theme_buttontabs_font_color_hover');
+}
+
+
+/* FILE UPLOADER */
+#demo-status-audio.hide,
+#demo-status-video.hide
+{
+  display: none;
+}
+#demo-status-audio,
+#demo-status-video
+{
+  width: 420px;
+}
+#demo-status-audio > div,
+#demo-status-video > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#demo-status-audio > div:first-child,
+#demo-status-video > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#demo-status-audio .current-text,
+#demo-status-video .current-text,
+#demo-status-audio .demo-status-overall,
+#demo-status-video .demo-status-overall
+{
+  display: none;
+}
+#demo-status-audio .overall-title,
+#demo-status-video .overall-title,
+#demo-status-audio .current-title,
+#demo-status-video .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#demo-status-audio .progress,
+#demo-status-video .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+html[dir="rtl"] #demo-status-audio .progress,
+html[dir="rtl"] #demo-status-video .progress
+{
+  background-position: +50% 0;
+  margin-right: 0em;
+  margin-left: 0.5em;
+}
+#demo-status-audio .progress-text,
+#demo-status-video .progress-text
+{
+  font-size: 0.9em;
+}
+#demo-list-audio,
+#demo-list-video
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+#demo-list-audio li.validation-error,
+#demo-list-video li.validation-error
+{
+  padding: 8px 8px 8px 28px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+html[dir="rtl"] #demo-list-audio li.validation-error,
+html[dir="rtl"] #demo-list-video li.validation-error
+{
+  padding: 8px 28px 8px 8px;
+  background-position: 99% 50%;
+}
+#demo-list-audio li.file,
+#demo-list-video li.file
+{
+  padding: 8px 8px 8px 28px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  background-image: url(~/externals/fancyupload/assets/waiting.png);
+  background-repeat: no-repeat;
+}
+html[dir="rtl"] #demo-list-audio li.file,
+html[dir="rtl"] #demo-list-video li.file
+{
+  padding: 8px 28px 8px 8px;
+  background-position: 99% 50%;
+}
+#demo-list-audio li.file + li.file,
+#demo-list-video li.file + li.file
+{
+  border-top: 1px solid #ccc;
+}
+#demo-list-audio li.file span,
+#demo-list-video li.file span
+{
+  display: none;
+}
+#demo-list-audio li.file-uploading,
+#demo-list-video li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#demo-list-audio li.file-success,
+#demo-list-video li.file-success
+{
+  background-image: url(~/externals/fancyupload/assets/finished.png);
+  background-repeat: no-repeat;
+}
+#demo-list-audio li.file .file-name,
+#demo-list-video li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+html[dir="rtl"] #demo-list-audio li.file .file-name,
+html[dir="rtl"] #demo-list-video li.file .file-name
+{
+  clear: right;
+}
+#demo-list-audio li.file .file-size,
+#demo-list-video li.file .file-size
+{
+  display: none;
+}
+#demo-list-audio li.file .file-info,
+#demo-list-video li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#demo-list-audio li.file .file-remove,
+#demo-list-video li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+html[dir="rtl"] #demo-list-audio li.file .file-remove,
+html[dir="rtl"] #demo-list-video li.file .file-remove
+{
+  clear: left;
+  float: left;
+}
+
+
+.sent_received_layout {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.gift_manage_info_gift {
+  float: left;
+  margin: 3px;
+  width: 125px;
+}
+.gift_manage_info_gift img {
+  float: right;
+}
+
+.select-and-send {
+  +foreground;
+  +rounded;
+  padding: 15px;
+  width: 620px;
+}
+
+.create_own_gift_path {
+  border: 2px solid $theme_foreground_border_color;
+  border-radius: 3px 3px 3px 3px;
+  cursor: pointer;
+}
+
+.create_own_gift_path a.own_gift_path {
+  padding: 10px 10px 10px 15px;
+  background-position: 40px 3px;
+  text-decoration: none;
+  filter: alpha(opacity=20);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  opacity: 0.2;
+  width: 27%;
+}
+
+.create_own_gift_path a.own_gift_path.active,
+.create_own_gift_path a.own-gift-home-photo:hover,
+.create_own_gift_path a.own-gift-home-audio:hover,
+.create_own_gift_path a.own-gift-home-video:hover,
+.create_own_gift_path a.own-gift-create:hover,
+.create_own_gift_path a.own-gift-send:hover
+{
+  opacity: 1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+
+html[dir="rtl"] .create_own_gift_path .own_gift_path > span {
+  margin-right: 70px;
+}
+.create_own_gift_path .own_gift_path > span {
+  margin-left: 70px;
+}
+.own-gift-home {
+  background-image: url(~/application/modules/Hegift/externals/images/choose_own_gift.png);
+}
+.own-gift-home-photo {
+  background-image: url(~/application/modules/Hegift/externals/images/own_photo_gift.png);
+}
+.own-gift-home-audio {
+  background-image: url(~/application/modules/Hegift/externals/images/own_audio_gift.png);
+}
+.own-gift-home-video {
+  background-image: url(~/application/modules/Hegift/externals/images/own_video_gift.png);
+}
+a.own-gift-create {
+  background-image: url(~/application/modules/Hegift/externals/images/create_own_gift.png);
+}
+a.own-gift-send {
+  background-image: url(~/application/modules/Hegift/externals/images/send_own_gift.png);
+}
+
+html[dir="rtl"] .create_own_gift_path a.own_gift_arrow_right {
+  background-image: url(~/application/modules/Hegift/externals/images/arrow_left.png);
+}
+
+.create_own_gift_path a.own_gift_arrow_right {
+  background-image: url(~/application/modules/Hegift/externals/images/arrow_right.png);
+  filter: alpha(opacity=100);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  padding: 0;
+  width: 3%;
+  background-position: left center;
+}
+
+
+/* Gift Categories */
+
+.layout_hegift_gift_categories
+{
+	+rounded();
+	+foreground();
+	padding: 7px;
+	border-width: 0px;
+	margin-bottom: 15px;
+}
+
+ul.gift-categories{
+	background-color: $theme_body_background_color;
+	padding: 5px;
+	border: 1px solid $theme_foreground_border_color_light;
+	list-style: none;
+}
+
+ul.gift-categories > li{
+	padding: 5px;
+}
+
+ul.gift-categories > li.on-hover:hover {
+  background-color:$theme_list_background_color_hover;
+}
+
+ul.gift-categories > li + li{
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+ul.gift-categories > li > a{
+	font-weight: bold;
+}
+
+ul.gift-categories > li > a:hover {
+  text-decoration: none !important;
+}
+
+ul.gift-categories > li.active,
+ul.gift-categories > li:hover {
+  color: $theme_link_color_hover;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+ul.gift-categories > li.active > a {
+  color: $theme_link_color_hover;
+}
+
+/* Birthday Widget */
+
+.birthday-widget-container {
+  padding: 3px;
+  +foreground;
+  +rounded;
+}
+
+.birthday-widget-container .birthday-item {
+  position: relative;
+  padding: 5px;
+  border-top: 1px solid $theme_foreground_border_color;
+  float: left;
+}
+
+.birthday-widget-container > div:first-child {
+  border: none;
+}
+.birthday-widget-container .birthday-item .right .descr,
+.birthday-widget-container .birthday-item .right .title,
+.birthday-widget-container .birthday-item .right,
+.birthday-widget-container .birthday-item .photo {
+  float: left;
+}
+
+.birthday-widget-container .birthday-item .right .title {
+    padding-right: 16px;
+}
+
+.birthday-widget-container .birthday-item .right .descr {
+  font-size: 11px;
+  color: $theme_font_color_light;
+}
+
+.birthday-widget-container * a.birthday_widget_link {
+  float: right;
+  font-size: 11px;
+  display: block;
+  padding-top: 2px;
+  height: 16px;
+  margin-top: 5px;
+}
+.birthday-widget-container .birthday-item .right {
+  padding-left: 5px;
+  position: relative;
+  width: 117px;
+}
+
+.gift_tip {
+  padding: 5px;
+  +foreground;
+  +rounded;
+}
+.gift_tip .user_photo {
+  float: left;
+  margin: 7px 5px 0;
+}
+.gift_tip ul.form-notices {
+  margin: 0;
+}
+
+.layout_active_theme_bamboo .hegift_widget_list_item {
+  margin: 8px;
+}
+.layout_active_theme_bamboo .birthday-widget-container .birthday-item {
+  padding: 0;
+}
+.layout_active_theme_bamboo .birthday-widget-container .birthday-item .right {
+  width: 100px;
+}
+.layout_active_theme_bamboo .manage_gift_list_item .expWrapper {
+  width: 130px;
+}
+
+.layout_active_theme_snowbot .manage_gift_list_item .expWrapper {
+  width: 130px;
+}
+
+.layout_active_theme_digita .manage_gift_list_item {
+  margin: 15px 22px;
+}
+.layout_active_theme_digita .manage_gift_list_item .expWrapper {
+  width: 130px;
+}
+.layout_active_theme_digita .hegift_widget_list_item {
+  margin: 2px;
+}
+
+.layout_active_theme_clean .hegift_widget_list_item {
+  margin: 10px 22px;
+}
+
+.layout_active_theme_clean .create_own_gift_path {
+  border: 2px solid #ccc;
+}
+
+.layout_active_theme_clean .gift-img {
+  width: 329px;
+}
+
+.layout_active_theme_clean .gift_buttons a.active_gift_button {
+  border: 1px solid #ccc;
+}
+
+.layout_active_theme_clean .gift_buttons > a {
+  border: 1px solid #ccc;
+}
+
+.gift-welcome-title {
+  margin: 10px;
+}
+
+/* IE Hacks */
+
+*+html .hegift_widget_list_item
+{
+  display: block;
+  float: left;
+  width: 125px;
+}
+
+*+html .manage_gift_list_item
+{
+  display: block;
+  float: left;
+  width: 133px;
+}
+
+*+html .manage_gift_list_item .manage_gift_options ul{
+  margin-left: 25px;
+}
+
+*+html .manage_gift_list_item .manage_gift_options ul li {
+  display: block;
+  float: left;
+}
+
+*+html .gift-info span
+{
+  margin-left: 3px;
+}
+
+*+html a.own_gift_arrow_right {
+  margin-bottom: 10px;
+}
+
+*+html .birthday-widget-container {
+  float: left;
+}
+
+ ul.gift-categories > li.active, ul.gift-categories > li:hover { 
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); 
+ } 

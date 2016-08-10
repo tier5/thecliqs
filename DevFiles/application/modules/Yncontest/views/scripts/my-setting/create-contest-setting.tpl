@@ -1,0 +1,25 @@
+<?php echo $this->content()->renderWidget('yncontest.main-menu') ?>
+<?php echo $this->partial('_contest_menu.tpl', array(
+		'contest'=>$this->contest_id,			
+		));?>
+<?php echo $this->form->render($this);?>
+
+
+<style type="text/css">
+input[type="checkbox"] + label, input[type="radio"] + label {
+	cursor: default;
+}
+</style>
+
+<script type="text/javascript">
+
+	
+	window.addEvent('domready', function() {		
+  		$$('p.description')[0].set('html',"<?php echo $this->warning?>");
+    });
+    
+</script>
+
+<br/>
+
+

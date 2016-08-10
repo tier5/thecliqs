@@ -1,0 +1,640 @@
+
+@include "constants.css";
+@include "~/application/modules/Core/externals/styles/main.css";
+@scan "application/modules" "externals/styles/main.css" "Core";
+
+*
+{
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-style: solid;
+  border-width: 0px;
+  border-color: $theme_border_color;
+}
+
+*[dir="rtl"] div,
+*[dir="rtl"] td {
+  direction: rtl;
+  unicode-bidi: embed;
+  text-align: right;
+}
+
+html, body {
+	height:100%;
+}
+body, form, ol, ul, dl, li, dt, dd, td, th, tr {
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, address {
+	margin:0 0 1em 0;
+	padding:0;
+}
+ul {
+	list-style:none;
+}
+ol {
+	margin-bottom:1em;
+}
+ol li {
+	margin-left:2em;
+}
+img {
+	border:0;
+}
+fieldset {
+	margin:0;
+	padding:0;
+	border:0;
+}
+input, select, textarea { font-size:100%; vertical-align:middle; }
+table { border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
+a:focus { outline:0; }
+body { font-family:"Lucida Grande", Arial, sans-serif; font-size:$theme_font_size; line-height:1.5; background:$theme_body_background_color; color:$theme_font_color; }
+textarea { font-family:"Lucida Grande", Arial, sans-serif; }
+
+
+a { color:$theme_link_color; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+
+h1 { font-size:$theme_headline_size_large; color:$theme_headline_color; margin-bottom:15px; line-height:1; }
+h1 a { color:#f00; text-decoration:none; }
+h1 a:hover { color:#47a; }
+h1 span { color:#999; font-weight:normal; }
+
+
+h2 { font-size:$theme_headline_size_medium; color:$theme_headline_color; }
+h2 a { color:#f00; text-decoration:none; line-height:22px; }
+h2 a:hover { text-decoration:underline; }
+h3 { margin-bottom:10px; line-height:1.1; font-size:14px; color:#555; }
+h3.sep { display: block; border-bottom: 1px solid $theme_border_color; overflow: hidden; margin-bottom: 1em; height: 1em; }
+h3.sep > span { display: block; overflow: hidden; position: absolute; background: $theme_body_background_color; padding: 5px 10px 5px 0px; font-weight: bold; }
+h4 { font-size:13px; }
+h4 > span { display: inline-block; position: absolute; background-color: $theme_body_background_color; padding-right: 6px; margin-top: -1px; }
+
+
+small { font-size:11px; }
+hr { height:1px; margin:.75em 0; clear:both; width:100%; border:0; background:#ccc; background:rgba(0, 0, 0, .2); }
+th { text-align:right; }
+
+
+
+/* HEADER */
+#global_header { background:url(images/bg_header.png) repeat-x; height:125px; }
+.layout_page_header { position:relative; width:$theme_content_width; margin:0 auto; height:125px; }
+.layout_page_header .layout_core_menu_main { position:absolute; bottom:0; height:30px; width:950px; }
+.layout_page_header .layout_core_menu_main li { float:left; margin-right:2px; }
+.layout_page_header .layout_core_menu_main li a { font-size:0.91em; display:block; color:#555; cursor:pointer; line-height:19px; padding:5px 10px; text-decoration:none; +rounded(4px, false, false, true, true); height:20px; }
+.layout_page_header .layout_core_menu_main li a:hover { background:#ddd; border:1px solid #aaa; border-bottom:none; padding:4px 9px 5px; }
+.layout_page_header .layout_core_menu_main li.active a { background:#fff; border:1px solid #ddd; border-bottom:none; color:#d00; padding:5px 10px 4px; }
+.layout_page_header .layout_core_menu_main li.active a:hover { padding:5px 10px 4px; }
+.layout_page_header .layout_core_menu_logo { width:$theme_topbar_logo_width; font-size:23pt; font-weight:bold; margin:0 auto 10px auto; text-align:left; letter-spacing:-2px; overflow:hidden; }
+.layout_page_header .layout_core_menu_logo a { color:#eee; }
+
+.layout_page_header .layout_netlogtemplatedefault_netlog_main_menu { position:absolute; bottom:0; height:30px; width:950px; }
+.layout_page_header .layout_netlogtemplatedefault_netlog_main_menu li { float:left; margin-right:2px; }
+.layout_page_header .layout_netlogtemplatedefault_netlog_main_menu li a { font-size:0.91em; display:block; color:#555; cursor:pointer; line-height:19px; padding:5px 10px; text-decoration:none; +rounded(4px, false, false, true, true); height:20px; }
+.layout_page_header .layout_netlogtemplatedefault_netlog_main_menu li a:hover { background:#ddd; border:1px solid #aaa; border-bottom:none; padding:4px 9px 5px; }
+.layout_page_header .layout_netlogtemplatedefault_netlog_main_menu li.active a { background:#fff; border:1px solid #ddd; border-bottom:none; color:#d00; padding:5px 10px 4px; }
+.layout_page_header .layout_netlogtemplatedefault_netlog_main_menu li.active a:hover { padding:5px 10px 4px; }
+
+.layout_page_header .navigation_dropdown { display:none; float:left; position:relative; top:30px; left:-60px; width:140px; background:#fff; border:2px solid #aaa; border-top:none; z-index:1; +rounded(5px,true,true,false,false); }
+.layout_page_header .navigation_dropdown li { float:none; margin:0; }
+.layout_page_header .navigation_dropdown li a { +rounded(0); }
+.layout_page_header .navigation_dropdown li a:hover { border:none; padding:5px 10px; }
+
+
+	/* top menu with shortcuts */
+.layout_topmenu { position:absolute; right:0; top:0; color:#888; }
+.layout_topmenu { +rounded(10px, true, true, false, false); background:#1a1a1a; padding:5px 7px 2px; min-width:220px; min-height:44px; }
+.layout_topmenu li { float:left; margin-right:4px; }
+.layout_topmenu li a { color:#69c; }
+
+.layout_topmenu .topmenu_shortcuts { float:left; margin:2px 4px 0 0; }
+
+.layout_topmenu .topmenu_shortcuts li { display:none; }
+.layout_topmenu .topmenu_shortcuts li a { display:block; width:26px; height:26px; margin:5px 7px 3px; background:url(images/spr_topmenu_buttons.png) no-repeat; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon { float:left; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon:hover { margin-top:6px; cursor:pointer; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_album { background-position:0 0; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_blog { background-position:0 -26px; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_classified { background-position:0 -52px; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_event { background-position:0 -78px; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_video { background-position:0 -104px; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_messages { background-position:0 -130px; display:block; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_expand { background-position:0 -156px; }
+.layout_topmenu .topmenu_shortcuts li a.topmenu_icon_expand:hover { background-position:-26px -156px; margin-top:5px; }
+.layout_topmenu .topmenu_shortcuts li#btnExpand { display:block; }
+
+.layout_topmenu .topmenu_right_side { float:right; padding-left:10px; border-left:1px solid #444; }
+.layout_topmenu .topmenu_right_side .topmenu_userinfo { float:left; text-align:right; font-size:11px; padding:1px 8px 0 0; }
+.layout_topmenu .topmenu_right_side .topmenu_gray_link { color:#888; }
+.layout_topmenu .topmenu_right_side .topmenu_user_avatar { float:right; line-height:1px; margin-top:2px; }
+
+.layout_topmenu .topmenu_right_side img.thumb_icon { width:38px; height:38px; border:2px solid #aaa; +rounded(2px); }
+.layout_topmenu #remember-wrapper { position:absolute; bottom:2px; left:196px; white-space:nowrap; }
+.layout_topmenu #facebook-wrapper { position:absolute; right:7px; bottom:3px; line-height:1px; }
+.layout_topmenu #facebook-wrapper img { height:21px; }
+.layout_topmenu #twitter-wrapper { position:absolute; right:107px; bottom:2px; line-height:1px; }
+.layout_topmenu #twitter-wrapper img { height:21px; }
+.layout_user_login_or_signup h3 { font-size:18px; margin-bottom:8px; line-height:1.5; color:#333; }
+.layout_user_login_or_signup #facebook-wrapper { border-top:#aaa; }
+.layout_user_login_or_signup #twitter-label { display:none; }
+#user_form_login.global_form_box #remember-wrapper label { margin:1px 0 0; }
+.layout_topmenu .global_form_box input[type="checkbox"] { margin-top:0; }
+
+.layout_user_login_or_signup #user_form_login { overflow:hidden; }
+.layout_user_login_or_signup #user_form_login #facebook-wrapper { float:left; margin:15px 0 0 25px; padding:0; border:none; }
+.layout_user_login_or_signup #user_form_login #twitter-wrapper { float:left; margin:14px 0 0 0; }
+.layout_user_login_or_signup #user_form_login #twitter-label { display:none; }
+
+.layout_topmenu .topmenu_right_side .topmenu_user_links { float:right; text-align:right; font-size:11px; padding-right:4px; }
+.layout_topmenu .topmenu_right_side .topmenu_gray_link { color:#aaa; }
+.layout_topmenu .topmenu_right_side .topmenu_user_avatar { float:right; }
+
+.layout_topmenu .topmenu_right_side img.thumb_icon { width:32px; height:32px; border:2px solid $theme_foreground_border_color; +rounded(2px); }
+
+.layout_topmenu .form-label { display:none; }
+.layout_topmenu .form-wrapper { float:left; padding-left:12px;}
+.layout_topmenu .loginform_label { float:left; width:100px; margin-top:-3px; padding-top:2px; font-size:11px; line-height:14px; text-align:right; }
+.layout_topmenu .global_form_box { float:right; height:46px; background:none; border:none; padding:0 0 4px 0; }
+.layout_topmenu .global_form_box .form-element { overflow:visible; }
+.layout_topmenu .global_form_box .form-wrapper + .form-wrapper { margin:0; }
+.layout_topmenu .global_form_box input { height:20px; }
+.layout_topmenu .global_form_box #email { width:176px; }
+.layout_topmenu .global_form_box #password { width:126px; }
+.layout_topmenu #submit-wrapper { padding:0; }
+.layout_topmenu #submit-wrapper button { width:89px; padding:3px 10px 5px; }
+	/* end top menu */
+
+
+	/* netlog friends widget */
+.layout_netlog_friends { position:absolute; right:214px; bottom:40px; width:26px; height:26px; z-index:1; }
+.layout_netlog_friends .btnShowFriends { display:block; width:26px; height:26px; background:url(images/spr_topmenu_buttons.png) no-repeat 0 -182px; }
+.layout_netlog_friends .btnShowFriends:hover { background-position:-26px -182px; }
+.layout_netlog_friends #friendsDropDownList { position:absolute; left:-55px; height:0; width:290px; max-height:250px; margin:5px 0 0; padding:0; background:#fff; border:4px solid #191919; border-top:none; border-radius:0 0 5px 5px; box-shadow:0 2px 5px rgba(0, 0, 0, 0.5);  z-index:10; overflow:hidden; }
+.layout_netlog_friends .friendsListContainer { max-height:250px; overflow-x:hidden; overflow-y:auto; }
+.layout_netlog_friends .friendsListContainer li { position:relative; padding:4px 6px 6px; border-bottom:1px solid #ddd; overflow:hidden; line-height:1; }
+.layout_netlog_friends .friendsListContainer li:hover { background:#f7f7f7; }
+.layout_netlog_friends .friendsListContainer li.noFriends { height:38px; line-height:38px; font-size:14px; text-align:center; }
+.layout_netlog_friends .friendsListContainer li .item_photo_user { float:left; width:32px; height:32px; margin:3px 6px 0 0; }
+.layout_netlog_friends .friendsListContainer li .user_title { float:left; width:180px; white-space:nowrap; line-height:normal; }
+.layout_netlog_friends .friendsListContainer li .user_profile_status { position:relative; width:200px; font-size:9px; color:#777; height:23px; line-height:12px; text-indent:14px; overflow:hidden; background:url(images/ico_quote.png) no-repeat 0 2px; }
+.layout_netlog_friends .friendsListContainer li .user_profile_status .quote_close { display:inline-block; height:8px; width:10px; margin-left:4px; background:url(images/ico_quote2.png) no-repeat; }
+
+.layout_netlog_friends .friendsListContainer li .user_status { position:absolute; right:6px; top:3px; padding-right:16px; font-size:9px; line-height:16px; text-transform:capitalize; cursor:default; }
+.layout_netlog_friends .friendsListContainer li .user_online { background:url(images/ico_user_status.png) right 0 no-repeat; color:#00ba00; }
+.layout_netlog_friends .friendsListContainer li .user_busy { background:url(images/ico_user_status.png) right -16px no-repeat; color:#d62222; }
+.layout_netlog_friends .friendsListContainer li .user_away { background:url(images/ico_user_status.png) right -32px no-repeat; color:#e96800; }
+.layout_netlog_friends .friendsListContainer li .user_offline { background:url(images/ico_user_status.png) right -48px no-repeat; color:#919191; }
+.layout_netlog_friends .friendsListContainer .nofriends { height:39px; line-height:39px; font-size:14px; font-weight:bold; text-align:center; }
+
+
+.topmenu_userinfo a:link,
+.topmenu_userinfo a:visited,
+.topmenu_userinfo a:hover { color:#69c; }
+.topmenu_userinfo .userStatusContainer { float:right; margin-left:6px; white-space:nowrap; }
+.topmenu_userinfo .user_status { padding:0 16px 0 17px; font-size:9px; line-height:16px; text-transform:capitalize; height:auto; width:auto; overflow:visible; }
+.topmenu_userinfo .user_online { background:url(images/ico_user_status.png) left 0 no-repeat; }
+.topmenu_userinfo .user_busy { background:url(images/ico_user_status.png) left -16px no-repeat; }
+.topmenu_userinfo .user_away { background:url(images/ico_user_status.png) left -32px no-repeat; }
+.topmenu_userinfo .user_offline { background:url(images/ico_user_status.png) left -48px no-repeat; }
+
+.topmenu_userinfo #userStatusMenu { position:absolute; top:25px; right:52px; padding:4px 6px 6px; background:#1a1a1a; border-radius:0 0 10px 10px; text-align:right; z-index:12; }
+.topmenu_userinfo #userStatusMenu li { float:none; margin:0; }
+.topmenu_userinfo #userStatusMenu li a { display:block; padding:1px 8px; +rounded(3px); }
+.topmenu_userinfo #userStatusMenu li a:hover { display:block; background:#333; text-decoration:none; }
+.topmenu_userinfo #btnChangeStatus { display:inline-block; }
+.topmenu_userinfo .userstatus_arrow { display:inline-block; background:url(images/img_arrow.png) no-repeat top right; padding:0 3px 2px; +rounded(3px); }
+.topmenu_userinfo .userstatus_arrow:hover { background-color:#333; }
+
+.topmenu_userinfo .topmenu_user_links { padding:0 3px 0 0; clear:both; text-transform:lowercase; }
+
+
+.layout_netlog_friends .friendsListContainer li .btnMessage { position:absolute; bottom:5px; right:5px; width:16px; height:16px; }
+.layout_netlog_friends .friendsListContainer li .user1_unread { background:url(images/ico_user_messages.png) 0 0 no-repeat; }
+.layout_netlog_friends .friendsListContainer li .user2_unread { background:url(images/ico_user_messages.png) 0 -16px no-repeat; }
+.layout_netlog_friends .friendsListContainer li .noUnreadMessages { background:url(images/ico_user_messages.png) 0 -48px no-repeat; }
+	/* end netlog friends widget */
+
+
+
+	/* minimenu */
+.layout_core_menu_mini { position:absolute; bottom:40px; width:100%; }
+#core_menu_mini_menu {  }
+#core_menu_mini_menu li { float:left; }
+#core_menu_mini_menu li a { display:block; padding:4px 8px; margin-right:4px; +rounded(4px); color:#ccc; text-shadow:0 -1px 0 #222; box-shadow:0 1px 0 rgba(255, 255, 255, 0.035); background:#333; text-decoration:none; font-size:14px; font-weight:bold; }
+#core_menu_mini_menu li a:hover { background:#555; color:#fff; }
+#core_menu_mini_menu .pulldown_contents_wrapper a { display:inline-block; padding:2px 6px 3px; font-size:10px; font-weight:bold; }
+#core_menu_mini_menu #global_search_form_container { position:absolute; right:7px; bottom:2px; }
+#core_menu_mini_menu #global_search_form_container .overTxtLabel { color:#fff; top:5px !important; left:10px !important; }
+#core_menu_mini_menu #global_search_form_container #global_search_field { +rounded(3px); width:185px; padding:5px; margin:0; border:none; background:#555; color:#fff; outline:none; }
+
+
+	/* UPDATES */
+#core_menu_mini_menu #core_menu_mini_menu_update .notifications_menu a { display:inline; padding:0; margin:0; +rounded(0px); color:$theme_link_color; text-shadow:none; box-shadow:none; background:none; text-decoration:none; font-size:1em; font-weight:bold; }
+#core_menu_mini_menu #core_menu_mini_menu_update .notifications_menu a:hover { background:none; color:$theme_link_color; text-decoration:underline; }
+#core_menu_mini_menu #core_menu_mini_menu_update .notifications_menu li { float:none; }
+.layout_core_menu_mini #core_menu_mini_menu_updates { margin:0px 7px; }
+#core_menu_mini_menu_update .updates_pulldown_active a#updates_toggle { +rounded(4px, false, false, true, true); background-color:$theme_pulldown_background_color_active; color:$theme_pulldown_font_color_active; text-decoration:$theme_topbar_minimenu_link_hover_decoration; }
+#core_menu_mini_menu li a#updates_toggle { background:#c00; text-shadow:0 -1px 0 #700; color:#fff; }
+.updates_pulldown > a,
+.updates_pulldown_active > a { display:block; color:$theme_topbar_minimenu_link_color; font-weight:bold; padding:6px 7px 6px 7px; text-transform:uppercase; }
+.updates_pulldown > a { display:block; +rounded(3px); font-weight:bold; padding:6px 7px 6px 7px; text-transform:uppercase; outline:none; }
+.updates_pulldown > a.new_updates { +rounded(3px); background:#f96262; color:#fff; }
+.updates_pulldown > a.new_updates:hover { +rounded(3px); background:#e45656; color:#fff; }
+.updates_pulldown > a:hover { +rounded(3px); background:#d7e7f0; color:$theme_topbar_minimenu_link_hover_color; text-decoration:$theme_topbar_minimenu_link_hover_decoration; }
+.updates_pulldown_active > a { +rounded(4px, false, false, true, true); background-color:$theme_pulldown_background_color_active; color:$theme_pulldown_font_color_active; text-decoration:$theme_topbar_minimenu_link_hover_decoration; }
+.updates_pulldown_active .pulldown_contents_wrapper { display:block; }
+.pulldown_contents_wrapper { display:none; +rounded(5px, true, false, false, false); overflow:hidden; margin-top:28px; position:absolute; min-width:100px; max-width:300px; padding:4px 4px 1px; background-color:$theme_pulldown_border_color; z-index:99; }
+	/* END UPDATES */
+
+
+
+/* END HEADER */
+
+
+
+
+#global_wrapper { width:$theme_content_width; margin:25px auto; overflow:hidden; }
+#global_content { width:$theme_content_width; margin:0 auto; overflow:hidden; min-height:500px; }
+#global_content_simple { display:inline-block; overflow:hidden; }
+
+
+
+.layout_left { float:left; width:$theme_content_columns_left_width; padding:0 15px 0 0; vertical-align:top; margin-right:5px; }
+html[dir="rtl"] .layout_left { float:right; padding:0 0 0 15px; margin-right:0; margin-left:5px; }
+
+.layout_middle { overflow:hidden; padding:0; vertical-align: top; }
+
+.layout_right { float:right; width:$theme_content_columns_right_width; padding:0 0 10px 15px; vertical-align:top; margin-left:5px; }
+html[dir="rtl"] .layout_right { float:left; padding:0 15px 10px 0; margin-left:0; margin-right:5px; }
+
+
+
+
+/* LANGUAGES WIDGET */
+
+.layout_netlogtemplate_netlog_languages { float:left; position:relative; margin-top:8px; }
+.netlog-template-languages { }
+.netlog-template-languages li:first-child { padding:0; }
+.netlog-template-languages li { float:left; padding-left:7px; }
+.netlog-template-languages li.active a { font-weight:bold; color:#333; }
+#netlog_langs { display:none; position:absolute; right:0; bottom:25px; width:300px; padding:8px 16px; background:#fff; border:6px solid #ccc; +rounded(); }
+#netlog_langs li { float:left; margin:6px 22px 6px 0; }
+#netlog_langs li.active a { color:#333; }
+#netlog_langs .btnClose { display:block; position:absolute; top:0; right:0; padding:1px 6px; color:#999; font:12px/18px Verdana,Arial; font-weight:bold; text-decoration:none; }
+#netlog_langs .btnClose:hover { color:#900; }
+
+
+/* FOOTER */
+
+#global_footer { clear:both; background:url(images/bg_footer.png) repeat-x #f2f2f2; padding-bottom:40px; font-size:12px; color:#999; overflow:hidden; }
+#global_footer a { font-weight:bold; }
+.layout_page_footer { width:$theme_content_width; margin:0 auto; padding-top:12px; }
+.layout_page_footer #language { display:none; }
+
+.layout_netlogtemplatedefault_netlog_network_statistic { position:relative; float:left; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1); +rounded(5px, true, true, false, false); color:#555; float:left; font-size:10px; line-height:1.7; margin:-11px 20px 0 0; max-width:145px; padding:12px 20px 15px 48px; }
+.layout_netlogtemplatedefault_netlog_network_statistic .statistics_icon { position:absolute; left:12px; top:14px; width:25px; height:25px; background:url(images/ico_statistic.png) no-repeat; }
+
+
+
+
+
+
+/* OTHER */
+
+
+	.browseclassifieds_criteria { background:#fff; }
+
+	/* PULLDOWN MENU */
+.pulldown_contents { overflow:hidden; background:$theme_pulldown_contents_background_color; max-height:500px; overflow-y:auto; }
+.pulldown_contents ul > li { padding:5px; padding-right:15px; font-size:.8em; -moz-user-select:none; -webkit-user-select:none; }
+.pulldown_contents ul > li + li { border-top: 1px solid $theme_border_color; }
+.pulldown_contents ul > li:hover { background-color:$theme_pulldown_contents_list_background_color_hover; cursor:pointer; }
+.pulldown_options { margin: 4px 0px; }
+.pulldown_options a { color:$theme_pulldown_font_color_active; font-size:.8em; padding:3px; margin-right:3px; }
+
+.pulldown > a,
+.pulldown_active > a { display:inline-block; font-weight:bold; padding:5px 7px 5px 18px; background-position:6px 5px; outline:none; font-size:.8em; -moz-user-select:none; -webkit-user-select:none; background-image:url(~/application/modules/Core/externals/images/more.png); background-repeat:no-repeat; }
+.pulldown > a { +rounded(4px); background-color:$theme_pulldown_background_color; text-decoration:none; }
+.pulldown > a:hover { background-color:$theme_pulldown_background_color_hover; }
+.pulldown_active > a { +rounded(4px, false, false, true, true); background-color:$theme_pulldown_background_color_active; color:$theme_pulldown_font_color_active; text-decoration:none; background-image:url(~/application/modules/Core/externals/images/more_active.png); }
+.pulldown_active .pulldown_contents_wrapper { display: block; }
+	/* END PULLDOWN MENU */
+
+
+a.buttonlink { background-repeat:no-repeat; background-position:0px 0px; padding-left:21px; font-weight:bold; display:inline-block; }
+
+
+
+
+/* welcome screen */
+#global_page_core-index-index .layout_left { width:240px; }
+#global_page_core-index-index .layout_right { width:335px; }
+.layout_random_members h2 { margin-bottom:8px; }
+.layout_random_members ul { overflow:hidden; }
+.layout_random_members ul li { float:left; height:48px; }
+.layout_random_members ul li img { border:none; width:48px; height:48px; }
+.layout_random_members .widget-container { background:url(images/bg_darkbox.png) left bottom repeat-x #222; width:240px; +rounded(5px); overflow:hidden; }
+.layout_random_members .widget-container h1, .layout_random_members .widget-container h2, .layout_random_members .widget-container h3 { color:#fff; margin-bottom:8px; }
+.layout_random_members .sep_welcome_block_descr { padding:14px 10px 8px 10px; color:#eee; line-height:1.3; border-top:1px solid #ccc; }
+
+.layout_netlogtemplate_netlog_mobile_version { border:1px solid #ccc; padding:6px 10px 8px; +rounded; }
+.layout_netlogtemplate_netlog_mobile_version h2 { margin-bottom:8px; }
+.layout_netlogtemplate_netlog_mobile_version .mobile-version-descr { min-height:125px; padding-left:90px; background:url(images/img_mobile.png) no-repeat 7px 0; color:#666; }
+
+
+/* active members widget */
+.layout_active_members { clear:both; overflow:auto; width:100%; margin-bottom:15px; }
+.layout_active_members > ul { +foreground; +rounded; padding:5px; }
+.layout_active_members > ul { overflow:hidden; }
+.layout_active_members > ul > li { float:left; width:85px; margin:5px; background:#fff; border:1px solid $theme_foreground_border_color; clear:none; overflow:hidden; padding:6px 5px; text-align:center; +rounded(5px); line-height:14px; height:120px; }
+.layout_active_members > ul > li a.popularmembers_thumb { display:inline; float:none; height:58px; width:58px; }
+.layout_active_members > ul > li a.popularmembers_thumb img.thumb_icon { height:75px; width:75px; }
+.layout_active_members > ul > li .popularmembers_info { padding:0; }
+.layout_active_members > ul > li img.thumb_profile { max-height:80px; max-width:80px; }
+
+
+
+	/* GLOBAL NOTICES (OUTSIDE FORMS) */
+.tip { overflow:hidden; clear:both; }
+.tip > span { +rounded; display:inline-block; background-repeat:no-repeat; background-position:6px 6px; padding:6px 6px 6px 27px; background-color:#faf6e4; float:left; margin-bottom:15px; background-image:url(~/application/modules/Core/externals/images/tip.png); border:1px solid #e4dfc6; }
+html[dir="rtl"] .tip > span { background-position:99% 50%; padding:6px 27px 6px 6px; float:right; }
+
+
+	/*
+	GLOBAL FORM RESPONSES
+	Used to show feedback from form submissions, i.e.
+	error/result messages.
+	*/
+ul.form-errors,
+ul.form-notices { margin: 0px 0px 20px 0px; overflow: hidden; }
+* + ul.form-errors,
+* + ul.form-notices { margin-top: 20px; }
+ul.form-errors > li,
+ul.form-notices > li { +rounded; margin: 7px 5px 7px 5px; padding: 5px 15px 5px 32px; background-repeat: no-repeat; background-position: 8px 5px; float: left; clear: left; overflow: hidden; border: 1px solid #ccc; }
+
+html[dir="rtl"] ul.form-errors > li,
+html[dir="rtl"] ul.form-notices > li { padding: 5px 32px 5px 15px; background-position: 98% 5px; float: right; clear: right; }
+ul.form-errors > li > b,
+ul.form-notices > li > b { text-transform: uppercase; font-size: .8em; }
+ul.form-errors > li > ul > li,
+ul.form-notices > li > ul > li { font-size: .9em; }
+ul.form-errors > li { background-image: url(~/application/modules/Core/externals/images/error.png); background-color: #faf7e9; }
+ul.form-notices > li { background-image: url(~/application/modules/Core/externals/images/notice.png); background-color: #e9faeb; }
+
+
+	/*
+	GLOBAL FORM ELEMENTS
+	Used for most forms throughout the site.
+	*/
+button { display:inline-block; background:url(images/bg_btn.png) $theme_button_background_color; border:none; +rounded(3px); color:#fff !important; cursor:pointer; font-size:12px; font-weight:bold; padding:4px 10px 6px; box-shadow:0 1px 1px rgba(0, 0, 0, 0.4); text-shadow:0 -1px 0 #900; vertical-align:middle; }
+button:hover { background:$theme_button_background_color_hover; cursor: pointer; }
+input[type=text],
+input[type=password],
+input.text,
+textarea { +rounded(3px); background-color: $theme_input_background_color; color: $theme_input_font_color; border-width: 1px; border-color: $theme_input_border_colors; padding: 2px; font-size: 10pt; resize: none; }
+input[type=checkbox],
+input[type=radio] { border: none; padding: 0px; margin: 2px 5px 0px 0px; width: auto; display: block; float: left; }
+html[dir="rtl"] input[type=checkbox],
+html[dir="rtl"] input[type=radio] { margin: 2px 0px 0px 5px; float: right; }
+input[type=checkbox] + label,
+input[type=radio] + label { display: block; cursor: pointer; }
+textarea { width: 300px; resize: none; }
+textarea.codebox { width: 95%; min-height: 200px; font-family: courier new, courier, serif; }
+select { +rounded(3px); background-color: $theme_input_background_color; color: $theme_input_font_color; border-width: 1px; border-color: $theme_input_border_colors; padding: 1px 0px 1px 1px; font-size: 10pt; max-width: 250px; }
+html[dir="rtl"] select { padding: 1px 1px 1px 0px; }
+select option { padding: 0px 10px 0px 3px; }
+html[dir="rtl"] select option { padding: 0px 3px 0px 10px; }
+a.buttonlink { background-repeat: no-repeat; background-position: 0px 0px; padding-left: 21px; font-weight: bold; display: inline-block; }
+html[dir="rtl"] a.buttonlink { background-position: top right; padding-left: 0px; padding-right: 21px; }
+a.buttonlink_right { background-repeat: no-repeat; background-position: top right; padding-right: 19px; font-weight: bold; display: inline-block; }
+html[dir="rtl"] a.buttonlink_right { background-position: top left; padding-right: 0px; padding-left: 19px; }
+br.multi-text-separator { margin-bottom: 8px; }
+
+
+	/*
+	LARGE BOX FORM
+	These styles are for large forms that are given an exclusive page.
+	They are not intended for smaller forms that are embedded elsewhere.
+	Examples: Signup form, member settings form, etc.
+	*/
+
+/* form container */
+.global_form { clear: both; overflow: hidden; }
+
+/* external form border */
+.global_form > div { float: left; overflow: hidden; margin: 0px auto 0px auto; }
+
+html[dir="rtl"] .global_form > div { float: right; }
+
+/* internal form border */
+.global_form > div > div { +rounded(8px); border: 5px solid $theme_form_border_color; padding: 12px 12px 12px 12px; background-color: $theme_form_background_color; }
+
+/* form headline */
+.global_form div.form-wrapper-heading { font-weight: bold; border-bottom: 1px solid $theme_foreground_border_color_light; height: 1em; margin-bottom: 15px; }
+.global_form div.form-wrapper-heading > span { display: block; position: absolute; overflow: hidden; padding: 4px 6px 4px 0px; background: $theme_form_background_color; }
+html[dir="rtl"] .global_form div.form-wrapper-heading > span { padding: 4px 0px 4px 6px; }
+.global_form div.form-wrapper + div.form-wrapper-heading { margin-top: 10px; }
+
+/* form instructions (after title) */
+.global_form > div > div > h3 + p { padding: 2px; margin-top: 2px; max-width: 550px; }
+
+/* add some space above form elements if title/instructions precede */
+.global_form > div > div > h3 + div,
+.global_form > div > div > h3 + p + div { margin-top: 20px; }
+
+/* container for form label/element rows */
+.global_form > div > div { overflow: hidden; }
+
+/* container row for a label (left) and element (right) */
+.global_form div.form-wrapper { clear: both; overflow: hidden; }
+
+/* left-side element label container */
+.global_form div.form-label { width: 150px; text-align: right; padding: 4px 15px 0px 2px; margin-bottom: 10px; overflow: hidden; float: left; clear: left; font-size: .9em; font-weight: bold; color: $theme_form_label_font_color; }
+html[dir="rtl"] .global_form div.form-label { text-align: left; padding: 4px 2px 0px 15px; float: right; clear: right; }
+
+/* right-side form element container */
+.global_form div.form-element { min-width: 150px; max-width: 600px; text-align: left; margin-bottom: 10px; overflow: hidden; float: left; clear: none; }
+html[dir="rtl"] .global_form div.form-element { text-align: right; float: right; }
+
+/* all paragraphs of text in the form */
+.global_form div > p { max-width: 450px; padding-bottom: 10px; }
+
+/* paragraphs of text that come after an input element */
+.global_form div > input + p { margin-top: 3px; font-size: 7pt; }
+
+/* all text inputs in form */
+.global_form input[type=text],
+.global_form input[type=password] {padding: 2px; font-size: 10pt; width: 200px; }
+
+/* only for text inputs that come after other text inputs */
+/* i.e. for when there is a vertical list of text inputs */
+.global_form input[type=text] + input[type=text] { display: block; margin-top: 5px; }
+
+/* all checkboxes and radios in form */
+.global_form input[type=checkbox],
+.global_form input[type=radio] { clear: left; }
+html[dir="rtl"] .global_form input[type=checkbox],
+html[dir="rtl"] .global_form input[type=radio] { clear: right; }
+
+/* for clickable labels that appear to the right of elements */
+/* such as checkboxes or radios */
+.global_form input + label { float: left; display: block; margin-top: 0px; margin-left: 2px; }
+html[dir="rtl"] .global_form input + label { float: right; margin-left: 0px; margin-right: 2px; }
+
+/* all select boxes in form */
+.global_form select { padding: 1px 0px 1px 1px; font-size: 10pt; max-width: 250px; }
+html[dir="rtl"] .global_form select { padding: 1px 1px 1px 0px; }
+
+/* all textareas in form */
+.global_form textarea { padding: 4px; font-size: 10pt; max-width: 300px; min-height: 100px; }
+.global_form p.description { margin: 3px 0px 10px 0px; padding: 0px; }
+.global_form #submit-element { margin-bottom: 0px; }
+.global_form button[type=submit] { margin-right: 3px; }
+html[dir="rtl"] .global_form button[type=submit] { margin-right: 0px; margin-left: 3px; }
+
+	/* SMALL BOX FORM */
+.global_form_box { +foreground; +rounded; padding: 10px; width: auto; }
+.global_form_box .form-wrapper + .form-wrapper { margin-top: 5px; }
+.global_form_box .form-label { padding: 0px; width: auto; float: none; clear: both; margin: 0px; }
+.global_form_box label { text-align: left; display: block; font-size:1em; margin-bottom: 2px;}
+html[dir="rtl"] .global_form_box label { text-align: right; }
+.global_form_box .form-element { overflow: hidden; }
+
+
+	/* FILTER FORM */
+form.filters { +foreground; +rounded; padding: 10px; }
+form.filters div.form-label { margin-bottom: 3px; font-size: .8em; }
+form.filters div.form-element { margin-top: 2px; }
+form.filters button { margin-top: 4px; }
+form.filters dt { font-size: .8em; padding-bottom: 2px; }
+form.filters dd { margin-bottom: 8px; }
+
+
+	/* POPUP FORM These are used to style popup (i.e. smoothbox) forms. Also used to style popup response messages, etc. */
+.global_form_popup { padding: 10px 10px 10px 13px; overflow: hidden; }
+html[dir="rtl"] .global_form_popup { padding: 10px 13px 10px 10px; float: right; }
+.global_form_popup #submit-wrapper,
+.global_form_popup #cancel-wrapper { float: left; overflow: hidden; }
+html[dir="rtl"] .global_form_popup #submit-wrapper,
+html[dir="rtl"] .global_form_popup #cancel-wrapper { float: right; }
+.global_form_popup #buttons-wrapper { margin-top: 10px; }
+.global_form_popup #buttons-wrapper button { margin-right: 4px; }
+html[dir="rtl"] .global_form_popup #buttons-wrapper button { margin-right: 0px; margin-left: 4px; }
+.global_form_popup_message { display: block; padding: 1em; text-align: center; font-weight: bold; }
+
+
+	/* UPLOAD FORM Styles the file upload form. */
+#form-upload #submit-wrapper { display: none; }
+#form-upload #demo-status a.buttonlink { margin-right: 15px; }
+
+
+	/* SEARCH PAGE. Used to style the main search page. */
+#searchform { float: left; clear: right; padding: 5px; }
+#searchform input[type=text] { width: 300px; }
+#searchform #query-label { display: none; }
+#searchform #query-wrapper { float: left; overflow: hidden; padding: 3px; }
+#searchform #submit-label { display: none; }
+#searchform #submit-wrapper { float: left; overflow: hidden; margin-left: 1px; }
+.search_result { overflow: hidden; width: 500px; margin-top: 10px; border-top-width: 1px; padding-top: 10px; }
+.search_result .search_photo { display: block; float: left; overflow: hidden; margin-right: 7px; }
+.search_result .search_icon { display: block; float: left; overflow: hidden; width: 48px; margin-right: 7px; }
+.search_result img { margin:auto; display:block; }
+.search_result .search_info { display:block; overflow:hidden; }
+.search_result .search_title { font-size:1.1em; }
+.search_result .highlighted-text { font-weight:bold; }
+
+
+
+	/* COMMENTS These styles are used everywhere comments appear. */
+.feed_item_date + .comments { margin-top: 5px; }
+.comments { width: 450px; }
+.comments > ul { overflow: hidden; }
+.comments > ul > li { +foreground; background-image: none; border: none; padding: 5px; border-top: 1px solid $theme_foreground_border_color; overflow: hidden; margin-bottom: 1px; }
+.comments .comments_author a { font-weight: bold; margin-right: 2px; }
+html[dir="rtl"] .comments .comments_author a { margin-right: 0px; margin-left: 2px; }
+html[dir="rtl"] .comments_author { float: right; }
+.comments .comments_author_photo { float: left; overflow: hidden; line-height: 0px; font-size: 0px; }
+html[dir="rtl"] .comments .comments_author_photo { float: right; }
+.comments .comments_author_photo img { display: block; }
+.comments .comments_options { font-weight: bold; font-size: 1em; color: $theme_font_color_light; margin-bottom: 6px; }
+.comments .comments_comment_options > a{ font-size: .8em; font-weight: bold; margin-top: 5px; overflow: hidden; }
+.comments .comments_info { font-size: .8em;padding-top: 2px; padding-left: 5px; overflow: hidden; }
+html[dir="rtl"] .comments .comments_info { padding-left: 0px; padding-right: 5px; }
+.comments .comments_date { font-size: .9em; margin-top: 4px; color: $theme_font_color_light; overflow: hidden; }
+.comments .comments_date li { float:left; margin-right:5px; }
+.comments .comments_likes, .comments .comments_viewall { font-size: .8em; }
+.comments .comments_likes a, .comments .comments_viewall a { font-weight: bold; }
+.comments > form { +foreground; background-image: none; border: none; padding: 5px 10px 5px 5px; border-top: 1px solid $theme_foreground_border_color; }
+html[dir="rtl"] .comments > form { padding: 5px 5px 5px 10px; }
+.comments > form > textarea { width: 100%; }
+.comments > form > button { display: block; margin-top: 7px; }
+div.comments_comment_likes_tips { border: 1px solid $theme_foreground_border_color; padding: 4px 7px; background-color: $theme_foreground_background_color; color: $theme_font_color_light; font-size: 0.9em; }
+
+
+	/* HEADLINE Used at the top of most browse pages. Often contains button-style tabs. */
+.headline { +rounded; +foreground; padding: 7px; overflow: hidden; margin-bottom: 15px; }
+.headline h2 { float: left;overflow: hidden; margin-right: 25px; margin-bottom: 0px; margin-left: 3px; }
+html[dir="rtl"] .headline h2 { float: right; margin-right: 3px; margin-left: 25px; }
+
+
+	/* TABS (BUTTON STYLE, DEFAULT) */
+.tabs { overflow: hidden; +rounded; }
+.tabs > ul li { float: left; overflow: hidden; }
+html[dir="rtl"] .tabs > ul li { float: right; }
+.tabs > ul li > a { +rounded; display: block; padding: .3em .6em .3em .6em; font-weight: bold; text-decoration: none; color: $theme_buttontabs_font_color; background-color: $theme_buttontabs_background_color; text-shadow:0 -1px 1px #444; }
+.tabs > ul li > a:hover { background-color: $theme_buttontabs_background_color_hover; text-decoration: none; color: $theme_buttontabs_font_color_hover; text-shadow:0 -1px 0 #444; }
+.tabs > ul li + li { margin-left: 10px; }
+html[dir="rtl"] .tabs > ul li + li { margin-left: 0px; margin-right: 10px; }
+.tabs > ul li.active > a { background-color: $theme_buttontabs_background_color_active; color: $theme_buttontabs_font_color_active; text-shadow:0 -1px 0 #900;  }
+.tabs > ul li.active > a:hover { text-decoration: none; }
+
+
+	/* TABS (TAB STYLE, NON-DEFAULT) */
+.tabs_alt { background-color: $theme_tabs_background_color; background-image: none; +rounded(3px, false, false, true, true); margin: 5px 0px 15px 0px; padding-top: 2px; -moz-user-select: none; -webkit-user-select: none; }
+.tabs_alt > ul { margin: 0px; text-align: left; font-weight: bold; border-bottom: 1px solid $theme_tabs_border_color; padding: 3px 0px 5px 7px; }
+html[dir="rtl"] .tabs_alt > ul { text-align: right; padding: 3px 7px 5px 0px; }
+.tabs_alt > ul > li { display: inline-block; padding: 0px; *display: inline; /* fix for IE7 */ }
+.tabs_alt > ul > li.tab_active > a,
+.tabs_alt > ul > li.active > a { +rounded(3px, false, false, true, true); border: 1px solid $theme_tabs_border_color; border-bottom: none; background-color: $theme_tabs_background_color_active; color: $theme_tabs_font_color_active; position: relative; top: 1px; padding: 5px 6px 5px 6px; }
+.tabs_alt > ul > li > a { padding: 5px 7px 5px 7px; text-decoration: none; color: $theme_tabs_font_color; border-bottom: none; outline: none; }
+.tabs_alt > ul > li > a span { font-size: .8em; font-weight: normal; margin-left: 4px; border: none; }
+html[dir="rtl"] .tabs_alt > ul > li > a span { margin-left: 0px; margin-right: 4px; }
+.tabs_alt > ul > li > a:hover { background: $theme_tabs_background_color_hover; padding: 5px 6px 5px 6px; +rounded(3px, false, false, true, true); border: 1px solid $theme_tabs_border_color_hover; border-bottom: none; }
+.tab_container_inactive { display: none; }
+.tabs_alt > ul > li.tab_closed {}
+.tabs_alt > ul > li.tab_open > a { +rounded(3px, false, false, true, true); border: 1px solid $theme_pulldown_border_color; border-bottom: none; background-color: $theme_pulldown_background_color_active; color: $theme_pulldown_font_color_active; position: relative; top: 1px; padding: 5px 6px 5px 6px; }
+.tab_pulldown_contents_wrapper { display: none; +rounded(3px, true, false, false, false); overflow: hidden; position: absolute; padding: 2px; margin-top: 21px; background-color: $theme_pulldown_border_color; z-index: 99; }
+.tab_pulldown_contents { overflow: hidden; background: $theme_pulldown_contents_background_color; max-height: 500px; overflow-y: auto; }
+.tab_pulldown_contents > ul > li { padding: 5px; font-size: .8em; min-width: 100px; max-width: 250px; -moz-user-select: none; -webkit-user-select: none; }
+.tab_pulldown_contents > ul > li.active { background-color: $theme_pulldown_contents_list_background_color_active; }
+.tab_pulldown_contents > ul > li + li { border-top: 1px solid $theme_border_color; }
+.tab_pulldown_contents > ul > li:hover { background-color: $theme_pulldown_contents_list_background_color_hover; cursor: pointer; }
+.tabs_alt > ul > li.tab_open .tab_pulldown_contents_wrapper { display: block;}
+
+
+
+	/* TAGS Styles lists of tags that are used for message recipients, lists of friend lists, etc. Each tag has its own remove link. */
+.tag { +rounded(3px); display: inline-block; background-color: $theme_tag_background_color; font-weight: bold; display: inline-block; float: left; padding: .4em .6em .4em .6em; margin: 0px 10px 5px 0px; font-size: .8em; }
+html[dir="rtl"] .tag { float: right; margin: 0px 0px 5px 10px; }
+.tag > a { text-decoration: none; padding-left: 6px; text-transform: uppercase; }
+html[dir="rtl"] .tag > a { float: left; padding-left: 0px; padding-right: 6px; }
+
+
+ul.feed .comments { width:auto; }
+ul.feed .feed_item_link_title { font-size:1.2em; }
+ul.feed .feed_item_link_desc { font-size:1em; }
+
+
+
+
+
+/* THIRD PARTY PLUGINS COMPATIBILITY */
+
+.seaddons_photo_strips div.thumb_photo { width:98px; }
+.featured_slideshow_mask{ width:490px; }
+.featured_slideshow_advanced_box .featured_slidebox{ width:500px; }

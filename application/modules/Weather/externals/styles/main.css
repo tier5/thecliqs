@@ -1,0 +1,97 @@
+
+.layout_weather_weather {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.weather_cont {
+  padding:10px;
+  +foreground;
+  +rounded(3px);
+}
+
+.weather_city {
+  letter-spacing:normal;
+  margin-bottom:10px;
+  padding:2px;
+  font-size:14px;
+  border-bottom:1px solid $theme_foreground_border_color;
+}
+
+.weather_forecast_body {
+  margin:4px 0;
+  padding:6px;
+  background-color: $theme_pulldown_contents_list_background_color_hover;
+}
+
+.he_active_theme_default .weather_forecast_body, .he_active_theme_snowbot .weather_forecast_body {
+  background-color:$theme_pulldown_background_color_hover;
+}
+
+.weather_forecast_body .condition {
+  float:left;
+  width:108px;
+}
+
+.weather_forecast_body .weather_icon {
+  float:left;
+  width:48px;
+  height:44px;
+}
+
+.weather_forecast_body img {
+  border: 1px solid $theme_photo_border_color;
+  background-color:$theme_body_background_color;
+  padding:1px;
+}
+
+.weather_forecast_title {
+  margin-top:8px;
+  font-size:12px;
+}
+
+.weather_forecast_body .day_of_week {
+  background-color:$theme_body_background_color;
+  display:inline;
+  float:right;
+  padding:1px 4px;
+  font-size:12px;
+  border:1px solid $theme_foreground_border_color;
+  +rounded(5px);
+}
+
+.layout_weather_weather .he_active_theme_bamboo {
+  padding:0px;
+}
+
+.edit_location_data_btn {
+  width:16px;
+  height:16px;
+  display:block;
+  background-image:url(~/application/modules/User/externals/images/edit.png);
+  background-repeat:no-repeat;
+  background-position:0 0;
+  float:right;
+}
+
+.weather_location_input {
+  margin:8px 0;
+  width:300px;
+}
+
+.weather_loading {
+  width: 100px;
+  height:150px;
+  margin:auto;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-image:url(~/application/modules/Weather/externals/images/_loading.gif);
+}
+
+.weather_forecast_body .condition span, .weather_forecast_body .condition b {
+  display:block;
+}
+
+.he_active_theme_bamboo .weather_forecast_body .condition {
+  width:102px;
+}

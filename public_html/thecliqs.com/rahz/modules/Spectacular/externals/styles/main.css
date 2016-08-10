@@ -1,0 +1,211 @@
+/* $Id: main.css 2014-10-09 00:00:00Z SocialEngineAddOns Copyright 2013-2014 BigStep Technologies Pvt. Ltd. $ */
+
+/*Home page footer text widget*/
+.layout_spectacular_homepage_footertext .signupblock{
+    padding:0 0 30px;
+}
+.layout_page_footer .generic_layout_container h3{
+    color:#fff;
+    font-size:24px !important;
+    text-transform:uppercase;
+    border:none;
+    text-align:center;
+}
+.desc-text {
+    font-size: 16px;
+    color: $theme_font_color;
+    text-align: center;
+    width:56%;
+    margin:10px auto 40px auto;
+    line-height:21px;
+}
+.signupblock,
+[dir="rtl"] .signupblock{
+    text-align: center;
+}
+.signupblock a {
+    background-color: $theme_button_background_color;
+    border-radius: 2px;
+    color: $theme_button_font_color;
+    padding: 12px 45px;
+    box-shadow: none;
+    font-weight: lighter;
+    cursor:pointer;
+}
+.signupblock a:link,
+.signupblock a:visited{
+    color: $theme_button_font_color;
+}
+.signupblock a:hover{
+    opacity:.8
+}
+
+/*Home page Images widget*/
+.slideblock {
+    position: relative;
+}
+.slideblok_image img {
+    width: 100%;
+}
+.slideoverlay {
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:1;
+}
+.toptext{
+    position:absolute;
+    top:25%;
+    left:0;
+    right:0;
+    z-index:2;
+}
+.toptext h1{
+    color:#fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size:4em;
+    margin-bottom:20px;
+}
+.toptext article{
+    color:#fff;
+    text-align: center;
+    font-weight: normal;
+    font-size:1.8em;
+}
+.layout_spectacular_images .spec_btnsblock{
+    width:100%;
+    margin:0 auto;
+    margin-top:10%;
+    text-align:center;
+}
+[dir="rtl"] .layout_spectacular_images .spec_btnsblock{
+    text-align:center;
+}
+.layout_spectacular_images .spec_btnsblock a{
+    color:#fff!important;
+    font-size:18px;
+    text-decoration:none;
+    background-color:rgba(255,255,255,.5);
+    border-radius:3px;
+    padding:13px 52px;
+    box-shadow:0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.layout_spectacular_images .spec_btnsblock a + a{
+    margin-left:12px; 
+}
+.layout_spectacular_images .spec_btnsblock a:hover{
+    background-color:#fff;
+    text-shadow:none;
+}
+.layout_spectacular_images .spec_btnsblock a + a:hover{
+    color:#fff!important;
+    text-shadow:none;
+    opacity:.7;
+}
+/* Sign in  and sign up pop up buttons */
+.sitemenu_lightbox .sitemenu_signup_instead_btn button, .sitemenu_lightbox .sitemenu_login_instead_btn button{
+    background:$theme_topbar_background_color;	
+}
+.sitemenu_lightbox .sitemenu_signup_instead_btn button:hover, .sitemenu_lightbox .sitemenu_login_instead_btn button:hover{
+    background:$theme_topbar_background_color;	
+}
+
+/*Spectacular Navigation*/
+.layout_spectacular_navigation {
+    background-color: $theme_buttontabs_background_color;
+    left: 0;
+    margin-top: 9px;
+    position: absolute;
+    right: 0;
+}
+.layout_spectacular_navigation > div {
+    clear: both;
+    margin: 0 auto;
+    width: $theme_topbar_width;
+}
+.layout_spectacular_navigation .headline {
+    border: 0;
+    margin: 0;
+}
+.layout_spectacular_navigation .tabs > ul > li.active > a {
+    border-bottom-color: #cacccd;
+    color: #cacccd;
+}
+.layout_spectacular_navigation .headline .tabs > ul > li > a:hover {
+    color: #cacccd;
+}
+
+/*spactacular Banner images widget*/
+.layout_spectacular_banner_images {
+    padding: 0 !important;
+    overflow: hidden;
+}
+.layout_spectacular_banner_images #slide-images {
+    height: 200px;
+}
+.layout_spectacular_banner_images .bannerimage-text { 
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 200px;
+    position: absolute;
+    top: 0;
+    width:100%;
+    display: table;
+    z-index:1;
+}
+.layout_spectacular_banner_images .bannerimage-text > div {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;	
+}
+.layout_spectacular_banner_images .bannerimage-text h1, .layout_spectacular_banner_images .bannerimage-text article {
+    margin: 0 auto;
+    width: $theme_content_width;
+}
+.layout_spectacular_banner_images .bannerimage-text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 55px;
+}
+.layout_spectacular_banner_images .bannerimage-text article{
+    font-size: 18px;
+    line-height: 25px;
+}
+/*For member homepage bannerimage*/
+.slideblok_image,
+.slideblok_image img{height:100%;}
+/* Spectacular landing page images widget */
+.seao_browse_btn .navigation li a{
+    color:$theme_link_color;	
+}
+.spectacular_images_create_account_btn a{
+    background-color:$theme_button_background_color;
+    border-bottom:2px solid $theme_button_border_color;
+}
+/* Bottom search on slider */
+.layout_spectacular_images .layout_spectacular_landing_search #global_search_form > button {
+    background-color:$theme_button_background_color;
+}
+/* How it works block */
+#how_it_works{
+    background-color:$theme_topbar_background_color !important;
+}
+/*sign up button */
+.layout_spectacular_images .spec_btnsblock a + a{
+    background-color:$theme_link_color_hover;
+}
+.layout_spectacular_images .spec_btnsblock a:hover{
+    color:$theme_button_background_color!important;
+}
+.layout_spectacular_images .spec_btnsblock a + a:hover{
+    background-color	:$theme_link_color_hover;
+}
+/* ------------------Responsive css-------------------- */
+@media screen and (max-width:1199px){
+    #global_page_core-index-index #global_wrapper .layout_main{width:100%;}
+}

@@ -1,0 +1,455 @@
+"pagetitle-credit-index-index";"Credits"
+"pagetitle-credit-buy-index";"Get More Credits"
+"pagetitle-credit-faq-index";"Credits FAQ"
+"pagetitle-credit-manage-index";"My Credits"
+"Credit";"Credit"
+"CREDIT_Credit";"HE - Credits"
+"Credits";"Credits"
+"My Credits";"My Credits"
+"Credits Plugin";"Credits Plugin"
+"Member Credits";"Member Credits"
+"Current Credits";"Credits Balance"
+"Earned Credits";"Total Earned Credits"
+"Spent Credits";"Total Spent Credits"
+"This page displays all users who scored more points";"This page displays all users who scored more credits"
+"transfer";"Transfer"
+"Credit Home";"Home"
+"%s Credit for ";"%s Credit for ";"%s Credits for "
+"Current Balance: %s Credits";"Current Balance: %s Credits"
+"CREDIT_My Credits Description";"Earn credits and increase your position. Below you can view quick statistics for your profile:"
+"CREDIT_Quick Links Description";"You can earn credits by posting various interesting social media content, for more information please check FAQ section."
+"CREDIT_FAQ_ACTION_TYPES_DESCRIPTION";"You can earn credits doing the following activities:"
+"%s You can buy credits by click this button.";"%s You can buy credits using your credit card, 2Checkout account or PayPal account, just click on <b>Buy Credits</b> button:"
+"Buy Credits";"Buy Credits"
+"more";"more"
+"How many credits would you like to add to your account?";"How many credits would you like to add to your account?"
+"% bonus";"% bonus"
+"Action Type";"Action Type"
+"Max Credit";"Max Credit"
+"Rollover Period";"Rollover Period"
+" day(s)";" day(s)"
+"never";"never"
+"Your Place";"Your Place"
+"Your Place %s";"Your Place %s"
+"Current Balance";"Current Balance"
+"start typing...";"start typing..."
+"Your Friend Name";"Your Friend Name"
+"Send Credit";"Send Credit"
+"Send Credits";"Send Credits"
+"Action Date";"Action Date"
+"Transaction List";"Transaction List"
+"Sending credits to %s";"Sending credits to %s"
+"This page displays all credits of current user";"This page displays the user credits"
+"Sorry, this User doesn't exist, please, choose from suggestion list!";"This member is not found. Please choose a member from suggestion list."
+"Sorry, you didn't enter credits";"Please type the number of credits which you would like to send."
+"Sorry, Admin doesn't allow to transfer for this level.";"Your member level is not allowed to send credits."
+"Sorry, Admin doesn't allow to transfer for you, you have reached the daily limit.";"Failed. You have reached the daily limit for sending credits."
+"%s credits successfully sent to your friend %s";"%s credits have been successfully sent to your friend %s"
+"Top Members";"Top Members"
+"Quick Links";"Quick Links"
+
+"_CREDIT_ADMIN_STATS_EARN";"Earned Credits"
+"_CREDIT_ADMIN_STATS_TRANSFER";"Transfered Credits"
+"_CREDIT_ADMIN_STATS_BUY";"Purchased Credits"
+"_CREDIT_ADMIN_STATS_SPENT";"Spent Credits"
+"Credit Transactions";"Transactions"
+"Assign Credits";"Assign Credits"
+"Credit Level Settings";"These settings are applied on a per member level basis. Start by selecting the member level you want to modify, then adjust the settings for that level below."
+"Yes, allow.";"Yes, allow."
+"No, do not allow";"No, do not allow"
+"Allow Credits?";"Allow Credits?"
+"CREDIT_FORM_ADMIN_LEVEL_ALLOW_CREDIT_DESCRIPTION";"Do you want to let members use(earn,spend,etc) credits?"
+"Allow Transfer?";"Allow Transfer?"
+"CREDIT_FORM_ADMIN_LEVEL_ALLOW_TRANSFER_DESCRIPTION";"Do you want to let members to transfer(send) credits?"
+"Max Credits Send";"Max Credits Send"
+"CREDIT_FORM_ADMIN_LEVEL_MAX_SEND_DESCRIPTION";"Set the max number of credits which can be sent"
+"Max Credits Receive";"Max Credits Receive"
+"CREDIT_FORM_ADMIN_LEVEL_MAX_RECEIVED_DESCRIPTION";"Set the max number of credits which can be received"
+"CREDIT_VIEWS_SCRIPTS_ADMINMEMBERS_INDEX_DESCRIPTION";"Below you browse members and view their credits balance, total earned and spent credits amount, edit their credit balance, etc. Please use the form below to find the member by Display Name."
+"Edit Member's Credit";"Edit Member's Credits Details"
+"CREDIT_ADMIN_EDIT_MEMBER_CREDITS_DESC";"Below you can edit the number of total earned, total spent credits and credit balance. Please be accurate to avoid any confusion."
+"Current";""
+"Earned";""
+"Spent";""
+"CREDIT_VIEWS_SCRIPTS_ADMINMEMBERS_TRANSACTIONS_DESCRIPTION";"Below you can browse credit transactions history of this user, you can filer transactions by type of credits(transfers, spent credits) and activity type(uploading photo, video, liking, etc)."
+"CREDIT_VIEWS_SCRIPTS_ADMININDEX_INDEX_DESCRIPTION";"Below you can browse credit transactions per user, type of credits(transfers, spent credits) and activity type(uploading photo, video, liking, etc)."
+"CREDIT_VIEWS_SCRIPTS_ADMINASSIGNCREDITS_INDEX_DESCRIPTION";"Here you can control all settings of credits, you can edit how many credits member can earn doing various activities within some period.<br /><br />
+`<b>Credit</b>` - set the number of credits which member can earn by doing this activity. Set it 0(zero) if you don't want members to earn credits doing this activity and this activity won't be displayed in FAQ section for members;<br /><br />
+`<b>Max</b>` - set the maximum number of credits which member can earn by doing this activity within Rollover Period;<br /><br />
+`<b>Rollover Period</b>` - is a period within Max number of credits restriction is applied. Set it 0(zero) if you would like to apply Max number of credits to forever;<br />"
+"CREDIT_VIEWS_SCRIPTS_ADMINGIVECREDITS_INDEX_DESCRIPTION";""
+"Give Mass Credits";"Give Mass Credits"
+"CREDIT_GIVE_MASS_CREDITS_DESC";"This form allows to you send credits to many members by member level, networks, or by selected members. For example, send 100 credits to all members from North America network.<br /><br />
+Also you can set this number of credits as a current balance. For example, set 500 credits to all members from Moderators member level."
+"Set default credits to users witch chose";"Set this number of credits as current balance"
+"How much do you want to give this users";"How much do you want to give this users"
+"All Users";"All Users"
+"by Level";"by Level"
+"by Network";"by Network"
+"Specific Users";"Specific Users"
+"All Levels";"All Levels"
+"All Networks";"All Networks"
+"Present to:";"Present to:"
+"Notification";"Notification"
+"Specific Users (or user)";"Select recipient(s) by name"
+"Giving Credits to Users";"Giving Credits to Members"
+"Sending mass message to chose users";"Sending mass message to the selected members"
+"Send What?";"How to notify member?"
+"CREDIT_Send or set credits message";"Hello,
+We have gifted credits for you. Please check your current credits balance at Credits section. Thank you for being with us.
+Site Administration"
+"CREDIT_VIEWS_SCRIPTS_ADMINPAYMENTS_INDEX_DESCRIPTION";"You can sell virtual credits to your members so they can buy using their credit card or PayPal account. You need to set up PayPal or 2Checkout settings to receive payments: <a href='admin/payment/gateway'>Payment Gateways</a><br />
+You can sell credit packets, you can set price and provide some discounts for a large packages - it automatically detects discounts and displays it accordingly."
+"Payment Settings";"Sell Credits"
+"Add";"Add"
+"Option";"Option"
+"CREDIT_VIEWS_SCRIPTS_ADMINSTATS_INDEX_DESCRIPTION";"Here you can view detailed statistics for earned, spent, transferred and purchased credits per period(this year, this month, this week), etc. Please use the form below to filter statistics."
+"CREDIT_VIEWS_SCRIPTS_ADMININDEX_BADGES_DESCRIPTION";"If you would like to provide get Badges feature which allows to you to intend members to get more credits to get appropriate Badges(Newbie, Officer, Silver Member, etc) then you to have <a href='http://anonym.to/http://www.hire-experts.com/social-engine/badges-plugin' target='_blank'>Badges plugin</a>. Badges plugin provides many other great features which increase interaction on your like Credits plugin, please check full detail here - <a href='http://anonym.to/http://www.hire-experts.com/social-engine/badges-plugin' target='_blank'>Badges plugin</a>."
+"CREDIT_ADMIN_BADGES_IS_DISABLED_DESCRIPTION";"If you have disabled Badges plugin then please enable to integrate it with Credits plugin."
+"You can send message or send notification or none of them";"You can send message or notification or none of them"
+"Badges";"Badges"
+
+"_EMAIL_CREDIT_TRANSACTION_OVERDUE_TITLE";"Credit Transaction Overdue"
+"_EMAIL_CREDIT_TRANSACTION_OVERDUE_DESCRIPTION";"This is the email that gets sent to a member when his payment for a credit packer is failed."
+"_EMAIL_CREDIT_TRANSACTION_OVERDUE_SUBJECT";"Your payment is failed."
+"_EMAIL_CREDIT_TRANSACTION_OVERDUE_BODY";"[header]
+
+Your payment to [credit_title] credit is failed.
+
+Please follow the link below to try again.
+
+[object_link]
+
+[footer]"
+
+"_EMAIL_CREDIT_TRANSACTION_SUCCESS_TITLE";"Credit Transaction Completed Successfully"
+"_EMAIL_CREDIT_TRANSACTION_SUCCESS_DESCRIPTION";"This is the email that gets sent to a member when his payment for a credit packer is completed successfully"
+"_EMAIL_CREDIT_TRANSACTION_SUCCESS_SUBJECT";"Your payment has been completed."
+"_EMAIL_CREDIT_TRANSACTION_SUCCESS_BODY";"[header]
+
+Thank you for purchasing from [credit_title] credit. Your payment has been completed successfully.
+
+[object_link]
+
+[footer]"
+
+
+
+"CREDIT_QUESTION_1";"What is credits?"
+"CREDIT_ANSWER_1";"Credits are a virtual currency you can use to send virtual gifts to friends and purchase goods at Store."
+
+"CREDIT_QUESTION_2";"How do I get Credits?"
+"CREDIT_ANSWER_2";"You can earn credits doing various activities on the site, like referring friends, playing quizzes, uploading photos, posting messages, participating in events, etc. Also you can purchase credits using credit card or PayPal account."
+
+"CREDIT_QUESTION_3";"Where can I use Credits?"
+"CREDIT_ANSWER_3";"You can use Credits to send virtual gifts to your friends on birthday, Christmas, etc. Also you can purchase goods at Store."
+
+"CREDIT_QUESTION_4";"Are Credits safe?"
+"CREDIT_ANSWER_4";"Credits are a secure virtual currency. It is not needed to share any your financial information on our site."
+
+"Transfer to someone";"Transfered Credits To"
+"Transfer from someone";"Transfered Credits From"
+"_CREDIT_ACTION_TYPE_GIVE_CREDITS";"Credits gifted from Site"
+"_CREDIT_ACTION_TYPE_SET_CREDITS";"Credits settled"
+"_CREDIT_ACTION_TYPE_BUY_CREDITS";"Purchased credits"
+"_CREDIT_ACTION_TYPE_SEND_GIFT";"Send gifts"
+
+"_CREDIT_ACTION_TYPE_ALBUM_PHOTO_NEW";"Upload a photo"
+"_CREDIT_ACTION_TYPE_BLOG_NEW";"Create a blog"
+"_CREDIT_ACTION_TYPE_CHECKIN_CHECK";"Check-in"
+"_CREDIT_ACTION_TYPE_NETWORK_JOIN";"Join a sub-network"
+"_CREDIT_ACTION_TYPE_CORE_LINK";"Share link on wall"
+"_CREDIT_ACTION_TYPE_ACTIVITY_LIKE";"Like posts on wall"
+"_CREDIT_ACTION_TYPE_STATUS";"Share your status on wall"
+"_CREDIT_ACTION_TYPE_ACTIVITY_COMMENT";"Comment posts on wall"
+"_CREDIT_ACTION_TYPE_SIGNUP";"Sign up"
+"_CREDIT_ACTION_TYPE_FRIENDS";"New friendship"
+"_CREDIT_ACTION_TYPE_CORE_LIKE";"Like photos, videos, pages, etc"
+"_CREDIT_ACTION_TYPE_CORE_COMMENT";"Comment photos, videos, etc"
+"_CREDIT_ACTION_TYPE_USER_LOGIN";"Sign in"
+"_CREDIT_ACTION_TYPE_EVENT_PHOTO_UPLOAD";"Upload photo to an event"
+"_CREDIT_ACTION_TYPE_EVENT_CREATE";"Create a new event"
+"_CREDIT_ACTION_TYPE_EVENT_JOIN";"Join an event"
+"_CREDIT_ACTION_TYPE_EVENT_TOPIC_CREATE";"Create topic in an event"
+"_CREDIT_ACTION_TYPE_EVENT_TOPIC_REPLY";"Post a message in an event topic"
+"_CREDIT_ACTION_TYPE_FORUM_TOPIC_CREATE";"Create a topic in a forum"
+"_CREDIT_ACTION_TYPE_FORUM_TOPIC_REPLY";"Post a message in a forum topic"
+"_CREDIT_ACTION_TYPE_REFER";"Refer friends(on sign up)"
+"_CREDIT_ACTION_TYPE_INVITE";"Invite friends"
+"_CREDIT_ACTION_TYPE_PAGE_CREATE";"Create a page"
+"_CREDIT_ACTION_TYPE_PAGEREVIEW_NEW";"Review a page"
+"_CREDIT_ACTION_TYPE_POST";"Share a post on a page wall"
+"_CREDIT_ACTION_TYPE_PAGEALBUM_PHOTO_NEW";"Upload a photo to a page"
+"_CREDIT_ACTION_TYPE_PAGEBLOG_NEW";"Post a blog to a page"
+"_CREDIT_ACTION_TYPE_PAGEVIDEO_NEW";"Post a video to a page"
+"_CREDIT_ACTION_TYPE_PAGEVENT_CREATE";"Create an event in a page"
+"_CREDIT_ACTION_TYPE_PAGEVENT_JOIN";"Join an event in a page"
+"_CREDIT_ACTION_TYPE_PAGE_TOPIC_CREATE";"Post a topic in a page"
+"_CREDIT_ACTION_TYPE_PAGE_TOPIC_REPLY";"Post a message in a page topic"
+"_CREDIT_ACTION_TYPE_PAGEDOCUMENT_NEW";"Create a document in a page"
+"_CREDIT_ACTION_TYPE_PAGEMUSIC_PLAYLIST_NEW";"Create a music playlist in a page"
+"_CREDIT_ACTION_TYPE_QUIZ_NEW";"Create a quiz"
+"_CREDIT_ACTION_TYPE_QUIZ_TAKE";"Pass a quiz"
+"_CREDIT_ACTION_TYPE_RATE";"Rate photos, videos, events, etc"
+"_CREDIT_ACTION_TYPE_STORE_PRODUCT_NEW";"Post a product in your store"
+"_CREDIT_ACTION_TYPE_SUGGEST";"Suggest photos, videos, events, etc"
+"_CREDIT_ACTION_TYPE_VIDEO";"Upload a video"
+"_CREDIT_ACTION_TYPE_CLASSIFIED_NEW";"Post a classified"
+"_CREDIT_ACTION_TYPE_POLL_NEW";"Create a poll"
+"_CREDIT_ACTION_TYPE_GROUP_CREATE";"Create a group"
+"_CREDIT_ACTION_TYPE_GROUP_JOIN";"Join a group"
+"_CREDIT_ACTION_TYPE_GROUP_TOPIC_CREATE";"Create a topic in a group"
+"_CREDIT_ACTION_TYPE_GROUP_TOPIC_REPLY";"Post a message in a group topic"
+"_CREDIT_ACTION_TYPE_GROUP_PHOTO_UPLOAD";"Upload a photo in a group"
+"_CREDIT_ACTION_TYPE_MUSIC_PLAYLIST_SONG";"Upload a music track in a playlist"
+"_CREDIT_ACTION_TYPE_ARTICLE_NEW";"Post an article"
+"_CREDIT_ACTION_TYPE_QUESTION_NEW";"Post a question"
+"_CREDIT_ACTION_TYPE_ANSWER_NEW";"Answer to a question"
+"_CREDIT_ACTION_TYPE_AVP_VIDEO_NEW_UPLOAD";"Upload a video"
+"_CREDIT_ACTION_TYPE_ADVGROUP_CREATE";"Create a group"
+"_CREDIT_ACTION_TYPE_ADVGROUP_JOIN";"Join a group"
+"_CREDIT_ACTION_TYPE_ADVGROUP_PHOTO_UPLOAD";"Upload a photo in a group"
+"_CREDIT_ACTION_TYPE_ADVGROUP_TOPIC_CREATE";"Create a topic in a group"
+"_CREDIT_ACTION_TYPE_ADVGROUP_TOPIC_REPLY";"Post a message in a group topic"
+"_CREDIT_ACTION_TYPE_YNFORUM_TOPIC_CREATE";"Create a topic in a forum"
+"_CREDIT_ACTION_TYPE_YNFORUM_TOPIC_REPLY";"Post a message in a forum topic"
+"_CREDIT_ACTION_TYPE_YNFORUM_POST_THANK";"Thank to a post in topic"
+"_CREDIT_ACTION_TYPE_BUY_PRODUCTS";"Buy Products"
+"_CREDIT_ACTION_TYPE_CANCEL_ORDER";"Canceling Order"
+"_CREDIT_ACTION_TYPE_PAGE_VIEW";"Visit a page"
+"_CREDIT_ACTION_TYPE_JOB_NEW";"Create a new job"
+"_CREDIT_ACTION_TYPE_AVP_VIDEO_NEW_IMPORT";"Importing a video"
+"_CREDIT_ACTION_TYPE_DOCUMENT_NEW";"Create a document"
+"_CREDIT_ACTION_TYPE_LIST_NEW";"Create a new listing"
+"_CREDIT_ACTION_TYPE_LIST_PHOTO_UPLOAD";"Add photos to a listing"
+"_CREDIT_ACTION_TYPE_LIST_TOPIC_CREATE";"Post a new topic in a listing"
+"_CREDIT_ACTION_TYPE_LIST_TOPIC_REPLY";"Post reply to a topic"
+"_CREDIT_ACTION_TYPE_REVIEW_LIST";"Post a review to a listing"
+"_CREDIT_ACTION_TYPE_POKE";"Poke a user"
+"_CREDIT_ACTION_TYPE_ARTARTICLE";"Create an article"
+"_CREDIT_ACTION_TYPE_YNBLOG_NEW";"Create a blog"
+"_CREDIT_ACTION_TYPE_YNVIDEO_PLAYLIST_NEW";"Create a new playlist"
+"_CREDIT_ACTION_TYPE_YNVIDEO_VIDEO_NEW";"Upload a video"
+"_CREDIT_ACTION_TYPE_YNVIDEO_PLAYLIST_ADD_VIDEO";"Add video to a playlist"
+"_CREDIT_ACTION_TYPE_YNVIDEO_ADD_FAVORITE";"Add video to favorites"
+"_CREDIT_ACTION_TYPE_YNVIDEO_ADD_VIDEO_NEW_PLAYLIST";"Add video to a new playlist"
+"_CREDIT_ACTION_TYPE_MP3MUSIC_ALBUM_SONG";"Upload music track to an album"
+"_CREDIT_ACTION_TYPE_BUY_LEVEL";"Change member level"
+"_CREDIT_ACTION_TYPE_BUY_OFFER";"Purchase Offer"
+"_CREDIT_ACTION_TYPE_DONATION_PROJECT_NEW";"Create a new project"
+"_CREDIT_ACTION_TYPE_DONATION_CHARITY_NEW";"Create a new charity"
+"_CREDIT_ACTION_TYPE_DONATION_FUNDRAISE_NEW";"Create a new fundraise"
+"_CREDIT_ACTION_TYPE_DONATION_DONATING_NEW";"New donation"
+"_CREDIT_ACTION_TYPE_HEQUESTION_ASK";"Create a new question"
+"_CREDIT_ACTION_TYPE_HEQUESTION_ASK_SELF";"Create a new question to yourself"
+"_CREDIT_ACTION_TYPE_HEQUESTION_ANSWER";"Answer the question"
+"_CREDIT_ACTION_TYPE_USER_PROFILE_EDIT";"Edit user's profile"
+"_CREDIT_ACTION_TYPE_YNEVENT_CREATE";"Create a new advanced event"
+"_CREDIT_ACTION_TYPE_YNEVENT_TOPIC_CREATE";"Create topic in an advanced event"
+"_CREDIT_ACTION_TYPE_YNEVENT_JOIN";"Join an advanced event"
+"_CREDIT_ACTION_TYPE_YNEVENT_TOPIC_REPLY";"Post a message in an advanced event topic"
+"_CREDIT_ACTION_TYPE_YNEVENT_PHOTO_UPLOAD";"Upload photo to an advanced event"
+"_CREDIT_ACTION_TYPE_SHARE_POST_FACEBOOK";"Share post on facebook"
+"_CREDIT_ACTION_TYPE_SHARE_POST_TWITTER";"Share post on twitter"
+"_CREDIT_ACTION_TYPE_SHARE_POST_LINKEDIN";"Share post on linkedin"
+
+"Adding %d photo(s) to %s album";"Adding %d photo(s) to %s album"
+"Writing %s blog entry";"Writing %s blog entry"
+"Posting %s video";"Posting %s video"
+"Posting %s classified listing";"Posting %s classified listing"
+"Creating %s poll";"Creating %s poll"
+"Posting %s topic in a forum";"Posting %s topic in a forum"
+"Creating %s page";"Creating %s page"
+"Creating %s group";"Creating %s group"
+"Creating %s event";"Creating %s event"
+"Adding %s song to the playlist";"Adding %s song to the playlist"
+"Attaching %s link";"Attaching %s link"
+"Updating Status - %s %s";"Updating Status - %s %s"
+"Sign Up";"Sign Up"
+"Adding a new friend - %s";"Adding a new friend - %s"
+"Sending credits to %s";"Sending credits to %s"
+"Receiving credits from %s";"Receiving credits from %s"
+"Like %s";"Like %s"
+"Commenting %s";"Commenting %s"
+"Log in";"Log in"
+"Admin giving you credits";"Admin giving you credits"
+"Admin set your credits, now you have an initial balance of %s";"Admin set your credits, now you have an initial balance of %s"
+"Posting message in %s topic";"Posting message in %s topic"
+"Joining %s event";"Joining %s event"
+"Creating %s event topic";"Creating %s event topic"
+"Posting message in %s event topic";"Posting message in %s event topic"
+"Creating a new document on %s page";"Creating a new document on %s page"
+"Creating product %s";"Creating product %s"
+"Rating %s";"Rating %s"
+"Joining %s group";"Joining %s group"
+"Creating %s group topic";"Creating %s group topic"
+"Posting message in %s group topic";"Posting message in %s group topic"
+"Check-in %s";"Check-in %s"
+"Adding %d photo(s) to %s group";"Adding %d photo(s) to %s group"
+"Adding %d photo(s) to %s event";"Adding %d photo(s) to %s event"
+"Suggesting %s to friends";"Suggesting %s to friends"
+"Joining in %s network";"Joining in %s network"
+"Referrering %s to join Site";"Referrering %s to join Site"
+"Inviting %s to join Site";"Inviting %s to join Site"
+"Creating %s quiz";"Creating %s quiz"
+"Taking %s quiz";"Taking %s quiz"
+"Creating %s article";"Creating %s article"
+"Asking %s question";"Asking %s question"
+"Answering to %s question";"Answering to %s question"
+"Sending Gift to %s users";"Sending Gift to %s users"
+"Like %s post";"Like %s post"
+"Comment %s post";"Comment %s post"
+"Writing review on %s page";"Writing review on %s page"
+"Posting on %s page";"Posting on %s page"
+"Posting %s video";"Posting %s video"
+"Adding %d photo(s) on %s page";"Adding %d photo(s) on %s page"
+"Writing a new blog entry on %s page";"Writing a new blog entry on %s page"
+"Posting a new video on %s page";"Posting a new video on %s page"
+"Creating a new event on %s page";"Creating a new event on %s page"
+"Joining an event on %s page";"Joining an event on %s page"
+"Posting a new topic on %s page";"Posting a new topic on %s page"
+"Posting message to topic on %s page";"Posting message to topic on %s page"
+"Adding %d song(s) to %s page";"Adding %d song(s) to %s page"
+"Thanking to a post in %s topic";"Thanking to a post in %s topic"
+"Buying products";"Buying products"
+"Admin canceling order and back credits";"Admin canceling order and back credits"
+"Visiting %s page";"Visiting %s page"
+"Posting new job %s";"Posting new job %s"
+"Importing %s video";"Importing %s video"
+"Posting a new listing %s";"Posting a new listing %s"
+"Creating a new document %s";"Creating a new document %s"
+"Uploading a %d photo(s) to %s list";"Uploading a %d photo(s) to %s list"
+"Posting a new listing topic %s";"Posting a new listing topic %s"
+"Replying the listing topic %s";"Replying to the listing topic %s"
+"Posting a review in the listing %s";"Posting a review in the listing %s"
+"Poking %s";"Poking %s"
+"Creating article %s";"Creating article %s"
+"Creating playlist %s";"Creating playlist %s"
+"Adding video to playlist %s";"Adding video to playlist %s"
+"Adding video to favorites";"Adding video to favorites"
+"Adding video to new playlist %s";"Adding video to new playlist %s"
+"Posting new video %s";"Posting new video %s"
+"Adding new song to the %s album";"Adding new song to the %s album"
+"Changing member level to %s";"Changing member level to %s"
+"Purchase offer %s";"Purchase offer %s"
+"Creating new charity %s";"Creating new charity %s"
+"Creating new project %s";"Creating new project %s"
+"Creating new fundraise %s";"Creating new fundraise %s"
+"New Donation to %s";"New Donation to %s"
+"%s asked %s";"%s asked %s"
+"%s arrow %s asked %s";"%s arrow %s asked %s"
+"%s answered %s with %s";"%s answered %s with %s"
+"Editing %s's profile";"Editing %s's profile"
+"Joining %s event";"Joining %s event"
+"Creating %s event";"Creating %s event"
+"Posting message in %s event topic";"Posting message in %s event topic"
+"Adding %d photo(s) to %s event";"Adding %d photo(s) to %s event"
+"Creating %s event topic";"Creating %s event topic"
+
+"{item:$subject} give you {item:$object:$amount} credits. Check it {item:$object:$label:$action}.";"{item:$subject} sent you {item:$object:$amount} credits. Check details {item:$object:$label:$action}."
+"{item:$subject} set you {item:$object:$amount} credits. Check it {item:$object:$label:$action}.";"{item:$subject} changed your credit balance to {item:$object:$amount} credits. Check detail {item:$object:$label:$action}."
+"CREDIT_No one has earned credits.";"No one has earned credits."
+"Group Types";"Group Types"
+"Action Types";"Action Types"
+"%s action found";"%s action found";"%s actions found"
+"day(s)";"day(s)"
+"Current Credit";"Credit Balance"
+"Earned Credit";"Earned Credits"
+"Spent Credit";"Spent Credits"
+"Credits Transactions";"Credit Transactions"
+"Edit member's credit";"Edit member's credit"
+"Member Levels:";"Member Levels:"
+"You chose %s credits for %s";"You chose %s credits for %s"
+"Please wait...";"Please wait..."
+"Buying Credit";"Buying Credit"
+"ACTIVITY_TYPE_SEND_CREDITS";"When admin send credits"
+"ACTIVITY_TYPE_SET_CREDITS";"When admin set credits"
+"CREDIT_PAYMENT_GATEWAY_SELECT";"Please select payment option using which you will pay, you will be taken to a secure checkout area where you can fulfil your financial information."
+"There are no users to give credits";"There are no users to give credits"
+"Your credits is not number";"Please type number for Credits field."
+"Only unsigned number";"Please type only unsigned number."
+"You cannot send 0 credits";"You cannot send 0 credits."
+"Credits have been successfully set to %s users";"Credits have been successfully set to %s users"
+"Credits have been successfully sent to %s users";"Credits have been successfully sent to %s users"
+Please wait, the credits are still sending, do not close this page! There are still <span style="color: red">%s</span> users who have not received credits.;Please wait, the credits are still sending, do not close this page! There are still <span style="color: red">%s</span> users who have not received credits.
+
+
+"Payment";"Payment"
+"2Checkout";"2Checkout"
+"Pay with %1$s";"Pay with %1$s"
+_CREDIT_advgroup;advgroup
+_CREDIT_album;album
+_CREDIT_article;article
+_CREDIT_avp;avp
+_CREDIT_blog;blog
+_CREDIT_checkin;checkin
+_CREDIT_classified;classified
+_CREDIT_core;core
+_CREDIT_event;event
+_CREDIT_forum;forum
+_CREDIT_group;group
+_CREDIT_inviter;inviter
+_CREDIT_music;music
+_CREDIT_page;page
+_CREDIT_poll;poll
+_CREDIT_question;question
+_CREDIT_quiz;quiz
+_CREDIT_rate;rate
+_CREDIT_store;store
+_CREDIT_suggest;suggest
+_CREDIT_video;video
+_CREDIT_ynforum;ynforum
+_CREDIT_list;Listing
+_CREDIT_document;Documents
+_CREDIT_poke;Poke
+_CREDIT_advancedarticles;Advanced Articles
+_CREDIT_ynblog;Advanced Blog(Younet)
+_CREDIT_ynvideo;Advanced Video(Younet)
+_CREDIT_mp3music;Mp3 Music Selling
+_CREDIT_job;Job
+_CREDIT_donation;Donation
+_CREDIT_hequestion;Advanced Questions
+_CREDIT_ynevent;Advanced Events
+
+"CREDIT_ADMIN_BADGES_IS_ENABLED_DESCRIPTION";"You can set up Ranks(Badges) given to members when they reach some number of credits: 100 credits to get Bronze Member rank, 200 credits to get Silver Member rank, etc.<br />
+Please check set up ranks here - <a href='./admin/hebadge/creditbadges'>Credit Ranks</a>."
+CREDIT_VIEWS_SCRIPTS_ADMINSETTINGS_EXCHANGE_DESCRIPTION;Please set here your Credits Exchange Rate which is used to automatically calculate store products costs in credits. Of course if you have Store plugin and products are configured to be sold for credits. This rate doesn't affect your credits packages(Sell Credits section), where you can create any credits package at any price.
+CREDIT_VIEWS_SCRIPTS_ADMINSETTINGS_EXCHANGE_ATTENTION;Please be accurate while changing this setting. It is not recommened to change it frequently because may cause members confusion. Please carefully select this rate depending on how many credits are given to members for their activity. It is recommended to have it high as 100 credits for %s
+How much is %s in credits?;How much is %s in credits?
+Exchange;Exchange
+Exchange Settings;Exchange Settings
+Delete Log;Delete Log
+Are you sure you want to delete this log?;Are you sure you want to delete this log?
+Log doesn't exists or not authorized to delete;Log doesn't exists or not authorized to delete
+Log has been deleted.;Log has been deleted.
+Buying Credit from %s;Buying Credit from %s
+Buying %s credits;Buying %s credits
+By Current Credits;By Current Credits
+By Earned Credits;By Earned Credits
+CREDIT_Sort Ordering;Top Members Sort Ordering
+CREDIT_Choose Sort Ordering Description;Select sort ordering for Top Members listing. The member position is fetched according to this sort ordering in My Credits widget too.
+Buy Level;Buy Level
+%s You can buy level via credits.;%s You can buy level via credits.
+Please choose one now below.;Please choose one now below.
+CREDIT_not-enough-credit;You don't have enough credits to proceed.
+Gateways do not match;Gateways do not match
+CREDIT_No orders found;No orders found
+Your payment has been cancelled and not been purchased. If this is not correct, please try again later.;Your payment has been cancelled and not been purchased. If this is not correct, please try again later.
+There was an error processing your transaction. Please try again later.;There was an error processing your transaction. Please try again later.
+You will be charged: %1$s;You will be charged: %1$s
+Allow Viewing of Credit Home?;Allow Viewing of Credit Home?
+Do you want to let members view Credit Home Page?;Do you want to let members view Credit Home Page?
+Yes, allow viewing of Credit Home, even private ones.;Yes, allow viewing of Credit Home, even private ones.
+Yes, allow viewing of Credit Home.;Yes, allow viewing of Credit Home.
+No, do not allow Credit Home to be viewed.;No, do not allow Credit Home to be viewed.
+Allow Viewing of Credit FAQ?;Allow Viewing of Credit FAQ?
+Do you want to let members view Credit FAQ Page?;Do you want to let members view Credit FAQ Page?
+Yes, allow viewing of Credit FAQ, even private ones.;Yes, allow viewing of Credit FAQ, even private ones.
+Yes, allow viewing of Credit FAQ.;Yes, allow viewing of Credit FAQ.
+No, do not allow Credit FAQ to be viewed.;No, do not allow Credit FAQ to be viewed.
+"CREDIT_Send Credits";"Send Credits"
+"CREDIT_You can send credits to user %s";"You can send credits to user %s"
+"CREDIT_If you would like to change your subscription, please click on the button \"Upgrade\"";"If you would like to change your subscription, please click on the button \"Upgrade\""
+"CREDIT_Upgrade";"Upgrade"
+"CREDIT_Your subscription plan has been expired. But you can choose one now below again.";"Your subscription plan has been expired. But you can choose one now below again."
+"You are currently paying: %1$s credits";"You are currently paying: %1$s credits"

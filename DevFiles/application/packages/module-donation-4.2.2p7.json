@@ -1,0 +1,2203 @@
+{
+  "type": "module",
+  "name": "donation",
+  "version": "4.2.2p7",
+  "revision": null,
+  "path": "application\/modules\/Donation",
+  "repository": null,
+  "date": "Mon, 18 Mar 2013 08:47:54 +0000",
+  "title": "Donation",
+  "description": "Donation Plugin",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Hire-Experts LLC"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Mon, 18 Mar 2013 08:47:54 +0000",
+    "title": "Donation",
+    "description": "Donation Plugin",
+    "developer": null,
+    "authors": [
+      "Hire-Experts LLC"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Donation\/settings\/install.php",
+    "class": "Donation_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-hecore": {
+      "type": "module",
+      "name": "hecore",
+      "guid": "module-hecore",
+      "minVersion": "4.1.8",
+      "maxVersion": null,
+      "excludeExcept": null
+    },
+    "module-like": {
+      "type": "module",
+      "name": "like",
+      "guid": "module-like",
+      "minVersion": "4.2.1",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Donation": {
+      "type": "directory",
+      "path": "application\/modules\/Donation",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4538,
+          "sha1": "92dfd7030972744dc9af2962b5864b36d224e7d8"
+        },
+        {
+          "path": "Api\/Gmap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5492,
+          "sha1": "088a012406e3845f61871a9bf17ea5f1d490ecb7"
+        },
+        {
+          "path": "Api\/Page.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1846,
+          "sha1": "ec8bd870a1e3997cc41f164d854608cb9d3004e9"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 935,
+          "sha1": "a9961f416f735b85a06d117ad21835a76bbae287"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminCategoryController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4480,
+          "sha1": "df217920758a45c99a36581677f7d1ac8c8dc270"
+        },
+        {
+          "path": "controllers\/AdminDonationsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4525,
+          "sha1": "b878849989b3d53edca3cd885d473168f0a23a54"
+        },
+        {
+          "path": "controllers\/AdminGlobalController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1189,
+          "sha1": "c1d9c88ec40149f093ea0a9e974a764839bef499"
+        },
+        {
+          "path": "controllers\/AdminLevelController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1727,
+          "sha1": "651c72a6c2c9b1e2d66ca87fcfde356c791c318a"
+        },
+        {
+          "path": "controllers\/AdminStatisticsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 13092,
+          "sha1": "2dd985aa3a583f78cf0d1beff08d007e7e446733"
+        },
+        {
+          "path": "controllers\/CharityController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 16228,
+          "sha1": "92b220d9ceba6dfd9984d52b2263f4dbcec802e6"
+        },
+        {
+          "path": "controllers\/DonationController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11395,
+          "sha1": "ab8f216c42cc19c437cf4637f36d7bcc4bb24ebd"
+        },
+        {
+          "path": "controllers\/DonorsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 419,
+          "sha1": "d6dd49e2950ba0671d85c9f02136285c63afdc5e"
+        },
+        {
+          "path": "controllers\/FundraiseController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 12782,
+          "sha1": "fab9ca40d0cd951534a60f6226212fa84e9a8635"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 10444,
+          "sha1": "0e81c0d6ab826f43445408f96172bef9b596d8ad"
+        },
+        {
+          "path": "controllers\/IpnController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5930,
+          "sha1": "890657d6a334bbb98c65eeb0dfb31c8ee4c2071f"
+        },
+        {
+          "path": "controllers\/PageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4441,
+          "sha1": "95c13a402385d6096c78126e0a80daac4b93d820"
+        },
+        {
+          "path": "controllers\/PhotoController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6606,
+          "sha1": "7139ff0717f689acc8d313e10a3cf635ff68037c"
+        },
+        {
+          "path": "controllers\/ProjectController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 18407,
+          "sha1": "5a4e2b84c9e1a8d7efab2aeca48075dc0e7d403a"
+        },
+        {
+          "path": "controllers\/StatisticsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8714,
+          "sha1": "e4047e907a9815968e8676040af7add9056634d9"
+        },
+        {
+          "path": "controllers\/TransactionsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5297,
+          "sha1": "d02fbc77cbb30a729ad21cab63aedade831d9605"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 12288,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 577,
+          "sha1": "4fbd111c8c09108d2e7ead947756a2a35503f03d"
+        },
+        {
+          "path": "externals\/images\/approved0.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 690,
+          "sha1": "576580a0d7259c9859deb99df59cd7eb9e860ff1"
+        },
+        {
+          "path": "externals\/images\/approved1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 781,
+          "sha1": "8872adf860a379cf6eab4faf35a67301b38325c6"
+        },
+        {
+          "path": "externals\/images\/buttons",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/buttons\/2checkout.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 18302,
+          "sha1": "de8f197bbc738a40f919047db737b2f7764b7f41"
+        },
+        {
+          "path": "externals\/images\/buttons\/paypal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1713,
+          "sha1": "af424fb162bcf43a16316fa174f8ca4e55982283"
+        },
+        {
+          "path": "externals\/images\/clock42.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2996,
+          "sha1": "122256a3bc91a86a39b4712163ffb27f55f0764a"
+        },
+        {
+          "path": "externals\/images\/complete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 712,
+          "sha1": "94c3dac962b8327bc5056084ba291f9e4aa768b5"
+        },
+        {
+          "path": "externals\/images\/credits.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 582,
+          "sha1": "8ca88f46f2c9a69e6792ea6f73ae79829b4764b1"
+        },
+        {
+          "path": "externals\/images\/current.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 618,
+          "sha1": "13e297100a868edf05eade67fedca9f424d1f633"
+        },
+        {
+          "path": "externals\/images\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 695,
+          "sha1": "95d7ae1d3caba28211d690ac420928a5a03bdb5c"
+        },
+        {
+          "path": "externals\/images\/donate.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 682,
+          "sha1": "de129bc27695a0715240a473c1c6dd9a4bdfb893"
+        },
+        {
+          "path": "externals\/images\/donatebw.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 671,
+          "sha1": "d9e75e16804bf5ff10d9d50e740f2aa085f5c021"
+        },
+        {
+          "path": "externals\/images\/donate_button.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1714,
+          "sha1": "25453f3007653dacb40e4dffb1f1f7aadcb0186c"
+        },
+        {
+          "path": "externals\/images\/enable0.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 690,
+          "sha1": "576580a0d7259c9859deb99df59cd7eb9e860ff1"
+        },
+        {
+          "path": "externals\/images\/enable1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 781,
+          "sha1": "8872adf860a379cf6eab4faf35a67301b38325c6"
+        },
+        {
+          "path": "externals\/images\/enlarge.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 676,
+          "sha1": "0b58fb637bba5da3146e3045d64696427c7ebe0f"
+        },
+        {
+          "path": "externals\/images\/foreground_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 109,
+          "sha1": "9c7de1c696f26379621cac1c2bdbf196caef84dd"
+        },
+        {
+          "path": "externals\/images\/initial.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 574,
+          "sha1": "0006f92e377674efb2aaac56d4d94fecc88017c4"
+        },
+        {
+          "path": "externals\/images\/list_donations.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3470,
+          "sha1": "8c6d3a2198d1f336ad52245a0d6ec93d6f035815"
+        },
+        {
+          "path": "externals\/images\/loader.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 723,
+          "sha1": "ba9bbff717ce29176d5cbb283aa25c6aafd32b28"
+        },
+        {
+          "path": "externals\/images\/manage_donations.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 985,
+          "sha1": "3990b88f467beef8271148efd092fb06950ac918"
+        },
+        {
+          "path": "externals\/images\/map.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 611,
+          "sha1": "cd5e9bf1b5d3889779c037f69a203870192ad27c"
+        },
+        {
+          "path": "externals\/images\/money.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 738,
+          "sha1": "969d87b5f1cbefdd6791f5a673545b0ab42ec1d5"
+        },
+        {
+          "path": "externals\/images\/nophoto_donation_thumb_donation.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 16284,
+          "sha1": "a149f96c7391bcbc38a61483f6d41dfcaec267b0"
+        },
+        {
+          "path": "externals\/images\/nophoto_donation_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1213,
+          "sha1": "d9448bd290f3f824cc0523ce88339f1de131814d"
+        },
+        {
+          "path": "externals\/images\/nophoto_donation_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 12640,
+          "sha1": "bd157bc886576a6d2e4f0e7fbaf2e9ba141db8b8"
+        },
+        {
+          "path": "externals\/images\/nophoto_donation_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 16284,
+          "sha1": "a149f96c7391bcbc38a61483f6d41dfcaec267b0"
+        },
+        {
+          "path": "externals\/images\/not_approved.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2360,
+          "sha1": "621a556349a174a1805e61bda23879ff16f35920"
+        },
+        {
+          "path": "externals\/images\/phone.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 634,
+          "sha1": "c0221a34101bf463ed314d1d4e58bdf2a0ed9cd7"
+        },
+        {
+          "path": "externals\/images\/promote_donation.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 661,
+          "sha1": "81f08e6f99f984b14bc394513cde6b8ed0434b37"
+        },
+        {
+          "path": "externals\/images\/share.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 743,
+          "sha1": "355df33576c0d155b4ff9c24cc017054e62f5de9"
+        },
+        {
+          "path": "externals\/images\/statistics.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 541,
+          "sha1": "4e9576a56db3d142113b8905d7aa93e31c9f441b"
+        },
+        {
+          "path": "externals\/images\/tick32.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2221,
+          "sha1": "837ee34fbedfe602f642dbbe4a8de03297e96662"
+        },
+        {
+          "path": "externals\/images\/transparent.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 109,
+          "sha1": "3a4b24394ac7492099b02e140b19db8fef7bfd50"
+        },
+        {
+          "path": "externals\/images\/warning.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1692,
+          "sha1": "75310f91d052004bfb4ff0413341065d4f04309c"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11801,
+          "sha1": "fc0e493f5f2db7f721bc122cece5c2560a7c48c2"
+        },
+        {
+          "path": "externals\/scripts\/donation.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4505,
+          "sha1": "ab825f7ea7a260c0cbe010e93dbf12d846bbc532"
+        },
+        {
+          "path": "externals\/scripts\/manager.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4726,
+          "sha1": "41fe83d8849a7bd23c1f9bb86b139b4346ceb49c"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4174,
+          "sha1": "6ccd8e1850d49f09fac775ecf32d86da33867b48"
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 23701,
+          "sha1": "9cf29af00b1cdaa1dfd1980b6dcb0df81c20f710"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1112,
+          "sha1": "ce42bbe7515858c945db47057ee94f4c3bbb0403"
+        },
+        {
+          "path": "Form\/Admin\/Donations",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Donations\/Filter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3166,
+          "sha1": "849adcc7a86ce40874f80540ed9410a1e6961f1c"
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3155,
+          "sha1": "305b2bda9017396c5a3964d4f9da4e618a300d9d"
+        },
+        {
+          "path": "Form\/Admin\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2479,
+          "sha1": "e9affc949b75c7ceab1b926d4bc7edd5e9c6df2a"
+        },
+        {
+          "path": "Form\/CreateCharity.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7243,
+          "sha1": "c58ddae057ea4169d97a1691ebce5dd7b84e3094"
+        },
+        {
+          "path": "Form\/CreateFundraise.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6151,
+          "sha1": "d32541d7df411d7826c083eb4bd9947895345cdc"
+        },
+        {
+          "path": "Form\/CreateFundraiseConfirm.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1606,
+          "sha1": "8c9551a96ee528940baf5e236add45740f0d434a"
+        },
+        {
+          "path": "Form\/CreateProject.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8693,
+          "sha1": "25d920e82ade8e989c87e0046d65f93f5c407a8a"
+        },
+        {
+          "path": "Form\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1160,
+          "sha1": "b0e997b7ff786f716e9b0737fcfc68bac9f68b81"
+        },
+        {
+          "path": "Form\/FinancialInfo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2046,
+          "sha1": "b658e2372d3219eb6bc5cd974c3fb42bd05b4e7b"
+        },
+        {
+          "path": "Form\/Options",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Options\/Filter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2735,
+          "sha1": "2384720cd4e5bcfbd02dada8e8ceef4c3e50071f"
+        },
+        {
+          "path": "Form\/Photo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Photo\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 998,
+          "sha1": "010a2d2117239d6c1300b8ff529b10e731401f72"
+        },
+        {
+          "path": "Form\/Photo\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1222,
+          "sha1": "771327855eed86268d8594b6b447915a6de24492"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1285,
+          "sha1": "816f94d2a94df98f71c5aabfc6d853435d11f86b"
+        },
+        {
+          "path": "Form\/Transaction",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Transaction\/Filter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1969,
+          "sha1": "b2ee4ee720f0e7e412e902677a5149e0df26d4f7"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1623,
+          "sha1": "7a99fe9437e98e461a4c6372c5e8864122816e06"
+        },
+        {
+          "path": "Model\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 828,
+          "sha1": "f4e0ca0edde1345d943f26d18d704a76a38a0175"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Albums.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 360,
+          "sha1": "56c3f917ce73ffc32e1fedea4a57ccf013defe64"
+        },
+        {
+          "path": "Model\/DbTable\/Categories.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 709,
+          "sha1": "9dd283c19a9f259391b07db558ffd5a21675ef94"
+        },
+        {
+          "path": "Model\/DbTable\/Donations.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3586,
+          "sha1": "a4d48a54d66f6e712cab11a255311d1d11c07379"
+        },
+        {
+          "path": "Model\/DbTable\/FinInfos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 340,
+          "sha1": "2e126d7e96992fb63441239efd4055289ff8363c"
+        },
+        {
+          "path": "Model\/DbTable\/Fundraises.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 526,
+          "sha1": "82ce15fb30d9d019c2e0f069b02ecfcc44c0c071"
+        },
+        {
+          "path": "Model\/DbTable\/Markers.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 597,
+          "sha1": "4071e7b947033429ad3c923d761593611cea5623"
+        },
+        {
+          "path": "Model\/DbTable\/Photos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 358,
+          "sha1": "60cc0d5e01eb7ab065c98dcdba3a00f1c8ae915b"
+        },
+        {
+          "path": "Model\/DbTable\/Transactions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 678,
+          "sha1": "249103edec6563c8ea9deb0d230c159b36b00d70"
+        },
+        {
+          "path": "Model\/Donation.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 12749,
+          "sha1": "f929a23dd86b19d402fced2d092904512b7d0768"
+        },
+        {
+          "path": "Model\/Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 239,
+          "sha1": "c64376eacae2a6be715d1fc0e07da9a145d64713"
+        },
+        {
+          "path": "Model\/FinInfo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 244,
+          "sha1": "7f69cf7d35652e5ae1b121c2eb9dbd229f00e2e2"
+        },
+        {
+          "path": "Model\/Fundraise.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 749,
+          "sha1": "806f45e0c6b67d6f300ba3918ac4d7eb873c4992"
+        },
+        {
+          "path": "Model\/Marker.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 388,
+          "sha1": "8f0a254a9af2caaefd8706585ae56deb6b18efba"
+        },
+        {
+          "path": "Model\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6571,
+          "sha1": "7dad72fd573154d5ac8e80680a44060dc9b07639"
+        },
+        {
+          "path": "Model\/Transaction.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 249,
+          "sha1": "16730dc5c93067c41cf684f7cfbed406db605182"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 887,
+          "sha1": "2d1633dea7a2aafe6ce02d2850bad0cc2016c55d"
+        },
+        {
+          "path": "Plugin\/Gateway",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Gateway\/2Checkout.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5444,
+          "sha1": "362126592cbf159376cff071cdac28c3cca25586"
+        },
+        {
+          "path": "Plugin\/Gateway\/PayPal.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4348,
+          "sha1": "b6852e45e0a3168e315dd41524d702b6f2488200"
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11583,
+          "sha1": "ea71b3260eaaf32e9910966979c3dcfc81613673"
+        },
+        {
+          "path": "Plugin\/Task",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Task\/Cleanup.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5241,
+          "sha1": "55c360c349b5002c898ac0bdd03db6a757c70a98"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5024,
+          "sha1": "486bc2885ca81e9e691e447282ef98b3fdea895e"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4544,
+          "sha1": "876615d71bed820af307d3fdb813fe5feaa28f85"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4908,
+          "sha1": "3f6b0cf1047938753ebb700bfd93c4054c21c7af"
+        },
+        {
+          "path": "settings\/my-install.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 196,
+          "sha1": "b8616273f85da27445081bcd5bf9278dbab07078"
+        },
+        {
+          "path": "settings\/my-upgrade-4.2.0-4.2.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 81,
+          "sha1": "cb0ffb7682db2b13af452e1fd6f35c28830f4b40"
+        },
+        {
+          "path": "settings\/my-upgrade-4.2.1-4.2.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 81,
+          "sha1": "864f4d100859b319e5c6cddfa6e75ea5efeee574"
+        },
+        {
+          "path": "settings\/my-upgrade-4.2.2-4.2.2p7.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 83,
+          "sha1": "bb925f54d7c4cf56f7e7500f55f85bc3099ab2ae"
+        },
+        {
+          "path": "settings\/widgets.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 634,
+          "sha1": "c15b3929d2a2f0a5d43d61ce91807dcbe61aec11"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 8192,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-category",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-category\/add-category.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 375,
+          "sha1": "188a1d69efd7281ab6ae817430b4a42238b6a99b"
+        },
+        {
+          "path": "views\/scripts\/admin-category\/delete-category.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 976,
+          "sha1": "9ab9529d6df84f055a35fdb7a8728f207e88c66a"
+        },
+        {
+          "path": "views\/scripts\/admin-category\/edit-category.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 375,
+          "sha1": "60e5cf4ef49c7efcdb7697b08af4024c29a5e790"
+        },
+        {
+          "path": "views\/scripts\/admin-category\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2652,
+          "sha1": "9133aa46d6905187597428d1c03f7e07b95b1e8d"
+        },
+        {
+          "path": "views\/scripts\/admin-donations",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-donations\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7769,
+          "sha1": "a455b859f6b66ee61256f61c7e9056db80ba1847"
+        },
+        {
+          "path": "views\/scripts\/admin-global",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-global\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1046,
+          "sha1": "8bfb626b0bcdc84f34c658922f2de63cb6090c7e"
+        },
+        {
+          "path": "views\/scripts\/admin-level",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 788,
+          "sha1": "4706c4b81d376b3315114581ebbff5e3958e1487"
+        },
+        {
+          "path": "views\/scripts\/admin-statistics",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-statistics\/detail.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3684,
+          "sha1": "49c10c6337584c63227fec5f79783b73fa026085"
+        },
+        {
+          "path": "views\/scripts\/admin-statistics\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4241,
+          "sha1": "6a482344923045f338d144ed22ac376c5284658c"
+        },
+        {
+          "path": "views\/scripts\/admin-statistics\/list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5779,
+          "sha1": "f970685ec219846d1857bd3acd17b25f75efcac9"
+        },
+        {
+          "path": "views\/scripts\/charity",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/charity\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1213,
+          "sha1": "75109a29d6fa7e49ab8191ea50cfb917bb6106c7"
+        },
+        {
+          "path": "views\/scripts\/charity\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 289,
+          "sha1": "7ed837c336dfae15a14da860a890abbf8b5e5949"
+        },
+        {
+          "path": "views\/scripts\/charity\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1150,
+          "sha1": "f2124f70d4543daa709d119424601eceb755e1f6"
+        },
+        {
+          "path": "views\/scripts\/charity\/fininfo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1423,
+          "sha1": "71b188c3f7961eefa5a1b189ce8774cfb419f5d2"
+        },
+        {
+          "path": "views\/scripts\/charity\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 244,
+          "sha1": "03e4971330127979659bf5f5e7c7c3984aa2609b"
+        },
+        {
+          "path": "views\/scripts\/charity_list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3035,
+          "sha1": "420c73b017d38b4cb6322aca16075f405548d15f"
+        },
+        {
+          "path": "views\/scripts\/donation",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/donation\/donate-box.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 539,
+          "sha1": "7bcf18abc877f5257dd56faceb5ae4f03707f963"
+        },
+        {
+          "path": "views\/scripts\/donation\/donate.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4917,
+          "sha1": "ffde85ae8456ed8277e30c72278f08efa020104c"
+        },
+        {
+          "path": "views\/scripts\/donation\/finish.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1360,
+          "sha1": "f2b086ec3bce935bb3546a4ee6134868fc4c3e30"
+        },
+        {
+          "path": "views\/scripts\/donation\/process.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 850,
+          "sha1": "c9ede7743360635638d7c2925f80c44494bea2ad"
+        },
+        {
+          "path": "views\/scripts\/donation\/promote.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4513,
+          "sha1": "54fc01b63e1d3d0763f64cb35729682cd441d376"
+        },
+        {
+          "path": "views\/scripts\/donation\/show-donate-box.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 379,
+          "sha1": "3c0770454631cef0c40d1c0984203d22cd7c9b7b"
+        },
+        {
+          "path": "views\/scripts\/donations_list_edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5603,
+          "sha1": "4d5a7ad656064d97bc86d337f78211b60c475988"
+        },
+        {
+          "path": "views\/scripts\/donors",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/donors\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 323,
+          "sha1": "6ef31f2252d8060e2236cc06d9ac44bd5b02a996"
+        },
+        {
+          "path": "views\/scripts\/editMenu.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1492,
+          "sha1": "672385ccbc9596c4afd81518e3766abffd00eb67"
+        },
+        {
+          "path": "views\/scripts\/fundraise",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/fundraise\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4591,
+          "sha1": "eb6ff9c2c63bc15019e0df688b9ca99874f1d14c"
+        },
+        {
+          "path": "views\/scripts\/fundraise\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1441,
+          "sha1": "dae9331ad0564eeb6150d89a73f670da4877bd92"
+        },
+        {
+          "path": "views\/scripts\/fundraise\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 215,
+          "sha1": "728f77bea62fc06ecc32edb65d4cbdeb1df4fcdc"
+        },
+        {
+          "path": "views\/scripts\/fundraise\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 836,
+          "sha1": "39cf3d0bf909f6263f9743434e9ebc38beb813b9"
+        },
+        {
+          "path": "views\/scripts\/fundraise\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 288,
+          "sha1": "7f7f4ee928deadd69f6cd6a1362de92df65db2fe"
+        },
+        {
+          "path": "views\/scripts\/fundraise\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3027,
+          "sha1": "637c5bf6c699c4446b7abd84d033bd908acd49fc"
+        },
+        {
+          "path": "views\/scripts\/index\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 466,
+          "sha1": "6f11c0dd4e17ef5a1fa6d096a3730d06cd8c854a"
+        },
+        {
+          "path": "views\/scripts\/index\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 246,
+          "sha1": "26ff9781e4d7ba76f9e5f2a7f0dc91260ebdfa4b"
+        },
+        {
+          "path": "views\/scripts\/index\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 834,
+          "sha1": "d71d66ff0af9235f8ec9c9f0efe55ac8c4a5ff90"
+        },
+        {
+          "path": "views\/scripts\/index\/map.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 802,
+          "sha1": "34de8a0a090dc512be586bb55d54e141436e2f4a"
+        },
+        {
+          "path": "views\/scripts\/index\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/manage_list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5335,
+          "sha1": "16f35f96c8d2aada06eb8f965ae40c2746f331a3"
+        },
+        {
+          "path": "views\/scripts\/navigation.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 446,
+          "sha1": "cd6a142be574792f539510535f2d6251d0ba8f7d"
+        },
+        {
+          "path": "views\/scripts\/page",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/page\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1639,
+          "sha1": "5753cfc904ba28b57ce19a894fe233424a49ad68"
+        },
+        {
+          "path": "views\/scripts\/pagination",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/pagination\/donation.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 803,
+          "sha1": "1634db9c93dfa8894bb4fe40f04ac465fa29108f"
+        },
+        {
+          "path": "views\/scripts\/pagination.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1207,
+          "sha1": "37805dcc4d15494ea311d346278d32fa28896b88"
+        },
+        {
+          "path": "views\/scripts\/photo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/photo\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 201,
+          "sha1": "2fd02824acfeac9fda7e6680e4d90a00ad986657"
+        },
+        {
+          "path": "views\/scripts\/photo\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 201,
+          "sha1": "2fd02824acfeac9fda7e6680e4d90a00ad986657"
+        },
+        {
+          "path": "views\/scripts\/photo\/list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1266,
+          "sha1": "1f2e6b59603616a399271af358bed71a01cf3069"
+        },
+        {
+          "path": "views\/scripts\/photo\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6216,
+          "sha1": "cf15da5c1dab98dfd3fa9f4ec495bd56eeac77bc"
+        },
+        {
+          "path": "views\/scripts\/project",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/project\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4092,
+          "sha1": "15683e6c97368063278a52d230720fce85bc214e"
+        },
+        {
+          "path": "views\/scripts\/project\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2159,
+          "sha1": "b4772ee881a255001c9a4ef705d35259a5ff0d33"
+        },
+        {
+          "path": "views\/scripts\/project\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 215,
+          "sha1": "45b788fd98c680bde573d7a6276e0d7f55164db0"
+        },
+        {
+          "path": "views\/scripts\/project\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2071,
+          "sha1": "3f0c56d4fb1bd2d7ae93376d233f39d628b3e102"
+        },
+        {
+          "path": "views\/scripts\/project\/fininfo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1425,
+          "sha1": "fc46fd80786de6240e00064cbd9069b9665f8297"
+        },
+        {
+          "path": "views\/scripts\/project\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/project_list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4069,
+          "sha1": "1795b6ef9e991f8a5421e23454d979244cc1d688"
+        },
+        {
+          "path": "views\/scripts\/statistics",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/statistics\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3312,
+          "sha1": "6e732d35f8cb0183e7c8108353500ec39f685d18"
+        },
+        {
+          "path": "views\/scripts\/statistics.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1573,
+          "sha1": "da70dd9a7ac1f62fd2b4c72519e773b56eb4d714"
+        },
+        {
+          "path": "views\/scripts\/transactions",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/transactions\/detail.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3690,
+          "sha1": "9e9754447c87ccbaa9fd4d1b05c9ea0a9d2adb1a"
+        },
+        {
+          "path": "views\/scripts\/transactions\/list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4887,
+          "sha1": "398a9d1562d32df87a2ceaddbef7ce15d31ba8d8"
+        },
+        {
+          "path": "views\/scripts\/_composeDonateBox.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8180,
+          "sha1": "0f9e31597ea8b47c0b7859b083e854092b2e84b8"
+        },
+        {
+          "path": "views\/scripts\/_FancyUpload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11714,
+          "sha1": "95573b82a40656445094eec93438627da0d082b1"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 8192,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 785,
+          "sha1": "f7e4b3b5b02531a6e78ef8e70a4b82f1b7e57c45"
+        },
+        {
+          "path": "widgets\/browse-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 344,
+          "sha1": "c991abbe129f83a0878bac88ddd16a0d0b84558c"
+        },
+        {
+          "path": "widgets\/browse-menu-charity-quick",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu-charity-quick\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 882,
+          "sha1": "b167797f7de986f25ef2942e52c36e68b0d03d6f"
+        },
+        {
+          "path": "widgets\/browse-menu-charity-quick\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 260,
+          "sha1": "961ac25f2d0fde143edeab39eed6f895ef54ee6e"
+        },
+        {
+          "path": "widgets\/browse-menu-project-quick",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu-project-quick\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 575,
+          "sha1": "7a2cd01573119f69250958fd7715daeb77cc4eb7"
+        },
+        {
+          "path": "widgets\/browse-menu-project-quick\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 244,
+          "sha1": "2fdd8364713e9213b6de1b7caa4ad922cec95a77"
+        },
+        {
+          "path": "widgets\/donation-edit-options",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/donation-edit-options\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1593,
+          "sha1": "6cace1b58952f3571a0a84f7d41151fc53d08a78"
+        },
+        {
+          "path": "widgets\/donation-edit-options\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2517,
+          "sha1": "33a2cd49d5bb8236552b90a1cf7ea0188dc085b3"
+        },
+        {
+          "path": "widgets\/donation-info",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/donation-recent",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/donation-recent\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1050,
+          "sha1": "22cf3c494cdcfd0df06c1e6f3f822c26959a1edd"
+        },
+        {
+          "path": "widgets\/donation-recent\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1518,
+          "sha1": "7af9372c1d18be908ef32466ca718dc3fc1f6743"
+        },
+        {
+          "path": "widgets\/donation-search",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/donation-search\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 603,
+          "sha1": "a9021dd6fdcd74ef6125fc80db2b220893d6f48e"
+        },
+        {
+          "path": "widgets\/donation-search\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 435,
+          "sha1": "78216979afe41e892c72b46cea7530013aa72dae"
+        },
+        {
+          "path": "widgets\/donation-title",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/donation-title\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 508,
+          "sha1": "b09dd816cab2a765c93a9725ce2af0990ebb5ea0"
+        },
+        {
+          "path": "widgets\/donation-title\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 325,
+          "sha1": "2302543f4cd88427f51d218cbf839edddae08372"
+        },
+        {
+          "path": "widgets\/donors",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/donors\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1306,
+          "sha1": "128ae2dc88edbc1458a2249c56a833427e7c2ddf"
+        },
+        {
+          "path": "widgets\/donors\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1570,
+          "sha1": "ec403707740df83cf849062904b433411399c2dc"
+        },
+        {
+          "path": "widgets\/page-profile-donations",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/page-profile-donations\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3864,
+          "sha1": "69094cb00c579b698ab862ef8e4608de4f206e0a"
+        },
+        {
+          "path": "widgets\/page-profile-donations\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1620,
+          "sha1": "8da783b550bc54a39716e2ddad2bfeee63a160b6"
+        },
+        {
+          "path": "widgets\/parent-donation",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/parent-donation\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 703,
+          "sha1": "87668b3fa1241018409637b278e291c5223690b9"
+        },
+        {
+          "path": "widgets\/parent-donation\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 883,
+          "sha1": "c3b7ad77ddeb371bb41f3b16a35752e803667b60"
+        },
+        {
+          "path": "widgets\/profile-description",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-description\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 551,
+          "sha1": "b82991737f2bbbc708470adf1ac5631274df54a2"
+        },
+        {
+          "path": "widgets\/profile-description\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 307,
+          "sha1": "9474ff86e77de2e529fb50b5f2d9e75746850182"
+        },
+        {
+          "path": "widgets\/profile-donations",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-donations\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1099,
+          "sha1": "453cd20e58688a293e836f9b0a42b8c299bb84a6"
+        },
+        {
+          "path": "widgets\/profile-donations\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1281,
+          "sha1": "b7525a2636d0dbad528643e9315f021facc753c3"
+        },
+        {
+          "path": "widgets\/profile-fundraisers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-fundraisers\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1208,
+          "sha1": "a3955b6d6cdf4a9fda4fb633bcc558db67ec3a56"
+        },
+        {
+          "path": "widgets\/profile-fundraisers\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1203,
+          "sha1": "bb4b1f03728b48466b54517c26f0af93a3ad245b"
+        },
+        {
+          "path": "widgets\/profile-map",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-map\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 542,
+          "sha1": "17e83e6cb659b183fac60d0a856e95c6a48d4676"
+        },
+        {
+          "path": "widgets\/profile-map\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1106,
+          "sha1": "397ac8ae692a3fd0773c2c42304cde27266c56af"
+        },
+        {
+          "path": "widgets\/profile-options",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-options\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1164,
+          "sha1": "e359ddea93ae9daecfe70e61f8475b71b57ac0b7"
+        },
+        {
+          "path": "widgets\/profile-options\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2955,
+          "sha1": "9a2b2546d7df701e244a724bfb8e52923bfa91b9"
+        },
+        {
+          "path": "widgets\/profile-photo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-photo\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 543,
+          "sha1": "209c0f7041e66734bb327b61a68fbb22ea2e0541"
+        },
+        {
+          "path": "widgets\/profile-photo\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 622,
+          "sha1": "96e7e4c232b2e1154720b1a346dbe6ff038cf4d1"
+        },
+        {
+          "path": "widgets\/profile-photos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-photos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1363,
+          "sha1": "47ee9df22fa968ffa8da6df5edf6ec26c768cc21"
+        },
+        {
+          "path": "widgets\/profile-photos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 954,
+          "sha1": "0d8945c95e6f75b2637e7d7136fbb4c9518fb3eb"
+        },
+        {
+          "path": "widgets\/profile-status",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-status\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 709,
+          "sha1": "233268ae02069dce34ae961dcc494c73a6afa028"
+        },
+        {
+          "path": "widgets\/profile-status\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1885,
+          "sha1": "403bca0cc2d5e741e05bd9e7813c142cf5f83c87"
+        },
+        {
+          "path": "widgets\/profile-supporters",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-supporters\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 970,
+          "sha1": "e063fb0bbad5c93fc9d41b14d03358ad73187d67"
+        },
+        {
+          "path": "widgets\/profile-supporters\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2397,
+          "sha1": "0bb2ce8aa35ffd63a0989a3295336365741a6e1e"
+        },
+        {
+          "path": "widgets\/top-donors",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/top-donors\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1599,
+          "sha1": "23b2f28ddcb57493625cc9f3ef8a98a0b84684df"
+        },
+        {
+          "path": "widgets\/top-donors\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1061,
+          "sha1": "9c53b011f3c69f3f9ce1b8768c6b42e80197f1c5"
+        }
+      ]
+    },
+    "application\/languages\/en\/donation.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/donation.csv",
+      "structure": {
+        "path": "donation.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 19710,
+        "sha1": "c5b79259e1bceba587440389590f38f9c3c5742a"
+      }
+    }
+  }
+}

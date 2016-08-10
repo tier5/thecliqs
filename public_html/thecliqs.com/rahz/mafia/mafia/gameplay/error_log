@@ -1,0 +1,75 @@
+[05-Aug-2016 20:10:22 UTC] PHP Warning:  mysql_connect(): Access denied for user 'DB_USERNAME'@'localhost' (using password: YES) in /home/thecliqs/public_html/mafia/mafia/setup.php on line 25
+[05-Aug-2016 20:13:20 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:13:20 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:13:20 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 97
+[05-Aug-2016 20:13:20 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:13:20 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:13:20 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:15:40 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:15:40 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:15:40 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 97
+[05-Aug-2016 20:15:40 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:15:40 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:15:40 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:15:41 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:15:41 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:15:41 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 97
+[05-Aug-2016 20:15:41 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:15:41 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:15:41 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:18:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:18:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:18:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 97
+[05-Aug-2016 20:18:53 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:18:53 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:18:53 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:19:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:19:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:19:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 97
+[05-Aug-2016 20:19:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:19:01 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:19:01 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:21:11 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:21:11 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:21:11 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 97
+[05-Aug-2016 20:21:11 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:21:11 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:21:11 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:24:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:24:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:24:56 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 94
+[05-Aug-2016 20:24:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 98
+[05-Aug-2016 20:24:56 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:24:56 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:24:56 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:25:07 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:25:07 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:25:07 UTC] PHP Warning:  mysql_free_result() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 94
+[05-Aug-2016 20:25:07 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 98
+[05-Aug-2016 20:25:07 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:25:07 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:25:07 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:25:31 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:25:31 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:25:31 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 99
+[05-Aug-2016 20:25:31 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:25:31 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:25:31 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:25:46 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:25:46 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:25:46 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 99
+[05-Aug-2016 20:25:46 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:25:46 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:25:46 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:26:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:26:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:26:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 99
+[05-Aug-2016 20:26:05 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:26:05 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:26:05 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:29:00 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 44
+[05-Aug-2016 20:29:00 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 91
+[05-Aug-2016 20:29:00 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/setup.php on line 99
+[05-Aug-2016 20:29:00 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 4
+[05-Aug-2016 20:29:00 UTC] PHP Warning:  include(): Filename cannot be empty in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8
+[05-Aug-2016 20:29:00 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thecliqs/public_html/mafia/mafia/gameplay/html.php on line 8

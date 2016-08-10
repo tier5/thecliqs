@@ -1,0 +1,143 @@
+#ynfeed-activity-form #ynfeed_activity_body,
+#ynfeed-activity-form #ynfeed_friends,
+#ynfeed-activity-form #ynfeed_checkinValue
+{
+	max-width: 100%;
+	width: 100%;
+}
+
+.ynfeedef2
+{
+	padding: 0.5em;
+	padding-right: 20px;
+}
+
+#ynfeed-activity-form #ynfeed_activity_body {
+	padding: 0.5em;
+}
+
+.ynfeed-status-box {
+	input#ynfeed_privacies {
+		padding: 0.2em !important;
+	}
+}
+
+#ynfeed_withfriends,
+.ynfeed_checkin {
+	padding: 0;
+}
+.ynfeed_checkin
+{
+	padding-left: 4px;
+}
+
+.ynfeed_tabs_feed {
+	text-align: right;
+}
+
+.ynfeed_tabs_feed > ul > li {
+	border-bottom: 2px solid transparent;
+	display: inline-block;
+}
+
+.layout_ynfeed_feed #activity-feed {
+	padding-top: 1em;
+}
+
+ul#activity-feed.feed .feed_item_attachments, 
+ul.feed .feed_item_attachments .video_info, 
+ul.feed .feed_item_attachments .feed_attachment_event > div > div {
+	padding: 0;
+}
+
+.ynfeed_pulldown_btn_wrapper {
+	top: 0;
+}
+
+.adv_music .music_player_button_play {
+	-webkit-sizing-box: content-box;
+	-moz-sizing-box: content-box;
+	sizing-box: content-box;
+}
+
+.ynfeed_popup_options_middle select#resource_type {
+	width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+	.ynfeed_welcome_liked_sug ul li.ynfeed_user_item,
+	.ynfeed_welcome_member_sug ul li.ynfeed_user_item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.feed_attachment_album_photo{
+			.feed_attachment_photo{
+				img{
+					max-width: 140px;
+				}
+			}
+		}
+	#ynfeed_composer_tab > .ynfeed_compose_footer > .compose-menu > span#emoticons-button {
+		position: static;
+	}
+
+	.ynfeed_embox {
+		width: 100%;
+		left: 0;
+		top: inherit;
+		margin-top: 5px;
+	}
+
+	#ynfeed_tabs_feed_tab_more {
+		position: static;
+
+		.ynfeed_pulldown_contents_wrapper {
+			top: inherit;
+			width: 100%;
+			left: 0;
+			margin-top: 29px;
+		}
+	}
+
+	.ynfeed_welcome_event_sug li {
+		width: 50%;
+	}
+
+	.ynfeed_welcome_requests ul li.ynfeed_user_item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	ul.ynfeed_privacies_tag-autosuggest {
+		width: 100%;
+		left: 0;
+	}
+
+	ul.ynfeed_privacies_tag-autosuggest > div.ynfeed_privacies_list > li {
+		width: 100%;
+	}
+
+	.ynfeed_welcome_event_sug li,
+	.ynfeed_welcome_group_sug > ul li.ynfeed_user_item {
+		width: 100%;
+	}
+}
+/*----- Custom -----*/
+/*----- Edit feed -----*/
+body[class^=ynresponsivepurity-]{
+	&#global_page_ynfeed-index-edit-post{
+		.feed_attachment_album_photo{
+			.feed_attachment_photo{
+				img{
+					border-radius: 8px;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border: 1px solid $theme_border_medium_color;
+				}
+			}
+		}
+	}
+}

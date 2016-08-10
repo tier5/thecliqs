@@ -1,0 +1,27 @@
+.ynprofilestyler-img {
+    background-repeat: repeat;
+    width: 400px;
+    height: 50px;
+}
+
+.ynprofilestyler-block {
+    padding: 10px 0px;
+}
+
+.ynprofilestyler-cell-center {
+    text-align: center;
+}
+
+.search form .form-elements > div.form-wrapper {
+    float: left;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.search form .form-elements > div.form-wrapper button {
+    margin-top: -2px;
+}
+
+.ynprofilestyler_admin_table {
+    width: 100%;
+}

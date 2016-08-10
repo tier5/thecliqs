@@ -1,0 +1,316 @@
+/* Id: main.css 03.02.12 12:26 TeaJay $ */
+
+.he_message_container {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.he_message_container .he_msg_text span {
+  color :green;
+  font-size: 17px;
+}
+
+.hegift_icon_create {
+  background-image: url(~/application/modules/Hegift/externals/images/new_gift.png);
+  float: right;
+}
+
+.hegift_create_gift_form p.description {
+  font-size: .8em;
+  color: #999;
+}
+
+.hegift-icon {
+  margin-right: 5px;
+}
+
+.icon_edit_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/edit_gift.png);
+}
+.icon_manage_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/gift.png);
+}
+.icon_gifts {
+  background-image: url(~/application/modules/Hegift/externals/images/back_to_list.png);
+}
+.icon_add_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/new_gift.png);
+}
+.icon_duplicate_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/double.png);
+}
+.icon_audio_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/audio.png);
+}
+.icon_video_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/video.png);
+}
+.icon_photo_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/photo.png);
+}
+.icon_change_type_gift {
+  background-image: url(~/application/modules/Hegift/externals/images/change.png);
+}
+/*
+Manage Gift Photo
+Some extra styles to override the global
+form styles for the gift photo upload
+form.
+*/
+#ManageGiftPhoto .form-label,
+#ManageGiftPhoto .form-element
+{
+  float: none;
+  clear: both;
+  text-align: left;
+}
+#ManageGiftPhoto .form-label
+{
+  margin-bottom: 4px;
+}
+#lassoImg,
+#lassoMask
+{
+  border: 1px solid $theme_photo_border_color;
+  display: block;
+}
+#ManageGiftPhoto #preview-thumbnail img
+{
+  margin-right: 5px;
+  font-size: 0px;
+  line-height: 0px;
+}
+/* Avoid changing these as they are needed for cropping tool */
+#ManageGiftPhoto #preview-thumbnail img
+{
+  position: relative;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  float: left;
+  overflow: hidden;
+}
+#ManageGiftPhoto #done-wrapper div
+{
+  margin: 0px;
+  padding: 0px;
+}
+div.preview-thumbnail
+{
+  border: 1px solid $theme_photo_border_color;
+  margin-right: 5px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  font-size: 0px;
+  line-height: 0px;
+  visibility: visible;
+  opacity: 1;
+  float: left;
+}
+img.loading_icon
+{
+  float: left;
+  margin-right: 5px;
+  border: none;
+}
+
+#thumbnail-controller
+{
+  float: left;
+}
+
+
+/* FILE UPLOADER */
+#demo-status-audio.hide,
+#demo-status-video.hide
+{
+  display: none;
+}
+#demo-status-audio,
+#demo-status-video
+{
+  width: 420px;
+}
+#demo-status-audio > div,
+#demo-status-video > div
+{
+  margin: 15px 0px 0px 0px;
+}
+#demo-status-audio > div:first-child,
+#demo-status-video > div:first-child
+{
+  margin: 0px 0px 15px 0px;
+}
+#demo-status-audio .current-text,
+#demo-status-video .current-text,
+#demo-status-audio .demo-status-overall,
+#demo-status-video .demo-status-overall
+{
+  display: none;
+}
+#demo-status-audio .overall-title,
+#demo-status-video .overall-title,
+#demo-status-audio .current-title,
+#demo-status-video .current-title
+{
+  font-size: .7em;
+  text-transform: uppercase;
+}
+#demo-status-audio .progress,
+#demo-status-video .progress
+{
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+html[dir="rtl"] #demo-status-audio .progress,
+html[dir="rtl"] #demo-status-video .progress
+{
+  /* @todo check */
+  background-position: +50% 0;
+  margin-right: 0em;
+  margin-left: 0.5em;
+}
+#demo-status-audio .progress-text,
+#demo-status-video .progress-text
+{
+  font-size: 0.9em;
+}
+#demo-list-audio,
+#demo-list-video
+{
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+#demo-list-audio li.validation-error,
+#demo-list-video li.validation-error
+{
+  padding: 8px 8px 8px 28px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+}
+html[dir="rtl"] #demo-list-audio li.validation-error,
+html[dir="rtl"] #demo-list-video li.validation-error
+{
+  padding: 8px 28px 8px 8px;
+  background-position: 99% 50%;
+}
+#demo-list-audio li.file,
+#demo-list-video li.file
+{
+  padding: 8px 8px 8px 28px;
+  font-size: .8em;
+  font-weight: normal;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  background-image: url(~/externals/fancyupload/assets/waiting.png);
+  background-repeat: no-repeat;
+}
+html[dir="rtl"] #demo-list-audio li.file,
+html[dir="rtl"] #demo-list-video li.file
+{
+  padding: 8px 28px 8px 8px;
+  background-position: 99% 50%;
+}
+#demo-list-audio li.file + li.file,
+#demo-list-video li.file + li.file
+{
+  border-top: 1px solid #ccc;
+}
+#demo-list-audio li.file span,
+#demo-list-video li.file span
+{
+  display: none;
+}
+#demo-list-audio li.file-uploading,
+#demo-list-video li.file-uploading
+{
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+#demo-list-audio li.file-success,
+#demo-list-video li.file-success
+{
+  background-image: url(~/externals/fancyupload/assets/finished.png);
+  background-repeat: no-repeat;
+}
+#demo-list-audio li.file .file-name,
+#demo-list-video li.file .file-name
+{
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+html[dir="rtl"] #demo-list-audio li.file .file-name,
+html[dir="rtl"] #demo-list-video li.file .file-name
+{
+  clear: right;
+}
+#demo-list-audio li.file .file-size,
+#demo-list-video li.file .file-size
+{
+  display: none;
+}
+#demo-list-audio li.file .file-info,
+#demo-list-video li.file .file-info
+{
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+#demo-list-audio li.file .file-remove,
+#demo-list-video li.file .file-remove
+{
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+html[dir="rtl"] #demo-list-audio li.file .file-remove,
+html[dir="rtl"] #demo-list-video li.file .file-remove
+{
+  clear: left;
+  float: left;
+}
+
+
+
+
+#gifts_list_form > table.admin_table tbody tr td {
+  vertical-align: middle;
+}
+
+.gift-audio-view-songs {
+  border: 2px solid #E9F4FA;
+  padding: 5px;
+  margin-top: 10px;
+  width: 375px;
+  position: absolute;
+  left: 39%;
+}
+
+.center {
+  text-align: center;
+}
+.center img {
+  max-width: 48px;
+  max-height: 48px;
+}

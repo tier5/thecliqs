@@ -1,0 +1,1587 @@
+/*Fix theme event Feed*/
+body#global_page_core-index-index.ynresponsive-event{
+	.layout_ynresponsive1_container2{
+		.layout_activity_feed{
+			/*Feed*/
+
+			.ynmusic-playlist-feed .music-photo, .ynmusic-album-feed .music-photo{
+				margin-right: 0;
+				float: none;
+
+				a{
+					margin: auto;
+				}
+			}
+			.ynmusic-playlist-feed .music-songs ul.song-items > li.song-item .title-artist, .ynmusic-album-feed .music-songs ul.song-items > li.song-item .title-artist{
+				max-width: 70%;
+			}
+
+			.ynmusic-playlist-feed .music-photo > .music-play-btn, .ynmusic-album-feed .music-photo > .music-play-btn{
+				top: 50%;
+				left: 50%;
+				margin-top: -32.5px;
+				margin-left: -32.5px;
+			}
+
+			.ynmusic-playlist-feed .music-songs, .ynmusic-album-feed .music-songs{
+				width: 100% !important;
+				margin-top: 15px;
+			}
+
+			.ynmusic-playlist-feed ul.song-items, .ynmusic-album-feed ul.song-items{
+				max-height: 125px;
+			}
+			.ynmusic-playlist-feed .music-songs ul.song-items > li.song-item .song-count,
+			.ynmusic-album-feed .music-songs ul.song-items > li.song-item .song-count {
+				margin-top: 1px;
+				margin-right: 10px;
+			}
+			.ynmusic-alonesong-feed ul.song-items > li{
+				padding: 2px;
+				vertical-align: top;
+				padding-bottom: 0px;
+
+				.song-photo{
+					display: none;
+				}
+
+				.title-artist{
+					padding-top: 3px;
+				  	vertical-align: top;
+				  	max-width: 75%;
+
+				  	.play-count{
+						display: none;
+					}
+				}
+				.song-count{
+					padding-top: 3px;
+					margin-right: 5px;
+				}
+				.action{
+					top: 0px;
+
+					.music-play-btn{
+						position: relative;
+						top: 1px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.ynmusic-alonesong-feed ul.song-items > li .action{
+	top: 13px;
+}
+.ynmusic_grid-view #ynmusic-song-listing,
+.layout_ynmusic_most_played_songs #ynmusic-song-listing,
+.layout_ynmusic_most_liked_songs #ynmusic-song-listing,
+.layout_ynmusic_most_discussed_songs #ynmusic-song-listing {
+
+}
+.ynmusic-playlist-feed ul.song-items, .ynmusic-album-feed ul.song-items{
+	max-height: 129px;
+}
+.ynmusic-playlist-feed .music-songs ul.song-items > li.song-item, .ynmusic-album-feed .music-songs ul.song-items > li.song-item{
+	padding-top: 5px;
+}
+.ynmusic-playlist-feed .music-songs ul.song-items > li.song-item .song-count, .ynmusic-album-feed .music-songs ul.song-items > li.song-item .song-count{
+	margin-top: 3px;
+}
+.ynmusic-playlist-feed .music-songs ul.song-items > li.song-item .action, .ynmusic-album-feed .music-songs ul.song-items > li.song-item .action{
+	top: -1px;
+}
+.music-profile-cover .music-profile-photo{
+	z-index: 4;
+}
+.layout_ynmusic_artist_profile_cover .music-profile-cover .music-box-profile-info{
+	padding-top: 65px;
+}
+.mejs-container .mejs-controls{
+	height: 42px;
+}
+.layout_ynmusic_music_player #ynmusic-player-render .song-info .song-title-option #song-title-head{
+	width: 74%;
+}
+.layout_ynmusic_music_player #change-type-btn{
+	height: 21px;
+}
+
+.layout_ynmusic_music_player #change-type-btn:after{
+	top: -4px;
+}
+.layout_ynmusic_music_player.mini-player #change-type-btn:after{
+	top: -5px !important;
+}
+.layout_ynmusic_music_player.mini-player{
+	width: 130px !important;
+}
+.layout_ynmusic_music_player.mini-player #player-control-button{
+	top: 0;
+}
+.layout_ynmusic_music_player.mini-player #player-control-button > span{
+	position: relative;
+	top: -1px;
+}
+.layout_ynmusic_music_player.mini-player .player-mini-title{
+	position: relative;
+	top: -1px;
+}
+.music-profile-cover .box-time-image-song .time-song{
+	bottom: 62px;
+}
+.music-profile-cover .song-box-profile-info .box-time-image-song .time-song{
+	bottom: 65px;
+}
+.layout_ynmusic_music_player #player-song-list{
+	bottom: 47px;
+}
+
+/*Fix padding metro*/
+body.ynresponsive-metro{
+	ul[id^=ynmusic_listing_album_],
+	ul[id^=ynmusic_listing_playlist_]{
+		padding: 0;
+	}
+
+	.layout_ynmusic_playlist_profile_info,
+	.layout_ynmusic_album_profile_info,
+	.layout_ynmusic_song_profile_info {
+		padding: 10px;
+	}
+
+	div#ynmusic-history-listing{
+		padding: 10px;
+	}
+	#ynmusic-albums-listing-widget,
+	#ynmusic-songs-listing-widget,
+	#ynmusic-playlists-listing-widget,
+	#ynmusic-artists-listing-widget,
+	#ynmusic-music-listing-widget{
+		padding: 10px;
+	}
+
+	.layout_ynmusic_album_profile_cover,
+	.layout_ynmusic_playlist_profile_cover,
+	.layout_ynmusic_artist_profile_cover,
+	.layout_ynmusic_song_profile_cover {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.layout_ynmusic_artist_profile_related{
+		overflow: hidden;
+	}
+}
+
+/*fix element form on responsive metro*/
+body[id^=global_page_ynmusic-songs].ynresponsive-metro{
+	.global_form div.form-element{
+		min-width: 150px;
+	}
+}
+
+/*Check player song all teamplate responsive*/
+body.ynresponsive-event,
+body.ynresponsive-metro{
+	.mejs-container .mejs-controls{height: 35px;}
+}
+
+
+/*After & Before of Playlist now show*/
+
+.ynmusic_list-view ul.playlist-items,
+.ynmusic_list-view .history-items,
+#ynmusic-manage-playlist ul.playlist-items,
+#ynmusic-manage-playlist .history-items,
+#ynmusic-history-listing ul.playlist-items,
+#ynmusic-history-listing .history-items {
+	z-index: 1;
+	position: relative;
+}
+.ynmusic_grid-view ul.playlist-items,
+.layout_ynmusic_most_played_playlists ul.playlist-items,
+.layout_ynmusic_most_liked_playlists ul.playlist-items,
+.layout_ynmusic_most_discussed_playlists ul.playlist-items{
+	position: relative;
+	z-index: 1;
+}
+
+.ynmusic_grid-view #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+.layout_ynmusic_most_played_songs #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+.layout_ynmusic_most_liked_songs #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+.layout_ynmusic_most_discussed_songs #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+
+.layout_ynbusinesspages_business_profile_ynmusic_song #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+#global_page_ynbusinesspages-social-music-list #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+.layout_ynbusinesspages_business_newest_ynmusic_song #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+
+.layout_advgroup_profile_social_music_songs #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label,
+#global_page_advgroup-social-music-list #ynmusic-song-listing ul.song-items > li.song-item .song-grid-view .song-artist-owner .label{
+	position: relative;
+	top: 1px;
+}
+
+.ynmusic_list-view,
+#ynmusic-manage-song,
+#ynmusic-manage-playlist,
+#ynmusic-manage-album,
+#ynmusic-history-listing{
+	#ynmusic-album-listing,
+	#ynmusic-playlist-listing,
+	#ynmusic-song-listing,
+	.history-items{
+		.list-view-info .box-float {
+			margin-bottom: -1px;
+		}
+	}
+}
+div[id^=ynmusic_listing_playlist]{
+	position: relative;
+	z-index: 1;
+}
+.ynmusic_list-view ul.artist-items > li.artist-item .artist-info .artist-short_description{
+	height: 35px;
+
+	span{
+		vertical-align: middle;
+	}
+}
+	html[dir="rtl"]{
+	body[class^=ynresponsivepurity-]{
+		#ynmusic-song-listing,#ynmusic-album-listing{
+			ul.paginationControl{
+				float: left;
+			}
+		}
+		.layout_ynmusic_search_music .yncalendar_button_span
+		{
+			left: 6px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.layout_page_ynmusic_songs_upload,
+	#global_page_ynmusic-songs-edit,
+	#global_page_ynmusic-albums-edit,
+	#global_page_ynmusic-playlists-edit{
+		#photo-wrapper{
+			width: 100%;
+			float: none;
+		}
+		#cover-wrapper{
+			width: 100%;
+			div.form-label{
+				width: 150px;
+			}
+		}
+		div[id^=cover][id$=-wrapper]{
+			margin-bottom: 10px;
+		}
+		div[id^=photo_][id$=-wrapper],
+		div[id^=cover][id$=-wrapper]{
+			width: 100%;
+		}
+		div[id^=cover][id$=-wrapper] div.form-element{
+			float: left;
+		}
+		div[id^=cover][id$=-wrapper] .form-label
+		{
+			width: 150px;
+		}
+	}
+
+	.ynmusic-playlist-feed .music-photo, .ynmusic-album-feed .music-photo{
+		margin-right: 0;
+		float: none;
+
+		a{
+			margin: auto;
+		}
+	}
+
+	.ynmusic-playlist-feed .music-photo > .music-play-btn, .ynmusic-album-feed .music-photo > .music-play-btn{
+		top: 50%;
+		left: 50%;
+		margin-top: -32.5px;
+		margin-left: -32.5px;
+	}
+
+	.ynmusic-playlist-feed .music-songs, .ynmusic-album-feed .music-songs{
+		width: 100% !important;
+		margin-top: 15px;
+	}
+
+
+	/*Albums, Playlist, Song Details*/
+	.music-profile-cover .music-box-profile-info{
+		width: 55%;
+	}
+
+	/*Artists Detail Cover*/
+	.layout_ynmusic_artist_profile_cover .music-profile-cover .music-box-profile-info{
+		width: 65%;
+	}
+
+	/*Listview albums, playlist, songs*/
+	.ynmusic_list-view #ynmusic-album-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-playlist-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-song-listing .list-view-info,
+	.ynmusic_list-view .history-items .list-view-info,
+	#ynmusic-manage-song #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-song .history-items .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-playlist .history-items .list-view-info,
+	#ynmusic-manage-album #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-album .history-items .list-view-info,
+	#ynmusic-history-listing #ynmusic-album-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-song-listing .list-view-info,
+	#ynmusic-history-listing .history-items .list-view-info {
+
+		ul.song-items > li.song-item{
+			.title-artist{
+				width: 90%;
+			}
+		}
+	}
+
+	html[dir="rtl"]{
+		.ynmusic-playlist-feed .music-photo, .ynmusic-album-feed .music-photo{
+			margin: 0;
+			float: none;
+		}
+		.layout_page_ynmusic_songs_upload,
+		#global_page_ynmusic-songs-edit,
+		#global_page_ynmusic-albums-edit,
+		#global_page_ynmusic-playlists-edit{
+			div[id^=cover][id$=-wrapper] div.form-element{
+				float: right;
+			}
+		}
+	}
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+	/*Gridview albums*/
+	.ynmusic_grid-view ul.album-items > li.album-item,
+	.layout_ynmusic_most_played_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_liked_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_discussed_albums ul.album-items > li.album-item,
+	.layout_ynbusinesspages_business_profile_ynmusic_album ul.album-items > li.album-item,
+	#global_page_ynbusinesspages-social-music-list ul.album-items > li.album-item,
+	.layout_advgroup_profile_social_music_albums ul.album-items > li.album-item,
+	#global_page_advgroup-social-music-list ul.album-items > li.album-item{
+
+		&:nth-child(3n){
+			.action-pop-up{
+				left: auto !important;
+				right: 0px !important;
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 991px){
+	html[dir="rtl"]{
+		body[id^=global_page_ynmusic-][id$=-manage] .ynmusic_manage_menu li,
+		body#global_page_ynmusic-history-index .ynmusic_manage_menu li{
+			float: right;
+		}
+		body[id^=global_page_ynmusic-][id$=-manage] .ynmusic_manage_menu,
+		body#global_page_ynmusic-history-index .ynmusic_manage_menu{
+		    right: 38px;
+		}
+	}
+	/*Artist Detail Cover*/
+	.layout_ynmusic_artist_profile_cover .music-profile-cover .music-box-profile-info{
+		width: 60%;
+	}
+
+	.time-song{
+		z-index: 4;
+	}
+
+	/*Layout right popup is overlay*/
+	body[id^=global_page_ynmusic]{
+		.layout_right{
+			z-index: 5;
+		}
+	}
+
+
+	/*Gridview albums*/
+	.ynmusic_grid-view ul.album-items > li.album-item,
+	.layout_ynmusic_most_played_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_liked_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_discussed_albums ul.album-items > li.album-item,
+
+ 	.layout_ynbusinesspages_business_profile_ynmusic_album ul.album-items > li.album-item,
+ 	#global_page_ynbusinesspages-social-music-list ul.album-items > li.album-item,
+
+ 	.layout_advgroup_profile_social_music_albums ul.album-items > li.album-item,
+ 	#global_page_advgroup-social-music-list ul.album-items > li.album-item{
+		width: 33.33%;
+
+		.action-pop-up{
+			left: 0px !important;
+		}
+
+		&:nth-child(4n+1){
+			.action-pop-up{
+				left: 0px !important;
+			}
+		}
+	}
+
+	/*Gridview playlist*/
+	.ynmusic_grid-view ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_played_playlists ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_liked_playlists ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_discussed_playlists ul.playlist-items li.playlist-item {
+		width: 30.3%;
+	}
+
+
+	/*Gridview Artists*/
+	.ynmusic_grid-view ul.artist-items > li.artist-item{
+		width: 31.5%;
+
+		&:nth-child(4n+1){
+			margin-left: 2.5%;
+		}
+		&:nth-child(3n+1){
+			margin-left: 0%;
+		}
+	}
+
+
+	/*Listview albums, playlist, songs*/
+	.ynmusic_list-view #ynmusic-album-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-playlist-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-song-listing .list-view-info,
+	.ynmusic_list-view .history-items .list-view-info,
+	#ynmusic-manage-song #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-song .history-items .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-playlist .history-items .list-view-info,
+	#ynmusic-manage-album #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-album .history-items .list-view-info,
+	#ynmusic-history-listing #ynmusic-album-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-song-listing .list-view-info,
+	#ynmusic-history-listing .history-items .list-view-info {
+
+		.list-view-info-top > .music-play-btn{
+			height: 46px;
+
+			a{
+				width: 35px;
+				height: 35px;
+				line-height: 32px;
+			}
+		}
+
+		.box-float .music-title{
+			a{
+				white-space: normal;
+				max-height: 40px;
+			}
+		}
+	}
+
+	body#global_page_ynmusic-history-index{
+		#ynmusic-history-listing{
+			.tip{
+				clear: both;
+				margin-top: 55px !important;
+			}
+		}
+	}
+
+	/*Move manage song, playlist, albums, history*/
+	/*Check each theme*/
+		/*Theme responsive photo*/
+	body[id^=global_page_ynmusic-][id$=-manage].ynresponsive-photo,
+	body#global_page_ynmusic-history-index.ynresponsive-photo{
+		.ynmusic_manage_menu{
+			top: 55px;
+		}
+	}
+
+		/*Theme responsive event*/
+	body[id^=global_page_ynmusic-][id$=-manage].ynresponsive-event,
+	body#global_page_ynmusic-history-index.ynresponsive-event{
+		.ynmusic_manage_menu{
+			top: 5px;
+		}
+	}
+
+			/*Theme metro UI*/
+	body[id^=global_page_ynmusic-][id$=-manage].ynresponsive-metro,
+	body#global_page_ynmusic-history-index.ynresponsive-metro{
+		div[class^=layout_page_ynmusic_][class$=_manage],
+		.layout_page_ynmusic_history_index{
+			background-color: #fff;
+		}
+		.ynmusic_manage_menu{
+			top: 95px;
+		}
+	}
+
+
+	body[id^=global_page_ynmusic-][id$=-manage],
+	body#global_page_ynmusic-history-index{
+		.ynmusic-block-count-mode-view{
+			margin-top: 45px;
+		}
+		.ynmusic_manage_menu{
+			width: 270px;
+			position: absolute;
+			right: 15px;
+			top: 85px;
+			border: none;
+			padding: 0;
+
+			li{
+				width: 48%;
+				float: left;
+				a{
+					white-space: nowrap;
+				}
+			}
+
+			> li a:after{display: none;}
+		}
+	}
+
+	/*Player Plugin*/
+	.mejs-controls div.mejs-time-rail{
+		width: 100% !important;
+	}
+
+	.mejs-container .mejs-controls div{
+		height: 11px !important;
+	}
+
+	.layout_ynmusic_music_player{
+		#player-song-list{
+			width: 100%;
+			bottom: 36px;
+		}
+
+		#player-song-list{
+			ul.song-items li.song-item{
+				padding-top: 5px;
+				white-space: nowrap;
+				max-width: 100%;
+				overflow: hidden;
+
+				.title a{
+					font-weight: normal;
+					font-size: 12px;
+				}
+
+				&:nth-child(even){
+					.action{
+						background: linear-gradient(to right, rgba(0, 0, 0, .1), #000000 17px);
+					}
+				}
+				&:nth-child(odd){
+					.action{
+						background: linear-gradient(to right, rgba(31, 31, 31, .1), #1f1f1f 17px);
+					}
+				}
+				.action{
+					position: absolute;
+					top: 5px;
+					right: 0px;
+					padding-right: 7px;
+					padding-left: 22px;
+				}
+			}
+		}
+
+		#ynmusic-player-render{
+			width: 100%;
+			.song-info{
+				width: 100%;
+				height: 39px;
+
+				.song-title-option{
+					overflow: hidden;
+					width: 50%;
+				}
+				#player-control-button{
+					padding-top: 9px;
+					margin-right: 0px;
+					width: 80px;
+
+					& > span{
+						font-size: 16px;
+					}
+				}
+				#song-option ul#option-list{
+					position: absolute;
+					right: 30px;
+					padding-top: 6px;
+
+					li:not(#list-song){
+						display: none;
+					}
+				}
+				.song-title-option #song-title-head{
+					width: 90%;
+					background: none;
+					padding: 0;
+					margin-top: 12px;
+					white-space: nowrap;
+					overflow: hidden;
+				}
+				#song-option ul#option-list > li:hover{
+					color: inherit !important;
+				}
+
+				.song-photo img{
+					width: 37px;
+					height: 37px;
+				}
+			}
+		}
+
+		#change-type-btn{
+			z-index: 2;
+		}
+
+		.mejs-currenttime,
+		.mejs-controls .mejs-time{display: none !important;}
+		.mejs-controls .mejs-time-rail .mejs-time-total{
+			margin: 0;
+			height: 6px !important;
+			background: #919191 !important;
+			border: none !important;
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+		.mejs-container{
+			position: static;
+		}
+
+		.mejs-volume-button,
+		.mejs-controls a.mejs-horizontal-volume-slider{
+			display: none !important;
+		}
+
+		.mejs-controls .mejs-time-rail .mejs-time-current {
+			border: none;
+			background: $theme_link_color_hover;
+			height: 6px;
+		}
+
+		.mejs-controls .mejs-time-rail .mejs-time-loaded{
+			background: #5e5e5e !important;
+			background-image: none !important;
+			height: 6px !important;
+		}
+
+		.mejs-container .mejs-controls{
+			top: -11px;
+			height: 11px !important;
+			bottom: auto;
+		}
+
+		.mejs-mediaelement{
+			position: static;
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px){
+	/*Fix padding metro*/
+	body.ynresponsive-metro{
+		.layout_page_ynmusic_albums_view,
+		.layout_page_ynmusic_playlists_view,
+		.layout_page_ynmusic_songs_view,
+		.layout_page_ynmusic_artists_view{
+			background: #fff;
+		}
+	}
+
+
+	/*Fix profile cover on 3 template Photo,Metro,Event*/
+	body.ynresponsive-event#global_page_ynmusic-albums-view,
+	body.ynresponsive-event#global_page_ynmusic-playlists-view,
+	body.ynresponsive-event#global_page_ynmusic-songs-view{
+		.layout_page_footer, #global_content .layout_main{
+			position: static;
+		}
+	}
+
+	body.ynresponsive-event{
+		.layout_ynmusic_album_profile_info .music-action-privacy{
+			margin-top: 30px;
+		}
+		.layout_ynmusic_playlist_profile_info .music-action-privacy,
+		.layout_ynmusic_song_profile_info .music-action-privacy {
+			margin-top: 15px;
+		}
+	}
+
+
+	body.ynresponsive-metro{
+		&#global_page_ynmusic-playlists-view,
+		&#global_page_ynmusic-songs-view{
+			.generic_layout_container.layout_middle{
+				margin-top: 13px;
+			}
+
+		}
+
+		.layout_ynmusic_album_profile_cover .album-title-released-date{
+			width: 100%;
+			background: #fff;
+		}
+
+		.music-profile-cover .music-profile-title{
+			background: #fff;
+		}
+
+		.layout_ynmusic_album_profile_info .music-action-privacy{
+			margin-top: 45px;
+		}
+
+		.layout_ynmusic_playlist_profile_info .music-action-privacy,
+		.layout_ynmusic_song_profile_info .music-action-privacy {
+			margin-top: 28px;
+		}
+	}
+
+
+	body.ynresponsive-photo{
+		.layout_ynmusic_album_profile_info .music-action-privacy{
+			margin-top: 35px;
+		}
+		.layout_ynmusic_playlist_profile_info .music-action-privacy,
+		.layout_ynmusic_song_profile_info .music-action-privacy {
+			margin-top: 30px;
+		}
+	}
+
+	/*Feed*/
+	.ynmusic-playlist-feed ul.song-items, .ynmusic-album-feed ul.song-items{
+		max-height: 125px;
+	}
+	.ynmusic-playlist-feed .music-songs ul.song-items > li.song-item .song-count,
+	.ynmusic-album-feed .music-songs ul.song-items > li.song-item .song-count {
+		margin-top: 1px;
+		margin-right: 10px;
+	}
+	.ynmusic-alonesong-feed ul.song-items > li{
+		padding: 2px;
+		vertical-align: top;
+
+		.song-photo{
+			display: none;
+		}
+
+		.title-artist{
+			padding-top: 3px;
+		  	vertical-align: top;
+
+		  	.play-count{
+				display: none;
+			}
+		}
+		.song-count{
+			padding-top: 2px;
+			margin-right: 5px;
+		}
+		.action{
+			top: 0px;
+		}
+	}
+
+
+	/*Cover Artists*/
+	.layout_ynmusic_artist_profile_cover{
+		.music-profile-cover{padding: 0;}
+
+		.music-profile-cover {
+			height: 375px;
+			overflow: visible;
+			.music-profile-photo{
+				width: 115px;
+				height: auto;
+				float: none;
+				margin: auto;
+
+			}
+
+			.music-profile-title{position: static;}
+			.music-box-profile-info{
+				width: 100%;
+				padding-top: 0;
+				text-align: center;
+				height: auto;
+				margin-top: 35px;
+
+				.music-profile-title{
+					text-align: center;
+					a{
+						width: auto;
+						display: inline-block;
+						color: #fff;
+					}
+				}
+				#artist-short_description{
+					text-align: center;
+					padding: 0 10px;
+				}
+
+				.music-addthis{
+					div{text-align: center;}
+				}
+			}
+
+			.music-profile-photo .change-photo-wrapper{
+				height: 115px;
+			}
+		}
+	}
+
+	/*Cover albums, playlist, song detail*/
+
+		/*For layout album profile cover because have released date*/
+		.layout_ynmusic_album_profile_cover{
+			.album-title-released-date{
+				position: absolute;
+				top: 100%;
+
+				*{
+					position: static !important;
+				}
+
+				#album-released-date{
+					margin-top: 0;
+				}
+			}
+		}
+
+
+	.layout_ynmusic_album_profile_cover{margin-bottom: 35px;}
+	#music-songs-detail ul.song-items > li.song-item .title-artist{
+		width: 50%;
+	}
+
+	.music-profile-cover .change-photo-btn a{width: 100%;}
+
+	#music-songs-detail ul.song-items div.action .music-play-btn{
+		position: relative;
+		top: 4px;
+		font-size: 24px;
+	}
+
+	#music-songs-detail ul.song-items div.action{
+		*:not(.music-play-btn){
+			display: none;
+		}
+		.music-play-btn *{display: block;text-decoration: none;}
+	}
+
+	#music-songs-detail ul.song-items > li.song-item.playing{
+		background: $theme_link_color_hover;
+
+		.song-count,
+		.title-artist *,
+		.action span *,
+		.show-hide-btn{
+			color: #fff;
+
+			&:hover{color:#fff;}
+		}
+	}
+
+	.music-addthis{margin-top: 15px;}
+
+
+	.layout_ynmusic_playlist_profile_info,
+	.layout_ynmusic_album_profile_info,
+	.layout_ynmusic_song_profile_info{
+		.music-action-privacy{
+			.music-action,
+			.show-hide-action{
+				max-width: 50%;
+				line-height: 2;
+			}
+		}
+
+		ul.tag-list {display: inline}
+		ul.tag-list li.tag-item{
+			margin-bottom: 3px;
+		}
+
+		.music-genres .value,
+		.music-tags .value,
+		.music-artists .value{
+			display: inline;
+		}
+	}
+
+	.layout_ynmusic_playlist_profile_info .music-action-privacy,
+	.layout_ynmusic_album_profile_info .music-action-privacy,
+	.layout_ynmusic_song_profile_info .music-action-privacy {
+		padding-top: 8px;
+		border-top: 1px solid $theme_border_color;
+		border-bottom: 1px solid $theme_border_color;
+		padding-bottom: 10px;
+		margin-top: 5px;
+	}
+
+
+	.layout_ynmusic_playlist_profile_info .music-action-privacy .music-creation-date_privacy span,
+	.layout_ynmusic_album_profile_info .music-action-privacy .album-creation-date_privacy span,
+	.layout_ynmusic_song_profile_info .music-action-privacy .music-creation-date_privacy span {
+		display: block;
+		text-align: right;
+		margin-right: 0 !important;
+
+		&.creation-date{
+			font-size: 12px;
+		}
+
+		& > p{
+			padding-left: 0px;
+			padding-right: 20px;
+			margin-bottom: 0px;
+			&:after{
+
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+
+	.music-profile-cover{
+		padding: 0 !important;
+		background-size: cover;
+		height: 375px;
+		overflow: visible;
+		margin-bottom: 60px;
+		.music-bg-profile-cover{display: none;}
+		.reposition-cover-btn{display: none !important;}
+
+		.change-cover-btn a,
+		.change-photo-btn a{
+			font-size: 12px;
+		}
+
+		.music-info-bottom{
+			padding: 0 15px;
+			padding-bottom: 15px;
+		}
+
+		.music-profile-album{
+			display: none;
+		}
+
+		.music-profile-album,
+		#album-released-date{
+			position: absolute;
+			bottom: -60px;
+			background: transparent;
+			padding: 0;
+			font-size: 14px;
+			color: $theme_font_color;
+			font-weight: bold;
+
+			a{
+				color: $theme_link_color !important;
+			}
+		}
+
+		.music-profile-title{
+			position: absolute;
+			top: 100%;
+			background: none;
+			width: 100%;
+			padding: 0px;
+			padding-top: 10px;
+
+			a{
+				font-size: 18px;
+				color: $theme_link_color;
+				display: block;
+				max-height: 46px;
+				width: 100%;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			    word-break: break-word;
+			    background: none;
+			    padding: 0;
+			    float: none;
+			}
+		}
+
+		.music-profile-photo{
+			width: 240px;
+			float: none !important;
+			margin: auto;
+			height: auto;
+			background: transparent;
+			top: 25px;
+
+			.music-songs-info{
+				padding: 3px 13px;
+				width: 180px;
+				margin: auto;
+				background: rgba(0, 0, 0, 0.5);
+				margin-top: 13px;
+			}
+
+			.change-photo-wrapper{
+				width: 115px;
+				height: 115px;
+				margin: auto;
+				outline: 4px solid rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		.music-box-profile-info{
+			width: 100%;
+			position: absolute; /*Temp*/
+
+			.playing-song-title{
+				padding-left: 10px;
+			}
+		}
+	}
+
+	/*Featured Albums homepage*/
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums li.featured-album .album-photo{
+		display: none;
+	}
+	.layout_ynmusic_featured_albums{
+		.owl-carousel .owl-wrapper-outer{overflow: hidden;}
+	}
+
+	/*Grid view songs*/
+	.ynmusic_grid-view #ynmusic-song-listing ul.song-items > li.song-item,
+	.layout_ynmusic_most_played_songs #ynmusic-song-listing ul.song-items > li.song-item,
+	.layout_ynmusic_most_liked_songs #ynmusic-song-listing ul.song-items > li.song-item,
+	.layout_ynmusic_most_discussed_songs #ynmusic-song-listing ul.song-items > li.song-item,
+
+	.layout_ynbusinesspages_business_profile_ynmusic_song #ynmusic-song-listing ul.song-items > li.song-item,
+	#global_page_ynbusinesspages-social-music-list #ynmusic-song-listing ul.song-items > li.song-item,
+
+	.layout_advgroup_profile_social_music_songs #ynmusic-song-listing ul.song-items > li.song-item,
+	#global_page_advgroup-social-music-list #ynmusic-song-listing ul.song-items > li.song-item{
+		width: 100%;
+		margin-left: 0;
+
+		.show-hide-btn{display: block !important;}
+	}
+
+
+	/*Listview artists*/
+	.ynmusic_list-view ul.artist-items > li.artist-item{
+		.artist-info{
+			margin-top: 0;
+
+			.artist-country-statistic,
+			.artist-genre{
+				width: 100%;
+
+				.label{
+					display: inline-block;
+				}
+			}
+
+			.artist-genre-country,
+			.artist-short_description{
+				width: 100%;
+				height: auto;
+				/*max-height: 35px;*/
+				margin-top: 7px;
+			}
+		}
+	}
+
+	/*Listview albums, playlist, songs*/
+	.ynmusic_list-view #ynmusic-album-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-playlist-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-song-listing .list-view-info,
+	.ynmusic_list-view .history-items .list-view-info,
+	#ynmusic-manage-song #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-song .history-items .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-playlist .history-items .list-view-info,
+	#ynmusic-manage-album #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-album .history-items .list-view-info,
+	#ynmusic-history-listing #ynmusic-album-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-song-listing .list-view-info,
+	#ynmusic-history-listing .history-items .list-view-info {
+
+		.box-float .music-title{
+			width: 60%;
+		}
+		.box-float .list-view-artist-owner{
+			width: 70%;
+		}
+		ul.song-items > li.song-item .title-artist{
+			width: 85%;
+
+			.title{
+				width: 80%;
+				a{
+					text-overflow: ellipsis;
+					max-width: 100%;
+					overflow: hidden;
+					display: inline-block;
+					white-space: nowrap;
+					position: relative;
+					vertical-align: top;
+					top: 3px;
+				}
+			}
+
+			.seperate,.artist{
+				display: none;
+			}
+		}
+	}
+	html[dir="rtl"]{
+		.layout_ynmusic_song_profile_info,
+		.layout_ynmusic_playlist_profile_info,
+		.layout_ynmusic_album_profile_info{
+			.music-action-privacy{
+				.music-creation-date_privacy span{
+					text-align: left;			
+				}
+			}
+		}
+		.layout_ynmusic_artist_profile_cover .music-profile-cover .music-profile-photo{
+			float: none;
+		}
+		.music-profile-cover .music-box-profile-info,.music-profile-cover .music-profile-title a{
+			float: none;
+		}
+	}
+}
+
+@media screen and (max-width: 568px){
+	/*Listview albums, playlist, songs*/
+	.ynmusic_list-view #ynmusic-album-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-playlist-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-song-listing .list-view-info,
+	.ynmusic_list-view .history-items .list-view-info,
+	#ynmusic-manage-song #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-song .history-items .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-playlist .history-items .list-view-info,
+	#ynmusic-manage-album #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-album .history-items .list-view-info,
+	#ynmusic-history-listing #ynmusic-album-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-song-listing .list-view-info,
+	#ynmusic-history-listing .history-items .list-view-info {
+
+		ul.song-items > li.song-item .title-artist{
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: 548px){
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums{
+		z-index: 0;
+	}
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums li.featured-album .album-cover{
+		padding: 10px 10px 0 10px;
+	}
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums li.featured-album .box-time-image-song,
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums li.featured-album .music-info-bottom{
+		width: 93% !important;
+	}
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums li.featured-album .music-info-bottom{
+		& > div{
+			float: right;
+			width: 70%;
+			display: block;
+			text-align: right !important;
+			padding-top: 0 !important;
+			position: relative;
+			top: 10px;
+
+			&:nth-child(2){
+				float:left;
+				text-align: left !important;
+				padding-left: 10px;
+				position: relative;
+				top: 0;
+				width: 30%;
+			}
+		}
+		.music-statistic span{
+			margin-left: 15px;
+			margin-right: 0px;
+		}
+	}
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums .owl-buttons .owl-prev,
+	.layout_ynmusic_featured_albums ul#ynmusic-featured-albums .owl-buttons .owl-next{
+		top: 50%;
+		margin-top: -29px;
+	}
+	html[dir="rtl"]{
+		.layout_ynmusic_featured_albums ul#ynmusic-featured-albums li.featured-album .music-info-bottom{
+			& > div{
+				float: left;
+				text-align: left !important;
+				&:nth-child(2){
+					float: right;
+					text-align: right !important;
+					padding-left: 0;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+
+	/*Feed*/
+	.ynmusic-playlist-feed .music-songs ul.song-items > li.song-item .title-artist, .ynmusic-album-feed .music-songs ul.song-items > li.song-item .title-artist{
+		max-width: 70%;
+	}
+
+
+	#global_page_ynmusic-history-index{
+		.image-song{
+			margin-top: 20px;
+		}
+		.music-photo{
+			margin-bottom: 20px;
+		}
+		.ynmusic-listing-content{
+			button + a{
+				margin-top: 5px;
+				overflow: hidden;
+				display: block;
+			}
+		}
+	}
+	.remove-history{
+		font-size: 12px;
+		margin-top: 5px;
+		a{
+			vertical-align: top;
+		}
+		input[type="radio"], input[type="checkbox"]{
+			margin: 0;
+		}
+	}
+
+	.ynmusic_list-view .album-items > li .album-photo .album-photo-bg .album-photo-bgopacity:after,
+	.ynmusic_list-view .history-items > li .album-photo .album-photo-bg .album-photo-bgopacity:after,
+	#ynmusic-manage-album .album-items > li .album-photo .album-photo-bg .album-photo-bgopacity:after,
+	#ynmusic-manage-album .history-items > li .album-photo .album-photo-bg .album-photo-bgopacity:after,
+	#ynmusic-history-listing .album-items > li .album-photo .album-photo-bg .album-photo-bgopacity:after,
+	#ynmusic-history-listing .history-items > li .album-photo .album-photo-bg .album-photo-bgopacity:after {
+		display: none;
+	}
+
+	/*Grid view albums*/
+	.ynmusic_grid-view ul.album-items > li.album-item,
+	.layout_ynmusic_most_played_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_liked_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_discussed_albums ul.album-items > li.album-item,
+
+	.layout_ynbusinesspages_business_profile_ynmusic_album ul.album-items > li.album-item,
+	#global_page_ynbusinesspages-social-music-list ul.album-items > li.album-item,
+
+	.layout_advgroup_profile_social_music_albums ul.album-items > li.album-item,
+	#global_page_advgroup-social-music-list ul.album-items > li.album-item{
+		width: 50%;
+
+		&:nth-child(2n){
+			.action-pop-up{
+				left: auto !important;
+				right: 0px !important;
+			}
+		}
+	}
+
+	.ynmusic_list-view .album-items > li .album-photo .album-photo-bg::before,
+	.ynmusic_list-view .history-items > li .album-photo .album-photo-bg::before,
+	#ynmusic-manage-album .album-items > li .album-photo .album-photo-bg::before,
+	#ynmusic-manage-album .history-items > li .album-photo .album-photo-bg::before,
+	#ynmusic-history-listing .album-items > li .album-photo .album-photo-bg::before,
+	#ynmusic-history-listing .history-items > li .album-photo .album-photo-bg::before {
+		display: none;
+	}
+
+	/*Gridview playlist*/
+	.ynmusic_grid-view ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_played_playlists ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_liked_playlists ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_discussed_playlists ul.playlist-items li.playlist-item {
+		width: 45%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+	}
+
+
+	/*Gridview Artists*/
+	.ynmusic_grid-view ul.artist-items > li.artist-item{
+		width: 48%;
+		margin-left: 4%;
+
+
+		&:nth-child(4n+1){
+			margin-left: 4%;
+		}
+		&:nth-child(3n+1){
+			margin-left: 4%;
+		}
+		&:nth-child(odd){
+			margin-left: 0%;
+		}
+	}
+
+	.ynmusic_list-view ul.playlist-items li.playlist-item .list-view-playlist-info,
+	.ynmusic_list-view .history-items li.playlist-item .list-view-playlist-info,
+	#ynmusic-manage-playlist ul.playlist-items li.playlist-item .list-view-playlist-info,
+	#ynmusic-manage-playlist .history-items li.playlist-item .list-view-playlist-info,
+	#ynmusic-history-listing ul.playlist-items li.playlist-item .list-view-playlist-info,
+	#ynmusic-history-listing .history-items li.playlist-item .list-view-playlist-info {
+		overflow: visible;
+	}
+
+
+	.ynmusic_list-view #ynmusic-album-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-playlist-listing .list-view-info,
+	.ynmusic_list-view #ynmusic-song-listing .list-view-info,
+	.ynmusic_list-view .history-items .list-view-info,
+	#ynmusic-manage-song #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-song #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-song .history-items .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-playlist #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-playlist .history-items .list-view-info,
+	#ynmusic-manage-album #ynmusic-album-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-manage-album #ynmusic-song-listing .list-view-info,
+	#ynmusic-manage-album .history-items .list-view-info,
+	#ynmusic-history-listing #ynmusic-album-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-playlist-listing .list-view-info,
+	#ynmusic-history-listing #ynmusic-song-listing .list-view-info,
+	#ynmusic-history-listing .history-items .list-view-info {
+		overflow: visible;
+
+		.statistic_action{
+			clear: both;
+		}
+
+		.box-float {
+			.music-genre,
+			.music-creation_time{
+				display: none;
+			}
+
+
+			.music-title, .list-view-artist-owner{width: 100%;}
+
+			.list-view-artist-owner{
+				span.artist.value,
+				span.artist.label,
+				.list-view-hyphen{
+					display: none;
+				}
+			}
+		}
+	}
+
+	.ynmusic_list-view .album-items > li .album-photo,
+	.ynmusic_list-view .history-items > li .album-photo,
+	#ynmusic-manage-album .album-items > li .album-photo,
+	#ynmusic-manage-album .history-items > li .album-photo,
+	#ynmusic-history-listing .album-items > li .album-photo,
+	#ynmusic-history-listing .history-items > li .album-photo {
+		border: none;
+		width: 60px;
+		height: 60px;
+
+		.album-photo-bg .album-photo-bgopacity:after,
+		.album-photo-bg,
+		.album-photo-bgopacity{
+			&:before,
+			&:after{
+				display:none;
+			}
+		}
+	}
+
+	.ynmusic_list-view ul.playlist-items li.playlist-item .playlist-photo,
+	.ynmusic_list-view .history-items li.playlist-item .playlist-photo,
+	#ynmusic-manage-playlist ul.playlist-items li.playlist-item .playlist-photo,
+	#ynmusic-manage-playlist .history-items li.playlist-item .playlist-photo,
+	#ynmusic-history-listing ul.playlist-items li.playlist-item .playlist-photo,
+	#ynmusic-history-listing .history-items li.playlist-item .playlist-photo {
+		width: 60px;
+		height: 60px;
+		margin-left: 0;
+
+		.playlist-photo-bgopacity:after,
+		&:after,
+		&:before{
+			display: none;
+		}
+	}
+
+
+	.ynmusic_list-view #ynmusic-song-listing ul.song-items > li.song-item .song-photo,
+	.ynmusic_list-view #ynmusic-song-listing .history-items > li.song-item .song-photo,
+	.ynmusic_list-view .ynmusic-listing-content ul.song-items > li.song-item .song-photo,
+	.ynmusic_list-view .ynmusic-listing-content .history-items > li.song-item .song-photo,
+	#ynmusic-manage-song #ynmusic-song-listing ul.song-items > li.song-item .song-photo,
+	#ynmusic-manage-song #ynmusic-song-listing .history-items > li.song-item .song-photo,
+	#ynmusic-manage-song .ynmusic-listing-content ul.song-items > li.song-item .song-photo,
+	#ynmusic-manage-song .ynmusic-listing-content .history-items > li.song-item .song-photo,
+	#ynmusic-history-listing #ynmusic-song-listing ul.song-items > li.song-item .song-photo,
+	#ynmusic-history-listing #ynmusic-song-listing .history-items > li.song-item .song-photo,
+	#ynmusic-history-listing .ynmusic-listing-content ul.song-items > li.song-item .song-photo,
+	#ynmusic-history-listing .ynmusic-listing-content .history-items > li.song-item .song-photo {
+		width: 60px;
+		height: 60px;
+		.song-photo-bgopacity:after{display: none}
+	}
+	html[dir="rtl"]{			
+		.ynmusic_grid-view ul.album-items > li.album-item:nth-child(2n+1), .layout_ynmusic_most_played_albums ul.album-items > li.album-item:nth-child(2n+1), .layout_ynmusic_most_liked_albums ul.album-items > li.album-item:nth-child(2n+1), .layout_ynmusic_most_discussed_albums ul.album-items > li.album-item:nth-child(2n+1), .layout_ynbusinesspages_business_profile_ynmusic_album ul.album-items > li.album-item:nth-child(2n+1), #global_page_ynbusinesspages-social-music-list ul.album-items > li.album-item:nth-child(2n+1), .layout_advgroup_profile_social_music_albums ul.album-items > li.album-item:nth-child(2n+1), #global_page_advgroup-social-music-list ul.album-items > li.album-item:nth-child(2n+1){
+			right:0;
+		}
+		.ynmusic_grid-view ul.album-items > li.album-item:nth-child(2n) .action-pop-up, .layout_ynmusic_most_played_albums ul.album-items > li.album-item:nth-child(2n) .action-pop-up, .layout_ynmusic_most_liked_albums ul.album-items > li.album-item:nth-child(2n) .action-pop-up, .layout_ynmusic_most_discussed_albums ul.album-items > li.album-item:nth-child(2n) .action-pop-up, .layout_ynbusinesspages_business_profile_ynmusic_album ul.album-items > li.album-item:nth-child(2n) .action-pop-up, #global_page_ynbusinesspages-social-music-list ul.album-items > li.album-item:nth-child(2n) .action-pop-up, .layout_advgroup_profile_social_music_albums ul.album-items > li.album-item:nth-child(2n) .action-pop-up, #global_page_advgroup-social-music-list ul.album-items > li.album-item:nth-child(2n) .action-pop-up{
+			    left: 0 !important;
+				right: auto !important;
+		}
+	}
+}
+
+@media screen and (max-width: 380px){
+	.ynmusic_grid-view ul.album-items > li.album-item,
+	.layout_ynmusic_most_played_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_liked_albums ul.album-items > li.album-item,
+	.layout_ynmusic_most_discussed_albums ul.album-items > li.album-item,
+	.layout_ynbusinesspages_business_profile_ynmusic_album ul.album-items > li.album-item,
+	#global_page_ynbusinesspages-social-music-list ul.album-items > li.album-item,
+	.layout_advgroup_profile_social_music_albums ul.album-items > li.album-item,
+	#global_page_advgroup-social-music-list ul.album-items > li.album-item{
+		min-height: 225px;
+
+		.album-photo .album-photo-bg .music-play-btn a{
+			font-size: 2em;
+			width: 50px;
+			height: 50px;
+			line-height: 45px;
+			top: 50%;
+			margin-top: -50px;
+		}
+		.album-photo{height: 150px;}
+		.album-photo .album-statistic{margin-left: 15px;}
+		.album-photo .album-photo-bg:before{display: none;}
+		.album-photo-bgopacity{display: none}
+		.music-play-btn{opacity: 1 !important}
+		.add-to-playlist{opacity: 1}
+		.show-hide-btn{opacity: 1}
+		.icon-playing{display: none !important}
+	}
+
+	/*Gridview playlist*/
+	.ynmusic_grid-view ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_played_playlists ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_liked_playlists ul.playlist-items li.playlist-item,
+	.layout_ynmusic_most_discussed_playlists ul.playlist-items li.playlist-item {
+		min-height: 210px;
+		width: 48%;
+		margin-right: 0%;
+		margin-left: 4%;
+
+		&:nth-child(odd){
+			margin-left: 0%;
+		}
+
+		.playlist-photo .playlist-statistic{margin-left: 15px;}
+		.playlist-photo{height: 150px;}
+		.playlist-photo .music-play-btn a{
+			font-size: 2em;
+			width: 50px;
+			height: 50px;
+			line-height: 45px;
+			top: 50%;
+			margin-top: -50px;
+		}
+		.playlist-photo:before,
+		.playlist-photo:after{
+			display: none;
+		}
+		.icon-playing{display: none !important}
+		.music-play-btn,
+		.show-hide-btn{opacity: 1 !important}
+	}
+
+
+	/*Gridview Artists*/
+	.ynmusic_grid-view ul.artist-items > li.artist-item{
+		.artist-photo{height: 150px;}
+	}
+	html[dir="rtl"]{
+		.layout_ynmusic_most_played_albums ul.album-items > li.album-item .album-photo .album-statistic,
+		.ynmusic_grid-view ul.album-items > li.album-item .album-photo .album-statistic{
+			text-align: center;
+			margin: 10px auto !important;
+		}
+		.ynmusic_grid-view ul.playlist-items li.playlist-item:nth-child(odd), .layout_ynmusic_most_played_playlists ul.playlist-items li.playlist-item:nth-child(odd), .layout_ynmusic_most_liked_playlists ul.playlist-items li.playlist-item:nth-child(odd), .layout_ynmusic_most_discussed_playlists ul.playlist-items li.playlist-item:nth-child(odd){
+			margin-right:0;
+		}
+		.ynmusic_grid-view ul.playlist-items li.playlist-item, .layout_ynmusic_most_played_playlists ul.playlist-items li.playlist-item, .layout_ynmusic_most_liked_playlists ul.playlist-items li.playlist-item, .layout_ynmusic_most_discussed_playlists ul.playlist-items li.playlist-item{
+			margin-right:0;
+		}
+	}
+}
+
+.atm-f{
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}

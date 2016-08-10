@@ -1,0 +1,3 @@
+ALTER TABLE  `engine4_viewed_viewmes` ADD  `flag` INT( 3 ) NULL DEFAULT NULL ;
+
+INSERT INTO `engine4_core_tasks` (`task_id`, `title`, `module`, `plugin`, `timeout`, `processes`, `semaphore`, `started_last`, `started_count`, `completed_last`, `completed_count`, `failure_last`, `failure_count`, `success_last`, `success_count`) VALUES(null, 'sendemail', 'Viewed', 'Viewed_Plugin_Task_Sendemail',43200, 1,0,0,0,0,0,0,0,0,0);

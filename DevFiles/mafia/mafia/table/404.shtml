@@ -1,0 +1,42 @@
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+.style2 {
+	color: #FF0000;
+	font-size: 18px;
+	font-weight: bold;
+}
+-->
+</style>
+<body text="#FFFFFF" bgcolor="#000000">
+
+<table border="0" style="border-collapse: collapse" width="100%" id="table1" height="100%" cellpadding="0">
+	<tr>
+		<td>
+		<div align="center">
+			<table border="2" style="border-collapse: collapse" width="60%" id="table2" bordercolorlight="#FF0000" 
+bordercolordark="#FF0000" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+					<table border="0" style="border-collapse: collapse" width="100%" id="table3" cellpadding="0">
+						<tr>
+							<td bgcolor="#FF0000">
+							<p align="center"><font size="5" color="#000000"><b>
+							Forbidden</b></font></td>
+						</tr>
+						<tr>
+							<td>
+							<p align="center"><br>
+							  <span class="style2">You do not have access to view this page.</span><br>
+							&nbsp;
+						  </td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+</table>
+

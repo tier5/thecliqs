@@ -1,0 +1,68 @@
+#global_page_ynresume-admin-settings-level {
+	#resume_credit-wrapper, #recommendation_credit-wrapper, 
+	#resume_max_credit-wrapper, #recommendation_max_credit-wrapper,
+	#resume_period-wrapper, #recommendation_period-wrapper
+	{
+		padding-top: 0px;
+	}
+	#resume_first_amount-wrapper, #recommendation_first_amount-wrapper,
+	#resume_credit-wrapper, #recommendation_credit-wrapper
+	{
+		float: left;
+		min-width: 58%;
+	}
+	#resume_first_credit-wrapper, #recommendation_first_credit-wrapper,
+	#resume_max_credit-wrapper, #recommendation_max_credit-wrapper,
+	#resume_period-wrapper, #recommendation_period-wrapper
+	{
+		float: left;
+		clear: none;
+	}
+	#resume_first_credit-label, #recommendation_first_credit-label,
+	#resume_max_credit-label, #recommendation_max_credit-label,
+	#resume_period-label, #recommendation_period-label
+	{
+		display: none;
+	}
+	#resume_max_credit-wrapper, #recommendation_max_credit-wrapper,
+	#resume_period-wrapper, #recommendation_period-wrapper
+	{
+		width: 120px;
+	}
+	#resume_max_credit-wrapper input, #recommendation_max_credit-wrapper input,
+	#resume_period-wrapper input, #recommendation_period-wrapper input
+	{
+		width: 100px;
+	}
+}
+
+body[id^=global_page_ynresume-admin]
+{
+	.tabs ul li
+	{
+		padding: 7px 0px;
+	}
+	.settings .form-element .description, .settings .form-description
+	{
+		max-width: 100%!important;
+	}
+}
+
+.add_faq {
+	background-image: url("~/application/modules/Ynresume/externals/images/add_faq.png");
+	background-repeat: no-repeat;
+}
+
+.ynadmin-table{
+	overflow: auto;
+}
+
+.add_link {
+	margin: 10px 0px;
+}
+
+.result_count {
+	font-size: 0.9em;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	}

@@ -1,0 +1,118 @@
+.ynultimatevideo-category-collapsed {
+    background: url(~/application/modules/Ynultimatevideo/externals/images/collapse_collapsed.png) no-repeat;
+}
+
+.ynultimatevideo-category-no-collapsed {
+   background: url(~/application/modules/Ynultimatevideo/externals/images/collapse.png) no-repeat;
+}
+
+tr.ynultimatevideo-category-sub-category td.category-name {
+    padding-left:50px;
+}
+
+.ynultimatevideo-category-collapse-control, .ynultimatevideo-category-collapse-nocontrol {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ynultimatevideo_order_asc {
+    background: url(~/application/modules/Ynultimatevideo/externals/images/show_more.png) no-repeat;
+    background-position: right;
+}
+
+.ynultimatevideo_order_desc {
+    background: url(~/application/modules/Ynultimatevideo/externals/images/show_less.png) no-repeat;
+    
+    background-position: right;
+}
+
+table.admin_table .ynultimatevideo_order_asc, table.admin_table .ynultimatevideo_order_desc {
+    padding-right: 16px;
+}
+
+td.ynultimatevideo-cell-center {
+    text-align: center;
+}
+body[id^=global_page_ynultimatevideo-admin] {
+	#title-wrapper
+	{
+		border:0;
+	}
+}
+
+#global_page_ynultimatevideo-admin-category-edit-category,
+#global_page_ynultimatevideo-admin-category-add-category{
+	.form-label{
+		margin-bottom: 10px;
+	}
+}
+.view-report{
+	i.fa{
+		margin-right: 5px;
+	}
+}
+.back-migration{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	i.fa{
+		margin-right: 5px;
+	}
+}
+ul.item-tab{
+    border-bottom: 1px dashed #eaeaea;
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    margin-bottom: 15px;
+
+	li{
+		float: left;
+	    margin-right: 30px;
+	    cursor: pointer;
+	    height: 30px;
+	    line-height: 35px;
+	    border-bottom: 3px solid transparent;
+	    
+	    a{
+	    	font-size: 1.05em;
+	    	font-weight: 700;
+	    	color: #999;
+	    }
+
+	    &.active{
+			border-bottom: 3px solid $theme_link_color !important;	
+	    	a{
+				color: $theme_link_color !important;
+	    	}
+	    }
+	}
+}
+
+
+td.options-list a:not(:last-child) {
+	margin-right: 5px;
+	border-right: 1px solid $theme_font_color;
+	padding-right: 5px;
+}
+#global_page_ynultimatevideo-admin-settings-youtube
+{
+	strong
+	{
+		font-weight: bold;
+	}
+	.settings .form-description
+	{
+		max-width: 100%;
+	}
+}
+
+
+#demo-list{
+	tr{
+		cursor: move;
+	}
+}

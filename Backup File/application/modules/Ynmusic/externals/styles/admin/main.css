@@ -1,0 +1,152 @@
+body[id^=global_page_ynmusic-admin] {
+	.tabs ul li
+	{
+		padding: 7px;
+	}
+	.settings .form-element .description, .settings .form-description {
+		max-width: 100%!important;
+	}
+	
+	.result_count {
+		font-size: 0.9em;
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+	
+	.option-link a:not(:last-child) {
+	  	border-right: 1px solid gray;
+	  	padding-right: 5px;
+	}
+}
+
+.add_link {
+	margin: 5px 0px;
+	
+	.fa {
+		margin-right: 5px;
+	}
+}
+
+#global_page_ynmusic-admin-settings-level {
+	#song_credit-wrapper, #album_credit-wrapper, #playlist_credit-wrapper, 
+	#song_max_credit-wrapper, #album_max_credit-wrapper, #playlist_max_credit-wrapper,
+	#song_period-wrapper, #album_period-wrapper, #playlist_period-wrapper
+	{
+		padding-top: 0px;
+	}
+	#song_first_amount-wrapper, #album_first_amount-wrapper, #playlist_first_amount-wrapper,
+	#song_credit-wrapper, #album_credit-wrapper, #playlist_credit-wrapper
+	{
+		float: left;
+		min-width: 58%;
+	}
+	#song_first_credit-wrapper, #album_first_credit-wrapper, #playlist_first_credit-wrapper,
+	#song_max_credit-wrapper, #album_max_credit-wrapper, #playlist_max_credit-wrapper,
+	#song_period-wrapper, #album_period-wrapper, #playlist_period-wrapper
+	{
+		float: left;
+		clear: none;
+	}
+	#song_first_credit-label, #album_first_credit-label, #playlist_first_credit-label,
+	#song_max_credit-label, #album_max_credit-label, #playlist_max_credit-label,
+	#song_period-label, #album_period-label, #playlist_period-label
+	{
+		display: none;
+	}
+	#song_max_credit-wrapper, #album_max_credit-wrapper, #playlist_max_credit-wrapper,
+	#song_period-wrapper, #album_period-wrapper, #playlist_period-wrapper
+	{
+		width: 120px;
+	}
+	#song_max_credit-wrapper input, #album_max_credit-wrapper input, #playlist_max_credit-wrapper input,
+	#song_period-wrapper input, #album_period-wrapper input, #playlist_period-wrapper input
+	{
+		width: 100px;
+	}
+}
+
+#multidelete_form {
+	overflow: auto;
+}
+
+/*tag artist*/
+#global_page_ynmusic-admin-artists-create,
+#global_page_ynmusic-admin-artists-edit{
+	span.tag{
+		background-color: $theme_link_color_hover;
+		display: inline-block;
+		padding: 8px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		border-radius: 5px;
+		color: #fff;
+		a{
+			color: #fff;
+
+			&:hover{
+				color: $theme_font_color_light;
+			}
+		}
+	}
+
+	img#uploadPreviewMain {
+	    max-width: 200px;
+	    max-height: 200px;
+	}
+	img#uploadPreviewCover {
+    	max-height: 200px;
+	}
+}
+
+
+/*https://jira.younetco.com/browse/PSMUSIC-147*/
+.view-report{
+	i.fa{
+		margin-right: 5px;
+	}
+}
+.back-migration{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	i.fa{
+		margin-right: 5px;
+	}
+}
+ul.item-tab{
+    border-bottom: 1px dashed #eaeaea;
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    margin-bottom: 15px;
+
+	li{
+		float: left;
+	    margin-right: 30px;
+	    cursor: pointer;
+	    height: 30px;
+	    line-height: 35px;
+	    border-bottom: 3px solid transparent;
+	    
+	    a{
+	    	font-size: 1.05em;
+	    	font-weight: 700;
+	    	color: #999;
+	    }
+
+	    &.active{
+			border-bottom: 3px solid $theme_link_color !important;	
+	    	a{
+				color: $theme_link_color !important;
+	    	}
+	    }
+	}
+}
+
+
+td.options-list a:not(:last-child) {
+	margin-right: 5px;
+	border-right: 1px solid $theme_font_color;
+	padding-right: 5px;
+}

@@ -1,0 +1,8 @@
+php_value include_path /home/dedica82/public_html/mafia/include:include/
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 58.209.131.188

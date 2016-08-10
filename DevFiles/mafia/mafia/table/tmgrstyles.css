@@ -1,0 +1,85 @@
+/*****************************************************************
+** Description : Style Sheet for PHP/MySQL Table Manager 		**
+** File Name   : tmgrstyles.css									**
+** Version     : 2.8											**
+** Author      : Tony Aslett									**
+** Website     : www.appcreator.com								**
+** Modified    : 14 October 2003    							**
+** Email	   : tony@appcreator.com							**
+******************************************************************/
+/************************************************************************
+    PHP:MySQL Table Manager simplifies mysql table management.
+    Copyright (C) 2003  Tony Aslett
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+********************************************************************************/
+
+body{font-family: Arial, Verdana, Helvetica, sans-serif; background-color:#DEDEDE;}
+div.p{background-color:#FFFFFF; margin:10px; padding:10px} 
+div.cream{background-color:#B0C4DE; margin:20px; padding:20px; width:50%; align:center} 
+div.m{background-color:#B0C4DE; width:500px; margin:20px; padding:20px} 
+div.info{color:#006699; font-size:12px; font-weight:bold;} 
+div.error{color:red}
+.green{color:#006699}
+
+img.pad{margin-left:10px; margin-right:10px;} 
+
+h1{color:#006699; margin:20px} 
+h2{color:#006699; margin:20px} 
+h2.w{color:#FFFFFF; margin:20px} 
+h4.red{color:#CC0000; margin:20px} 
+
+th{color:#3366CC} 
+tr.head{background-color:#B0C4DE; color:black; font-style:bold; font-size:10pt} 
+
+input{border-width:1px; font-family: Arial, Verdana, Helvetica, sans-serif;}
+
+input.but{  margin:0; color:#FFFFFF; background-color:#006699; width:160px; font-size:9pt; font-weight:bold; height:18px; cursor:pointer;} 
+input.org{ margin:0; color:#FFFFFF; background-color:#FF9933; width:160px; font-size:9pt; font-weight:bold; height:18px; cursor:pointer;}
+input.blu{  margin:0; color:#FFFFFF; background-color:#3366CC; width:160px; font-size:9pt; font-weight:bold; height:18px; cursor:pointer;}  
+input.ser{ margin:0; color:#FFFFFF;  background-color:#006699; width:100px;font-size:9pt; font-weight:bold; height:18px; cursor:pointer;} 
+input.del{ margin:0; color:#FFFFFF; background-color:#CC0000; width:160px; font-weight:bold; font-size:9pt; height:18px; cursor:pointer;} 
+input.sml{ margin:0; color:#FFFFFF; background-color:#006699; width:100px; font-weight:bold; font-size:9pt; height:18px; cursor:pointer;} 
+input.smldel{ margin:0; color:#FFFFFF; background-color:#CC0000; width:100px; font-weight:bold; font-size:9pt; height:18px; cursor:pointer;} 
+
+A.crt {font-weight:bold; font-size: 9pt;  color: #FFFFFF; text-decoration: none; background-color: #006699;
+	text-align: center; padding: 2px; overflow: hidden;  width: 160px; height:18px; cursor:pointer;
+	font-family: Arial, Verdana, Helvetica, sans-serif; 
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #CCCCCC;
+}
+A.crt:hover{background-color:#FFA000; color:#000000;}
+input.but:hover, .org:hover, .blu:hover, .ser:hover, .del:hover, .sml:hover, .smldel:hover {background-color:#FFA000; color:#000000;}
+/*.frow, .frow td{height:20px;}*/
+form{display:inline; margin:0;}
+
+.pagecount{width:100%; text-align:center; clear:both; }
+
+.pagecount form a{text-decoration:none; margin:0 3px 0 3px;
+    border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #CCCCCC;
+    background-color:#006699; color:#FFFFFF; 
+    font-size: 9pt; font-weight:bold;
+    padding:0 2px 0 2px;}
+.pagecount form a:hover{ background-color:#FFA000; color:#000000;}   
+    
+.pagecount form input{text-align:center;}
+.bytes{font-size:small;}
+.foot{font-size:small; text-align:center; width:100%; margin-top:10px;}
+.recspage, .recspage input{display:inline; margin:0;}

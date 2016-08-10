@@ -1,0 +1,1 @@
+<?php echo $this->partial('_mainPlayer.tpl', array('album'=>$this->album, 'song'=>$this->song, 'songs'=>$this->songs,'type'=>'album'));?>

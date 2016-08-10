@@ -1,0 +1,528 @@
+"YNSOCIALADS_MANAGE_MODULE_DESCRIPTION";"This page contains all informations related to modules that are supported by social ads. You can extend this list by adding a new module.
+These supported module will show up on front-end when users choose internal content. Users can only create ads from modules which are supported and allowed in package."
+"YNSOCIALADS_ADD_MODULE_DESCRIPTION";"Fill out all required fields below in order to add another module into social ads' module support list."
+"YNSOCIALADS_FORM_PACKAGE_PRICE";"Zero will make this a free package"
+"YNSOCIALADS_FORM_PACKAGE_BLOCK";"Select the Ad Blocks within which advertisements from this package should be display. Note: A change in this setting later on will only apply on new ads that are created in this package.(Press Ctrl and click to select multiple types)"
+"YNSOCIALADS_FORM_PACKAGE_LEVEL";"Select the Member Levels to which Ad Package should be available. Only users belonging to the selected Member Levels will be able to create ads of this package."
+"YNSOCIALADS_MANAGE_PACKAGE_DESCRIPTION";"Below is a list of packages that you've created. All changes made to certain package only affect ads that are created after your changes.
+Ads create before you make changes to a package remain untouched."
+"YNSOCIALADS_ADD_PACKAGE_DESCRIPTION";"This page allows you to create new ad package. There are multiple settings available such as content, placement, pricing, etc.
+This can not be edited if it has at least one ad related to."
+"YNSOCIALADS_MANAGE_AD_DESCRIPTION";"This page lists all ads in your community. You can use this page to approve, deny, delete, edit, pause and resume any ad.
+Entering criteria into filter fields help you narrow down ads you want to look for. You can remove multiple ads by select check boxes of multiple ads and click \"delete selected\" button."
+"YNSOCIALADS_MANAGE_MONEY_REQUEST_DESCRIPTION";"Table below shows a list of money request from advertisers whose ads do not reach their targets. You can view, reject or accept request.
+Once you accept a request, it will redirect you to paypal to send payment."
+"YNSOCIALADS_MY_AD_DESCRIPTION";"This page contains detailed info about your ads. Below is a list of term definitions that may come in handy.<br />
+ + Impression: Total views your ads gets.<br/ >
+ + Clicks: Total number of clicks your ads gets.<br/>
+ + Reaches: Unique number of views your ads gets(if a user views your ads twice, it counts as 1).<br />
+ + Unique Clicks: Total number of users who click on your ads."
+"YNSOCIALADS_MY_CAMPAIGN_DESCRIPTION";"You can check out how our campaign is doing by locking at the table below. There are several options as well as a chart to help you summarize and judge whether your campaign is successful."
+"YNSOCIALADS_MY_REPORT_DESCRIPTION";"This page shows detailed report of all your ads within a period of time. You can export on your ads to .xls format document which can be opened by Microsoft Excel or any other text processing program."
+"YNSOCIALADS_MY_ACCOUNT_DESCRIPTION";"Add Request<br />
++ This page provides information about your payment. Total Virtual Money is the total amount of money you have paid for ads and remaining is the total amount you have left when your ads runs out of time and they cannot reach their targets.
+You can request admin to return remaining about by sending a request to administrator."
+"YNSOCIALADS_CREATE_AD_SELECT_PACKAGE";"Select an ad package that is suitable for your need. Each package has different benefit, hence different price"
+"YNSOCIALADS_MANAGE_CAMPAGIN_DESCRIPTION";"This place shows all ad campaigns in your community whether active or inactive. You can either delete or edit campaigns as well as filter active and inactive campaign."
+"YNSOCIALADS_MANAGE_PAY_LATER_DESCRIPTION";"Below is a list of pay later requests submitted by your members"
+"YNSOCIALADS_MANAGE_TRANSACTION_DESCRIPTION";"All payment transactions made by users are displayed in this page. You can use payment method filter and status to quickly sort out payment from certain payment gateway."
+"YNSOCIALADS_MANAGE_FAQ_DESCRIPTION";"This page shows of list of FAQs that you've created. You can change order, delete or edit FAQ."
+"YNSOCIALADS_MANAGE_AD_BLOCK_DESCRIPTION";"You can find all ad blocks that you have created so far in the table below. Then an ad block is created, a corresponding widget will be created and placed on position and page specified in create form. You can set ajax mode for ad block to improve page load."
+# notify_ynsocialads_admin_money_reject
+"_EMAIL_NOTIFY_YNSOCIALADS_RECEIVE_TITLE";"Social Ads Payment - Reject Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_RECEIVE_DESCRIPTION";"Your payment request has been denied."
+"_EMAIL_NOTIFY_YNSOCIALADS_RECEIVE_SUBJECT";"Social Ads Payment - Reject Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_RECEIVE_BODY";"[header]
+
+Your payment request has been denied. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_DESCRIPTION";"These settings affect all ads in your community."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_NOADSSHOWN_DESCRIPTION";"Number of ads shown on feeds. For example, if this setting is 2, 2 ads will be displayed at once time user views his feeds."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_NOUSERVIEWSBEFORE_DESCRIPTION";"How many user views do you want before ads on feed display? If this setting is 5, it means ads will appear on feed at the sixth time user views feeds."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_POSFEEDADS_DESCRIPTION";"0 means ads are at the first place, 1 means second place, etc."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_PAYATEREXPIRETIME_DESCRIPTION";"Specific how long before a pay later request expires."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_LEVEL_DESCRIPTION";"These settings are applied on a per member level basic. Start by selecting the member level you want to modify, then adjust the settings for that level below. Some settings are available in one member level but might not be in other member levels"
+"YNSOCIALADS_FORM_ADMIN_FAQS_CREATE_DESCRIPTION";"Create a FAQ to display in Faqs pages."
+"YNSOCIALADS_FORM_ADMIN_FAQS_EDIT_DESCRIPTION";"Edit a FAQ"
+"YNSOCIALADS_FREE";"FREE"
+"YNSOCIALADS_FOR";"for"
+"YNSOCIALADS_YOU_CAN_ADVERTISE";"You can advertise"
+"YNSOCIALADS_OR";"or"
+"YNSOCIALADS_CREATE_AD";"Create Ad"
+"YNSOCIALADS_DESCRIPTION";"Description"
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_DESCRIPTION";"Create a new Ad Block here. Below, you will be able to choose the widgetized page for which you want to create the Ad Block, and the corresponding widget position for it. System will automatically add the widget for this Ad Block on the site page. You will then be able to adjust the vertical position of the ad block widget form the Layout Editor."
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_SITEPAGE_DESCRIPTION";"Select the Ad Widget that you want to be associated to this Ad Block. (Note: You can choose below whether you want this widget to be automatically placed on the page. You will then be able to vertically adjust the position of the widget on this page from the Layout Editor. You can advised not to move the widget horizontally from the Layout Editor.)"
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_NAME_DESCRIPTION";"Enter the name of this ad block. This name is only for your indicative purpose, and will not be displayed to users."
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_ADSLIMIT_DESCRIPTION";"Enter the number of Ads that you want to display in this Ad Block."
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_AJAX_DESCRIPTION";"Do you want to enable ajax based display of this Ad Block?"
+"YNSOCIALADS_ADMIN_ADBLOCKS_VIEW_INDEX_DESCRIPTION";"This page lists all the Ad Blocks created by you for displaying ads on your site. When you create an d Block form here for a widgetized page of your site, you have the option to let this sistem automatically place the corresponding Ad Block Widget on that page. It is recommended that you create all your Ad Blocks form here, and not place them on the pages from the Layout Editor, to maintain consistency. Ad Blocks that are created can be edited or deleted below."
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_GETTING_STARTED_DESCRIPTION";"Choose what you want to advertise by clicking on an item type then select your item from the item list. If your item is an external URL, you must type your URL, for example: http://example.com"
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_TEXT_AD_DESCRIPTION";"Text Ad displays as text or text with image, it can be placed on the widget which you can specific."
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_BANNER_AD_DESCRIPTION";"Banner Ad displays as an image, it can be placed on the widget which you can specific."
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_FEED_AD_DESCRIPTION";"Feed Ad displays as a normal feed under audiences' eyes, it is a completely new way to get attention."
+"YNSOCIALADS_MANAGE_MODULE_DESCRIPTION";"Here, you can manage modules whose content could be advertised. This plugin enables content belonging to any module to be advertised.
+You can add new modules of your site as advertisable, and remove them too. Thus, this interface enables you to extend this plugin to ANY CONTENT MODULE of your site.
+If you include content type belonging to a module in an ad package, users will be able to advertise their content of that type using that package.
+If you do not want to allow users to be able to directly advertise a content type, the simply do not include that content type in a package while creating an ad package.
+For more tips on this section, visit the FAQ page."
+
+"YNSOCIALADS_MANAGE_PAY_LATER_TITLE";"Manage Pay Later Requests"
+"YNSOCIALADS_MANAGE_TRANSACTION_TITLE";"Manage Transactions"
+"YNSOCIALADS_MANAGE_TRANSACTION_TITLE";"Manage Transactions""YNSOCIALADS_MANAGE_MODULE_DESCRIPTION";"This page contains all informations related to modules that are supported by social ads. You can extend this list by adding a new module.
+These supported module will show up on front-end when users choose internal content. Users can only create ads from modules which are supported and allowed in package."
+"YNSOCIALADS_ADD_MODULE_DESCRIPTION";"Fill out all required fields below in order to add another module into social ads' module support list."
+
+"YNSOCIALADS_FORM_PACKAGE_PRICE";"Zero will make this a free package"
+"YNSOCIALADS_FORM_PACKAGE_BLOCK";"Select the Ad Blocks within which advertisements from this package should be display. Note: A change in this setting later on will only apply on new ads that are created in this package.(Press Ctrl and click to select multiple types)"
+"YNSOCIALADS_FORM_PACKAGE_LEVEL";"Select the Member Levels to which Ad Package should be available. Only users belonging to the selected Member Levels will be able to create ads of this package."
+"YNSOCIALADS_MANAGE_PACKAGE_DESCRIPTION";"Below is a list of packages that you've created. All changes made to certain package only affect ads that are created after your changes.
+Ads create before you make changes to a package remain untouched."
+"YNSOCIALADS_ADD_PACKAGE_DESCRIPTION";"This page allows you to create new ad package. There are multiple settings available such as content, placement, pricing, etc.
+This can not be edited if it has at least one ad related to."
+
+"YNSOCIALADS_MANAGE_AD_DESCRIPTION";"This page lists all ads in your community. You can use this page to approve, deny, delete, edit, pause and resume any ad.
+Entering criteria into filter fields help you narrow down ads you want to look for. You can remove multiple ads by select check boxes of multiple ads and click \"delete selected\" button."
+
+"YNSOCIALADS_MANAGE_MONEY_REQUEST_DESCRIPTION";"Table below shows a list of money request from advertisers whose ads do not reach their targets. You can view, reject or accept request.
+Once you accept a request, it will redirect you to paypal to send payment."
+
+"YNSOCIALADS_MY_AD_DESCRIPTION";"This page contains detailed info about your ads. Below is a list of term definitions that may come in handy.<br />
+ + Impression: Total views your ads gets.<br/ >
+ + Clicks: Total number of clicks your ads gets.<br/>
+ + Reaches: Unique number of views your ads gets(if a user views your ads twice, it counts as 1).<br />
+ + Unique Clicks: Total number of users who click on your ads."
+"YNSOCIALADS_MY_CAMPAIGN_DESCRIPTION";"You can check out how our campaign is doing by looking at the table below. There are several options as well as a chart to help you summarize and judge whether your campaign is successful."
+"YNSOCIALADS_MY_REPORT_DESCRIPTION";"This page shows detailed report of all your ads within a period of time. You can export on your ads to .xls format document which can be opened by Microsoft Excel or any other text processing program."
+"YNSOCIALADS_MY_ACCOUNT_DESCRIPTION";"Add Request<br />
++ This page provides information about your payment. Total Virtual Money is the total amount of money you have paid for ads and remaining is the totla amount you have left when your ads runs out of time and they cannot reach their targets.
+You can request admin to return remaining about by sending a request to administrator."
+"YNSOCIALADS_CREATE_AD_SELECT_PACKAGE";"Select an ad package that is suitable for your need. Each package has different benefit, hence different price"
+"YNSOCIALADS_MANAGE_CAMPAGIN_DESCRIPTION";"This place shows all ad campaigns in your community whether active or inactive. You can either delete or edit campaigns as well as filter active and inactive campaign."
+"YNSOCIALADS_MANAGE_PAY_LATER_DESCRIPTION";"Below is a list of pay later requests submitted by your members"
+"YNSOCIALADS_MANAGE_TRANSACTION_DESCRIPTION";"All payment transactions made by users are displayed in this page. You can use payment method filter and status to quickly sort out payment from certain payment gateway."
+"YNSOCIALADS_MANAGE_FAQ_DESCRIPTION";"This page shows of list of FAQs that you've created. You can change order, delete or edit FAQ."
+"YNSOCIALADS_MANAGE_AD_BLOCK_DESCRIPTION";"You can find all ad blocks that you have created so far in the table below. Then an ad block is created, a corresponding widget will be created and placed on position and page specified in create form. You can set ajax mode for ad block to improve page load."
+"_ACTIVITY_ACTIONTYPE_YNSOCIALADS_AD_CREATE";"Posting a new Ads"
+"ADMIN_ACTIVITY_TYPE_YNSOCIALADS_AD_CREATE";"When a user posts a new ads"
+"ACTIVITY_TYPE_YNSOCIALADS_ADMIN_AD_APPROVE";"When someone has just approved your ads."
+"ACTIVITY_TYPE_YNSOCIALADS_ADMIN_AD_DELETE";"When someone has just deleted your ads"
+"ACTIVITY_TYPE_YNSOCIALADS_ADMIN_AD_DENY";"When someone has just denied your ads"
+"ACTIVITY_TYPE_YNSOCIALADS_ADMIN_AD_PAUSE";"When someone has just paused your ads"
+"ACTIVITY_TYPE_YNSOCIALADS_ADMIN_AD_RESUME";"When someone has just resumed your ads"
+"ACTIVITY_TYPE_YNSOCIALADS_ADMIN_MONEY_APPROVE";"When someone has just approved your request money"
+"ACTIVITY_TYPE_YNSOCIALADS_ADMIN_MONEY_REJECT";"When someone has just rejected your request money"
+
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_DESCRIPTION";"These settings affect all ads in your community."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_NOADSSHOWN_DESCRIPTION";"Number of ads shown on feeds. For example, if this setting is 2, 2 ads will be displayed at once time user views his feeds."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_NOUSERVIEWSBEFORE_DESCRIPTION";"How many user views do you want before ads on feed display? If this setting is 5, it means ads will appear on feed at the sixth time user views feeds."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_POSFEEDADS_DESCRIPTION";"0 means ads are at the first place, 1 means second place, etc."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_PAYATEREXPIRETIME_DESCRIPTION";"Specific how long before a pay later request expires."
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_LEVEL_DESCRIPTION";"These settings are applied on a per member level basic. Start by selecting the member level you want to modify, then adjust the settings for that level below. Some settings are available in one member level but might not be in other member levels"
+"YNSOCIALADS_FORM_ADMIN_FAQS_CREATE_DESCRIPTION";"Create a FAQ to display in Faqs pages."
+"YNSOCIALADS_FORM_ADMIN_FAQS_EDIT_DESCRIPTION";"Edit a FAQ"
+"YNSOCIALADS_FOR";"for"
+"YNSOCIALADS_YOU_CAN_ADVERTISE";"You can advertise"
+"YNSOCIALADS_OR";"or"
+"YNSOCIALADS_CREATE_AD";"Create Ad"
+"YNSOCIALADS_DESCRIPTION";"Description"
+
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_DESCRIPTION";"Create a new Ad Block here. Below, you will be able to choose the widgetized page for which you want to create the Ad Block, and the corresponding widget position for it. If an Ad Block already exists for this combination, the the settings for it will be overwritten. System will automatically add the widget for this Ad Block on the site page. You will then be able to adjust the vertical position of the ad block widget form the Layout Editor."
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_SITEPAGE_DESCRIPTION";"Select the Ad Widget that you want to be associated to this Ad Block. (Note: You can choose below whether you want this widget to be automatically placed on the page. You will then be able to vertically adjust the position of the widget on this page from the Layout Editor. You can advised not to move the widget horizontally from the Layout Editor.)"
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_NAME_DESCRIPTION";"Enter the name of this ad block. This name is only for your indicative purpose, and will not ne displayed to users."
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_ADSLIMIT_DESCRIPTION";"Enter the number of Ads that you want to display in this Ad Block."
+"YNSOCIALADS_FORM_ADMIN_ADBLOCKS_CREATE_AJAX_DESCRIPTION";"Do you want to enable ajax based display of this Ad Block?"
+"YNSOCIALADS_ADMIN_ADBLOCKS_VIEW_INDEX_DESCRIPTION";"This page lists all the Ad Blocks created by you for displaying ads on your site. When you create an d Block form here for a widgetized page of your site, you have the option to let this system automatically place the corresponding Ad Block Widget on that page. It is recommended that you create all your Ad Blocks form here, and not place them on the pages from the Layout Editor, to maintain consistency. Ad Blocks that are created can be edited or deleted below."
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_GETTING_STARTED_DESCRIPTION";"Choose what you want to advertise by clicking on an item type then select your item from the item list. If your item is an external URL, you must type your URL, for example: http://example.com"
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_TEXT_AD_DESCRIPTION";"Text Ad displays as text or text with image, it can be placed on the widget which you can specific."
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_BANNER_AD_DESCRIPTION";"Banner Ad displays as an image, it can be placed on the widget which you can specific."
+"YNSOCIALADS_ADS_CREATE_STEP_ONE_FEED_AD_DESCRIPTION";"Feed Ad displays as a normal feed under audiences' eyes, it is a completely new way to get attention."
+"YNSOCIALADS_MANAGE_MODULE_DESCRIPTION";"Here, you can manage modules whose content could be advertised. This plugin enables content belonging to any module to be advertised.
+You can add new modules of your site as advertisable, and remove them too. Thus, this interface enables you to extend this plugin to ANY CONTENT MODULE of your site.
+If you include content type belonging to a module in an ad package, users will be able to advertise their content of that type using that package.
+If you do not want to allow users to be able to directly advertise a content type, the simply do not include that content type in a package while creating an ad package.
+For more tips on this section, visit the FAQ page."
+
+"YNSOCIALADS_MANAGE_PAY_LATER_TITLE";"Manage Pay Later Requests"
+"YNSOCIALADS_MANAGE_TRANSACTION_TITLE";"Manage Transactions"
+"YNSOCIALADS_MANAGE_TRANSACTION_TITLE";"Manage Transactions"
+
+"YNCREDIT_MODULE_YNSOCIALADS";"Social Ads"
+"YNCREDIT_ACTION_TYPE_YNSOCIALADS_NEW";"Create an ad"
+"YNCREDIT_ACTION_TYPE_PUBLISH_ADS";"Use credit to publish ads"
+
+"Search Campaign";"Search Campaign"
+"Status";"Status"
+"Search";"Search"
+"Name";"Name"
+"Ads";"Ads"
+"Impressions";"Impressions"
+"Clicks";"Clicks"
+"Options";"Options"
+"Total";"Total"
+"result(s)";"result(s)"
+"See";"See"
+"Type";"Type"
+"Duration";"Duration"
+"Time Summary";"Time Summary"
+"Filter";"Filter"
+"All";"All"
+"Active";"Active"
+"Deleted";"Deleted"
+"Cumulative";"Cumulative"
+"Change in";"Change in"
+"Click";"Click"
+"Impression";"Impression"
+"By Day";"By Day"
+"By Week";"By Week"
+"By Month";"By Month"
+"This week";"This week"
+"This month";"This month"
+"This year";"This year"
+"View Ads";"View Ads"
+"Previous";"Previous"
+"Next";"Next"
+"Impressions and Clicks";"Impressions and Clicks"
+"to";"to"
+"My Campaigns";"My Campaigns"
+"My Ads";"My Ads"
+"Text";"Text"
+"Banner";"Banner"
+"Feed";"Feed"
+"Campaign";"Campaign"
+"Start Date";"Start Date"
+"End Date";"End Date"
+"Unique Clicks";"Unique Clicks"
+"Reaches";"Reaches"
+"Remaining";"Remaining"
+"Delete Selected";"Delete Selected"
+"Report";"Report"
+"Campaign:";"Campaign"
+"Ad:";"Ad"
+"Start:";"Start"
+"End:";"End"
+"Export";"Export"
+"Export Report(.xls)";"Export Report(.xls)"
+"Export Report(.csv)";"Export Report(.csv)"
+"No results.";"No results."
+"All Campaigns";"All Campaigns"
+"All Ads";"All Ads"
+"Don\'t have any campaigns.";"Don\'t have any campaigns."
+"There are no ads yet.";"There are no ads yet."
+"active";"active"
+"deleted";"deleted"
+"delete";"delete"
+"pause";"pause"
+"edit";"edit"
+"place order";"place order"
+"banner";"banner"
+"text";"text"
+"feed";"feed"
+"click";"click"
+"impression";"impression"
+"day";"day"
+"Draft";"Draft"
+"Unpaid";"Unpaid"
+"Pending";"Pending"
+"Denied";"Denied"
+"Running";"Running"
+"Paused";"Paused"
+"Completed";"Completed"
+"Approved";"Approved"
+"Deleted";"Deleted"
+"s";"s"
+"My Account";"My Account"
+"Payment Transactions";"Payment Transactions"
+"Virtual Money";"Virtual Money"
+"Payment Method";"Payment Method"
+"Pay with Virtual Money";"Pay with Virtual Money"
+"Pay Later";"Pay Later"
+"Pay with Credit";"Pay with Credit"
+"Pay with 2Checkout";"Pay with 2Checkout"
+"Pay with PayPal";"Pay with PayPal"
+"Pay with Authorize.Net";"Pay with Authorize.Net"
+"Pay with iTransact";"Pay with iTransact"
+"Pay with CCBill";"Pay with CCBill"
+"Pay with Skrill";"Pay with Skrill"
+"Pay with WebMoney";"Pay with WebMoney"
+"Pay with BitPay";"Pay with BitPay"
+"Pay with Stripe";"Pay with Stripe"
+"Initialized";"Initialized"
+"Expired";"Expired"
+"Canceled";"Canceled"
+"Transaction ID";"Transaction ID"
+"Date";"Date"
+"Amount";"Amount"
+"Ad";"Ad"
+"Total Virtual Money ($)";"Total Virtual Money ($):"
+"Remaining ($)";"Remaining ($):"
+"Add Request";"Add Request"
+"pending";"pending"
+"approved";"approved"
+"rejected";"rejected"
+"Request Date";"Request Date"
+"Amount ($)";"Amount ($)"
+"Request Message";"Request Message"
+"Reponse Date";"Reponse Date"
+"Reponse Message";"Reponse Message"
+"Request Money";"Request Money"
+"You don't have any money requests.";"You don't have any money requests."
+"Request amount must be between";"Request amount must be between"
+"and";"and"
+"Request Amount";"Request Amount"
+"Paypal Email";"Paypal Email"
+"Request Message";"Request Message"
+"Add";"Add"
+"or";"or"
+"Cancel";"Cancel"
+"There are no Transactions.";"There are no Transactions."
+"initialized";"initialized"
+"expired";"expired"
+"pending";"pending"
+"completed";"completed"
+"canceled";"canceled"
+"as";"as"
+"Text";"Text"
+"Banner";"Banner"
+"Feed";"Feed"
+"Create New Ad";"Create New Ad"
+"What do you want to advertise?";"What do you want to advertise?"
+"Getting Started";"Getting Started"
+"Item Type";"Item Type"
+"External URL";"External URL"
+"Internal Content";"Internal Content"
+"Select Module:";"Select Module:"
+"Select Item:";"Select Item:"
+"What type of ad you want to create?";"What type of ad you want to create?"
+"URL";"URL"
+"Preview and edit";"Preview and edit"
+"Title";"Title"
+" character(s) left";"character(s) left"
+"Image";"Image"
+"Display on Placement";"Display on Placement"
+"Display on Page(s)";"Display on Page(s)"
+"Preview Your Ad :";"Preview Your Ad :"
+"Ad Title";"Ad Title"
+"Ad Message";"Ad Message"
+"Preview Layout";"Preview Layout"
+"Add More Placement";"Add More Placement"
+"Pricing, Campaign and Schedule";"Pricing, Campaign and Schedule"
+"Pricing";"Pricing"
+"This package costs ";"This package costs "
+"Please select your goal.";"Please select your goal."
+"Price";"Price"
+"Select Campaign";"Select Campaign"
+"Campaign Name";"Campaign Name"
+"Create a New Campaign";"Create a New Campaign"
+"Schedule";"Schedule"
+"Run ad continuously when approved";"Run ad continuously when approved"
+"Specify start and end date";"Specify start and end date"
+"Start: ";"Start: "
+"End: ";"End: "
+" for ";" for "
+"s.";"s."
+"Audience";"Audience"
+"Age";"Age"
+"Gender";"Gender"
+"Birthday";"Birthday"
+"Select Networks";"Select Networks"
+"Select Profile Type";"Select Profile Type"
+"Audiences";"Audiences"
+" People";" People"
+"Profile types enables you to target your ad to users of specific profile type. Select "All" to reach all profile types.";"Profile types enables you to target your ad to users of specific profile type. Select "All" to reach all profile types."
+"Any";"Any"
+"Target people having their birthday on current date.";"Target people having their birthday on current date."
+"Regular Member";"Regular Member"
+"Press Ctrl and click to select multiple types.";"Press Ctrl and click to select multiple types."
+"Networks enables you to target your ad to users of specific networks. To reach all networks, simply leave the box empty.";"Networks enables you to target your ad to users of specific networks. To reach all networks, simply leave the box empty."
+"Male";"Male"
+"Female";"Female"
+"Place Order";"Place Order"
+"Save As Draft";"Save As Draft"
+"cancel";"cancel"
+"remove";"remove"
+"External url must not empty!";"External url must not empty!"
+"Please select an internal item.";"Please select an internal item."
+"Ad title must not empty!";"Ad title must not empty!"
+"Ad image must not empty!";"Ad image must not empty!"
+"You must select at least 1 placement!";"You must select at least 1 placement!"
+"Campaign must be selected!";"Campaign must be selected!"
+"Goal must not be empty!";"Goal must not be empty!"
+"Goal must be a Integer!'";"Goal must be a Integer!'"
+"Goal must be more than package benefit amount!";"Goal must be more than package benefit amount!"
+"Public";"Public"
+"FAQs";"FAQs"
+"No faq has been added.";"No faq has been added."
+
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_TITLE";"Global Settings"
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_NOADSSHOWN_LABEL";"Number ads show on feed"
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_POSFEEDADS_LABEL";"Position of Feed Ads on Feed List When It displays"
+"YNSOCIALADS_FORM_ADMIN_SETTINGS_GLOBAL_PAYATEREXPIRETIME_LABEL";"Pay Later Request Expire Time (Days)"
+"Save Changes";"Save Changes"
+"Global Settings";"Global Settings"
+"YouNet Social Ads Plugin";"YouNet Social Ads Plugin"
+"Member Level Settings";"Member Level Settings"
+"Member Level";"Member Level"
+"Minimum amount of money request";"Minimum amount of money request"
+"Maximum amount of money request";"Maximum amount of money request"
+"Allow Create of Ad?";"Allow Create of Ad?"
+"Yes, allow this member level to create ad.";"Yes, allow this member level to create ad."
+"No, do not allow this member level to create ad.";"No, do not allow this member level to create ad."
+"Allow Editing of Ad?";"Allow Editing of Ad?"
+"Yes, allow members to edit all ads.";"Yes, allow members to edit all ads."
+"Yes, allow this member level to edit their ads.";"Yes, allow this member level to edit their ads."
+"No, do not allow this member level to edit their ads.";"No, do not allow this member level to edit their ads."
+"Allow Viewing detail of Ad?";"Allow Viewing detail of Ad?"
+"Yes, allow this member level to view detail of ad.";"Yes, allow this member level to view detail of ad."
+"No, do not allow this member level to view detail of ad.";"No, do not allow this member level to view detail of ad."
+"Approve ads of this member level before they are publicly displayed?";"Approve ads of this member level before they are publicly displayed?"
+"Yes, approve ads of this member level before they are publicly displayed.";"Yes, approve ads of this member level before they are publicly displayed."
+"No, no need to approve ads of this member level before they are publicly displayed.";"No, no need to approve ads of this member level before they are publicly displayed."
+"Allow this member level to pay ad by Pay Later Method?";"Allow this member level to pay ad by Pay Later Method?"
+"Yes, allow this member level to pay ad by Pay Later Method.";"Yes, allow this member level to pay ad by Pay Later Method."
+"No, do not allow this member level to pay ad by Pay Later Method.";"No, do not allow this member level to pay ad by Pay Later Method."
+"Allow this member level to pay ad by Virtual Money?";"Allow this member level to pay ad by Virtual Money?"
+"Yes, allow this member level to pay ad by Virtual Money.";"Yes, allow this member level to pay ad by Virtual Money."
+"No, do not allow this member level to pay ad by Virtual Money.";"No, do not allow this member level to pay ad by Virtual Money."
+"Allow this member level to pay ad by Credit?";"Allow this member level to pay ad by Credit?"
+"Yes, allow this member level to pay ad by Credit.";"Yes, allow this member level to pay ad by Credit."
+"No, do not allow this member level to pay ad by Credit.";"No, do not allow this member level to pay ad by Credit."
+"Add credit for creating ad";"Add credit for creating ad"
+"No of first actions";"No of first actions"
+"Credit/Action";"Credit/Action"
+"Credit for next action";"Credit for next action"
+"Max Credit/Period";"Max Credit/Period"
+"Period (days)";"Period (days)"
+"Superadmins";"Superadmins"
+"Admins";"Admins"
+"Moderators";"Moderators"
+"Default Level";"Default Level"
+"Public";"Public"
+"Middle Ads - Top";"Middle Ads - Top"
+"Middle Ads - Bottom";"Middle Ads - Bottom"
+"Left Column Ads Top";"Left Column Ads Top"
+"Left Column Ads Bottom";"Left Column Ads Bottom"
+"Right Column Ads Top";"Right Column Ads Top"
+"Right Column Ads Bottom";"Right Column Ads Bottom"
+"Preview";"Preview"
+"Package";"Package"
+"Your Goal";"Your Goal"
+"Total price";"Total price"
+"Review Your Ad";"Review Your Ad"
+"Select gateway to place order";"Select gateway to place order"
+" or ";" or "
+"2Checkout";"2Checkout"
+"PayPal";"PayPal"
+"Authorize.Net";"Authorize.Net"
+"iTransact";"iTransact"
+"CCBill";"CCBill"
+"Skrill";"Skrill"
+"WebMoney";"WebMoney"
+"BitPay";"BitPay"
+"Stripe";"Stripe"
+"Pay with";"Pay with"
+"Confirm Payment";"Confirm Payment"
+"You are about to subscribe to the item: %1$s";"You are about to subscribe to the item: %1$s"
+"Are you sure you want to do this? You will be charged:";"Are you sure you want to do this? You will be charged:"
+"Current Virtual Balance:";"Current Virtual Balance:"
+"Subscribe";"Subscribe"
+"untitled";"untitled"
+"Create a Similar Ad";"Create a Similar Ad"
+"Unknown Method";"Unknown Method"
+# notify_ynsocialads_admin_money_reject
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_TITLE";"Social Ads - Reject Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_DESCRIPTION";"Your payment request has been denied."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_SUBJECT";"Social Ads Payment - Reject Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_BODY";"[header]
+
+Your payment request has been denied. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+
+# notify_ynsocialads_admin_money_reject
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_TITLE";"Social Ads - Reject Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_DESCRIPTION";"Your payment request has been denied."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_SUBJECT";"Social Ads Payment - Reject Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_REJECT_BODY";"[header]
+
+Your payment request has been denied. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+
+# notify_ynsocialads_admin_money_approve
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_APPROVE_TITLE";"Social Ads - Approve Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_APPROVE_DESCRIPTION";"Your payment request has been approved."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_APPROVE_SUBJECT";"Social Ads Payment - Approve Payment"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_MONEY_APPROVE_BODY";"[header]
+
+Your payment request has been approved. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+
+# notify_ynsocialads_admin_ad_pause
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_PAUSE_TITLE";"Social Ads - Pause Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_PAUSE_DESCRIPTION";"Your ad has been paused."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_PAUSE_SUBJECT";"Social Ads Payment - Pause Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_PAUSE_BODY";"[header]
+
+Your ad has been paused. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+
+# notify_ynsocialads_admin_ad_deny
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DENY_TITLE";"Social Ads - Deny Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DENY_DESCRIPTION";"Your ad has been denied."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DENY_SUBJECT";"Social Ads Payment - Deny Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DENY_BODY";"[header]
+
+Your ad has been denied. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+
+# notify_ynsocialads_admin_ad_approve
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_APPROVE_TITLE";"Social Ads - Approve Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_APPROVE_DESCRIPTION";"Your ad has been approved."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_APPROVE_SUBJECT";"Social Ads Payment - Approve Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_APPROVE_BODY";"[header]
+
+Your ad has been approved. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+
+# notify_ynsocialads_admin_ad_resume
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_RESUME_TITLE";"Social Ads - Resume Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_RESUME_DESCRIPTION";"Your ad has been resumed."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_RESUME_SUBJECT";"Social Ads Payment - Resume Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_RESUME_BODY";"[header]
+
+Your ad has been resumed. Click following link to find out why:
+
+http://[host]
+
+[footer]"
+
+# notify_ynsocialads_admin_ad_delete
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DELETE_TITLE";"Social Ads - Delete Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DELETE_DESCRIPTION";"Your ad has been deleted."
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DELETE_SUBJECT";"Social Ads Payment - Delete Ad"
+"_EMAIL_NOTIFY_YNSOCIALADS_ADMIN_AD_DELETE_BODY";"[header]
+
+Your ad has been deleted. Click following link to find out why:
+
+http://[host]
+
+[footer]"

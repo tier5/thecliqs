@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('headvmessages', 'Advanced Messages', 'Advanced Messages Plugin', '4.8.9', 1, 'extra') ;

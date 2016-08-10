@@ -1,0 +1,56 @@
+body, td, tr{
+	cursor: default;
+    color: #DBD8D8;
+	font-family: Tahoma,Verdana,Geneva,Arial,Helvetica,"Sans Serif";
+	font-size: 10pt;
+	font-weight: normal;
+	line-height: 16px;
+	margin: 0px;
+	padding: 0px;
+}
+
+a:link, a:active, a:visited
+{
+	color: #ffffff;
+	font-weight: bold;
+    text-decoration: none;
+}
+
+
+a:hover
+{
+	color: #ff0000;
+	font-weight: bold;
+    text-decoration: none;
+}
+
+/* scrollbars */
+html
+{
+	scrollbar-base-color: #000000;
+	scrollbar-arrow-color: #FFFFFF;
+}
+
+
+
+/* form elements */
+select, input, textarea
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	background-color: #000033;
+	color: #FFFFFF;
+}
+
+   .menu:link, .menu:visited
+   {
+	color: #FFFFFF;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+   }
+   .menu:hover, menu:active
+   {
+	color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+   }

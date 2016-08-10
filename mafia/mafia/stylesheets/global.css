@@ -1,0 +1,72 @@
+
+* { margin: 0px; padding: 0px; }
+html, body { font-family: Arial; font-size: 11px; color: #000; }
+input, select, textarea { font-family: Arial; font-size: 11px; color: #000; }
+body { background: url('../images/bodyBg.gif') #1c1212 repeat-x bottom center; }
+img { border: 0px; display: block; }
+
+/* ### GLOBAL CLASSES ### */
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+.center { margin: 0 auto; }
+
+/* ### MAIN CONTAINER ### */
+#mainCntr { margin: 0 auto; width: 918px; background: url('../images/mainBg.gif') repeat-y; }
+
+	/* ### CONTENT BOX ### */
+	.contentBox { overflow: hidden; width: 100%; }
+	
+	/* ### HEADER CONTAINER ### */
+	#headerCntr { padding: 35px 0px 0px 435px; width: 483px; height: 99px; background: url('../images/headerBg.png') no-repeat; }
+	
+	/* ### MENU CONTAINER ### */
+	#menuCntr { overflow: hidden; width: 918px; height: 45px; background: url('../images/menuBg.png') no-repeat; }
+	#menuCntr ul { margin-right: 2px; padding-left: 16px; display: block; float: right; display: inline; width: 564px; height: 41px; background: url('../images/tabBg.gif') no-repeat; }
+	#menuCntr li { margin-right: 51px; float: left; display: inline; line-height: 38px; }
+	#menuCntr li.last { margin-right: 0px; }
+	#menuCntr li a { font-size: 16px; text-decoration: none; color: #e4c995; }
+	#menuCntr li a:hover { text-decoration: underline; }
+	
+	/* ### LEFT CONTAINER ### */
+	#leftCntr { margin-left: 18px; float: left; display: inline; width: 324px; }
+	#leftCntr div.bottom { padding-bottom: 3px; background: url('../images/leftBottom.gif') no-repeat bottom center; }
+	#leftCntr h2 { padding-left: 15px; display: block; height: 31px; font-size: 16px; line-height: 28px; font-weight: normal; color: #fff; background: url('../images/leftTop.gif') no-repeat; }
+	
+		/* ### LOGIN BOX ### */
+		.loginBox { margin-bottom: 5px; width: 100%; background: url('../images/leftBg.gif') repeat-y; }
+		.loginBox fieldset { padding: 15px; overflow: hidden; width: 294px; border: 0px; }
+		.loginBox label { display: block; float: left; width: 80px; line-height: 24px; }
+		.loginBox input.field { margin: 1px; padding: 1px; float: right; width: 200px; height: 18px; border: 1px solid #868686; background: #fff; }
+		.loginBox span { margin-top: 5px; display: block; float: left; }
+		.loginBox input.checkbox { margin-top: 5px; float: right; }
+		.loginBox input.submit { margin-top: 10px; float: right; width: 80px; height: 25px; color: #e4c995; border: 0px; background: url('../images/submitBg.gif') no-repeat; }
+	
+		/* ### WELKOM BOX ### */
+		.welkomBox { margin-bottom: 5px; width: 100%; background: url('../images/leftBg.gif') repeat-y; }
+		.welkomBox p { padding: 10px 15px 11px 15px; }
+		
+		/* ### REG BOX ### */
+		.regBox { margin-bottom: 5px; width: 100%; background: url('../images/leftBg.gif') repeat-y; }
+		.regBox p { padding: 10px 15px 11px 15px; }
+		.regBox a { margin: 0px 0px 0px 14px; padding-bottom: 5px; display: block; width: 294px; height: 25px; font-size: 10px; text-align: center; line-height: 24px; text-decoration: none; color: #e4c995; background: url('../images/regBg.gif') no-repeat; }
+		.regBox a:hover { text-decoration: underline; }
+		
+	/* ### RIGHT CONTAINER ### */
+	#rightCntr { margin-right: 18px; float: right; display: inline; width: 552px; }
+	#rightCntr div.bottom { padding-bottom: 3px; background: url('../images/rightBottom.gif') no-repeat bottom center; }
+	#rightCntr h2 { padding-left: 15px; display: block; height: 31px; font-size: 16px; line-height: 28px; font-weight: normal; color: #fff; background: url('../images/rightTop.gif') no-repeat; }
+	
+		/* ### TEXT BOX ### */
+		.textBox { margin-bottom: 5px; width: 100%; background: url('../images/rightBg.gif') repeat-y; }
+		.textBox p { padding: 5px 15px 6px 15px; }
+		.textBox a { text-decoration: none; color: #5c1611; }
+		.textBox a:hover { text-decoration: underline; }
+		.textBox ul { margin: 0px 13px 0px 13px; padding: 4px 2px 4px 2px; overflow: hidden; height: 17px; list-style: none; line-height: 16px; background: url('../images/ul2Bg.gif') repeat-x bottom left; }
+		.textBox ul.first { background: url('../images/ulBg.gif') repeat-x bottom left; }
+		.textBox li { margin-right: 10px; float: left; display: inline; }
+		.textBox div.archief { margin: 0px 13px 0px 13px; padding: 4px 2px 4px 2px; text-align: right; background: url('../images/ulBg.gif') repeat-x; }
+		.textBox div.archief a { color: #000; }
+	
+/* ### FOOTER CONTAINER ### */
+#footerCntr { margin: 0 auto; width: 918px; height: 75px; text-align: center; line-height: 84px; color: #e4c995; background: url('../images/footerBg.gif') no-repeat; }

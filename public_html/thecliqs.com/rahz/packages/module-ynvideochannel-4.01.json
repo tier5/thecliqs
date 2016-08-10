@@ -1,0 +1,3355 @@
+{
+  "type": "module",
+  "name": "ynvideochannel",
+  "version": "4.01",
+  "revision": null,
+  "path": "application\/modules\/Ynvideochannel",
+  "repository": null,
+  "date": "Fri, 20 May 2016 05:07:20 +0000",
+  "title": "YN - Video Channel",
+  "description": "YN - Video Channel",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 20 May 2016 05:07:20 +0000",
+    "title": "YN - Video Channel",
+    "description": "YN - Video Channel",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Ynvideochannel\/settings\/install.php",
+    "class": "Ynvideochannel_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.2",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Ynvideochannel": {
+      "type": "directory",
+      "path": "application\/modules\/Ynvideochannel",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 11645,
+          "sha1": "2245dd276759a6b99da10f80f4c900af0a112104"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 436,
+          "sha1": "13eb8a9bad153770e02acda3a9d9ae215be0cb1d"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 408,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminCategoriesController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 11339,
+          "sha1": "f6dcdc8dfad275c04516d1ce32d92514c3adef2b"
+        },
+        {
+          "path": "controllers\/AdminCategoryFieldsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3225,
+          "sha1": "80d7b297da63d17f4d14d290a4335dbc4065733e"
+        },
+        {
+          "path": "controllers\/AdminManageChannelsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4141,
+          "sha1": "913d5a02d23340c68b854710bacc1b7a220c8ba2"
+        },
+        {
+          "path": "controllers\/AdminManagePlaylistsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2891,
+          "sha1": "c27c956b2c64bb7f99df2e68fe68e4c48fa8b2bc"
+        },
+        {
+          "path": "controllers\/AdminManageVideosController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3419,
+          "sha1": "a3fc7569831ba94a781a98470a4b00c9d527a48e"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9949,
+          "sha1": "c7049f4b16e47e2ceb85efdc366aed72dea0258f"
+        },
+        {
+          "path": "controllers\/ChannelController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 19416,
+          "sha1": "db237230aa2b222149d80026567400ca05bc6548"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 42541,
+          "sha1": "10633a4b3a1b5593a4d26f31cdf72ea08397206b"
+        },
+        {
+          "path": "controllers\/PlaylistController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6631,
+          "sha1": "cbc51788f198e5bff8e4ad6a1528129a01fdc09e"
+        },
+        {
+          "path": "controllers\/VideoController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 17430,
+          "sha1": "679cf30afbd0cbb3273c34fb5705466a6a5a566b"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 748,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/blank.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 43,
+          "sha1": "14af87ccec7f81bb28d53c84da2fd5a9d5925cda"
+        },
+        {
+          "path": "externals\/images\/grabbing.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 116,
+          "sha1": "5d75bfe2b7be91f751ad27e83233e5979546e3ca"
+        },
+        {
+          "path": "externals\/images\/icon-arrow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 174521,
+          "sha1": "573ed039410c4fdf71764c03f8a8098e7768a938"
+        },
+        {
+          "path": "externals\/images\/icon_feed.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 338,
+          "sha1": "489107200d71899a3dbcc23806a8404b685c4573"
+        },
+        {
+          "path": "externals\/images\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/masterslider",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 510,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/masterslider\/grab.cur",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 326,
+          "sha1": "bb22807a7c23dae7d007673b407850438856bbfa"
+        },
+        {
+          "path": "externals\/images\/masterslider\/grab.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2893,
+          "sha1": "d6a7b62e802d2a64d5132181997fd0da025b2500"
+        },
+        {
+          "path": "externals\/images\/masterslider\/grabbing.cur",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 326,
+          "sha1": "afdc1b09a85db2acc84e029007277ed62c730624"
+        },
+        {
+          "path": "externals\/images\/masterslider\/grabbing.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2868,
+          "sha1": "b013258fab841c442c1ddc41f536868615497049"
+        },
+        {
+          "path": "externals\/images\/masterslider\/light-skin-1-retina.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4422,
+          "sha1": "92279ea506cafad158574edc949d2b7f320335a0"
+        },
+        {
+          "path": "externals\/images\/masterslider\/light-skin-1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4267,
+          "sha1": "7c8acef254914991154acdfe9c389308d2653187"
+        },
+        {
+          "path": "externals\/images\/masterslider\/loading-1-dark.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5688,
+          "sha1": "d86cc898c94d92f2724ac47ae6a1f980f47271f3"
+        },
+        {
+          "path": "externals\/images\/masterslider\/loading-1-light.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5408,
+          "sha1": "2f97e84a6ef69f9ba84b17db4a1cbe377b0a5bb3"
+        },
+        {
+          "path": "externals\/images\/masterslider\/loading-1.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3266,
+          "sha1": "7e84ea8c41d53812ef79955cdad72776a8b32514"
+        },
+        {
+          "path": "externals\/images\/masterslider\/loading-2-dark.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4580,
+          "sha1": "9f420446b75c0ee6bedf911ac66255ffe95a8acf"
+        },
+        {
+          "path": "externals\/images\/masterslider\/loading-2-light.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4576,
+          "sha1": "9796dfd982264dbd8f2cff9f29ba14f39d74482c"
+        },
+        {
+          "path": "externals\/images\/masterslider\/loading-2.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2707,
+          "sha1": "e3839756e2515361eb5bedaed9919d4ca53f7b8f"
+        },
+        {
+          "path": "externals\/images\/masterslider\/video-close-btn.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 219,
+          "sha1": "91ebab814600ba57cee44d4920c96339399a6aeb"
+        },
+        {
+          "path": "externals\/images\/noimg_channel.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 39140,
+          "sha1": "54ce41fab5ea4c071a43d73c847c6616a8ff0fa9"
+        },
+        {
+          "path": "externals\/images\/noimg_cover.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 64887,
+          "sha1": "0682ca27fc273a1ac4f5b79b1b00f1bef554d97f"
+        },
+        {
+          "path": "externals\/images\/noimg_playlist.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 34166,
+          "sha1": "c70325fea315f1f729bc3a7dbf49d77389b7bb0d"
+        },
+        {
+          "path": "externals\/images\/noimg_video.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 35444,
+          "sha1": "801ea92dcf77cde5e46f5ba4669940f08ed44258"
+        },
+        {
+          "path": "externals\/images\/nophoto_channel_cover.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15303,
+          "sha1": "7691d6d5a9f79cb5b536185e4861a58883867043"
+        },
+        {
+          "path": "externals\/images\/nophoto_channel_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15303,
+          "sha1": "7691d6d5a9f79cb5b536185e4861a58883867043"
+        },
+        {
+          "path": "externals\/images\/nophoto_playlist_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2817,
+          "sha1": "8d47692e7a3900d551008292eed26513415ddf68"
+        },
+        {
+          "path": "externals\/images\/nophoto_video_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15303,
+          "sha1": "7691d6d5a9f79cb5b536185e4861a58883867043"
+        },
+        {
+          "path": "externals\/images\/playlist_edit_preview_listing.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 23302,
+          "sha1": "313f829e5114a7d54c4f216e9fe54fd56f890b37"
+        },
+        {
+          "path": "externals\/images\/playlist_edit_preview_slideshow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21714,
+          "sha1": "5623fa998cebc83879697369b8c2cec64860b9bd"
+        },
+        {
+          "path": "externals\/images\/punch_hole.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 173717,
+          "sha1": "982b3ad14a7b36f8ba0a68e84a0807bb8c6f9237"
+        },
+        {
+          "path": "externals\/images\/show_less.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 266,
+          "sha1": "c75cf85293e72e92181ae5b1c0566eff8b7dd5f2"
+        },
+        {
+          "path": "externals\/images\/show_more.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 278,
+          "sha1": "4d4d8a6a6c100ec41575144d4082a6653577cdbd"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 476,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts\/collapsible.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1922,
+          "sha1": "cc3c0516d577796ac395cbc00538be4b95aaaf25"
+        },
+        {
+          "path": "externals\/scripts\/jquery-1.10.2.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 152656,
+          "sha1": "702847b57b5bb1e26f7850c33716b92e1e3360a0"
+        },
+        {
+          "path": "externals\/scripts\/jquery.easing.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5555,
+          "sha1": "7767b356530e39cd76ec259320b0b2774b4097a8"
+        },
+        {
+          "path": "externals\/scripts\/jquery.ui.widget.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15324,
+          "sha1": "c9c3f488adb65e4331e3ddfbc93888934388925a"
+        },
+        {
+          "path": "externals\/scripts\/masterslider",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/blank.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 43,
+          "sha1": "14af87ccec7f81bb28d53c84da2fd5a9d5925cda"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/skins",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/skins\/default",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/skins\/default\/light-skin-1-retina.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4422,
+          "sha1": "92279ea506cafad158574edc949d2b7f320335a0"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/skins\/default\/light-skin-1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4267,
+          "sha1": "7c8acef254914991154acdfe9c389308d2653187"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/skins\/default\/style.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3936,
+          "sha1": "844434baf96b9a55310430c672469a1c912ebfb9"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 544,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/grab.cur",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 326,
+          "sha1": "bb22807a7c23dae7d007673b407850438856bbfa"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/grab.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2893,
+          "sha1": "d6a7b62e802d2a64d5132181997fd0da025b2500"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/grabbing.cur",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 326,
+          "sha1": "afdc1b09a85db2acc84e029007277ed62c730624"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/grabbing.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2868,
+          "sha1": "b013258fab841c442c1ddc41f536868615497049"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/loading-1-dark.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5688,
+          "sha1": "d86cc898c94d92f2724ac47ae6a1f980f47271f3"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/loading-1-light.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5408,
+          "sha1": "2f97e84a6ef69f9ba84b17db4a1cbe377b0a5bb3"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/loading-1.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3266,
+          "sha1": "7e84ea8c41d53812ef79955cdad72776a8b32514"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/loading-2-dark.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4580,
+          "sha1": "9f420446b75c0ee6bedf911ac66255ffe95a8acf"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/loading-2-light.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4576,
+          "sha1": "9796dfd982264dbd8f2cff9f29ba14f39d74482c"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/loading-2.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2707,
+          "sha1": "e3839756e2515361eb5bedaed9919d4ca53f7b8f"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/masterslider.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8210,
+          "sha1": "c5e87143252d4a5076e04ff829a135e8312e4334"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/ms-tabs-style.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 728,
+          "sha1": "eaaf3e9e6877a4c9c5fe84dc67cb4b4d8fe20a6b"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/ms-videogallery.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3617,
+          "sha1": "8868af9b216e016e4542d46335f2852ae4f4757a"
+        },
+        {
+          "path": "externals\/scripts\/masterslider\/style\/video-close-btn.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 219,
+          "sha1": "91ebab814600ba57cee44d4920c96339399a6aeb"
+        },
+        {
+          "path": "externals\/scripts\/masterslider.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 195436,
+          "sha1": "a593e674bf796eccf14ca325e6fbab9145d405ca"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 986,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/background.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 166,
+          "sha1": "5ccc08a070eea534c880ba63aadbbdea4b4ec947"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/bigplay.fw.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 79426,
+          "sha1": "582329012f7f06dc9be00dfd28b6577dd8daaf9d"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/bigplay.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3001,
+          "sha1": "4b85a8fb707e051c705f03efb15f910b4cfbec30"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/bigplay.svg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1029,
+          "sha1": "b2fcd487b8619e7f357a43cf2dbf522145c4d347"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/controls-ted.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1559,
+          "sha1": "8047406d3f990f40094f0803a066e325d81fa58f"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/controls-wmp-bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1960,
+          "sha1": "a0e27e8e9848917334e3e61579c2ced039dabb5a"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/controls-wmp.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5511,
+          "sha1": "8bde661ec4679a3546f22c04ef8dbb2abe892cc3"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/controls.fw.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 80753,
+          "sha1": "1b1901be4856e745bb00670d0423e79d3723edb2"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/controls.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1892,
+          "sha1": "577269a774800b7c0a733062cbaf4a82a8f877c4"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/controls.svg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10344,
+          "sha1": "b348ebbee79eff5451362fbbd4c23e3418eceeb0"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/flashmediaelement-cdn.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 99468,
+          "sha1": "5896e68c62a5e1e3923a5ff1361782c69d72979e"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/flashmediaelement-debug.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 99490,
+          "sha1": "5e60f527bd03bac9acaa9a259bf5a96a9feb6afa"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/flashmediaelement.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 99433,
+          "sha1": "58b239050cdb8afc945741e4b25b274928290477"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/jquery.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 268380,
+          "sha1": "b08cf5128a86aea81cc62981679dd1612cad97a1"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/jumpforward.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1563,
+          "sha1": "da19bb62970df7a93ecd3eb3c0e06af7422a6300"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6224,
+          "sha1": "6ee38113a9e2fc074c0d35ff5b25a47cce273d4d"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelement-and-player.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 162765,
+          "sha1": "77d853b933f4ad78e2737c513443fe2a091c21cb"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelement-and-player.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 80969,
+          "sha1": "116a4b1f3eb28ecd244cd7d0ef829a810eaa4056"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelement.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 60028,
+          "sha1": "ae8c3f6552e8270f024e61375e48c2697a64228d"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelement.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 28357,
+          "sha1": "b8f28eeba7abd338df7632112847cfe91534c382"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelementplayer.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 24468,
+          "sha1": "7086fa50dad1ca3622309a0a310d92279cb8c5e7"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelementplayer.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 102736,
+          "sha1": "5dae0bd208f410631216b79b65ad45e6eac6ae16"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelementplayer.min.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20163,
+          "sha1": "799aca7a9ac4736f6a837a6b9aaed323ae62ff64"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mediaelementplayer.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 52612,
+          "sha1": "2dda187f74d99350ba429bf096dda45b3d11341c"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/mejs-skins.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6201,
+          "sha1": "d0c26f4763966ec08be847159a7a034f47ff6a46"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/silverlightmediaelement.xap",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12381,
+          "sha1": "609b692d46c475a77033b0379d6750b9bd1cd4fa"
+        },
+        {
+          "path": "externals\/scripts\/mediaelementplayer\/skipback.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4245,
+          "sha1": "04e1d3d770ed478b25d89a23280f35af929f6024"
+        },
+        {
+          "path": "externals\/scripts\/owl.carousel.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 52797,
+          "sha1": "99a600283194105be6679b4a7cba8ac27a8c455a"
+        },
+        {
+          "path": "externals\/scripts\/owl.carousel.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 23890,
+          "sha1": "f947512e51f8ef4b15bba3f701de64e53a7f7f9b"
+        },
+        {
+          "path": "externals\/scripts\/videochannel.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 15152,
+          "sha1": "0e5623a4408f940b87d54bac5d518b6020a2e566"
+        },
+        {
+          "path": "externals\/scripts\/videoPlayer.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2755,
+          "sha1": "707f2e8428b22ff72a6dc4363dd098bcd1548279"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 611,
+          "sha1": "086032fc34f39cabc626443fe9ea8b3ffdbf6d4e"
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 112303,
+          "sha1": "479528415fd3cb0b9dcff140925f2eee2ad95268"
+        },
+        {
+          "path": "externals\/styles\/masterslider.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 12356,
+          "sha1": "1d2cb3cd5934c066d56639a401a194767124f0f3"
+        },
+        {
+          "path": "externals\/styles\/mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 97724,
+          "sha1": "5ae480a0edd182c0def5df8969c89cbfd6bc63b1"
+        },
+        {
+          "path": "externals\/styles\/owl.carousel.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1486,
+          "sha1": "4564eca33ba37d128c789a50aea432436bc92c8b"
+        },
+        {
+          "path": "externals\/styles\/ynresponsive1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 18129,
+          "sha1": "6020d2649a8e955f911ca339a5da1332d2059271"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 408,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1542,
+          "sha1": "d122caa8af1996039fcd16908760869d0932db61"
+        },
+        {
+          "path": "Form\/Admin\/Channel",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Channel\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2260,
+          "sha1": "537e9211c64e3b19662f8583f9eb4aeab4365dcb"
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4772,
+          "sha1": "c1fbc5cb27e78e20da1dc9d95ebb59948f28ade3"
+        },
+        {
+          "path": "Form\/Admin\/Playlist",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Playlist\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1936,
+          "sha1": "4b64fe25dfa0b004ee50730376080db0e96acbb4"
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25335,
+          "sha1": "c01afb6eff8f1891ccab62dbc2a0659a669312ad"
+        },
+        {
+          "path": "Form\/Admin\/Video",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Video\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2258,
+          "sha1": "16bde9c0b5de7cde886ca310f8c194ce3d01b00f"
+        },
+        {
+          "path": "Form\/Channel",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Channel\/addMoreVideos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2455,
+          "sha1": "f18387b32b1f438ecbdf458c58b2be227ed63cd4"
+        },
+        {
+          "path": "Form\/Channel\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7751,
+          "sha1": "2131bb0e6dbafe0322878df1883cf0443451f949"
+        },
+        {
+          "path": "Form\/Channel\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1279,
+          "sha1": "c7b0c7f4dc7e60a066ffafa8d5282b669ede183b"
+        },
+        {
+          "path": "Form\/Channel\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2185,
+          "sha1": "11708f51a1f04ab0e80e72f0e2de6bd247c6a156"
+        },
+        {
+          "path": "Form\/Custom",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Custom\/Fields.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 780,
+          "sha1": "bb2f955cc9071bdae2dc83ce983f9045bd4027a9"
+        },
+        {
+          "path": "Form\/Playlist",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Playlist\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5175,
+          "sha1": "b1f24b2950dc97db72d4f81dc69810029b3a8b63"
+        },
+        {
+          "path": "Form\/Playlist\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1236,
+          "sha1": "88f166b5224e7a0f43846b8c3f4a5a201c695288"
+        },
+        {
+          "path": "Form\/Playlist\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9437,
+          "sha1": "22a981b0c60e10c6ac62386fa0bac01169f8772c"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2785,
+          "sha1": "bfc70b1b8fcf962a27326565cfdd4df119efa86a"
+        },
+        {
+          "path": "Form\/SendToFriends.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1892,
+          "sha1": "a0d556018692dfe410f2248c67cf05e9cacc1c86"
+        },
+        {
+          "path": "Form\/Unfavorite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1244,
+          "sha1": "e049b01d2da7b4d7b5ce27b9cf1c7377a690b3ee"
+        },
+        {
+          "path": "Form\/Unsubscribe.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1157,
+          "sha1": "6edfd0851b62aced9108ab1061fa7bd23f58dbfd"
+        },
+        {
+          "path": "Form\/Video",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Video\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7505,
+          "sha1": "39451f6e1e51849488febdfcb91c69e418515293"
+        },
+        {
+          "path": "Form\/Video\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1271,
+          "sha1": "5abe14ca052acba6de00999b7bc102d40055baf2"
+        },
+        {
+          "path": "Form\/Video\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1905,
+          "sha1": "3b09581ac96352d694c269d72b951c73d39babb1"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 442,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4130,
+          "sha1": "feadd57027dc652fb1c588d8edf7a26069cfdcaf"
+        },
+        {
+          "path": "Model\/Channel.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 13138,
+          "sha1": "2895768fc5bda74655dcdb2f1503a80759831a63"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 510,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model\/DbTable\/Categories.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1401,
+          "sha1": "927aecfbdec8ccd964debc6326ddaa68734c17ea"
+        },
+        {
+          "path": "Model\/DbTable\/Channels.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 5689,
+          "sha1": "c7bd869ad6478f798550a85d29ad8251f9b547c9"
+        },
+        {
+          "path": "Model\/DbTable\/Favorites.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3284,
+          "sha1": "3eec6fafc0ebbd9558d882928992118bf4336ff7"
+        },
+        {
+          "path": "Model\/DbTable\/Maps.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 133,
+          "sha1": "e6c441eb2d26ac87e4ad916dbf5256523b9846c9"
+        },
+        {
+          "path": "Model\/DbTable\/Nodes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13334,
+          "sha1": "dd4ef955d7ede247c621805e19da91efadbab344"
+        },
+        {
+          "path": "Model\/DbTable\/Playlists.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4789,
+          "sha1": "86e54e8f8741ebbb81ae51a1c9fbbcc384013f89"
+        },
+        {
+          "path": "Model\/DbTable\/Playlistvideos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1556,
+          "sha1": "fc1c1ce8227604cfdd3ee5305ed4e6a16fae43c3"
+        },
+        {
+          "path": "Model\/DbTable\/Ratings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 313,
+          "sha1": "8c90323089670cb8cda27d6b85462eb7592af37b"
+        },
+        {
+          "path": "Model\/DbTable\/Subscribes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 321,
+          "sha1": "42d39f6e6c22df539cdbd0c69254dfdf2def5222"
+        },
+        {
+          "path": "Model\/DbTable\/Usershareds.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 324,
+          "sha1": "8d747953571d7bfa49d00bc79a79a71b0ef496e5"
+        },
+        {
+          "path": "Model\/DbTable\/Values.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 136,
+          "sha1": "f08925936aa3cb6d4af4660fbfe57aba0dac7cd1"
+        },
+        {
+          "path": "Model\/DbTable\/Videos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7582,
+          "sha1": "18e0f6b01bb4d2c86d50d155aa6e637df7571903"
+        },
+        {
+          "path": "Model\/Favorite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 686,
+          "sha1": "f10824a4101fc3bc75d75e3ac53ad9d23ab793e8"
+        },
+        {
+          "path": "Model\/Node.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1102,
+          "sha1": "14ffc5966978629a280a4798a8b12ccb07ea1e28"
+        },
+        {
+          "path": "Model\/Playlist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 9523,
+          "sha1": "3871c69e1cfa0ac598d62b8509b5de96ee08c448"
+        },
+        {
+          "path": "Model\/Playlistvideo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 601,
+          "sha1": "446ba03a37274cee5022438d40867fed36996598"
+        },
+        {
+          "path": "Model\/Rating.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 204,
+          "sha1": "383f8ac00a73f9d7db0997fa20daa11de487da45"
+        },
+        {
+          "path": "Model\/Subscribe.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 207,
+          "sha1": "ac3571051d5823910fb3cf632f6eb5bcce65998b"
+        },
+        {
+          "path": "Model\/Usershared.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 208,
+          "sha1": "89c4886dbd79165c536bad420f9d7681a238b738"
+        },
+        {
+          "path": "Model\/Video.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 11035,
+          "sha1": "8529a2c0eec767649d41ffdf9147d0305e63a276"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2349,
+          "sha1": "a5f4cf9d66c758624f47c90734ccab24e3cb023a"
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1506,
+          "sha1": "51b4d5866db70de0c68f3bb941952853962def8b"
+        },
+        {
+          "path": "Plugin\/Task",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Task\/GetVideos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4795,
+          "sha1": "09aad4d9d4c6a16f5dd72c12aa629deefdcea518"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20942,
+          "sha1": "9ebafbb9f919c9c4c2c60cdd7e327cbf0a68d41e"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 95721,
+          "sha1": "6fe5046adb44192d6280e267a31039083b647545"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 5863,
+          "sha1": "1344f094118d1675254968ed9ef0d24df545be9f"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 34676,
+          "sha1": "eabbda746eae6317dea3710235454c6b8c6ce483"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 1496,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/_add_exist_playlist.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1379,
+          "sha1": "40916e9d5af28839b7cfe6a50e179d618078cf13"
+        },
+        {
+          "path": "views\/scripts\/_add_favorite_link.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 744,
+          "sha1": "0f38d1401c260961847755854eaeed40ba7ad184"
+        },
+        {
+          "path": "views\/scripts\/_add_to_menu.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2628,
+          "sha1": "e19b3d9d8166ea772dc37a52d80fc8cca7daa3f8"
+        },
+        {
+          "path": "views\/scripts\/_addChannnel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2733,
+          "sha1": "66a52c4198203d5fa415a8857821397e7b9f71cf"
+        },
+        {
+          "path": "views\/scripts\/_ajax_get_friends.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 881,
+          "sha1": "a2e47c10b8499bca2c858a55ee566ca125806b73"
+        },
+        {
+          "path": "views\/scripts\/_category_breadcrumb.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 803,
+          "sha1": "8012e60bc224e7679f534b4f51351b227f6ad513"
+        },
+        {
+          "path": "views\/scripts\/_channel_edit_video_listing.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2847,
+          "sha1": "b43b8904f14f528f74f9195fc341dff349b13111"
+        },
+        {
+          "path": "views\/scripts\/_channel_feed.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1252,
+          "sha1": "c5a35737fc19e1677f1a1502271495a787bd55bd"
+        },
+        {
+          "path": "views\/scripts\/_channel_manage_item.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2772,
+          "sha1": "148555d83f458d6a78d753eb59ab5a0e61347297"
+        },
+        {
+          "path": "views\/scripts\/_channel_options.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3744,
+          "sha1": "c8708ac83517ebc08dffa75903b31d6051f6cd95"
+        },
+        {
+          "path": "views\/scripts\/_channelCover.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 260,
+          "sha1": "5914827e57912c4f199fa5344b25beea782156c5"
+        },
+        {
+          "path": "views\/scripts\/_channels_grid.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2751,
+          "sha1": "802314728dd8d960a954709646e44021e15418d9"
+        },
+        {
+          "path": "views\/scripts\/_channelThumb.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 262,
+          "sha1": "a1bce3967d0049ce2a146272055c37ea6144b2cf"
+        },
+        {
+          "path": "views\/scripts\/_channelVideos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3573,
+          "sha1": "bf14f27e62870d16ad01cc9977d0429083588285"
+        },
+        {
+          "path": "views\/scripts\/_friend_list_container.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 37,
+          "sha1": "d1dffb9baebf3e6fec76bd3dd89616bedcee3fdd"
+        },
+        {
+          "path": "views\/scripts\/_pagination.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1079,
+          "sha1": "df50998bd104de8faf09b090059693bcca5970b2"
+        },
+        {
+          "path": "views\/scripts\/_playlist-listing.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 856,
+          "sha1": "c5d520ae78fb33076820bb1ca73fc9f14ec30baf"
+        },
+        {
+          "path": "views\/scripts\/_playlist_edit_video_listing.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2087,
+          "sha1": "eea30e4e84b7bd66caee35e66fe4b25dd3869f67"
+        },
+        {
+          "path": "views\/scripts\/_playlist_feed.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1300,
+          "sha1": "287bf6a70f4be266d88e035adcf6dd6fff1f0361"
+        },
+        {
+          "path": "views\/scripts\/_playlist_item.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2247,
+          "sha1": "66201630a2d15e0433fb4afbba0e5a4a3a810793"
+        },
+        {
+          "path": "views\/scripts\/_playlist_options.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1284,
+          "sha1": "67b095c39778bd726005b4202862f33b9500fbe2"
+        },
+        {
+          "path": "views\/scripts\/_playlist_preview.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 847,
+          "sha1": "923eaf45b6cdb95f305bf4b24eae2b69997e2829"
+        },
+        {
+          "path": "views\/scripts\/_playlist_slideshow_video_item.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1924,
+          "sha1": "530966cb0ebb5f81bb07184c9d424b9a1c4b7803"
+        },
+        {
+          "path": "views\/scripts\/_playlists_grid.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2586,
+          "sha1": "2728eae1aa813ab74c390508230a2cf595bc1346"
+        },
+        {
+          "path": "views\/scripts\/_subscribe_channel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1755,
+          "sha1": "00c2ff5a48b173574431068d880dd2092a20f033"
+        },
+        {
+          "path": "views\/scripts\/_video_duration.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 416,
+          "sha1": "3138152b81674ef7a3a1e2ed2202ff4683e3da53"
+        },
+        {
+          "path": "views\/scripts\/_video_feed.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1284,
+          "sha1": "cbeade3c10130af3dad7a3e1bbd44bbd7bd6dd60"
+        },
+        {
+          "path": "views\/scripts\/_video_item.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3414,
+          "sha1": "7330a6d468ab6a2cdd8a4f45519bf83bdddc9429"
+        },
+        {
+          "path": "views\/scripts\/_video_options.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3095,
+          "sha1": "4f61e4a81df0a1622f0e2736cfd3828638073b55"
+        },
+        {
+          "path": "views\/scripts\/_video_rating.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 593,
+          "sha1": "9795401c63842b6b3c38f95bac5996c59127e0b9"
+        },
+        {
+          "path": "views\/scripts\/_videos_grid.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4015,
+          "sha1": "14ba79869eb75aa6879d174e4f618e6f842b8653"
+        },
+        {
+          "path": "views\/scripts\/_videos_slideshow.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/admin-categories",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-categories\/delete-category.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2237,
+          "sha1": "ac2e556b594b1404e57f53173474f7975026d5c8"
+        },
+        {
+          "path": "views\/scripts\/admin-categories\/form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 343,
+          "sha1": "b13bbdaad23088d95ec25ec4668d7b0efbb6dffc"
+        },
+        {
+          "path": "views\/scripts\/admin-categories\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 6028,
+          "sha1": "d24325eec9167d25493f22112d0bca476a8e4919"
+        },
+        {
+          "path": "views\/scripts\/admin-category-fields",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-category-fields\/field-create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2043,
+          "sha1": "bfbb533da5d323c1e238806d9560bad1ff96cb4a"
+        },
+        {
+          "path": "views\/scripts\/admin-category-fields\/field-delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 374,
+          "sha1": "0a93fb2e2e2da4dfabcc731234757ba81d1bab44"
+        },
+        {
+          "path": "views\/scripts\/admin-category-fields\/field-edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 741,
+          "sha1": "48567fb12c6fa42d2f6d9b9c8666c877d73e9069"
+        },
+        {
+          "path": "views\/scripts\/admin-category-fields\/heading-create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 749,
+          "sha1": "e5a6ab00c2828b567cb59637fd261b892c99b794"
+        },
+        {
+          "path": "views\/scripts\/admin-category-fields\/heading-edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 745,
+          "sha1": "ae21439f0c423dab3cf88fe7df7da516b06e8b0c"
+        },
+        {
+          "path": "views\/scripts\/admin-category-fields\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2132,
+          "sha1": "d6bf2c77bd62e31c478f3f2671531d814aba428a"
+        },
+        {
+          "path": "views\/scripts\/admin-manage-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage-channels\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 985,
+          "sha1": "ab9bf6489e360e38f14edf2a14246c3338ca087f"
+        },
+        {
+          "path": "views\/scripts\/admin-manage-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 11496,
+          "sha1": "c6aab797aa3ac203af17bbc2b655e01cbac0d342"
+        },
+        {
+          "path": "views\/scripts\/admin-manage-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage-playlists\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 987,
+          "sha1": "65723c02e2cd02132a323ff049cd1880fc005e85"
+        },
+        {
+          "path": "views\/scripts\/admin-manage-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 7201,
+          "sha1": "ffc4742cdb0778da0ca1fcecd5c765a7f8321482"
+        },
+        {
+          "path": "views\/scripts\/admin-manage-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage-videos\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 981,
+          "sha1": "f9a04948ddd3bb10b2d93cf15f16f49a673baffa"
+        },
+        {
+          "path": "views\/scripts\/admin-manage-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 9470,
+          "sha1": "4958d44a19c2d3c818e2fa6a46f5ce7e8c577a2f"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 416,
+          "sha1": "e236f802cd2502f5c500b5fe3ec3f0ecab80c88a"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/level.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 571,
+          "sha1": "00c9d07a5cf0198027e1f73df196f4239f5be905"
+        },
+        {
+          "path": "views\/scripts\/channel",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/channel\/add-more-videos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 36,
+          "sha1": "44f209ccea7ab3927de4333db7d2828d2cef43e5"
+        },
+        {
+          "path": "views\/scripts\/channel\/ajax-get-videos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2922,
+          "sha1": "063af863a0638d9ef2b3487a9ad22c4ae083b36d"
+        },
+        {
+          "path": "views\/scripts\/channel\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 177,
+          "sha1": "4d9860a1d96f781a0fd95e4c408c70940f2502a2"
+        },
+        {
+          "path": "views\/scripts\/channel\/detail.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 12037,
+          "sha1": "6c74747b152c5024401855858aab989b73a93b1f"
+        },
+        {
+          "path": "views\/scripts\/channel\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 178,
+          "sha1": "aed057289550b048c5cd369a1945ddd5161e410d"
+        },
+        {
+          "path": "views\/scripts\/channel\/unsubscribe.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 177,
+          "sha1": "4d9860a1d96f781a0fd95e4c408c70940f2502a2"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 306,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/add-channel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 155,
+          "sha1": "a78dba31e1b0820fc9617053872db4602b2dafa0"
+        },
+        {
+          "path": "views\/scripts\/index\/create-playlist.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 189,
+          "sha1": "9514004e8c084781c08a6654267452fda808c285"
+        },
+        {
+          "path": "views\/scripts\/index\/find-channel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4164,
+          "sha1": "f0da908e5eff04136fed326c1f27fc73fdb5bd61"
+        },
+        {
+          "path": "views\/scripts\/index\/get-channel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 41,
+          "sha1": "ad87d1dd0a294ba9c20b90ffe6c17ec04e193420"
+        },
+        {
+          "path": "views\/scripts\/index\/get-playlist-form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4540,
+          "sha1": "24eaa202c1ff488a82d8c5794f27f01306c32307"
+        },
+        {
+          "path": "views\/scripts\/index\/send-to-friends.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2683,
+          "sha1": "d6f2dc882b8fc91f5f4cf19dff0593365448f85d"
+        },
+        {
+          "path": "views\/scripts\/index\/share-video.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9282,
+          "sha1": "a9457dcbf55acd24b94bd34cccbf0f51753e5911"
+        },
+        {
+          "path": "views\/scripts\/playlist",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/playlist\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 177,
+          "sha1": "4d9860a1d96f781a0fd95e4c408c70940f2502a2"
+        },
+        {
+          "path": "views\/scripts\/playlist\/detail.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 9283,
+          "sha1": "0e96a9b29fa3bb86d8add1501db4f9c64be41d2d"
+        },
+        {
+          "path": "views\/scripts\/playlist\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 174,
+          "sha1": "add182c1eeab9e805f04633234011abac82bcce6"
+        },
+        {
+          "path": "views\/scripts\/video",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 340,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/video\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 177,
+          "sha1": "4d9860a1d96f781a0fd95e4c408c70940f2502a2"
+        },
+        {
+          "path": "views\/scripts\/video\/detail.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 21921,
+          "sha1": "3e325eefeae29d6634178390c8ab294f04105f41"
+        },
+        {
+          "path": "views\/scripts\/video\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 497,
+          "sha1": "c7fe9d365365aa916ffb45a82c87ca31361b5074"
+        },
+        {
+          "path": "views\/scripts\/video\/embed.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 606,
+          "sha1": "1d8b3479b9338c578ba68f2e3fe65a717fbc0923"
+        },
+        {
+          "path": "views\/scripts\/video\/external.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2753,
+          "sha1": "ae4faac4701a5bef4ce4b138b6f58e208e8992d5"
+        },
+        {
+          "path": "views\/scripts\/video\/rate.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/video\/send-to-friends.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 46,
+          "sha1": "f4c53cc7d39ea04a5b492c4c855d3aac68ad468c"
+        },
+        {
+          "path": "views\/scripts\/video\/unfavorite.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 177,
+          "sha1": "4d9860a1d96f781a0fd95e4c408c70940f2502a2"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 1632,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 433,
+          "sha1": "269d426928b7977f4f5973cf9338af288bc2e05f"
+        },
+        {
+          "path": "widgets\/browse-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 293,
+          "sha1": "9c600d29e58b7577d375b37dec3d9027e6df0fc6"
+        },
+        {
+          "path": "widgets\/browse-menu-creation",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu-creation\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 571,
+          "sha1": "c9da430150242e3f2f4b9dc5f14ab4c5e741b6a8"
+        },
+        {
+          "path": "widgets\/browse-menu-creation\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 138,
+          "sha1": "0f8dd12809a23c7024b99627f66a129fe2994d92"
+        },
+        {
+          "path": "widgets\/browse-menu-management",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu-management\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 645,
+          "sha1": "3e2172b77274d04a9e2494d1a0b41e049682dd39"
+        },
+        {
+          "path": "widgets\/browse-menu-management\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1429,
+          "sha1": "86397dc87fb9e691219499e5e9a04a4e7730ec74"
+        },
+        {
+          "path": "widgets\/browse-search",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-search\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2266,
+          "sha1": "4a16e9393c314fd5bd96651abc711f927e24ea26"
+        },
+        {
+          "path": "widgets\/browse-search\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 229,
+          "sha1": "99f9af32e0b52c7560d488a9e2eb02caf3dc0367"
+        },
+        {
+          "path": "widgets\/categories",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/categories\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 838,
+          "sha1": "8893f33f2ace647578e7d8cbc32c2af541ecab8a"
+        },
+        {
+          "path": "widgets\/categories\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1571,
+          "sha1": "e2e8eae478333072fb4c8e80f6d09608de894791"
+        },
+        {
+          "path": "widgets\/channel-of-day",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/channel-of-day\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 701,
+          "sha1": "3e5ce96e68f2b179d3e8e39a074b391d1eff2a45"
+        },
+        {
+          "path": "widgets\/channel-of-day\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1231,
+          "sha1": "886ec5f53099c8b2b823366193a3df6044fb86fc"
+        },
+        {
+          "path": "widgets\/create-playlist-button",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/create-playlist-button\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 534,
+          "sha1": "c01eddb6800e547acbf0fbce8027872d97cf8fe1"
+        },
+        {
+          "path": "widgets\/create-playlist-button\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 246,
+          "sha1": "2a434177397c0409a3a8c6eb92804261bec373a5"
+        },
+        {
+          "path": "widgets\/detail-playlist-grid",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/detail-playlist-grid\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1042,
+          "sha1": "c118de063ea6a2a447c211645208b6ee3626b89e"
+        },
+        {
+          "path": "widgets\/detail-playlist-grid\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 486,
+          "sha1": "b5db3cc2b7aa059b3f50a3e6db72e700a51f2905"
+        },
+        {
+          "path": "widgets\/detail-playlist-info",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/detail-playlist-info\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 459,
+          "sha1": "188d3e891830d6d00f161d43a2f6be953dbe32ed"
+        },
+        {
+          "path": "widgets\/detail-playlist-info\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 4568,
+          "sha1": "0d429a413dff2464d9b2f01b55079916526d0b90"
+        },
+        {
+          "path": "widgets\/detail-playlist-slideshow",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/detail-playlist-slideshow\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 964,
+          "sha1": "b57b3a8a40ae1fef9ff8eb90bfbbf815eba66951"
+        },
+        {
+          "path": "widgets\/detail-playlist-slideshow\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 6764,
+          "sha1": "d24774999237507173358d9ddd980d28b9e65e48"
+        },
+        {
+          "path": "widgets\/featured-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/featured-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 747,
+          "sha1": "59f8b6b8eda13b297a23759334bb09cde1f5114f"
+        },
+        {
+          "path": "widgets\/featured-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 5304,
+          "sha1": "b59add205320dd22b5d59b4cd55f96f583d9f71f"
+        },
+        {
+          "path": "widgets\/featured-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/featured-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 741,
+          "sha1": "51e01decae83f100e96ab2b411a3b4ae0e8d1940"
+        },
+        {
+          "path": "widgets\/featured-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 6076,
+          "sha1": "bf783056f1ff4fdedac3b5be5709fc989fcfcfdb"
+        },
+        {
+          "path": "widgets\/latest-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/latest-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 614,
+          "sha1": "9fec13dc44f47115819ba47a47b88f25028a892c"
+        },
+        {
+          "path": "widgets\/latest-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 298,
+          "sha1": "3fb2dc5501cab95e722ad247ea06436e2f913979"
+        },
+        {
+          "path": "widgets\/latest-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/latest-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 612,
+          "sha1": "a89f912aa6d83948caad396dcae4ce4ef349f1c7"
+        },
+        {
+          "path": "widgets\/latest-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 301,
+          "sha1": "966abd3943efe989441206281588af992fab7013"
+        },
+        {
+          "path": "widgets\/latest-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/latest-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 608,
+          "sha1": "1363761a086954926a79a074ceb711af25557c1f"
+        },
+        {
+          "path": "widgets\/latest-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 316,
+          "sha1": "8649b33149c179746b33dc85f3ba0e14ff0d5c3c"
+        },
+        {
+          "path": "widgets\/list-channel-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-channel-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 565,
+          "sha1": "1058d78bc9ea1193bfaeaa7e602894738812fd9f"
+        },
+        {
+          "path": "widgets\/list-channel-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1410,
+          "sha1": "9f652649b5d29514a56c05fdcb1512260403595d"
+        },
+        {
+          "path": "widgets\/list-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1734,
+          "sha1": "f158696d57216016b2a23e1112d8411da4a27f16"
+        },
+        {
+          "path": "widgets\/list-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 4955,
+          "sha1": "e7afa0523f7a18fa7998620de3e088173baff71e"
+        },
+        {
+          "path": "widgets\/list-my-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-my-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1252,
+          "sha1": "ade9c2166c47b75be93f84c72251aee104346921"
+        },
+        {
+          "path": "widgets\/list-my-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1086,
+          "sha1": "fa64e3fc872fc93f145bb92a6993a009a6745d4f"
+        },
+        {
+          "path": "widgets\/list-my-favorite-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-my-favorite-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1405,
+          "sha1": "ad3af2e85da16cb2e2351699dddf80c5c3db9b42"
+        },
+        {
+          "path": "widgets\/list-my-favorite-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1133,
+          "sha1": "d4568a966cdfbbdffeae6b6d501db040008844c8"
+        },
+        {
+          "path": "widgets\/list-my-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-my-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1274,
+          "sha1": "d8759e03fd5d04ee92312c5bb82242b40bc13711"
+        },
+        {
+          "path": "widgets\/list-my-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1104,
+          "sha1": "1e26bd67dea7f9e5439eaf6d2a0e08b96fc50a5b"
+        },
+        {
+          "path": "widgets\/list-my-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-my-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1216,
+          "sha1": "424b64b116fe272043738c0a764e0e46c6708bf8"
+        },
+        {
+          "path": "widgets\/list-my-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1108,
+          "sha1": "cefee2db13cfe1cf0a93667e9751e35de58e8135"
+        },
+        {
+          "path": "widgets\/list-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1025,
+          "sha1": "85ee0005e2f6995c5d8f39117307a4710ba3e5b3"
+        },
+        {
+          "path": "widgets\/list-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 726,
+          "sha1": "b6e30543424c4065dd8c1b1f4ff222c632086367"
+        },
+        {
+          "path": "widgets\/list-subscription-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-subscription-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1269,
+          "sha1": "05632ba0ce0de0a9adad1259831d4cd79f800354"
+        },
+        {
+          "path": "widgets\/list-subscription-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 961,
+          "sha1": "44ad8329af0d99a36e7026a28616fe1f485374b4"
+        },
+        {
+          "path": "widgets\/list-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1653,
+          "sha1": "c7e85dd25be759b848966806d76810c7a507d06b"
+        },
+        {
+          "path": "widgets\/list-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 996,
+          "sha1": "b5b05b46676738c0ccb1e15f9edb2576c0b9a850"
+        },
+        {
+          "path": "widgets\/most-commented-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-commented-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 622,
+          "sha1": "b77d9c9ff96e268ea58830ad66908009d416ba53"
+        },
+        {
+          "path": "widgets\/most-commented-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 298,
+          "sha1": "3fb2dc5501cab95e722ad247ea06436e2f913979"
+        },
+        {
+          "path": "widgets\/most-commented-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-commented-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 620,
+          "sha1": "068d3ca608be9984d136e377f6d1e3e853fc41ab"
+        },
+        {
+          "path": "widgets\/most-commented-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 301,
+          "sha1": "966abd3943efe989441206281588af992fab7013"
+        },
+        {
+          "path": "widgets\/most-commented-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-commented-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 618,
+          "sha1": "08fdd055b2b680d5dccb68ad5ffd76309e3c9b88"
+        },
+        {
+          "path": "widgets\/most-commented-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 319,
+          "sha1": "2870c262ce3f88b47872111d4a9ac24fca8fe588"
+        },
+        {
+          "path": "widgets\/most-favorited-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-favorited-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 616,
+          "sha1": "c3e1c271c658dfe2d197b836eafd28e2d1965d4e"
+        },
+        {
+          "path": "widgets\/most-favorited-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 321,
+          "sha1": "7eaed525c535b2e13744fc9578eebfb8dfae0338"
+        },
+        {
+          "path": "widgets\/most-liked-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-liked-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 616,
+          "sha1": "0506717d1b9ed1207405f74778d98fcd5d182020"
+        },
+        {
+          "path": "widgets\/most-liked-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 298,
+          "sha1": "3fb2dc5501cab95e722ad247ea06436e2f913979"
+        },
+        {
+          "path": "widgets\/most-liked-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-liked-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 612,
+          "sha1": "98b1f0375797db458a1b264250be39b0b3d1504d"
+        },
+        {
+          "path": "widgets\/most-liked-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 301,
+          "sha1": "966abd3943efe989441206281588af992fab7013"
+        },
+        {
+          "path": "widgets\/most-liked-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-liked-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 608,
+          "sha1": "4945823ed36635c38381768c50a41314e4316c3e"
+        },
+        {
+          "path": "widgets\/most-liked-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 317,
+          "sha1": "f57b833c50210752a10220aea5c6c339dd5e6d5e"
+        },
+        {
+          "path": "widgets\/most-subscribed-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-subscribed-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 624,
+          "sha1": "41ea28299afbb361ccc31d66694901ed63ef9c28"
+        },
+        {
+          "path": "widgets\/most-subscribed-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 298,
+          "sha1": "3fb2dc5501cab95e722ad247ea06436e2f913979"
+        },
+        {
+          "path": "widgets\/popular-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/popular-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 603,
+          "sha1": "348cb95cc466ce886934074131e6b43f8cfdda2d"
+        },
+        {
+          "path": "widgets\/popular-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 292,
+          "sha1": "b0232926915d2db60bd53cca3644264d333f1cc1"
+        },
+        {
+          "path": "widgets\/profile-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1620,
+          "sha1": "bbd53697c0b0f01b953a6a7f9d97b925d35f2a16"
+        },
+        {
+          "path": "widgets\/profile-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2513,
+          "sha1": "a02e2a3bcb78e9d8d00f2c64a7cfc06e81766742"
+        },
+        {
+          "path": "widgets\/profile-favorite-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-favorite-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2046,
+          "sha1": "7a6b139e1b1d1f89ef15ff77443bef4d5e4160d9"
+        },
+        {
+          "path": "widgets\/profile-favorite-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2752,
+          "sha1": "6b1b1cfe6233f8c97dbb72e1d7bda5e3b92cae2b"
+        },
+        {
+          "path": "widgets\/profile-video-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-video-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1597,
+          "sha1": "9c40c010a4d4a38e0d2becee889ab4866b6aa1b5"
+        },
+        {
+          "path": "widgets\/profile-video-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2746,
+          "sha1": "31cc2806ccb4cb14d6920d9bd530f96fc151679e"
+        },
+        {
+          "path": "widgets\/profile-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1614,
+          "sha1": "9f105a81c5998624a5fc5314a2c4dade96447342"
+        },
+        {
+          "path": "widgets\/profile-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3201,
+          "sha1": "d1e119b15d8b38801a38d7cfc77b15d798755ea9"
+        },
+        {
+          "path": "widgets\/recommended-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/recommended-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2199,
+          "sha1": "f10241b3cb08463a858fd0de169211b0f9c98fc5"
+        },
+        {
+          "path": "widgets\/recommended-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 104,
+          "sha1": "089f75ab4d89362439567e271ad686ca3e65cc0d"
+        },
+        {
+          "path": "widgets\/related-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/related-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1293,
+          "sha1": "2d9987cc6fdc0efafe2981730557e7028ea427c2"
+        },
+        {
+          "path": "widgets\/related-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1082,
+          "sha1": "72aaff8450050cbede6e0c7c0f731a54265d817f"
+        },
+        {
+          "path": "widgets\/related-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/related-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1269,
+          "sha1": "b1ee5a4983bbd04809cfb6c1617b3343f89d1ce4"
+        },
+        {
+          "path": "widgets\/related-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 101,
+          "sha1": "64f4c93889d89f4635196521dc983a3eb6533271"
+        },
+        {
+          "path": "widgets\/same-channel-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/same-channel-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1259,
+          "sha1": "e5369457e4fcb27620b82334b7966d27d932739e"
+        },
+        {
+          "path": "widgets\/same-channel-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 101,
+          "sha1": "64f4c93889d89f4635196521dc983a3eb6533271"
+        },
+        {
+          "path": "widgets\/top-rated-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/top-rated-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 745,
+          "sha1": "3bac45773c5cf7de4fc92c803987934886b51d20"
+        },
+        {
+          "path": "widgets\/top-rated-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 315,
+          "sha1": "78434738fede8f47c70a5fd6a649d5377cdb68f6"
+        },
+        {
+          "path": "widgets\/user-other-channels",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/user-other-channels\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1339,
+          "sha1": "2674c372c278aca34fb7f42c9a10bdca3feb3f85"
+        },
+        {
+          "path": "widgets\/user-other-channels\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1082,
+          "sha1": "72aaff8450050cbede6e0c7c0f731a54265d817f"
+        },
+        {
+          "path": "widgets\/user-other-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/user-other-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1625,
+          "sha1": "9348826fd5bbe7ab783c6814d91a3c95b5790057"
+        },
+        {
+          "path": "widgets\/user-other-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1058,
+          "sha1": "43723764a3d243fa38d805d1451cf72fe577b38b"
+        },
+        {
+          "path": "widgets\/user-other-videos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/user-other-videos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1430,
+          "sha1": "6767f644cf83746f7609d6d079942d24b4f3f498"
+        },
+        {
+          "path": "widgets\/user-other-videos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 101,
+          "sha1": "64f4c93889d89f4635196521dc983a3eb6533271"
+        },
+        {
+          "path": "widgets\/video-tags",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/video-tags\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1745,
+          "sha1": "e2d464cee5163dbccde9b5fd17525aeb97edf8da"
+        },
+        {
+          "path": "widgets\/video-tags\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2096,
+          "sha1": "2a96e000ffe29d86de6959f14b69188a4e3a8ad9"
+        }
+      ]
+    },
+    "application\/languages\/en\/ynvideochannel.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/ynvideochannel.csv",
+      "structure": {
+        "path": "ynvideochannel.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 43529,
+        "sha1": "efc21a3dfe18c10d64af1b1831f9cd75a41a2529"
+      }
+    }
+  }
+}

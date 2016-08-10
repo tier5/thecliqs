@@ -1,0 +1,2 @@
+<link type="text/css" href="<?php echo 'application/modules/Ynchat/css.php'; ?>?js_mobile_version=1&v=<?php echo time(); ?>" rel="stylesheet" charset="utf-8">
+<script type="text/javascript" src="<?php echo 'application/modules/Ynchat/externals/scripts/js.php'; ?>?js_mobile_version=1&v=<?php echo time(); ?>" charset="utf-8"></script>

@@ -1,0 +1,68 @@
+HE - Timeline;HE - Timeline
+Earlier in %1s;Earlier in %1s
+Cover Photos;Cover Photos
+Show %1s;Show %1s
+TIMELINE_Choose from Photos...;Choose from Photos...
+TIMELINE_Upload Photo...;Upload Photo...
+TIMELINE_Reposition...;Reposition...
+TIMELINE_Remove...;Remove...
+TIMELINE_You have not created any album yet.;You have not created any album yet.
+TIMELINE_Please %1$screate%2$s create one before!;Please %1$screate%2$s create one before!
+TIMELINE_Select Album;Select Album
+TIMELINE_View Albums;View Albums
+TIMELINE_Choose from your Photos;Choose from your Photos
+TIMELINE_Save Positions;Save Positions
+TIMELINE_Remove Photo;Remove Photo
+TIMELINE_Do you want to remove your photo?;Do you want to remove your photo?
+TIMELINE_GLOBAL_SETTINGS_DESCRIPTION;This setting allows to control if user can choose usage of Timeline on your site or not. If you forse members to use Timeline, their profile becomes transformed automatically. In other case member should enter "profile settings" and choose an opportunity to use Timeline for his profile. 
+TIMELINE_Timeline Usage;Timeline Usage
+TIMELINE_USAGE_DESCRIPTION;Do you want to force members to use Timeline?
+TIMELINE_Timeline Widgets;Timeline Widgets
+TIMELINE_WIDGETS_DESCRIPTION;How much widgets will be shown
+TIMELINE_Let members to change their default profile to Timeline;Let members to change their default profile to Timeline
+TIMELINE_Force members to use Timeline instead of the system's default profile page;Force members to use Timeline instead of the system's default profile page
+TIMELINE_Settings have been successfully saved;Settings have been successfully saved
+TIMELINE_Replace default profile?;Replace default profile?
+TIMELINE_USER_SETTING_USAGE_ELEMENT_DESCRIPTION;If you want to have default profile replaced with Timeline profile view. 
+TIMELINE_Yes, replace;Yes, replace
+TIMELINE_No, use default profile page;No, use default profile page
+TIMELINE_Edit Page Cover;Edit Page Cover
+TIMELINE_Edit Member Cover;Edit Member Cover
+TIMELINE_Edit My Cover;Edit My Cover
+TIMELINE_USAGE_ELEMENT_DESCRIPTION;Select usage type
+TIMELINE_Applications;Applications
+TIMELINE_Born on %1s;Born on %1s
+TIMELINE_Created on %1s;Created on %1s
+TIMELINE_+Add Photo;+Add Photo
+TIMELINE_Edit Photo;Edit Photo
+{item:$subject} added a new birth photo.;{item:$subject} added a new birth photo.
+{item:$subject} added a new cover photo.;{item:$subject} added a new cover photo.
+TIMELINE_Application;Application
+in the topic %1$s;in the topic %1$s
+in the forum %1$s;in the forum %1$s
+Forum Posts;Forum Posts
+Forum Topics;Forum Topics
+Followers;Followers
+Following;Following
+This is a member's timeline profile;This is a member's timeline profile
+Born;Born
+Created;Created
+Now;Now
+{item:$subject} has added a new cover photo.;{item:$subject} has added a new cover photo.
+{item:$subject} has added a new birth photo.;{item:$subject} has added a new birth photo.
+pagetitle-timeline-index-profile;pagetitle-timeline-index-profile
+TIMELINE_Profile_title %s; %s Profile
+ADMIN_ACTIVITY_TYPE_BIRTH_PHOTO_UPDATE;When a user uploads birth photo on timeline
+ADMIN_ACTIVITY_TYPE_COVER_PHOTO_UPDATE;When a user uploads birth photo on timeline
+ADMIN_ACTIVITY_TYPE_PAGE_COVER_PHOTO_UPDATE;When a user uploads cover on timeline
+_ACTIVITY_ACTIONTYPE_BIRTH_PHOTO_UPDATE;Birth photo is updated on timeline
+_ACTIVITY_ACTIONTYPE_COVER_PHOTO_UPDATE;Cover photo is updated on timeline
+_ACTIVITY_ACTIONTYPE_PAGE_COVER_PHOTO_UPDATE;Cover photo is updated on page timeline
+pagetitle-timeline-index-admin-settings;Timeline plugin
+
+
+"TIMELINE_EditIcons_desc";"Here you can edit/remove icons for tabs of Profile Timeline"
+"TIMELINE_PageIcons_desc";"Here you can edit/remove icons for tabs of Page Timeline"
+"TIMELINE_ThumbIcons_desc";"Here you can add and crop icon for tab"
+"Birth Photos";"Birth Photos"
+

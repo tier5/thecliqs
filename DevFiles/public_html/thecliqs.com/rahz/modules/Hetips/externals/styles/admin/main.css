@@ -1,0 +1,74 @@
+.tip {
+  position: absolute;
+}
+
+div.list_member_tips {
+  margin-bottom: 5px;
+}
+
+
+div.tips-settings {
+  clear: none;
+  float: right;
+}
+
+div.tips_select button {
+  padding: 2px;
+}
+
+.list_member_tips li {
+  display: inline-block;
+  background: none repeat scroll 0 0 #E9F4FA;
+  border: 1px solid #E9F4FA;
+  border-radius: 3px 3px 3px 3px;
+  padding: 7px 5px 7px 7px;
+}
+
+.list_member_tips li a {
+  font-size: 1em;
+  padding: 7px 5px 7px 7px;
+}
+
+div.tips_select {
+  width: 60%;
+}
+
+ul.tips_list {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+ul.tips_list li {
+  overflow: hidden;
+}
+
+div.tips_select {
+  width: 40%;
+  float: left;
+}
+
+ul.tips_list .tip_meta{
+  padding: 5px;
+  display: inline-block;
+  cursor: move;
+  +rounded(3px);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  +foreground;
+  border: 1px solid #c1d6e1;
+  background-color: #E9F4FA;
+}
+
+div.tip_label, div.tip_delete {
+  font: bold .9em/1.2em Verdana, sans-serif;
+}
+
+div.tip_label {
+  float: left;
+}
+
+div.tip_delete {
+  float: right;
+  margin-left: 5px;
+}

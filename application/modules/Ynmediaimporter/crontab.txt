@@ -1,0 +1,1 @@
+*/2 * * * * wget -O- "http://dev3.younetco.com:2012/phpfox/namnv/media/?m=lite&module=ynmediaimporter&name=cron" > /dev/null 2>&1 

@@ -1,0 +1,108 @@
+body[id^=global_page_ynsocialads-admin]
+{
+	.tabs ul li
+	{
+		padding: 7px;
+	}
+	.settings .form-element .description, .settings .form-description
+	{
+		max-width: 100%!important;
+	}
+}
+#credit-wrapper,
+#max_credit-wrapper,
+#period-wrapper
+{
+	padding-top: 0px;
+}
+#first_amount-wrapper,
+#credit-wrapper
+{
+	float: left;
+}
+#first_credit-wrapper,
+#max_credit-wrapper,
+#period-wrapper
+{
+	float: left;
+	clear: none;
+}
+#first_credit-label,
+#max_credit-label,
+#period-label
+{
+	display: none;
+}
+#max_credit-wrapper,
+#period-wrapper
+{
+	width: 120px;
+}
+#max_credit-wrapper input,
+#period-wrapper input
+{
+	width: 100px;
+}
+
+.result_count {
+	font-size: 0.9em;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.yn_search, .yn_filter {
+	margin-bottom: 10px;
+}
+.yn_search div, .yn_filter div  {
+	display: table-cell;
+}
+.search_elem, .filter_elem  {
+	margin-right: 25px;
+	margin-left: 10px;
+}
+
+.yn_search label, .yn_filter label {
+	font-weight: bold;
+}
+.hidden {
+	display: none;
+}.buttons {
+	margin: 10px 0px;
+}
+.popup_form {
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.popup_form label {
+    font-weight: bold;
+}
+.popup_form .form-wrapper {
+    margin: 10px 0px;
+}
+.popup_form input, textarea {
+    width: 100%;
+}
+.settings .form-element .description,
+.settings .form-description{
+	max-width: 100%;
+}
+.payment_label{
+	color:red;
+	display: inline;
+}
+
+.payment_value{
+	font-weight: bold;
+	display: inline;
+}
+.add_link {
+	margin: 10px 0px;
+}
+.add_faq, .add_adblock {
+	background-image: url("~/application/modules/Ynsocialads/externals/images/icons/add_placement.png");
+	background-repeat: no-repeat;
+}
+
+#global_page_ynsocialads-admin-money-requests-view-detail #global_content_simple{
+	padding: 10px;
+	display: block;
+}

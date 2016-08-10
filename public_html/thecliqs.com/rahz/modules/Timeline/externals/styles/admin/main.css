@@ -1,0 +1,78 @@
+
+#EditPhoto .form-label, #EditPhoto .form-element, #SignupForm .form-label, #SignupForm .form-element {
+  clear: both;
+  float: none;
+  text-align: left;
+}
+#lassoImg, #lassoMask {
+  border: 1px solid #DDDDDD;
+  display: block;
+}
+
+
+#global_page_timeline-admin-settings-edit img.thumb_icon {
+
+}
+
+#global_page_timeline-admin-settings-edit div.preview-thumbnail {
+  border: 1px solid #DDDDDD;
+  display: block;
+  float: left;
+  font-size: 0;
+  line-height: 0;
+  margin-right: 5px;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  visibility: visible;
+  max-height: 76px;
+  max-width: 115px;
+}
+
+#global_page_timeline-admin-settings-edit #EditPhoto #preview-thumbnail img,
+#global_page_timeline-admin-settings-edit #SignupForm #preview-thumbnail img {
+  display: block;
+  float: left;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  visibility: visible;
+  font-size: 0;
+  line-height: 0;
+}
+#global_page_timeline-admin-settings-edit img.main,
+#global_page_timeline-admin-settings-edit img.thumb_normal,
+#global_page_timeline-admin-settings-edit img.thumb_profile,
+#global_page_timeline-admin-settings-edit img.thumb_icon {
+  border: 1px solid #DDDDDD;
+}
+
+.timeline_icon_list {
+
+}
+.timeline_icon_list > div {
+  float: left;
+  border-radius: 5px;
+  border: solid 1px #3983aa;
+  margin: 5px;
+  width: 150px;
+  min-width: 150px;
+  padding: 5px;
+  background-color: #E9F4FA;
+  font-weight: bold;
+}
+
+#global_page_timeline-admin-settings-page-icons .thumb_body,
+#global_page_timeline-admin-settings-thumb-icons .thumb_body {
+  padding-left: 17px;
+}
+#global_page_timeline-admin-settings-page-icons button,
+#global_page_timeline-admin-settings-thumb-icons button {
+  padding: 3px;
+  margin-left: 5px;
+  float: left;
+}
+
+#global_page_timeline-admin-settings-edit ul.admin_home_dashboard_links > li li a {
+  padding-left: 22px !important;
+}

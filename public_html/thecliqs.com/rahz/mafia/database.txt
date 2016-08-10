@@ -1,0 +1,534 @@
+--
+-- Table structure for table `adminlog`
+--
+
+CREATE TABLE IF NOT EXISTS `adminlog` (
+  `id` int(11) NOT NULL auto_increment,
+  `log` text NOT NULL,
+  `reason` text NOT NULL,
+  `unread` char(1) NOT NULL default 'F',
+  UNIQUE KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `adminlog`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bans`
+--
+
+CREATE TABLE IF NOT EXISTS `bans` (
+  `banned` varchar(255) NOT NULL default '',
+  `reason` varchar(255) NOT NULL default '',
+  `expires` int(11) NOT NULL default '0',
+  `ip` varchar(15) NOT NULL default '0.0.0.0',
+  `whois` varchar(100) NOT NULL default '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `bans`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `censors`
+--
+
+CREATE TABLE IF NOT EXISTS `censors` (
+  `id` int(11) NOT NULL auto_increment,
+  `censor` char(32) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `censors`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `creditmarket`
+--
+
+CREATE TABLE IF NOT EXISTS `creditmarket` (
+  `creditcost` int(11) NOT NULL default '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `creditmarket`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `games`
+--
+
+CREATE TABLE IF NOT EXISTS `games` (
+  `round` int(11) unsigned NOT NULL auto_increment,
+  `type` varchar(12) NOT NULL default '',
+  `speed` tinyint(4) NOT NULL default '0',
+  `maxbuild` int(11) NOT NULL default '0',
+  `reserves` int(11) NOT NULL default '0',
+  `credits` int(11) NOT NULL default '0',
+  `crewmax` tinyint(4) NOT NULL default '0',
+  `starts` int(11) NOT NULL default '0',
+  `ends` int(11) NOT NULL default '0',
+  `status` varchar(10) NOT NULL default 'normal',
+  `gamename` text NOT NULL,
+  `submax` int(5) NOT NULL default '500',
+  `cron10min` int(11) NOT NULL default '0',
+  `first` varchar(100) NOT NULL default 'n/a',
+  `second` varchar(100) NOT NULL default 'n/a',
+  `third` varchar(100) NOT NULL default 'n/a',
+  `forthnfifth` varchar(100) NOT NULL default 'n/a',
+  `sixththrewtenth` varchar(100) NOT NULL default 'n/a',
+  `tophoekiller` varchar(100) NOT NULL default 'n/a',
+  `topthugkiller` varchar(100) NOT NULL default 'n/a',
+  `crewprize` varchar(100) NOT NULL default 'n/a',
+  `resets` varchar(30) NOT NULL default '',
+  `attin` varchar(10) NOT NULL default '46',
+  `attout` varchar(10) NOT NULL default '46',
+  `attindown` varchar(10) NOT NULL default '4',
+  `attoutdown` varchar(10) NOT NULL default '4',
+  `protection` char(2) NOT NULL default '0',
+  `hitman` varchar(10) NOT NULL default '',
+  `produceweapons` varchar(10) NOT NULL default '',
+  `firsts` varchar(100) NOT NULL default 'n/a',
+  `seconds` varchar(100) NOT NULL default 'n/a',
+  `thirds` varchar(100) NOT NULL default 'n/a',
+  `forthnfifths` varchar(100) NOT NULL default 'n/a',
+  `sixththrewtenths` varchar(100) NOT NULL default 'n/a',
+  `tophoekillers` varchar(100) NOT NULL default 'n/a',
+  `topthugkillers` varchar(100) NOT NULL default 'n/a',
+  `crewprizes` varchar(100) NOT NULL default 'n/a',
+  `free1` varchar(50) NOT NULL default '0',
+  `free2` varchar(50) NOT NULL default '0',
+  `free3` varchar(50) NOT NULL default '0',
+  `free4` varchar(50) NOT NULL default '0',
+  `free5` varchar(50) NOT NULL default '0',
+  `free6` varchar(50) NOT NULL default '0',
+  `free7` varchar(50) NOT NULL default '0',
+  `free8` varchar(50) NOT NULL default '0',
+  `free9` varchar(50) NOT NULL default '0',
+  `free10` varchar(50) NOT NULL default '0',
+  `sup_11` varchar(50) NOT NULL default '0',
+  `sup_12` varchar(50) NOT NULL default '0',
+  `sup_13` varchar(50) NOT NULL default '0',
+  `sup_14` varchar(50) NOT NULL default '0',
+  `sup_15` varchar(50) NOT NULL default '0',
+  `sup_16` varchar(50) NOT NULL default '0',
+  `sup_17` varchar(50) NOT NULL default '0',
+  `sup_18` varchar(50) NOT NULL default '0',
+  `sup_19` varchar(50) NOT NULL default '0',
+  `sup_110` varchar(50) NOT NULL default '0',
+  `sup_21` varchar(50) NOT NULL default '0',
+  `sup_22` varchar(50) NOT NULL default '0',
+  `sup_23` varchar(50) NOT NULL default '0',
+  `sup_24` varchar(50) NOT NULL default '0',
+  `sup_25` varchar(50) NOT NULL default '0',
+  `sup_26` varchar(50) NOT NULL default '0',
+  `sup_27` varchar(50) NOT NULL default '0',
+  `sup_28` varchar(50) NOT NULL default '0',
+  `sup_29` varchar(50) NOT NULL default '0',
+  `sup_210` varchar(50) NOT NULL default '0',
+  `sup_31` varchar(50) NOT NULL default '0',
+  `sup_32` varchar(50) NOT NULL default '0',
+  `sup_33` varchar(50) NOT NULL default '0',
+  `sup_34` varchar(50) NOT NULL default '0',
+  `sup_35` varchar(50) NOT NULL default '0',
+  `sup_36` varchar(50) NOT NULL default '0',
+  `sup_37` varchar(50) NOT NULL default '0',
+  `sup_38` varchar(50) NOT NULL default '0',
+  `sup_39` varchar(50) NOT NULL default '0',
+  `sup_310` varchar(50) NOT NULL default '0',
+  `du1` varchar(50) NOT NULL default '0',
+  `du2` varchar(50) NOT NULL default '0',
+  `du3` varchar(50) NOT NULL default '0',
+  `du4` varchar(50) NOT NULL default '0',
+  `du5` varchar(50) NOT NULL default '0',
+  `du6` varchar(50) NOT NULL default '0',
+  `du7` varchar(50) NOT NULL default '0',
+  `du8` varchar(50) NOT NULL default '0',
+  `du9` varchar(50) NOT NULL default '0',
+  `du10` varchar(50) NOT NULL default '0',
+  `op1` varchar(50) NOT NULL default '0',
+  `op2` varchar(50) NOT NULL default '0',
+  `op3` varchar(50) NOT NULL default '0',
+  `op4` varchar(50) NOT NULL default '0',
+  `op5` varchar(50) NOT NULL default '0',
+  `op6` varchar(50) NOT NULL default '0',
+  `op7` varchar(50) NOT NULL default '0',
+  `op8` varchar(50) NOT NULL default '0',
+  `op9` varchar(50) NOT NULL default '0',
+  `op10` varchar(50) NOT NULL default '0',
+  `c1` varchar(50) NOT NULL default '0',
+  `c2` varchar(50) NOT NULL default '0',
+  `c3` varchar(50) NOT NULL default '0',
+  `c4` varchar(50) NOT NULL default '0',
+  `c5` varchar(50) NOT NULL default '0',
+  `c6` varchar(50) NOT NULL default '0',
+  `c7` varchar(50) NOT NULL default '0',
+  `c8` varchar(50) NOT NULL default '0',
+  `c9` varchar(50) NOT NULL default '0',
+  `c10` varchar(50) NOT NULL default '0',
+  `fdu1` varchar(50) NOT NULL default '0',
+  `fdu2` varchar(50) NOT NULL default '0',
+  `fdu3` varchar(50) NOT NULL default '0',
+  `fdu4` varchar(50) NOT NULL default '0',
+  `fdu5` varchar(50) NOT NULL default '0',
+  `fdu6` varchar(50) NOT NULL default '0',
+  `fdu7` varchar(50) NOT NULL default '0',
+  `fdu8` varchar(50) NOT NULL default '0',
+  `fdu9` varchar(50) NOT NULL default '0',
+  `fdu10` varchar(50) NOT NULL default '0',
+  `cash11` decimal(55,0) default NULL,
+  `cash22` decimal(55,0) default NULL,
+  `cash33` decimal(55,0) default NULL,
+  `cleanup` char(3) NOT NULL default 'no',
+  PRIMARY KEY  (`round`)
+) ENGINE=MyISAM;
+
+--
+-- Dumping data for table `games`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `html`
+--
+
+CREATE TABLE IF NOT EXISTS `html` (
+  `rules` text NOT NULL,
+  `description` text NOT NULL,
+  `tos` text NOT NULL,
+  `guide` text NOT NULL,
+  FULLTEXT KEY `rules` (`rules`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `html`
+--
+
+INSERT INTO `html` (`rules`, `description`, `tos`, `guide`) VALUES
+('1. Multiple Accounts\r\nHaving more than 1 account is forbidden. If we come to believe you are using more than one account, we will remove your account. We have a strict Zero Tolerance for cheating.*****Being a Supporter does not make you exempt from the rules in any way, or qualify you for special treatment. All accounts caught cheating will suffer the same punishment, regardless of whether you are a supporter or not. You have been warned.*****\r\n\r\n2. Shared Computers\r\nSharing a computer is not allowed under any circumstances. Because we can not determine who has multiple accounts on one computer or who is sharing a computer with someone else, we must assume that you are cheating and one or both accounts will be banned. For this reason, we do not suggest signing in from a public computer. Using your friend’s computer to check your account will result in one or both accounts being banned. The use of the same IP address is acceptable AS LONG AS YOU DO NOT SHARE THE SAME COMPUTER. Once an account has been banned for cheating, it will not be unbanned.*****Being a Supporter does not make you exempt from the rules in any way, or qualify you\r\nfor special treatment. All accounts caught cheating will suffer the same punishment, regardless of whether you are a supporter or not. You have been warned.*****\r\n\r\n3. Outside Programs and Glitches\r\nUsing an outside program, glitch, or any browser tricks (including plug-ins and auto refresh/load) in the game to alter the affects of the game is considering cheating. If you are found abusing either one, your account may be removed. Please report any bugs or glitches you find in the game. If we find you are a abusing them, we will have your account disabled.\r\n\r\n4. Quitting/Leaking\r\nDO NOT ASK US TO CLOSE YOUR ACCOUNT SO YOU CAN START A NEW ONE. This is cheating. If you open an account, attack somebody, ask us to close it, start a new one and attack him again it is just like using multiple accounts. We won''t close any account. You just have to wait for the new round to start over from scratch. If you want to quit just leave and the next round you won''t have any Mafioso registered. You would be able to play other rounds later. Do not put in your profile, "get cash from me, free cars". Do NOT post or advertise your giving away free money or anything else for that matter. That is considering leaking and may get you removed from the game.\r\n\r\n5. Spamming\r\nWe are really strict about spammers. Please do not post links to other MMORPG games on the net, its just out of respect to the programmers who work hard on this game. This includes posting links to sites that contain links to other games. Do not send messages to other players advertising for other games. Your Mafioso character can be banned pretty fast if you abuse this rule.\r\n\r\n6. Posting\r\nDo not post any attacks on the public boards or in Public chat rooms. Only share attacks with members of your family. Please do not spam, this includes sending mass messages to a player in order to flood their inbox or transfers. Do not put down the game, or the staff. Do not give out the names or contact information of other players on the boards, this includes any personal information. Do not make racial comments in your posts. If you are creating drama towards the game, we will remove you.\r\n\r\n7. Profanity/Racial comments\r\nThere has been complaints from players with regards to this. This is a game and games are supposed to be fun. If your player name or family name has any excessive profanity or racist comments in it then you will be asked to change it (if family) or be banned (player name) and told why. Mild adult\r\nlanguage will be allowed in player names, but if we find your name to have excessive profanity (ie. f*ck, c*nt), it will be removed. There is NO swearing on the Recruiting Board or the lounge chat room. You can, however, swear in the boards (but keep it to a minimum) and the FreeForAll chat room and you can do whatever you like in your family chat room and family board as they are not monitored. Profiles or profile pics that get complaints will be dealt with accordingly.\r\n\r\n8. Threatening Messages/Racial Comments\r\nThis is a Mafia based game and insults and threats are a part of that. However, sending messages that personally threaten another player or their livelyhood will result in you being removed from the game. You are welcome to tell someone you are going to take out them and their whole family\r\n(gamewise). You are not allowed, for example, to tell someone you know where they live and are coming to get them or to wish any diseases on them or their family. This is a game and it''s meant to be fun. Keep your threats to within the game. Abusive messages also will not be tolerated. Insulting someone''s race, religion, mental/physical handicaps or sexual orientation may result in your removal.\r\n\r\n9. Game Names/Family Names\r\nExcessive profanity, racial slurs, religious slurs, strong sexual content or derogatory names against players or any of the groups named in Rule 8 are not allowed for game names or family names. If we come to believe your name implies any of the above, your account will be removed from the game. If your family name is one of these, you will be asked to disban and rename your family. If you fail to do so, you will be removed from the game.\r\n\r\n10. Nudity\r\nThough this is an 18 and over game, nudity is not allowed on profiles or family medias. Strong sexual content is also not allowed. You will be given an opportunity to remove the offensive material or it may be removed for you. If you refuse to replace it or continue to abuse this rule, you will be removed from the game.\r\n\r\n11. Family\r\nThe size of families is restricted to 20 members. You are free to have alliances or family extension but we are not responsible for that and do not provide any tools to handle them. Allied families and family extensions cannot use the same icon. Each family needs to have a unique icon.\r\n\r\n12. Bad links and Hacking\r\nDo not send links that can affect an account or computer to players within the game. Do not threaten that you are a hacker or will hack the game. Doing so will cause your account to be banned. *Please be advised, FreeMafiaGame will not be held responsible or make any corrections for any URL''s or outside programs sent to you within the game (or outside the game) that may have affects on your account. If you receive a link to a website in game we strongly urge against you pasting it into your browser.\r\n\r\n13. Abusing Staff\r\nThe staff is here to answer your questions, fix your problems and handle your complaints. They are the ones that keep the game running. They are volunteers and work hard. They also enforce the rules which mean that often they are not popular. If you have a problem with a staff member, report it to another staff member or to the Staff Manager or Supervisor. Sending the staff abusive messages or bashing them on the boards or your profile could result in your removal from the game. If you do not agree with their decision, get a second opinion. We can not tolerate abuse to the staff.\r\n\r\n14. Common Sense\r\nJust because the rule isn''t listed here, doesn''t make it right. Please think before you take action or make a comment. There are people playing this game from all parts of the world. What may seem like a joke to you could easily be very insulting to someone else.\r\n\r\n-SPYDA', 'this module is not currently being used.\r\n', 'Terms of service goes here...', 'game guide here');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `logs`
+--
+
+CREATE TABLE IF NOT EXISTS `logs` (
+  `id` int(10) NOT NULL auto_increment,
+  `time` int(11) NOT NULL default '0',
+  `round` varchar(50) NOT NULL default '0',
+  `pimpname` varchar(255) NOT NULL default '',
+  `action` text NOT NULL,
+  `ip` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM;
+
+--
+-- Dumping data for table `logs`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `news`
+--
+
+CREATE TABLE IF NOT EXISTS `news` (
+  `id` bigint(20) NOT NULL auto_increment,
+  `news` text NOT NULL,
+  `posted` int(11) NOT NULL default '0',
+  `subject` text NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2;
+
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`id`, `news`, `posted`, `subject`) VALUES
+(1, 'Welcome to your new site', 1197576994, 'This is a live site');
+
+-- --------------------------------------------------------
+
+--
+--Table structure for 'newsletters'
+--
+
+CREATE TABLE IF NOT EXISTS `newsletter` (
+  `id` int(10) NOT NULL auto_increment,
+  `subject` varchar(255) NOT NULL default '',
+  `body` text NOT NULL,
+  `footer` text NOT NULL,
+  `sent` varchar(5) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `paypal`
+--
+
+CREATE TABLE IF NOT EXISTS `paypal` (
+  `tranid` varchar(32) NOT NULL default '',
+  `amount` varchar(32) NOT NULL default '',
+  `fee` varchar(32) NOT NULL default '',
+  `user` varchar(32) NOT NULL default '',
+  `datebought` int(11) NOT NULL default '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `paypal`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `prizes`
+--
+
+CREATE TABLE IF NOT EXISTS `prizes` (
+  `rank` int(10) unsigned NOT NULL default '0',
+  `type` varchar(30) NOT NULL default '',
+  `prize` varchar(50) NOT NULL default '',
+  PRIMARY KEY  (`rank`,`type`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `prizes`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `referral`
+--
+
+CREATE TABLE IF NOT EXISTS `referral` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `pimp` varchar(18) NOT NULL default '',
+  `user_email` varchar(100) NOT NULL default '',
+  `friend_email` varchar(100) NOT NULL default '',
+  `friend_status` varchar(10) NOT NULL default '',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `referral`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `replies`
+--
+
+CREATE TABLE IF NOT EXISTS `replies` (
+  `id` int(11) NOT NULL auto_increment,
+  `user_id` varchar(30) NOT NULL default '',
+  `thread_id` text NOT NULL,
+  `body` text NOT NULL,
+  `topic` varchar(100) NOT NULL default '1',
+  `post_time` varchar(50) NOT NULL default '',
+  `user_posts` varchar(10) NOT NULL default '0',
+  `in_topic` char(3) NOT NULL default '',
+  UNIQUE KEY `id` (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `replies`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `site_details`
+--
+
+CREATE TABLE IF NOT EXISTS `site_details` (
+  `sitename` varchar(25) NOT NULL default '',
+  `siteslogan` varchar(25) NOT NULL default '',
+  `sitedetails` text NOT NULL,
+  `siteannouncement` text NOT NULL,
+  `incentivesignupmsg` varchar(200) NOT NULL default '',
+  `paypal` varchar(200) NOT NULL default '',
+  `metakeywords` text NOT NULL,
+  `metadescription` text NOT NULL,
+  `adsense` varchar(100) NOT NULL default 'pub-3955786201125062',
+  `rules` text NOT NULL,
+  `tos` text NOT NULL,
+  `guide` text NOT NULL,
+  `chatroomname` varchar(55) NOT NULL default '',
+  `layout` varchar(55) NOT NULL default 'html.php'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `site_details`
+--
+
+INSERT INTO `site_details` (`sitename`, `siteslogan`, `sitedetails`, `siteannouncement`, `incentivesignupmsg`, `paypal`, `metakeywords`, `metadescription`, `adsense`, `rules`, `tos`, `guide`, `chatroomname`, `layout`) VALUES
+('Mafia Game Script v3.0', '3.0 Super Mafioso Charged', 'This mafia site is for testing, development, and demo for the mafia gaming script provided by Dedicated Gaming Network, LLC sold exclusively on <a href="http://www.game-script.net">Game-Script.net</a>', 'This is a site wide announcement area that you can place in whatever you like to let your members know about.', 'Incentive message area can put forinstance sign up now get 2000 account credits', 'admin@game-script.net', 'mafia game script, online mafia script, mobster game script, mafia game script v1.5, mafia game script v2.0', 'online mafia game script', 'pub-3955786201125062', 'I. Cheaters are not welcome. At no time \r\n                during the time you are playin should you ever get the idea that \r\n                you can cheat and win. If we find out that you have been cheating, \r\n                you will be removed from the game. This is a major rule in our \r\n                game. <br>\r\n                II. You are allowed to play only one game under your player name, \r\n                this means that you may not start additional accounts and think \r\n                you will be able to win. If you are running out of turns, buy \r\n                turns. If we find out you are signing up under different names, \r\n                we will remove you from the game entirely. If you are trying to \r\n                send fake referrals, you will be removed from the game.<br>\r\n                III. You are responsible for anything you do using your IP address, \r\n                so remember that if you are using your computer and someone decides \r\n                to play for you. If you break the rules, we dont know it was someone \r\n                else, so you can be removed permanently if anything happens that \r\n                jeopardizes your account.<br>\r\n                IV. Dont abuse the RULES. They are set up to allow you to play \r\n                the game. If you do abuse them and you are banned, from either \r\n                that particular round or our site, dont complain. We gave you \r\n                fair warning. <br>\r\n                V. Leaking is not encouraged in our game. We do not want you to \r\n                tell others or use our message boards to reveal statuses to give \r\n                someone else an advantage in winning. You may not in any way message \r\n                or tell anyone that your defensive units or operatives are happy/unhappy. \r\n                Do not agree to exchange this information to others. Also do NOT \r\n                offer to give away free money or anything else to other players \r\n                as we will REMOVE you for that kind of activity during the game. \r\n                <br>\r\n                VI. Use our message boards for game purposes only. USE IT WISELY! \r\n                Do not swear on the boards. Do not post about other games or sites \r\n                on our boards. The boards are for In Game Purposes ONLY.<br>\r\n\r\n                VII. Credit cards and e-checks are available for you to purchase \r\n                turns. I don''t think there is a need to tell you that fraudulent \r\n                use of them is illegal. If you should decide to use them fraudulently, \r\n                you will prosecuted to the full extent of the law. And you will \r\n                automatically be removed from the game permanently. If you are \r\n                found to have behaved fraudulently, you will be required to give \r\n                back any winnings you have had in the game. In addition, you are \r\n                required to pay any banking or paypal fees related to the fraud \r\n                transaction. Any accounts found to be using chargebacks against \r\n                us will be treated as Fraud. If you at any time chargeback to \r\n                us you will be banned from the game. &lt;br&gt;&lt;br&gt;<br>\r\n                VIII. You are allowed to quit playing any game that you sign up \r\n                for as long as you are just a member of a crew, but if you are \r\n                the founder of the crew, disband it first. Allow those other crew \r\n                members to find another crew to play with. Just remember if you \r\n                have purchased turns, we cannot give you credit back for them. \r\n                You are not allowed to quit and then come back under another account. \r\n                That will be treated as a multiple account. <br>\r\n                IX. You may only set up attacks within your crew, doing so outside \r\n                of them will not be allowed. So DONT do it! <br>\r\n                X. We will set up more rules as we go along. So if you want to \r\n                be up-to-date, by all means, check the rules frequently.<br>\r\n                XI. Swearing. Do not ever ever swear at a staff member. Do not \r\n                swear on public boards. Do not repeatedly swear at other players. \r\n                When you are playing our game, we would like you to try and think \r\n                of other words to use -- we''ve all known the same 10 dirty words \r\n                since we were children, and now is your perfect chance to find \r\n                other expressions. <br>\r\n\r\n                XII. You must be over 18 in order to play. In order to win a cash \r\n                prize you are requested to show proof of your age. If you are \r\n                not willing to do this, we will award you the prize in credits. \r\n                Showing proof of age is not mandatory, but in order to get a cash \r\n                prize from us you will need to do this. <br>\r\n                XIII. In order to win a cash prize from us, you must have at least \r\n                somewhere have purchased even the smallest amounts of your own \r\n                credits. This is part of your qualification for the cash prizes \r\n                offered to supporters. If your best friend wants to buy you credits, \r\n                have them just send you the cash so you can buy them yourself. \r\n                That is the best method. If you win top prize but have not bought \r\n                your own credits, we will award you the prize in credits instead \r\n                of cash. <br>\r\n                XIV. Winning Top Prize - You can''t win the top prize two times \r\n                in a row so if you have just won it, then you cant win until the \r\n                round after the next round. ', 'WARNING: If you are a resident of Arizona, Connecticut, Florida, Louisiana, Montana & Vermont. Possible Ineligible States or Territories are: Arkansas, Iowa, Louisiana, Maryland, North Dakota, Tennessee, Puerto Rico and Quebec, Canada , you are not permitted to participate in this game nor win any promotion prizes. Please be well aware of your local regulations before you enter for any prizes. We expect each player to be responsible for making certain they are eligible, by signing up at this website you are saying that you understand the rules and that you take responsiblity for your own actions and decisions.\r\n\r\nThe service of Mafia Game Script v1.5 is provided to you (the Mafioso) for free under the terms and conditions of this Disclaimer. By playing Mafia Game Script v1.5 you are indicating your agreement to be bound by the terms and conditions of this Disclaimer.\r\n\r\nMafia Game Script v1.5 makes no warranty that the game will meet your requirements or any specific purpose you have in your mind, nor that the service will be uninterrupted, timely, secure, or error free; nor Mafia Game Script v1.5 or any of its information providers, employees, agents, officers make any warranty as to the results to be obtained from use of the service.\r\n\r\nMafia Game Script v1.5 disclaims all warranties of any kind. By playing Mafia Game Script v1.5, Mafioso understands and agrees to use our service at your sole risk.\r\n\r\nMafioso agrees that he or she is at least 18 years of age.\r\n\r\nMafioso understands and agrees that any material or data downloaded is done at the Mafioso''s own descretion and sole risk.\r\n\r\nMafioso will be solely responsible for any damage done to the Mafiosos computer or data loss due to playing Mafia Game Script v1.5. No advice or information obtained by Mafioso from Mafia Game Script v1.5 and/or Mafia Game Script v1.5 Development Team know as the "Mafioso Gods", whether it is oral or written, will create any warranty not expressly made herein.\r\n\r\nMafioso''s right to use the service granted by Mafia Game Script v1.5 is personal to the individual. The service is provided to the Mafioso only and is not transferable. Mafioso is entirely responsible to maintain the confidentiality of the account and password. Furthermore, Mafioso is totally reponsible for all actions which occur under the account.\r\n\r\nMafioso agrees to provide accurate, complete, and current information in the registration, which includes all information requested on original sign up. Validation code will be sent to the Mafiosos email address upon completion of the registration. Also, the Mafioso grants Mafia Game Script v1.5 the right to disclose certain registration data about the Mafia Game Script v1.5 Mafiosos to third parties. If any registration data is incorrect, Mafia Game Script v1.5 retains the right to terminate Mafioso''s account, and right to use the service.\r\n\r\nThe playing of this game and this terms of service are goverened by the laws of the state of California. In case legal action becomes necessary by Mafia Game Script v1.5 as a result of any violation of these terms of service, jurisdiction and venue shall be proper in California.\r\n\r\nMafioso agrees not to resale or make any commercial use of the product. Furthermore, Mafioso agrees not to make use of any icons, graphics, information, or data from Mafia Game Script v1.5 without the prior written consent from Mafia Game Script v1.5, except banners created for the specific purpose of advertising Mafia Game Script v1.5 and labled so.\r\n\r\nMafioso agrees to indemnify Mafia Game Script v1.5 against liability for any and all use of Mafioso’s account. The game allows Mafioso to send messages to other player or post messages on bulletin board; therefore, Mafioso’s conduct is subject to Internet regulations, policies, and procedures. Mafioso will not use the service to send chain letters, junk mail, spamming, or distribution lists to any Mafioso, player, admin or other at any time.\r\n\r\nMafioso agrees not to transmits in the game any unlawful, harassing, abusive, threatening, harmful, objectionable material of any kind or nature. Mafioso further agrees not to transmit any materials that violates any applicable local, state, national, or international law or regulation.\r\n\r\nMafia Game Script v1.5 reserves the right to modify or terminate its service to Mafioso with or without notice, which includes, but not limited to updates, changes, or restart of game. Mafia Game Script v1.5 shall not be liable to Mafioso or any third party of modification or termination of its service. Mafia Game Script v1.5 may change the terms and conditions of the disclaimer from time to time.\r\n\r\nMafia Game Script v1.5 reserves the right to terminate any account at any time with absolutely no reason. All accounts created are property of Mafia Game Script v1.5.\r\n\r\nTerms of Service\r\n1. Your use of the Service will be subject to the terms of this Terms of Service Agreement (TOS). The TOS may change from time to time. Use of service after a change will subject you to the new terms. IF YOU DO NOT AGREE TO THESE TERMS DO NOT USE THE SERVICE AS VIOLATION OF THE TERMS CAN LEAD TO LEGAL\r\nLIABILITY.2. Exclusions of Warranty and LiabilityTHE SERVICE AND ANY EXECUTABLE PROGRAMS AND OTHER MATERIALS PROVIDED THROUGH THE SERVICE ARE PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND, AND ALL EXPRESS OR IMPLIED WARRANTIES ARE HEREBY EXCLUDED, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.\r\nyoursite DOES NOT WARRANT THAT THE SERVICE OR ANY MATERIALS OBTAINED THROUGH THE SERVICE ARE VIRUS-FREE. IF YOU DOWNLOAD EXECUTABLE PROGRAMS FROM THE SERVICE, THE ENTIRE RISK AS TO THE RESULTS AND PERFORMANCE OF SUCH PROGRAMS IS ASSUMED BY YOU. ExtremeMafia Combat IS NOT RESPONSIBLE FOR THE ACCURACY OF OR ERRORS OR OMISSIONS IN ANY SUCH PROGRAMS, AND yoursite DOES NOT WARRANT THAT THE OPERATION OF ANY SUCH PROGRAMS WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS IN ANY SUCH PROGRAMS WILL BE CORRECTED.\r\nyoursite DOES NOT WARRANT THAT THE CONTENT OF ITS GAMES WILL BE ERROR FREE.yoursite WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES RESULTING FROM LOST PROFITS OR REVENUE; LOSS OF USE OF OR RELIANCE ON THE SERVICE, INFORMATION PROVIDED OR OF ANY EXECUTABLE PROGRAMS; LOSS OF USE OF DATA OR EQUIPMENT; OR OTHER SIMILAR DAMAGES) ARISING OUT OF THE USE OR INABILITY TO USE THE SERVICE OR ANY EXECUTABLE PROGRAM OBTAINED THROUGH THE SERVICE, EVEN IF yoursite HAS BEEN ADVISED OF THE LIKELIHOOD OF SUCH DAMAGES. IN NO EVENT SHALL yoursite TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES AND CAUSES OF ACTION (WHETHER IN CONTRACT, TORT, OR OTHERWISE) RELATING TO THE PLAYING OF THIS GAME and problems with your personal computer. SOME STATES DO NOT ALLOW EXCLUSION OR LIMITATION OF IMPLIED WARRANTIES OR LIMITATION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.The Site may contain links to other Web sites that are owned and operated by third parties. You acknowledge that yoursite is not responsible for the accuracy, content, or availability of information accessed or linked to through the Site, nor does the inclusion of any such link imply endorsement by yoursiteof that Web site.The Site includes Content concerning game play, purchasing credits, purchasing flashes or icons. All such material is provided for informational purposes only and does not imply any endorsement of any particular product or affiliation with any particular Vendor. You acknowledge that you are solely responsible for determining what, if any, Products are suitable for your purposes and for any loss, liability, damage or costs you may suffer as a result of any purchases you make.3. yoursite cannot be held responsible for the purchase of any icons or flash that you acquire through links on our site, should they cause your computer to have problems. yoursite only provides information to the visitors on where those items can be found.You may have the opportunity to order or receive services, (collectively "Flashes or Icons") through the Site directly or through links on the Site. All Products for sale (unless otherwise noted as owned or offered by yoursite) are provided by third-party vendors ("Vendors") pursuant to agreements, licenses or other arrangements between that Vendor and you. All aspects of your transactions regarding the Products, including, but not limited to, purchase terms, payment terms, warranties, guarantees, maintenance and delivery, are solely between you and the applicable Vendor. Your rights and remedies with respect to such transactions shall be solely against the applicable Vendor and any questions, complaints or claims related to any Product should be directed to that Vendor.By using the Site you acknowledge and agree that yoursite and/or its affiliates shall have no liability for any cost, damage or harm arising directly or indirectly in connection with any of the Products ordered or received through this Site or through links on this Site.You acknowledge, consent and agree that yoursite may access, preserve, and disclose your account information and content if required to do so by law or in a good faith belief that such access preservation or disclosure is reasonably necessary to: (a) Comply with legal process; (b) enforce the TOS; (c) respond to claims that any Content violates the rights of third parties; (d) respond to your requests for customer game; or (e) protect the rights, property, or personal safety of yoursite, its users and the public. If you are found to be in violation of the TOS, your master account will be frozen. If you are a supporter, and you violate the TOS, your master account will be frozen as well, and you WILL NOT RECEIVE your money back for unused credits.When and if you are attacked by a multi or a cheater, and lose thugs or hoes, yoursite will not be able to replenish the lost thugs or hoes. We will be aggressively pursing cheaters in this game.Should you need to contact us regarding any of these issues, please use this link to contact us', '<p>Fast Start </p>\r\n              <p><br>\r\n                Go to the Hire section and scout for some operatives and defensive \r\n                units.</p>\r\n              <p> Go to Black Market and buy some drugs, alcohol to make your \r\n                guys happy. Also get weapons for your defensive units. Keep in \r\n                mind that defensive units without weapons won''t do a thing. Also \r\n                keep an eye on your guys happiness. It''s easy to keep them happy \r\n                but if you don''t they will start leaving you. Start by making \r\n                some money by collecting money from your casinos, brothels, loan \r\n                sharks, gambling dens. When you get enough turns, go get some \r\n                more operatives and defensive units and repeat from step 1 When \r\n                you feel strong and rich enough.You can attack other mafiosos \r\n                in your range.Be careful, nobody will let you attack them without \r\n                revenge. This is the real Mafia World "an eye for an eye, \r\n                an arm, and a leg". Don''t forget to protect part of your \r\n                money in the bank or you can loose it if somebody mugs you. Join \r\n                a family since you won''t be able to survive by yourself. Otherwise \r\n                start your own. Finally, enjoy the game as much as you can and \r\n                watch your back :) </p>\r\n              <p><br>\r\n                Rounds </p>\r\n\r\n              <p>Each round will last about 10 days to make it fair for newcomers,plus \r\n                it gives everyone a better chance to win. Once the round ends \r\n                everything starts over from scratch you can change your name family \r\n                name everything. You don''t carry anything from one round to the \r\n                next, this mean no money guy''s and any turns (you''ll see more \r\n                about turns in the next section) Turns &amp; Reserves </p>\r\n              <p><br>\r\n                Turns </p>\r\n              <p>Turns are what you use to do everything. For example: to attack \r\n                someone, it requires 2 turns. Every 10 minutes you will receive \r\n                a certain amount of turns, depending on the rounds settings. Each \r\n                round, you also start off with a given amount of reserves. Reserves \r\n                are also basically turns, except reserves can be saved for later \r\n                in the round until you decide to use them. Networth </p>\r\n              <p><br>\r\n                Awards </p>\r\n\r\n              <p>These are given to Mafiosos based on their networth ranking. \r\n                So here is how networth is calculated: Whores ($2,500) + Card \r\n                dealers ($2,000) + Bootleggers ($1,500) + Hustlers ($1,000) + \r\n                Punks ($500) + Hitmen ($1,000) + Thugs ($500) + Bodyguards ($500) \r\n                + cash + bank </p>\r\n              <p><br>\r\n                Families </p>\r\n              <p>Mafia Game Script v1.5 is a simulation of the the mafia underworld. \r\n                Just like the real mafia, you can join families - a group of people \r\n                who believe in the same thing, have the same ideas or just trust \r\n                each other. A family brings protection, it brings respect from \r\n                other members and it gives you trust in other members. Trust and \r\n                respect can save your life, but it can also get you killed. Families \r\n                have a size limit of 30 mafiosos / family. </p>\r\n              <p><br>\r\n                Hire </p>\r\n              <p>One of the basics of organized crime is to be able to do things \r\n                your way and not end up in jail. Partly this is accomplished by \r\n                not doing any crimes yourself, instead paying others to do so. \r\n                In order to maintain your empire under control, you''ll need different \r\n                types of personnel to perform all the different tasks and duties.In \r\n                order to get some staff in your crew you could scout for them. \r\n                To scout for crew members, just use your turns and look in the \r\n                place where you would find the kinda of guys you need. </p>\r\n\r\n              <p><br>\r\n                Operatives </p>\r\n              <p>Operatives are the kind of units that would work in your businesses \r\n                and produce different kind of goods. The operatives that could \r\n                be part of your crew are: Card dealers - work in your casinos \r\n                and will determine how much cash your tables will roll out. Whores \r\n                - work in your brothel and will determine how much cash people \r\n                will pay for them. Bootleggers - work in your speakeasy and will \r\n                determine how much liquor your speakeasy will make. Hustlers - \r\n                work in your loan shark and will help to push people to collect \r\n                loan payments. Punks - work in your gambling den and will help \r\n                to push people to bet. </p>\r\n              <p><br>\r\n                Defensive Units also called "DU"</p>\r\n              <p>Defensive units are units that would protect you and your operatives, \r\n                and would attack other mafiosos. The defensive units that could \r\n                be part of your crew are: Hitmen - strengths are their intelligence \r\n                at the time of performing an order and their good weapons skills. \r\n                They would kill and protect you. Thugs - are not as intelligent \r\n                and well mannered as gangsters. They will also be used for attacks \r\n                and to protect you. Bodyguards - are really easy to get and will \r\n                protect you well. They are not that good for attacks though. </p>\r\n              <p><br>\r\n\r\n                Happiness </p>\r\n              <p>Having your crew happy is one of the most important things that \r\n                you would be looking after. If your operatives or defensive units \r\n                are not happy, they would start leaving you as soon as you ask \r\n                them to operate. Your operatives need some alcohol and coke to \r\n                be happy. They would also need to have defensive units to protect \r\n                them at work wich would make them happy as well. Your operatives \r\n                payroll is also a part of their happiness. You defensive units \r\n                need liquor and weed to be happy. They insist to have from 2 glocks \r\n                to 1 ak47 per defensive unit to be happy. </p>\r\n              <p><br>\r\n                Black Market </p>\r\n              <p>In the black market you are able to get whatever you need for \r\n                you guys. Your able to buy narcotics, weapons, cars and planes. \r\n                You could sell cars and planes for 90% of their price. You could \r\n                also sell drugs at wholesale price Narcotics are mainly used to \r\n                make your guys happy. Your defensive units need liquor and weed \r\n                to be happy. Your operatives need liquor and coke to be happy \r\n                too. Try to get a big stock of them. Weapons are used for attacks \r\n                and are important for you guys happiness. You could get glocks, \r\n                shotguns, uzis and ak47. The more expensive the weapon, the more \r\n                the kills it makes. Cars are used to do a drive-by or to steal \r\n                other mafioso''s cars. The chrysler 300 only takes 5 persons and \r\n                the S-Class limo takes 10 persons. Planes are used to travel to \r\n                other cities to attack other mafiosos. When you get your private \r\n                jet you don''t need to pay for plane tickets. You should keep in \r\n                mind that your members that don''t travel with you are lost. The \r\n                gulfstream jet can take up to 40 guys and the boeing 737-400 can \r\n                take up 300 people.. </p>\r\n              <p><br>\r\n                Produce </p>\r\n\r\n              <p>Productions are part of your illegal activities. So you could \r\n                use turns to produce coke, weed, alcohol and fake cash. Your thugs \r\n                are used to produce coke and weed in you drug lab Your bootleggers \r\n                are used to produce alcohol in your speakeasy Your punks are used \r\n                to create fake money </p>\r\n              <p><br>\r\n                Collect </p>\r\n              <p>You could use some turns to collect some money from your businesses. \r\n                You own casinos, brothels, loan sharks and gambling dens. Your \r\n                Card dealers are used to run your casino tables Your whores are \r\n                used to work in your brothels Your hustlers are used to collect \r\n                loan payments in your loan sharks your punks are also used to \r\n                run your gambling dens <br>\r\n                Cash and the bank Just like the real world, you have a bank account \r\n                and a pocket. The money you use anywhere is the cash you got on \r\n                you. However, keeping money in your pocket is risky. Another mafioso \r\n                can mug you and take whatever you have there. So, depositing a \r\n                part of it in the bank is a good idea. You are able to put 15% \r\n                of your money wich will cost you 15 turns each time. Later, if \r\n                you want to add more money in safebox, you would have to withdraw \r\n                all the money and put 15% of all the cash you got. You can withdraw \r\n                it when you need it at anytime for free. From your cash you can \r\n                also transfer deposited money to another mafioso. This can be \r\n                useful if you need to pay them for something, bribe them, or just \r\n                give a cut of your organized crime. If you want cash right away, \r\n                you could use the Mafia Pawn to exchange turns for cash. </p>\r\n              <p><br>\r\n                Attacking </p>\r\n\r\n              <p>There are 5 different types of attacks. To attack a player, goto \r\n                the attack or goto find the mafioso you want to attack and click \r\n                on his name. When you are viewing his profile, click on attack!!! \r\n                If you see Out of Range, you may not attack this mafioso. You \r\n                can only attack players with 1/2 or up to 4 times your networth. \r\n                Mafia-Lords will automatically take your best crew members armed \r\n                with the best weapon you got them in order to have the most efficient \r\n                attacks ever. There is a limit to the amount of times you can \r\n                be hit. Within the first attacks, you can be hit 24 times and \r\n                then only once each hour. If you win the attacks, they do not \r\n                count against you and the revenge hits do not count either. HeadQuarter \r\n                Invasions - Most common attack done by mafiosos. Invade your enemies \r\n                headquarter and whack his defensive units! You could also steal \r\n                money if you killed enough of his defensives Cartel Invasions \r\n                - Most common attack done by mafiosos. Invade your enemies businesses \r\n                and whack his defensive units and operatives! You will be able \r\n                to kill some operatives if you killed enough of his defensives \r\n                Drive-by - This attack is sort of like HQ invasion, except the \r\n                enemy has a harder time killing your thugs in the drive-by. You \r\n                do a drive-by with as many people that get in your rides. Drug \r\n                Labs Sabotage - This attack is meant to steal drugs from your \r\n                opponent. Armory Attack - This attack is meant to steal guns from \r\n                your opponent. Jacking cars - In order to steal someones cars, \r\n                you will need to make sure enough of his defensive units are dead. \r\n              </p>\r\n              <p><br>\r\n                Revenge </p>\r\n              <p>The revenge is an option that would give you the chance to hit \r\n                back when somebody attacks you. Whenever somebody attacks you, \r\n                you will have a revenge on him for 24hrs even if he is out of \r\n                range. You could check your revenges in your mail box &gt; revenges. \r\n                If somebody attacks you, you got a revenge on him but he will \r\n                get a revenge on you until you attack back. </p>\r\n              <p><br>\r\n                Travel </p>\r\n\r\n              <p>Traveling is used for different purposes: running away from someone \r\n                that is trying to kill you, doing booze runs or traveling from \r\n                and to your hometown where your family is located, being in your \r\n                own city has pro''s and Con''s. A pro is that you''re family offers \r\n                you more protection in your hometown, a con is that its more likely \r\n                for your enemies to find you! </p>\r\n              <p><br>\r\n                MafiaLords </p>\r\n              <p>These are the admins of the game. They monitor your actions and \r\n                make sure everyone is playing fair. It''s best to stay on the MafiaLords \r\n                good side. If you have any problems, found a bug in the game or \r\n                found a game abuser, let them know by leaving a message under \r\n                the Mafia Game Script v1.5 link.', 'mafiademo', 'html-new.php');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stats`
+--
+
+CREATE TABLE IF NOT EXISTS `stats` (
+  `user` char(18) NOT NULL default '',
+  `round` bigint(20) NOT NULL default '0',
+  `credits` bigint(20) NOT NULL default '0'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stats`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `surveys`
+--
+
+CREATE TABLE IF NOT EXISTS `surveys` (
+  `survey_id` int(11) NOT NULL auto_increment,
+  `name` varchar(255) default NULL,
+  `options` int(4) default NULL,
+  `date_added` int(14) default NULL,
+  `active` enum('Yes','No') default 'No',
+  PRIMARY KEY  (`survey_id`)
+) ENGINE=MyISAM;
+
+--
+-- Dumping data for table `surveys`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `survey_options`
+--
+
+CREATE TABLE IF NOT EXISTS `survey_options` (
+  `option_id` int(11) NOT NULL auto_increment,
+  `survey_id` int(11) NOT NULL default '0',
+  `name` varchar(255) default NULL,
+  `answers` int(11) default NULL,
+  PRIMARY KEY  (`option_id`),
+  KEY `survey_id` (`survey_id`),
+  KEY `survey_id_2` (`survey_id`)
+) ENGINE=MyISAM;
+
+--
+-- Dumping data for table `survey_options`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `survey_votes`
+--
+
+CREATE TABLE IF NOT EXISTS `survey_votes` (
+  `id` int(11) NOT NULL auto_increment,
+  `survey_id` int(11) default NULL,
+  `pimp_id` int(11) default NULL,
+  `date` int(14) default NULL,
+  PRIMARY KEY  (`id`),
+  KEY `survey_id` (`survey_id`),
+  KEY `pimp_id` (`pimp_id`),
+  KEY `survey_id_2` (`survey_id`),
+  KEY `pimp_id_2` (`pimp_id`)
+) ENGINE=MyISAM;
+
+--
+-- Dumping data for table `survey_votes`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` bigint(20) unsigned NOT NULL auto_increment,
+  `lvl` int(1) NOT NULL default '0',
+  `username` varchar(18) NOT NULL default '',
+  `password` varchar(12) NOT NULL default '',
+  `credits` bigint(20) NOT NULL default '2000',
+  `cash` bigint(20) NOT NULL default '0',
+  `email` varchar(100) NOT NULL default '',
+  `fullname` varchar(100) NOT NULL default '',
+  `age` tinyint(4) NOT NULL default '0',
+  `messager` varchar(50) NOT NULL default '',
+  `online` int(11) NOT NULL default '0',
+  `ip` varchar(15) NOT NULL default '0.0.0.0',
+  `lastip` varchar(15) NOT NULL default '0.0.0.0',
+  `host` varchar(100) NOT NULL default '',
+  `code` varchar(32) NOT NULL default '',
+  `membersince` int(11) NOT NULL default '0',
+  `status` varchar(12) NOT NULL default 'unverified',
+  `statusexpire` int(11) NOT NULL default '0',
+  `subscribe` bigint(10) NOT NULL default '0',
+  `subexpires` bigint(10) NOT NULL default '0',
+  `reason` varchar(200) NOT NULL default '',
+  `referrals` int(11) NOT NULL default '0',
+  `refcredits` bigint(20) NOT NULL default '0',
+  `referredby` varchar(18) NOT NULL default '',
+  `logins` bigint(20) NOT NULL default '0',
+  `substatus` tinyint(3) NOT NULL default '0',
+  `aim` varchar(255) NOT NULL default '',
+  `yahoo` varchar(255) NOT NULL default '',
+  `msn` varchar(255) NOT NULL default '',
+  `newinfo` varchar(255) NOT NULL default '',
+  `pimpname` varchar(255) NOT NULL default '',
+  `pimpmessage` varchar(255) NOT NULL default '',
+  `crewname` varchar(255) NOT NULL default '',
+  `signature` varchar(255) NOT NULL default '',
+  `ingamelayout` varchar(255) NOT NULL default '',
+  `flashlink` varchar(255) NOT NULL default 'YOUR HTTP SITE URL HERE/pics/default.jpg',
+  `goldbrick` bigint(10) NOT NULL default '0',
+  `silverbrick` bigint(10) NOT NULL default '0',
+  `bronzebrick` bigint(10) NOT NULL default '0',
+  `goldak` bigint(10) NOT NULL default '0',
+  `silverak` bigint(10) NOT NULL default '0',
+  `bronzeak` bigint(10) NOT NULL default '0',
+  `goldfree` bigint(10) NOT NULL default '0',
+  `silverfree` bigint(10) NOT NULL default '0',
+  `bronzefree` bigint(10) NOT NULL default '0',
+  `goldglock` bigint(10) NOT NULL default '0',
+  `silverglock` bigint(10) NOT NULL default '0',
+  `bronzeglock` bigint(10) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `lvl`, `username`, `password`, `credits`, `cash`, `email`, `fullname`, `age`, `messager`, `online`, `ip`, `lastip`, `host`, `code`, `membersince`, `status`, `statusexpire`, `subscribe`, `subexpires`, `reason`, `referrals`, `refcredits`, `referredby`, `logins`, `substatus`, `aim`, `yahoo`, `msn`, `newinfo`, `pimpname`, `pimpmessage`, `crewname`, `signature`, `ingamelayout`, `flashlink`, `goldbrick`, `silverbrick`, `bronzebrick`, `goldak`, `silverak`, `bronzeak`, `goldfree`, `silverfree`, `bronzefree`, `goldglock`, `silverglock`, `bronzeglock`) VALUES
+(1, 2, 'admin', 'admin', 111999828, 3, 'austinjiggs@yahoo.com', 'NAME', 25, 'N/A:', 1258136490, '93.89.115.99', '68.40.22.221', 'host-93.89.115-99.vitnett.no', '73065968551c8b9058904dbd8d9065c5', 1196975922, 'admin', 0, 0, 0, '', 0, 0, '', 0, 0, '', '', '', '', '', '', '', '', '', 'http://mafia.dedicatedgamingnetwork.com/pics/default.jpg', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);

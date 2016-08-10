@@ -1,0 +1,363 @@
+{
+  "type": "module",
+  "name": "ynlocationbased",
+  "version": "4.01",
+  "revision": null,
+  "path": "application\/modules\/Ynlocationbased",
+  "repository": null,
+  "date": "Mon, 27 Jun 2016 03:58:43 +0000",
+  "title": "YN - Location-based System",
+  "description": "This is location-bases system.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Mon, 27 Jun 2016 03:58:43 +0000",
+    "title": "YN - Location-based System",
+    "description": "This is location-bases system.",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Ynlocationbased\/settings\/install.php",
+    "class": "Ynlocationbased_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.2",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Ynlocationbased": {
+      "type": "directory",
+      "path": "application\/modules\/Ynlocationbased",
+      "structure": [
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Modules.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1106,
+          "sha1": "fd707bb5157c3c3e7b99f4c828395a75d59e85c7"
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/location-search",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/location-search\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 10949,
+          "sha1": "1c91e893275a92b413027b6fa478da3b4324b516"
+        },
+        {
+          "path": "widgets\/location-search\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 540,
+          "sha1": "e71e2e8b945309d0d8a6235e1fec668d022abdfc"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminManageModuleController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1051,
+          "sha1": "d7f3dce6a77a9d872da1e546b8ae279c55739368"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 516,
+          "sha1": "f64a3d056e6b3701330889ee4ed046df21ff1770"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 5569,
+          "sha1": "f7b27d901b55de1fca0a23712674277ac997e1a1"
+        },
+        {
+          "path": "externals\/styles\/ynresponsive1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 16687,
+          "sha1": "f0f53f072c457938c4c3cb7dff2eda26550b3a0f"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/icon-search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1941,
+          "sha1": "60a339cddd40f9a94d9a0d767cc0e0e28789ba99"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 310,
+          "sha1": "98d4dfbf9608892068a9d883834c126ef568fa06"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2013,
+          "sha1": "822c86d66cc582c34af6a6ff89460c98b96840a5"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1435,
+          "sha1": "f8ee4a18cab7becf03e014ac3e09a062270040fe"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1646,
+          "sha1": "815e476e214702a98998ba5f82e25c7e8bd3bcfb"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2878,
+          "sha1": "774f303a7f049f681b0e667d0b05538dcae6091c"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2404,
+          "sha1": "b9ec03a9d35e38770a315fce79e5a4ff2b915d25"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage-module",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage-module\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3527,
+          "sha1": "58b268d5ceeb4808e40e1e4c6414981e297d8cbd"
+        }
+      ]
+    },
+    "application\/languages\/en\/ynlocationbased.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/ynlocationbased.csv",
+      "structure": {
+        "path": "ynlocationbased.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 873,
+        "sha1": "62567a26d973333ccb192eb58a1f77df5563a07b"
+      }
+    }
+  }
+}

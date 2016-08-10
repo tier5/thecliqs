@@ -1,0 +1,66 @@
+2016-08-05T05:41:30+00:00 ERR (3): exception 'Zend_Db_Statement_Mysqli_Exception' with message 'Mysqli statement execute error : Prepared statement needs to be re-prepared' in /home/thecliqs/public_html/application/libraries/Zend/Db/Statement/Mysqli.php:214
+Stack trace:
+#0 /home/thecliqs/public_html/application/libraries/Zend/Db/Statement.php(303): Zend_Db_Statement_Mysqli->_execute(Array)
+#1 /home/thecliqs/public_html/application/libraries/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#2 /home/thecliqs/public_html/application/libraries/Zend/Db/Adapter/Abstract.php(635): Zend_Db_Adapter_Abstract->query('UPDATE `engine4...', Array)
+#3 /home/thecliqs/public_html/application/libraries/Zend/Db/Table/Abstract.php(1133): Zend_Db_Adapter_Abstract->update('engine4_core_ta...', Array, Array)
+#4 /home/thecliqs/public_html/application/libraries/Engine/Db/Table.php(161): Zend_Db_Table_Abstract->update(Array, Array)
+#5 /home/thecliqs/public_html/application/modules/Core/Model/DbTable/Tasks.php(773): Engine_Db_Table->update(Array, Array)
+#6 /home/thecliqs/public_html/application/modules/Core/Model/DbTable/Tasks.php(670): Core_Model_DbTable_Tasks->_executeTask(Object(Engine_Db_Table_Row))
+#7 /home/thecliqs/public_html/application/modules/Core/controllers/UtilityController.php(99): Core_Model_DbTable_Tasks->execute(Array)
+#8 /home/thecliqs/public_html/application/libraries/Zend/Controller/Action.php(516): Core_UtilityController->tasksAction()
+#9 /home/thecliqs/public_html/application/libraries/Zend/Controller/Dispatcher/Standard.php(308): Zend_Controller_Action->dispatch('tasksAction')
+#10 /home/thecliqs/public_html/application/libraries/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#11 /home/thecliqs/public_html/application/modules/Core/Bootstrap.php(84): Zend_Controller_Front->dispatch()
+#12 /home/thecliqs/public_html/application/libraries/Engine/Application.php(160): Core_Bootstrap->run()
+#13 /home/thecliqs/public_html/application/index.php(214): Engine_Application->run()
+#14 /home/thecliqs/public_html/index.php(24): include('/home/thecliqs/...')
+#15 {main}
+2016-08-05T05:41:30+00:00 ERR (3): Execution Error: 0599905151 - 8192 mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /home/thecliqs/public_html/application/modules/Ynsocialads/Bootstrap.php 38
+2016-08-06T07:35:58+00:00 DEBUG (7): Execution Check [655000305] [1714790834] 
+2016-08-06T07:35:58+00:00 DEBUG (7): Execution Pass [655000305] [1714790834] 
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Check [655000305] : Job Queue
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Pass [655000305] : Job Queue
+2016-08-06T07:35:58+00:00 DEBUG (7): Job Execution Loop Cancelled - Nothing to do
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Complete [655000305] : Job Queue
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Check [655000305] : Background Mailer
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Pass [655000305] : Background Mailer
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Complete [655000305] : Background Mailer
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Check [655000305] : Member Data Maintenance
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Pass [655000305] : Member Data Maintenance
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Complete [655000305] : Member Data Maintenance
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Check [655000305] : Payment Maintenance
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Pass [655000305] : Payment Maintenance
+2016-08-06T07:35:58+00:00 DEBUG (7): Task Execution Complete [655000305] : Payment Maintenance
+2016-08-06T07:35:58+00:00 DEBUG (7): Execution Complete [655000305] [1714790834]
+2016-08-06T07:35:58+00:00 DEBUG (7): Execution Benchmark [655000305] [1714790834] : 0.110402 seconds
+2016-08-06T07:36:00+00:00 DEBUG (7): Trigger Check [1336611686] 
+2016-08-06T07:36:00+00:00 DEBUG (7): Trigger Check Failed - Timeout [1336611686] - 1470468960 < 1470469018
+2016-08-06T07:36:52+00:00 DEBUG (7): Trigger Check [979478494] 
+2016-08-06T07:36:52+00:00 DEBUG (7): Trigger Check Failed - Timeout [979478494] - 1470469012 < 1470469018
+2016-08-06T07:36:54+00:00 DEBUG (7): Trigger Check [754145452] 
+2016-08-06T07:36:54+00:00 DEBUG (7): Trigger Check Failed - Timeout [754145452] - 1470469014 < 1470469018
+2016-08-06T07:36:58+00:00 DEBUG (7): Trigger Check [1593176323] 
+2016-08-06T07:36:58+00:00 DEBUG (7): Trigger Pass [1593176323] 
+2016-08-06T07:36:58+00:00 DEBUG (7): Execution Check [798189465] [1593176323] 
+2016-08-06T07:36:58+00:00 DEBUG (7): Execution Pass [798189465] [1593176323] 
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Check [798189465] : Job Queue
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Pass [798189465] : Job Queue
+2016-08-06T07:36:58+00:00 DEBUG (7): Job Execution Loop Cancelled - Nothing to do
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Complete [798189465] : Job Queue
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Check [798189465] : Background Mailer
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Pass [798189465] : Background Mailer
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Complete [798189465] : Background Mailer
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Check [798189465] : Member Data Maintenance
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Pass [798189465] : Member Data Maintenance
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Complete [798189465] : Member Data Maintenance
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Check [798189465] : Social Ads Update Status
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Pass [798189465] : Social Ads Update Status
+2016-08-06T07:36:58+00:00 DEBUG (7): Task Execution Complete [798189465] : Social Ads Update Status
+2016-08-06T07:36:58+00:00 DEBUG (7): Execution Complete [798189465] [1593176323]
+2016-08-06T07:36:58+00:00 DEBUG (7): Execution Benchmark [798189465] [1593176323] : 0.082155 seconds
+2016-08-06T07:36:58+00:00 DEBUG (7): Trigger Benchmark [1593176323] : 0.574680 seconds
+2016-08-06T07:37:05+00:00 DEBUG (7): Trigger Check [1050041267] 
+2016-08-06T07:37:05+00:00 DEBUG (7): Trigger Check Failed - Timeout [1050041267] - 1470469025 < 1470469078
+2016-08-06T07:37:05+00:00 DEBUG (7): Trigger Check [1091735766] 
+2016-08-06T07:37:05+00:00 DEBUG (7): Trigger Check Failed - Timeout [1091735766] - 1470469025 < 1470469078

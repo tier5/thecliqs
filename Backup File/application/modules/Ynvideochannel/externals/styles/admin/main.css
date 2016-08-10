@@ -1,0 +1,24 @@
+.ynvideochannel_order_asc {
+    background: url(~/application/modules/Ynvideochannel/externals/images/show_more.png) no-repeat;
+    background-position: right;
+}
+
+.ynvideochannel_order_desc {
+    background: url(~/application/modules/Ynvideochannel/externals/images/show_less.png) no-repeat;
+
+    background-position: right;
+}
+
+table.admin_table .ynvideochannel_order_asc, table.admin_table .ynvideochannel_order_desc {
+    padding-right: 16px;
+}
+
+td.ynvideochannel-cell-center {
+    text-align: center;
+}
+
+#global_page_ynvideochannel-admin-categories-add-category{
+	div#label-label{
+		margin-bottom: 10px;
+	}
+}

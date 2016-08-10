@@ -1,0 +1,99 @@
+/* $Id: page_print.css 2011-11-04 16:02 taalay $ */
+
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+#global_content_simple {
+  width: 100%;
+}
+
+.print_page_preview {
+  clear: both;
+  padding: 15px;
+}
+
+.print_page_title {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  overflow: auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.print_page_body {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.print_page_photo {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.print_page_photo img {
+  max-width: 400px;
+}
+
+.print_page_button, .print_page_button a {
+  clear: both;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.print_page_fields{
+  overflow: hidden;
+  clear: both;
+}
+
+.print_page_details {
+}
+
+.print_page_details h4 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0.5em 0;
+}
+
+.print_page_details ul {
+  margin: 0;
+  padding: 0;
+}
+
+.print_page_details ul > li {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.print_page_details ul > li > span {
+  display: block;
+  float: left;
+  min-width: 150px;
+  overflow: hidden;
+}
+
+.print_page_details ul > li > span + span {
+  display: block;
+  float: none;
+  overflow: hidden;
+  width: auto;
+}
+
+#map_canvas {
+  overflow: hidden;
+  position: relative;
+}
+
+.print_page_map {
+  overflow: hidden;
+}
+
+.print_page_map .page_map {
+  border: 1px solid #D0E2EC;
+  border-radius: 3px 3px 3px 3px;
+  height: 300px;
+  text-align: center;
+  width: 500px;
+}

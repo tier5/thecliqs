@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('sdtopbarmenu', 'Advanced Topbar Menu', 'Advanced Topbar Menu', '4.2.7', 1, 'extra');

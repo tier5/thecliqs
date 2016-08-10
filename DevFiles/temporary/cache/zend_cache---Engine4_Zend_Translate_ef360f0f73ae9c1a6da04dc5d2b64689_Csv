@@ -1,0 +1,4 @@
+a:1:{s:2:"en";a:13:{s:32:"_EMAIL_NOTIFY_PROFILE_VIEW_TITLE";s:26:"Who Viewed Me Notification";s:38:"_EMAIL_NOTIFY_PROFILE_VIEW_DESCRIPTION";s:70:"This email is send to user when any other user viewed his/her profile.";s:34:"_EMAIL_NOTIFY_PROFILE_VIEW_SUBJECT";s:39:"[sender_title] has viewed your profile.";s:31:"_EMAIL_NOTIFY_PROFILE_VIEW_BODY";s:92:" Hii  [recipient_title],
+[sender_title] has viewed your profile.
+
+http://[host][sender_link]";s:13:"Who Viewed Me";s:13:"Who Viewed Me";s:25:"Manage Subscription Plans";s:25:"Manage Subscription Plans";s:35:"No one has viewed your profile yet.";s:35:"No one has viewed your profile yet.";s:8:"View All";s:8:"View All";s:3:"Buy";s:3:"Buy";s:40:"{item:$subject} has viewed your profile.";s:40:"{item:$subject} has viewed your profile.";s:26:"ACTIVITY_TYPE_PROFILE_VIEW";s:30:"When People visit your profile";s:24:"Please buy subscription.";s:24:"Please buy subscription.";s:11:"View Count:";s:11:"View Count:";}}

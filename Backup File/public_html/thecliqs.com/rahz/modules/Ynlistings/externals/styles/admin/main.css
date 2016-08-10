@@ -1,0 +1,114 @@
+body[id^=global_page_ynlistings-admin]
+{
+	.tabs ul li
+	{
+		padding: 7px;
+	}
+	.settings .form-element .description, .settings .form-description
+	{
+		max-width: 100%!important;
+	}
+}
+.add_link {
+	margin: 10px 0px;
+}
+#global_page_ynlistings-admin-settings-level {
+	#credit-wrapper,
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		padding-top: 0px;
+	}
+	#first_amount-wrapper,
+	#credit-wrapper
+	{
+		float: left;
+		min-width: 58%;
+	}
+	#first_credit-wrapper,
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		float: left;
+		clear: none;
+	}
+	#first_credit-label,
+	#max_credit-label,
+	#period-label
+	{
+		display: none;
+	}
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		width: 120px;
+	}
+	#max_credit-wrapper input,
+	#period-wrapper input
+	{
+		width: 100px;
+	}
+}
+
+.input_small {
+	width: 100px !important;
+}
+.add_faq {
+	background-image: url(~/application/modules/Ynlistings/externals/images/add_faq.png);
+}
+.xAxis .tickLabel {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	margin-top: 25px;
+	font-size: 0.85em;
+}
+h4 {
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 10px 0px;
+}
+#global_page_ynlistings-admin-statistics-index #tooltip {
+	position: absolute;
+	margin-left: -95px;
+	margin-top: -30px
+}
+	
+#global_page_ynlistings-admin-statistics-index #period-label {
+	display: block;
+}
+
+#admin_table_form {
+	overflow-x: scroll;
+}
+
+.buttons {
+	margin: 20px 0px;
+}
+
+.result_count {
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+
+#pop_up {
+	display: none;
+}
+
+.import_link {
+	display: inline-block !important;
+	color: $theme_link_color !important;
+}
+
+#global_page_ynlistings-admin-imports-index {
+	h2 {
+        font-size: 1.8em !important;
+        margin-bottom: 10px !important;
+        font-weight: normal !important;
+        margin-top: 0px !important;
+    }
+    
+    h3 {
+        font-size: 1.2em !important;
+        margin-top: 0px !important;
+    }
+}

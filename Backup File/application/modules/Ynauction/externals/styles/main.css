@@ -1,0 +1,1353 @@
+/* $Id: main.css 7281 2010-09-03 03:46:33Z john $ */
+@include "~/application/modules/Core/externals/styles/constants.css";
+
+/*
+MANAGE ynauctions
+Styles the manage Auctions page.
+*/
+ul.ynauctions_browse
+{
+  clear: both;
+  overflow: auto;
+}
+ul.ynauctions_browse > li
+{
+  clear: both;  
+  padding-bottom: 10px; 
+}
+ul.ynauctions_browse > li + li
+{
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+#global_page_ynauction-win-index ul.ynauctions_browse > li ,
+#global_page_ynauction-index-manageynauction ul.ynauctions_browse > li 
+{
+  clear: both;
+  margin-bottom: 10px;
+}
+#global_page_ynauction-win-index ul.ynauctions_browse > li + li,
+#global_page_ynauction-index-manageynauction ul.ynauctions_browse > li + li
+{
+  border-top-width: 1px;
+  padding-top:10px;
+  margin-bottom: 10px;
+}
+ul.ynauctions_browse > li .ynauctions_browse_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 8px;
+}
+html[dir="rtl"] ul.ynauctions_browse > li .ynauctions_browse_photo
+{
+  float: right;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+ul.ynauctions_browse > li .ynauctions_browse_options
+{
+  float: right;
+  overflow: hidden;
+  padding-left: 20px;
+}
+html[dir="rtl"] ul.ynauctions_browse > li .ynauctions_browse_options
+{
+  float: left;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+ul.ynauctions_browse > li .ynauctions_browse_options > a
+{
+  clear: both;
+  display: block;
+  margin: 5px;
+  font-size: .8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+} 
+ul.ynauctions_browse > li .ynauctions_browse_info
+{
+  overflow: hidden;
+  float: left;
+  width: 110px; 
+}  
+#global_page_ynauction-index-manageynauction ul.ynauctions_browse > li .ynauctions_browse_info
+{
+  *float: left;
+}
+#global_page_ynauction-index-userynauction ul.ynauctions_browse > li .ynauctions_browse_info
+{
+  *float: left;
+}
+ul.ynauctions_browse > li .ynauctions_browse_info_title
+{
+  font-weight: bold;
+}
+ul.ynauctions_browse > li .ynauctions_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.ynauctions_browse > li .ynauctions_browse_info_blurb
+{
+  margin-top: 5px;
+}
+
+
+
+/*
+VIEW AUTIONS
+*/
+ul.ynauctions_list
+{
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+ul.ynauctions_list > li
+{
+  padding-bottom: 10px;
+  border-bottom-width: 1px;
+  margin-bottom: 10px
+}
+ul.ynauctions_list h3
+{
+  margin-bottom: 1px;
+}
+ul.ynauctions_list .ynauction_entrylist_date
+{
+  font-size: 8pt;
+  margin-bottom: 5px;
+  color: $theme_font_color_light;
+}
+ul.ynauctions_list .ynauction_list_description
+{
+  line-height: 1.5em;
+  padding: 5px 5px 5px 0px;
+}
+ul.ynauctions_list .ynauction_list_description img
+{
+  max-width: 100%;
+}
+ul.ynauctions_list .ynauction_list_description + .buttonlink
+{
+  margin-top: 5px;
+}
+ul.ynauctions_list + .comments
+{
+  padding-top: 10px;
+}
+div.ynauctions_gutter .ynauctions_gutter_photo > img
+{
+  width: 98%;
+  display: block;
+}
+div.ynauctions_gutter .ynauctions_gutter_name
+{
+  display: block;
+  font-weight: bold;
+  margin: 3px 0px 15px 0px;
+}
+div.ynauctions_gutter .buttonlink
+{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+div.ynauctions_gutter h4
+{
+  margin: 20px 0px 5px 0px;
+  text-transform: uppercase;
+}
+div.ynauctions_gutter > ul > li
+{
+  margin-bottom: 2px;
+}
+div.ynauctions_gutter ul.ynauctions_gutter_options > li
+{
+  font-size: .8em;
+  margin: 3px 0px 3px 0px;
+}
+.generic_layout_container .layout_ynauction_view_by_date_ynauctions
+{
+	margin-bottom: 15px;
+}
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_ynauction
+{
+  background-image: url(~/application/modules/Core/externals/images/types/post.png);
+}
+.activity_icon_ynauction_new
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/types/ynauction.jpg);
+}
+/* ITEM TYPE ICONS */
+.item_icon_ynauction
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/types/ynauction.jpg);
+}
+.icon_ynauction_new 
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/types/ynauction.jpg);
+}
+
+.icon_ynauction_checkout
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/checkout.gif);
+}
+.icon_ynauction_paid
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/paid.jpg);
+}
+
+
+
+/* ICONS */
+.icon_ynauction_edit
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/edit.png);
+}
+.icon_ynauction_delete
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/delete.png);
+}
+.icon_ynauction_stop
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/stop.png);
+}
+.icon_ynauction_start
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/start.png);
+}
+.icon_ynauction_online
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/online.png);
+}
+.icon_ynauction_viewall
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/types/ynauction.jpg);
+}
+.icon_ynauction_proposal
+{
+  background-image: url(~/application/modules/Ynauction/externals/images/proposal.jpg);
+}
+.notification_type_ynauction_deleted_bidded, 
+.notification_type_ynauction_stopped_bidded, 
+.notification_type_ynauction_bidded, 
+.notification_type_ynauction_bidded_bidded , 
+.notification_type_ynauction_won, 
+.notification_type_ynauction_approved_bought, 
+.notification_type_ynauction_denied_bought, 
+.notification_type_ynauction_approved_become, 
+.notification_type_ynauction_denied_become, 
+.notification_type_ynauction_won_bidded,
+.notification_type_ynauction_approved_proposal,
+.notification_type_ynauction_denied_proposal  
+{
+    background-image: url("~/application/modules/Ynauction/externals/images/types/ynauction.jpg");
+}
+
+.detaillevel {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    float: left;
+    height: 48px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 48px;
+	text-align: center;
+}
+.layout_ynauction_latest_ynauctions > ul,
+.layout_ynauction_running_ynauctions > ul,
+.layout_ynauction_most_rated_ynauctions > ul,
+.layout_ynauction_user_ynauctions > ul {
+    background-color: #E9F4FA;
+    background-image: url("~/application/modules/Core/externals/images/foreground_bg.png");
+    background-repeat: repeat-x;
+    border: 1px solid #D0E2EC;
+    border-radius: 3px 3px 3px 3px;
+    padding: 5px;
+}
+.layout_ynauction_latest_ynauctions ,
+.layout_ynauction_running_ynauctions ,
+.layout_ynauction_most_rated_ynauctions,
+.layout_ynauction_user_ynauctions  {
+    clear: both;
+    margin-bottom: 15px;
+    overflow: auto;
+    width: 100%;
+}
+.normallevel {
+    float: left;
+    font-family: Verdana;
+    height: 272px;
+    margin: 0 1px 7px 0;
+    position: relative;
+    text-align: center;
+    width: 270px;
+    padding-bottom:20px;
+}
+
+.normallevel .name {
+    font-size: 15px;
+    height: 36px;
+    line-height: 110%;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-align: left;
+    padding-right: 0px;
+}
+.normallevel .imgprice {
+    float: left;
+    padding-left:10px;
+    /*margin: 5px 0;*/
+}
+.normallevel .img {
+    cursor: pointer;
+    float: left;
+    height: auto;
+    width: 100px;
+	text-align: center;
+    overflow: hidden;	
+    /*padding-top:10px;*/
+}
+.normallevel .img img
+{
+	width: 100px;
+}
+.normallevel .pricecont {
+    padding-top: 0px;
+    text-align: left;
+    width: auto;
+	overflow: hidden;
+}	
+.normallevel .pricecont .label {
+    color: #999;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: left;
+	float: left;
+}
+.normallevel .pricecont .label_currentprice {
+    color: #999;
+    font-size: 11px;
+    line-height: 100%;
+    text-align: left;
+}
+.normallevel .pricecont .pricecur {
+    color: #FF0000;
+    font-family: Tahoma;
+    font-size: 18px;
+    text-align: right;
+    float: left;
+    margin: -8px 0 0 4px;	
+}
+.normallevel .pricecont .pricecur_currentprice {
+    color: #FF0000;
+    font-family: Tahoma;
+    font-size: 18px;
+    margin: -2px 0 0 0px;    
+}
+.pricecont .pricecont_home
+{
+	overflow: hidden;
+    padding: 5px 0 0px;
+}
+.pricecont .pricecont_home + .pricecont_home .pricecur
+{
+	color: #000;
+}
+.normallevel .clockcont .label {
+    color: #666666;
+    font-size: 11px;
+}
+.normallevel .clockcont .clock {
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    text-align: center;
+}
+.normallevel .clockcont .clock span
+{
+	color: #000;
+}
+.normallevel .clockcont .clock1 {
+    color: #666666;
+    font-family: "Trebuchet MS";
+    font-size: 24px;
+    text-align: center;
+}
+.normallevel .btnnobuynow {
+    margin-left: 73px;
+    margin-right: 80px;
+}
+.normallevel .btn {
+    float: left;
+    margin-top: 5px;
+}
+.baselevel .active:hover
+{
+	background-position: 0 -40px;
+}
+ .buynow,  .pending,  .halted, .checking {
+    background-position: 0 -80px;
+}
+.layout_ynauction_detail_ynauctions .baselevel_detail .active, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .pending, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .halted, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .checking, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .stopped, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .leading, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .buynow {
+    background: url("~/application/modules/Ynauction/externals/images/bid_buttons.png") no-repeat scroll left top transparent;
+    color: #FFFFFF;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    height: 10px;
+    line-height: 100%;
+    overflow: hidden;
+    padding: 5px 5px 10px 9px;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+}
+.normallevel .lastbiddercont {
+    padding-top: 5px;
+    width: auto;
+}
+.baselevel .lastbiddercont {
+    color: #000000;
+    font-family: "Trebuchet MS";
+    font-size: 11px;
+    text-align: center;
+}
+.baselevel_detail .lastbiddercont {
+    color: #000000;
+    font-family: "Trebuchet MS";
+    font-size: 11px;
+    text-align: center;
+}
+.bb1 {
+   /* background: url("~/application/modules/Ynauction/externals/images/box_back_top2.png") no-repeat scroll left top transparent;  */
+    padding-top: 20px;
+    position: relative;
+    width: 263px;
+    height:270px;
+    border: 1px solid #D0E2EC;
+	border-radius: 4px;
+}
+.bb2 {
+   /* background: url("~/application/modules/Ynauction/externals/images/box_back_bottom2.png") no-repeat scroll left bottom transparent;*/
+    padding-bottom: 0px;
+}
+.bb3 {
+   /* background: url("~/application/modules/Ynauction/externals/images/box_back_mid2.png") repeat-y scroll left top transparent; */
+     padding-left: 0px;
+}
+.bb3_productinfo
+{  
+    float: left;
+    padding: 0 0 0 9px;
+    width: 142px;
+}
+.normallevel .item {
+    height: 260px;
+    padding: 3px 0px;
+}
+.baselevel .clockcont {
+    font-family: "Trebuchet MS";
+}
+.baselevel .lastbiddercont {
+    color: #000000;
+    font-family: "Trebuchet MS";
+    font-size: 11px;
+}
+.normallevel .lastbiddercont img {
+    vertical-align: bottom;
+}
+.firstlevel .pricecont {
+    background: none repeat scroll 0 0 #F5F5F5;
+    font-family: "Trebuchet MS";
+    height: 58px;
+    margin: 3px 0;
+}
+.firstlevel .clockcont {
+    font-family: "Trebuchet MS";
+    height: 36px;
+    margin: 5px 0;
+    position: relative;
+}
+.firstlevel .lastbiddercont {
+    clear: left;
+    float: left;
+    padding: 4px 0 0 4px;
+}
+.layout_ynauction_featured_ynauctions .firstlevel .pricecont .label {
+    color: #000;
+    float: left;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-left: 10px;
+	border-right: 1px solid #B7B7B7;
+	margin-right: 5px;
+}
+.firstlevel .pricecont .label {
+    color: #000;
+    float: left;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    padding-top: 6px;
+    padding-left: 10px;
+}
+.firstlevel .clockcont .clock {
+    color: #666666;
+    font-family: "Trebuchet MS";
+    font-size: 22px;
+    left: 10px;
+    line-height: 32px;
+    position: absolute;
+    top: 8px;
+}
+.layout_ynauction_detail_ynauctions .firstlevel .clockcont .clock
+{
+	float: left;
+}
+
+.firstlevel .clockcont .clock span
+{
+    color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 30px;	
+}
+.firstlevel .clockcont .label {
+    color: #666666;
+    float: right;
+    font-family: "Trebuchet MS";
+    font-size: 11px;
+    padding-right: 10px;
+    padding-top: 12px;
+    text-align: left;
+    width: 120px;
+}
+.baselevel .price_store {
+    color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+	float: left;
+	padding-top: 4px;
+}
+.baselevel .price_store > div
+{
+	font-size: 20px;
+}
+.baselevel .price_store span {
+    color: #FF0000;
+    font-size: 11px;
+    font-weight: bold;
+}
+.firstlevel .btn {
+    float: left;
+    margin: 4px 0;
+}
+.firstlevel .pricecont .pricecur {
+    color: #FF0000;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    height: 25px;
+	padding-top: 3px;
+}
+.firstlevel .lastbiddercont img {
+    vertical-align: bottom;
+}
+.firstlevel .lastbiddercont .biddername {
+    padding: 0 2px;
+}
+.featured_home
+{
+	float: left;
+	background: url(~/application/modules/Ynauction/externals/images/featured.png) no-repeat transparent;
+    font-size: 8px;
+    margin: 1px 5px 0 0;	
+    padding: 0 3px 1px 7px;
+	color: #FFF;	
+}
+.baselevel .active a {
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 100%;
+    text-decoration: none;
+}
+.baselevel_detail .active a {
+    color: #FFFFFF;
+    display: block;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+}
+.box_ys2 .title_box{
+    float:left;
+    font:bold 12px arial;
+    /*color:#862775;*/
+    color:#333333;
+    text-transform:uppercase;
+    padding-top:7px;
+    padding-left:0px;
+}
+.box_ys2 .content_box{
+    overflow:hidden;
+    background:#FFFFFF;
+}
+.box_ys2 .border_left{
+    border:1px solid  #a3a3a3;
+    border-top:none;
+}
+.box_ys2 .content_box .left_box{
+    background:#2c2c2c;padding:5px 10px 3px 15px;text-align:left;font-size:12px;
+    color:#FFFFFF;
+}
+.account {
+    border-bottom: 1px solid #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    padding: 4px 0 4px 5px;
+}
+.account_bold {
+    font-weight: bold;
+}
+div.page_header {
+    color: #555555;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+.icon_big {
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+div.table_clear {
+    margin-left: 26%;
+    padding: 2px 5px 10px 0;
+}
+.table_left {
+    left: 0;
+    padding: 2px 5px 0 0;
+    position: absolute;
+    text-align: right;
+    width: 25%;
+}
+.table_right {
+    margin-left: 26%;
+    position: relative;
+    text-align: left;
+}
+div.message {
+    background: none repeat scroll 0 0 #FEFBD9;
+    border: 1px solid #EEE9B5;
+    color: #6B6B6B;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 4px;
+    padding: 4px;
+    position: relative;
+}
+.table {
+    padding-bottom: 10px;
+}
+.ynauctions_browse_date
+{
+    font-size:8pt;
+    color: #7F7F7F;
+}
+#global_page_ynauction-index-detail .firstlevel .pricecont .pricecur {
+	background-image: none; 
+	background-color: transparent; 
+	top: 25px;
+	font-size: 15pt; 
+	font-weight: bold;
+	float: left;
+	height: 70px;
+	width: 130px;
+}
+
+/* nhittb added */
+#global_page_ynauction-index-detail .ynauction_layout_left
+{
+	width: 295px;
+	margin-left: 20px;
+    float: left;
+}
+.ynauction_ga_large_photo
+{
+	width: 280px;
+	overflow: hidden; 
+	text-align: center;
+	margin-bottom: 25px;
+}
+.ynauction_ga_large_photo > a > img
+{
+	max-height: 280px;
+	max-width: 280px;
+}
+.ynauction_ga_thumb_photo
+{
+	width: 280px;
+	text-align: center;
+	overflow: hidden;
+}
+.detaillevel > a > img
+{
+	width: auto;
+	height: 48px;
+}
+.ynauction_list_introduce
+{
+	margin-bottom: 30px;
+}
+.layout_ynauction_featured_ynauctions .baselevel.firstlevel .ynauction_list_description
+{
+	padding-bottom: 10px;
+}
+.ynauction_list_introduce h3, .ynauction_list_description h3
+{
+	margin-bottom: 15px;
+	color: #000;
+	font-size: 16px;
+}
+.ynauction_last_bider
+{
+	float:left; 	
+	width: 98%; 
+	padding-left: 10px; 
+	padding-top: 2px;
+}
+.ynauction_last_bider h3
+{
+	padding: 3px 0 5px 0;
+	border-bottom: 1px solid #CCC;
+	color: #00;
+	font-size: 11pt;
+}
+.ynauction_userbid
+{
+	padding: 6px 6px 6px 0;
+    overflow: hidden;
+}
+.ynauction_userbid + .ynauction_userbid
+{
+	border-top: 1px solid #CCC;
+}
+.linkviewdetail
+{
+ padding: 6px 6px 0px 0;
+}
+.linkviewdetail .ynauction_userbid
+{
+ padding: 6px 0px 0px 0;
+}
+.ynauction_datetime
+{
+	float: right;
+}
+.ynauction_usernamebid
+{
+ float: left;
+}
+.ynauction_last_bider .tip
+{
+	clear: inherit;
+	margin-top: 5px;
+}
+#global_page_ynauction-index-detail .layout_core_container_tabs
+{
+    clear: both;
+}
+#global_page_ynauction-index-detail .ynauction_layout_middle .contentbox #title a:link, #global_page_ynauction-index-detail .layout_middle .contentbox #title a:visited
+{
+	color: #333;
+	font-size: 18px;
+	font-weight: normal;
+}
+.pnynauction_currentprice
+{
+	color: #999;
+	font-size: 12px;
+    padding-left:5px;
+}
+.pricecur_detail .price
+{
+	color: #FF0303;
+	font-size: 30px;
+    margin-left: 65px;
+}
+.baselevel_detail .price_store {
+    color: #999;
+    font-family: tahoma;
+    font-size: 12px;
+	float: left;
+	height: 80px;
+	width: 130px;
+	text-align: center;
+	padding-top: 3px;
+}
+.baselevel_detail .price_store + .price_store
+{
+    border-left: 1px solid #CCC;
+}
+.baselevel_detail .price_store > span
+{
+	display: block;
+	color: #FF0303;
+	font-size: 24px;
+}
+.buynow_btn
+{    
+    font-family: "Trebuchet MS";
+    height: 8px;
+    line-height: 100%;
+    overflow: hidden;
+    padding: 0 2px 21px;
+    text-align: center;
+    width: 92px;
+	margin: 7px 0 0 0px;
+}
+.buynow_btn a:link, .buynow_btn a:visited
+{
+	text-decoration: none;
+    color: #FFFFFF;	
+    font-size: 14px;
+    font-weight: bold;
+	background: url("~/application/modules/Ynauction/externals/images/buynow_btn.png") no-repeat transparent;
+	padding: 4px 25px 6px 16px;
+}
+.proposal_btn
+{    
+    font-family: "Trebuchet MS";
+    height: 8px;
+    line-height: 100%;
+    overflow: hidden;
+    padding: 0 2px 21px;
+    text-align: center;
+    width: 92px;
+    margin: 7px 0 0 0px;
+}
+.proposal_btn a:link, .proposal_btn a:visited
+{
+    text-decoration: none;
+    color: #FFFFFF;    
+    font-size: 14px;
+    font-weight: bold;
+    background: url("~/application/modules/Ynauction/externals/images/proposal_btn.png") no-repeat transparent;
+    padding: 4px 20px 6px 13px;
+}
+.baselevel_detail.firstlevel .pricecont .label
+{
+	width: auto;
+}
+.baselevel_detail.firstlevel .clockcont .clock
+{
+	margin-left: -10px;
+	padding: 6px 0 0 0;
+}
+.pnynauction_current_pricedetail
+{
+	font-size: 34px;
+}
+.layout_ynauction_detail_ynauctions .ynauctions_browse_date
+{
+	/*float: right; */
+	margin-top: 6px;
+	width: auto;
+}
+.price_store_history #total
+{
+	color: #FF0303;
+    font-weight:bold;
+}
+.price_store_history
+{
+	color: #999;
+	font-size: 8pt;
+}
+#global_page_ynauction-index-detail .layout_middle #title
+{
+	display: block;
+}
+#global_page_ynauction-index-detail .ynauctions_browse_date_post
+{
+	margin: 4px 4px 4px 0px; 
+	color:#7F7F7F;
+	font-size:8pt;
+	float: none;
+}
+#global_page_ynauction-index-detail .ynauction_last_bider #top_10
+{
+	height: 290px;
+    overflow-y: auto;
+}
+#global_page_ynauction-index-detail .ynauction_last_bider #top_10 .linkviewdetail .ynauction_userbid
+{
+	border-top: 1px solid #CCCCCC;
+}
+#global_page_ynauction-index-detail .ynauction_last_bider .link_view
+{
+    padding-top: 5px;
+}
+.layout_ynauction_featured_ynauctions #title a:link, 
+.layout_ynauction_featured_ynauctions #title a:visited
+{
+    /*color: #333333; */  
+    font-size: 16px;
+    font-weight: bold; 
+}
+.layout_ynauction_latest_ynauctions .ynauctions_browse_title a:link,
+.layout_ynauction_latest_ynauctions .ynauctions_browse_title a:visited,
+.layout_ynauction_most_rated_ynauctions .ynauctions_browse_title a:link,
+.layout_ynauction_most_rated_ynauctions .ynauctions_browse_title a:visited,
+.layout_ynauction_profile_created_ynauctions .ynauctions_browse_title a:link,
+.layout_ynauction_profile_created_ynauctions .ynauctions_browse_title a:visited,
+.layout_ynauction_profile_participated_ynauctions .ynauctions_browse_title a:link,
+.layout_ynauction_profile_participated_ynauctions .ynauctions_browse_title a:visited,
+.layout_ynauction_running_ynauctions .ynauctions_browse_title a:link,
+.layout_ynauction_running_ynauctions .ynauctions_browse_title a:visited,
+.layout_ynauction_listing_ynauctions .ynauctions_browse_title a:link,
+.layout_ynauction_listing_ynauctions .ynauctions_browse_title a:visited
+{
+	/*color: #333333; */
+    font-size: 12px;
+    font-weight: bold;
+}
+.featured_ynauction_wrapper
+{
+    border: 1px solid #D0E2EC;
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+	margin-right: 15px;
+}
+.bb3_productinfo .name a:link, .bb3_productinfo .name a:visited
+{
+	font-size: 12px;
+	color: #000;
+}
+.layout_ynauction_featured_ynauctions .ynauctions_browse_date
+{
+	padding-bottom: 0px;
+}
+.bb3_productinfo .ynauctions_browse_date
+{
+	border-bottom: 1px solid #EEE;
+    padding: 0 0 6px;
+	font-size: 8pt;
+	color: #999;
+	margin: 4px 2px 4px 0;
+	color:#7F7F7F;
+	font-size:8pt;
+}
+.pricecur_featured_home
+{
+    clear: both;
+    float: left;
+	background: url(~/application/modules/Ynauction/externals/images/featured.png) no-repeat transparent;
+    font-size: 8px;
+    padding: 0 3px 1px 7px;	
+    margin: 2px 4px 0 0;
+	color: #FFF;	
+}
+.list_ynauction_footer
+{
+	clear: both;
+	text-align: center;
+}
+#global_page_ynauction-index-browse .layout_right
+{
+	padding: 0 0 10px 14px;
+}
+.list_ynauction_footer .ynauctions_browse_date
+{
+    border-bottom: 0 !important;
+    padding-bottom: 0px !important;
+}
+/* nhittb end added */
+
+.ynauction_quicklinks_menu {
+    background-color: #E9F4FA;
+    background-image: url("/application/modules/Core/externals/images/foreground_bg.png?c=111");
+    background-repeat: repeat-x;
+    border: 1px solid #D0E2EC;
+}
+.ynauction_quicklinks_menu {
+    border-color: #D0E2EC;
+    border-radius: 3px 3px 3px 3px;
+    border-width: 1px;
+    margin-bottom: 15px;
+}
+.ynauction_quicklinks_menu > li {
+    margin: 0 6px;
+    padding: 6px 0;
+}
+div.faq-question {
+    border-top-width: 1px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+ul.faq-details-list li {
+    margin-top: 10px;
+}
+.ynauction_quicklinks_menu > li {
+    margin: 0 6px;
+    padding: 6px 0;
+}
+.ynauction_quicklinks_menu > li + li {
+    border-top: 1px solid #D0E2EC;
+}
+.ynauction_form_upload #file-label, .ynauction_form_upload #submit-label {
+    display: none;
+}
+.icon_ynauction_photo_new, .icon_photos_new {
+    background-image: url("~/application/modules/Ynauction/externals/images/addPhoto.png");
+}
+.ynclockcont
+{
+    padding-top: 12px;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 7px;
+}
+.ynclockcont .label
+{
+    width: 100px; 
+    float: left;
+    margin-top:3px;
+}
+.ynclockcont .clock
+{
+    font-size: 13pt;
+    font-weight: bold;
+}
+.ynprice
+{
+    padding-top: 10px;  
+}
+.ynprice .group_price .price
+{
+    color: #FF0000;
+    font-size: 13px;
+    font-weight: bold; 
+}
+.ynprice .group_price .label
+{
+    font-size: 13px;
+    color: black;
+    padding-bottom: 5px;
+}
+.ynprice .group_price 
+{
+    float: left;
+    font-size: 12px;
+    height: 46px;
+    padding-top: 3px;
+    text-align: center;
+    width: 120px;
+}
+.baselevel_detail .max_bid
+{
+    float: left;
+    font-size: 13px;
+    color: #545454;
+    font-weight: bold;
+    margin-top: 2px;
+    padding-right: 15px;
+}
+.baselevel_detail .input 
+{
+    width: 70px;
+}
+/* Featured Auction - Slide Show */
+.slideshow_container{
+    +rounded;
+    background-color: none;
+    border-color: $theme_foreground_border_color;
+    border-width: 1px;
+    margin-bottom: 15px;
+    padding: 0px 0 0 15px;
+  
+}
+.slideshow_action {
+    background: url(~/application/modules/Ynauction/externals/images/slideshow_mark_0.png) no-repeat;
+    color: #FFF;
+    cursor: pointer;
+    float: left;
+    font-size: 0pt;
+    padding: 8px;
+}
+.slideshow_action_active {
+    color: #FFF;
+    background: url(~/application/modules/Ynauction/externals/images/slideshow_mark_1.png) no-repeat;
+    cursor: pointer;
+}
+.slideshow_action > span {
+    display: none!important;
+}
+.dssSlideContainer
+{
+    height: 175px!important;
+}
+@media all and (min-width:0)
+{
+    .dssSlideContainer
+    {
+        width: 5000px\0/!important;
+    }   IE9 
+}
+.dssControlContainer
+{
+    float: right;
+    text-align: right;
+   padding-right: 10px;
+   padding-bottom: 10px;
+}
+.dssControlContainer  .slideshow_action, .dssControlContainer  .slideshow_action + .slideshow_action
+{
+    display: none;
+}
+.dssControlContainer .slideshow_action, .dssControlContainer .slideshow_action + .slideshow_action + .slideshow_action + .slideshow_action + .slideshow_action + .slideshow_action + .slideshow_action
+{
+    margin-left: 5px;
+}
+.dssControlContainer .slideshow_action + .slideshow_action + .slideshow_action
+{
+    display: block;
+}
+
+.ynauctions_browse_title a
+{
+     font-weight: bold;
+}
+#form-become-seller #check-label
+{
+    display: none;
+}
+#form-become-seller #check-wrapper
+{
+    float: left;
+    padding-right: 5px;
+    padding-top: 0px!important;
+}
+.ynauction-space-line
+{
+    border-bottom: 1px solid #D0E2EC;
+    clear: both;
+    margin-bottom: 10px;
+}
+.ynauction_account {
+    border-bottom: 1px solid #D9D9D9;
+    height: 30px;
+    padding: 4px 0 4px 5px;
+}
+ul.ynauction_editphotos .ynauction_editphotos_photo
+{
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+}
+ul.ynauction_editphotos .ynauction_editphotos_photo img
+{
+  display: block;
+  margin: 3px;
+  width: 150px;
+}
+ul.ynauction_editphotos .ynauction_editphotos_info
+{
+  overflow: hidden;
+  height: 150px;
+}
+ul.ynauction_editphotos .ynauction_editphotos_title_input input
+{
+  margin: 2px 0px 6px 0px;
+  width: 25em;
+}
+ul.ynauction_editphotos .ynauction_editphotos_caption_input text
+{
+  margin: 2px 0px 6px 0px;
+  width: 25em;
+  height: 3em;
+  min-height: 0px;
+}
+ul.ynauction_editphotos .ynauction_editphotos_label
+{
+  float: left;
+}
+ul.ynauction_editphotos .ynauction_editphotos_cover
+{
+  float: left;
+}
+ul.ynauction_editphotos .photo-delete-wrapper
+{
+  float: left;
+  margin-right: 15px;
+}
+ .photo-delete-wrapper > label
+{
+  display: block;
+  float: left;
+}
+ul.ynauction_editphotos .ynauction_editphotos_caption_input input
+{
+    margin: 2px 0px 6px 0px;
+}
+#ynauctions_create #check-label
+{
+    display: none;
+}
+#ynauctions_create #check-wrapper
+{
+    float: left;
+    padding-right: 5px;
+    padding-top:0px!important;
+}
+#ynauctions_create #buttons-element div.form-element 
+{
+     min-width: 99px;    
+}
+.layout_ynauction_profile_created_auctions img.thumb_normal, 
+.layout_ynauction_profile_participated_auctions img.thumb_normal, 
+#global_page_ynauction-index-user-auction img.thumb_normal 
+{
+    width: 100px;
+}
+/* fix layout with template default */
+.layout_ynauction_search_auctions form#filter_form div.form-elements 
+{
+    padding: 0px;
+    box-shadow: 0 0 0 0 rgba(1, 1, 1, 0.3);
+}
+.layout_page_ynauction_index_browse .global_form_box,
+.layout_page_ynauction_index_detail .global_form_box
+{
+    padding: 10px;
+}
+.layout_page_ynauction_index_browse  > div > div.layout_left > .generic_layout_container,
+.layout_page_ynauction_index_browse  > div > div.layout_right > .generic_layout_container ,
+.layout_page_ynauction_index_detail  > div > div.layout_right > .generic_layout_container ,
+.layout_page_ynauction_index_detail  > div > div.layout_right > .generic_layout_container {
+      padding: 0px !important;
+}
+
+/* Upload photo HTML5*/
+#global_page_ynauction-photo-upload #form-upload > div
+{
+	width: 100%;
+}
+#global_page_ynauction-photo-upload #files
+{
+	display: none;	
+	list-style: none;
+	width: 450px;
+	margin-top: 15px;
+	max-height: 200px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+}
+#global_page_ynauction-photo-upload #files > li
+{
+	padding: 8px 8px 8px 28px;
+	font-size: .8em;
+	font-weight: normal;
+	background: #fff;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-position: 6px 7px;
+	background-image: url(~/externals/fancyupload/assets/waiting.png);
+	background-repeat: no-repeat;
+}
+#global_page_ynauction-photo-upload #files > li + li 
+{
+	border-top: 1px solid #ccc;
+}
+#global_page_ynauction-photo-upload #files li.file-success 
+{
+	background-image: url(~/externals/fancyupload/assets/finished.png);
+	background-repeat: no-repeat;
+}
+#global_page_ynauction-photo-upload #files li .file-remove 
+{
+	clear: right;
+	float: right;
+	font-weight: bold;
+	overflow: hidden;
+}
+#global_page_ynauction-photo-upload #files li .file-info 
+{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	font-weight: normal;
+}
+#global_page_ynauction-photo-upload .progress-bar-success 
+{
+	background-color: $theme_button_background_color!important;
+}
+#global_page_ynauction-photo-upload  button
+{
+		color: $theme_button_font_color!important;
+}
+#global_page_ynauction-photo-upload .global_form div.form-label
+{
+	padding: 0px;
+	width: 0px;
+}
+
+#global_page_ynauction-photo-upload .btn-success 
+{
+    background-color: $theme_button_background_color!important;
+    border-color: $theme_input_border_colors!important;
+    color: $theme_button_font_color!important;
+}
+#global_page_ynauction-photo-upload .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-color: $theme_button_background_color_hover!important;
+    border-color: $theme_input_border_colors!important;
+    color: $theme_button_font_color!important;
+}
+#global_page_ynauction-photo-upload .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-image: none!important;
+}
+
+#ynauction_transfer div.form-elements > #to-wrapper
+{
+	margin-top: -10px;
+}
+#ynauction_transfer #to-label, 
+#ynauction_transfer #submit-label, 
+#ynauction_transfer #cancel-label,
+#ynauction_transfer div.form-elements > #toValues-wrapper > #toValues-label
+{
+	display: none;
+}
+#ynauction_transfer #to-element 
+{
+	margin-top: 10px;
+}
+#ynauction_transfer .form-wrapper
+{
+	clear: none;
+}
+#ynauction_transfer div.form-elements > #toValues-wrapper > #toValues-element > span.tag
+{
+	margin-top: 0px;
+	float: none;
+}
+#global_page_ynauction-photo-upload #buttons-wrapper
+{
+	display:none
+}
+/* End HTML5*/

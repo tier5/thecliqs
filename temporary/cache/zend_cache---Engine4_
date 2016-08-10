@@ -1,0 +1,27 @@
+a:2:{i:0;s:1785:"
+
+  <h3>
+    Sign In or <a href="/signup">Join</a>  </h3>
+
+  <form id="user_form_login" enctype="application/x-www-form-urlencoded" class="global_form_box" action="/login" method="post"><div><div><div class="form-elements">
+<div id="t5HvZAQvde-wrapper" class="form-wrapper"><div id="t5HvZAQvde-label" class="form-label"><label for="t5HvZAQvde" class="required">Email Address</label></div>
+<div id="t5HvZAQvde-element" class="form-element">
+<input type="email" name="t5HvZAQvde" id="t5HvZAQvde" value="" class="text" tabindex="1" autofocus="autofocus" /></div></div>
+<div id="password-wrapper" class="form-wrapper"><div id="password-label" class="form-label"><label for="password" class="required">Password</label></div>
+<div id="password-element" class="form-element">
+<input type="password" name="password" id="password" value="" tabindex="2" /></div></div>
+<div class="form-wrapper" id="buttons-wrapper"><fieldset id="fieldset-buttons">
+<div id="submit-wrapper" class="form-wrapper"><div id="submit-label" class="form-label">&nbsp;</div><div id="submit-element" class="form-element">
+<button name="submit" id="submit" type="submit" tabindex="3">Sign In</button></div></div>
+<div id="remember-wrapper" class="form-wrapper"><div class="form-label" id="remember-label">&nbsp;</div>
+<div id="remember-element" class="form-element">
+<input type="hidden" name="remember" value="" /><input type="checkbox" name="remember" id="remember" value="1" tabindex="4" />
+<label for="remember" class="optional">Remember Me</label></div></div></fieldset></div>
+
+<input type="hidden" name="return_url" value="" id="return_url" />
+
+<input type="hidden" name="email" value="" id="email" />
+
+<input type="hidden" name="email_field" value="dDVIdlpBUXZkZQ==" id="email_field" /></div></div></div></form>
+  
+";i:1;N;}

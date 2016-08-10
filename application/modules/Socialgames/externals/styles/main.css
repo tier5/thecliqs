@@ -1,0 +1,202 @@
+.game_block 
+{
+	width: 31%;
+	margin-right: 2%;
+	height: 250px;
+	overflow: hidden;
+	border: 1px solid #eee;
+	margin-bottom: 10px;
+	text-align: center;
+	position: relative;
+	float: left;
+}
+.game_block img 
+{
+	margin-bottom: 10px;
+	max-width: 100%;
+	height: 86px;
+	border: 3px double #eee;
+	padding: 3px;
+	margin-top: 10px;
+}
+.game_block .widget_game_title
+{
+	margin:0;
+}
+.game_block div.desc 
+{
+	font-size: 11px;
+	line-height: 20px;
+	padding:  10px 10px;
+	text-align:center;
+}
+.game_profile
+{
+	position: absolute;
+	bottom: 0;
+	background: #eee;
+	padding: 10px 0;
+	width: 100%;
+}
+.game_profile .fl,.game_profile .fr
+{
+	padding:0 10px;
+}
+.widget_game_image img
+{
+	width:95px;
+	border:3px double #ddd;
+	padding:3px;
+	margin-top:5px;
+}
+.widget_game
+{
+	padding-bottom:5px;
+}
+.widget_game_image
+{
+	text-align:center;
+}
+.widget_game_title
+{
+	font-weight:bold;
+	text-align:center;
+	margin:5px 0;
+	text-transform:uppercase;
+}
+.fl
+{
+	float:left;
+}
+.fr
+{
+	float:right;
+}
+.clr
+{
+	clear:both;
+}
+.featured {
+position: absolute;
+left: 0;
+top: 10px;
+font-size: 40px !important;
+color: #b90000;
+background:none;
+}
+.game_category
+{
+	position:absolute;
+	right:0;
+	top:0;
+	background:#eee;
+	padding:5px;
+	color:#000;
+	transform: rotate(6deg);
+}
+.game_object
+{
+	text-align:center;
+	margin-bottom:20px;
+}
+.game_object embed
+{
+	width:800px;
+	height:600px;
+}
+.game_object iframe 
+{
+	width: 100%;
+	height: 850px;
+}
+.game_image
+{
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.game_image img
+{
+	max-width: 300px;
+}
+.game_desc,.game_instruction
+{
+	font-size: 11px;
+	line-height: 20px;
+	padding: 5px 0 0;
+}
+.mt-5
+{
+	margin-top:5px;
+}
+.mt-10
+{
+	margin-top:10px;
+}
+.mb-10
+{
+	margin-bottom:10px;
+}
+.mr-10
+{
+	margin-right:10px;
+}
+.game_info .widget_game_title
+{
+	text-align:left;
+	margin-top:0;
+}
+.game_info
+{
+	width:67%;
+	margin-bottom:10px;
+}
+.favourite
+{
+	display:block;
+	float:right;
+	margin-right:20px;
+	margin-top:10px;
+}
+.widget_category
+{
+	text-align:center;
+	font-size:11px;
+	color:#777;
+	margin-top:-3px;
+	margin-bottom:5px;
+}
+.game_object
+{
+	display:none;
+}
+.game_button
+{
+	text-align:center;
+}
+.game_button button
+{
+	padding:40px;
+	text-align:center;
+}
+.item_photo_socialgames_game
+{
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+.game_users li
+{
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.game_users li img
+{
+	border-radius:50%;
+	padding:3px; 
+	border:3px double #ccc;
+}
+.layout_socialgames_games_featured, .layout_socialgames_most_players,.layout_socialgames_browse_search,.layout_socialgames_similar_games
+{
+	margin-bottom:10px;
+}

@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('headvancedalbum', 'Advanced Photo Albums', '', '4.2.0p2', 1, 'extra') ;

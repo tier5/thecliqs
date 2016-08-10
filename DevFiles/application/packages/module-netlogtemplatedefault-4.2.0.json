@@ -1,0 +1,363 @@
+{
+  "type": "module",
+  "name": "netlogtemplatedefault",
+  "version": "4.2.0",
+  "revision": null,
+  "path": "application\/modules\/Netlogtemplatedefault",
+  "repository": null,
+  "date": "Fri, 09 Mar 2012 14:17:20 +0000",
+  "title": "Netlog Template Default",
+  "description": "This plugin is a part of netlog template",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "MisterWizard"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 09 Mar 2012 14:17:20 +0000",
+    "title": "Netlog Template Default",
+    "description": "This plugin is a part of netlog template",
+    "developer": null,
+    "authors": [
+      "MisterWizard"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Netlogtemplatedefault\/settings\/install.php",
+    "class": "Netlogtemplatedefault_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.1",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Netlogtemplatedefault": {
+      "type": "directory",
+      "path": "application\/modules\/Netlogtemplatedefault",
+      "structure": [
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 362,
+          "sha1": "d208255c5d646bf5016d46987e12215b4b17c744"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 417,
+          "sha1": "e998dcde86754e6d154910a7f2a3eb885c88967b"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Userstatus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 529,
+          "sha1": "6f4969268794b2bfaba476d52f58c5fe6ecc36a9"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2255,
+          "sha1": "ba29d536772ccb641e484b69d140be771e412815"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5130,
+          "sha1": "2da4a52f7e6bbbefed95911ed3755889c951f6a7"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3872,
+          "sha1": "e8358ee2d805880a220e155c8774242d71ba73f0"
+        },
+        {
+          "path": "settings\/my-install-4.2.0.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 211,
+          "sha1": "ac423346fb995c326dead9e3a4fce61b2e9353d4"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-friends",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-friends\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5680,
+          "sha1": "001861a9696a53425b0ac7946306b095b016b7cb"
+        },
+        {
+          "path": "widgets\/netlog-friends\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3542,
+          "sha1": "6f2d4ae1c644d5a55e7cfec79b06ca2b026df33d"
+        },
+        {
+          "path": "widgets\/netlog-header-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-header-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2382,
+          "sha1": "5ae8d5e5b7b251d8235b4b71ce9497e70ac00914"
+        },
+        {
+          "path": "widgets\/netlog-header-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5502,
+          "sha1": "bc924df1d5769554645f00a8ba10c8f2603ce894"
+        },
+        {
+          "path": "widgets\/netlog-languages",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-languages\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2182,
+          "sha1": "15d943e977e95d2bdd344ca00f16cd954b6816bf"
+        },
+        {
+          "path": "widgets\/netlog-languages\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1891,
+          "sha1": "713c5a5fca1cc55fdc596013559fff439933900d"
+        },
+        {
+          "path": "widgets\/netlog-main-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-main-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 850,
+          "sha1": "5c491b49304d259825a8df9ce73e19e9223df432"
+        },
+        {
+          "path": "widgets\/netlog-main-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1160,
+          "sha1": "0f293c05045e16f3eb44ea265a63c74645bc0e89"
+        },
+        {
+          "path": "widgets\/netlog-members-active",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-members-active\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1370,
+          "sha1": "bdafa71a6b8430dc5f8c867b7f3120c8f6964379"
+        },
+        {
+          "path": "widgets\/netlog-members-active\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 869,
+          "sha1": "fbc361b27d4fd08dcaf35804d55cd4700e66bed6"
+        },
+        {
+          "path": "widgets\/netlog-members-random",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-members-random\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 927,
+          "sha1": "70e15faadb4ece144b4f495df1facc2c8a13fd74"
+        },
+        {
+          "path": "widgets\/netlog-members-random\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 761,
+          "sha1": "a041546f58fefab12303cba705cd445d8801d90a"
+        },
+        {
+          "path": "widgets\/netlog-mobile-version",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-mobile-version\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 777,
+          "sha1": "7dd14b7ed2b057a423537608029e2dd446adeef7"
+        },
+        {
+          "path": "widgets\/netlog-mobile-version\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 596,
+          "sha1": "0843e339c7a9f85d19f694de157b0880d340f013"
+        },
+        {
+          "path": "widgets\/netlog-network-statistic",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/netlog-network-statistic\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1024,
+          "sha1": "5fe38e04eb2a94b3f4e0c19f275951cc60af1189"
+        },
+        {
+          "path": "widgets\/netlog-network-statistic\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 574,
+          "sha1": "760cda1ac0ea66c2a3cdec4e7f4c1a20f2a2aa06"
+        }
+      ]
+    },
+    "application\/languages\/en\/netlogtemplate.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/netlogtemplate.csv",
+      "structure": {
+        "path": "netlogtemplate.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 866,
+        "sha1": "bf1968222d2068f64e0bd67ea452b0b38b33f2b7"
+      }
+    }
+  }
+}

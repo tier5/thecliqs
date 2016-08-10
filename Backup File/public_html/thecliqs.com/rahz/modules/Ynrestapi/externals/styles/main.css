@@ -1,0 +1,27 @@
+.layout_page_ynrestapi_authorize {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.12);
+    padding: 1.5em;
+}
+
+.layout_page_ynrestapi_authorize .authorize_body {
+	margin: 10px 0;
+	padding: 10px 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    line-height: 1.5em;
+}
+
+.layout_page_ynrestapi_authorize .authorize_body ul.authorize_scopes {
+	padding: 5px 5px 5px 0;
+    margin-left: 30px;
+    list-style-type: disc;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+ul.authorize_options li {
+	padding: 5px 5px 5px 0;
+	display: inline-block;
+}

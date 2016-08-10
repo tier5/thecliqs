@@ -1,0 +1,749 @@
+.ynfs_filepreview .ynfs_filepreview_filename > div {
+	margin-left: 10px;
+	float:left;
+}
+.ynfs_filepreview {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 0 0 black;
+	border-bottom: 1px solid #96C4EA;
+	border-left: 1px solid #E7F2FB;
+	border-right: 1px solid #E7F2FB;
+	background: #F0F9FF;
+}
+.ynfs_filepreview_filename {
+	color: #777;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 5px 10px;
+	overflow: hidden;
+	line-height: 32px;
+}
+
+.ynfs_filepreview_info {
+	border: solid 1px #EFEFEF;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	text-align:center;
+}
+.ynfs_googleviewer_info
+{
+	width: 100%;
+	height: 630px;
+}
+
+a:hover img.ynfs_filepreview_info {
+	cursor: default;
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+     box-shadow: 1px 1px 5px #999;
+}
+
+.ynfs_embeds_unavailable .ynfs_embeds_error .ynfs_lightbox{
+	width: 400px;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	position: static;
+	margin-top: 50px;
+	text-shadow: 1px 1px 1px white;
+	box-shadow: 2px 2px 12px #444;
+}
+.ynfs_embeds_unavailable .ynfs_embeds_error .ynfs_lightbox h1 {
+	font-size: 15px;
+	color: #565B63;
+	text-align: center;
+	text-shadow: 1px 1px 1px white;
+	margin-bottom: 10px;
+}
+
+.ynfs_embeds_unavailable .ynfs_embeds_error .ynfs_lightbox hr {
+	border-top: 1px dotted #565B63;
+	color: #565B63;
+	background-color: white;
+	height: 1px;
+}
+
+.ynfs_embeds_unavailable .ynfs_embeds_error .ynfs_lightbox h2 {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.ynfs_lightbox {
+	z-index: 30000;
+	position: absolute;
+	text-align: left;
+	background-color: #9CA7AE;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 8px;
+	border-radius: 10px;
+	min-width: 610px;
+}
+.ynfs_wrapper {
+	background: white;
+	position: relative;
+	overflow: visible;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.ynfs_lightbox .ynfs_content {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+}
+
+.ynfs_droppable {
+  border: #ccc 1px solid;
+  border-radius: 8px;
+  background: #eee;
+  color: #666;
+  padding: 20px;
+  margin: 10px;
+  clear: both;
+  text-align: center;
+}
+droppable.hover {
+  background: #ddd;
+}
+
+.ynfs_uploadList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+a.ynfs_addInputRow,
+a.ynfs_delInputRow,
+.ynfs_uploadItem a {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  text-indent: -999px;
+}
+
+a.ynfs_addInputRow,
+.ynfs_uploadItem a {
+  background: url(~/application/modules/Ynfilesharing/externals/images/file_add.png) no-repeat;
+}
+
+.ynfs_uploadItem a {
+  float: left;
+  display: block;
+  padding-left: 20px;
+  background-image: url(~/application/modules/Ynfilesharing/externals/images/delete.png);
+}
+
+a.ynfs_delInputRow {
+  background-image: url(~/application/modules/Ynfilesharing/externals/images/delete.png);
+}
+
+.ynfs_notices {
+	background: #EFFFE5;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.ynfs_fail_notices {
+	background: #FAF6E4;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.ynfs_notices li {
+	list-style-type: none;
+}
+.ynfs_browse {
+	margin-bottom: 10px;
+}
+
+.ynfs_browse ul li {
+	padding: 5px 10px;
+	overflow: hidden;
+	line-height: 32px;
+}
+.ynfs_browse .ynfs_browse_title, .ynfs_browse .ynfs_browse_control {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),inset 0 0 0 black;
+	border-top: 1px solid #82CFFA;
+	border-bottom: 1px solid #96C4EA;
+	border-left: 1px solid #E7F2FB;
+	border-right: 1px solid #E7F2FB;
+	background: #F0F9FF;
+}
+.ynfs_browse .ynfs_browse_control {
+	display: none;
+}
+.ynfs_browse .ynfs_check_column {
+	float: left;
+	width: 20px;
+}
+.ynfs_browse .ynfs_check_column input[type="checkbox"] {
+	margin-top: 8px;
+}
+.ynfs_browse .ynfs_name_column {
+	float: left;
+	width: 35%;
+}
+
+.ynfs_browse .ynfs_view_download_column, .ynfs_browse .ynfs_control_column {
+	overflow: hidden;
+}
+.ynfs_browse .ynfs_view_download_column .ynfs_stat{
+	float: left;
+}
+
+.ynfs_view_download_column{
+	float: left;
+	width: 15%;
+	text-align: center;
+}
+
+.ynfs_download_ctrl {
+	margin-top: 5px;
+	float: left;
+	margin-left: 18px;
+}
+
+.ynfs_browse .ynfs_view_download_column_share{
+	float: left;
+	width: 12%;
+	text-align: center;
+}
+
+.ynfs_browse .ynfs_view_remove_link_column{
+	float: right;
+}
+
+.ynfs_browse > ul > li + li {
+	border-bottom: 1px solid #EEE;
+}
+
+.ynfs_browse ul li.ynfs_item_selected {
+	background: #2163A5;
+}
+
+.ynfs_browse ul li.ynfs_item_selected * {
+	color: #FFF;
+}
+
+.ynfs_browse .ynfs_name_column > div {
+	float: left;
+}
+
+.ynfs_browse .ynfs_name_column > a {
+	margin-left: 10px;
+}
+
+.ynfs_progress {
+  	margin: 5px 0 7px;
+	height: 24px;
+	border-radius: 7px;
+	background: #B3EE3A;
+	border: 1px solid oliveDrab;
+}
+
+.ynfs_droppable.hover {
+  background: #ddd;
+}
+
+.ynfs_uploadItem {
+  overflow: hidden;
+  /*border-bottom: #BCBCBC 1px solid;*/
+  margin: 0 20px;
+  padding: 3px;
+}
+
+.ynfs_uploadItem span {
+  overflow: hidden;
+  width: 345px;
+  float: left;
+  display: block;
+  background-image: url(~/application/modules/Ynfilesharing/externals/images/file_add.png);
+  background-repeat: no-repeat;
+  padding-left: 23px;
+}
+
+.ynfs_next_arrow {
+	width: 16px;
+	height: 16px;
+}
+
+.ynfs_folder_navigation .ynfs_next_arrow {
+	margin-left: 5px;
+}
+
+.ynfs_folder_navigation ul li {
+	float: left;
+	line-height: 16px;
+}
+
+.ynfs_folder_navigation ul li > * {
+	vertical-align: top;
+}
+
+.ynfs_folder_navigation {
+	overflow: hidden;
+}
+
+.ynfs_icon {
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	background: no-repeat;
+}
+
+.ynfs_file_default{
+	background-image: url(~/application/modules/Ynfilesharing/externals/images/file_types/unknown.png);
+}
+.ynfs_folder_icon {
+	background-image: url(~/application/modules/Ynfilesharing/externals/images/folder_icon.png);
+}
+.ynfs_folder_add_icon {
+	background-image: url(~/application/modules/Ynfilesharing/externals/images/folder_add.png);
+}
+.ynfs_file_add_icon {
+	background-image: url(~/application/modules/Ynfilesharing/externals/images/file_add.png);
+	margin-left: 15px;
+}
+.ynfs_file_download_icon {
+	background-image: url(~/application/modules/Ynfilesharing/externals/images/download.png);
+	width: 16px;
+	height: 16px;
+}
+
+.ynfs_file_share_icon {
+	background-image: url(~/application/modules/Ynfilesharing/externals/images/share.png);
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.ynfs_control .ynfs_control_column > a {
+	background-position: left center;
+	margin: 0 15px 0 0;
+	display: block;
+	float: left;
+}
+.ynfs_control_edit {
+	background: url(~/application/modules/Ynfilesharing/externals/images/edit.png);
+}
+.ynfs_control_edit_permission {
+	background: url(~/application/modules/Ynfilesharing/externals/images/edit_permission.png);
+}
+.ynfs_control_delete {
+	background: url(~/application/modules/Ynfilesharing/externals/images/delete.png);
+}
+
+.ynfs_control_share {
+	background: url(~/application/modules/Ynfilesharing/externals/images/share.png);
+}
+
+.ynfs_control_move {
+	background: url(~/application/modules/Ynfilesharing/externals/images/move.png);
+}
+
+.ynfs_control_download {
+	background: url(~/application/modules/Ynfilesharing/externals/images/download.png);
+}
+
+.ynfs_browse .ynfs_owner_column {
+	float: left;
+	width: 15%;
+}
+
+.ynfs_browse .ynfs_type_column {
+	float: left;
+	width: 10%;
+	margin-right:5px;
+}
+
+.ynfs_browse .ynfs_modifieddate_column {
+	float: left;
+	width: 15%;
+}
+
+.ynfs_browse ul li.ynfs_item_hover {
+	background: #E7F2FB;
+}
+
+.ynfs_block {
+	margin: 10px 0px;
+}
+
+.ynfs_text_header {
+	font-weight: bold;
+	margin-right: 10px;
+}
+.ynfs_controls .buttonlink + .buttonlink {
+	margin-left: 15px;
+}
+ul.ynfs_tree {
+	margin: 0;
+	padding: 0 0 0 0px;
+}
+ul.ynfs_tree li {
+	position: relative;
+	list-style-type: none;
+	padding: 0;
+	line-height: 25px;
+	margin: 3px 0;
+	background: none;
+}
+ul.ynfs_tree span {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	cursor: pointer;
+	color: #5e5e5e;
+	text-decoration: none;
+	padding: 3px 6px 3px 6px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+ul.ynfs_tree span.selected {
+	background-color: #efefef;
+}
+ul.ynfs_tree span:focus {
+	outline: none;
+	border: 2px dotted #cc0000;
+	margin: -2px -2px -2px -2px;
+}
+ul.ynfs_tree img.expand {
+	cursor: pointer;
+	outline: 0;
+	float: left;
+	display: block;
+	padding-top: 2px;
+	margin: 0;
+	margin-top: 4px;
+	margin-right: 8px;
+}
+ul.ynfs_tree a.expand:link {
+	color: #ffff00;
+}
+ul.ynfs_tree a.expand:visited {
+	color: #ffff00;
+}
+ul.ynfs_tree a.expand:active {
+	color: #ffff00;
+}
+ul.ynfs_tree div.lineH {
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	border-bottom: 1px dashed #cccccc;
+	width: 9px;
+	height: 13px;
+}
+ul.ynfs_tree div.lineDiv {
+	position: absolute;
+	top: -11px;
+	left: 30px;
+	overflow: hidden;
+	width: 1px;
+	height: 100%;
+}
+ul.ynfs_tree div.lineV {
+	position: absolute;
+	top: 33px;
+	left: 0;
+	border-left: 1px dashed #cccccc;
+	width: 9px;
+	height: 100%;
+}
+ul.ynfs_browse_folders_thumbnail > li.ynfs_folder {
+	float: left;
+	border: 1px solid #DDD;
+	text-align: center;
+	padding: 10px;
+	overflow: hidden;
+	margin: 0px 20px 10px 0px;
+	width: 90px;
+}
+
+ul.ynfs_browse_folders_thumbnail > li.ynfs_folder > .ynfs_folder_icon {
+	margin: 0 auto;
+}
+
+#global_page_ynfilesharing-index-move > span {
+	margin: 10px;
+	margin-bottom: 0px;
+}
+
+.ynfs_form_move button {
+	margin-top: 10px;
+}
+
+#ynfs_tree{
+	border:solid 1px #b4b4b4;
+	position:relative;
+	height:300px;
+	width:450px !important;
+}
+
+/*@global*/
+.mif-tree-wrapper{
+	position: absolute;
+	z-index:100;
+	width: 100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:auto;
+	font-family:sans-serif;
+	font-size:11px;
+	line-height:18px;/******Tree node height******/
+	white-space:nowrap;
+	cursor:default;
+}
+.mif-tree-bg{
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+}
+
+.mif-tree-bg-container{
+	width:100%;
+	display:none;
+}
+.mif-tree-bg-node{
+	width:100%;
+	height:18px;
+}
+.mif-tree-bg-selected{
+	background-color:#dcd7ab;
+}
+.mif-tree-wrapper:focus{
+	outline:0;
+}
+.mif-tree-wrapper span{
+	padding-bottom:2px;
+	padding-top:2px;
+	cursor:inherit;
+}
+.mif-tree-children{
+	padding-left:18px;
+	width:18px;
+}
+.mif-tree-node{
+	width:18px;
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/line.gif) repeat-y 8px 0px;
+}
+
+.mif-tree-node-last{
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/line.gif) no-repeat 8px 0px;
+}
+
+.mif-tree-name{
+cursor: default;
+overflow:hidden;
+margin-left:4px;
+}
+
+.mif-tree-name a{
+color:red;
+}
+
+.mif-tree-name a:hover{
+color:blue;
+}
+
+
+.mif-tree-node-wrapper{
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/horizontal-line.gif) no-repeat 9px center;
+}
+
+/*@gadjets*/
+
+.mif-tree-gadjet{
+	background-image:url(~/application/modules/Ynfilesharing/externals/images/mif/gadjets.gif);
+	padding-right: 16px;
+	z-index:1;
+	overflow:hidden;
+	background-repeat:no-repeat;
+	cursor:default;
+}
+.mif-tree-gadjet-none{
+	background:none;
+}
+.mif-tree-gadjet-minus{
+	background-position: 0px 50%;
+}
+.mif-tree-gadjet-plus{
+	background-position: -18px 50%;
+}
+.mif-tree-gadjet-hover .mif-tree-gadjet-minus{
+	background-position: -54px 50%;
+}
+.mif-tree-gadjet-hover .mif-tree-gadjet-plus{
+	background-position: -72px 50%;
+}
+
+/*.mif-tree-gadjet-hover{
+	background-image:url(~/application/modules/Ynfilesharing/externals/images/mif/gadjets-hover.gif);
+}*/
+
+/*@icons*/
+.mif-tree-icon{
+	padding-right:18px;
+	background-position:0 50%;
+	background-repeat:no-repeat;
+	cursor:inherit;
+}
+
+.mif-tree-open-icon{
+	background-image:url(~/application/modules/Ynfilesharing/externals/images/mif/openicon.gif)
+}
+
+.mif-tree-close-icon{
+	background-image:url(~/application/modules/Ynfilesharing/externals/images/mif/closeicon.gif)
+}
+
+
+.mif-tree-loader-open-icon,.mif-tree-loader-close-icon{
+	background-image:url(~/application/modules/Ynfilesharing/externals/images/mif/mootree_loader.gif);
+}
+
+.mif-tree-file-open-icon, .mif-tree-file-close-icon{
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/file.gif) no-repeat;
+}
+
+
+/*@selection*/
+
+.mif-tree-node-selected .mif-tree-name{
+	background-color: #010161;
+	color:#fff;
+	text-transform:italic;
+}
+.mif-tree-highlighter{
+	height:18px;
+	overflow:hidden;
+	width:100%;
+	background:#b64553;
+	position:absolute;
+}
+/*@d'n'd*/
+.mif-tree-pointer{
+	height:1px;
+	overflow: hidden;
+	position: absolute;
+	background-image:url(~/application/modules/Ynfilesharing/externals/images/mif/1.gif);
+	background-repeat:repeat-x;
+	background-color:#292fef;
+}
+.mif-tree-ghost{
+	background-color:#fff;
+	border:solid 2px #e8e8f7;
+	padding-left:2px;
+}
+.mif-tree-ghost .mif-tree-node-wrapper{
+	background:none;
+}
+.mif-tree-ghost span.mif-tree-text{
+	padding-top:1px;
+	padding-bottom:1px;
+}
+.mif-tree-ghost-icon{
+	padding-left:16px;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-image:url(~/application/modules/Ynfilesharing/externals/images/mif/dropzone.gif);
+}
+.mif-tree-ghost-after{
+	background-position:-64px 2px;
+}
+.mif-tree-ghost-before{
+	background-position:-48px 2px;
+}
+.mif-tree-ghost-between{
+	background-position:-16px 2px;
+}
+.mif-tree-ghost-inside{
+	background-position:-0px 2px;
+}
+.mif-tree-ghost-notAllowed{
+	background-position:-32px 2px;
+}
+.mif-tree-drag-current{
+	background-color:#cfcfd8;
+}
+.mif-tree-replace{
+	background-color:#99c8fb;
+}
+/*@checkbox*/
+.mif-tree-checkbox{
+	padding-left:18px;
+}
+.mif-tree-node-checked, .mif-tree-node-checked .mif-tree-checkbox{
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/checked.gif) center 2px no-repeat;
+}
+.mif-tree-node-unchecked, .mif-tree-node-unchecked .mif-tree-checkbox{
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/unchecked.gif) center 2px no-repeat;
+}
+.mif-tree-node-checked-selected{
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/checked_selected.gif) center 2px no-repeat;
+}
+.mif-tree-node-unchecked-selected{
+	background:url(~/application/modules/Ynfilesharing/externals/images/mif/unchecked_selected.gif) center 2px no-repeat;
+}
+/*@rename*/
+.mif-tree-rename{
+	display: inline;
+	line-height: 14px;
+	height:14px;
+	cursor: default;
+	overflow:hidden;
+	font-family:sans-serif;
+	font-size:11px;
+	padding:1px 0;
+	border:solid 1px black;
+}
+
+span#ynfilesharing_filesize {
+	*display: block;
+	float: right;
+	font-size: 10.5pt;
+}
+
+.ynfs_share_image{
+	float: right;
+	margin-top: 5px;
+}
+
+.ynfs_share_image img{
+	margin-top: 6px;
+	cursor: pointer;
+}
+
+.ynfs_share_link_textbox{
+	width: 260px;
+}
+
+.ynfs_share_link_note{
+	margin-top: 5px;
+}
+
+.ynfs_share_link_note i{
+	font-size: smaller;
+}
+.layout_page_ynfilesharing_folder_view .global_form > div > div
+{
+	padding: 15px!important;
+}
+.ynfs_browse .ynfs_owner_column
+{
+	margin-right: 10px;
+}
+body#global_page_ynfilesharing-index-move
+{
+	overflow-y: hidden;
+}
+#global_page_ynfilesharing-index-move button
+{
+	padding: 0.2em 0.3em;
+}

@@ -1,0 +1,169 @@
+.uiYnfbppDialog {
+	position: absolute;
+	display: none;
+	z-index: 90;
+	zoom: 1;
+}
+.uiYnfbppDialogDirUp .uiYnfbppDialogOverlay {
+	bottom: 1px;
+}
+.uiYnfbppDialogDirDown .uiYnfbppDialogOverlay {
+	top: 8px;
+}
+.uiYnfbppDialogDirLeft .uiYnfbppDialogOverlay {
+	right:0px;
+}
+.uiYnfbppDialogDirRight .uiYnfbppDialogOverlay {
+	left:0px;
+}
+.uiYnfbppDialogOverlay {
+	position: absolute;
+	padding-bottom: 10px;
+	line-height: 1.28;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	color: #333;
+	direction: ltr;
+	text-align: left;
+}
+.uiYnfbppContextualDialogArrow {
+	display: block;
+	height: 10px;
+	width: 16px;
+	position: absolute;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-image: url("~/application/modules/Ynfbpp/externals/images/down2.png");
+}
+.uiYnfbppDialogDirUp .uiYnfbppContextualDialogArrow {
+	bottom: 3px;
+}
+.uiYnfbppDialogDirDown .uiYnfbppContextualDialogArrow {
+	top: -8px;
+	background-image: url("~/application/modules/Ynfbpp/externals/images/up_white.png");
+}
+.uiYnfbppDialogDirLeft .uiYnfbppContextualDialogArrow {
+	right: 15px;
+}
+.uiYnfbppDialogDirRight .uiYnfbppContextualDialogArrow {
+	left: 15px;
+}
+.uiYnfbppOverlayContent {
+	background: #ffffff;
+	border-color: #666666;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+	position: relative;
+	overflow:visible;
+}
+.uiYnfbppHovercardStage {
+
+	padding: 10px;
+	max-width: 350px;
+	min-width: 290px;
+	*min-width: 290px;
+}
+.uiYnfbppHovercardContent {
+	overflow:hidden;
+}
+html[dir="rtl"] .uiYnfbppScaledImageContainer {
+	padding: 0 0 0 10px;
+}
+html[dir="ltr"] .uiYnfbppScaledImageContainer {
+	padding: 0 10px 0 0;
+}
+.uiYnfbppScaledImageContainer a, .uiYnfpSmallAvatars a {
+	display: block;
+	line-height: 0.1em;
+}
+.uiYnfbppHovercardTitle {
+	font-weight: bold;
+}
+.uiYnfbppHovercardInfo, .uiYnfbppHovercardInfo div {
+	font-size: 11px;
+}
+[dir="rtl"] .uiYnfbppRow div {
+	float: right;
+	padding-left: 4px;
+}
+[dir="ltr"] .uiYnfbppRow div {
+	float: left;
+	padding-right: 4px;
+}
+html[dir="rtl"] .uiYnfbppHovercardInfo li {
+	direction: rtl;
+}
+html[dir="ltf"] .uiYnfbppHovercardInfo li {
+	direction: ltr;
+}
+.uiYnfbppHovercardFooter {
+	padding: 6px 7px 6px 8px;
+	background: #F2F2F2;
+	border-top: 1px solid #ccc;
+	border-bottom: medium none;
+	border-right: medium none;
+	border-left: medium none;
+	height: 22px;
+	min-width: 290px;
+	*min-width: 294px;
+	display:block;
+}
+.uiYnfbppListHorizontal {
+	clear: both;
+	display: block;
+}
+.uiYnfbppListItem {
+	display: block;
+}
+.uiYnfbppListHorizontal .uiYnfbppListItem a {
+	font-size: 11px;
+	line-height: 17px;
+	font-weight: normal;
+	display: inline-block;
+	padding-right: 0px;
+	padding-left: 21px;
+	margin: 0px;
+}
+[dir="ltr"] .uiYnfbppListHorizontal {
+	float: right;
+}
+[dir="ltr"] .uiYnfbppListHorizontal .uiYnfbppListItem {
+	float: left;
+	margin-right: 8px;
+}
+[dir="rtl"] .uiYnfbppListHorizontal {
+	float: left;
+}
+[dir="rtl"] .uiYnfbppListHorizontal .uiYnfbppListItem {
+	float: right;
+	margin-left: 8px;
+}
+
+.uiYnfpSmallAvatars li {
+	display: block;
+	margin-right: 2px;
+}
+[dir="ltr"] .uiYnfpSmallAvatars li {
+	float: left;
+}
+[dir="rtl"] .uiYnfpSmallAvatars li {
+	float: right;
+}
+.uiYnfpSmallAvatars a img {
+	width: 32px;
+	height: 32px;
+	zoom: 1;
+}
+.uiYnfbppHovercardSmallInfo {
+	font-size: 11px;
+}
+
+/**
+ * 	fix for right to left on mobile site
+ */
+[dir="rtl"] .uiYnfbppDialogOverlay div, [dir="rtl"] .uiYnfbppDialogOverlay td {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: embed;
+}

@@ -1,0 +1,77 @@
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_wrapper {
+    height: 120px;
+}
+
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_checkbox,
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_imported {
+    margin: 2px 5px 0 0;
+}
+
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_avatar {
+    float: left;
+    margin-right: 5px;
+}
+
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_image {
+    height: 85px;
+    overflow: hidden;
+}
+
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_wrapper,
+body[id^=global_page_ynmediaimporter] .ynimporter-album-wrapper,
+body[id^=global_page_ynmediaimporter] .ynimporter-photo-wrapper {
+    width: 23%;
+    margin: 0 1% 10px 1%;
+}
+
+body[id^=global_page_ynmediaimporter] .ynimporter-album-wrapper .ynimporter-album-title {
+    width: 100%;
+}
+
+body[id^=global_page_ynmediaimporter] .ynimporter-album-wrapper .ynimporter-album-title a {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+body[id^=global_page_ynmediaimporter] a.ynimporter-photo-thumb-stager i, 
+body[id^=global_page_ynmediaimporter] div.ynimporter-photo-thumb-wrapper i,
+body[id^=global_page_ynmediaimporter] a.ynimporter-album-thumb-stager i,
+body[id^=global_page_ynmediaimporter] div.ynimporter-album-thumb-wrapper i,
+body[id^=global_page_ynmediaimporter] .ynimporter-album-thumb-stager, 
+body[id^=global_page_ynmediaimporter] .ynimporter-photo-thumb-stager {
+    width: 100%;
+}
+body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_wrapper > div:first-child > center {
+    height: 100px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px)
+{
+    body[id^=global_page_ynmediaimporter] .ynimporter-album-wrapper,
+    body[id^=global_page_ynmediaimporter] .ynimporter-photo-wrapper,
+    body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_wrapper {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px)
+{
+    body[id^=global_page_ynmediaimporter] .ynmediaimporter-control-action a {
+        display: block;
+        margin-bottom: 3px;
+    }
+    
+    body[id^=global_page_ynmediaimporter] .ynimporter-album-wrapper,
+    body[id^=global_page_ynmediaimporter] .ynimporter-photo-wrapper,
+    body[id^=global_page_ynmediaimporter] .ynmediaimporter_service_wrapper {
+        width: 98%;
+    }   
+}

@@ -1,0 +1,50 @@
+#ynfeed_liveupdatevalue
+{
+	width: 100px;
+}
+#ynfeed_liveupdatevalue-wrapper
+{
+	float: left;
+}
+#ynfeed_liveupdatevalue-element
+{
+	width: 130px;
+}
+#ynfeed_liveupdateperiod-wrapper
+{
+	clear: none;
+}
+#ynfeed_liveupdateperiod-label
+{
+	display: none;
+}
+#global_page_ynfeed-admin-filters-index .admin_table,
+#global_page_ynfeed-admin-filters-custom-lists .admin_table,
+#global_page_ynfeed-admin-welcome-index .admin_table
+{
+	position: relative;
+}
+#global_page_ynfeed-admin-filters-index .admin_table #demo-list > tr,
+#global_page_ynfeed-admin-filters-custom-lists .admin_table #demo-list > tr,
+#global_page_ynfeed-admin-welcome-index .admin_table #demo-list > tr
+{
+	cursor: move;
+}
+.ynfeed_icon_add
+{
+  background-image: url(~/application/modules/Core/externals/images/admin/menus_additem.png);
+  padding-bottom: 2px;
+}
+.ynfeed_icon_back
+{
+	background-image: url(~/application/modules/Core/externals/images/back.png);
+}
+
+#welcome_create .description
+{
+	max-width: 100%;
+}
+
+#ynfeed_liveupdatevalue-element {
+	float: left;
+}

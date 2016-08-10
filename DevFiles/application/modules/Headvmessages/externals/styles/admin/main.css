@@ -1,0 +1,13 @@
+#global_page_headvmessages-admin-index-levels .settings form,
+#global_page_headvmessages-admin-index-index .settings form {
+  background: none;
+}
+#global_page_headvmessages-admin-index-levels .settings form > div,
+#global_page_headvmessages-admin-index-index .settings form > div {
+  border: none;
+  padding: 0;
+}
+
+#global_page_headvmessages-admin-index-index .form-label {
+  display: none;
+}

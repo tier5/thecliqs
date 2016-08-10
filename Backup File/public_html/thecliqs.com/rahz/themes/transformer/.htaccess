@@ -1,0 +1,9 @@
+
+# seTweaks.com
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?setweaks.com [NC]
+RewriteRule \.css$ - [NC,F,L]
+</IfModule>

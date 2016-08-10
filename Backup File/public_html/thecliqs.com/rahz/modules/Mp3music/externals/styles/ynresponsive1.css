@@ -1,0 +1,161 @@
+div.mp3music_albumfeatured_info > .mp3music_album_title > h3,
+#form-upload-music h3,
+#ynmp3music-inner h3
+{
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+#ynmp3music-inner
+{
+	padding: 0px;
+}
+div.mp3music_albumfeatured_info > p.mp3music_album_info
+{
+	margin: 0px;
+}
+.mp3music_albumfeatured_info
+{
+	width: 100%;
+}
+.box_search_music
+{
+	height: 32px;
+	margin-top:0 !important;
+}
+.mp3_album_info
+{
+	width:100%!important;
+}
+.mp3music_browse_options a.buttonlink
+{
+	padding-left: 25px;
+}
+ul.mp3music_browse li
+{
+	clear: both!important;
+}
+.mainplayer_image_album p
+{
+	padding-left: 0px!important;
+}
+.mp3music_wrapper .younet_mp3music_feed
+{
+	width:100%!important;
+}
+.mejs-container .mejs-controls .mejs-time
+{
+	height: 26px;
+}
+#mp3music_reverse #cter_popup div input{
+	height: 35px!important;
+}
+#global_page_mp3music-playlist-edit #demo-list
+{
+	min-width: 350px;
+}
+.mp3music_browse_info
+{
+	overflow: hidden!important;
+}
+@media (max-width: 1024px)
+{
+	.mp3_top_album li
+	{
+		padding-left: 8px!important;
+	}
+	.mp3music_playmusic,
+	.music_player_tracks_add
+	{
+		padding-right: 6px;
+	}
+}
+@media (max-width: 991px)
+{
+	.mp3_top_album li
+	{
+		padding-left: 10px!important;
+	}
+}
+@media (max-width: 640px)
+{
+	.music_browse_options .icon_music_playonprofile,
+	.music_browse_options .icon_music_disableonprofile
+	{
+		display: block!important;
+	}
+	.mainplayer_image_album
+	{
+		display: none!important;
+	}
+	#mp3music_reverse #cter_popup ul.global_form_box div > span
+	{
+		padding-left: 0px!important;
+	}
+	#mp3music_reverse #cter_popup ul.global_form_box div > input
+	{
+		width:100%!important;
+	}
+}
+@media (max-width: 480px)
+{
+	#form-upload-music #download-wrapper .form-label,
+	#form-upload-music #file-wrapper .form-label,
+	#form-upload-music #save-wrapper .form-label
+	{
+		display: none;
+	}
+	.mp3_top_album li
+	{
+		padding-right: 5px!important;
+		padding-left: 8px!important;
+	}
+	.music_browse_options .icon_music_playonprofile,
+	.music_browse_options .icon_music_disableonprofile
+	{
+		display: block!important;
+	}
+	#mp3music_navigation-slideshow,
+	#mp3music_navigation-slideshow .mp3music_album_photo
+	{
+		height: 190px!important;
+	}
+	div.mp3music_albumfeatured_info > p.mp3music_album_info + p
+	{
+		display: none!important;
+	}
+	.layout_mp3music_search_music #frm_search input[type=text]
+	{
+		width: 70%!important;
+	}
+	.layout_mp3music_browse_music ul.mp3music_table tr td + td,
+	.layout_mp3music_browse_music ul.mp3music_table tr th + th
+	{
+		display: none!important;
+	}
+	#global_page_mp3music-playlist-edit #demo-list
+	{
+		min-width: 200px;
+	}
+}
+@media (max-width: 320px)
+{
+	.mp3_top_album li
+	{
+		padding-left: 25px!important;
+		padding-right: 20px!important;
+	}
+	.mp3music_album_thumb img.thumb_profile
+	{
+		max-width: 150px!important;
+		max-height: 300px!important;
+	}
+	.younet_html5_player .yn-music .song-info marquee
+	{
+		width:64%!important;
+	}
+	.music_browse_options .icon_music_playonprofile,
+	.music_browse_options .icon_music_disableonprofile
+	{
+		display: none!important;
+	}
+}

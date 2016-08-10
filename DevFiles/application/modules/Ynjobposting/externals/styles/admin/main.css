@@ -1,0 +1,78 @@
+body[id^=global_page_ynjobposting-admin]
+{
+	.tabs ul li
+	{
+		padding: 7px 0px;
+	}
+	.settings .form-element .description, .settings .form-description
+	{
+		max-width: 100%!important;
+	}
+}
+
+#demo-list tr{
+	cursor: move;
+}
+.ynjobposting_icon_back
+{
+	background-image: url(~/application/modules/Core/externals/images/back.png);
+}
+
+#global_page_ynjobposting-admin-settings-level {
+	#company_credit-wrapper, #job_credit-wrapper, 
+	#company_max_credit-wrapper, #job_max_credit-wrapper,
+	#company_period-wrapper, #job_period-wrapper
+	{
+		padding-top: 0px;
+	}
+	#company_first_amount-wrapper, #job_first_amount-wrapper,
+	#company_credit-wrapper, #job_credit-wrapper
+	{
+		float: left;
+		min-width: 58%;
+	}
+	#company_first_credit-wrapper, #job_first_credit-wrapper,
+	#company_max_credit-wrapper, #job_max_credit-wrapper,
+	#company_period-wrapper, #job_period-wrapper
+	{
+		float: left;
+		clear: none;
+	}
+	#company_first_credit-label, #job_first_credit-label,
+	#company_max_credit-label, #job_max_credit-label,
+	#company_period-label, #job_period-label
+	{
+		display: none;
+	}
+	#company_max_credit-wrapper, #job_max_credit-wrapper,
+	#company_period-wrapper, #job_period-wrapper
+	{
+		width: 120px;
+	}
+	#company_max_credit-wrapper input, #job_max_credit-wrapper input,
+	#company_period-wrapper input, #job_period-wrapper input
+	{
+		width: 100px;
+	}
+}
+
+.add_link {
+	margin: 10px 0px;
+}
+
+.add_faq {
+	background-image: url(~/application/modules/Ynjobposting/externals/images/add_faq.png);
+}
+
+.yn_admin_form {
+	overflow: auto;
+}
+
+.result_count {
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+
+.buttons {
+	margin: 20px 0px;
+}

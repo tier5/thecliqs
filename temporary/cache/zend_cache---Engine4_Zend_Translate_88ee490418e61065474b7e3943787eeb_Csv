@@ -1,0 +1,262 @@
+a:1:{s:2:"en";a:450:{s:35:"SUGGEST_ADMIN_RECOMMEND_DESCRIPTION";s:392:"Below you can browse all content of your site and recommend some of them for your members. So admin(you) recommendations will have higher priority which allows you to promote wished content(blog, event, group, page, etc). Please note that admin recommendations are always shown in the widgets so accurately choose the number of recommended items to avoid showing the same content permanently.";s:23:"suggest_Global Settings";s:15:"Global Settings";s:23:"suggest_Recommendations";s:15:"Recommendations";s:48:"suggest_Your suggestions were successfully sent.";s:45:"Your suggestions have been successfully sent.";s:39:"suggest_Your suggestions were not sent.";s:36:"Your suggestions have not been sent.";s:61:"suggest_Suggestion of this type was turned off by site admin.";s:53:"Suggestion of this type was turned off by site admin.";s:33:"suggest_Choose friends from list.";s:25:"Choose friends from list.";s:31:"suggest_widget_item_count_title";s:18:"Widget items count";s:31:"suggest_widget_item_count_descr";s:31:"Count of items shown in widgets";s:29:"suggest_global_settings_title";s:26:"Suggestion Global Settings";s:29:"suggest_global_settings_descr";s:52:"These settings affect all members in your community.";s:39:"suggest_global_setting_friend_add_descr";s:21:"Add Friend Suggestion";s:39:"suggest_global_setting_friend_add_title";s:53:"Will suggestion popup appear when user adds a friend?";s:43:"suggest_global_setting_friend_confirm_descr";s:25:"Confirm Friend Suggestion";s:43:"suggest_global_setting_friend_confirm_title";s:63:"Will suggestion popup appear when user confirms friend request?";s:41:"suggest_global_setting_popup_create_title";s:25:"Create Content Suggestion";s:41:"suggest_global_setting_popup_create_descr";s:74:"After which of the following content types creation popup box will appear?";s:39:"suggest_global_setting_popup_join_title";s:7:"Joining";s:39:"suggest_global_setting_popup_join_descr";s:69:"After when users will join to the following, will suggest box appear?";s:33:"suggest_global_setting_link_title";s:15:"Sharebar widget";s:33:"suggest_global_setting_link_descr";s:63:"Will sharebar widget be displayed on view page of the contents?";s:39:"suggest_global_setting_group_join_descr";s:21:"Join Group Suggestion";s:39:"suggest_global_setting_group_join_title";s:49:"Will suggest box appear when members join groups.";s:41:"suggest_global_setting_group_accept_descr";s:34:"Group Invitation Accept Suggestion";s:41:"suggest_global_setting_group_accept_title";s:62:"Will suggest box appear when members accept group invitations.";s:39:"suggest_global_setting_event_join_descr";s:21:"Join Event Suggestion";s:39:"suggest_global_setting_event_join_title";s:49:"Will suggest box appear when members join events.";s:41:"suggest_global_setting_event_accept_descr";s:34:"Event Invitation Accept Suggestion";s:41:"suggest_global_setting_event_accept_title";s:62:"Will suggest box appear when members accept event invitations.";s:50:"suggest_global_setting_suggest_profile_photo_title";s:35:"Allow users suggest profile photos?";s:50:"suggest_global_setting_suggest_profile_photo_descr";s:24:"Profile Photo Suggestion";s:52:"suggest_global_setting_suggest_popup_take_quiz_descr";s:20:"Take Quiz Suggestion";s:52:"suggest_global_setting_suggest_popup_take_quiz_title";s:57:"Will suggest box appear when user after user pass a quiz?";s:27:"suggest_popup_title_quiz %s";s:69:"Suggest to your friends who might be interested in playing '%s' quiz.";s:27:"suggest_popup_title_blog %s";s:69:"Suggest to your friends who might be interested in viewing '%s' blog.";s:33:"suggest_popup_title_classified %s";s:67:"Suggest to your friends who might be interested in '%s' classified.";s:28:"suggest_popup_title_video %s";s:70:"Suggest to your friends who might be interested in viewing '%s' video.";s:27:"suggest_popup_title_user %s";s:72:"Suggest to your friends who might be interested in friendship with '%s'.";s:37:"suggest_popup_title_music_playlist %s";s:71:"Suggest to your friends who might be interested in '%s' music playlist.";s:27:"suggest_popup_title_poll %s";s:68:"Suggest to your friends who might be interested in voting '%s' poll.";s:28:"suggest_popup_title_event %s";s:72:"Suggest to your friends who might be interested in attending '%s' event.";s:28:"suggest_popup_title_group %s";s:70:"Suggest to your friends who might be interested in joining '%s' group.";s:28:"suggest_popup_title_album %s";s:70:"Suggest to your friends who might be interested in viewing '%s' album.";s:34:"suggest_popup_title_album_photo %s";s:62:"Suggest to your friends who might be interested in '%s' photo.";s:31:"suggest_popup_title_question %s";s:65:"Suggest to your friends who might be interested in '%s' question.";s:30:"suggest_popup_title_article %s";s:72:"Suggest to your friends who might be interested in reading '%s' article.";s:27:"suggest_popup_title_page %s";s:61:"Suggest to your friends who might be interested in `%s` page.";s:28:"suggest_popup_title_offer %s";s:62:"Suggest to your friends who might be interested in `%s` offer.";s:22:"suggest_view_this_user";s:10:"Add friend";s:27:"suggest_cancel_suggest_user";s:6:"Ignore";s:28:"suggest_view_this_classified";s:15:"View Classified";s:33:"suggest_cancel_suggest_classified";s:6:"Ignore";s:23:"suggest_view_this_group";s:10:"Join Group";s:28:"suggest_cancel_suggest_group";s:6:"Ignore";s:23:"suggest_view_this_event";s:10:"Join Event";s:28:"suggest_cancel_suggest_event";s:6:"Ignore";s:22:"suggest_view_this_page";s:9:"View Page";s:27:"suggest_cancel_suggest_page";s:6:"Ignore";s:22:"suggest_view_this_blog";s:9:"View Blog";s:27:"suggest_cancel_suggest_blog";s:6:"Ignore";s:23:"suggest_view_this_album";s:10:"View Album";s:28:"suggest_cancel_suggest_album";s:6:"Ignore";s:23:"suggest_view_this_video";s:10:"View Video";s:28:"suggest_cancel_suggest_video";s:6:"Ignore";s:32:"suggest_view_this_music_playlist";s:15:"Listen Playlist";s:37:"suggest_cancel_suggest_music_playlist";s:6:"Ignore";s:22:"suggest_view_this_quiz";s:9:"Take Quiz";s:27:"suggest_cancel_suggest_quiz";s:6:"Ignore";s:29:"suggest_view_this_album_photo";s:10:"View Photo";s:34:"suggest_cancel_suggest_album_photo";s:6:"Ignore";s:22:"suggest_view_this_poll";s:9:"View Poll";s:27:"suggest_cancel_suggest_poll";s:6:"Ignore";s:25:"suggest_view_this_article";s:12:"View Article";s:30:"suggest_cancel_suggest_article";s:6:"Ignore";s:26:"suggest_view_this_question";s:13:"View Question";s:31:"suggest_cancel_suggest_question";s:6:"Ignore";s:39:"suggest_view_this_suggest_profile_photo";s:18:"Make Profile Photo";s:44:"suggest_cancel_suggest_suggest_profile_photo";s:6:"Ignore";s:24:"suggest_description_user";s:35:"This friend was suggested by %s %s.";s:24:"suggest_description_blog";s:33:"This blog was suggested by %s %s.";s:24:"suggest_description_page";s:33:"This page was suggested by %s %s.";s:25:"suggest_description_group";s:34:"This group was suggested by %s %s.";s:24:"suggest_description_poll";s:33:"This poll was suggested by %s %s.";s:30:"suggest_description_classified";s:39:"This classified was suggested by %s %s.";s:25:"suggest_description_event";s:34:"This event was suggested by %s %s.";s:25:"suggest_description_album";s:34:"This album was suggested by %s %s.";s:31:"suggest_description_album_photo";s:34:"This photo was suggested by %s %s.";s:34:"suggest_description_music_playlist";s:43:"This music playlist was suggested by %s %s.";s:24:"suggest_description_quiz";s:33:"This quiz was suggested by %s %s.";s:25:"suggest_description_video";s:34:"This video was suggested by %s %s.";s:28:"suggest_description_question";s:37:"This question was suggested by %s %s.";s:27:"suggest_description_article";s:36:"This article was suggested by %s %s.";s:41:"suggest_description_suggest_profile_photo";s:41:"This photo was suggested to you by %s %s.";s:47:"suggest_suggest_profile_photo_suggestions_title";a:2:{i:0;s:37:"You have %s profile photo suggestion.";i:1;s:38:"You have %s profile photo suggestions.";}s:30:"suggest_user_suggestions_title";a:2:{i:0;s:30:"You have %s friend suggestion.";i:1;s:31:"You have %s friend suggestions.";}s:36:"suggest_classified_suggestions_title";a:2:{i:0;s:34:"You have %s classified suggestion.";i:1;s:35:"You have %s classified suggestions.";}s:31:"suggest_group_suggestions_title";a:2:{i:0;s:29:"You have %s group suggestion.";i:1;s:30:"You have %s group suggestions.";}s:31:"suggest_event_suggestions_title";a:2:{i:0;s:29:"You have %s event suggestion.";i:1;s:30:"You have %s event suggestions.";}s:30:"suggest_page_suggestions_title";a:2:{i:0;s:28:"You have %s page suggestion.";i:1;s:29:"You have %s page suggestions.";}s:30:"suggest_blog_suggestions_title";a:2:{i:0;s:33:"You have %s page blog suggestion.";i:1;s:34:"You have %s page blog suggestions.";}s:31:"suggest_video_suggestions_title";a:2:{i:0;s:29:"You have %s video suggestion.";i:1;s:30:"You have %s video suggestions.";}s:31:"suggest_album_suggestions_title";a:2:{i:0;s:29:"You have %s album suggestion.";i:1;s:30:"You have %s album suggestions.";}s:37:"suggest_album_photo_suggestions_title";a:2:{i:0;s:35:"You have %s album photo suggestion.";i:1;s:36:"You have %s album photo suggestions.";}s:40:"suggest_music_playlist_suggestions_title";a:2:{i:0;s:38:"You have %s music playlist suggestion.";i:1;s:39:"You have %s music playlist suggestions.";}s:34:"suggest_playlist_suggestions_title";a:2:{i:0;s:37:"You have %s page playlist suggestion.";i:1;s:38:"You have %s page playlist suggestions.";}s:30:"suggest_quiz_suggestions_title";a:2:{i:0;s:28:"You have %s quiz suggestion.";i:1;s:29:"You have %s quiz suggestions.";}s:30:"suggest_poll_suggestions_title";a:2:{i:0;s:28:"You have %s poll suggestion.";i:1;s:29:"You have %s poll suggestions.";}s:34:"suggest_question_suggestions_title";a:2:{i:0;s:32:"You have %s question suggestion.";i:1;s:33:"You have %s question suggestions.";}s:33:"suggest_article_suggestions_title";a:2:{i:0;s:31:"You have %s article suggestion.";i:1;s:32:"You have %s article suggestions.";}s:28:"suggest_suggests_page_header";s:11:"Suggestions";s:33:"suggest_suggests_page_description";s:67:"Below you can see all suggestions sent to you by community members.";s:20:"suggest_menu_Suggest";s:12:"HE - Suggest";s:30:"suggest_%s view | posted by %s";a:2:{i:0;s:22:"%s view | posted by %s";i:1;s:23:"%s views | posted by %s";}s:27:"suggest_%s member led by %s";a:2:{i:0;s:19:"%s member led by %s";i:1;s:20:"%s members led by %s";}s:26:"suggest_%s guest led by %s";a:2:{i:0;s:18:"%s guest led by %s";i:1;s:19:"%s guests led by %s";}s:30:"suggest_%s vote | posted by %s";a:2:{i:0;s:22:"%s vote | posted by %s";i:1;s:23:"%s votes | posted by %s";}s:28:"ACTIVITY_TYPE_SUGGEST_ALBUMS";s:32:"When member suggest you an album";s:33:"ACTIVITY_TYPE_SUGGEST_ALBUM_PHOTO";s:40:"When people suggest to me an album photo";s:26:"ACTIVITY_TYPE_SUGGEST_BLOG";s:32:"When people suggest to me a blog";s:32:"ACTIVITY_TYPE_SUGGEST_CLASSIFIED";s:38:"When people suggest to me a classified";s:27:"ACTIVITY_TYPE_SUGGEST_EVENT";s:34:"When people suggest to me an event";s:27:"ACTIVITY_TYPE_SUGGEST_GROUP";s:33:"When people suggest to me a group";s:36:"ACTIVITY_TYPE_SUGGEST_MUSIC_PLAYLIST";s:42:"When people suggest to me a music playlist";s:26:"ACTIVITY_TYPE_SUGGEST_POLL";s:32:"When people suggest to me a poll";s:26:"ACTIVITY_TYPE_SUGGEST_QUIZ";s:32:"When people suggest to me a quiz";s:43:"ACTIVITY_TYPE_SUGGEST_SUGGEST_PROFILE_PHOTO";s:41:"When people suggest to me a profile photo";s:26:"ACTIVITY_TYPE_SUGGEST_USER";s:32:"When people suggest to me a user";s:27:"ACTIVITY_TYPE_SUGGEST_VIDEO";s:33:"When people suggest to me a video";s:29:"ACTIVITY_TYPE_SUGGEST_ARTICLE";s:36:"When people suggest to me an article";s:30:"ACTIVITY_TYPE_SUGGEST_QUESTION";s:36:"When people suggest to me a question";s:60:"{item:$subject} has suggested to you a {item:$object:album}.";s:60:"{item:$subject} has suggested to you a {item:$object:album}.";s:60:"{item:$subject} has suggested to you a {item:$object:photo}.";s:60:"{item:$subject} has suggested to you a {item:$object:photo}.";s:59:"{item:$subject} has suggested to you a {item:$object:blog}.";s:59:"{item:$subject} has suggested to you a {item:$object:blog}.";s:65:"{item:$subject} has suggested to you a {item:$object:classified}.";s:65:"{item:$subject} has suggested to you a {item:$object:classified}.";s:60:"{item:$subject} has suggested to you a {item:$object:event}.";s:60:"{item:$subject} has suggested to you a {item:$object:event}.";s:60:"{item:$subject} has suggested to you a {item:$object:group}.";s:60:"{item:$subject} has suggested to you a {item:$object:group}.";s:59:"{item:$subject} has suggested to you a {item:$object:poll}.";s:59:"{item:$subject} has suggested to you a {item:$object:poll}.";s:59:"{item:$subject} has suggested to you a {item:$object:quiz}.";s:59:"{item:$subject} has suggested to you a {item:$object:quiz}.";s:67:"{item:$subject} has suggested to you a {item:$object:profilephoto}.";s:67:"{item:$subject} has suggested to you a {item:$object:profilephoto}.";s:65:"{item:$subject} has suggested to you a new {item:$object:friend}.";s:65:"{item:$subject} has suggested to you a new {item:$object:friend}.";s:60:"{item:$subject} has suggested to you a {item:$object:video}.";s:60:"{item:$subject} has suggested to you a {item:$object:video}.";s:62:"{item:$subject} has suggested to you a {item:$object:article}.";s:62:"{item:$subject} has suggested to you a {item:$object:article}.";s:63:"{item:$subject} has suggested to you a {item:$object:question}.";s:63:"{item:$subject} has suggested to you a {item:$object:question}.";s:59:"{item:$subject} has suggested to you a {item:$object:page}.";s:59:"{item:$subject} has suggested to you a {item:$object:page}.";s:59:"{item:$subject} has suggested to you a {item:$object:user}.";s:59:"{item:$subject} has suggested to you a {item:$object:user}.";s:12:"profilephoto";s:13:"profile photo";s:33:"suggest_Suggest %s profile photo.";s:25:"Suggest %s profile photo.";s:29:"suggest_Suggest Profile Photo";s:21:"Suggest Profile Photo";s:33:"suggest_profile_photo_form_header";s:11:"File Upload";s:38:"suggest_profile_photo_form_description";s:180:"Please upload photo which you would like to suggest. Click "Add Photos" to select a photo from your computer, after you have selected the photo, it will begin to upload right away.";s:31:"suggest_profile_photo_form_file";s:15:"Upload a Photo:";s:39:"suggest_profile_photo_fancy_description";s:180:"Please upload photo which you would like to suggest. Click "Add Photos" to select a photo from your computer, after you have selected the photo, it will begin to upload right away.";s:32:"suggest_profile_photo_fancy_link";s:12:"Upload Photo";s:32:"suggest_global_setting_mix_title";s:21:"Mixed Recommendations";s:32:"suggest_global_setting_mix_descr";s:81:"Which of the following instances should be shown on Mixed Recommendations widget?";s:23:"suggest_fb_invite_title";s:33:"Invite Your Friends from Facebook";s:21:"ACTIVITY_TYPE_SUGGEST";s:34:"When people suggest to me a friend";s:27:"_EMAIL_NOTIFY_SUGGEST_TITLE";s:17:"Friend Suggestion";s:33:"_EMAIL_NOTIFY_SUGGEST_DESCRIPTION";s:67:"This email is sent to the member when someone suggest him a friend.";s:29:"_EMAIL_NOTIFY_SUGGEST_SUBJECT";s:16:"Friend Suggested";s:26:"_EMAIL_NOTIFY_SUGGEST_BODY";s:221:"[header]
+
+"[sender_title]" has suggested to you to become friend with "[object_title]".
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:27:"ACTIVITY_TYPE_SUGGEST_ALBUM";s:34:"When people suggest to me an album";s:33:"_EMAIL_NOTIFY_SUGGEST_ALBUM_TITLE";s:16:"Album Suggestion";s:39:"_EMAIL_NOTIFY_SUGGEST_ALBUM_DESCRIPTION";s:67:"This email is sent to the member when someone suggest him an album.";s:35:"_EMAIL_NOTIFY_SUGGEST_ALBUM_SUBJECT";s:15:"Album Suggested";s:32:"_EMAIL_NOTIFY_SUGGEST_ALBUM_BODY";s:213:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" album.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:39:"_EMAIL_NOTIFY_SUGGEST_ALBUM_PHOTO_TITLE";s:22:"Album Photo Suggestion";s:45:"_EMAIL_NOTIFY_SUGGEST_ALBUM_PHOTO_DESCRIPTION";s:73:"This email is sent to the member when someone suggest him an album photo.";s:41:"_EMAIL_NOTIFY_SUGGEST_ALBUM_PHOTO_SUBJECT";s:21:"Album Photo Suggested";s:38:"_EMAIL_NOTIFY_SUGGEST_ALBUM_PHOTO_BODY";s:213:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" photo.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:35:"_EMAIL_NOTIFY_SUGGEST_ARTICLE_TITLE";s:18:"Article Suggestion";s:41:"_EMAIL_NOTIFY_SUGGEST_ARTICLE_DESCRIPTION";s:69:"This email is sent to the member when someone suggest him an article.";s:37:"_EMAIL_NOTIFY_SUGGEST_ARTICLE_SUBJECT";s:17:"Article Suggested";s:34:"_EMAIL_NOTIFY_SUGGEST_ARTICLE_BODY";s:215:"[header]
+
+"[sender_title]" has suggested to you to read "[object_title]" article.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:32:"_EMAIL_NOTIFY_SUGGEST_BLOG_TITLE";s:15:"Blog Suggestion";s:38:"_EMAIL_NOTIFY_SUGGEST_BLOG_DESCRIPTION";s:65:"This email is sent to the member when someone suggest him a blog.";s:34:"_EMAIL_NOTIFY_SUGGEST_BLOG_SUBJECT";s:14:"Blog Suggested";s:31:"_EMAIL_NOTIFY_SUGGEST_BLOG_BODY";s:212:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" blog.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:38:"_EMAIL_NOTIFY_SUGGEST_CLASSIFIED_TITLE";s:21:"Classified Suggestion";s:44:"_EMAIL_NOTIFY_SUGGEST_CLASSIFIED_DESCRIPTION";s:71:"This email is sent to the member when someone suggest him a classified.";s:40:"_EMAIL_NOTIFY_SUGGEST_CLASSIFIED_SUBJECT";s:20:"Classified Suggested";s:37:"_EMAIL_NOTIFY_SUGGEST_CLASSIFIED_BODY";s:218:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" classified.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:33:"_EMAIL_NOTIFY_SUGGEST_EVENT_TITLE";s:16:"Event Suggestion";s:39:"_EMAIL_NOTIFY_SUGGEST_EVENT_DESCRIPTION";s:67:"This email is sent to the member when someone suggest him an event.";s:35:"_EMAIL_NOTIFY_SUGGEST_EVENT_SUBJECT";s:15:"Event Suggested";s:32:"_EMAIL_NOTIFY_SUGGEST_EVENT_BODY";s:215:"[header]
+
+"[sender_title]" has suggested to you to attend "[object_title]" event.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:33:"_EMAIL_NOTIFY_SUGGEST_GROUP_TITLE";s:16:"Group Suggestion";s:39:"_EMAIL_NOTIFY_SUGGEST_GROUP_DESCRIPTION";s:66:"This email is sent to the member when someone suggest him a group.";s:35:"_EMAIL_NOTIFY_SUGGEST_GROUP_SUBJECT";s:15:"Group Suggested";s:32:"_EMAIL_NOTIFY_SUGGEST_GROUP_BODY";s:213:"[header]
+
+"[sender_title]" has suggested to you to join "[object_title]" group.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:42:"_EMAIL_NOTIFY_SUGGEST_MUSIC_PLAYLIST_TITLE";s:25:"Music Playlist Suggestion";s:48:"_EMAIL_NOTIFY_SUGGEST_MUSIC_PLAYLIST_DESCRIPTION";s:75:"This email is sent to the member when someone suggest him a music playlist.";s:44:"_EMAIL_NOTIFY_SUGGEST_MUSIC_PLAYLIST_SUBJECT";s:24:"Music Playlist Suggested";s:41:"_EMAIL_NOTIFY_SUGGEST_MUSIC_PLAYLIST_BODY";s:218:"[header]
+
+"[sender_title]" has suggested to you to listen "[object_title]" playlist.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:32:"_EMAIL_NOTIFY_SUGGEST_POLL_TITLE";s:15:"Poll Suggestion";s:38:"_EMAIL_NOTIFY_SUGGEST_POLL_DESCRIPTION";s:65:"This email is sent to the member when someone suggest him a poll.";s:34:"_EMAIL_NOTIFY_SUGGEST_POLL_SUBJECT";s:14:"Poll Suggested";s:31:"_EMAIL_NOTIFY_SUGGEST_POLL_BODY";s:212:"[header]
+
+"[sender_title]" has suggested to you to vote "[object_title]" poll.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:36:"_EMAIL_NOTIFY_SUGGEST_QUESTION_TITLE";s:19:"Question Suggestion";s:42:"_EMAIL_NOTIFY_SUGGEST_QUESTION_DESCRIPTION";s:69:"This email is sent to the member when someone suggest him a question.";s:38:"_EMAIL_NOTIFY_SUGGEST_QUESTION_SUBJECT";s:18:"Question Suggested";s:35:"_EMAIL_NOTIFY_SUGGEST_QUESTION_BODY";s:216:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" question.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:32:"_EMAIL_NOTIFY_SUGGEST_QUIZ_TITLE";s:15:"Quiz Suggestion";s:38:"_EMAIL_NOTIFY_SUGGEST_QUIZ_DESCRIPTION";s:65:"This email is sent to the member when someone suggest him a quiz.";s:34:"_EMAIL_NOTIFY_SUGGEST_QUIZ_SUBJECT";s:14:"Quiz Suggested";s:31:"_EMAIL_NOTIFY_SUGGEST_QUIZ_BODY";s:212:"[header]
+
+"[sender_title]" has suggested to you to take "[object_title]" quiz.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:49:"_EMAIL_NOTIFY_SUGGEST_SUGGEST_PROFILE_PHOTO_TITLE";s:24:"Profile Photo Suggestion";s:55:"_EMAIL_NOTIFY_SUGGEST_SUGGEST_PROFILE_PHOTO_DESCRIPTION";s:74:"This email is sent to the member when someone suggest him a profile photo.";s:51:"_EMAIL_NOTIFY_SUGGEST_SUGGEST_PROFILE_PHOTO_SUBJECT";s:23:"Profile Photo Suggested";s:48:"_EMAIL_NOTIFY_SUGGEST_SUGGEST_PROFILE_PHOTO_BODY";s:195:"[header]
+
+"[sender_title]" has suggested you a profile photo.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:33:"_EMAIL_NOTIFY_SUGGEST_VIDEO_TITLE";s:16:"Video Suggestion";s:39:"_EMAIL_NOTIFY_SUGGEST_VIDEO_DESCRIPTION";s:66:"This email is sent to the member when someone suggest him a video.";s:35:"_EMAIL_NOTIFY_SUGGEST_VIDEO_SUBJECT";s:15:"Video Suggested";s:32:"_EMAIL_NOTIFY_SUGGEST_VIDEO_BODY";s:213:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" video.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:26:"ACTIVITY_TYPE_SUGGEST_PAGE";s:32:"When people suggest to me a page";s:32:"_EMAIL_NOTIFY_SUGGEST_PAGE_TITLE";s:15:"Page Suggestion";s:38:"_EMAIL_NOTIFY_SUGGEST_PAGE_DESCRIPTION";s:65:"This email is sent to the member when someone suggest him a page.";s:34:"_EMAIL_NOTIFY_SUGGEST_PAGE_SUBJECT";s:14:"Page Suggested";s:31:"_EMAIL_NOTIFY_SUGGEST_PAGE_BODY";s:212:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" page.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:32:"_EMAIL_NOTIFY_SUGGEST_USER_TITLE";s:15:"User Suggestion";s:38:"_EMAIL_NOTIFY_SUGGEST_USER_DESCRIPTION";s:65:"This email is sent to the member when someone suggest him a user.";s:34:"_EMAIL_NOTIFY_SUGGEST_USER_SUBJECT";s:14:"User Suggested";s:31:"_EMAIL_NOTIFY_SUGGEST_USER_BODY";s:212:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" user.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:30:"ACTIVITY_TYPE_SUGGEST_PLAYLIST";s:42:"When people suggest to me a music playlist";s:36:"_EMAIL_NOTIFY_SUGGEST_PLAYLIST_TITLE";s:30:"Page Music Playlist Suggestion";s:42:"_EMAIL_NOTIFY_SUGGEST_PLAYLIST_DESCRIPTION";s:75:"This email is sent to the member when someone suggest him a music playlist.";s:38:"_EMAIL_NOTIFY_SUGGEST_PLAYLIST_SUBJECT";s:24:"Music Playlist Suggested";s:35:"_EMAIL_NOTIFY_SUGGEST_PLAYLIST_BODY";s:218:"[header]
+
+"[sender_title]" has suggested to you to listen "[object_title]" playlist.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:30:"ACTIVITY_TYPE_SUGGEST_PAGEBLOG";s:37:"When people suggest to me a page blog";s:36:"_EMAIL_NOTIFY_SUGGEST_PAGEBLOG_TITLE";s:20:"Page Blog Suggestion";s:42:"_EMAIL_NOTIFY_SUGGEST_PAGEBLOG_DESCRIPTION";s:70:"This email is sent to the member when someone suggest him a page blog.";s:38:"_EMAIL_NOTIFY_SUGGEST_PAGEBLOG_SUBJECT";s:19:"Page Blog Suggested";s:35:"_EMAIL_NOTIFY_SUGGEST_PAGEBLOG_BODY";s:217:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" page blog.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:31:"ACTIVITY_TYPE_SUGGEST_PAGEEVENT";s:44:"When people suggest to me an page page event";s:37:"_EMAIL_NOTIFY_SUGGEST_PAGEEVENT_TITLE";s:21:"Page Event Suggestion";s:43:"_EMAIL_NOTIFY_SUGGEST_PAGEEVENT_DESCRIPTION";s:72:"This email is sent to the member when someone suggest him an page event.";s:39:"_EMAIL_NOTIFY_SUGGEST_PAGEEVENT_SUBJECT";s:20:"Page Event Suggested";s:36:"_EMAIL_NOTIFY_SUGGEST_PAGEEVENT_BODY";s:220:"[header]
+
+"[sender_title]" has suggested to you to attend "[object_title]" page event.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:31:"ACTIVITY_TYPE_SUGGEST_PAGEVIDEO";s:38:"When people suggest to me a page video";s:37:"_EMAIL_NOTIFY_SUGGEST_PAGEVIDEO_TITLE";s:21:"Page Video Suggestion";s:43:"_EMAIL_NOTIFY_SUGGEST_PAGEVIDEO_DESCRIPTION";s:71:"This email is sent to the member when someone suggest him a page video.";s:39:"_EMAIL_NOTIFY_SUGGEST_PAGEVIDEO_SUBJECT";s:20:"Page Video Suggested";s:36:"_EMAIL_NOTIFY_SUGGEST_PAGEVIDEO_BODY";s:218:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" page video.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:34:"ACTIVITY_TYPE_SUGGEST_PAGEDOCUMENT";s:47:"When people suggest to me an page page document";s:40:"_EMAIL_NOTIFY_SUGGEST_PAGEDOCUMENT_TITLE";s:24:"Page Document Suggestion";s:46:"_EMAIL_NOTIFY_SUGGEST_PAGEDOCUMENT_DESCRIPTION";s:75:"This email is sent to the member when someone suggest him an page document.";s:42:"_EMAIL_NOTIFY_SUGGEST_PAGEDOCUMENT_SUBJECT";s:23:"Page Document Suggested";s:39:"_EMAIL_NOTIFY_SUGGEST_PAGEDOCUMENT_BODY";s:221:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" page document.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:31:"ACTIVITY_TYPE_SUGGEST_PAGEALBUM";s:39:"When people suggest to me an page album";s:37:"_EMAIL_NOTIFY_SUGGEST_PAGEALBUM_TITLE";s:21:"Page Album Suggestion";s:43:"_EMAIL_NOTIFY_SUGGEST_PAGEALBUM_DESCRIPTION";s:72:"This email is sent to the member when someone suggest him an page album.";s:39:"_EMAIL_NOTIFY_SUGGEST_PAGEALBUM_SUBJECT";s:20:"Page Album Suggested";s:36:"_EMAIL_NOTIFY_SUGGEST_PAGEALBUM_BODY";s:218:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" page album.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:34:"ACTIVITY_TYPE_SUGGEST_DISSCUSSIONS";s:39:"When people suggest to me an page album";s:40:"_EMAIL_NOTIFY_SUGGEST_DISSCUSSIONS_TITLE";s:22:"Discussions Suggestion";s:46:"_EMAIL_NOTIFY_SUGGEST_DISSCUSSIONS_DESCRIPTION";s:73:"This email is sent to the member when someone suggest him an discussions.";s:42:"_EMAIL_NOTIFY_SUGGEST_DISSCUSSIONS_SUBJECT";s:21:"Discussions Suggested";s:39:"_EMAIL_NOTIFY_SUGGEST_DISSCUSSIONS_BODY";s:219:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" discussions.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:35:"ACTIVITY_TYPE_SUGGEST_YNMUSIC_ALBUM";s:42:"When people suggest to me a music playlist";s:41:"_EMAIL_NOTIFY_SUGGEST_YNMUSIC_ALBUM_TITLE";s:41:"Music Playlist Suggestion (YouNet Plugin)";s:47:"_EMAIL_NOTIFY_SUGGEST_YNMUSIC_ALBUM_DESCRIPTION";s:75:"This email is sent to the member when someone suggest him a music playlist.";s:43:"_EMAIL_NOTIFY_SUGGEST_YNMUSIC_ALBUM_SUBJECT";s:24:"Music Playlist Suggested";s:40:"_EMAIL_NOTIFY_SUGGEST_YNMUSIC_ALBUM_BODY";s:218:"[header]
+
+"[sender_title]" has suggested to you to listen "[object_title]" playlist.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:31:"ACTIVITY_TYPE_SUGGEST_AVP_VIDEO";s:38:"When people suggest to me a page video";s:37:"_EMAIL_NOTIFY_SUGGEST_AVP_VIDEO_TITLE";s:35:"Video Suggestion (AVP Video Plugin)";s:43:"_EMAIL_NOTIFY_SUGGEST_AVP_VIDEO_DESCRIPTION";s:71:"This email is sent to the member when someone suggest him a page video.";s:39:"_EMAIL_NOTIFY_SUGGEST_AVP_VIDEO_SUBJECT";s:20:"Page Video Suggested";s:36:"_EMAIL_NOTIFY_SUGGEST_AVP_VIDEO_BODY";s:218:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" page video.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:32:"ACTIVITY_TYPE_SUGGEST_ARTARTICLE";s:36:"When people suggest to me an article";s:38:"_EMAIL_NOTIFY_SUGGEST_ARTARTICLE_TITLE";s:27:"Advanced Article Suggestion";s:44:"_EMAIL_NOTIFY_SUGGEST_ARTARTICLE_DESCRIPTION";s:69:"This email is sent to the member when someone suggest him an article.";s:40:"_EMAIL_NOTIFY_SUGGEST_ARTARTICLE_SUBJECT";s:17:"Article Suggested";s:37:"_EMAIL_NOTIFY_SUGGEST_ARTARTICLE_BODY";s:215:"[header]
+
+"[sender_title]" has suggested to you to read "[object_title]" article.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:34:"ACTIVITY_TYPE_SUGGEST_LIST_LISTING";s:40:"When people suggest to me a page listing";s:40:"_EMAIL_NOTIFY_SUGGEST_LIST_LISTING_TITLE";s:18:"Listing Suggestion";s:46:"_EMAIL_NOTIFY_SUGGEST_LIST_LISTING_DESCRIPTION";s:68:"This email is sent to the member when someone suggest him a listing.";s:42:"_EMAIL_NOTIFY_SUGGEST_LIST_LISTING_SUBJECT";s:17:"Listing Suggested";s:39:"_EMAIL_NOTIFY_SUGGEST_LIST_LISTING_BODY";s:215:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" listing.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:31:"ACTIVITY_TYPE_SUGGEST_DOCUMENT"";s:42:"When people suggest to me an page document";s:36:"_EMAIL_NOTIFY_SUGGEST_DOCUMENT_TITLE";s:24:"Page Document Suggestion";s:42:"_EMAIL_NOTIFY_SUGGEST_DOCUMENT_DESCRIPTION";s:70:"This email is sent to the member when someone suggest him an document.";s:38:"_EMAIL_NOTIFY_SUGGEST_DOCUMENT_SUBJECT";s:18:"Document Suggested";s:35:"_EMAIL_NOTIFY_SUGGEST_DOCUMENT_BODY";s:216:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" document.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:26:"ACTIVITY_TYPE_SUGGEST_JOB"";s:32:"When people suggest to me an job";s:31:"_EMAIL_NOTIFY_SUGGEST_JOB_TITLE";s:24:"Page Document Suggestion";s:37:"_EMAIL_NOTIFY_SUGGEST_JOB_DESCRIPTION";s:70:"This email is sent to the member when someone suggest him an document.";s:33:"_EMAIL_NOTIFY_SUGGEST_JOB_SUBJECT";s:18:"Document Suggested";s:17:"Recommended Blogs";s:17:"Recommended Blogs";s:27:"Displays recommended blogs.";s:27:"Displays recommended blogs.";s:33:"Help friends to find more friends";s:33:"Help friends to find more friends";s:57:"Displays friends and allows to recommend them to friends.";s:57:"Displays friends and allows to recommend them to friends.";s:23:"Recommend Profile Photo";s:23:"Recommend Profile Photo";s:66:"Displays friends with no photo and allows to recommend them photo.";s:66:"Displays friends with no photo and allows to recommend them photo.";s:18:"Recommended Events";s:18:"Recommended Events";s:61:"Displays recommended events and allows to easily join events.";s:61:"Displays recommended events and allows to easily join events.";s:19:"Recommended Members";s:19:"Recommended Members";s:51:"Displays recommended members to add them as friend.";s:51:"Displays recommended members to add them as friend.";s:18:"Recommended Groups";s:18:"Recommended Groups";s:61:"Displays recommended groups and allows to easily join groups.";s:61:"Displays recommended groups and allows to easily join groups.";s:17:"Recommended Pages";s:17:"Recommended Pages";s:80:"Displays recommended pages. Available if you have Pages plugin from Hire-Experts";s:80:"Displays recommended pages. Available if you have Pages plugin from Hire-Experts";s:23:"Recommended Classifieds";s:23:"Recommended Classifieds";s:33:"Displays recommended classifieds.";s:33:"Displays recommended classifieds.";s:18:"Recommended Albums";s:18:"Recommended Albums";s:28:"Displays recommended albums.";s:28:"Displays recommended albums.";s:18:"Recommended Photos";s:18:"Recommended Photos";s:34:"Displays recommended album photos.";s:34:"Displays recommended album photos.";s:19:"Recommended Quizzes";s:19:"Recommended Quizzes";s:84:"Displays recommended quizzes. Available if you have Quizzes plugin from Hire-Experts";s:84:"Displays recommended quizzes. Available if you have Quizzes plugin from Hire-Experts";s:18:"Recommended Videos";s:18:"Recommended Videos";s:28:"Displays recommended videos.";s:28:"Displays recommended videos.";s:17:"Recommended Polls";s:17:"Recommended Polls";s:27:"Displays recommended polls.";s:27:"Displays recommended polls.";s:17:"Recommended Music";s:17:"Recommended Music";s:26:"Display recommended music.";s:26:"Display recommended music.";s:20:"Recommended Articles";s:20:"Recommended Articles";s:67:"Display recommended articles. Available if you have Articles plugin";s:67:"Display recommended articles. Available if you have Articles plugin";s:21:"Recommended Questions";s:21:"Recommended Questions";s:91:"Display recommended questions. Available if you have Question & Answers plugin from WebHive";s:91:"Display recommended questions. Available if you have Question & Answers plugin from WebHive";s:21:"Mixed Recommendations";s:21:"Mixed Recommendations";s:83:"Displays mixed recommendations which includes as blogs, events, groups, pages, etc.";s:83:"Displays mixed recommendations which includes as blogs, events, groups, pages, etc.";s:40:"SUGGEST_There are no friends to suggest.";s:32:"There are no friends to suggest.";s:29:"SUGGEST_FACEBOOK_APP_ID_TITLE";s:15:"Facebook App ID";s:28:"SUGGEST_FACEBOOK_APP_ID_DESC";s:155:"If you would like Facebook Like button then create an Application through the <a href="https://developers.facebook.com/apps" target="_blank">Apps</a> page.";s:14:"Suggest Plugin";s:14:"Suggest Plugin";s:27:"Manage Your Recommendations";s:27:"Manage Your Recommendations";s:30:"What do you want to recommend?";s:30:"What do you want to recommend?";s:22:"Show only recommended?";s:22:"Show only recommended?";s:9:"Recommend";s:9:"Recommend";s:45:"pagetitle-suggest-index-admin-recommendations";s:14:"Suggest Plugin";s:36:"pagetitle-suggest-index-admin-global";s:14:"Suggest Plugin";s:4:"Blog";s:4:"Blog";s:8:"Playlist";s:8:"Playlist";s:4:"Page";s:4:"Page";s:11:"Album Photo";s:11:"Album Photo";s:36:"suggest_popup_title_store_product %s";s:64:"Suggest to your friends who might be interested in '%s' product.";s:31:"suggest_view_this_store_product";s:12:"View Product";s:36:"suggest_cancel_suggest_store_product";s:6:"Ignore";s:33:"suggest_description_store_product";s:36:"This product was suggested by %s %s.";s:39:"suggest_store_product_suggestions_title";a:3:{i:0;s:31:"You have %s product suggestion.";i:1;s:32:"You have %s product suggestions.";i:2;s:0:"";}s:35:"ACTIVITY_TYPE_SUGGEST_STORE_PRODUCT";s:35:"When people suggest to me a product";s:62:"{item:$subject} has suggested to you a {item:$object:product}.";s:62:"{item:$subject} has suggested to you a {item:$object:product}.";s:41:"_EMAIL_NOTIFY_SUGGEST_STORE_PRODUCT_TITLE";s:18:"Product Suggestion";s:47:"_EMAIL_NOTIFY_SUGGEST_STORE_PRODUCT_DESCRIPTION";s:68:"This email is sent to the member when someone suggest him a product.";s:43:"_EMAIL_NOTIFY_SUGGEST_STORE_PRODUCT_SUBJECT";s:17:"Product Suggested";s:40:"_EMAIL_NOTIFY_SUGGEST_STORE_PRODUCT_BODY";s:215:"[header]
+
+"[sender_title]" has suggested to you to view "[object_title]" product.
+
+Please click the following link to view it:
+
+<a href='http://[host][object_link]'>http://[host][object_link]</a>
+
+[footer]
+";s:34:"SUGGEST_Help %s find more friends.";s:26:"Help %s find more friends.";s:18:"Suggest To Friends";s:18:"Suggest To Friends";s:26:"Suggest %s to your friends";s:26:"Suggest %s to your friends";s:13:"Store Product";s:13:"Store Product";s:11:"Unrecommend";s:11:"Unrecommend";s:5:"Tweet";s:5:"Tweet";s:5:"share";s:5:"share";s:7:"suggest";s:7:"suggest";s:19:"Suggest To Facebook";s:19:"Suggest To Facebook";s:15:"%s suggest page";a:2:{i:0;s:15:"%s suggest page";i:1;s:16:"%s suggest pages";}s:15:"%s suggest blog";a:2:{i:0;s:15:"%s suggest blog";i:1;s:16:"%s suggest blogs";}s:16:"%s suggest event";a:2:{i:0;s:16:"%s suggest event";i:1;s:17:"%s suggest events";}s:16:"%s suggest group";a:2:{i:0;s:16:"%s suggest group";i:1;s:17:"%s suggest groups";}s:15:"%s suggest poll";a:2:{i:0;s:15:"%s suggest poll";i:1;s:16:"%s suggest polls";}s:16:"%s suggest video";a:2:{i:0;s:16:"%s suggest video";i:1;s:16:"%s suggest video";}s:25:"%s suggest music_playlist";a:2:{i:0;s:25:"%s suggest music playlist";i:1;s:18:"%s music playlists";}s:15:"%s suggest quiz";a:2:{i:0;s:15:"%s suggest quiz";i:1;s:15:"%s suggest quiz";}s:21:"%s suggest classified";a:2:{i:0;s:21:"%s suggest classified";i:1;s:21:"%s suggest classified";}s:16:"%s suggest album";a:2:{i:0;s:16:"%s suggest album";i:1;s:17:"%s suggest albums";}s:22:"%s suggest album_photo";a:2:{i:0;s:22:"%s suggest album photo";i:1;s:23:"%s suggest albums photo";}s:18:"%s suggest article";a:2:{i:0;s:18:"%s suggest article";i:1;s:19:"%s suggest articles";}s:19:"%s suggest question";a:2:{i:0;s:19:"%s suggest question";i:1;s:20:"%s suggest questions";}s:25:"SUGGEST_suggest_page_like";s:4:"Like";s:27:"SUGGEST_suggest_page_unlike";s:6:"Unlike";s:19:"%s suggest pageblog";a:2:{i:0;s:20:"%s suggest page blog";i:1;s:21:"%s suggest page blogs";}s:23:"%s suggest pagedocument";a:2:{i:0;s:24:"%s suggest page document";i:1;s:25:"%s suggest page documents";}s:20:"%s suggest pageevent";a:2:{i:0;s:20:"%s suggest pag event";i:1;s:21:"%s suggest page vents";}s:20:"%s suggest pagealbum";a:2:{i:0;s:21:"%s suggest page album";i:1;s:22:"%s suggest page albums";}s:20:"%s suggest pagevideo";a:2:{i:0;s:21:"%s suggest page video";i:1;s:22:"%s suggest page videos";}s:19:"%s suggest playlist";a:2:{i:0;s:19:"%s suggest playlist";i:1;s:20:"%s suggest playlists";}s:34:"%s suggest pagediscussion_pagepost";a:2:{i:0;s:26:"%s suggest page discussion";i:1;s:27:"%s suggest page discussions";}s:21:"%s suggest artarticle";a:2:{i:0;s:18:"%s suggest article";i:1;s:19:"%s suggest articles";}s:24:"%s suggest ynmusic_album";a:2:{i:0;s:22:"%s suggest music album";i:1;s:23:"%s suggest music albums";}s:23:"%s suggest list_listing";a:2:{i:0;s:18:"%s suggest listing";i:1;s:19:"%s suggest listings";}s:19:"%s suggest document";a:2:{i:0;s:19:"%s suggest document";i:1;s:20:"%s suggest documents";}s:31:"suggest_popup_title_playlist %s";s:70:"Suggest to your friends who might be interested in `%s` page playlist.";s:32:"suggest_popup_title_pagevideo %s";s:67:"Suggest to your friends who might be interested in `%s` page video.";s:31:"suggest_popup_title_pageblog %s";s:66:"Suggest to your friends who might be interested in `%s` page blog.";s:32:"suggest_popup_title_pagealbum %s";s:67:"Suggest to your friends who might be interested in `%s` page album.";s:35:"suggest_popup_title_pagedocument %s";s:70:"Suggest to your friends who might be interested in `%s` page document.";s:32:"suggest_popup_title_pageevent %s";s:67:"Suggest to your friends who might be interested in `%s` page event.";s:32:"suggest_popup_title_avp_video %s";s:62:"Suggest to your friends who might be interested in `%s` video.";s:38:"suggest_pageevent_suggestions_title %s";s:67:"Suggest to your friends who might be interested in `%s` page event.";s:36:"suggest_popup_title_ynmusic_album %s";s:65:"Suggest to your friends who might be interested in `%s` playlist.";s:35:"suggest_popup_title_list_listing %s";s:64:"Suggest to your friends who might be interested in `%s` listing.";s:31:"suggest_popup_title_document %s";s:65:"Suggest to your friends who might be interested in `%s` document.";s:49:"suggest_pagediscussion_pagepost_suggestions_title";s:70:"Suggest to your friends who might be interested in %s page discussion.";s:35:"suggest_pagealbum_suggestions_title";a:2:{i:0;s:29:"You have %s album suggestion.";i:1;s:35:"You have %s page album suggestions.";}s:35:"suggest_pagevideo_suggestions_title";a:2:{i:0;s:34:"You have %s page video suggestion.";i:1;s:35:"You have %s page video suggestions.";}s:38:"suggest_pagedocument_suggestions_title";a:2:{i:0;s:37:"You have %s page document suggestion.";i:1;s:38:"You have %s page document suggestions.";}s:35:"suggest_pageevent_suggestions_title";a:2:{i:0;s:34:"You have %s page event suggestion.";i:1;s:35:"You have %s page event suggestions.";}s:35:"suggest_avp_video_suggestions_title";a:2:{i:0;s:34:"You have %s page video suggestion.";i:1;s:30:"You have %s video suggestions.";}s:36:"suggest_artarticle_suggestions_title";a:2:{i:0;s:31:"You have %s article suggestion.";i:1;s:32:"You have %s article suggestions.";}s:39:"suggest_ynmusic_album_suggestions_title";a:2:{i:0;s:38:"You have %s music playlist suggestion.";i:1;s:39:"You have %s music playlist suggestions.";}s:38:"suggest_list_listing_suggestions_title";a:2:{i:0;s:31:"You have %s listing suggestion.";i:1;s:32:"You have %s listing suggestions.";}s:34:"suggest_document_suggestions_title";a:2:{i:0;s:32:"You have %s document suggestion.";i:1;s:34:"You have %s  document suggestions.";}s:27:"suggest_view_this_pageevent";s:10:"Join Event";s:32:"suggest_cancel_suggest_pageevent";s:6:"Ignore";s:26:"suggest_view_this_pageblog";s:14:"View Page Blog";s:31:"suggest_cancel_suggest_pageblog";s:6:"Ignore";s:30:"suggest_view_this_pagedocument";s:14:"View Page Docs";s:35:"suggest_cancel_suggest_pagedocument";s:6:"Ignore";s:27:"suggest_view_this_pagealbum";s:10:"View Album";s:32:"suggest_cancel_suggest_pagealbum";s:6:"Ignore";s:27:"suggest_view_this_pagevideo";s:10:"View Video";s:32:"suggest_cancel_suggest_pagevideo";s:6:"Ignore";s:27:"suggest_view_this_avp_video";s:10:"View Video";s:32:"suggest_cancel_suggest_avp_video";s:6:"Ignore";s:26:"suggest_view_this_playlist";s:15:"Listen Playlist";s:31:"suggest_cancel_suggest_playlist";s:6:"Ignore";s:31:"suggest_view_this_ynmusic_album";s:15:"Listen Playlist";s:36:"suggest_cancel_suggest_ynmusic_album";s:6:"Ignore";s:41:"suggest_view_this_pagediscussion_pagepost";s:15:"View Discussion";s:46:"suggest_cancel_suggest_pagediscussion_pagepost";s:6:"Ignore";s:28:"suggest_view_this_artarticle";s:12:"View Article";s:33:"suggest_cancel_suggest_artarticle";s:6:"Ignore";s:30:"suggest_view_this_list_listing";s:12:"View Listing";s:35:"suggest_cancel_suggest_list_listing";s:6:"Ignore";s:26:"suggest_view_this_document";s:13:"View Document";s:31:"suggest_cancel_suggest_document";s:6:"Ignore";s:28:"suggest_description_pageblog";s:38:"This page blog was suggested by %s %s.";s:32:"suggest_description_pagedocument";s:42:"This page document was suggested by %s %s.";s:29:"suggest_description_pageevent";s:39:"This page event was suggested by %s %s.";s:29:"suggest_description_pagealbum";s:39:"This page album was suggested by %s %s.";s:29:"suggest_description_pagevideo";s:39:"This page video was suggested by %s %s.";s:28:"suggest_description_playlist";s:48:"This music page playlist was suggested by %s %s.";s:43:"suggest_description_pagediscussion_pagepost";s:39:"This discussion was suggested by %s %s.";s:33:"suggest_description_ynmusic_album";s:40:"This music album was suggested by %s %s.";s:29:"suggest_description_avp_video";s:34:"This video was suggested by %s %s.";s:30:"suggest_description_artarticle";s:36:"This article was suggested by %s %s.";s:32:"suggest_description_list_listing";s:36:"This listing was suggested by %s %s.";s:28:"suggest_description_document";s:37:"This document was suggested by %s %s.";s:63:"{item:$subject} has suggested to you a {item:$object:playlist}.";s:63:"{item:$subject} has suggested to you a {item:$object:playlist}.";s:63:"{item:$subject} has suggested to you a {item:$object:pageblog}.";s:63:"{item:$subject} has suggested to you a {item:$object:pageblog}.";s:64:"{item:$subject} has suggested to you a {item:$object:pageevent}.";s:64:"{item:$subject} has suggested to you a {item:$object:pageevent}.";s:64:"{item:$subject} has suggested to you a {item:$object:pagevideo}.";s:64:"{item:$subject} has suggested to you a {item:$object:pagevideo}.";s:64:"{item:$subject} has suggested to you a {item:$object:pagealbum}.";s:64:"{item:$subject} has suggested to you a {item:$object:pagealbum}.";s:72:"{item:$subject} has suggested to you a {item:$object:page_disscussions}.";s:72:"{item:$subject} has suggested to you a {item:$object:page_disscussions}.";s:68:"{item:$subject} has suggested to you a {item:$object:ynmusic_album}.";s:68:"{item:$subject} has suggested to you a {item:$object:ynmusic_album}.";s:64:"{item:$subject} has suggested to you a {item:$object:avp_video}.";s:64:"{item:$subject} has suggested to you a {item:$object:avp_video}.";s:65:"{item:$subject} has suggested to you a {item:$object:artarticle}.";s:65:"{item:$subject} has suggested to you a {item:$object:artarticle}.";s:67:"{item:$subject} has suggested to you a {item:$object:list_listing}.";s:67:"{item:$subject} has suggested to you a {item:$object:list_listing}.";s:63:"{item:$subject} has suggested to you a {item:$object:document}.";s:63:"{item:$subject} has suggested to you a {item:$object:document}.";s:67:"{item:$subject} has suggested to you a {item:$object:pagedocument}.";s:67:"{item:$subject} has suggested to you a {item:$object:pagedocument}.";}}

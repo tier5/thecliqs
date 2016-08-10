@@ -1,0 +1,222 @@
+div.hetips-tips div.data div.hetips_item_body .label_tip{
+    color: #c2c2c2;
+}
+
+.hetips-tips {
+  position: absolute;
+  z-index: 100;
+}
+.hetips-tips .container {
+  +rounded(3px);
+}
+.hetips-tips.night_theme .container {
+  background-color: #555;
+}
+
+.hetips-tips .data  {
+  padding: 5px 10px;
+  font-size: 8pt;
+  color:$theme_font_color;
+  max-width: 300px;
+  padding: 5px 15px;
+}
+.hetips-tips .data .title,
+.hetips-tips .data .title a,
+.hetips-tips .data .title a:hover {
+  color: #fff;
+  font-size: 9pt;
+}
+.hetips-tips .arrow_container {
+  width: 100%;
+  height: 5px;
+  position: relative;
+}
+.hetips-tips .arrow {
+  background-image: url("~/application/modules/Hetips/externals/images/arrows.png");
+  position: absolute;
+}
+.hetips-tips.night_theme .arrow {
+  background-image: url("~/application/modules/Hetips/externals/images/arrows_night.png");
+}
+
+.hetips-tips .arrow.top {
+  background-position: left top;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 5px;
+}
+.hetips-tips .arrow.bottom {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 5px;
+}
+
+
+ {
+  opacity: 1;
+}
+.hetips-tips .container {
+  font-size: 10pt;
+  overflow: hidden;
+  width: 320px;
+  background-color: $theme_body_background_color;
+  border:#555 1px solid;
+  +rounded(3px);
+  +shadow(0px, 3px, 8px, 0px, rgba(0, 0, 0, 0.3));
+}
+.hetips-tips .night_theme .container {
+  background-color: $theme_body_background_color;
+  border:#555 1px solid;
+
+}
+
+ .hetips_item_photo {
+  float: left;
+  margin:0 5px;
+  margin-top:10px;
+}
+html[dir="rtl"]  .hetips_item_photo {
+  float: right;
+}
+ .hetips_item_photo img {
+  max-width: 90px;
+  max-height: 80px;
+}
+ {
+  float: left;
+  margin: 0 7px;
+  margin-top: 5px;
+  width: 60%;
+}
+html[dir="rtl"]  .hetips_hetips_item_body {
+  float: right;
+}
+ .hetips_item_title {
+  font-size: 14pt;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+ .item_description {
+  font-size: 9pt;
+}
+.hetips_content .hetips_item_body .items {
+  overflow: hidden;
+}
+.hetips_content .hetips_item_body .items > li {
+  float: left;
+  margin-right: 2px;
+}
+
+[dir="rtl"] .hetips_content .hetips_item_body .items > li {
+    float: right;
+    margin-right: 2px;
+}
+
+.hetips_content .hetips_item_body .items > li a {
+  display: block;
+}
+.hetips_content .hetips_item_body .items > li a img {
+  width:32px;
+  height:32px;
+  display: block;
+}
+ .members_description {
+  font-size: 9pt;
+  margin: 5px 0;
+}
+ .hetips_item_photo a {
+  display: block;
+  min-height: 70px;
+  max-width: 80px;
+}
+ .hetips_item_photo a img {
+  display: block;
+  min-height: 70px;
+  max-width: 80px;
+}
+.hetips-tips .content {
+  overflow: hidden;
+}
+ .hetips_item_options {
+  border-top: 1px solid $theme_border_medium_color;
+  background-color: $theme_border_color;
+  display: block;
+  font-size: 9pt;
+  margin-top: 10px;
+  padding: 7px;
+  min-height: 8px;
+}
+ .hetips_item_options ul {
+  overflow: hidden;
+}
+ .hetips_item_options ul > li {
+  float: left;
+  margin: 0 5px;
+}
+html[dir="rtl"]  .hetips_item_options ul > li {
+  float: left;
+}
+ .hetips_item_options .buttonlink {
+  font-size: 9pt;
+  line-height: 16px;
+}
+
+.hetips-loading {
+  background-image: url("~/application/modules/Hetips/externals/images/loader16.gif");
+  padding-left:16px;
+  margin: 0 2px;
+  font-size: 10pt;
+  background-repeat: no-repeat;
+}
+
+ul.hetips_line li{
+  display: inline-block;
+}
+
+.hetips_item_body{
+    float:left;
+    width: 65%;
+    margin-left: 3px;
+}
+
+div.he-hint div.he-hint-body div.he-hint-left div.horizontal-list-tips {
+    float: left;
+    width: 100%;
+}
+
+div.hetips-likes-counter {
+    margin: 5px 0px;
+}
+
+div.he-hint div.he-hint-body div.he-hint-left div.horizontal-list-tips ul.items li {
+    display: inline-block;
+    margin: -1px;
+}
+
+div.he-hint div.he-hint-body div.he-hint-left div.horizontal-list-tips ul.items li > a img {
+    width: 32px;
+    height: 32px;
+}
+
+.he-tool-tip .he-tip{
+    background-color: $theme_body_background_color;
+}
+
+.hetips_item_options {
+    border-top: 1px solid $theme_border_medium_color;
+    background-color: $theme_border_color;
+    display: block;
+    font-size: 9pt;
+    margin-top: 10px;
+    padding: 7px;
+    min-height: 8px;
+}
+
+.page_members_like {
+    margin-top: 5px;
+}
+
+.page_members_like span {
+    font-weight: bold;
+}

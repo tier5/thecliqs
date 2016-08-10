@@ -1,0 +1,72 @@
+Open setup.php and put in your server variables.  and database connection information.
+
+Load the Database setup file to install DB after you change your details in it.
+
+Upload all files in binary mode.  This is required for the licensing.
+
+
+
+/*************************************************************************************************\
+/                                                                                                 \
+/  There is no site authorized to sell this script without published consent from Game-Script.net \
+/                   This script is Copyright to Dedicated Gaming Network, LLC                     \
+/                          D.B.A. Game-Script.NET and Theodore Gaushas                            \
+/           Valid license check at http://www.game-script.net/order/licensedsites.php             \
+/                                                                                                 \
+/*************************************************************************************************\
+
+
+
+Requirements:
+php v 4.4+
+mysql v4.4+
+register globals on (there is a emulator built in for register_globals on however best to have it manually set in the htaccess or php.ini file)
+inoncube loaders installed
+
+
+******Set up your settings here ***********
+open /.htaccess  and edit the username filed for your cpanel for global folder inclusion sitewide if you can not do this via htaccess you have to have it done in the php.ini file.
+open /setup.php                   //and fill in your details
+open /settings.php                //and fill in needed details
+open /include/echo_setup.php      //and fill in database details
+open /cronjob1234567891.php       //and fill in full paths and database details
+open /include/license.conf        //put in license key 
+open /include/license.conf.php    //put in license key
+open /alertpaynotify.php    //put your security key after you make your account with same email as paypal on www.alertpay.com
+debugger.txt    //CHMOD to 777 (testing for alertpay)
+open /onreward.php    //put your onrewards link from srpoints.com
+open /home/user/public_html/images/icons/ (chmod all folders 1+ to 777 so that your users can upload icons for they're familys)
+
+
+Set cron jobs for 
+*make sure to open the below files and edit the include path for the full path to the included file.
+/home/user/public_html/10mins.php (run every 10 minutes)
+/home/user/public_html/5mins.php (run every 5 minutes)
+/home/user/public_html/1hour.php (run every 1 hour)
+/home/user/public_html/24hour.php (run every 24 hours)
+/home/user/public_html/newsletter-cron.php (run every 3-6 hours)
+
+
+open the DB and edit the admin username in users table make a unique password for your admin account.
+
+
+Once you have done the above make sure to chmod your live dicetory to 777 this will allow the license to verify.
+Go to your website URL.
+refresh once.  And should be live.
+
+Set chmod back on the live directory back to 755
+
+
+once done login and have fun.
+
+
+
+
+Should you have any trouble please use the support ticket system at the below address.
+http://www.preferredservers.com/whmcs/
+
+
+
+Thanks,
+Theodore Gaushas
+Dedicated Gaming Network, LLC

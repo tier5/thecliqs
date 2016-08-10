@@ -1,0 +1,334 @@
+#ynlistings_list_item_browse .tabs_alt > ul > li,
+.layout_ynlistings_related_listings .tabs_alt > ul > li,
+.layout_ynlistings_list_most_items .tabs_alt > ul > li {
+	padding-top: 0;
+}
+
+.ynlisting_category_main .item-category-browser {
+	height: 230px;
+}
+
+.ynlisting_category_main .item-category-browser.ynlisting-category-expand .category-more-data {
+	top: 229px;
+
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.highlight_listing .listing_rating {
+	height: 34px;
+}
+
+.highlight_listing .listing_owner_avatar img {
+	width: 100%;
+	height: 100%;
+}
+
+.layout_page_ynlistings_index_view,
+.layout_page_ynlistings_index_print {
+	position: relative;
+}
+
+.layout_page_ynlistings_index_print .ynlisting_layout_theme3 .layout_core_content,
+.layout_page_ynlistings_index_print .ynlisting_layout_theme2 .layout_core_content,
+.layout_page_ynlistings_index_view .ynlisting_layout_theme3 .layout_core_content,
+.layout_page_ynlistings_index_view .ynlisting_layout_theme2 .layout_core_content {
+	width: 100%;
+}
+
+.ynlisting_detail_layout_theme2 .ynlisting-slider-master .ms-view {		
+	&, .ms-slide {
+		min-height: 200px;	
+	}		
+}
+
+.layout_page_ynlistings_index_view .ynlisting_layout_theme2, 
+.layout_page_ynlistings_index_print .ynlisting_layout_theme2 {
+
+	.layout_right {
+		padding-top: 400px;
+	}
+
+	.layout_middle {
+		padding-top: 400px;
+	}
+
+	.layout_core_content {
+		margin-top: -400px;
+	}
+}
+
+
+#global_page_ynlistings-listings-email-to-friends {
+	.form-label {
+		padding: 4px 15px 0px 2px;
+		margin-bottom: 10px;
+		overflow: visible;
+		float: none;
+		clear: left;
+		color: inherit;
+	}
+
+	* {
+		max-width: 100% !important;
+	}
+
+	textarea {
+		width: 100% !important;
+	}
+}
+
+#global_page_ynlistings-photo-index .ynlistings_editphotos_action {
+	padding-left: 150px;
+}
+
+#global_page_ynlistings-photo-index .ynlistings_editphotos_button_updated {
+	margin-left: 318px;
+}
+
+body[id^=global_page_ynlistings] ul.thumbs .thumbs_photo:hover {
+	padding: 3px;
+}
+
+.layout_page_ynlistings_index_view .ynlisting_layout_theme2.ynresponsive-metro,
+.layout_page_ynlistings_index_view .ynlisting_layout_theme3.ynresponsive-metro {
+	background: #fff;
+}
+
+@media screen and (max-width: 991px) {
+	.layout_page_ynlistings_index_view .ynlisting_layout_theme3 .layout_core_content,
+	.layout_page_ynlistings_index_print .ynlisting_layout_theme3 .layout_core_content { 
+		height: auto;
+		position: static;
+	}
+
+	.ynlisting_detail_layout_theme3 .listing_review {
+		max-width: 80%;
+	}
+
+	.layout_page_ynlistings_index_print .ynlisting_layout_theme2 .layout_right,
+	.layout_page_ynlistings_index_view .ynlisting_layout_theme2 .layout_right {
+		padding-top: 0 !important;
+	}
+
+	.layout_page_ynlistings_index_print .ynlisting_layout_theme2 .layout_middle,
+	.layout_page_ynlistings_index_print .ynlisting_layout_theme2 .layout_core_content,
+	.layout_page_ynlistings_index_view .ynlisting_layout_theme2 .layout_middle,
+	.layout_page_ynlistings_index_view .ynlisting_layout_theme2 .layout_core_content {
+		margin-top: 0;
+		position: static;
+	}
+
+	.layout_page_ynlistings_index_print .ynlisting_layout_theme2 .layout_core_content,
+	.layout_page_ynlistings_index_view .ynlisting_layout_theme2 .layout_core_content {
+		margin-bottom: 10px;
+		height: auto;
+	}
+
+	.layout_page_ynlistings_index_print .ynlisting_layout_theme2 .layout_middle,
+	.layout_page_ynlistings_index_view .ynlisting_layout_theme2 .layout_middle {
+		padding-top: 0;
+	}
+
+	.highlight_listing .listing_owner_avatar {
+		display: none;
+	}
+
+	.layout_right .ynlistings-category {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.ynlistings-action-view-method {
+		margin-top: 0;
+		margin-bottom: 35px;
+		float: none;
+	}
+
+	.ynlistings_grid-view .ynlistings-tabs-content li,
+	.ynlisting_category_main .browse_category {
+		width: 50%;
+	}
+
+	#related_listings .ynlisting-grid-item {
+		width: 48%;
+		float: left;
+		margin: 0 1% 10px 1%;
+	}
+
+	.item-widget-listing {
+		width: 45%;
+		display: inline-block;
+	}
+
+	.ynlisting_detail_layout_theme3 .listing_review {
+		max-width: 100%;
+	}
+
+	.ynlisting_detail_layout_theme3 .listing_review > div {
+		display: inline;
+	}
+
+	.ynlisting_detail_layout_theme3 .listing_contact .ynlisting_view_more {
+		position: relative;
+		margin-top: 0;
+	}
+
+	.ynlisting_detail_layout_theme1 .ynlisting-slider-master {
+		width: 100%;
+		margin-right: 0;
+		float: none;
+
+		.ms-container {
+			max-width: 100% !important;
+
+			.ms-slide,
+			.ms-view {
+				width: 100% !important;
+			}
+		}
+	}
+
+	.ynlisting_detail_layout_theme2 .ynlisting-detail-content {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+
+	div.pp_default .pp_expand {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.preview-popup .preview-main {
+		margin-left: -200px;
+		width: 400px;
+	}
+
+	.ynlisting-featured-slider-master .ms-info span {
+		width: 100%;
+		max-width: 100%
+	}
+
+	#review_table .review_detail .option_div {
+		float: none;
+	}
+
+	#review_table .user_name {
+		width: 100%;
+		float: none;
+		margin-bottom: 5px;
+	}
+
+	.ynlistings_editphotos_item {
+		#delete-label {
+			display: none;
+		}
+	}
+
+	#global_page_ynlistings-index-export #global_content_simple .global_form div.form-label {
+		width: 100%;
+	}
+
+	#global_page_ynlistings-listings-direction #global_content_simple #ynlistings_direction {
+		padding: 10px;
+
+		#map-canvas {
+			max-width: 250px%;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {	
+	.ynlistings_grid-view .ynlistings-tabs-content li,
+	.ynlisting_category_main .browse_category {
+		width: 100%;
+	}
+
+	#related_listings .ynlisting-grid-item {
+		width: 100%;
+		float: left;
+		margin: 0 0 10px 0;
+	}
+
+	.ynlisting_category_main .item-category-browser {
+		max-height: 230px;
+		height: auto;
+	}
+
+	.ynlisting-list-item .listing_photo {
+		float: none;
+	}
+
+	.ynlisting-list-item .listing_info {
+		padding-left: 0;
+	}
+
+	.ynlisting-list-item .listing_info .listing_info_footer .listing_info_footer_main > div {
+		display: block;
+		width: 100%;
+	}
+
+	.layout_page_ynlistings_index_manage {
+		.listing_info {
+			clear: both;
+		}
+	}
+
+	.item-widget-listing {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.preview-popup .preview-main {
+		margin-left: -140px;
+		width: 280px;
+	}
+
+	#global_page_ynlistings-album-create {
+		.form-label {
+			float: none;
+			width: 100%;
+		}
+
+		.btnlisting-create-album {
+			margin-left: 0;
+		}
+	}
+
+	.ynlistings_editphotos_item .ynlistings_editphotos_photo {
+		float: none;
+	}
+
+	.ynlistings_editphotos_button_updated {
+		margin-left: 0;
+	}
+
+	body[id^=global_page_ynlistings] .global_form div.form-label {
+		width: 100%;
+	}
+
+	body[id^=global_page_ynlistings] #global_content_simple {
+		max-width: 100%;
+
+		.ynlistings_widget_location_direction_button label {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.ynlisting_detail_layout_theme1 .ynlisting-slider-master .ms-lightbox-template {
+		padding-bottom: 5px;
+	}	
+
+	.ms-nav-next,
+	.ms-nav-prev {
+		display: none;
+	}
+}

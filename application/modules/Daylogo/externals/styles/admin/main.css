@@ -1,0 +1,685 @@
+/* $Id: main.css 2012-08-16 16:29 nurmat $ */
+
+.daylogo_logos_lists {
+  margin: 50px auto 20px;
+  overflow: hidden;
+}
+
+.daylogo_logo_list {
+  margin: 0 10px 0 0;
+  padding: 0;
+  border: 1px solid #CAD9E1;
+}
+
+.daylogo_logos_row_list {
+  margin: 0 0 30px;
+  overflow: hidden;
+}
+
+.daylogo_logo_list {
+  float: left;
+  margin: 0 15px 30px 0;
+  width: 250px;
+  overflow: hidden;
+}
+
+.daylogo_logo_list:hover {
+  background-color: #f4f8fc;
+}
+
+.daylogo_logo_left {
+  float: left;
+}
+
+.daylogo_logo_right {
+  float: right;
+}
+
+.daylogo_logo_img {
+  margin: 30px 5px 0 15px;
+}
+
+.daylogo_logo_img a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.daylogo_logo_img a span, .daylogo_view_logo a span {
+  display: block;
+  margin: 10px 0;
+  height: 80px;
+  width: 174px;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+
+.daylogo_view_logo {
+  margin: 30px auto;
+}
+
+.daylogo_view_title {
+  margin: 20px 0 0;
+  font-size: 1.5em;
+}
+
+.daylogo_logo_disabled {
+  background: #eee;
+  opacity: 0.9;
+}
+
+.daylogo_logo_disabled:hover {
+  background-color: #eee !important;
+}
+
+.daylogo_logo_settings {
+  float: right;
+  margin: 5px -5px 5px 0;
+}
+
+.daylogo_logo_settings div {
+  margin: 0 0 5px;
+}
+
+.daylogo_logo_title {
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+.daylogo_logo_title a {
+  font-weight: bolder;
+}
+
+.daylogo_logo_start_end_date {
+  margin: 5px 15px 15px;
+}
+
+.daylogo_logo_start_end_date div {
+  margin: 0 0 5px;
+  color: #999;
+  font-size: 12px;
+}
+
+.daylogo_logo_start_end_date div label {
+  margin: 0 5px 0 0;
+  font-weight: bolder;
+}
+
+.daylogo_active_logo {
+  background: #e9f4fa;
+}
+
+.daylogo_loader {
+  float: left;
+  width: 600px;
+  text-align: right;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.daylogo_icon_enable, .daylogo_icon_disable, .daylogo_icon_edit, .daylogo_icon_delete {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.daylogo_icon_enable {
+  background-image: url(~/application/modules/Daylogo/externals/images/enabled1.png);
+}
+
+.daylogo_icon_disable {
+  background-image: url(~/application/modules/Daylogo/externals/images/disabled0.png);
+}
+
+.daylogo_icon_edit {
+  background-image: url(~/application/modules/Daylogo/externals/images/edit.png);
+}
+
+.daylogo_icon_delete {
+  margin: 0 10px 0 0;
+  background-image: url(~/application/modules/Daylogo/externals/images/delete.png);
+}
+
+#logo_photo-demo-status.hide {
+  display: none;
+}
+
+#logo_photo-demo-status {
+  width: 420px;
+}
+
+#logo_photo-demo-status .current-text,
+#logo_photo-demo-status .demo-status-overall {
+  display: none;
+}
+
+#logo_photo-demo-status .overall-title,
+#logo_photo-demo-status .current-title {
+  font-size: .7em;
+  text-transform: uppercase;
+}
+
+#logo_photo-demo-status .progress {
+  background-position: +50% 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  background-image: url(~/externals/fancyupload/assets/progress-bar/progress.gif);
+}
+
+#logo_photo-demo-status .progress-text {
+  font-size: 0.9em;
+}
+
+#logo_photo-demo-list {
+  display: none;
+  list-style: none;
+  width: 450px;
+  margin: 5px 0;
+  overflow-y: auto;
+  background-color: $theme_body_background_color;
+  border: 1px solid $theme_foreground_border_color;
+  +rounded(3px);
+}
+
+#logo_photo-demo-list li.validation-error {
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#logo_photo-demo-list li.file {
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/waiting.png);
+  background-repeat: no-repeat;
+}
+
+#logo_photo-demo-list li.file + li.file {
+  border-top: 1px solid $theme_foreground_border_color;
+}
+
+#logo_photo-demo-list li.file span {
+  display: none;
+}
+
+#logo_photo-demo-list li.file-uploading {
+  background-image: url(~/externals/fancyupload/assets/loading.gif);
+  background-repeat: no-repeat;
+}
+
+#logo_photo-demo-list li.file-success {
+  background-image: url(~/externals/fancyupload/assets/finished.png);
+  background-repeat: no-repeat;
+}
+
+#logo_photo-demo-list li.file .file-name {
+  display: block;
+  clear: left;
+  font-weight: bold;
+}
+
+#logo_photo-demo-list li.file .file-size {
+  display: none;
+}
+
+#logo_photo-demo-list li.file .file-info {
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+#logo_photo-demo-list li.file .file-info img {
+  margin: 5px 0px;
+}
+
+#logo_photo-demo-list li.file .file-remove {
+  clear: right;
+  float: right;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+#logo-demo-list li.validation-error {
+  padding: 8px;
+  font-size: .8em;
+  font-weight: normal;
+  background-color: $theme_body_background_color;
+  background-repeat: no-repeat;
+  background-position: 6px 7px;
+  padding-left: 28px;
+  background-image: url(~/externals/fancyupload/assets/error.png);
+  border-bottom: 1px solid $theme_foreground_border_color;
+  border-bottom: 1px solid $theme_foreground_border_color;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#logo-demo-list li.file-success {
+  background-repeat: no-repeat;
+}
+
+.daylogo .edit {
+  background-image: url("~/application/modules/Daylogo/externals/images/edit.png");
+}
+
+.icon_daylogo_photo_new {
+  background-image: url("~/application/modules/Daylogo/externals/images/upload.png");
+}
+
+/*Datepicker*/
+.datepicker_container input {
+  background: url("~/application/modules/Daylogo/externals/images/calendar.png") no-repeat scroll right center transparent;
+  padding-left: 10px !important;
+  width: 145px !important;
+}
+
+.datepicker_vista {
+  position: absolute;
+  font-size: 10px;
+  font-family: Tahoma, sans-serif;
+  color: #000;
+  line-height: normal;
+  width: 172px;
+  height: 135px;
+  padding: 14px;
+  background: url(~/application/modules/Daylogo/externals/images/frame.png) no-repeat;
+  z-index: 5;
+}
+
+/* header
+********************************************************/
+.datepicker_vista .header {
+  position: relative;
+  height: 15px;
+  margin-bottom: 5px;
+  padding-top: 1px;
+}
+
+.datepicker_vista .header .title {
+  text-align: center;
+  margin: 0 18px 0 18px;
+  color: #444;
+}
+
+.datepicker_vista .header .titleText {
+}
+
+.datepicker_vista .header .previous,
+.datepicker_vista .header .next,
+.datepicker_vista .header .closeButton {
+  position: absolute;
+  cursor: pointer;
+  text-indent: -40px;
+  overflow: hidden;
+  width: 12px;
+  height: 12px;
+  top: 2px;
+  background-image: url(~/application/modules/Daylogo/externals/images/buttons.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.datepicker_vista .header .previous {
+  left: 4px;
+}
+
+.datepicker_vista .header .previous:hover {
+  background-position: left bottom;
+}
+
+.datepicker_vista .header .next {
+  right: 4px;
+  background-position: -13px top;
+}
+
+.datepicker_vista .header .next:hover {
+  background-position: -13px bottom;
+}
+
+.datepicker_vista .header .closeButton {
+  display: none;
+  right: 0px;
+  top: 0px;
+  background-position: right top;
+}
+
+.datepicker_vista .header .closeButton:hover {
+  background-position: right bottom;
+}
+
+/* body
+********************************************************/
+.datepicker_vista .body {
+  position: relative;
+  top: 0px;
+  left: 2px;
+  width: 168px;
+  height: 112px;
+  overflow: hidden;
+}
+
+/* time
+********************************************************/
+.datepicker_vista .time {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.datepicker_vista .time .hour,
+.datepicker_vista .time .separator,
+.datepicker_vista .time .minutes {
+  border: 1px solid #ccc;
+  background: #fff;
+  width: 50px;
+  font-size: 32px;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  color: #444;
+  padding: 2px;
+}
+
+.datepicker_vista .time .hour input,
+.datepicker_vista .time .minutes input {
+  font-size: 32px;
+}
+
+.datepicker_vista .time .hour {
+  left: 15px;
+}
+
+.datepicker_vista .time .separator {
+  background: transparent;
+  border: 0px;
+  width: 10px;
+  left: 76px;
+}
+
+.datepicker_vista .time .minutes {
+  left: 95px;
+}
+
+.datepicker_vista .time .ok {
+  position: absolute;
+  top: 65px;
+  width: 136px;
+  left: 15px;
+  font-size: 20px;
+}
+
+/* days-grid
+********************************************************/
+.datepicker_vista .days {
+  z-index: 6;
+}
+
+.datepicker_vista .days .day {
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  width: 23px;
+  height: 15px;
+  margin: 0 1px 1px 0;
+  color: #444;
+  font-size: 12px;
+}
+
+.datepicker_vista .days .titles {
+  height: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1px;
+}
+
+.datepicker_vista .days .day0 {
+  margin-right: 0;
+}
+
+.datepicker_vista .days .week5 .day {
+  margin-bottom: 0;
+}
+
+/* days-colors
+********************************************************/
+.datepicker_vista .days .week .day {
+  cursor: pointer;
+}
+
+.datepicker_vista .days .week .day:hover {
+  background: url(~/application/modules/Daylogo/externals/images/days.png) left top no-repeat;
+  color: #0084AA;
+}
+
+.datepicker_vista .days .otherMonth {
+  color: #aaa;
+}
+
+.datepicker_vista .days .selected {
+  background: url(~/application/modules/Daylogo/externals/images/days.png) left bottom no-repeat;
+  color: #316879;
+}
+
+/* months-grid
+********************************************************/
+.datepicker_vista .months .month {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 6px;
+  width: 55px;
+  overflow: hidden;
+  height: 21px;
+  margin: 0 1px 1px 0;
+  color: #444;
+  font-size: 12px;
+}
+
+.datepicker_vista .months .month3,
+.datepicker_vista .months .month6,
+.datepicker_vista .months .month9,
+.datepicker_vista .months .month12 {
+  margin-right: 0;
+}
+
+.datepicker_vista .months .month10,
+.datepicker_vista .months .month11,
+.datepicker_vista .months .month12 {
+  margin-bottom: 0;
+}
+
+/* months-colors
+********************************************************/
+.datepicker_vista .months .month:hover {
+  background: url(~/application/modules/Daylogo/externals/images/months.png) left top no-repeat;
+  color: #0084AA;
+}
+
+.datepicker_vista .months .selected {
+  background: url(~/application/modules/Daylogo/externals/images/months.png) left bottom no-repeat;
+  color: #316879;
+}
+
+/* years-grid
+********************************************************/
+.datepicker_vista .years .year {
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 6px;
+  width: 32px;
+  overflow: hidden;
+  height: 21px;
+  margin: 0 1px 1px 0;
+  color: #444;
+  font-size: 12px;
+}
+
+.datepicker_vista .years .year4,
+.datepicker_vista .years .year9,
+.datepicker_vista .years .year14,
+.datepicker_vista .years .year19 {
+  margin-right: 0;
+}
+
+.datepicker_vista .years .year15,
+.datepicker_vista .years .year16,
+.datepicker_vista .years .year17,
+.datepicker_vista .years .year18,
+.datepicker_vista .years .year19 {
+  margin-bottom: 0;
+}
+
+/* years-colors
+********************************************************/
+.datepicker_vista .years .year:hover {
+  background: url(~/application/modules/Daylogo/externals/images/years.png) left top no-repeat;
+  color: #0084AA;
+}
+
+.datepicker_vista .years .selected {
+  background: url(~/application/modules/Daylogo/externals/images/years.png) left bottom no-repeat;
+  color: #316879;
+}
+
+/* global
+********************************************************/
+
+.global_form {
+  clear: both;
+  overflow: hidden;
+}
+
+.global_form > div {
+  float: left;
+  overflow: hidden;
+  margin: 0px auto 0px auto;
+}
+
+.global_form > div > div {
+  +rounded( 8px );
+  border: 5px solid $theme_form_border_color;
+  padding: 12px 12px 12px 12px;
+  background-color: $theme_form_background_color;
+}
+
+/* form instructions (after title) */
+.global_form > div > div > h3 + p {
+  padding: 2px;
+  margin-top: 2px;
+  max-width: 550px;
+}
+
+.global_form > div > div > h3 + div,
+.global_form > div > div > h3 + p + div {
+  margin-top: 20px;
+}
+
+/* container for form label/element rows */
+.global_form > div > div {
+  overflow: hidden;
+}
+
+/* left-side element label container */
+.global_form div.form-label {
+  width: 150px;
+  text-align: right;
+  padding: 4px 15px 0px 2px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  float: left;
+  clear: left;
+  font-size: .9em;
+  font-weight: bold;
+  color: $theme_form_label_font_color;
+}
+
+/* right-side form element container */
+.global_form div.form-element {
+  min-width: 150px;
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 10px;
+  overflow: hidden;
+  float: left;
+  clear: none;
+}
+
+/* all textareas in form */
+.global_form textarea {
+  padding: 4px;
+  font-size: 10pt;
+  max-width: 300px;
+  min-height: 100px;
+}
+
+.global_form p.description {
+  margin: 3px 0px 10px 0px;
+  padding: 0px;
+}
+
+.global_form #submit-element {
+  margin-bottom: 0px;
+}
+
+.global_form button[type=submit] {
+  margin-right: 3px;
+}
+
+html[dir="rtl"] .global_form button[type=submit] {
+  margin-right: 0px;
+  margin-left: 3px;
+}
+
+.daylogo input, .daylogo textarea {
+  +rounded( 3px );
+}
+
+.daylogo textarea {
+  resize: none !important;
+  overflow: auto;
+}
+
+ul.form-errors > li {
+  color: #555555 !important;
+  font-weight: normal !important;
+  background-color: #FAF7E9 !important;
+  background-image: url("/socialengine/application/modules/Core/externals/images/error.png?c=37");
+}
+
+ul.form-errors > li {
+  background-position: 8px 5px;
+  background-repeat: no-repeat;
+  border: 1px solid #CCCCCC !important;
+  border-radius: 3px 3px 3px 3px !important;
+  clear: left;
+  float: left;
+  margin: 7px 5px;
+  overflow: hidden;
+  padding: 5px 15px 5px 32px !important;
+}
+.daylogo_add_logo_icon {
+  overflow: hidden;
+}
+.icon_add {
+  float: right;
+  background-image: url(~/application/modules/Daylogo/externals/images/plus.gif);
+}

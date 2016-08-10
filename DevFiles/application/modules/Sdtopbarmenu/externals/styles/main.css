@@ -1,0 +1,669 @@
+
+/************  SD MENU WIDGET  *************/
+
+#topBarContainer {
+  width: 1100px;
+  margin: 0px auto;
+  padding: 0px 4px;
+  overflow: auto;
+  padding-top: 0px;
+}
+#topBarContainer > div {
+  float: left;
+  margin-left: 10px;
+}
+#topBarContainer #sdLogo > a {
+	font-size:24px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#999;
+}
+#advminimenu_notifications {
+	overflow:auto;
+}
+#sd_custom_updates > li {
+  float: left;
+  margin-right: 2px;
+  	
+}
+.sd_updates_pulldown > a.sd_new_updates {
+	background-color: transparent !important;
+}
+
+#sdMainMenu {
+  overflow: auto;
+}
+#sdMainMenu > li {
+  float: left;
+}
+#sdMainMenu > li > a {
+  display: block;
+  padding: 3px 10px;
+  margin : 2px;
+  color: #999;
+}
+#sdMainMenu > li > a:hover {
+  text-decoration: none;
+  color: #EFEFEF;
+}
+#dropDownMenuMain {
+  display: none;
+  height:auto;
+  position:absolute;
+  z-index:200;
+  background-color: #333;
+  margin-left: 12px;
+}
+#sdMainMenu li#more > a {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/drop-down-icon.png);
+  background-repeat: no-repeat;
+  background-position: 67px -12px;
+  padding-right: 20px;
+}
+#sdMainMenu li#more > a:hover {
+  background-position: 67px 9px;
+}
+.dropDownMenuMain > li:first-child{
+  padding-top: 8px;
+}
+#sdMainMenu li.activee {
+  color: red;
+}
+#sdMainMenu li#more:hover  #dropDownMenuMain{
+  display: block;
+}
+#dropDownMenuMain > li > a {
+  display: block;
+  padding: 4px 20px 4px 28px;
+  border-bottom: 1px solid #555;
+  font-weight: bold;
+  color: #999;
+}
+#dropDownMenuMain > li > a:hover {
+  text-decoration: none;
+  background-color: #444;
+  color: #EFEFEF;
+}
+
+#dropDownMenuMain > li > a.core_main_user {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/members-icon.png);
+  background-repeat: no-repeat; 
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_user:hover {
+  background-position: 5px 5px;
+}
+#dropDownMenuMain > li > a.core_main_album {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/albums-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_album:hover {
+  background-position: 5px 7px;
+}
+#dropDownMenuMain > li > a.core_main_music {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/music-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -21px;
+}
+#dropDownMenuMain > li > a.core_main_music:hover {
+  background-position: 5px 3px;
+}
+#dropDownMenuMain > li > a.core_main_group {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/groups-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -23px;
+}
+#dropDownMenuMain > li > a.core_main_group:hover {
+  background-position: 5px 7px;
+}
+#dropDownMenuMain > li > a.core_main_poll {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/polls-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_poll:hover {
+  background-position: 5px 6px;
+}
+#dropDownMenuMain > li > a.core_main_chat {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/chat-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_chat:hover {
+  background-position: 5px 4px;
+}
+#dropDownMenuMain > li > a.core_main_event {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/event-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_event:hover {
+  background-position: 5px 4px;
+}
+#dropDownMenuMain > li > a.core_main_video {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/video-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_video:hover {
+  background-position: 5px 3px;
+}
+#dropDownMenuMain > li > a.core_main_forum {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/forum-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_forum:hover {
+  background-position: 5px 6px;
+}
+#dropDownMenuMain > li > a.core_main_classified {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/classified-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+}
+#dropDownMenuMain > li > a.core_main_classified:hover {
+  background-position: 5px 6px;
+}
+#dropDownMenuMain > li > a.core_main_blog {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/blog-icon.png);
+  background-repeat: no-repeat;
+  background-position: 5px -22px;
+} 
+#dropDownMenuMain > li > a.core_main_blog:hover {
+  background-position: 5px 4px;
+}
+#dropDownMenuMain > li.active > a {
+  text-decoration: none;
+  background-color: #444;
+  color: #EFEFEF;
+}
+
+/* sdMini Menu + User Image */
+
+.dropDownMenuMini > li:first-child{
+  padding-top: 8px;
+}
+.dropDownMenuMini > li > a {
+  display: block;
+  padding: 4px 20px 4px 10px;
+  border-bottom: 1px solid #555;
+  font-weight: bold;
+  color: #999;
+}
+.dropDownMenuMini > li > a:hover {
+  text-decoration: none;
+  background-color: #444;
+  color: #FFF;
+}
+
+ul#sdMenuMini > li.user_img > a > img {
+  width: 25px;
+  height: 25px;
+}
+ul#sdMenuMini li#global_search_form_container #global_search_field {
+  width: 200px;
+  background-color: #cecece;
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/search-btn-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-left: 10px;
+}
+ul#sdMenuMini li#global_search_form_container #global_search_field:focus {
+	background-color: #fff;
+}
+ul#sdMenuMini li#global_search_form_container {
+  margin: 0px;
+  background:none;
+  margin-right: 15px;
+  position: relative;
+  background: none;
+  padding-top: 2px;
+}
+ul#sdMenuMini li#global_search_form_container .btn_submit {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+  height: 23px;
+  position: absolute;
+  width: 26px;
+  text-indent: -999999px;
+  background: transparent;
+}
+ul#sdMenuMini li.account_more a.btn_account {
+  background-image: url(~/application/modules/Sdtopbarmenu/externals/images/drop-down-icon.png);
+  background-repeat: no-repeat;
+  background-position: 65px -15px;
+  padding-right: 26px;
+  color: #999;
+}
+ul#sdMenuMini li.account_more a.btn_account:hover {
+  background-position: 65px 6px;
+  text-decoration: none;
+  color: #EFEFEF;
+} 
+
+/* EOF sdMini Menu */
+#topBarContainer #core_menu_mini_menu {
+	margin-top: 5px;
+}
+#topBarContainer #layout_core_menu_main_user {
+  margin-top: 4px;	
+}
+#topBarContainer #sdLogo {
+  margin-top: 5px;	
+}
+#core_menu_mini_menu #global_search_field {
+  padding-left: 10px;	
+}
+
+/*******************************************/
+
+
+/*
+PULLDOWN SELECT BOX
+Styles the inline pulldown select popup box that is used
+as an alternative to regular input select boxes in some places.
+*/
+.sd_pulldown > a,
+.sd_pulldown_active > a
+{
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 7px 5px 18px;
+  background-position: 6px 5px;
+  outline: none;
+  font-size: .8em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  background-image: url(~/application/modules/Core/externals/images/more.png);
+  background-repeat: no-repeat;
+}
+.sd_pulldown > a
+{
+  +rounded(4px);
+  background-color: $theme_pulldown_background_color;
+  text-decoration: none;
+}
+.sd_pulldown > a:hover
+{
+  background-color: $theme_pulldown_background_color_hover;
+}
+.sd_pulldown_active > a
+{
+  +rounded(4px, false, false, true, true);
+  background-color: $theme_pulldown_background_color_active;
+  color: $theme_pulldown_font_color_active;
+  text-decoration: none;
+  background-image: url(~/application/modules/Core/externals/images/more_active.png);
+}
+.sd_pulldown_contents_wrapper
+{
+  display: none;
+  +rounded(5px, true, false, false, false);
+  overflow: hidden;
+  position: absolute;
+  min-width: 100px;
+  max-width: 300px;
+  padding: 4px;
+  background-color: $theme_pulldown_border_color;
+  z-index: 99;
+  margin-top: 32px;
+}
+.sd_pulldown_active .sd_pulldown_contents_wrapper
+{
+  display: block;
+}
+.sd_pulldown_contents
+{
+  overflow: hidden;
+  background: $theme_pulldown_contents_background_color;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.sd_pulldown_contents ul > li
+{
+  padding: 5px;
+  padding-right: 15px;
+  font-size: .8em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.sd_pulldown_contents ul > li + li
+{
+  border-top: 1px solid $theme_border_color;
+}
+.sd_pulldown_contents ul > li:hover
+{
+  background-color: $theme_pulldown_contents_list_background_color_hover;
+  cursor: pointer;
+}
+.sd_pulldown_options
+{
+  margin: 4px 0px;
+}
+.sd_pulldown_options a
+{
+  color: $theme_pulldown_font_color_active;
+  font-size: .8em;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+
+
+/*
+PULLDOWN SELECT BOX FOR UPDATES
+Styles the inline pulldown select popup box used for updates that is used
+as an alternative to regular input select boxes in some places.
+*/
+.sd_updates_pulldown > a,
+.sd_updates_pulldown_active > a
+{
+  display: block;
+  color: $theme_topbar_minimenu_link_color;
+  font-weight: bold;
+  padding: 6px 7px 6px 7px;
+  text-transform: uppercase;
+}
+.sd_updates_pulldown > a
+{
+  display: block;
+  +rounded(3px);
+  font-weight: bold;
+  padding: 6px 7px 6px 7px;
+  text-transform: uppercase;
+  outline: none;
+}
+.sd_updates_pulldown > a.sd_new_updates
+{
+  +rounded(3px);
+  background: #f96262;
+  color: #fff;
+}
+.sd_updates_pulldown > a.sd_new_updates:hover
+{
+  +rounded(3px);
+  background: #e45656;
+  color: #fff;
+}
+.sd_updates_pulldown > a:hover
+{
+  +rounded(3px);
+  /*background: #D7E7F0;*/
+  color: $theme_topbar_minimenu_link_hover_color;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+.sd_updates_pulldown_active > a
+{
+  +rounded(4px, false, false, true, true);
+  /*background-color: $theme_pulldown_background_color_active;*/
+  color: $theme_pulldown_font_color_active;
+  text-decoration: $theme_topbar_minimenu_link_hover_decoration;
+}
+.sd_updates_pulldown_active .sd_pulldown_contents_wrapper
+{
+  display: block;
+}
+
+
+
+#sd_custom_friendrequest .sd_updates_pulldown_active > a.btn_friendrequest,
+#sd_custom_friendrequest .sd_updates_pulldown > a.btn_friendrequest {
+	background-image:	url(~/application/modules/Sdtopbarmenu/externals/images/friendrequest.png);
+    background-repeat: no-repeat;
+    background-position: center -38px;
+	height: 35px;
+  	width: 30px;
+  	padding:0px;
+	text-align: right;
+	border-radius: 0px;
+	outline: 0px;
+	color: #FF177F;
+}
+#sd_custom_friendrequest .sd_updates_pulldown_active > a.btn_friendrequest,
+#sd_custom_friendrequest .sd_updates_pulldown > a.btn_friendrequest:hover {
+	text-decoration: none;
+    background-position: center 15px;
+}
+#sd_custom_friendrequest .sd_updates_pulldown_active > a.btn_friendrequest span.sd_number_count,
+#sd_custom_friendrequest .sd_updates_pulldown > a.btn_friendrequest span.sd_number_count {
+	margin-left:20px;
+	color: #F00;
+}
+#sd_custom_friendrequest .sd_updates_pulldown_active > a.btn_friendrequest {
+ 	background-color: $theme_pulldown_border_color;
+}
+
+
+#sd_custom_messages .sd_updates_pulldown_active > a.btn_messages,
+#sd_custom_messages .sd_updates_pulldown > a.btn_messages {
+	background-image:	url(~/application/modules/Sdtopbarmenu/externals/images/messages.png);
+    background-repeat: no-repeat;
+    background-position: center -38px;
+	height: 35px;
+  	width: 30px;
+  	padding:0px;
+	text-align: right;
+	overflow:hidden;
+	border-radius: 0px;
+	color: #FF177F;
+	outline: none;
+}
+#sd_custom_messages .sd_updates_pulldown_active > a.btn_messages,
+#sd_custom_messages .sd_updates_pulldown > a.btn_messages:hover {
+	text-decoration: none;
+    background-position: center 15px;
+}
+#sd_custom_messages .sd_updates_pulldown_active > a.btn_messages {
+ 	background-color: $theme_pulldown_border_color;
+}
+
+
+#sd_custom_notification .sd_updates_pulldown_active > a.btn_notifications,
+#sd_custom_notification .sd_updates_pulldown > a.btn_notifications {
+	background-image:	url(~/application/modules/Sdtopbarmenu/externals/images/notifications.png);
+    background-repeat: no-repeat;
+    background-position: center -37px;
+	height: 35px;
+  	width: 30px;
+  	padding:0px;
+	text-align: right;
+	border-radius: 0px;
+	outline: none;
+	color: #FF177F;
+}
+#sd_custom_notification .sd_updates_pulldown_active > a.btn_notifications,
+#sd_custom_notification .sd_updates_pulldown > a.btn_notifications:hover {
+	text-decoration: none;
+    background-position: center 14px;
+}
+#sd_custom_notification .sd_updates_pulldown_active > a.btn_notifications span.sd_number_count,
+#sd_custom_notification .sd_updates_pulldown > a.btn_notifications span.sd_number_count {
+	margin-left:20px;
+	color: #F00;
+}
+#sd_custom_notification .sd_updates_pulldown_active > a.btn_notifications {
+ 	background-color: $theme_pulldown_border_color;
+}
+
+
+
+ul#sd_notifications_menu_notification > li,
+ul#sd_notifications_menu_request > li,
+ul#sd_notifications_menu_mesg >  li {
+	overflow:auto;
+	padding: 2px 5px 2px 2px;
+}
+.sdtopbar_notification_popup_pic {
+	float: left;
+	min-height: 30px;
+	padding-top: 2px;
+}
+div.sd_pulldown_contents > ul > li > span {
+    display: block;
+    margin-top: 0px;
+	margin-left: 27px;		
+}
+ul#sd_notifications_menu_notification >  li > .sdtopbar_notification_popup_pic  > img,
+ul#sd_notifications_menu_request >  li > .sdtopbar_notification_popup_pic  > img,
+ul#sd_notifications_menu_mesg >  li > .sdtopbar_notification_popup_pic  > img {
+	width: 24px;
+	height:24px;
+	margin-right:5px;	
+}
+div.sd_pulldown_contents > ul > li > div.sd-date {
+	font-size:10px;
+}
+div.sd_pulldown_contents > ul > li > span > a.feed_item_username {
+	color: #044277;
+}
+
+/*** just notifications icons ****/
+
+.layout_sdtopbarmenu_notificationmini #advminimenu_notifications {
+	width: $theme_content_width;
+}
+/**** EOF Notifications ***/
+ul#sd_notifications_menu_mesg > li > span,
+ul#sd_notifications_menu_request > li > span,
+ul#sd_notifications_menu_notification > li > span,
+ul#sd_notifications_menu_notification > li > span {
+	padding: 2px 2px 2px 20px;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+/*** Mini Menu Widget ****/
+
+
+
+
+
+.dropDownMenuMini > li:first-child{
+  padding-top: 8px;
+}
+.dropDownMenuMini > li > a {
+  display: block;
+  padding: 4px 20px 4px 10px;
+  border-bottom: 1px solid #555;
+  font-weight: bold;
+  color: #999;
+}
+.dropDownMenuMini > li > a:hover {
+  text-decoration: none;
+  background-color: #444;
+  color: #FFF;
+  
+}
+
+
+
+
+/***** SignIn Form Styles ******/
+
+#signin_sd > form {
+	overflow: auto;
+	background-color:transparent;
+	padding: 0px;
+}
+
+#signin_sd > form > div > div > div.form-elements {
+	overflow: auto;
+	padding:7px;
+	padding-bottom: 0px;
+}
+#signin_sd > form > div > div > div > div {
+  float: left;	
+  margin-right: 10px;
+}
+#signin_sd > form  div#password-wrapper {
+	margin-top: 0px;
+}
+#signin_sd > form  div#password-wrapper > div,
+#signin_sd > form  div#email-wrapper > div {
+   float: left;
+   margin-right: 4px;
+}
+#signin_sd > form  div#password-wrapper input#password,
+#signin_sd > form  div#email-wrapper  input#email{
+	background-color: #cecece;
+}
+#signin_sd > form  div#password-wrapper input#password:focus,
+#signin_sd > form  div#email-wrapper  input#email:focus{
+	background-color: #fff;
+}
+#signin_sd > form  div#password-wrapper > div label,
+#signin_sd > form  div#email-wrapper > div  label{
+   margin-top: 3px;
+   color:#999;
+}
+#signin_sd > form  div#buttons-wrapper {
+	margin-top: 0px;
+}
+#signin_sd > form  div#buttons-wrapper #submit-wrapper #submit-label {
+	display: none;
+}
+#signin_sd > form  div#buttons-wrapper #remember-wrapper #remember-element label.optional {
+  display: inline-block;	
+  margin-top: 0px;
+  color:#999;
+}
+#signin_sd > form  div#password-wrapper input#password,
+#signin_sd > form  div#email-wrapper  input#email{
+	color: #333;
+}
+#signin_sd .global_form_box {
+	background-color: transparent;
+	background-image:none;
+	border: 0px;
+}
+#signin_sd > form  div#buttons-wrapper #submit-wrapper button#submit {
+	background-color: #cecece;
+	color: #333;
+	text-shadow: none;
+	font-size:1em;	
+}
+#signin_sd > form  div#buttons-wrapper #submit-wrapper button#submit:hover {
+	background-color: #999;
+}
+#signin_sd > form  div#facebook-wrapper,
+#signin_sd > form  div#twitter-wrapper {
+	margin-top: 0px;
+}
+#signin_sd > form  div#facebook-wrapper > div#facebook-label,
+#signin_sd > form  div#twitter-wrapper > div#twitter-label {
+	display: none;
+}
+/*************Active-icn***************/
+
+#sd_custom_messages .sd_updates_pulldown > a.sd_new_updates,
+#sd_custom_friendrequest .sd_updates_pulldown > a.sd_new_updates {
+  background-position:center 15px;
+}
+#sd_custom_notification .sd_updates_pulldown > a.sd_new_updates{
+  background-position:center 13px;
+}
+
+#topBarContainer #sd-signup {
+	background-image: none;
+	background-color: #CECECE;
+	margin-top: 7px;
+	padding: 2px 5px;
+    color: #333333;
+	border: none;
+}
+
+#topBarContainer #sd-signup:hover {
+	background-image: none;
+	background-color: #999999;
+
+}
+
+/***** EOF SignIn Form Styles ******/
+
+
+

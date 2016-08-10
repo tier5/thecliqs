@@ -1,0 +1,215 @@
+/* $Id: main.css 8299 2011-01-25 02:34:55Z jung $ */
+
+@include "~/application/modules/Core/externals/styles/constants.css";
+
+#global_page_welcomepagevk-index-index #global_content_simple {
+  display: block;
+}
+
+.layout_page_welcomepagevk_index_index {
+  width: $theme_content_width;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.layout_page_welcomepagevk_index_index .layout_left,
+.layout_page_welcomepagevk_index_index .layout_right {
+  float: right;
+  width: 380px;
+}
+
+.layout_page_welcomepagevk_index_index .layout_left form,
+.layout_page_welcomepagevk_index_index .layout_right form {
+  float: right;
+}
+.layout_page_welcomepagevk_index_index .global_form > div > div {
+  border: 1px solid $theme_border_color;
+}
+.layout_page_welcomepagevk_index_index .global_form div.form-wrapper {
+  clear: none;
+}
+
+.layout_page_welcomepagevk_index_index .layout_top .layout_middle { padding: 20px 0; }
+
+.layout_page_welcomepagevk_index_index .layout_top .layout_middle .layout_core_menu_logo {
+  float: left;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0;
+}
+.layout_page_welcomepagevk_index_index .layout_top .layout_middle .layout_core_menu_logo a {
+  position: static;
+  color: $theme_link_color;
+}
+.layout_page_welcomepagevk_index_index .layout_top .layout_middle .layout_core_menu_logo img {
+  padding: 0;
+  margin: 0;
+}
+.layout_welcomepagevk_login { 
+  float: right; 
+  max-width: 520px;
+  margin: 0;
+}
+.layout_welcomepagevk_login h3,
+.layout_welcomepagevk_login p.form-description,
+.layout_welcomepagevk_login #submit-label,
+.layout_welcomepagevk_login #forgot-label,
+.layout_welcomepagevk_login #facebook-label,
+.layout_welcomepagevk_login #twitter-label { 
+  display: none;
+}
+
+.layout_welcomepagevk_login .global_form#user_form_login > div > div { 
+  padding: 5px; 
+}
+.layout_welcomepagevk_login #user_form_login div.form-elements {
+  margin: 0;
+  padding: 0;
+}
+.layout_welcomepagevk_login #user_form_login div.form-elements > div {
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+}
+.layout_welcomepagevk_login #user_form_login div.form-wrapper { 
+  padding-top: 3px; 
+  margin-bottom: 5px;
+  float: right;
+  overflow: hidden;
+  clear: both;
+}
+.layout_welcomepagevk_login #user_form_login div#email-wrapper {
+  float: left;
+  margin-right: 5px;
+}
+.layout_welcomepagevk_login #user_form_login div#password-wrapper {
+  clear: none;
+  margin-right: 100px;
+}
+.layout_welcomepagevk_login #user_form_login div#forgot-wrapper {
+  width: 130px;
+  margin: -34px 120px 0 0;
+}
+
+.layout_welcomepagevk_login #user_form_login div#twitter-wrapper {
+  clear: none;
+}
+.layout_welcomepagevk_login #user_form_login div#buttons-wrapper {
+  margin-top: -33px;
+}
+.layout_welcomepagevk_login #user_form_login div#buttons-wrapper #fieldset-buttons > div {
+  float: right;
+  overflow: hidden;
+  margin-left: 10px;
+  clear: both;
+}
+.layout_welcomepagevk_login #user_form_login div#buttons-wrapper #submit-element {
+  max-width: 90px;
+  overflow: hidden;
+}
+
+.layout_welcomepagevk_login #user_form_login div.form-label,
+.layout_welcomepagevk_login #user_form_login div#facebook-element,
+.layout_welcomepagevk_login #user_form_login div#twitter-element {
+  width: auto;
+}
+.layout_welcomepagevk_login #user_form_login div#facebook-element,
+.layout_welcomepagevk_login #user_form_login div#twitter-element {
+  margin-left: 10px;
+}
+.layout_welcomepagevk_login #user_form_login div.form-element {
+  min-width: 10px;
+  margin: 0;
+}
+.layout_welcomepagevk_login #user_form_login div.form-element input[type=text],
+.layout_welcomepagevk_login #user_form_login div.form-element input[type=password] { 
+  width: 100px !important; 
+}
+.layout_welcomepagevk_login #user_form_login div.form-element input[type=checkbox] {
+  width: 10px !important; 
+}
+.layout_welcomepagevk_login #user_form_login div#remember-element label {
+  width: 110px;
+}
+
+.welcomepagevk-form-login div.welcomepagevk-input-box {
+  display: inline-block;
+  *display: inline;
+}
+
+.layout_page_welcomepagevk_index_index .layout_bottom {
+  padding: 20px 0px;
+}
+
+.layout_page_welcomepagevk_index_index .layout_main {
+  overflow: hidden;
+}
+
+.layout_page_welcomepagevk_index_index .layout_bottom .layout_middle {
+  padding: 0;
+}
+.layout_page_welcomepagevk_index_index .layout_bottom .layout_middle > div {
+  float: left;
+  overflow: hidden;
+  width: 274px;
+  margin: 0;
+  padding: 10px;
+  +foreground();
+}
+.layout_page_welcomepagevk_index_index .layout_bottom .layout_middle > div + div {
+  margin-left: 20px;
+}
+.layout_page_welcomepagevk_index_index .layout_bottom .layout_middle > div h3 {
+  margin: -10px -10px 6px;
+  padding: 7px;
+  line-height: 1em;
+}
+.layout_page_welcomepagevk_index_index .global_form div.form-label {
+  width: 100px;
+  margin: 0;
+  font-weight: normal;
+}
+.layout_page_welcomepagevk_index_index .global_form input + label {
+  float: none;
+}
+.layout_page_welcomepagevk_index_index .global_form div.form-element {
+  max-width: 210px;
+}
+.layout_page_welcomepagevk_index_index .global_form div#terms-element {
+  max-width: 180px;
+}
+.layout_page_welcomepagevk_index_index .global_form select {
+  width: 200px;
+}
+.layout_page_welcomepagevk_index_index p.description {
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.layout_page_welcomepagevk_index_index .layout_middle {
+  +shadow(0px,0px,0px,0px,rgba(1,1,1,0));
+  background: transparent;
+}
+.layout_page_welcomepagevk_index_index  .global_form > div {
+  +shadow(0px,0px,0px,0px,rgba(1,1,1,0));
+}
+
+/* special for stupid IE7 
+
+.layout_welcomepagevk_login #user_form_login div#buttons-wrapper,
+.layout_welcomepagevk_login #user_form_login div#remember-wrapper {
+  *min-width: 130px;
+}*/
+.layout_welcomepagevk_login #user_form_login div#facebook-wrapper {
+  *min-width: 100px;
+}
+.layout_welcomepagevk_login #user_form_login div#twitter-wrapper {
+  *min-width: 162px;
+  *clear: both;
+}
+/*
+.layout_welcomepagevk_login #user_form_login div#forgot-wrapper {
+  *margin-top: -38px;
+}
+*/

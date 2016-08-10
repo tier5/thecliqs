@@ -1,0 +1,149 @@
+{
+  "type": "widget",
+  "name": "advancedhtmlblock",
+  "version": "4.02p4",
+  "revision": null,
+  "path": "application\/widgets\/advancedhtmlblock",
+  "repository": null,
+  "date": "Mon, 28 Mar 2016 07:39:21 +0000",
+  "title": "YouNet Advanced Html Block",
+  "description": "Advanced Html Block",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "YouNet Company/MisterWizard"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Mon, 28 Mar 2016 07:39:21 +0000",
+    "title": "YouNet Advanced Html Block",
+    "description": "Advanced Html Block",
+    "developer": null,
+    "authors": [
+      "YouNet Company/MisterWizard"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/widgets\/advancedhtmlblock": {
+      "type": "directory",
+      "path": "application\/widgets\/advancedhtmlblock",
+      "structure": [
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1850,
+          "sha1": "b456aea7fad30b373ca416ddaa5bfb1e420a2692"
+        },
+        {
+          "path": "Element",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Element\/TinyMceYN.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1038,
+          "sha1": "b6f9281e6e9d59ece169d0ede4d06a925b3999c2"
+        },
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 500,
+          "sha1": "2f29d668a0275faaac1c4fcfb24390ca3a8cbf03"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1002,
+          "sha1": "a7663ffcebab4da2474af0aeaca51f03ad687653"
+        },
+        {
+          "path": "Mobile_Detect.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 60561,
+          "sha1": "def10515ed89a4a49aeb6f39cd7409eef584d156"
+        },
+        {
+          "path": "View",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper\/FormTinyMceYN.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3128,
+          "sha1": "0029a484a60cb648ed5d939975e149286fac04e4"
+        },
+        {
+          "path": "View\/Helper\/TinyMceYN.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7289,
+          "sha1": "af50f7cc165d2a57d7a4cf7758ddf0e11dd0f185"
+        },
+        {
+          "path": "View\/Helper\/TinyMceYN1.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7153,
+          "sha1": "a6f9a176b84bb7fd01918ca412a0500b6b833cb1"
+        }
+      ]
+    },
+    "application\/modules\/Core\/Form\/Admin\/Younetadvancedhtmlblock.php": {
+      "type": "file",
+      "path": "application\/modules\/Core\/Form\/Admin\/Younetadvancedhtmlblock.php",
+      "structure": {
+        "path": "Younetadvancedhtmlblock.php",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 9219,
+        "sha1": "0ea52600001646d111a45eaa6661456f7bea3c2d"
+      }
+    }
+  }
+}

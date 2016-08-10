@@ -1,0 +1,683 @@
+{
+  "type": "module",
+  "name": "socialgames",
+  "version": "4.9",
+  "revision": null,
+  "path": "application\/modules\/Socialgames",
+  "repository": null,
+  "date": "Fri, 12 Dec 2014 10:43:42 +0000",
+  "title": "SocialGames",
+  "description": "add many games for your site",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "SocialEnginePro LLC/MisterWizard"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 12 Dec 2014 10:43:42 +0000",
+    "title": "SocialGames",
+    "description": "add many games for your site",
+    "developer": null,
+    "authors": [
+      "SocialEnginePro LLC/MisterWizard"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Socialgames\/settings\/install.php",
+    "class": "Socialgameswidget_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.2.0",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Socialgames": {
+      "type": "directory",
+      "path": "application\/modules\/Socialgames",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 74,
+          "sha1": "f5a47bc46a93215b6d5075ff168dac8ea78925e0"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 90,
+          "sha1": "95078962683425bdd1a28e7d2b0a17c414eead44"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 23751,
+          "sha1": "7e00506bd70478595e9dbf0ebe20ee0445916ec4"
+        },
+        {
+          "path": "controllers\/AjaxController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3351,
+          "sha1": "663da6f074be9d12a74485d15b8d6060e26c5700"
+        },
+        {
+          "path": "controllers\/GameController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1970,
+          "sha1": "ec66b39a11bccbc9cdbb61b0f8a9720922be8d5c"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3261,
+          "sha1": "9e2755afcc9fb682eef1259af5a44093aea57ef9"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/1.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 377646,
+          "sha1": "217e1385f782d9aa5a8a49aac876702143e330f5"
+        },
+        {
+          "path": "externals\/images\/2.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 130752,
+          "sha1": "b00354e4c887fd611c665b5b5a9e08a06a43befb"
+        },
+        {
+          "path": "externals\/images\/3.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1043187,
+          "sha1": "477fbdd3196e3ecc9a08c7100ebe15311d0cde73"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/script.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 888,
+          "sha1": "37da7c8a27acfa9f8b907be6b20e7ae5e99f05b3"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2731,
+          "sha1": "8e6273c16a9aec25069e1e3eccedc532cc86267b"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Games",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Games\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 868,
+          "sha1": "115a7658a696575ce2111283eb0c02a7b8ee624e"
+        },
+        {
+          "path": "Form\/Admin\/Games\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1598,
+          "sha1": "32d6266646734572062d8f7ca50fa6fdf31060d8"
+        },
+        {
+          "path": "Form\/Admin\/Games\/Manage.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2287,
+          "sha1": "bc1ef06d68c4c44f4a48938301ee79c4c8a16e58"
+        },
+        {
+          "path": "Form\/Admin\/Games\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 684,
+          "sha1": "f9995a7612c63b0583fd8c51daca80ff16d3d5a4"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1031,
+          "sha1": "3410b20e7d76ca86f1aebed9bb81bb679c2e0176"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model\/DbTable\/Favourite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 138,
+          "sha1": "c02b2d150fbca4909464b91a43d3cb5d83a954c6"
+        },
+        {
+          "path": "Model\/DbTable\/Games.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2576,
+          "sha1": "219f2402fd51120ed28abb9cfc6ccad02706cb5d"
+        },
+        {
+          "path": "Model\/DbTable\/Play.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1546,
+          "sha1": "45a835a07ba4f1f25e0a373ff69b8d2371285eaf"
+        },
+        {
+          "path": "Model\/Favourite.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 79,
+          "sha1": "3612a242bb4fdfd827b846504025247aaa32afe6"
+        },
+        {
+          "path": "Model\/Game.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 986,
+          "sha1": "f7e02eb1a3ced00fe12970175bd55017fc9221ad"
+        },
+        {
+          "path": "Model\/Play.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 74,
+          "sha1": "54e5164e2d96329703b2d40314d68827a44cfbc6"
+        },
+        {
+          "path": "plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 387,
+          "sha1": "91327231e154177e2f2c7f493f0363c5c8710900"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1242,
+          "sha1": "a2eedeb51cd00ee2c44188c24eaee5a0963abc56"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 16756,
+          "sha1": "0ea173fd6844fd94f8a202f018e76900c3b891d8"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4363,
+          "sha1": "a6b5a490998f9bdd901ef867bee924ab67f4d66d"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2485,
+          "sha1": "f13343770245c9f460360036b6f3ca2b6121fe15"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/gamedelete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 41,
+          "sha1": "eb169a62374a63177569ce719c31df4f3341df48"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/gameedit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 41,
+          "sha1": "eb169a62374a63177569ce719c31df4f3341df48"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2572,
+          "sha1": "c3baaa338958b908156c959e74844384b4c29f1b"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/levels.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 564,
+          "sha1": "b561d7697d0c301ca47ebb7335b5ea9dc48be6b7"
+        },
+        {
+          "path": "views\/scripts\/game",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/game\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3020,
+          "sha1": "50c3b1c7b337afdc1d8a0f2ffecd5f3db7100a9b"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1576,
+          "sha1": "c5efdbd82b3d00c023962eebbc4f48f3442028fd"
+        },
+        {
+          "path": "views\/scripts\/index\/favourite.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1579,
+          "sha1": "dc477d2b0433c6b414985671c4c76569f61c3f0b"
+        },
+        {
+          "path": "views\/scripts\/index\/featured.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1579,
+          "sha1": "4bcb2fde52decdef9f7967eb66103e6af80424bf"
+        },
+        {
+          "path": "views\/scripts\/index\/random.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-search",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-search\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 800,
+          "sha1": "21e4c3deaa1381da1eeb0bc0475437900a8cbc07"
+        },
+        {
+          "path": "widgets\/browse-search\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 91,
+          "sha1": "23eff47de6eaaf3d4a1db78d492dc6360fcbfe85"
+        },
+        {
+          "path": "widgets\/games-featured",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/games-featured\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 559,
+          "sha1": "60dd593e1d0e67d275d59939bd78adc050ca2267"
+        },
+        {
+          "path": "widgets\/games-featured\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1016,
+          "sha1": "19febab085ff39a8ab1f471fdfeff2a900db907f"
+        },
+        {
+          "path": "widgets\/menu-main",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/menu-main\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 276,
+          "sha1": "841497047bbe983bb9fcbc49a75e22062cfe968e"
+        },
+        {
+          "path": "widgets\/menu-main\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 215,
+          "sha1": "d50ddba90acefa0ca3ffedd42e3263aa171b2c91"
+        },
+        {
+          "path": "widgets\/most-players",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-players\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 356,
+          "sha1": "db15a2a40744d7a0cd98e2e74d713f3e9c8505c0"
+        },
+        {
+          "path": "widgets\/most-players\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 530,
+          "sha1": "41e998ad31485c2246bfa880bfd5a668b275dbe1"
+        },
+        {
+          "path": "widgets\/profile-games",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-games\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 435,
+          "sha1": "b3f54b860748c25d9dbaaaf8f0015d5d0b0f7df3"
+        },
+        {
+          "path": "widgets\/profile-games\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1444,
+          "sha1": "c404d0a44928dc1368a802b545ab59417cfac807"
+        },
+        {
+          "path": "widgets\/similar-games",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/similar-games\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 642,
+          "sha1": "997c3a295d0ac07e9bb94d7d0b5129f4cd8c34e9"
+        },
+        {
+          "path": "widgets\/similar-games\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1376,
+          "sha1": "6962ddb76af169ff0eadfb49594b320f514c9d13"
+        }
+      ]
+    },
+    "application\/languages\/en\/socialgames.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/socialgames.csv",
+      "structure": {
+        "path": "socialgames.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 1235,
+        "sha1": "7ca1949387797b4e3845b8a922c9b61166434ed2"
+      }
+    }
+  }
+}

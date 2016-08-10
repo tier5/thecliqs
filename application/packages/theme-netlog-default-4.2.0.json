@@ -1,0 +1,213 @@
+{
+  "type": "theme",
+  "name": "netlog-default",
+  "version": "4.2.0",
+  "revision": null,
+  "path": "application\/themes\/netlog-default",
+  "repository": null,
+  "date": "Fri, 09 Mar 2012 14:17:20 +0000",
+  "title": "Netlog Theme Default",
+  "description": "Netlog-like Template with default gray colors",
+  "thumb": "netlog_theme.jpg",
+  "developer": null,
+  "authors": [
+    "MisterWizard"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 09 Mar 2012 14:17:20 +0000",
+    "title": "Netlog Theme Default",
+    "description": "Netlog-like Template with default gray colors",
+    "developer": null,
+    "authors": [
+      "MisterWizard"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": "application\/themes\/netlog-default\/install.php",
+    "class": "NetlogDefault_Installer",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/netlog-default": {
+      "type": "directory",
+      "path": "application\/themes\/netlog-default",
+      "structure": [
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7774,
+          "sha1": "676b27db4132ee6da911e507a5e39fd42b892173"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "images\/bg_btn.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 981,
+          "sha1": "f6167067b6bfc5610a4face6f7d65bc9f455fa80"
+        },
+        {
+          "path": "images\/bg_content.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 951,
+          "sha1": "ea32b2aa9370cc8374ef774c256a6461288c86c5"
+        },
+        {
+          "path": "images\/bg_darkbox.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1091,
+          "sha1": "c02665764cca1108e3c65cfaae3802f0123c0d38"
+        },
+        {
+          "path": "images\/bg_footer.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 960,
+          "sha1": "a8ee3d352541d1675ba8338c8410d2bfb87dbb3b"
+        },
+        {
+          "path": "images\/bg_header.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1005,
+          "sha1": "e0ed56f3b91f84f99f36e5ac97d3864aefe351b5"
+        },
+        {
+          "path": "images\/ico_quote.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1010,
+          "sha1": "3572e076318fc93ad9cccd31a56ba2898080adac"
+        },
+        {
+          "path": "images\/ico_quote2.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1009,
+          "sha1": "9e5dceee234addcd06c43cedeae4a7f42e250154"
+        },
+        {
+          "path": "images\/ico_statistic.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1618,
+          "sha1": "41e52afad04606784b81a6ddeb131948631ac64c"
+        },
+        {
+          "path": "images\/ico_user_messages.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2620,
+          "sha1": "5f40053f76c2ed07981a9267dca97e991b3569d9"
+        },
+        {
+          "path": "images\/ico_user_status.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2365,
+          "sha1": "6290f04b7f97bc0dc7b76738048d2a3e6cdff577"
+        },
+        {
+          "path": "images\/img_arrow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 240,
+          "sha1": "6615731cf38e260d7cacacb0c92e3ed068c4cd1d"
+        },
+        {
+          "path": "images\/img_mobile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11888,
+          "sha1": "521b5a4c6ec4eaa866b5c1e4551c1b464bbc632f"
+        },
+        {
+          "path": "images\/spr_topmenu_buttons.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 70547,
+          "sha1": "08210a2ac6a540bffa72799243136cc639032e81"
+        },
+        {
+          "path": "install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 833,
+          "sha1": "18c6c07acc4fc8e0d4ae8aa3367b9ed10671b873"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 833,
+          "sha1": "49c210efd8f7447696605bfee5b557084b60bb5c"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 19755,
+          "sha1": "2cce1f9b0d11c71734cdaa55a039ecd6daf3d162"
+        },
+        {
+          "path": "netlog_theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9520,
+          "sha1": "4b27423baa33d3ff162d841d361888e0dd388454"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 42067,
+          "sha1": "a0f88755f7ac3876e76372910364d98923062697"
+        }
+      ]
+    }
+  }
+}

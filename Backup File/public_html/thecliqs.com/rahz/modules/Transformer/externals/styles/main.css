@@ -1,0 +1,56 @@
+div.layout_core_menu_main{
+	margin-bottom:0;
+}
+.acc_toggler  { cursor:pointer; }
+.acc_toggler:hover   { background:#eee; }
+
+.accordion_wrapper .acc_toggler{
+	border-bottom: 1px solid #1C252B;
+	border-top: 1px solid #404950;
+
+	background: url(~/application/themes/transformer/images/menu_item_bg.png) repeat-x 0 0;
+}
+.accordion_wrapper .acc_toggler div{
+	background: url(~/application/modules/transformer/externals/images/parentArrow.png) no-repeat 12px 16px;
+	padding: 10px 0 12px 42px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	outline: none;
+	display: block;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #DDD;
+	font-weight: bold;
+	line-height: 20px;
+}
+.accordion_wrapper .acc_toggler_active div{
+	background: url(~/application/modules/transformer/externals/images/parentArrow2.png) no-repeat 12px 16px;
+}
+.accordion_wrapper .acc_toggler:hover{
+	background-position: 0 -43px;
+	border-top: 1px solid #516271;
+	color: #FFF;
+}
+.accordion_wrapper li{
+	background: url(~/application/modules/transformer/externals/images/arrow.gif) no-repeat 12px 19px;
+}
+.accordion_wrapper li > a{
+	display: block;
+	border: none;
+	color: #494949;
+	font-size: 11px;
+	padding: 8px 10px 8px 26px;
+	color: #9DA1A5;
+	border-bottom: 1px solid #1C252B;
+	border-top: 1px solid #404950;
+	font-weight: normal;
+	font-size: 11px;
+}
+.accordion_wrapper li > a:hover{
+	color: #FFF;
+}
+.accordion_wrapper ul{
+	border-bottom: 1px solid #1A2126;
+	border-top: none;
+	background: url(~/application/modules/transformer/externals/images/subNavBg.jpg);
+}

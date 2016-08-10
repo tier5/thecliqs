@@ -1,0 +1,437 @@
+.mycontest_search #buttons-label
+{
+	margin-top: 8px!important;
+}
+.yncontest_tabs > ul li
+{
+	margin-right: 1em!important;
+}
+.yncontest_tabs > ul li a
+{
+	padding: 0.6em 0!important;
+}
+.yncontest_tabs > ul li + li > a
+{
+	margin-left: 0px!important;
+	padding: 0.8em 0!important;
+}
+.yncontest_tabs > ul li.active a
+{
+	margin-left: 0px!important;
+	padding: 0.6em 0!important;
+}
+.profile_fields > ul > li > span
+{
+	width: 50%!important;
+}
+.profile_fields > ul > li > span + span
+{
+	width: 40%!important;
+}
+.mycontest_search .global_form_box .form-elements .form-wrapper
+{
+	margin-left: 0px!important;
+	margin-right: 10px;
+}
+.mycontest_search .global_form_box .form-elements .ui-datepicker-trigger
+{
+	margin: 3px 20px 0 10px!important;
+}
+.ui-datepicker td span, .ui-datepicker td a
+{
+	padding: 0.1em!important;
+}
+.layout_yncontest_my_contests .global_form_box .form-wrapper, .mycontest_search .global_form_box .form-wrapper
+{
+	margin-top: 5px!important;
+}
+#yncontest_contest_settings #max_entries-label
+{
+	display: block!important;
+}
+#contest_publish div.form-label
+{
+	display: none;
+}
+.event_calendar_container
+{
+	margin-right: 10px;
+}
+
+/* Contest detail */
+.layout_yncontest_profile_information .ynContest_detail_more_left .submit_entry,
+.layout_yncontest_profile_information .ynContest_detail_more_left .vote_entry
+{
+	height: auto;
+}
+.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_right h4
+{
+	margin-top: 0px;
+}
+.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_right
+{
+	border: 0;
+	width: 40%;
+}
+.layout_yncontest_profile_information .ynContest_detail_more
+{
+	border: 1px solid #ddd;
+	border-left-width: 0;
+}
+.yncontestformwin .buttons button
+{
+	margin-left: 0px;
+}
+.global_form.yncontestformwin div#button-label
+{
+	width: 205px;
+}
+.layout_yncontest_profile_information .ynContest_detail_more_left .submit_entry
+{
+	background-image: none;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #ddd;
+}
+.layout_page_yncontest_my-contest_view .comments,
+#global_page_yncontest-my-entries-view .comments
+{
+	width: 100%;
+}
+#announcements_create #body-wrapper #body-label
+{
+	display: none;
+}
+#announcements_create #body-wrapper #body-element
+{
+	padding-top: 10px;
+}
+.ynContest_donateCode
+{
+	margin-right: 20px;
+}
+#global_page_yncontest-index-promote button,
+.layout_yncontest_submit_entry button,
+.ynContest_donateCode button
+{
+	margin-top: 10px;
+}
+.ynContest_listCompare .form-options-wrapper
+{
+	margin-top: 0px;
+}
+.ynContest_listCompare  input[type="checkbox"],
+#multidelete_form .admin_table_short input[type="checkbox"]
+{
+	margin: 0;
+	margin-right: 3px;
+}
+.yconstest_detail_voted .ynContest_entries_vote a.buttonlink:link
+{
+	height: 25px;
+}
+textarea.ynContest_boxCode
+{
+	height: 230px;
+}
+/* End Contest detail*/
+/* Featured contest*/
+.yncontest_responsive_slideshow_flex .description p,
+.yncontest_responsive_slideshow_flex .slideshow-captions p,
+.ynContest_liInfo .description p
+{
+	margin: 0;
+}
+.ynContest_liInfo .description
+{
+	padding-top: 7px;
+}
+.yncontest_responsive_slideshow_flex div.carousel-caption
+{
+	padding: 10px 0px 5px;
+}
+.yncontest_responsive_slideshow_flex .slideshow-captions .description div.column.first
+{
+	width: 50%;
+}
+.layout_yncontest_featured_contest .slideshow-thumbnails a
+{
+	padding: 0!important;
+	padding-left: 1px!important;
+}
+
+/* End Featured contest*/
+/* Contest listing*/
+ul.large_contest_list .contest_large_img
+{
+	height: 70%;
+}
+ul.ynContest_LRH3ULLi 
+{
+	border: 0;
+	padding: 0;
+}
+/* End contest listing*/
+/* Manage contest*/
+
+/* End manage contest*/
+#global_page_yncontest-contest-photo-upload .global_form div.form-element
+{
+	max-width: 100%!important;
+}
+#global_page_yncontest-contest-photo-upload .progress {
+	width: 370px!important;
+}
+#global_page_yncontest-contest-photo-upload #files {
+	width: 430px!important;
+	clear: both;
+}
+.contestcreate_midle .global_form > div > div,
+.yncontest_browse_filters > div > div
+{
+	padding: 0;
+	background-color: transparent;
+}
+@media (max-width: 1200px)
+{
+	.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_left
+	{
+		width: 70%;
+		background-color: #D5E8FD;
+	}
+	.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_right
+	{
+		width: 30%;
+	}
+	.global_form.yncontestformwin div#button-label
+	{
+		display: none;
+	}
+}
+@media (max-width: 992px)
+{		
+	.layout_right div.layout_yncontest_search_contest form[id$=filter_form].open
+	{
+		top: -29px!important;
+	}
+	.contestcreate_midle #buttons-label,
+	#yncontest_contest_settings .form-label
+	{
+		display: none;
+	}
+	.global_form.yncontestformwin div#button-label
+	{
+		display: block;
+	}
+}
+@media (max-width: 767px)
+{
+	.contestcreate_midle #buttons-label,
+	#yncontest_contest_settings .form-label
+	{
+		display: block;
+	}
+}
+@media (max-width: 662px)
+{
+	.contestcreate_midle #buttons-label,
+	#yncontest_contest_settings .form-label
+	{
+		display: none;
+	}
+}
+@media (max-width: 640px)
+{
+	.contestcreate_midle #buttons-label,
+	#yncontest_contest_settings .form-label
+	{
+		display: block;
+	}
+	.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_left,
+	.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_right
+	{
+		width: 100%;
+		border: 1px solid #ddd;
+	}
+	.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_right
+	{
+		margin-top: 10px;
+	}
+	.layout_yncontest_profile_information .ynContest_detail_more
+	{
+		border: 0;
+	}
+	.layout_yncontest_profile_information .ynContest_detail_more .ynContest_detail_more_left
+	{
+		border-left-width: 0;
+	}
+	.yncontest_responsive_slideshow_flex .description .center
+	{
+		display: none;
+	}
+	.yncontest_responsive_slideshow_flex .slideshow-captions .description div.column.first
+	{
+		width: 100%;
+	}
+	ul.ynContest_myContest_browse > li .ynContest_myContest_browse_options
+	{
+		position: absolute;
+		bottom: 5px;
+		right: 0;
+		width: auto;
+	}
+	ul.ynContest_myContest_browse > li .ynContest_myContest_browse_options a
+	{
+		display: inline-block;
+	}
+	ul.ynContest_myContest_browse > li .ynContest_myContest_browse_info
+	{
+		padding-bottom: 30px;
+		padding-left: 10px;
+	}
+	ul.ynContest_myContest_browse > li
+	{
+		position: relative;
+	}
+}
+@media (max-width: 517px)
+{
+	.global_form.yncontestformwin div#button-label
+	{
+		display: none;
+	}
+}
+@media (max-width: 560px)
+{
+	.contestcreate_midle #buttons-label,
+	#yncontest_contest_settings .form-label
+	{
+		display: none;
+	}
+}
+@media (max-width: 480px)
+{		
+	.mycontest_search .global_form_box #buttons-wrapper
+	{
+		clear: both;
+		padding-top: 10px;
+	}
+	#global_page_yncontest-contest-photo-upload .progress {
+		width: 255px!important;
+	}
+	#global_page_yncontest-contest-photo-upload #files
+	{
+		width: 300px!important;
+	}
+}
+@media (max-width: 479px)
+{
+	.photo-delete-wrapper,
+	.yncontest_editphotos_cover,
+	ul.yncontest_editphotos .yncontest_editphotos_photo
+	{
+		float: none!important;
+	}
+}
+@media (max-width: 372px)
+{
+	#global_page_yncontest-contest-photo-upload .progress {
+		width: 175px!important;
+	}
+	#global_page_yncontest-contest-photo-upload #files {
+		width: 235px!important;
+	}
+}
+@media (max-width: 320px)
+{
+	.yncontest_tabs > ul li
+	{
+		display: block!important;
+	}
+	.large_contest_list > li
+	{
+		width: 100%!important;
+	}
+	#global_page_yncontest-my-contest-delete,
+	#global_page_yncontest-my-contest-close,
+	#global_page_yncontest-my-contest-service,
+	#global_page_activity-index-share,
+	#global_page_yncontest-my-contest-invite-members,
+	#global_page_yncontest-my-contest-join	
+	{
+		width: 290px;
+	}
+	ul.ynContests_browse.ynContestSubmit_list > li
+	{
+		margin-left: 0px;
+		max-width: 136px;
+	}
+	.ynContest_listCompare li,
+	.layout_yncontest_profile_winning_entries .ynContest_listCompare li
+	{
+		width: 100%!important;
+	}
+	.mycontest_search .global_form_box .form-elements .form-wrapper + .form-wrapper
+	{
+		clear: both;
+	}
+	.mycontest_search .global_form_box .form-elements #button-element
+	{
+		margin-top: 0px;
+	}
+}
+
+
+body.ynresponsive-metro{
+	ul.ynContest_LRH3ULLi>li, ul.ynContest_participantsList>li{
+		padding: 7px 10px;
+	}
+	.layout_advancedhtmlblock,
+	.layout_yncontest_my_entries{
+		padding: 10px;
+	}
+
+	.layout_yncontest_contest_menu_mini{
+		padding: 0 10px;
+	}
+
+	&#global_page_yncontest-my-contest-view{
+		.layout_main{
+			.layout_middle{
+				padding: 10px;
+
+				h3{
+					margin-top: 0;
+				}
+			}
+		}
+
+		.layout_yncontest_profile_options .layout_left{
+			padding: 10px;
+			overflow: hidden;
+			margin-right: 0;
+			background-color: #FFF;
+		}
+		.layout_yncontest_profile_addthis{
+			padding: 10px;
+		}
+	}
+
+	.generic_layout_container.layout_yncontest_featured_contest{
+		overflow: hidden;
+		margin-bottom: 15px;
+	}
+
+	ul#yncontest_slideshow_container{
+		padding: 0px;
+	}
+	.slideshow-thumbnails{
+		background: #FFF;
+		margin-left: 0;
+		padding: 5px;
+
+		ul{
+			margin-left: 5px;
+		}
+	}
+}

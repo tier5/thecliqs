@@ -1,0 +1,57 @@
+#multidelete_form > div
+{
+ overflow-x: auto;
+}
+table.yncontest_admin_table
+{
+	width: 100%;
+}
+table.yncontest_admin_table .yncontest_cell_center
+{
+	text-align: center;
+}
+table.yncontest_admin_table .yncontest_cell_right
+{
+	text-align: right;
+}
+table.yncontest_admin_table .yncontest_cell_left
+{
+	text-align: left;
+}
+.yncontest_admin_search
+{
+    max-width: 950px !important;
+}
+/* border view entry detail*/
+.ynContest_detailContentLeft > img
+{ 
+       border: 1px solid $theme_photo_border_color; 
+       padding: 5px;
+}
+/* ADMIN SEARCH */
+div.ynContest_adminSearch
+{
+	max-width: none;
+	width: 100%;
+}
+.ynContest_adminSearch .search > form
+{
+	padding: 10px;
+}
+.ynContest_adminSearch .search > form #button-label
+{
+	display: none;
+}
+.ynContest_adminSearch .search > form #button-element
+{
+	margin-top: 1em;
+}
+.ynContest_adminForm > div
+{
+	overflow-x: auto;
+}
+#global_page_yncontest-admin-manage-index input[type=text]
+{
+	width: 95px!important;
+}
+

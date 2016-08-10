@@ -1,0 +1,330 @@
+{
+  "type": "module",
+  "name": "transformer",
+  "version": "4.0.9",
+  "revision": null,
+  "path": "application\/modules\/Transformer",
+  "repository": null,
+  "date": "Tue, 25 Dec 2012 06:48:48 +0000",
+  "title": "Transformer",
+  "description": "Dependencies for Transformer theme.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/setweaks.com\" target=\"_blank\">seTweaks.com Team<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Tue, 25 Dec 2012 06:48:48 +0000",
+    "title": "Transformer",
+    "description": "Dependencies for Transformer theme.",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/setweaks.com\" target=\"_blank\">seTweaks.com Team<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Module",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Transformer": {
+      "type": "directory",
+      "path": "application\/modules\/Transformer",
+      "structure": [
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 590,
+          "sha1": "9874668bdcb562ff97fa61adb6779c8e52edb012"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 172,
+          "sha1": "fbc3f4c7160d986078e2915d0d8ac5b8a23f8084"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/arrow.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1094,
+          "sha1": "0042592888c1e5c49998d2a8c8b7fee762832c2e"
+        },
+        {
+          "path": "externals\/images\/parentArrow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1009,
+          "sha1": "93deff32e168ce5b4a88b1daa4b102c6d72491b7"
+        },
+        {
+          "path": "externals\/images\/parentArrow2.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 996,
+          "sha1": "07abdde3643b5dc6d7a045a45309ba2c40d6ff08"
+        },
+        {
+          "path": "externals\/images\/subNavBg.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2840,
+          "sha1": "aa3a685d8846ba74d7e705efc0733e8249960b65"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1585,
+          "sha1": "7667ec9d2e32c1f6db7112a7b2ee18f5b99436d6"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 355,
+          "sha1": "09523fa6c2a324e1785565f7233247a024e8c3df"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 775,
+          "sha1": "d65b586673caf74c0cbe651ff3bbce9526cd3ee9"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0-4.0.9.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 231,
+          "sha1": "c176f2759260bbecb4bfc14745ef78f5db2519e5"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 351,
+          "sha1": "181599c064b3aca1a6cd855e9197f52210af9d99"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 84,
+          "sha1": "be556b06ddccea488c14f4a2200ea15bad9b6289"
+        },
+        {
+          "path": "views\/scripts\/_accordion.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 867,
+          "sha1": "d6d411d3d2695de51db7d65df4b3ef16b9a3ef94"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/accordion-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/accordion-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 477,
+          "sha1": "bf468fecb6548bed1cf3a8116b2cf56f31bfe488"
+        },
+        {
+          "path": "widgets\/accordion-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 331,
+          "sha1": "db3fed9e969ad380925376e53c01c72d04df5b07"
+        }
+      ]
+    },
+    "application\/languages\/en\/transformer.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/transformer.csv",
+      "structure": {
+        "path": "transformer.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 0,
+        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      }
+    }
+  }
+}

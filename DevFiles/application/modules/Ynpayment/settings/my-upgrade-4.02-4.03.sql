@@ -1,0 +1,2 @@
+INSERT IGNORE INTO `engine4_payment_gateways` (`gateway_id`, `title`, `description`, `enabled`, `plugin`, `config`, `test_mode`) VALUES 
+(102, 'CCBill', NULL, '0', 'Ynpayment_Plugin_Gateway_CCBill',NULL, '0');

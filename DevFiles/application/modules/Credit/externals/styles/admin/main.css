@@ -1,0 +1,50 @@
+.settings .credit_settings_form .form-wrapper {
+  border: medium none;
+}
+
+#credit-wrapper input.admin_give_credits_amount_input {
+  width: 50px;
+}
+
+#credit-wrapper p.description,
+#spec_users-wrapper p.description,
+#send-wrapper p.description {
+  margin-top: 0;
+  display: block;
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+
+.settings div#send-element ul li {
+  float: left;
+  margin: 3px 15px 3px 0;
+}
+
+.credit_payment_bonus {
+  background: none repeat scroll 0 0 #FFF8CC;
+  border-bottom: 1px solid #FFE222;
+  padding-bottom: 1px;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: $theme_font_color_light;
+}
+
+.admin_table .admin_credit_module {
+  background-color: $theme_topbar_minimenu_link_hover_background_color;
+  text-align: center;
+  font-weight: bold;
+}
+
+#admin_assign_credits .admin_table tr {
+  background-color: transparent;
+}
+
+.icon_loading
+{
+  background-image: url(~/application/modules/Core/externals/images/loading.gif);
+  background-repeat: no-repeat;
+  float: right;
+  height: 16px;
+  width: 16px;
+}

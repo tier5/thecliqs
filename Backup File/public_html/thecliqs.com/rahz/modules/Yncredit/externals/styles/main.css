@@ -1,0 +1,464 @@
+/*** clearfix style ***/
+.yncredit-clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.yncredit-clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .yncredit-clearfix {
+    display: block;
+}
+ 
+* html .yncredit-clearfix {
+    height: 1%;
+}
+/*** end clearfix ***/
+
+.yncredit-container {
+    border: 1px solid $theme_border_color;
+    padding: 1em;
+}
+
+span[class^=icon-credit] {
+    background-image: url("~/application/modules/Yncredit/externals/images/icon-credit.png");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: -5px;
+    margin-right: 5px;       
+}
+span.icon-credit-up { background-position: 0 -22px; }
+span.icon-credit-down { background-position: 0 -44px; }
+
+.yncredit-color { color: #f7941e; }
+.yncredit-color-up { color: #b3d97e; }
+.yncredit-color-down { color: #ed1c24; }
+
+.layout_yncredit_top_credits_balance,
+.layout_yncredit_top_active_members,
+.layout_yncredit_statistics,
+.layout_yncredit_my_statistics,
+.layout_yncredit_buy_credit,
+.layout_yncredit_send_credit {
+    margin-bottom: 15px;
+}   
+.notification_type_yncredit_receive,
+.notification_type_yncredit_debit
+{
+	background-image: url(~/application/modules/Yncredit/externals/images/profile-icon-credit.png);
+}
+.layout_yncredit_buy_credit {
+    .img-buy-credit {
+        height: 188px;
+        background-image: url("~/application/modules/Yncredit/externals/images/buy-credit.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    
+    .global_form > div {
+        float: none;
+    }
+    
+    .global_form div.form-element {
+        min-width: 0;   
+    }
+
+    .form-elements
+    {
+    	padding: 0;
+    	#buy_credit-element
+    	{
+    		width: 100%;
+    		#buy_credit
+    		{
+    			width: 100%;
+    		}
+    	}
+    	.form-label
+    	{
+    		display: none;
+    	}
+    	input
+    	{
+    		margin-bottom: 7px;
+    	}
+        
+        input + label {
+            float: none;
+            overflow: hidden;
+            margin-bottom: 7px;
+        }
+    }
+}
+
+.layout_yncredit_send_credit {
+    
+	.form-elements
+    {
+    	padding: 0;
+	    #send_credit-element
+		{
+			width: 100%;
+			#send_credit
+			{
+				width: 100%;
+			}
+		}
+		div.form-label
+		{
+			width: auto!important;
+		}
+		div.form-element
+		{
+			width: 100%;
+            max-width: 98%;
+            min-width: 0;
+		}
+		#send_credit-label,
+		#toValues-label
+		{
+			display: none;
+		}
+		#toValues-wrapper
+		{
+			height: 0px;
+            margin-top: 0;
+            margin-bottom: 0;
+		}
+		#to-wrapper
+		{
+            margin-bottom: 0;
+		}
+		input[type=text]
+		{
+			width: 95%;
+		}
+		#to-label
+		{
+			padding: 4px 0px 0px 2px;
+			text-align: left;
+		}
+	}
+    
+    .global_form {
+        margin-top: 1em;
+    }
+    
+    .global_form div.form-label {
+        color: $theme_font_color_light;
+    }
+}
+
+.layout_yncredit_statistics {
+    .yncredit-container li {
+        margin: 10px 0;
+    }
+}
+
+.layout_yncredit_my_statistics {
+    .yncredit-container li {
+        width: 30%;
+        min-width: 230px;
+        float: left;
+        margin: 5px 10px;
+    }
+}
+
+.layout_yncredit_top_active_members,
+.layout_yncredit_top_credits_balance {
+    .yncredit-container li {
+        padding-bottom: 10px;
+    }
+    
+    .yncredit-container li + li {
+        border-top: 1px solid $theme_border_color;
+        padding-top: 10px;
+    }
+    
+    .yncredit-top-avatar {
+        float: left;
+        border: 1px solid $theme_border_color;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        
+        img { width: 100%; height: 100%; }
+    }
+    
+    .yncredit-top-content {
+        overflow: hidden;
+        font-weight: bold;
+        
+        & > a {
+            margin-bottom: 5px;
+            display: block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+.layout_page_yncredit_index_index .yncredit-generation {
+    margin-top: 1em;
+    
+    & > div {
+        margin-bottom: 3px;
+    }
+     
+    .yncredit-table-title {
+        background-color: $theme_link_color;
+        font-weight: bold;
+        padding: .4em 0;
+        +rounded();
+        
+        & > div { color: $theme_body_background_color; }
+    }
+    
+    .yncredit-table-toggle {
+        background-color: $theme_border_color;
+        font-weight: bold;
+        padding: .7em .8em;
+        +rounded();
+        position: relative;
+        
+        span.yncredit-toggle-icon {
+            background-image: url("~/application/modules/Yncredit/externals/images/icon-toggle.png");
+            background-repeat: no-repeat;
+            width: 4em;
+            height: 2.5em;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block; 
+            background-position: 2.4em 1em;
+            cursor: pointer;
+            
+            &.toggle-open {
+                background-position: .8em .8em;
+                transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+            }    
+        }        
+        
+            
+    }
+    
+    .yncredit-table-content {
+        padding: .7em 0;    
+    }
+    
+    .yncredit-table-content + .yncredit-table-content {
+        border-top: 1px solid $theme_border_color;
+    }
+    
+    .yncredit-table-title,
+    .yncredit-table-content {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        & > div {
+            padding: .4em .7em;
+            -webkit-box-flex: 2;
+            -moz-box-flex: 2;
+            -o-box-flex: 2;
+            -ms-flex:2;            
+            box-flex:2;
+            flex: 2;
+            width: 100%;
+        }
+        
+        & > div + div {
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -o-box-flex: 1;
+            -ms-flex:1;            
+            box-flex:1;
+            flex: 1;
+            text-align: center;
+        }
+        
+        span {
+            display: block;
+            color: $theme_font_color_light;
+            font-size: .9em;
+        }
+    }
+}
+
+.layout_page_yncredit_profile_index .my-credit-data {
+    margin-top: 1em;
+    
+    .yncredit-table-title {
+        background-color: $theme_link_color;
+        font-weight: bold;
+        padding: .4em 0;
+        +rounded();
+        
+        & > div { color: $theme_body_background_color; }
+    }
+    
+    .yncredit-table-content {
+        padding: .7em 0;    
+    }
+    
+    .yncredit-table-content + .yncredit-table-content {
+        border-top: 1px solid $theme_border_color;
+    }
+    
+    .yncredit-table-title,
+    .yncredit-table-content {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        & > div {
+            padding: .4em .7em;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -o-box-flex: 1;
+            -ms-flex:1;            
+            box-flex:1;
+            flex: 1;
+            width: 100%;
+        }        
+    }
+    
+    .yncredit-table-content > div:nth-child(3) { font-weight: bold; }
+}
+
+.layout_page_yncredit_profile_index .layout_core_content .global_form_box {
+    float: left;
+    min-width: 90%;
+    max-width: 100%;
+    
+    .form-wrapper {
+        float: left;
+        margin-top: 0 !important;
+        margin-right: 30px;
+        width: 25%;
+        
+        select {
+            width: 100%;
+            max-width: 100%;   
+        }
+    }
+    
+    & > div {
+        float: left;
+    }
+    
+    .transparent {
+        color: transparent;
+        opacity: 0;
+    } 
+}
+
+.yncredit-faq-item {
+    padding: 1em;
+    border: 1px solid $theme_border_color;
+    +rounded();
+    margin-bottom: 1em;
+    
+    .yncredit-faq-icon {
+        width: 20px;
+        height: 20px;        
+        background-image: url("~/application/modules/Yncredit/externals/images/icon-arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 6px;
+        display: block;
+        vertical-align: middle;   
+        
+        transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        
+        cursor: pointer;
+        
+        float: left;
+    }
+    
+    .yncredit-faq-title {
+        font-size: 15px;
+        font-weight: bold;
+        
+        .yncredit-faq-title-item {
+            overflow: hidden;
+            padding-left: 5px;
+            padding-top: 3px;
+        }
+    }
+    
+    .yncredit-faq-content {
+        margin-top: 1em;    
+
+        p img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .yncredit_question_preview
+    {
+    	display: none;
+    }
+    
+    &.yncredit-collapse 
+    {
+        .yncredit-faq-content,
+        .yncredit_question_full
+        {
+            display: none;
+        }
+        .yncredit_question_preview
+        {
+        	display: block;
+        }
+        .yncredit-faq-icon {            
+            transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+        
+    }
+}
+#global_page_groupbuy-index-buy-deal .contentbox button, #global_page_groupbuy-index-publish .contentbox button
+{
+	width: 163px!important;
+}
+#global_page_groupbuy-index-buy-deal .contentbox button.icon_groupbuy_cod
+{
+	width: 200px!important;
+}
+#global_page_groupbuy-index-buy-deal .contentbox button.spend_credit
+{
+	color: $theme_link_color!important;
+}
+#global_page_groupbuy-index-publish .contentbox button.spend_credit
+{
+	border-right: 1px solid #ccc;
+	margin-top: 4px;
+	color: $theme_link_color!important;
+}
+#global_page_groupbuy-index-buy-deal .contentbox form button
+{
+	height: 35px;
+}

@@ -1,0 +1,460 @@
+/* $Id: main.css 2011-08-19 17:22:12 mirlan $ */
+/*Fields*/
+.admin_field_dependent_field_wrapper.store-active{
+	display: inline;
+}
+.field_extraoptions_choices.store-choices{
+	float: left;
+	min-height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.icon_add,
+.icon_audio_add
+{
+ float: right;
+}
+.icon_add, .icon_add_params{
+	background-image: url(~/application/modules/Store/externals/images/icons/plus.gif);
+}
+.icon_delete
+{
+  background-image: url(~/application/modules/Store/externals/images/delete_product.png);
+}
+.icon_main_edit{
+  background-image: url(~/application/modules/Store/externals/images/edit_store.png);
+}
+.icon_manage_photos{
+  background-image: url(~/application/modules/Store/externals/images/album_manage.png);
+}
+.icon_manage_video{
+  background-image: url(~/application/modules/Store/externals/images/video_manage.png);
+}
+.icon_manage_audios{
+  background-image: url(~/application/modules/Store/externals/images/audio_manage.png);
+}
+.icon_products{
+  background-image: url(~/application/modules/Store/externals/images/list_products.png);
+}
+.icon_view{
+  background-image: url(~/application/modules/Store/externals/images/view_product.png);
+}
+.icon_video_delete{
+  background-image: url(~/application/modules/Store/externals/images/video_delete.png);
+}
+.icon_audio_add, .icon_audio_new{
+  background-image: url(~/application/modules/Store/externals/images/audio_add.png);
+}
+.icon_photo_add
+{
+  background-image: url(~/application/modules/Store/externals/images/album_upload.png);
+}
+.icon_product_add
+{
+  background-image: url(~/application/modules/Store/externals/images/new_product.png);
+}
+.icon_file_edit
+{
+  background-image: url(~/application/modules/Store/externals/images/manage_file.png);
+}
+.icon_shipping_edit {
+  background-image: url(~/application/modules/Store/externals/images/ship.png);
+}
+.icon_file_new
+{
+  background-image: url(~/application/modules/Store/externals/images/new_file.png);
+}
+.store_icon_faq_create
+{
+  background-image: url(~/application/modules/Store/externals/images/icons/plus.gif);
+}
+
+/*
+TAG AUTOSUGGEST
+Used to style the autosuggest pulldown
+shown when you are entering a tag
+on the edit/new blog page.
+*/
+ul.tag-autosuggest
+{
+  position: absolute;
+  padding: 0px;
+  width: 300px;
+  list-style: none;
+  z-index: 50;
+  border: 1px solid $theme_border_color;
+  margin: 0px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background: $theme_list_background_color;
+}
+ul.tag-autosuggest > li
+{
+  padding: 3px;
+  overflow: hidden;
+}
+ul.tag-autosuggest > li + li
+{
+  border-top: 1px solid $theme_border_color;
+}
+ul.tag-autosuggest > li img
+{
+  max-width: 25px;
+  max-height: 25px;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+ul.tag-autosuggest > li.autocompleter-selected
+{
+  background: $theme_list_background_color_hover;
+  color: $theme_font_color;
+}
+ul.tag-autosuggest > li.autocompleter-choices
+{
+  font-size: .8em;
+}
+ul.tag-autosuggest > li.autocompleter-choices .autocompleter-choice
+{
+  line-height: 25px;
+}
+ul.tag-autosuggest > li:hover
+{
+  background: $theme_list_background_color_hover;
+  color: $theme_font_color;
+}
+ul.tag-autosuggest > li span.autocompleter-queried
+{
+  font-weight: bold;
+}
+ul.tag-autosuggest .search-working
+{
+  background-image: none;
+}
+.autocompleter-choice
+{
+  cursor: pointer;
+}
+.autocompleter-choice:hover
+{
+  color: #5ba1cd;
+}
+
+img.product-icon {
+  margin-right: 5px;
+}
+
+
+
+ul.store_product_admin_editphotos
+{
+  width: 600px;
+}
+ul.store_product_admin_editphotos > li
+{
+  padding-top: 15px;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+ul.store_product_admin_editphotos > li .store_product_admin_editphotos_photo
+{
+  float: left;
+  margin-right: 15px;
+  overflow: hidden;
+}
+ul.store_product_admin_editphotos > li .store_product_admin_editphotos_photo img
+{
+  display: block;
+  margin: 3px;
+  width: auto;
+  float:left;
+}
+ul.store_product_admin_editphotos > li .store_product_admin_editphotos_info
+{
+  overflow: hidden;
+}
+ul.store_product_admin_editphotos > li .store_product_admin_editphotos_title_input input,
+ul.store_product_admin_editphotos > li .album_editphotos_caption_input textarea
+{
+  margin: 2px 0px 6px 0px;
+  width: 25em;
+}
+ul.store_product_admin_editphotos > li .album_editphotos_caption_input textarea
+{
+  height: 2.5em;
+}
+ul.store_product_admin_editphotos > li .store_product_admin_editphotos_label
+{
+  float: left;
+}
+ul.store_product_admin_editphotos > li .store_product_admin_editphotos_cover
+{
+  float: left;
+}
+ul.store_product_admin_editphotos > li .photo-delete-wrapper
+{
+  float: left;
+  margin-right: 15px;
+}
+ul.store_product_admin_editphotos > li .photo-delete-wrapper > label
+{
+  display: block;
+  float: left;
+}
+
+tr.disabled-product{
+    background-color: #ccc !important;
+}
+
+.icon_photos_new
+{
+  background-image: url(~/application/modules/Store/externals/images/add.png);
+}
+
+.settings .store form > div{
+  border-width: 0;
+  padding: 0;
+}
+
+.search.store > form{
+  padding: 10px;
+}
+
+.store-audio-view-songs{
+	margin-top: 10px;
+	padding: 10px;
+	background-color: $theme_foreground_background_color;
+	border: 1px solid $theme_foreground_border_color;
+	+rounded(10px);
+  width: 700px;
+}
+
+.tracklist tbody tr.song td,
+.tracklist thead tr.thead td{
+	padding: 5px;
+	font-size: 11px;
+}
+
+.tracklist tbody tr.song td.listeners{
+	text-align: center;
+}
+
+.tracklist thead tr.thead > .number,
+.tracklist thead tr.thead > .title,
+.tracklist thead tr.thead > .play,
+.tracklist thead tr.thead > .delete
+{
+	font-weight: bold;
+	border-bottom: 1px solid $theme_foreground_border_color;
+}
+
+table.tracklist tbody tr.song:nth-child(2n){
+	background-color: $theme_foreground_background_color;
+}
+
+span.misc_info {
+  color: #AAAAAA;
+}
+
+.search.store_search, .search.store_search form, .search.store_search form > div {
+  padding: 0;
+  background: none;
+  border: none;
+  !important
+}
+
+.admin_store_product_file > li
+{
+  overflow: hidden;
+  width: 550px;
+  overflow: hidden;
+  font-weight: bold;
+  padding: 8px 10px 8px 10px;
+  background-color: #e9f4fa;
+  border: 1px solid #c0d4df;
+  -moz-border-radius: 4px;
+}
+
+.admin_store_product_file > li
+{
+  margin-top: 5px;
+}
+.admin_store_product_file .admin_store_product_file_title
+{
+  overflow: hidden;
+}
+.admin_store_product_file h3
+{
+  margin-right: 7px;
+  margin-bottom: 0px;
+  font-size: 1.3em;
+}
+
+.admin_store_product_file .admin_store_product_file_options
+{
+  margin-top: 2px;
+  display: block;
+  float: right;
+  overflow: hidden;
+  text-align: right;
+}
+.admin_store_product_file .admin_store_product_file_options li
+{
+  float: right;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.admin_store_product_file .admin_store_product_file_options a
+{
+  font-weight: bold;
+}
+.admin_store_product_file .admin_store_product_file_options a + .sep
+{
+  display: inline;
+}
+
+.param-block{
+  padding: 3px;
+}
+.param-block > div {
+  display: inline-block;
+}
+.param-block .param-delete{
+  color:#5BA1CD;
+  cursor: pointer;
+}
+.param-block .param-delete:hover{
+ color:red;
+}
+
+.button-preview,
+.button-url
+{
+  display: inline-block;
+}
+.button-url{
+  padding:  2px;
+  vertical-align: top;
+}
+.button-url input{
+  padding: 10px;
+  width: 330px;
+  height: 20px;
+}
+.button-url .success{
+  padding: 5px;
+  background-color: #b5e9c4;
+}
+#add-location td{
+  padding: 5px;
+}
+
+a.add-location{
+  color: #008000;
+}
+a.st-location-item.hidden{
+  display: none;
+}
+a.remove-location{
+  color: #ff0000;
+}
+.loading-location{
+  display: inline-block;
+  min-width: 100px;
+  background-image: url(~/application/modules/Store/externals/images/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.loading-location.hidden, .hidden{
+  display: none;
+}
+.store-request-information .admin_home_news .admin_home_news_date{
+  width: 150px;
+}
+.store-price{
+	color: #AF3706;
+	font-weight: bold;
+}
+.store-list-price,
+.store-credit-list-price
+{
+  font-weight: 500;
+ 	text-decoration: line-through;
+}
+.store-credit-price {
+  font-weight: bold;
+  margin-left: 18px;
+}
+.store_credit_icon {
+  background-image: url(~/application/modules/Store/externals/images/credits.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-top: 3px;
+}
+
+.admin_home_right.store_admin_response{
+  width: 350px
+}
+
+.admin_home_right.store_admin_response div.form-element textarea{
+  min-width: 250px;
+  width: 250px
+}
+
+ul.admin-transaction-products-list > li {
+  margin-bottom: 5px;
+  list-style-type: decimal;
+}
+
+ul.admin-transaction-products-list > li > div {
+  margin-left: 5px;
+}
+
+form table.admin_table tbody tr td {
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Admin menu tabs */
+.store_admin_tabs
+{
+  border-radius: 4px 4px 0 0;
+  background-image: none;
+  margin: 4px 0 10px;
+  padding: 4px;
+  overflow:auto;
+	background:#E9F4FA;
+}
+.store_admin_tabs ul li
+{
+	font-size:12px;
+}
+.store_admin_tabs ul li.active a
+{
+  background-color: #fff;
+  color: #444;
+}
+.store_admin_tabs ul li a
+{
+  border-radius: 3px 3px 3px 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #888;
+  font-weight: bold;
+	float:left;
+	margin:1px;
+}
+.store_admin_tabs ul li a:hover
+{
+  background-color: #fff;
+  color: #444;
+}

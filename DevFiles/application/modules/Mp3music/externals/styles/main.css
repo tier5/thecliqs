@@ -1,0 +1,2702 @@
+
+/* $Id: main.css 6078 2010-06-02 03:21:06Z jung $ 
+/*
+BROWSE MUSIC
+Styles the music browse page.
+*/
+.mp3music_table th 
+{
+	background-color: $theme_foreground_background_color;
+}
+.mp3music_table
+{
+	+rounded;
+	margin-bottom: 15px; 
+	border: 1px solid $theme_foreground_border_color; 
+	overflow: auto;
+}
+ul.mp3music_browse > li + li
+{
+  margin-top: 15px;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+.mp3music_browse_author_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.mp3music_browse_author_photo img
+{
+  display: block;
+}
+.mp3music_browse_options
+{
+  float: right;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.mp3music_browse_options a
+{
+  clear: both;
+  margin: 0px !important;
+  font-size: .8em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.mp3music_browse_info
+{
+  overflow: hidden;
+}
+.mp3music_browse_info_title
+{
+  font-weight: bold;
+}
+.mp3music_browse_info_title h3
+{
+  margin-bottom: 0px;
+}
+.mp3music_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+.mp3music_browse_info_desc
+{
+  margin-top: 7px;
+}
+.mp3music_browse_info_songs
+{
+  padding: 10px 5px 5px 5px;
+  overflow: hidden;
+}
+.mp3music_browse_info_art
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.mp3music_browse_info_art img
+{
+  display: block;
+  max-width: 90px;
+  border: 1px solid $theme_border_color;
+}
+.mp3music_browse_info_songlist
+{
+  overflow: hidden;
+}
+.mp3music_browse_info_songlist li
+{
+  font-size: .8em;
+}
+.mp3music_browse_info_songlist li + li
+{
+  margin-top: 3px;
+}
+.mp3music_browse_info_songlist li object,
+.mp3music_browse_info_songlist li embed,
+.mp3music_browse_info_songlist li .playlist_song_actions
+{
+  padding-left: 25px;
+}
+.mp3music_browse_info_songlist li > a
+{
+  display: inline-block;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.mp3music_browse_info_songlist li > a.playlist_song
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/play.png);
+}
+.mp3music_browse_info_songlist li .mp3music_browse_info_plays
+{
+  display: block;
+  color: $theme_font_color_light;
+  margin-left: 24px;
+}
+.mp3music_browse_info_songlist li .mp3music_player_small
+{
+  margin: 5px 0px 5px 0px;
+}
+.mp3music_browse_info_viewmore
+{
+  font-weight: bold;
+  padding-left: 12px;
+  background-image: url(~/application/modules/Mp3music/externals/images/more.png);
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-left: 24px;
+  font-size: .8em;
+}
+.browse_nextlast + ul.mp3music_browse
+{
+  margin-top: 15px;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+ul.mp3music_browse + .browse_nextlast
+{
+  margin-top: 15px;
+}
+
+/*
+VIEW PLAYLIST
+Styles the view playlist page, where a single
+playlist is viewed.
+*/
+.mp3music_playlist
+{
+  overflow: hidden;
+  margin-top: 10px;
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+.mp3music_playlist_art
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.mp3music_playlist_art img
+{
+  max-width: 200px;
+  max-height: 200px;
+  border: 1px solid $theme_photo_border_color;
+}
+.mp3music_playlist_info
+{
+  overflow: hidden;
+}
+.mp3music_playlist_info_title h3
+{
+  margin-bottom: 0px;
+}
+.mp3music_playlist_info_date
+{
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+.mp3music_playlist_info_songs li
+{
+  margin: 10px 0px 10px 0px;
+}
+.mp3music_playlist_info_song
+{
+  font-weight: bold;
+  font-size: .8em;
+}
+.mp3music_playlist_info_plays
+{
+  display: block;
+  color: $theme_font_color_light;
+  font-size: .8em;
+}
+.mp3music_playlist_info .comments
+{
+  margin-top: 15px;
+  border-top-width: 1px;
+  padding-top: 10px;
+}
+.mp3music_playlist_options
+{
+  float: right;
+  overflow: hidden;
+  width: 200px;
+  padding-left: 20px;
+}
+.mp3music_playlist_options a
+{
+  display: block;
+  margin: 5px;
+  font-size: .8em;
+  padding-top: 1px;
+  padding-bottom: 2px;
+}
+
+ 
+/*
+ATTACHED MUSIC LAUNCH SKIN
+This is a small version of the player. It doesn't actually play
+tracks itself, but when clicked, loads the full player and initiates
+playback of the first track. Some of its styles are inherited from
+the full music player's skin.
+*/
+.playlist_short_player
+{
+  border: none;
+  padding: 3px 0px 3px 0px;
+  cursor: pointer;
+}
+.playlist_short_player .mp3music_player_top
+{
+  padding: 0px;
+}
+.playlist_short_player .mp3music_player_button_play
+{
+  margin-right: 5px;
+}
+.playlist_short_player_title
+{
+  margin-top: 2px;
+  color: #fff;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.playlist_short_player_tracks
+{
+  font-size: .8em;
+  color: #bbb;
+  font-weight: normal;
+  padding-bottom: 2px;
+}
+
+/*
+ADD SONG TO PLAYLIST FORM
+Styles the form that pops up when you click to add a song
+to your playlist via a music player.
+*/
+#form-playlist-append .form-label
+{
+  margin-bottom: 2px;
+}
+#form-playlist-append #title-wrapper
+{
+  margin-top: 10px;
+}
+#form-playlist-append #submit-wrapper
+{
+  margin-top: 10px;
+}
+/*
+UPLOAD MUSIC FORM
+*/
+#form-upload-music #demo-list li.file
+{
+  background: url(~/application/modules/Mp3music/externals/images/upload_waiting.png);
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+}
+#form-upload-music #demo-list li.file-success
+{
+  background: url(~/application/modules/Mp3music/externals/images/upload.png);
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+}
+#form-upload-music #demo-list li.file-uploading
+{
+  background: url(~/application/modules/Mp3music/externals/images/upload_loading.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+}
+#form-upload-music #demo-list li.file-success
+{
+  background: url(~/application/modules/Mp3music/externals/images/upload_success.png);
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+}
+#form-upload-music #demo-list span.file-name
+{
+  display: inline;
+}
+#form-upload-music #demo-status .buttonlink + .buttonlink
+{
+  margin-left: 20px;
+}
+
+
+/* ITEM TYPE ICONS */
+.item_icon_mp3music_playlist, 
+.item_icon_mp3music_song, 
+.activity_icon_mp3music_playlist_new,
+.notification_type_mp3music_subscribed_new
+{
+background-image:url(~/application/modules/Mp3music/externals/images/types/music.png);
+}
+.item_icon_mp3music_album, 
+.item_icon_mp3music_song, 
+.activity_icon_mp3music_album_new 
+{
+background-image:url(~/application/modules/Mp3music/externals/images/types/music.png);
+}
+.item_icon_music_playlist,
+.item_icon_music_song,
+.activity_icon_music_playlist_new
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/types/music.png);
+}
+
+#compose-music-form-fancy-file
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/new.png);
+}
+a.compose-music-link
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/play.png);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+a.compose-music-link-playing
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/upload_loading.gif);
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+
+/*
+POPUP MUSIC PLAYER SKIN
+Opens the player in a small new window.
+*/
+.music_player_popup
+{
+  background-color: #444;
+  padding-top: 20px;
+}
+
+body#global_page_music-index-playlist #global_content_simple {
+	width: 100%;
+}
+
+body#global_page_music-index-playlist #global_content_simple .music_playlist_popout_wrapper{
+	margin-top: 15px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 430px;
+}
+
+
+/*
+PROFILE MUSIC PLAYER
+Styles the mini-player that only shows up on the member profile page.
+*/
+#profile_music_player
+{
+  margin-top: 15px;
+}
+#profile_music_player h3
+{
+  display: none;
+}
+#profile_music_player .music_player_art
+{
+  display: none;
+}
+#profile_music_player .music_player_button_prev,
+#profile_music_player .music_player_button_next
+{
+  display: none;
+}
+#profile_music_player .music_player_button_play
+{
+  margin: 0px;
+}
+#profile_music_player .music_player_trackname
+{
+  font-weight: normal;
+}
+
+
+
+
+/* ICONS */
+.icon_music_new
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/new.png);
+}
+.icon_mp3music_edit
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/edit.png);
+  font-weight: normal !important;
+}
+.icon_mp3music_delete
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/delete.png);
+  font-weight: normal !important;
+}
+.icon_mp3music_playonprofile,
+.icon_music_playonprofile,
+.icon_music_disableonprofile
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/play_on_profile.png)!important;
+  font-weight: normal !important;
+}
+.icon_mp3music_disableonprofile
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/play_on_profile.png);
+  
+}
+.icon_mp3music_upload
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/upload.png);
+}
+
+ .box_ys2 {
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_top_center.jpg) repeat-x top center;
+	margin-bottom:10px;  
+}
+.box_ys2 .top_left_box{
+	float:left;
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_top_left.jpg) no-repeat left top;
+	font-size:0;
+	padding-left:5px;
+	padding-top:3px;
+}
+.box_ys2 .top_right_box{
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_top_right.jpg) right top no-repeat;
+	height:28px;  
+}
+.box_ys2 .bottom_right_box{
+	background:#f2f2f2 url(~/application/modules/Mp3music/externals/images/music/boxmusic_btom_right.jpg) right top no-repeat;
+	height:12px;
+	margin:0px;
+	font-size:0;
+}
+.box_ys2 .bottom_left_box{
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_btom_left.jpg) left top no-repeat;
+	height:12px;
+}
+.box_ys2 .title_box{
+	float:left;
+	font:bold 12px arial;
+	/*color:#862775;*/
+	color:#333333;
+	text-transform:uppercase;
+	padding-top:7px;
+	padding-left:0px;
+}
+.box_ys2 .content_box{
+	overflow:hidden;
+	background:#FFFFFF;
+}
+.box_ys2 .border_left{
+	border:1px solid  #a3a3a3;
+	border-top:none;
+}
+.box_ys2 .content_box .left_box{
+	background:#2c2c2c;padding:5px 10px 3px 15px;text-align:left;font-size:12px;
+	color:#FFFFFF;
+}
+/********The loai nhac *****/
+.vertmenu {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align:left;
+}
+.vertmenu ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+.vertmenu ul li {
+	margin: 0px;
+	padding: 0px;
+}
+.vertmenu ul li a {
+	font-size: 100%;
+	display: block;
+	border-bottom: 1px solid #d9d9d9;
+	padding: 5px 0px 4px 12px;
+	text-decoration: none;
+	color: #000;
+	height:15px;
+}
+.vertmenu ul li a:hover, .vertmenu ul li a:focus {
+color: #000000;
+background-color: #f2f2f2;
+}
+.bl {background: url(~/application/modules/Mp3music/externals/images/music/bl.gif) 0 100% no-repeat}
+.br {background: url(~/application/modules/Mp3music/externals/images/music/br.gif) 100% 100% no-repeat}
+.tl {background: url(~/application/modules/Mp3music/externals/images/music/tl.gif) 0 0 no-repeat}
+.tr {background: url(~/application/modules/Mp3music/externals/images/music/tr.gif) 100% 0 no-repeat; padding:0}
+.t {background: url(~/application/modules/Mp3music/externals/images/music/dot.gif) 0 0 repeat-x; width: auto}
+.b {background: url(~/application/modules/Mp3music/externals/images/music/dot.gif) 0 100% repeat-x}
+.l {background: url(~/application/modules/Mp3music/externals/images/music/dot.gif) 0 0 repeat-y}
+.r {background: url(~/application/modules/Mp3music/externals/images/music/dot.gif) 100% 0 repeat-y}
+.search_tab_left_bg{
+	background: url(~/application/modules/Mp3music/externals/images/music/search_tab_active_over_bg_l.gif) 0 0 no-repeat;
+	padding-left: 4px;
+}
+.search_tab_right_bg{
+	background: url(~/application/modules/Mp3music/externals/images/music/search_tab_active_over_bg_r.gif) 100% 0 no-repeat;
+	padding-right: 4px;
+}
+.search_field_focus{
+	border: 2px solid #BBDAFD !important;
+	height: 23px;
+}
+.box_ys2_search {
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_top_center_search.jpg) repeat-x top center;
+	margin-bottom:10px;
+}
+.box_ys2_search .top_left_box{
+	float:left;
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_top_left.jpg) no-repeat left top;
+	font-size:0;
+	padding-left:5px;
+	padding-top:3px;
+}
+.box_ys2_search .top_right_box{
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_top_right.jpg) right top no-repeat;
+	height:32px;
+}
+.box_ys2_search .bottom_right_box{
+	background:#f2f2f2 url(~/application/modules/Mp3music/externals/images/music/boxmusic_btom_right.jpg) right top no-repeat;
+	height:12px;
+	margin:0px;
+	font-size:0;
+}
+.box_ys2_search .bottom_left_box{
+	background:url(~/application/modules/Mp3music/externals/images/music/boxmusic_btom_left.jpg) left top no-repeat;
+	height:12px;
+}
+.box_ys2_search .title_box{
+    float:left;
+	font:bold 12px arial;
+	/*color:#862775;*/
+	color:#333333;
+	text-transform:uppercase;
+	padding-top:7px;
+	padding-left:0px;
+}
+.box_ys2_search .content_box{
+	overflow:hidden;
+	background:#FFFFFF;
+}
+.box_ys2_search .border_left{
+	border:1px solid  #a3a3a3;
+	border-top:none;
+}
+.box_ys2_search .content_box .left_box{
+	background:#2c2c2c;padding:5px 10px 3px 15px;text-align:left;font-size:12px;
+	color:#FFFFFF;
+}
+.box_bg_search{background:url(~/application/modules/Mp3music/externals/images/music/cter_search.png) repeat-x;height:30px; margin:0px;}
+.box_bg_search_left{float:left;background:url(~/application/modules/Mp3music/externals/images/music/left_search.png) no-repeat;height:30px;width:3px}
+.box_bg_search_right{float:right;background:url(~/application/modules/Mp3music/externals/images/music/right_search.png) no-repeat;height:30px;width:3px}
+.box_bg_search2{background:url(~/application/modules/Mp3music/externals/images/music/cter_timkiem.png) repeat-x;height:20px}
+.box_bg_search_left2{float:left;background:url(~/application/modules/Mp3music/externals/images/music/left_timkiem.png) no-repeat;height:20px;width:3px}
+.box_bg_search_right2{float:right;background:url(~/application/modules/Mp3music/externals/images/music/right_timkiem.png) no-repeat;height:20px;width:3px}
+.box_bg_search a.chucai{
+	float: left;
+	color: white;
+	padding: 0px 5px;
+	text-decoration: none;
+	font-weight:normal;
+}
+.box_search_music {
+	float:left;
+	color: #666666;
+	margin-top:2px;
+	border: 2px solid #a6485d;
+	width:180px;
+	height:20px;
+}
+.title_thongtin{color:#dd0097;font-weight:bold; margin:5px 3px 0px 10px;}
+.vertmenu a.title_thongtin2 {color:#000;font-weight:bold;}
+.vertmenu a.title_thongtin2:hover{color:#dd0097;font-weight:bold;}
+.vertmenu a.title_thongtin2:focus{color:#dd0097;font-weight:bold;background:none;}
+.block_item a.title_thongtin2 {color:#000;font-weight:bold;}
+.block_item a.title_thongtin2:hover{color:#dd0097;font-weight:bold;}
+.block_item a.title_thongtin2:focus{color:#dd0097;font-weight:bold;background:none;}
+.box_topdownload a.title_thongtin2 {color:#000;font-weight:bold;}
+.box_topdownload a.title_thongtin2:hover{color:#dd0097;font-weight:bold;}
+.box_topdownload a.title_thongtin2:focus{color:#dd0097;font-weight:bold;background:none;}
+.solidblockmenu li a{
+	float: left;
+	color: white;
+	padding: 3px 13px;
+	text-decoration: none;
+}
+.solidblockmenu li{
+	display: block;
+	float: left;
+}
+.solidblockmenu li a{
+    float: left;
+    color: #555555;
+    padding: 3px 7px;
+    text-decoration: none;
+}
+input.timkiem{background:url(~/application/modules/Mp3music/externals/images/music/search_btn_music.jpg); border:0; height:25px; width:57px; cursor:pointer; color:#ffffff; font-weight:bold;}
+.solidblockmenu li input{
+	float:left;
+	color: #666666;
+	margin-top:4px;
+	margin-left:10px;
+	border: 2px solid #a6485d;
+	width:225px;
+	height:20px;
+}
+.solidblockmenu li a:hover, .solidblockmenu li .mp3_current{
+    color: #555555;
+    text-decoration:none;
+    background:#89A5B2;
+    height:100%;
+}
+ .solidblockmenu{
+    margin: 0;
+    padding: 0;
+    float: right;
+    font: 11px Arial;
+    width: 100%;
+    overflow: hidden;
+    height:20px;
+}
+.frame_popup{width:543px;height:auto;margin:auto;text-align:left;padding: 3px 5px 5px 5px; background:#4b5366;
+margin-bottom: -18px\0/;}
+.top_popup{width:100%;    height:auto; background:url(~/application/modules/Mp3music/externals/images/music/top_left.png) repeat-x;    }
+.cter_popup{height:auto; background:url(~/application/modules/Mp3music/externals/images/music/top_cter.png) repeat-x;margin:0px 1px;}
+.cter_left_popup{width:100%;height:auto;background:#dfe5e8;}
+.cter_cter_popup{height:auto;background:#ecf1f4;margin:0px 1px;padding:0 5px 5px;}
+.cter_popup .left_infomation{float:left;margin:6px 6px 2px 6px;background:#FFFFFF;height:170px;width:275px;display:inline;overflow:hidden;text-align:left;}
+.cter_popup .right_media{float:right;margin:5px 8px 2px 2px;padding-top:2px;padding-left:3px;background:url(~/application/modules/Mp3music/externals/images/music/bg_media.png) repeat-x;width:233px;height:66px;display:inline;overflow:hidden;}
+.cter_popup .right_url{float:left;margin:5px 8px 2px 2px;width:auto;height:auto;display:inline;overflow:hidden;text-align:left;}
+.right_url p{margin:1px}
+.tam_left{float:left;margin-bottom:1px;}
+.tam_right{float:right;margin-bottom:1px;}
+.right_url1{width:120px; background:url(~/application/modules/Mp3music/externals/images/music/bg_red.png) repeat-x;border:1px solid #d2d8db;padding-top:2px;padding-bottom:1px;}
+.right_url2{width:125px; background:#fff;border:1px solid #d2d8db;padding-top:1px;padding-bottom:1px;margin:2px}
+.solidblockmenu em{
+	float: left;
+	color: white;
+	padding: 3px 120px 3px 0px;
+	font-weight:bold;
+	font-style:normal;
+	letter-spacing:2px;
+}
+.block_content
+{
+ margin:5px;overflow:hidden; text-align:justify; ; 
+}
+.block_item
+{
+  float:left; padding:0px 7px 0px 5px; text-align:left;   margin:0px; line-height:16px; ;overflow:hidden;
+}  
+.fl{float:left; }
+.fr{float:right;}
+.box_topdownload{width:190px;margin:5px 0;padding-left:5px;float:left;display:inline;}
+.icon_add{margin-top:4px; margin-right:4px;}
+div.entry_line {
+	border-bottom: 1px dotted #CCC;
+	width:100%; margin:3px 0px 3px 0px;
+	height:1px; clear:both;overflow:hidden;
+}
+.icon {
+margin-right:-3px;
+padding-top:0px;
+vertical-align:top;
+}
+.user_music_row0{background:#F9F9F9;}
+.user_music_row1{background: #F0f0f0;}
+.global_form > div > div {
+background-color:#F4F9FB;
+border:5px solid #DDECF3;
+padding:12px;
+}
+#demo-status {
+width:100%;
+}
+.vertmenu div.tip{
+	text-align:center;
+	color:Red;
+}
+.vertmenu div.paginationControl{
+text-align:center;
+}
+.vertmenu div, td {
+color:#555555;
+font-size:8pt;
+}
+.balloonstyle{
+position:absolute;
+top: -500px;
+left: 0;
+padding: 5px;
+visibility: hidden;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height: 18px;
+z-index: 100;
+background-color: white;
+min-width: 50px; 
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135,Strength=5);
+}
+#arrowhead{
+z-index: 99;
+position:absolute;
+top: -500px;
+left: 0;
+visibility: hidden;
+}
+.indentmenu{
+    font: bold 11px Arial;
+    width: 100%; /*leave this value as is in most cases*/
+}
+.indentmenu ul{
+    margin-top:10px;
+    margin-left:0px;
+    padding: 0;
+    float: left;
+    /* width: 80%; width of menu*/
+    border-top: 0px solid navy; /*navy border*/
+    background:#fff;
+    margin-bottom:0px;
+}
+.indentmenu ul li{
+display: inline;
+}
+.indentmenu ul li a{
+float: left;
+color: #000; /*text color*/
+padding: 3px 11px;
+text-decoration: none;
+}
+.indentmenu ul li a:visited{
+color: #000;
+}
+.indentmenu ul li a.selected{
+color: white !important;
+padding-top: 4px; /*shift text down 1px*/
+padding-bottom: 4px;
+background: #dd0097;
+}
+.tabcontentstyle{ /*style of tab content oontainer*/
+border: 1px solid gray;
+width: 450px;
+margin-bottom: 1em;
+padding: 10px;
+}
+.tabcontent{
+display:none;
+}
+.khung_f{
+    border-top:3px solid #dd0097; width:100%;background:#FFF;
+}
+.space-line {
+  clear: both;
+}
+.block_content
+{
+ margin:5px;overflow:hidden; text-align:justify; ; 
+}
+.block_item
+{
+  float:left; padding:0px 7px 0px 5px; text-align:left;   margin:0px; line-height:16px; ;overflow:hidden;
+}  
+.line16{line-height:16px; text-align:left}
+.frame_popup {
+background:none repeat scroll 0 0 #4B5366;
+height:auto;
+margin:auto;
+padding:3px 5px 5px;
+text-align:left;
+width:543px;
+}
+.comments
+{
+    width:500px;
+}
+.vertmenu ul li a {
+       border-bottom:0 solid #D9D9D9;
+        padding:5px 7px 5px 10px;  
+}
+ .vertmenu div, td {
+font-size:10pt;
+}  
+.vertmenu a.title_thongtin3 {color:#5F93B4;font-weight:bold;}
+.vertmenu a.title_thongtin3:hover{color:#4E8131;font-weight:bold;}
+.vertmenu a.title_thongtin3:focus{color:#dd0097;font-weight:bold;background:none;}
+.block_item a.title_thongtin3 {color:#000;font-weight:bold;}
+.block_item a.title_thongtin3:hover{color:#dd0097;font-weight:bold;}
+.block_item a.title_thongtin3:focus{color:#dd0097;font-weight:bold;background:none;}
+.box_topdownload a.title_thongtin3 {color:#5F93B4;font-weight:bold;}
+.box_topdownload a.title_thongtin3:hover{color:#4E8131;font-weight:bold;}
+.box_topdownload a.title_thongtin3:focus{color:#dd0097;font-weight:bold;background:none;}
+
+/*     */
+.mp3_title_link
+{
+    overflow:hidden;
+}
+.mp3_title_link a 
+{
+     font-weight:bold;
+}
+.avd_music li + li
+{
+     margin-top: 7px;
+}
+.avd_music_singers li + li
+{
+     margin-top: 4px;
+}
+.mp3_image
+{
+    float:left;
+}
+.mp3_image img.thumb_icon
+{
+    width:38px;
+    height: auto;
+}
+.mp3_title_right 
+{
+  padding-top: 10px;
+	overflow: hidden;
+}
+.mp3_title_right a
+{
+  margin-left: 10px;
+	display: block;
+}
+.mp3_link_more
+{
+    
+}
+.mp3_album_widgets li + li
+{
+     margin-top: 4px;
+}
+.mp3_title_album_right
+{
+  padding-left: 7px;
+	overflow: hidden;
+}
+.mp3_album_info
+{
+	width:91px;
+	overflow:hidden;
+    font-size:8pt;
+    color: #999;
+}
+.mp3_album_info_browse,
+.mp3_album_info_player
+{
+	overflow:hidden;
+    font-size:8pt;
+    color: #999;
+}
+.mp3_album_info_right
+{
+	overflow:hidden;
+	font-size:8pt;
+	color: #999;
+}
+.mp3_image_album
+{
+    float:left;
+}
+.mp3_song_widgets li + li
+{
+    margin-top: 14px;
+}
+.mp3music_newsalbums
+{
+    float: left;
+    padding: 14px 0px 10px 0;
+    min-height:160px;
+}
+.mp3music_bgalbums
+{
+    background-color: #666666;
+    width: 96px;
+    height: 100px;
+}
+.mp3_top_album .mp3music_bgalbums
+{
+    margin-bottom: 5px;
+}
+.mp3music_bgalbums > a > img
+{
+    margin-left: -4px;
+    margin-top: -5px;
+    width: 96px;
+    height: 101px;  
+    border: none;  
+}
+.mp3_album_title_link
+{
+    overflow:hidden;
+    width:91px;
+}
+.mp3_album_title_link a
+{
+    font-weight:bold;
+}
+.mp3_top_album li
+{
+    padding-right: 10px;
+	padding-left: 15px;
+}
+.mp3_album_des
+{
+  padding-left: 8px;
+	overflow: hidden;
+}
+.mp3_browse_album li + li
+{
+    border-top :1px solid #DFDFDF
+}
+.mp3music_browsealbums
+{
+    float: left;
+    padding: 14px 0px 10px 10px;
+}
+.mp3music_browse_info > div > a > img
+{
+    width: 100px;
+}
+.mp3music_browse_options a.buttonlink 
+{
+    padding-left: 35px;
+}
+.mp3_album_info a,
+.mp3_album_info_browse a,
+.mp3_album_info_right a,
+.mp3_album_info_player a
+{
+    font-weight: normal;
+}
+.mp3_image_album
+{
+    float: left;
+}
+.mp3_image_album img.thumb_profile
+{
+    border: 3px solid #E5E4E2;
+}
+.mp3_object_player
+{
+    float: left; 
+    margin-left: 10px;
+    margin-top: -3px;
+}
+.layout_page_mp3music_album_album .comments
+{
+    width:100%;
+}
+.layout_page_mp3music_playlist_playlist .comments
+{
+    width:100%;
+}
+.mp3_cart a:hover
+{
+    text-decoration: none !important;
+}
+
+
+
+.mejs-container
+{
+	background: #000;
+	font-family: Helvetica,Arial;
+	position: relative;
+	text-align: left;
+	text-indent: 0;
+	vertical-align: top;
+}
+.me-plugin
+{
+	position: absolute;
+}
+.mejs-embed,.mejs-embed body
+{
+	background: #000;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+.mejs-container-fullscreen
+{
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+}
+.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video
+{
+	height: 100%;
+	width: 100%;
+}
+.mejs-background
+{
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.mejs-mediaelement
+{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.mejs-poster
+{
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.mejs-poster img
+{
+	border: 0;
+	display: block;
+	padding: 0;
+}
+.mejs-overlay
+{
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.mejs-overlay-play
+{
+	cursor: pointer;
+}
+.mejs-overlay-button
+{
+
+	height: 100px;
+	left: 50%;
+	margin: -50px 0 0 -50px;
+	position: absolute;
+	top: 50%;
+	width: 100px;
+}
+.mejs-overlay:hover .mejs-overlay-button
+{
+	background-position: 0 -100px;
+}
+.mejs-overlay-loading
+{
+	background: #333;
+	background: linear-gradient(rgba(50,50,50,0.9),rgba(0,0,0,0.9));
+	background: -moz-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
+	background: -ms-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
+	background: -o-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
+	background: rgba(0,0,0,0.9);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(50,50,50,0.9)),to(rgba(0,0,0,0.9)));
+	background: -webkit-linear-gradient(top,rgba(50,50,50,0.9),rgba(0,0,0,0.9));
+	height: 80px;
+	left: 50%;
+	margin: -40px 0 0 -40px;
+	position: absolute;
+	top: 50%;
+	width: 80px;
+}
+.mejs-overlay-loading span
+{
+	background: transparent url(~/application/modules/Mp3music/externals/images/loading.gif) 50% 50% no-repeat;
+	display: block;
+	height: 80px;
+	width: 80px;
+}
+.mejs-container .mejs-controls
+{
+	background: url('~/application/modules/Mp3music/externals/images/audio.png') repeat-x left bottom #040404;
+	height: 30px;
+	left: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	/*width: 100%;*/
+}
+.mejs-container .mejs-controls div
+{
+	background: 0;
+	background-image: none;
+	border: 0;
+	display: block;
+	float: left;
+	font-family: Helvetica,Arial;
+	font-size: 11px;
+	height: 26px;
+	line-height: 11px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 24px;
+}
+.mejs-container.yn-small-audio-skin .mejs-controls div{
+	width:23px;
+}
+.mejs-controls .mejs-button button
+{
+	
+	border: 0;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	height: 16px;
+	line-height: 0;
+	margin: 7px 5px;
+	padding: 0;
+	position: absolute;
+	text-decoration: none;
+	width: 16px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.mejs-controls .mejs-button button:focus
+{
+	outline: solid 1px yellow;
+}
+.mejs-container .mejs-controls .mejs-time
+{
+	box-sizing: content-box;
+	color: #fff;
+	display: block;
+	height: 17px;
+	moz-box-sizing: content-box;
+	overflow: hidden;
+	padding: 8px 3px 0 3px;
+	padding: auto 4px;
+	text-align: center;
+	webkit-box-sizing: content-box;
+	width: auto;
+}
+.mejs-container .mejs-controls .mejs-time span
+{
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 11px;
+	line-height: 12px;
+	margin: 1px 2px 0 0;
+	width: auto;
+}
+.mejs-controls .mejs-play button
+{
+	background-position: 0 0;
+}
+.mejs-controls .mejs-pause button
+{
+	background-position: 0 -16px;
+}
+.mejs-controls .mejs-stop button
+{
+	background-position: -112px 0;
+}
+.mejs-controls div.mejs-time-rail
+{
+	padding-top: 5px;
+}
+.mejs-controls .mejs-time-rail span
+{
+	border-radius: 2px;
+	cursor: pointer;
+	display: block;
+	height: 10px;
+	moz-border-radius: 2px;
+	position: absolute;
+	webkit-border-radius: 2px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total
+{
+	background: #333;
+	background: linear-gradient(rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: -moz-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: -ms-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: -o-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: rgba(50,50,50,0.8);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(30,30,30,0.8)),to(rgba(60,60,60,0.8)));
+	background: -webkit-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	margin: 5px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-buffering
+{
+	animation: buffering-stripes 2s linear infinite;
+	background-image: linear-gradient(-45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+	background-image: -moz-linear-gradient(-45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+	background-image: -ms-linear-gradient(-45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+	background-image: -o-linear-gradient(-45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+	background-image: -webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,0.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,0.15)),color-stop(0.75,rgba(255,255,255,0.15)),color-stop(0.75,transparent),to(transparent));
+	background-image: -webkit-linear-gradient(-45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+	background-size: 15px 15px;
+	moz-animation: buffering-stripes 2s linear infinite;
+	moz-background-size: 15px 15px;
+	ms-animation: buffering-stripes 2s linear infinite;
+	o-animation: buffering-stripes 2s linear infinite;
+	o-background-size: 15px 15px;
+	webkit-animation: buffering-stripes 2s linear infinite;
+	webkit-background-size: 15px 15px;
+	width: 100%;
+}
+@-webkit-keyframes buffering-stripes
+{
+	from
+	{
+		background-position: 0 0;
+	}
+	to
+	{
+		background-position: 30px 0;
+	}
+}
+@-moz-keyframes buffering-stripes
+{
+	from
+	{
+		background-position: 0 0;
+	}
+	to
+	{
+		background-position: 30px 0;
+	}
+}
+@-ms-keyframes buffering-stripes
+{
+	from
+	{
+		background-position: 0 0;
+	}
+	to
+	{
+		background-position: 30px 0;
+	}
+}
+@-o-keyframes buffering-stripes
+{
+	from
+	{
+		background-position: 0 0;
+	}
+	to
+	{
+		background-position: 30px 0;
+	}
+}
+@keyframes buffering-stripes
+{
+	from
+	{
+		background-position: 0 0;
+	}
+	to
+	{
+		background-position: 30px 0;
+	}
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded
+{
+	background: #3caac8;
+	background: linear-gradient(rgba(44,124,145,0.8),rgba(78,183,212,0.8));
+	background: -moz-linear-gradient(top,rgba(44,124,145,0.8),rgba(78,183,212,0.8));
+	background: -ms-linear-gradient(top,rgba(44,124,145,0.8),rgba(78,183,212,0.8));
+	background: -o-linear-gradient(top,rgba(44,124,145,0.8),rgba(78,183,212,0.8));
+	background: rgba(60,170,200,0.8);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(44,124,145,0.8)),to(rgba(78,183,212,0.8)));
+	background: -webkit-linear-gradient(top,rgba(44,124,145,0.8),rgba(78,183,212,0.8));
+	width: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current
+{
+	background: #fff;
+	background: linear-gradient(rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: -moz-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: -ms-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: -o-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: rgba(255,255,255,0.8);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(255,255,255,0.9)),to(rgba(200,200,200,0.8)));
+	background: -webkit-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	width: 0;
+}
+.mejs-controls .mejs-time-rail .mejs-time-handle
+{
+	background: #fff;
+	border: solid 2px #333;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+	margin: 0;
+	moz-border-radius: 5px;
+	position: absolute;
+	text-align: center;
+	top: -2px;
+	webkit-border-radius: 5px;
+	width: 10px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float
+{
+	background: #eee;
+	border: solid 1px #333;
+	color: #111;
+	display: none;
+	height: 17px;
+	margin-left: -18px;
+	position: absolute;
+	text-align: center;
+	top: -26px;
+	width: 36px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-current
+{
+	display: block;
+	left: 0;
+	margin: 2px;
+	text-align: center;
+	width: 30px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-float-corner
+{
+	border: solid 5px #eee;
+	border-color: #eee transparent transparent transparent;
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 13px;
+	line-height: 0;
+	moz-border-radius: 0;
+	position: absolute;
+	top: 15px;
+	webkit-border-radius: 0;
+	width: 0;
+}
+.mejs-controls .mejs-fullscreen-button button
+{
+	background-position: -32px 0;
+}
+.mejs-controls .mejs-unfullscreen button
+{
+	background-position: -32px -16px;
+}
+.mejs-controls .mejs-mute button
+{
+	background-position: -16px -16px;
+}
+.mejs-controls .mejs-unmute button
+{
+	background-position: -16px 0;
+}
+.mejs-controls .mejs-volume-button
+{
+	position: relative;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider
+{
+	background: rgba(50,50,50,0.7);
+	border-radius: 0;
+	display: none;
+	height: 115px;
+	left: 0;
+	margin: 0;
+	moz-border-radius: 0;
+	position: absolute;
+	top: -115px;
+	webkit-border-radius: 0;
+	width: 25px;
+	z-index: 1;
+}
+.mejs-controls .mejs-volume-button:hover
+{
+	border-radius: 0 0 4px 4px;
+	moz-border-radius: 0 0 4px 4px;
+	webkit-border-radius: 0 0 4px 4px;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total
+{
+	background: #ddd;
+	background: rgba(255,255,255,0.5);
+	height: 100px;
+	left: 11px;
+	margin: 0;
+	position: absolute;
+	top: 8px;
+	width: 2px;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current
+{
+	background: #ddd;
+	background: rgba(255,255,255,0.9);
+	height: 100px;
+	left: 11px;
+	margin: 0;
+	position: absolute;
+	top: 8px;
+	width: 2px;
+}
+.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle
+{
+	background: #ddd;
+	background: rgba(255,255,255,0.9);
+	border-radius: 1px;
+	cursor: N-resize;
+	height: 6px;
+	left: 4px;
+	margin: 0;
+	moz-border-radius: 1px;
+	position: absolute;
+	top: -3px;
+	webkit-border-radius: 1px;
+	width: 16px;
+}
+.mejs-controls div.mejs-horizontal-volume-slider
+{
+	position: relative;
+	width: 47px;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total
+{
+	background: #333;
+	background: linear-gradient(rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: -moz-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: -ms-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: -o-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	background: rgba(50,50,50,0.8);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(30,30,30,0.8)),to(rgba(60,60,60,0.8)));
+	background: -webkit-linear-gradient(top,rgba(30,30,30,0.8),rgba(60,60,60,0.8));
+	border-radius: 2px;
+	font-size: 1px;
+	height: 8px;
+	left: 0;
+	margin: 0;
+	moz-border-radius: 2px;
+	padding: 0;
+	position: absolute;
+	top: 11px;
+	webkit-border-radius: 2px;
+	width: 50px;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current
+{
+	background: #fff;
+	background: linear-gradient(rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: -moz-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: -ms-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: -o-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	background: rgba(255,255,255,0.8);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(255,255,255,0.9)),to(rgba(200,200,200,0.8)));
+	background: -webkit-linear-gradient(top,rgba(255,255,255,0.9),rgba(200,200,200,0.8));
+	border-radius: 2px;
+	font-size: 1px;
+	height: 8px;
+	left: 0;
+	margin: 0;
+	moz-border-radius: 2px;
+	padding: 0;
+	position: absolute;
+	top: 11px;
+	webkit-border-radius: 2px;
+	width: 50px;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle
+{
+	display: none;
+}
+.mejs-controls .mejs-captions-button
+{
+	position: relative;
+}
+.mejs-controls .mejs-captions-button button
+{
+	background-position: -48px 0;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector
+{
+	background: rgba(50,50,50,0.7);
+	border: solid 1px transparent;
+	border-radius: 0;
+	bottom: 26px;
+	height: 100px;
+	moz-border-radius: 0;
+	overflow: hidden;
+	padding: 10px;
+	position: absolute;
+	right: -10px;
+	visibility: hidden;
+	webkit-border-radius: 0;
+	width: 130px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul
+{
+	display: block;
+	list-style-type: none!important;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li
+{
+	color: #fff;
+	display: block;
+	list-style-type: none!important;
+	margin: 0 0 6px 0;
+	overflow: hidden;
+	padding: 0;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input
+{
+	clear: both;
+	float: left;
+	margin: 3px 3px 0 5px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label
+{
+	float: left;
+	font-family: helvetica,arial;
+	font-size: 10px;
+	line-height: 15px;
+	padding: 4px 0 0 0;
+	width: 100px;
+}
+.mejs-controls .mejs-captions-button .mejs-captions-translations
+{
+	font-size: 10px;
+	margin: 0 0 5px 0;
+}
+.mejs-chapters
+{
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 10000px;
+	xborder-right: solid 1px #fff;
+	z-index: 1;
+}
+.mejs-chapters .mejs-chapter
+{
+	background: #222;
+	background: linear-gradient(rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+	background: -moz-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+	background: -ms-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+	background: -o-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+	background: rgba(0,0,0,0.7);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(50,50,50,0.7)),to(rgba(0,0,0,0.7)));
+	background: -webkit-linear-gradient(top,rgba(50,50,50,0.7),rgba(0,0,0,0.7));
+	border: 0;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#323232,endColorstr=#000000);
+	float: left;
+	overflow: hidden;
+	position: absolute;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block
+{
+	border-bottom: solid 1px #333;
+	border-right: solid 1px #333;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 11px;
+	padding: 5px;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block-last
+{
+	border-right: none;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block:hover
+{
+	background: #666;
+	background: linear-gradient(rgba(102,102,102,0.7),rgba(50,50,50,0.6));
+	background: -moz-linear-gradient(top,rgba(102,102,102,0.7),rgba(50,50,50,0.6));
+	background: -ms-linear-gradient(top,rgba(102,102,102,0.7),rgba(50,50,50,0.6));
+	background: -o-linear-gradient(top,rgba(102,102,102,0.7),rgba(50,50,50,0.6));
+	background: rgba(102,102,102,0.7);
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(rgba(102,102,102,0.7)),to(rgba(50,50,50,0.6)));
+	background: -webkit-linear-gradient(top,rgba(102,102,102,0.7),rgba(50,50,50,0.6));
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,startColorstr=#666666,endColorstr=#323232);
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title
+{
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	margin: 0 0 3px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan
+{
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 3px 0 4px 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mejs-captions-layer
+{
+	bottom: 0;
+	color: #fff;
+	font-size: 12px;
+	left: 0;
+	line-height: 22px;
+	position: absolute;
+	text-align: center;
+}
+.mejs-captions-layer a
+{
+	color: #fff;
+	text-decoration: underline;
+}
+.mejs-captions-layer[lang=ar]
+{
+	font-size: 20px;
+	font-weight: normal;
+}
+.mejs-captions-position
+{
+	bottom: 15px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+.mejs-captions-position-hover
+{
+	bottom: 45px;
+}
+.mejs-captions-text
+{
+	background: rgba(20,20,20,0.8);
+	padding: 3px 5px;
+}
+.mejs-clear
+{
+	clear: both;
+}
+.me-cannotplay a
+{
+	color: #fff;
+	font-weight: bold;
+}
+.me-cannotplay span
+{
+	display: block;
+	padding: 15px;
+}
+.mejs-controls .mejs-loop-off button
+{
+	background-position: -64px -16px;
+}
+.mejs-controls .mejs-loop-on button
+{
+	background-position: -64px 0;
+}
+.mejs-controls .mejs-backlight-off button
+{
+	background-position: -80px -16px;
+}
+.mejs-controls .mejs-backlight-on button
+{
+	background-position: -80px 0;
+}
+.mejs-controls .mejs-picturecontrols-button
+{
+	background-position: -96px 0;
+}
+.mejs-contextmenu
+{
+	background: #fff;
+	border: solid 1px #999;
+	border-radius: 4px;
+	left: 0;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	width: 150px;
+	z-index: 1001;
+}
+.mejs-contextmenu .mejs-contextmenu-separator
+{
+	background: #333;
+	font-size: 0;
+	height: 1px;
+	margin: 5px 6px;
+}
+.mejs-contextmenu .mejs-contextmenu-item
+{
+	color: #333;
+	cursor: pointer;
+	font-family: Helvetica,Arial;
+	font-size: 12px;
+	padding: 4px 6px;
+}
+.mejs-contextmenu .mejs-contextmenu-item:hover
+{
+	background: #2C7C91;
+	color: #fff;
+}
+.mejs-controls .mejs-sourcechooser-button
+{
+	position: relative;
+}
+.mejs-controls .mejs-sourcechooser-button button
+{
+	background-position: -128px 0;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector
+{
+	background: rgba(50,50,50,0.7);
+	border: solid 1px transparent;
+	border-radius: 0;
+	bottom: 26px;
+	height: 100px;
+	moz-border-radius: 0;
+	overflow: hidden;
+	padding: 10px;
+	position: absolute;
+	right: -10px;
+	visibility: hidden;
+	webkit-border-radius: 0;
+	width: 130px;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul
+{
+	display: block;
+	list-style-type: none!important;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li
+{
+	color: #fff;
+	display: block;
+	list-style-type: none!important;
+	margin: 0 0 6px 0;
+	overflow: hidden;
+	padding: 0;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input
+{
+	clear: both;
+	float: left;
+	margin: 3px 3px 0 5px;
+}
+.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label
+{
+	float: left;
+	font-family: helvetica,arial;
+	font-size: 10px;
+	line-height: 15px;
+	padding: 4px 0 0 0;
+	width: 100px;
+}
+
+.younet_html5_player
+{
+  overflow: hidden;
+}
+/** YN audio skin **/
+.yn-music
+{
+	background:url('~/application/modules/Mp3music/externals/images/audio.png') repeat-x;
+	background-position:0 -237px;
+	height:77px;
+}
+.yn-music.singer-song{
+	background-position: 0 -276px;
+	padding-top: 1px;
+	height:45px;
+}
+.yn-music.feed-player {
+	color:#849797;
+	font-size:12px;
+	
+}
+.song-info
+{
+	height:39px;
+	padding-left:10px;
+}
+.yn-audio-skin
+{
+	background:none;
+	margin-top: 2px;
+}
+.yn-music.feed-player .yn-audio-skin {
+	margin-top:5px;
+}
+.mejs-controls .mejs-button button:focus
+{
+	outline:none;
+}
+
+.mejs-controls
+{
+	background:none;
+}
+/** Song Title - Artist **/
+
+.yn-music .song-info marquee
+{
+	line-height:40px;
+	font-size:14px;
+	width: 70%;
+}
+/**End **/
+
+/** List **/
+ul.mejs-list
+{
+
+	color:#849797;
+	font-size:12px;
+}
+ul.mejs-list.feedplayer-list{
+	width:465px;
+}
+.mejs-list li
+{
+	list-style: none;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	overflow:hidden;
+	background:#fff;
+	padding: 0 10px;
+	clear: both;
+}
+.small-playlist li{
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	font-size:11px;
+}
+.mejs-list li:hover {
+	background: #B9FFFF;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+.mejs-list li.current {
+	background:#B9FFFF;
+}
+.mejs-list li span.link
+{
+	display:none;
+}
+.mejs-list li a
+{
+	text-indent:-99999px;
+	background: url('~/application/modules/Mp3music/externals/images/audio.png') no-repeat;
+	height:25px;
+	width:25px;
+	display:block;
+	float:right;
+	margin-top: 5px;
+}
+.mejs-list li a.ynmp3music-disable {
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+.mejs-list li a.yn-download
+{
+	background-position: 2px -7px;
+}
+.mejs-list li a.yn-download:hover
+{
+	background-position: -23px -7px;
+}
+.mejs-list li a.yn-add-playlist
+{
+	background-position: 2px -32px;
+}
+.mejs-list li a.yn-add-playlist:hover
+{
+	background-position: -23px -33px;
+}
+.mejs-list li > span
+{
+	float:left;
+	display:block;
+}
+#ynmp3music-wrapper .mejs-list li > span,
+.younet_mp3music_feed .mejs-list li > span,
+.younet_mp3music_share .mejs-list li > span
+{
+	margin-top: 5px;
+}
+.mp3music-song-title > span
+{
+	font-size: 12px;
+	color: #555;
+}
+
+.profile_music_player .mp3music-song-title > span
+{
+	font-size: 0.8em;
+}
+.yn-play {
+	margin-left: 5px;
+	white-space: nowrap;
+}
+.mejs-list.small-playlist li > span.song-title{
+	width: 180px;
+}
+/** progress bar **/
+.mejs-controls .mejs-time-rail .mejs-time-total
+{
+	border:1px solid;
+	border-color:#090909 #464646 #787878 #464646;
+	height:8px;
+}
+.yn-small-audio-skin .mejs-controls .mejs-time-rail .mejs-time-total{
+	height:5px;
+}
+.mejs-container div.mejs-time-rail {
+	/*margin-left: 3px;*/
+}
+.yn-small-skin .mejs-controls .mejs-time-rail .mejs-time-total{
+	height:6px;
+	margin-top:3px;
+	margin-left:0;
+}
+.mejs-time-rail .mejs-time-current,
+.mejs-controls .mejs-time-rail .mejs-time-loaded
+{
+	height:8px;
+}
+.yn-small-audio-skin .mejs-time-rail .mejs-time-current,
+.yn-small-audio-skin .mejs-controls .mejs-time-rail .mejs-time-loaded{
+	height:5px;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded
+{
+	background:#727272;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current
+{
+	background: #03E3E2;
+	background:linear-gradient(0% 90deg,#0F7B97, #0F7B97);
+	background: -moz-linear-gradient(0% 90deg,#03E3E2, #0F7B97);
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#0F7B97), to(#03E3E2));
+}
+.mejs-controls .mejs-time-rail .mejs-time-handle
+{
+	background:url('~/application/modules/Mp3music/externals/images/audio.png') no-repeat;
+	display:block;
+	height:16px;
+	width:14px;
+	border:none;
+	background-position: -2px -192px;
+	margin-top:-2px;
+	left: -7px;
+}
+.profile_music_player .mejs-controls .mejs-time-rail .mejs-time-handle {
+	left: -3px;
+}
+.yn-small-audio-skin .mejs-controls .mejs-time-rail .mejs-time-handle{
+	background: url("~/application/modules/Mp3music/externals/images/small-icon.png") no-repeat scroll -3px -90px transparent;
+    margin: 0;
+    width: 10px;
+    height: 10px;
+	
+}
+/** button **/
+.mejs-container .mejs-controls {
+	
+}
+.mejs-container .mejs-controls div.mejs-playpause-button
+{
+	width:35px;
+	height:30px;
+	margin-top:0;
+}
+.mejs-container.yn-small-audio-skin .mejs-controls div.mejs-playpause-button{
+	width:21px;
+}
+.mejs-container .mejs-controls div.mejs-playpause-button button
+{
+	background:url('~/application/modules/Mp3music/externals/images/audio.png') repeat-x;
+	width:30px;
+	height:30px;
+	margin-top:0;
+	margin-left:3px;
+}
+.mejs-container.yn-small-audio-skin .mejs-controls div.mejs-playpause-button button{
+	background:url(~/application/modules/Mp3music/externals/images/small-icon.png) no-repeat;
+	width:21px;
+}
+.mejs-container .mejs-controls div.mejs-play button
+{
+	background-position: 0 -118px;
+}
+.mejs-container.yn-small-audio-skin .mejs-controls div.mejs-play button{
+	background-position: 0 3px;
+}
+.mejs-container .mejs-controls div.mejs-pause button
+{
+	background-position: -35px -118px;
+}
+.mejs-container.yn-small-audio-skin .mejs-controls div.mejs-pause button{	
+	background-position: 0 -22px;
+}
+/** Prev- Next button **/
+.mejs-controls .mejs-button button 
+{
+	background:url('~/application/modules/Mp3music/externals/images/audio.png') no-repeat;
+	width: 21px;
+    height: 26px;
+    margin-top: 3px;
+	margin-right:2px;
+} 
+.yn-small-audio-skin .mejs-controls .mejs-button button{
+	background:url(~/application/modules/Mp3music/externals/images/small-icon.png) no-repeat;
+	width:20px;
+	height:20px;
+}
+.mejs-controls .mejs-prev-button button
+{
+	background-position: 0 -89px;
+}
+.yn-small-audio-skin .mejs-controls .mejs-prev-button button{
+	background-position: 0 -48px;
+}
+.mejs-controls .mejs-prev-button button
+.yn-small-audio-skin .mejs-controls .mejs-prev-button button{
+	background-position: 0 -47px;
+}
+.mejs-container .mejs-controls div.mejs-next-button
+{
+	width:20px;
+	margin-right:5px;
+}
+.mejs-container.yn-small-audio-skin .mejs-controls div.mejs-next-button{
+	margin-right:0;
+}
+.mejs-controls .mejs-next-button button
+{
+	background-position: -27px -88px;
+	margin-left:0;
+}
+.yn-small-audio-skin .mejs-controls .mejs-next-button button
+{
+	background-position: 0 -67px;
+}
+.mejs-controls .mejs-mute button
+{
+	background-position: -20px -209px;
+}
+.mejs-controls .mejs-unmute button
+{
+	background-position: 0 -209px;
+}
+.mejs-controls .mejs-loop-off button
+{
+	background-position: 0 -148px;
+	margin: 3px 0 0;
+    width: 20px
+}
+.mejs-controls .mejs-loop-off:hover button,
+.mejs-controls .mejs-loop-on button
+{
+	background-position: -26px -148px;
+	margin: 3px 0 0;
+    width: 20px
+}
+.mejs-controls .mejs-shuffle-off button
+{
+	background-position: 0 -167px;
+	margin: 3px 0 0;
+    width: 20px
+}
+.mejs-controls .mejs-shuffle-off:hover button,
+.mejs-controls .mejs-shuffle-on button
+{
+	background-position: -20px -167px;
+	margin: 3px 0 0;
+    width: 20px
+}
+.mejs-container .mejs-controls div.col-vol
+{
+	 border-left: 1px solid #4C4C4C;
+    border-right: 1px solid #131313;
+    padding-bottom: 6px;
+    width: 0;
+}
+/** Volume **/
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total
+{
+	background:url(~/application/modules/Mp3music/externals/images/volume-off.png) repeat-x left;
+	height:8px;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	width:48px;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current
+{
+	background:url(~/application/modules/Mp3music/externals/images/volume-current.png) repeat-x left;
+	height:8px;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+}
+.star
+{
+	float: right;
+    line-height: 40px;
+    margin-right: 16px;
+}
+#mp3music_rating {
+	overflow: hidden;
+	margin: 10px 10px 0 0;
+	float: right;
+}
+.mp3music_unrate,
+.mp3music_rated {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: url(~/application/modules/Mp3music/externals/images/star-off.png) no-repeat left top transparent;
+	cursor: pointer;
+	text-indent: -999em;
+	overflow: hidden;
+}
+.mp3music_unrate.mp3music_rate_disable:hover {
+	background-image: url(~/application/modules/Mp3music/externals/images/star-off.png);
+}
+.mp3music_rated {
+  background-image: url(~/application/modules/Mp3music/externals/images/star-dis.png);
+}
+
+a.mp3music_rated.mp3music_rate_disable:hover {
+  background-image: url(~/application/modules/Mp3music/externals/images/star-dis.png);
+}
+
+a.mp3music_rated:hover,
+a.mp3music_unrate:hover,
+a.mp3music_rated.mp3music_rate_hover,
+a.mp3music_unrate.mp3music_rate_hover {
+	background-image: url(~/application/modules/Mp3music/externals/images/star-onl.png);
+}
+
+#mp3music_rating_text {
+	color: #AAAAAA;
+	cursor: default;
+	display: block;
+	font-size: 0.8em;
+	height: 16px;
+	line-height: 0.8em;
+	margin-left: 5px;
+	padding-top: 0.4em;
+}
+
+/*Profile player skin*/
+.profile_music_player .mejs-controls div.mejs-playpause-button {
+	width: 26px;
+}
+.profile_music_player .mejs-controls div {
+	width: 24px;
+}
+.profile-player {
+  background: url("~/application/modules/Mp3music/externals/images/audio_small.png");
+}
+.profile-player .mejs-container .mejs-controls {
+}
+.profile-player .mejs-container .mejs-controls div.mejs-pause button {
+    background-position: -27px -22px;
+}
+.profile-player .mejs-container .mejs-controls div.mejs-play button {
+    background-position: 0 -22px;
+}
+.profile-player .mejs-controls div.mejs-playpause-button button {
+    background: url("~/application/modules/Mp3music/externals/images/audio_small.png") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    margin-top: 3px;
+    width: 22px;
+}
+.profile-player .mejs-controls .mejs-prev-button button {
+    background-position: 0 0;
+}
+.profile-player .mejs-controls .mejs-button button {
+    background: url("~/application/modules/Mp3music/externals/images/audio_small.png") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    margin-right: 2px;
+    margin-top: 7px;
+    width: 16px;
+}
+
+.profile-player .mejs-controls .mejs-time-rail .mejs-time-handle {
+  height: 9px;
+  width: 9px;
+  background: url("~/application/modules/Mp3music/externals/images/audio_small.png") no-repeat scroll -39px 0 transparent;
+  margin-top: 1px;
+}
+.profile-player .mejs-controls .mejs-button button {
+  margin-bottom: 0;
+}
+.profile-player .mejs-controls .mejs-next-button button {
+    background-position: -20px 0;
+    margin-left: 0;
+}
+.profile-player .mejs-controls div.mejs-time-rail {
+  width: 98px;
+  font-size: 11px;
+}
+.profile-player .mejs-controls .mejs-time-rail > span {
+  width: 100px;
+}
+.profile-player .mejs-controls .mejs-time-rail .mejs-time-float-corner {
+  top: 17px;
+}
+.profile_music_player ul.mejs-list,
+.profile_music_player .mejs-list li > span.song-title{
+  width: 100%;
+}
+
+.profile_music_player .mejs-list li {
+  font-size: 11px;
+  padding: 0 5px;
+}
+
+.profile_music_player .mp3music-song-title {
+	padding: 5px 0;
+}
+.profile-player .mejs-controls .mejs-time-rail .mejs-time-total,
+.profile-player .mejs-time-rail .mejs-time-current, 
+.profile-player .mejs-controls .mejs-time-rail .mejs-time-loaded{
+  height: 6px;
+}
+
+.younet_mp3music_feed {
+	float: left;
+}
+.mp3music_wrapper .younet_mp3music_feed {
+	position: absolute;
+	visibility: hidden;
+	width: 400px;
+}
+.younet_mp3music_feed .mejs-container,
+.younet_mp3music_share .mejs-container {
+	margin-top: 5px;
+	clear: both;
+}
+.younet_mp3music_feed .mejs-controls .mejs-time-rail > span {
+  /*width: 150px;*/
+}
+
+.younet_mp3music_feed ul.mejs-list {
+}
+.younet_mp3music_feed .mejs-container .mejs-controls {
+	background: none;
+	bottom: 5px;
+}
+.feed_player_right {
+	overflow: hidden;
+}
+.younet_mp3music_feed .mejs-list li {
+}
+
+.younet_mp3music_feed .mejs-list li a {
+}
+.younet_mp3music_feed .mejs-mediaelement {
+	width: auto;
+}
+.mp3music_container audio {
+	display: none;
+}
+.album_info {
+	overflow: hidden;
+	position: relative;
+	padding: 3px;
+	background-color: #666;
+}
+
+.album_info .mejs-container {
+}
+
+.album_info img {
+	width: 90px;
+	display: block;
+}
+#mp3music_reverse .mainplayer_image_album {
+	width: 215px;
+	clear: both;
+	float: left;
+}
+.younet_mp3music_feed .mainplayer_image_album {
+	float: left;
+}
+
+.mp3music_wrapper .mp3music_container {
+	/*display: none;*/
+}
+.mp3music_album_thumb {
+	position: relative;
+	float: left;
+}
+.mp3music_wrapper {
+	overflow: hidden;
+	margin: 10px 0;
+	position: relative;
+}
+.mp3music_expand_thumb {
+	background:url('~/application/modules/Mp3music/externals/images/audio.png') no-repeat;
+	width:30px;
+	height:30px;
+	margin-top:0;
+	margin-left:0;
+	background-position: 0 -118px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	display: block;
+	z-index: 10;
+	cursor: pointer;
+}
+.mp3music_expand_thumb:hover {
+	background-position: -70px -118px;
+}
+
+.album_info #song-title-head {
+	color: #fff;
+	overflow: hidden;
+	margin: 5px 0 0 0;
+	padding: 0 10px;
+	display: block;
+	word-wrap: break-word;
+}
+.mp3music_wrapper .mejs-list li > span.song-title {
+}
+
+/*Share player*/
+.younet_mp3music_share {
+	margin-top: 10px;
+}
+
+.share_album_info {
+	position: relative;
+	overflow: hidden;
+	background-color: #666;
+}
+
+.share_image_album {
+	float: left;
+}
+
+.younet_mp3music_share #song-title-head {
+	color: #FFFFFF;
+	margin: 5px 0 0 10px;
+	display: block;
+	padding: 0 5px;
+}
+.younet_mp3music_share .mejs-container {
+	bottom: 0;
+	right: 0;
+}
+
+.younet_mp3music_share .mejs-controls {
+	background: none;
+}
+.younet_mp3music_share ul.mejs-list {
+	width: 365px;
+	clear: both;
+}
+.share_image_album img {
+	width: 75px;
+	display: block;
+}
+
+.younet_mp3music_share .mejs-list li {
+}
+
+.younet_mp3music_share .mejs-list li a {
+}
+
+.layout_mp3music_profile_player {
+	margin-top: 20px;
+}
+.layout_mp3music_profile_player > h3 {
+	font-size: 0.8em;
+}
+
+/* Mp3music slideshow feature album*/
+#mp3music_navigation .about > * 
+{
+	background: #eee;
+}
+#mp3music_navigation-slideshow {
+	height: 300px;
+	margin-bottom: 15px;
+	clear:both;
+}
+#mp3music_navigation-slideshow span {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+#mp3music_navigation-slideshow .mp3music_album_photo
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+#mp3music_navigation-slideshow span img
+{
+	width: 100%;
+	border: none;
+}
+
+#mp3music_navigation-slideshow ul.mp3music_pagination {
+	float: right;
+	position: absolute;
+	right: 5px;
+	top: -20px;
+}
+#mp3music_navigation-slideshow .mp3music_pagination li {
+	display: inline-block;
+}
+#mp3music_navigation-slideshow .mp3music_pagination a {
+	display: block;
+	width: 12px;
+	height: 0;
+	padding-top: 12px;
+	background-image: url(~/application/modules/Mp3music/externals/images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+#mp3music_navigation-slideshow .mp3music_pagination a:hover, 
+#mp3music_navigation-slideshow .mp3music_pagination a.current {
+	background-position: 0 -12px;
+}
+.mp3music_albumfeatured_info
+{
+	background: url(~/application/modules/Mp3music/externals/images/slide_bg_info.png) repeat transparent;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	padding: 10px 10px 10px 17px;
+	width: 95%;
+}
+div.mp3music_albumfeatured_info > .mp3music_album_title 
+{
+	font-weight: bold;
+}
+div.mp3music_albumfeatured_info > .mp3music_album_title > h3 
+{
+	background: none transparent!important;
+	padding: 0;
+	font-weight: 700;
+}
+div.mp3music_albumfeatured_info > .mp3music_album_title > h3  > a:link,
+div.mp3music_albumfeatured_info > .mp3music_album_info,
+div.mp3music_albumfeatured_info > .mp3music_album_info a
+{
+	color: white;
+}
+
+#terms_conditions img
+{
+	max-width: 480px;
+}
+
+/*Change order of player and ccenter*/
+#mp3music_reverse {
+	width: 100%;
+	display: table;
+	overflow: hidden;
+}
+#ynmp3music-wrapper {
+	
+	display: table-header-group;
+
+}
+#ynmp3music-inner {
+	+rounded;
+	border: 1px solid $theme_foreground_border_color;
+	padding: 10px;
+	margin: 0 0 10px;
+}
+#ynmp3music-wrapper > div {
+	padding-bottom: 10px;
+		overflow: hidden;
+}
+#cter_popup {
+	display: table-footer-group; 
+} /* Will display at the top */
+
+.mp3music-song-title {
+	overflow: hidden;
+	padding: 10px 0;
+}
+.layout_page_mp3music_album_create #form-upload-music #submit-wrapper
+{
+	display: none;
+}
+#form-upload-music #files
+{
+	display: none;
+	list-style: none;
+	width: 100%;
+	margin-top: 15px;
+	max-height: 200px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+}
+#form-upload-music #files li 
+{
+	background-image: url(~/application/modules/Mp3music/externals/images/upload_waiting.png);
+}
+#form-upload-music #files li.file-success 
+{
+	background-image: url(~/application/modules/Mp3music/externals/images/upload_success.png);
+}
+#form-upload-music #files li + li 
+{
+	border-top: 1px solid #ccc;
+}
+#form-upload-music #files li 
+	{
+	padding: 8px 8px 8px 28px;
+	font-size: .8em;
+	font-weight: normal;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-position: 6px 7px;
+	background-image: url(~/application/modules/Mp3music/externals/images/upload_waiting.png);
+	background-repeat: no-repeat;
+}
+#form-upload-music #files li .file-remove 
+{
+	clear: right;
+	float: right;
+	font-weight: bold;
+	overflow: hidden;
+}
+#form-upload-music #files li .file-info 
+{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	font-weight: normal;
+}
+#form-upload-music #progress
+{
+	margin-top: 15px; 
+}
+#form-upload-music #progress-percent
+{
+	position: absolute;
+}
+.progress-bar-success 
+{
+	background-color: $theme_button_background_color!important;
+}
+button
+{
+		color: $theme_button_font_color!important;
+}
+.btn-success 
+{
+    background-color: $theme_button_background_color!important;
+    border-color: $theme_input_border_colors!important;
+    color: $theme_button_font_color!important;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-color: $theme_button_background_color_hover!important;
+    border-color: $theme_input_border_colors!important;
+    color: $theme_button_font_color!important;
+}
+.btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
+    background-image: none!important;
+}
+
+.lyric-content {
+	position: relative;
+	padding-top: 24px;
+	background-color: #fffae6;
+	background: url(~/application/modules/Mp3music/externals/images/vline.jpg) top left repeat-x;
+	background-position: left -446px;
+	-webkit-box-shadow: 0 0 5px #dfdfdf;
+	-moz-box-shadow: 0 0 5px #dfdfdf;
+	box-shadow: 0 0 5px #dfdfdf;
+	-ms-box-shadow: 0 0 5px #dfdfdf;
+	-o-box-shadow: 0 0 5px #dfdfdf;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border: 1px solid #dfdfdf;
+}
+
+.oLyric {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	z-index: 3;
+	color: #807d71;
+}
+.lyric-content h3 {
+	margin-bottom: 2px!important;
+	padding: 0 25px!important;
+	color: #737066;
+	font-size: 16px!important;
+	line-height: 30px!important;
+	background: none!important;
+	margin-top: 0!important;
+}
+.lyric-content p,
+.lyric-content span div {
+	padding: 0 80px 10px 25px;
+	color: #737065;
+	line-height: 30px;
+}
+.content-block {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.rows4 
+{
+	height: 115px !important;
+	display: block;
+	overflow: hidden;
+}
+.lyric-content .iLyric {
+	overflow: hidden;
+	padding: 8px;
+	border-top: 1px solid #f0e5b4;
+	background-color: #fff8d1;
+}
+.read-all {
+	display: block;
+	clear: both;
+	padding: 0 0 0 15px;
+}
+.iLyric .read-all 
+{
+	float: left;
+}
+.mp3music_embed
+{
+	margin-bottom: 10px;
+	border: 1px solid #dfdfdf;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin-top: 20px;
+}
+#compose-mp3music-activator, 
+#compose-mp3music-menu span
+{
+  background-image: url(~/application/modules/Mp3music/externals/images/types/music.png);
+}

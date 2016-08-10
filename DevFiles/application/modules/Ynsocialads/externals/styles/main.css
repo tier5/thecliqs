@@ -1,0 +1,758 @@
+#tooltip 
+{
+	position: absolute;
+	border: 1px solid $theme_border_medium_color;
+	padding: 2px;
+	background-color: #fee;
+	opacity: 0;	
+	margin-left: 20px;
+}
+
+.xAxis .tickLabel {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	margin-top: 25px;
+	font-size: 0.85em;
+}
+
+.legendLabel{
+	margin-left: 5px;
+}
+
+#placeholder {
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+.result_count {
+	font-size: 0.9em;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.yn_search, .yn_filter {
+	margin-bottom: 20px;
+}
+
+.yn_search label, .yn_filter label {
+	font-weight: bold;
+}
+
+.ynsocialads-faq-item {
+	+foreground;
+	+rounded();
+	padding: 20px;
+	border: 1px solid $theme_border_medium_color;
+	margin-bottom: 1em;
+	
+	.ynsocialads-faq-icon {
+		width: 20px;
+		height: 20px;        
+		background-image: url("~/application/modules/Ynsocialads/externals/images/icon-arrow.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 6px;
+		display: block;
+		vertical-align: middle;   
+		
+		transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+		
+		cursor: pointer;
+		
+		float: left;
+	}
+	
+	.ynsocialads-faq-title {
+		font-size: 15px;
+		font-weight: bold;
+		
+		.ynsocialads-faq-title-item {
+			overflow: hidden;
+			padding-left: 5px;
+			padding-top: 3px;
+		}
+	}
+	
+	.ynsocialads-faq-content {
+		margin-top: 1em; 
+
+		object,
+		iframe,
+		img {
+			max-width: 100%;	
+			height: auto;		
+		}   
+	}
+
+	.ynsocialads_question_preview
+	{
+		display: none;
+	}
+	
+	&.ynsocialads-collapse 
+	{
+		.ynsocialads-faq-content,
+		.ynsocialads_question_full
+		{
+			display: none;
+		}
+		.ynsocialads_question_preview
+		{
+			display: block;
+		}
+		.ynsocialads-faq-icon {            
+			transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+		}
+		
+	}
+}
+
+.add_link {
+	margin: 10px 0px;
+	clear: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.package_fieldset {
+	border: 1px solid $theme_border_medium_color;
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 20px;
+}
+
+.package_fieldset legend {
+	font-weight: bold;
+	padding: 5px; 
+}
+
+.package_fieldset p {
+	margin: 10px;
+}
+
+.package_fieldset button {
+	float: right;
+	margin-top: -35px;
+}
+
+.frontend_table {
+	width: 100%;
+}
+
+#ad_statistics {
+	float: right;
+	margin: 10px 0px;
+}
+
+#ad_statistics table caption {
+	text-align: right;
+}
+
+.payment_label{
+	display: inline;
+}
+
+.payment_value{
+	font-weight: bold;
+	display: inline;
+}
+
+.popup_form {
+	margin-left: 10px;
+	padding-left: 20px;
+}
+
+.popup_form label {
+	font-weight: bold;
+}
+
+.popup_form .form-wrapper {
+	margin: 15px 0px;
+}
+
+.popup_form input, textarea {
+	width: 100%;
+}
+
+.yn_title {
+	margin: 15px 0px 10px 0px;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#statistic_title {
+	margin-bottom: -18px;
+}
+
+.form_div {
+	margin: 10px 0px;
+}
+
+.form_label {
+	margin-bottom: 10px;
+	font-weight: bold;
+	display: block;
+}
+
+.form_content {
+	+foreground;
+	+rounded;
+	padding: 20px;
+	border: 1px solid $theme_border_medium_color;
+	
+	margin-bottom: 20px;
+	table-layout: fixed;
+	input, select, textarea {
+		width: 60%;
+	}
+	input[type="radio"]+label {
+		float: none;
+	}
+}
+
+#internal_div {
+	label, select{
+		display: block;
+		margin: 10px 0px;
+	}	
+}
+
+#external_url_div {
+	margin-top: 10px;
+}
+
+#external_url_div, #internal_div {
+	margin-left: 20px;
+}
+
+#internal_div {
+	display: none;
+}
+
+.left_content {
+	display: inline-table;
+	width: 37%;
+}
+
+.right_content {
+	display: inline-table;
+	width: 60%;
+}
+#getting_started {
+	margin: 0;
+	font-size: 0.8em;
+}
+
+.description {
+	margin: 10px 0px;
+}
+
+.ad_type_div {
+	display: table-cell;
+	text-align: center;
+	border: 1px solid $theme_border_medium_color;
+	padding: 20px;
+	opacity: 0.7;
+	width: 30%;
+}
+
+.ad_type_div label {
+	display: block;
+}
+
+.ad_type_div input[type=radio] {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	float: none;
+}
+
+#ad_type {
+	border-collapse:separate;
+	border-spacing:30px;
+}
+
+#ad_type .form_content {
+	padding: 10px;
+}
+
+.active {
+	opacity: 1;
+}
+
+.form_element {
+	margin-bottom: 15px;
+}
+
+/*** ynsocial_ads ***/
+.ynsocial_ads {
+	border: 5px solid $theme_border_medium_color;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.ynsocial_ads_like_cont {
+	background-color: $theme_border_medium_color;
+	color: $theme_font_color;
+	padding: 5px 10px;
+	font-size: 0.9em;    
+
+	a { font-weight: bold; }
+}
+
+.icon_ynsocial_ads_like {
+	display: inline-block;
+	width: 12px;
+	height: 10px;
+	background-image: url("~/application/modules/Ynsocialads/externals/images/icon-like.png");
+	background-repeat: no-repeat;
+}
+
+.ynsocial_ads_title {
+	padding: 10px;
+	background-color: $theme_border_medium_color;
+
+	a { float: right; }
+	h5 { 
+		overflow: hidden; 
+		margin: 0;
+	}
+}
+
+.placement_div {
+	padding: 10px 0px;
+	border-top: 1px solid $theme_border_medium_color;
+	position: relative;
+}
+.remove_link {
+	position: absolute;
+	right: 0;
+}
+.price_div, .campaign_div, .schedule_div {
+	display: table-cell;
+	padding: 0px 30px;
+	width: 30%;
+}
+
+.price_div, .campaign_div {
+	border-right: 1px solid $theme_border_medium_color;
+}
+
+.campaign_div {
+	select, input {
+		width: 250px;
+		display: block;
+		margin: 10px 0px;
+	}
+}
+
+.red {
+	color: red;
+}
+
+#benefit_amount {
+	margin-bottom: 10px;
+}
+
+#price {
+	margin-top: 10px;
+}
+
+.margin_top_10 {
+	margin-top: 10px;
+	display: block;
+}
+
+#select_date {
+	margin-left: 20px;
+}
+
+.label_left, .content_right {
+	display: inline-block;
+	max-width: 80%;
+}
+
+.label_left {
+	margin: 0px 10px;
+	text-align : right;
+	width: 18%;
+	vertical-align: top;
+}
+
+select.small {
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+.sub_div {
+	margin-bottom: 10px;
+}
+
+#audience_div {
+	select {
+		width: auto;
+	}
+	input[type="text"] {
+		width: 200px;
+	}
+	textarea {
+		width: 400px;
+	}
+	input[type="radio"], label {
+		display: inline-block;
+	}
+	#networks {
+		display: block;
+		margin-top: 5px;
+	}
+	.description {
+		display: block;
+		margin-top: 0px;
+	}
+}
+.small_description {
+	font-size: 0.8em;
+	color: gray;
+	margin-top: 5px;
+}
+#total_audiences {
+	span {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+}
+
+#similar_ad{
+	background-image: url("~/application/modules/Ynsocialads/externals/images/create-ad.png");
+}
+
+#view_full_report{
+	background-image: url("~/application/modules/Ynsocialads/externals/images/view-report.png");
+
+}
+#preview_ad {
+	margin-top: 10px;
+}
+#price_label {
+	margin: 0;
+	font-size: 0.8em;
+}
+
+/*** form style ***/
+#filter_form {
+	&.report_filter	> div {
+		margin-top: 0;
+		vertical-align: middle;
+		display: inline-block;
+		margin-right: 10px;
+
+		&.form-wrapper + .form-wrapper {
+			margin-top: 0;
+		}
+	}
+}
+
+#statistic_form {
+	+foreground;
+	+rounded;
+	border: 1px solid $theme_border_medium_color;
+	width: auto;
+	padding: 20px;
+	font-size: 1.1em;
+
+	.form-element {
+		overflow: visible;
+	}	
+}
+
+.yn_filter .global_form_box,	
+#my_campaigns .global_form_box {
+	+foreground;
+	+rounded;
+	border: 1px solid $theme_border_medium_color;
+	padding: 20px !important;
+	margin: 10px 0;
+
+	& > div {
+		margin-top: 0;
+		vertical-align: middle;
+		display: inline-block;
+		margin-right: 10px;
+
+		&.form-wrapper + .form-wrapper {
+			margin-top: 0 !important;
+		}
+
+		label {
+			font-size: 1em;
+			margin-bottom: 4px;
+		}
+
+		.buttons {
+			margin-top: 20px;
+		}
+	}
+}
+
+.ynsocial_ads_item {
+	padding: 10px;
+	position: relative;
+
+	& + .ynsocial_ads_item {
+		border-top: 1px solid $theme_border_medium_color;
+	}
+
+	.ynsocial_ads_setting {
+		float: right;
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background-image: url("~/application/modules/Ynsocialads/externals/images/icon-setting.png");
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	
+	.ynsocial_ads_feed_setting {
+		float: right;
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		background-image: url("~/application/modules/Ynsocialads/externals/images/icon-setting.png");
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	
+	.ynsocial_ads_cont {
+		word-break: break-word;
+	}
+
+	.ynsocial_ads_cont_title {
+		overflow: hidden;
+		font-weight: bold;
+		display: block;
+	}
+
+	.ynsocial_ads_cont_image {
+		display: block;
+		text-align: center;
+	}
+
+	.ynsocial_ads_cont_image img {
+		max-width: 100%;
+		max-height: 200px;
+		margin: 5px 0;
+	}
+}
+
+.ynsocial_ads_setting_choose {
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid $theme_border_medium_color;
+	margin-top: 20px;
+	right: 10px;
+	display: none;
+
+	a {
+		display: block;
+		padding: 5px 10px;
+		white-space: nowrap;
+
+		& + a {
+			border-top: 1px solid $theme_border_medium_color;
+		}
+	}
+}
+
+#activity-feed {
+	.feed_ynsocial_ads { padding: 0; }
+	.ynsocial_ads_item {
+		padding: 10px 0px 10px 0px;
+
+		.ynsocial_ads_setting_choose {
+			right: 0;
+		}
+	}
+}
+
+#chose_package { padding-top: 10px; }
+
+.package-item {
+	background-color: $theme_input_background_color;
+  	border: 1px solid $theme_border_medium_color;
+  	overflow: hidden;
+  	padding: 20px 20px 10px 20px;
+  	position: relative;
+  	margin-bottom: 20px;
+
+	.package-price {
+		background-color: $theme_border_color;
+		height: 30px;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 30px;
+	
+		span.price {
+			float: left;
+			background-color: $theme_button_background_color;
+			color: $theme_button_font_color;
+			width: 160px;
+			padding: 0 10px;
+			text-align: center;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			
+
+			&:after {
+				content: "";
+				display: block;
+				width: 0;
+				height: 0;
+				border-left: 5px solid $theme_button_background_color;
+				border-bottom: 15px solid transparent;
+				border-top: 15px solid transparent;
+				position: absolute;
+				margin-left: 170px;
+				margin-top: -30px;
+			}
+		}
+
+		span.title {
+			padding: 0 10px 0 20px;
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	.package-content {
+		overflow: hidden;
+		padding: 10px 120px 10px 10px;
+
+		p {
+			background-image: url("~/application/modules/Ynsocialads/externals/images/icon-checked.png");
+			background-position: left center;
+			background-repeat: no-repeat;
+			padding: 5px 0 5px 25px;
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			&.title {
+				background: none;
+				padding-left: 0;
+				text-transform: uppercase;
+				font-size: 1.1em;
+			}
+		}
+
+		button {
+			position: absolute;
+			right: 20px;
+			margin-top: -60px;
+		}
+	}
+}
+
+.ynsocial_table {
+	td, th {
+		text-align: left;
+		padding: 3px 5px;
+		border-bottom: 1px solid $theme_border_medium_color;
+	}
+
+	th {
+		background-color: $theme_border_medium_color;
+	}
+}
+
+.review_your_ads li {
+	padding-bottom: 5px;
+
+	& > div:nth-child(1) {
+		float: left;
+		font-weight: bold;
+		width: 120px;
+	}
+
+	& > div:nth-child(2) {
+		overflow: hidden;
+	}
+}
+
+#global_page_ynsocialads-ads-view-package #global_content_simple {
+	padding: 10px;
+	display: block;
+	
+	.package_fieldset { margin: 0; }
+}
+.create_ad_icon {
+	background-image: url("~/application/modules/Ynsocialads/externals/images/icons/create_ad.png");
+	background-repeat: no-repeat;
+}
+.view_full_report_icon {
+
+	background-image: url("~/application/modules/Ynsocialads/externals/images/icons/viewreport.png");
+	background-repeat: no-repeat;
+}
+.remove_placement {
+
+	background-image: url("~/application/modules/Ynsocialads/externals/images/icons/remove.png");
+	background-repeat: no-repeat;
+}
+.add_placement {
+	background-image: url("~/application/modules/Ynsocialads/externals/images/icons/add_placement.png");
+	background-repeat: no-repeat;
+}
+.remove_placement_icon {
+
+	background-image: url("~/application/modules/Ynsocialads/externals/images/icons/remove.png");
+	background-repeat: no-repeat;
+}
+
+.layout_ynsocialads_ads_content
+{
+	margin-bottom: 15px;
+}
+
+/*.admin_statistics_nav
+{
+	padding-left: 60px;
+	font-weight: bold;
+}*/
+
+.admin_statistics_nav a + a
+{
+	margin-left: 10px;
+}
+.notification_type_ynsocialads_admin_money_approve,
+.notification_type_ynsocialads_admin_money_reject,
+.notification_type_ynsocialads_admin_ad_delete,
+.notification_type_ynsocialads_admin_ad_deny,
+.notification_type_ynsocialads_admin_ad_pause,
+.notification_type_ynsocialads_admin_ad_resume,
+.notification_type_ynsocialads_admin_ad_approve
+{
+	background-image: url("~/application/modules/Ynsocialads/externals/images/ads.png");
+	background-repeat: no-repeat;
+}
+
+.click_disabled {
+   pointer-events: none;
+   cursor: default;
+}
+.layout_page_footer .layout_ynsocialads_ads_content {
+	clear: both;
+	padding-top: 15px;
+}

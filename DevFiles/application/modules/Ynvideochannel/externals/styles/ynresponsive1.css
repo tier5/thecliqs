@@ -1,0 +1,779 @@
+/*----------  Support template Purity  ----------*/
+=blkcont{
+    padding:15px;
+    background: #FFF;
+    border-radius: 8px;
+    margin-bottom:15px;
+    border:1px solid #e8e8e8;
+}
+
+.layout_page_ynvideochannel_playlist_edit{
+	#edit_songs_header-label{display: none;}
+	.global_form div.form-label{text-align: left;}
+	#edit_songs_header-element{margin-bottom: 0;}
+}
+
+.ynvideochannel_playlists_grid,.ynvideochannel_playlist_list{z-index: 0;}
+
+
+/*----------  ADD FORMAT OF PURITY TEMPLATE  ----------*/
+body[class^=ynresponsivepurity-]{
+	.layout_ynvideochannel_featured_videos,
+	.layout_ynvideochannel_detail_playlist_slideshow{
+	    +blkcont;
+	}
+}
+
+
+/*----------  Featured Videos  ----------*/
+.ynvideochannel_featured_videos{
+	overflow: hidden;
+	padding-top: 20px;
+	margin-top: 0;
+	padding-bottom: 10px;
+
+	.ynvideochannel-action-pop-up .box-checkbox{
+		max-height: 55px;
+	}
+}
+
+
+/*----------  TABLET LANDSCAPE ----------*/
+@media screen and (max-width: 1024px){
+	.ynvideochannel_channel_listing_items .ynvideochannel_channel_listing_item .ynvideochannel_channel_listing_item-info .ynvideochannel_channel_listing_videos > li{
+		margin-right: 5px;
+	}
+}
+
+/*----------  TABLET  ----------*/
+@media screen and (max-width: 991px){
+	/*----------  Durations  ----------*/
+	.ynvideochannel_videos_duration_hover{
+	    .ynvideochannel_videos_duration{
+	        background-color: $theme_link_color_hover;
+	        border: 3px solid rgba(255, 255, 255, 0.5);
+
+	        i.fa{
+	            display: inline-block;
+	        }
+
+	        &.ynvideochannel_videos_duration-bgwhite{
+	            color: $theme_font_color;
+	            background-color: #FFF;
+	            i.fa{
+	                color: $theme_font_color;
+	            }
+	        }
+	    }
+	}
+
+	/*----------  Feed  ----------*/
+	.ynvideochannel_feed-item{
+		height: auto;
+
+		.ynvideochannel_feed-bg{
+			float: none;
+			width: 100%;
+			height: 250px;
+		}
+
+		.ynvideochannel_feed-info{
+			padding: 10px;
+		}
+	}
+
+	
+	/*----------  CHANNEL GRID VIEW  ----------*/
+	.ynvideochannel_channels_grid li.ynvideochannel_channels_grid-item .ynvideochannel_channels_grid-bg .ynvideochannel_channels_grid-bgopacity{
+		background: rgba(255, 255, 255, 0.0) !important;
+	    background-image: -moz-linear-gradient( 360deg, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%) !important;
+	    background-image: -webkit-linear-gradient( 360deg, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%) !important;
+	    background-image: -ms-linear-gradient( 360deg, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%) !important;
+	    background-image: linear-gradient( 360deg, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0) 100%) !important;
+		top: 160px !important;
+	}
+	.ynvideochannel_channels_grid li.ynvideochannel_channels_grid-item .ynvideochannel_channels_grid-bg .ynvideochannel_channels_grid-count span:first-of-type{
+		color: #ff8400 !important;
+	}
+
+	.ynvideochannel_channels_grid li.ynvideochannel_channels_grid-item .ynvideochannel_channels_grid-options .ynvideochannel_channel_options{
+		opacity: 1;
+		visibility: visible;
+	}
+
+
+	/*----------  Layout Left & Layout Right Options  ----------*/
+   	ul.ynvideochannel_videos_grid .ynvideochannel_videos_grid-item .ynvideochannel_videos_grid-item-options{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.ynvideochannel_video_listing_items{
+		li.ynvideochannel_video_listing_item{
+			height: auto;
+			padding-bottom: 50px;
+
+			.ynvideochannel_manage_video_options,
+			.ynvideochannel-action-add-playlist{
+				opacity: 1 !important;
+
+				.ynvideochannel-action-link.show-hide-btn{
+					background: $theme_link_color_hover !important;
+					i.fa{
+						color: #FFF !important;
+					}
+				}
+			}
+
+			.ynvideochannel_video_listing_item-bg{
+				width: 100%;
+				height: 175px;
+				float: none;
+			}
+
+			.ynvideochannel_video_listing_item-info{
+				padding: 10px;
+				border-bottom: 0;
+				
+				.ynvideochannel_video_listing_item-title{
+					padding-right: 0;
+				}
+				.ynvideochannel_video_listing_item-description{
+					margin-bottom: 5px;
+				}
+				.ynvideochannel_video_listing_item-owner-date{
+					margin-bottom: 5px;
+				}
+				.ynvideochannel_video_listing_item-rating{
+					float: none;
+					text-align: left;
+				}
+				.ynvideochannel_video_listing_item-count{
+					width: 100%;
+					border: 1px solid $theme_border_color;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 50px;
+					display: flex;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+
+					& > span{
+						font-size: 10px;
+						width: 100%;
+						padding: 0;
+						text-align: center;
+						padding-top: 5px;
+
+						span{
+							margin-bottom: 2px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/*----------  Manage Channels  ----------*/
+	.ynvideochannel_manage_channel_items{
+		.ynvideochannel_manage_channel_item{
+			.ynvideochannel_manage_channel_item-options {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+
+				.ynvideochannel_channel_options.explained{
+					.ynvideochannel_channel_options-block{
+						visibility: visible !important;
+						opacity: 1 !important;
+					}
+				}
+
+				.ynvideochannel_channel_options-btn{
+					display: block;
+					background: $theme_link_color_hover;
+				}
+
+				.ynvideochannel_channel_options-block{
+					position: absolute;
+					border: 5px solid #114b5f;
+					background: #FFF;
+					right: 0;
+					box-shadow: 0.872px 9.962px 10px 0px rgba(0, 0, 0, 0.15);
+					min-width: 160px;
+					visibility: hidden;
+					z-index: 99;
+					opacity: 0;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	/*----------  Edit playlist and edit channel  ----------*/
+	#channel-video-items{
+		.video-move-handle{
+			i.fa{display: none;}
+		}
+
+	}			
+	.ynvideochannel_channel-edit-subdragdrop{
+			display: none;
+	}
+
+	#edit_songs_header-element p.description{display: none;}
+	.ynvideochannel-video-item .video-move-handle{
+		i.fa{display: none;}
+	}
+}
+
+/*----------  MOBILE LANDSCAPE  ----------*/
+@media screen and (max-width: 800px){
+	/*----------  Featured video  ----------*/
+	.ynvideochannel_featured_videos{
+		margin-bottom: 0;
+
+		.ms-nav-next,
+		.ms-nav-prev{
+			display: none !important;
+		}
+	}
+	
+	ul.ynvideochannel_videos_grid .ynvideochannel_videos_grid-item,
+	.ynvideochannel_channels_grid li.ynvideochannel_channels_grid-item,
+	.ynvideochannel_playlists_grid .ynvideochannel_playlists_grid-item{
+		width: 50%;
+	}
+
+	ul.ynvideochannel_videos_grid{
+		margin-left: -10px;
+		margin-right: -10px;
+
+		li.ynvideochannel_videos_grid-item{
+			padding-left: 10px;
+			padding-right: 10px;
+
+			&:nth-child(2n+1){
+				.ynvideochannel-action-pop-up{
+					right: auto;
+					left: 0;
+				}
+				
+			}
+		}
+	}
+
+	/*----------  Featured Channel  ----------*/
+	.ynvideochannel_channels_slideshow{
+		.ynvideochannel_channels_slideshow-item{
+			.ynvideochannel_channels_slideshow-videos{ 
+				.ynvideochannel_channels_slideshow-video{
+					width: 33.33%;
+
+					&:nth-child(4){display: none;}
+				}
+			}
+		}
+	}
+
+	/*----------  Manage Playlists  ----------*/
+	.ynvideochannel_playlist_list{
+		.ynvideochannel_playlist_list-item{
+			height: auto;
+			padding: 8px;
+			padding-bottom: 0;
+
+			.ynvideochannel_playlist_list-content{
+				overflow: hidden;
+
+				.ynvideochannel_playlist_list-info{
+					position: static;
+					padding: 0 15px 0 0;
+				}
+
+				.ynvideochannel_playlist_list-actions{
+					opacity: 1;
+					top: 8px;
+					right: 8px;
+				}
+				
+				.ynvideochannel_playlist_list-bg{
+					width: 100%;
+					height: 160px;
+					float: none;
+					margin: 0;
+					margin-bottom: 5px;
+				}
+
+				.ynvideochannel_playlist_list-count{
+					height: 155px;
+					width: 80px;
+					padding-right: 0;
+					padding-top: 30px;
+					margin-top: -5px;
+				}
+			}		
+		}
+	}
+
+
+	/*----------  Video Detail  ----------*/
+	.ynvideochannel_video_detail, 
+	.ynvideochannel_playlist_detail_profile{
+		.ynvideochannel_video_detail-info .ynvideochannel_video_detail-count .ynvideochannel_video_detail-count-item{
+			padding: 0 3px;
+			border-left: none;
+			min-width: 55px;
+		}
+
+		.ynvideochannel_video_detail-title-rating{
+			.ynvideochannel_video_detail-title{
+				width: 100% !important;
+				margin-bottom: 5px;
+			}
+
+			.ynvideochannel_video_detail-ratings{
+				clear: both;
+				float: none;
+				text-align: left;
+
+				.ynvideochannel_video_detail-rating-text{
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+
+		.ynvideochannel_video_detail-actions-mobilebox{
+			display: block !important;
+			margin-top: 10px;
+
+			& > div:first-of-type{
+				margin-left: 0;
+			}
+
+			.ynvideochannel-action-pop-up,
+			.ynvideochannel_channel_video_detail_more-explain,
+			.ynvideochannel_video_options-block{
+				right: auto;
+				left: 0;
+			}
+		}
+
+		.ynvideochannel_video_detail-info{
+			.ynvideochannel_video_detail-categories-owner{
+				width: 100%;
+			}
+
+			.ynvideochannel_video_detail-count{
+				float: none;
+				clear: both;
+				text-align: center;
+
+				.ynvideochannel_video_detail-count-items{
+					text-align: center;
+
+					span{
+						text-align: center;
+					}
+				}
+			}
+		}
+		
+		.ynvideochannel_video_detail-actions-description .ynvideochannel_video_detail-actions{
+			.ynvideochannel_addthis{
+				float: none;	
+			}
+
+			.ynvideochannel_video_detail-actions-right{
+				float: none;
+				clear: both;
+				margin-top: 10px;
+				text-align: left;
+
+				& > a{
+					margin-left: 0;
+				}
+			}
+		} 
+	}
+
+	/*----------  Channels Listing & Manage Channels  ----------*/
+	.ynvideochannel_manage_channel_items .ynvideochannel_manage_channel_item,
+	.ynvideochannel_channel_listing_items .ynvideochannel_channel_listing_item{
+		height: auto;
+		
+		.ynvideochannel_manage_channel_item-bg,
+		.ynvideochannel_channel_listing_item-bg{
+			width: 100%;
+			height: 200px;
+			float: none;
+			margin-bottom: 10px;
+		}
+
+		.ynvideochannel_manage_channel_item-info,
+		.ynvideochannel_channel_listing_item-info{
+			padding: 0;
+
+			.ynvideochannel_manage_channel_item-title,
+			.ynvideochannel_channel_listing_item-title{
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	/*----------  Channels Listing  ----------*/
+	.ynvideochannel_channel_listing_items .ynvideochannel_channel_listing_item{
+		border: 1px solid $theme_border_color;
+		padding: 5px;
+
+		.ynvideochannel_channel_listing_item-info{
+			border: none;
+
+			.ynvideochannel_channel_listing_item-title{
+				padding-right: 0;
+			}
+
+			.ynvideochannel_channel_listing_item-count{
+				& > span{
+					display: inline-block;
+				}
+			}
+
+			span.ynvideochannel_channel_listing_videos-count{
+				margin-top: 0;
+			}
+
+			.ynvideochannel_channel_listing_videos > li{
+				margin-bottom: 5px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	/*----------  Form  ----------*/
+	.layout_page_ynvideochannel_index_get-channel, 
+	.layout_page_ynvideochannel_index_share-video, 
+	.layout_page_ynvideochannel_video_edit, 
+	.layout_page_ynvideochannel_channel_edit, 
+	.layout_page_ynvideochannel_index_create-playlist, 
+	.layout_page_ynvideochannel_playlist_edit{
+		input:not([type="radio"]):not([type="checkbox"]),
+		textarea{
+			min-width: initial;
+			width: 100%;
+			max-width: 100% !important;
+		}
+		.global_form div.form-label{
+			text-align: left;
+		}
+	}
+
+	.layout_page_ynvideochannel_index_create-playlist #ynvideochannel_playlist_create{
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.ynvideochannel_form_add_channel-block{
+		.ynvideochannel_form_add_channel-row{
+			display: block;
+			
+			.ynvideochannel_form_add_channel-input span{
+				position: static;
+			}
+
+			& > *{
+				display: block;
+			}
+
+			label{
+				display: block;
+				text-align: left;
+				padding-top: 0;
+			}
+
+			input{
+				width: 100%;
+				max-width: 100%;
+				min-width: initial;
+			}
+
+			button{
+				margin-top: 10px;
+			}
+		}
+	}
+
+	/*----------  List videos add channel  ----------*/
+	.ynvideochannel_videos_page .ynvideochannel_videos_page-item{
+		width: 25%;
+	}
+
+	/*----------  Listing find channel  ----------*/
+	.ynvideochannel_channel_find{
+		.ynvideochannel_channel_find-items{
+			.ynvideochannel_channel_find-item{
+				height: auto;
+
+				.ynvideochannel_channel_find-bg{
+					width: 100%;
+					height: 200px;
+					margin-bottom: 10px;
+				}
+
+				.ynvideochannel_channel_find-actions{
+					text-align: center;
+					float: none;
+					border-bottom: 1px solid $theme_border_color;
+					min-width: initial;
+					height: auto;
+					clear: both;
+					padding-bottom: 10px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
+	#global_page_ynvideochannel-channel-add-more-videos .ynvideochannel_videos_page .ynvideochannel_videos_page-item{
+		width: 50%;
+	}
+
+	#global_page_ynvideochannel-channel-add-more-videos #global_content_simple .ynvideochannel_videos_page .ynvideochannel_videos_page-item{
+		width: 33.33%;
+	}
+
+
+	/*----------  Edit Playlist  ----------*/
+	.layout_page_ynvideochannel_playlist_edit{
+		#ynvideochannel_playlist_edit{
+			img{
+				max-width: 100% !important;
+			}
+		}
+	}
+
+
+	/*----------  Edit Channel  ----------*/
+	#channel-video-items,
+	#playlist-video-items{
+		.ynvideochannel-video-item{
+			padding: 10px;
+		}
+		.ynvideochannel-video-item .video-move-handle{
+			padding-right: 0 !important;
+			display: block;
+			margin-bottom: 5px;
+		}
+		span.ynvideochannel_privacy_video{
+			position: static !important;
+			display: inline-block;
+			margin-right: 10px;
+			min-width: initial;
+			margin-bottom: 5px;
+
+			label{margin-bottom: 0;}
+			input{margin-left: 0;}
+		}
+
+		span.channel-video-remove,
+		.playlist-video-remove{
+			position: relative !important;
+			display: inline-block;
+			top: 1px !important;
+			right: auto !important;
+
+			color: #d30f0f !important;
+		}
+	} 
+	
+}
+
+
+@media screen and (max-width:767px){
+	/*----------  Layout Right & Layout Left  ----------*/
+	.layout_ynvideochannel_user_other_videos ul.ynvideochannel_videos_grid .ynvideochannel_videos_grid-item .ynvideochannel_videos_grid-item-bg, 
+	.layout_ynvideochannel_related_videos ul.ynvideochannel_videos_grid .ynvideochannel_videos_grid-item .ynvideochannel_videos_grid-item-bg{
+		height: 250px;
+	}
+
+	/*----------  Playlist Detail  ----------*/
+	#ynvideochannel_playlist_slideshow .ynvideochannel_playlist_detail_actions{
+		display: none;
+	}
+}
+
+
+/*----------  MOBILE PORTRAIT  ----------*/
+@media screen and (max-width: 620px){
+	/*----------  List videos add channel  ----------*/
+	.ynvideochannel_videos_page .ynvideochannel_videos_page-item{
+		width: 33.33%;
+	}
+
+	/*----------  Featured video  ----------*/
+	.ynvideochannel_featured_videos{
+		margin-bottom: 0;
+		.ms-view{
+			width: 100% !important;
+		}
+		.ms-slide{
+			width: 100% !important;
+
+			.ynvideochannel_featured_videos-block{
+				padding-bottom: 50px;
+			}
+
+			.ynvideochannel_featured_videos-title{
+				padding-right: 0 !important;
+			}
+	
+			.ynvideochannel_featured_videos-block.active{
+				border: none;
+				box-shadow: none;
+
+				.ynvideochannel_featured_videos-background{
+					height: 100%;
+				}
+
+				.ynvideochannel_featured_videos-count,
+				.ynvideochannel_featured_videos-options{
+					display: none;
+				}
+
+				.ynvideochannel_featured_videos-rating-duration{
+					position: absolute;
+					left: 60px;
+					bottom: 0;
+
+					.ynvideochannel_featured_videos-duration{
+						display: none;
+					}
+				}
+			}
+		}
+
+	}
+
+
+	/*----------  Playlist Detail  ----------*/
+	.ynvideochannel_playlist_detail_profile{
+		.ynvideochannel_playlist_detail_profile-info{
+			.ynvideochannel_playlist_detail_profile-infoleft{
+				width: auto;
+				margin-bottom: 15px;
+			}
+
+			.ynvideochannel_playlist_detail_profile-count{
+				float: none;
+				clear: both;
+				text-align: center;
+
+				.ynvideochannel_playlist_detail_profile-count-item{
+					text-align: center;
+					padding: 0 10px;
+	
+					span{
+						text-align:center;
+					}
+				} 
+			}
+		}
+	}
+
+}
+
+
+/*----------  MOBILE PORTRAIT  ----------*/
+@media screen and (max-width: 480px){
+	ul.ynvideochannel_videos_grid .ynvideochannel_videos_grid-item,
+	.ynvideochannel_channels_grid li.ynvideochannel_channels_grid-item,
+	.ynvideochannel_playlists_grid .ynvideochannel_playlists_grid-item{
+		width: 100%;
+		min-height: initial;
+	}
+
+	ul.ynvideochannel_videos_grid li.ynvideochannel_videos_grid-item{
+		&:nth-child(2n+1){
+			.ynvideochannel-action-pop-up{
+				left: auto;
+				right: 5px;
+			}
+		}
+	}
+
+	/*----------  Layout Right & Layout Left  ----------*/
+	.layout_ynvideochannel_user_other_videos ul.ynvideochannel_videos_grid .ynvideochannel_videos_grid-item .ynvideochannel_videos_grid-item-bg, 
+	.layout_ynvideochannel_related_videos ul.ynvideochannel_videos_grid .ynvideochannel_videos_grid-item .ynvideochannel_videos_grid-item-bg{
+		height: 180px;
+	}
+	
+	/*----------  Featured Channel  ----------*/
+	.ynvideochannel_channels_slideshow{
+		.owl-prev,
+		.owl-next{
+			display: none !important;
+		}
+
+		.ynvideochannel_channels_slideshow-item{
+			.ynvideochannel_channels_slideshow-title{
+				padding: 0 15px !important;
+			}
+
+			.ynvideochannel_channels_slideshow-count{
+				padding: 0 10px;
+			}
+			.ynvideochannel_channels_slideshow-videos{ 
+				.ynvideochannel_channels_slideshow-video{
+					width: 50%;
+
+					&:nth-child(3){display: none;}
+				}
+			}
+		}
+	}
+
+	/*----------  List videos add channel  ----------*/
+	.ynvideochannel_videos_page .ynvideochannel_videos_page-item{
+		width: 50%;
+	}
+
+}
+
+
+
+/*----------  MOBILE PORTRAIT  ----------*/
+@media screen and (max-width: 380px){
+	.ynvideochannel_playlist_list .ynvideochannel_playlist_list-item .ynvideochannel_playlist_list-content .ynvideochannel_playlist_list-videos ul.ynvideochannel_playlist_list-videos-item li .ynvideochannel_length{
+		display: none;
+	}
+	.ynvideochannel_playlist_list .ynvideochannel_playlist_list-item .ynvideochannel_playlist_list-content .ynvideochannel_playlist_list-videos ul.ynvideochannel_playlist_list-videos-item li a{
+		max-width: 84%;
+	}
+
+	/*----------  Featured Channel  ----------*/
+	.ynvideochannel_channels_slideshow{
+		min-height: 405px;
+		
+		.ynvideochannel_channels_slideshow-item{
+			.ynvideochannel_channels_slideshow-videos{ 
+				display: none;
+			}
+		}
+	}
+
+	.ynvideochannel_playlist_list .ynvideochannel_playlist_list-item .ynvideochannel_playlist_list-content .ynvideochannel_playlist_list-owner a{max-width: 50px;}
+}
+
+
+/*----------  MOBILE PORTRAIT  ----------*/
+@media screen and (max-width: 320px){
+	/*----------  List videos add channel  ----------*/
+	.ynvideochannel_videos_page .ynvideochannel_videos_page-item{
+		width: 100% !important;
+	}
+}
+

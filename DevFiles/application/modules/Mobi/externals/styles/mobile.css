@@ -1,0 +1,44 @@
+
+/* $Id: mobile.css 10129 2014-01-30 20:38:09Z mfeineman $ */
+
+
+
+.browse_menu
+{
+  margin-top: 10px;
+}
+.browse_menu > ul
+{
+  border-top: 1px solid $theme_border_medium_color;
+}
+.browse_menu > ul > li
+{
+  display: block;
+  border-bottom: 1px solid $theme_border_medium_color;
+}
+.browse_menu > ul > li > a
+{
+  display: block;
+  font-size: 14pt;
+  padding: .5em;
+  background-image: url(~/application/modules/Mobi/externals/images/mobile_arrow.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+/* Adding mobile style for link image previews */
+.layout_page_mobi_index_userhome .compose-preview-images {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.layout_page_mobi_index_userhome .compose-link-image {
+    max-height: 150px;
+    max-width: 100%;
+}
+
+.layout_page_mobi_index_userhome .compose-preview-image-hidden {
+    display: none;
+}

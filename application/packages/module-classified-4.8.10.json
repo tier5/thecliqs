@@ -1,0 +1,1357 @@
+{
+  "type": "module",
+  "name": "classified",
+  "version": "4.8.10",
+  "revision": "10111",
+  "path": "application\/modules\/Classified",
+  "repository": null,
+  "date": "Wed, 20 Jan 2016 06:29:20 +0000",
+  "title": "Classifieds",
+  "description": "Classifieds",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.8.10": {
+      "Form\/Create.php": "Fixed an error that was showing up in the logs when accessing classified creation page.",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.8.9": {
+      "controllers\/IndexController.php": "Fixed issue with search functionality on manage classifieds section",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.7.0": {
+      "externals\/images\/*": "Optimized images",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/create.tpl": "Minimized Autocompleter.js",
+      "views\/scripts\/index\/edit.tpl": "Minimized Autocompleter.js"
+    },
+    "4.5.0": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/create.tpl": "Setting active class on main menu",
+      "views\/scripts\/index\/manage.tpl": "Setting active class on main menu",
+      "views\/scripts\/index\/view.tpl": "Setting active class on main menu",
+      "widgets\/browse-menu\/Controller.php": "Hides menu if only one item"
+    },
+    "4.3.0": {
+      "controllers\/IndexController.php": "Added new pages to layout editor",
+      "externals\/styles\/main.css": "Added new pages to layout editor",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/install.php": "Added new pages to layout editor",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/create.tpl": "Added new pages to layout editor",
+      "views\/scripts\/index\/manage.tpl": "Added new pages to layout editor",
+      "widgets\/browse-menu\/Controller.php": "Added new pages to layout editor",
+      "widgets\/browse-search\/Controller.php": "Added new pages to layout editor"
+    },
+    "4.2.8": {
+      "\/application\/languages\/en\/classified.csv": "Add TinyMCE",
+      "externals\/styles\/main.css": "Add TinyMCE",
+      "Form\/Admin\/Settings\/Level.php": "Add TinyMCE",
+      "Form\/Create.php": "Add TinyMCE",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.2.7-4.2.8.sql": "Added",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.2.7": {
+      "Form\/Create.php": "Fixes a few XSS vulnerabilities with the Tags and Profile name fields",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.2.5": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/admin-manage\/index.tpl": "Add support links"
+    },
+    "4.2.4": {
+      "settings\/content.php": "Move Classified Browse Quick Menu to Classifieds in Available blocks in Layout Editor",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.2.3": {
+      "\/application\/languages\/en\/classified.csv": "Rewrite Profile viewing and Profile Commenting Options Descriptions",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.2.0": {
+      "Form\/Create.php": "Added token to help prevent spam; fixed issue with enabling links; fixed escaping issue",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/index.tpl": "Fixed issue with enabling links",
+      "views\/scripts\/index\/manage.tpl": "Fixed issue with enabling links",
+      "views\/scripts\/index\/view.tpl": "Hiding report\/share options when not available; Fixed issue with enabling links"
+    },
+    "4.1.8p1": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_FancyUpload.tpl": "Added cross domain policy file for CDN support"
+    },
+    "4.1.8": {
+      "\/application\/languages\/en\/classified.csv": "Added phrases",
+      "Api\/Core.php": "Removed deprecated code",
+      "controllers\/IndexController.php": "Added pages to the layout editor; fixed issue with filtering fields",
+      "controllers\/PhotoController.php": "Fixed issue with photo duplication",
+      "externals\/.htaccess": "Updated with far-future expires headers for static resources",
+      "externals\/styles\/main.css": "Style tweaks for layout editor",
+      "Model\/Classified.php": "Fixed issue with photo duplication",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added pages to the layout editor",
+      "settings\/install.php": "Added pages to the layout editor",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_FancyUpload.tpl": "Added static base URL for CDN support",
+      "views\/scripts\/admin-settings\/categories.tpl": "Added static base URL for CDN support",
+      "views\/scripts\/index\/create.tpl": "Added static base URL for CDN support",
+      "views\/scripts\/index\/edit.tpl": "Added static base URL for CDN support",
+      "views\/scripts\/index\/index.tpl": "Added pages to the layout editor",
+      "views\/scripts\/index\/manage.tpl": "Added static base URL for CDN support",
+      "views\/scripts\/index\/view.tpl": "Added static base URL for CDN support; Added pages to the layout editor",
+      "widgets\/browse-menu-quick\/Controller.php": "Added",
+      "widgets\/browse-menu-quick\/index.tpl": "Added",
+      "widgets\/browse-menu\/Controller.php": "Added",
+      "widgets\/browse-menu\/index.tpl": "Added",
+      "widgets\/browse-search\/Controller.php": "Added",
+      "widgets\/browse-search\/index.tpl": "Added",
+      "widgets\/list-popular-classifieds\/index.tpl": "Added static base URL for CDN support",
+      "widgets\/list-recent-classifieds\/index.tpl": "Added static base URL for CDN support",
+      "widgets\/profile-classifieds\/index.tpl": "Added static base URL for CDN support"
+    },
+    "4.1.7": {
+      "Api\/Core.php": "Merging methods from api to dbtables",
+      "controllers\/AdminManageController.php": "Merging methods from api to dbtables",
+      "controllers\/AdminSettingsController.php": "Merging methods from api to dbtables",
+      "controllers\/IndexController.php": "Minor optimizations; Fixed issue with migrations checks",
+      "controllers\/PhotoController.php": "Minor optimizations",
+      "Form\/Create.php": "Minor optimizations",
+      "Model\/Category.php": "Minor optimizations",
+      "Model\/Classified.php": "Minor optimizations; Fixed issue with deleting photos",
+      "Model\/DbTable\/Categories.php": "Merging methods from api to dbtables",
+      "Model\/DbTable\/Classifieds.php": "Merging methods from api to dbtables",
+      "Model\/Photo.php": "Minor optimizations; Fixed issue with deleting photos",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/index.tpl": "Fixed pagination issue",
+      "widgets\/profile-classifieds\/Controller.php": "Merging methods from api to dbtables"
+    },
+    "4.1.6": {
+      "controllers\/IndexController.php": "Fixed issue with missing image for migrated classifieds",
+      "Model\/Classified.php": "Fixed issue with missing image for migrated classifieds",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/view.tpl": "Added missing alt text to icon"
+    },
+    "4.1.4": {
+      "controllers\/IndexController.php": "Does not try to populate privacy options if they do not exist on edit page",
+      "externals\/styles\/main.css": "Fixed typo",
+      "externals\/styles\/mobile.css": "Added",
+      "Form\/Search.php": "Added CSS class for mobile",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version; Inserts menu item for mobile",
+      "settings\/my-upgrade-4.1.3-4.1.4.sql": "Added",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.3": {
+      "Model\/Album.php": "Fixed incorrect route",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.2": {
+      "controllers\/IndexController.php": "Added return URL param to edit page",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added configuration options to widgets",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.1-4.1.2.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/manage.tpl": "Tweaked URLs",
+      "views\/scripts\/index\/view.tpl": "Added options to view page",
+      "widgets\/list-popular-classifieds\/Controller.php": "Added configuration options",
+      "widgets\/list-popular-classifieds\/index.tpl": "Styles are now generic",
+      "widgets\/list-recent-classifieds\/Controller.php": "Added configuration options",
+      "widgets\/list-recent-classifieds\/index.tpl": "Styles are now generic"
+    },
+    "4.1.1": {
+      "controllers\/AdminSettingsController.php": "Newly created categories gets the correct owner id",
+      "externals\/.htaccess": "Added keywords; removed deprecated code",
+      "externals\/styles\/main.css": "RTL improvements",
+      "Model\/Photo.php": "Changes for storage system modifications",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.0-4.1.1.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/admin-settings\/categories.tpl": "Hides the owner id column when viewing categories"
+    },
+    "4.1.0": {
+      "\/application\/languages\/en\/classified.csv": "Fixed phrases with stray double-quotes; added phrases",
+      "Api\/Core.php": "Removed deprecated code",
+      "controllers\/AdminLevelController.php": "Notice on form save",
+      "controllers\/AdminManageController.php": "Fixes issue with deletion",
+      "controllers\/AdminSettingsController.php": "Notice on form save",
+      "controllers\/IndexController.php": "Removed archive list, fixed pagination",
+      "externals\/styles\/main.css": "Added styles",
+      "Form\/Create.php": "Fixed issue with disabled privacy options",
+      "Form\/Delete.php": "Added",
+      "Plugin\/Job\/Maintenance\/RebuildPrivacy.php": "Added",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Removed",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added pagination\/item count limits to widgets",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.3-4.0.4.sql": "Backwards compatibility fix for tasks modifications",
+      "settings\/my-upgrade-4.0.5-4.1.0.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/admin-fields\/index.tpl": "Added classified question description",
+      "views\/scripts\/admin-manage\/deleteselected.tpl": "Removed",
+      "views\/scripts\/admin-manage\/index.tpl": "Fixes issue with deletion",
+      "views\/scripts\/index\/edit.tpl": "Fixed issues with errors not showing",
+      "views\/scripts\/index\/delete.tpl": "Removed navigation",
+      "views\/scripts\/index\/index.tpl": "Fixed UTF-8 truncation issue, fixed pagination",
+      "views\/scripts\/index\/list.tpl": "Removed",
+      "views\/scripts\/index\/manage.tpl": "Added filter form, fixed pagination",
+      "views\/scripts\/index\/view.tpl": "Differentiating styles from blogs",
+      "widgets\/list-popular-classifieds\/Controller.php": "Added",
+      "widgets\/list-popular-classifieds\/index.tpl": "Added",
+      "widgets\/list-recent-classifieds\/Controller.php": "Added",
+      "widgets\/list-recent-classifieds\/index.tpl": "Added",
+      "widgets\/profile-classifieds\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/profile-classifieds\/index.tpl": "Added pagination\/item count limit"
+    },
+    "4.0.5": {
+      "Api\/Core.php": "Added support for filtering by having photo",
+      "controllers\/IndexController.php": "Added registered privacy type",
+      "externals\/images\/nophoto_classified_thumb_icon.png": "Added",
+      "externals\/styles\/main.css": "Added styles for browse page",
+      "Form\/Admin\/Settings\/Level.php": "Added registered privacy type",
+      "Form\/Create.php": "Added registered privacy type",
+      "Form\/Search.php": "Improved field search functions",
+      "Model\/Classified.php": "Changed search indexing columns",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Added idle support; added registered privacy type",
+      "settings\/changelog.php": "Added",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.4-4.0.5.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/index\/create.tpl": "Added support for dependent fields",
+      "views\/scripts\/index\/edit.tpl": "Added support for dependent fields",
+      "views\/scripts\/index\/index.tpl": "Improved field search functions; added support for dependent fields"
+    },
+    "4.0.4": {
+      "controllers\/IndexController.php": "Added localization to the archive list; menus now use the menu system",
+      "externals\/styles\/main.css": "Improved RTL support; style tweak",
+      "Form\/Create.php": "Removing deprecated code",
+      "Form\/Edit.php": "Removing deprecated code",
+      "Model\/Classified.php": "Adding slug to view url",
+      "Plugin\/Menus.php": "Added; menus now use the menu system",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Added to fix privacy issues in the feed",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.3-4.0.4.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_FancyUpload.tpl": "Added missing translation",
+      "views\/scripts\/_formButtonCancel.tpl": "Removing deprecated code",
+      "views\/scripts\/admin-settings\/delete.tpl": "Fixed incorrect route",
+      "views\/scripts\/index\/delete.tpl": "Menus now use the menu system; removing deprecated routes",
+      "views\/scripts\/index\/edit.tpl": "Menus now use the menu system; removing deprecated routes",
+      "views\/scripts\/index\/index.tpl": "Menus now use the menu system; removing deprecated routes",
+      "views\/scripts\/index\/manage.tpl": "Menus now use the menu system; removing deprecated routes",
+      "views\/scripts\/index\/list.tpl": "Menus now use the menu system; removing deprecated routes",
+      "views\/scripts\/index\/success.tpl": "Menus now use the menu system; removing deprecated routes",
+      "views\/scripts\/index\/view.tpl": "Menus now use the menu system; removing deprecated routes",
+      "widgets\/profile-classifieds\/index.tpl": "Menus now use the menu system; removing deprecated routes",
+      "\/application\/languages\/en\/classified.csv": "Added phrases"
+    },
+    "4.0.3": {
+      "Api\/Core.php": "Fixed bug in filtering by fields",
+      "controllers\/AdminFieldsController.php": "Fixed missing elements in edit field form",
+      "controllers\/IndexController.php": "Fixed bug in filtering by fields; fixed activity privacy bug; added correct locale date format to archive list",
+      "Form\/Create.php": "Fixed handling on auth elements",
+      "Model\/Classified.php": "Fixed bug where classifieds would not show up in search",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.2-4.0.3.sql": "Added",
+      "settings\/my.sql": "Permissions tweaks; incremented version",
+      "views\/scripts\/admin-manage\/index.tpl": "Added missing translation; added correct date format",
+      "views\/scripts\/index\/create.tpl": "Fix for unlimited quotas",
+      "views\/scripts\/index\/edit.tpl": "Fixed bug in fields; added missing translation",
+      "views\/scripts\/index\/manage.tpl": "Fix for unlimited quotas",
+      "\/application\/languages\/en\/classified.csv": "Added phrases"
+    },
+    "4.0.2": {
+      "controllers\/AdminLevelController.php": "Various level settings fixes and enhancements",
+      "controllers\/IndexController.php": "Fixed problem preventing saving of fields",
+      "Form\/Create.php": "Fixed problem preventing saving of fields",
+      "Form\/Admin\/Level.php": "Moved",
+      "Form\/Admin\/Settings\/Level.php": "Various level settings fixes and enhancements",
+      "Form\/Custom\/Fields.php": "Fixed problem preventing saving of fields",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.1-4.0.2.sql": "Added",
+      "settings\/my.sql": "Various level settings fixes and enhancements",
+      "views\/scripts\/index\/view.tpl": "Added nl2br on body"
+    },
+    "4.0.1": {
+      "Api\/Core.php": "Better cleanup of temporary files; adjustment for trial",
+      "controllers\/AdminLevelController.php": "Fixed problem in level select",
+      "controllers\/IndexController.php": "Fixed bug with public viewing classifieds",
+      "Form\/Custom\/Fields.php": "Adjustment for trial",
+      "Model\/Classified.php": "Better cleanup of temporary files",
+      "Plugin\/Core.php": "Query optimization",
+      "settings\/manifest.php": "Incremented version",
+      "views\/scripts\/admin-level\/index.tpl": "Fixed problem in level select",
+      "views\/scripts\/admin-settings\/delete.tpl": "Fixed typo"
+    }
+  },
+  "meta": {
+    "date": "Wed, 20 Jan 2016 06:29:20 +0000",
+    "title": "Classifieds",
+    "description": "Classifieds",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Classified\/settings\/install.php",
+    "class": "Classified_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.2.0",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Classified": {
+      "type": "directory",
+      "path": "application\/modules\/Classified",
+      "structure": [
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1092,
+          "sha1": "f7e9b80c701ce949711011b98cdd36c13342915a"
+        },
+        {
+          "path": "Model\/Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 533,
+          "sha1": "ca285ee9a73e4b5e48f78b2964841ef81c903c2c"
+        },
+        {
+          "path": "Model\/Classified.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 7909,
+          "sha1": "07bbe1bea5e82f3ec98b7f02561ffc85c12e5695"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Categories.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1878,
+          "sha1": "494321c4c13a913cdd04d95cd6fd0f0ac8847cd3"
+        },
+        {
+          "path": "Model\/DbTable\/Classifieds.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 4129,
+          "sha1": "c43d655024ac6e37adc64dfadcde2fa26f6d9f56"
+        },
+        {
+          "path": "Model\/DbTable\/Albums.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 586,
+          "sha1": "9fc7d9b791e0752c77a9d934534df63434096f33"
+        },
+        {
+          "path": "Model\/DbTable\/Photos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 586,
+          "sha1": "440669e8a7e9e909f1657fd918ead53a62b25848"
+        },
+        {
+          "path": "Model\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1369,
+          "sha1": "714948e78f622d20b7a4a7a7c254d8690583673b"
+        },
+        {
+          "path": "Model\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 5842,
+          "sha1": "7a56e28987a6bcc7e9e687cd0013809a7eb1c7fa"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3236,
+          "sha1": "41a54b1b60db1f27b69bd71b9a1023d37c83cb4b"
+        },
+        {
+          "path": "settings\/my-upgrade-4.2.7-4.2.8.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 383,
+          "sha1": "6db5a97677998ff3b1d929405b05a27277233434"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 13166,
+          "sha1": "bf1bbdda39ac23ed7c8fb172f0280bb61eaaac93"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.3-4.0.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3197,
+          "sha1": "72bfb7ad51f72f0299a77b2294e324092aa3ebbe"
+        },
+        {
+          "path": "settings\/changelog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 18124,
+          "sha1": "e35e41c4e1e75f6b379d5e6744ed7755c956ac6c"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 18839,
+          "sha1": "98c9b4eb26859b5851a3107cb7a982d982fcedeb"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.1-4.0.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 5512,
+          "sha1": "2dc85cd03b2b5eeeac79d5dca2cdc6374704eefa"
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3101,
+          "sha1": "369c58cf32adf8856650e13efcc26bd6e93cb469"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.2-4.0.3.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 520,
+          "sha1": "f13ebd62eccef8e58bacb0f6e8bbf4e149f42efd"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.3-4.1.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 244,
+          "sha1": "563a1edd4a3d6f8d6b599e38d349059e540bffc0"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.0-4.1.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 144,
+          "sha1": "0345b0c2130bcfe5e2503e8a000223c2f6455eb4"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.4-4.0.5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 126,
+          "sha1": "1c61a2e2c3450b4a822eece370bf492e127adfdb"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.1-4.1.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 235,
+          "sha1": "222e03998130282420073d8117bf702bad4a647d"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.5-4.1.0.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1134,
+          "sha1": "0a3cf85989bc952ee134fadb784176008c511a7f"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/types",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/types\/classified.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 658,
+          "sha1": "8b7f753ba1c3cc5551dd6100e408bc8898414f2f"
+        },
+        {
+          "path": "externals\/images\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 444,
+          "sha1": "3bed7d7fef488eb238a052b5afe174847d109b8d"
+        },
+        {
+          "path": "externals\/images\/close.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3423,
+          "sha1": "7aa6b295270615ed60e2b9700c9a1da5f67637f8"
+        },
+        {
+          "path": "externals\/images\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 715,
+          "sha1": "8f0ebcb45d7ba71a541d4781329f4a6900c7ee65"
+        },
+        {
+          "path": "externals\/images\/add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 713,
+          "sha1": "e7199f19204b178a59d9eb7bbe1522bec4ce48a8"
+        },
+        {
+          "path": "externals\/images\/classified.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 444,
+          "sha1": "3bed7d7fef488eb238a052b5afe174847d109b8d"
+        },
+        {
+          "path": "externals\/images\/clear.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 666,
+          "sha1": "2dbba50ff8a0b3bbea317e706dba2e95221b53ae"
+        },
+        {
+          "path": "externals\/images\/nophoto_classified_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2857,
+          "sha1": "74c171ec7f3c8318f47b0b5854c0e2de635ce21d"
+        },
+        {
+          "path": "externals\/images\/upload.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 653,
+          "sha1": "124dd7319ae3eebfe028991d6c3b162180b73e14"
+        },
+        {
+          "path": "externals\/images\/nophoto_classified_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 848,
+          "sha1": "9beb4388a3221a4ec5da5ab70c265016d43a39f0"
+        },
+        {
+          "path": "externals\/images\/unclose.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 815,
+          "sha1": "2107ef2e7ccdb11310a51c5b30d7b00f0438e96e"
+        },
+        {
+          "path": "externals\/images\/nophoto_classified_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2894,
+          "sha1": "3c910ec55d2aef862776532e51f6a3533b055633"
+        },
+        {
+          "path": "externals\/images\/allentries.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 345,
+          "sha1": "cc0eecde5d7e957071a9d72f751384ca974631fa"
+        },
+        {
+          "path": "externals\/images\/create.png",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 750,
+          "sha1": "826fd690623414209507e904c687cd6faa8fe925"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 8031,
+          "sha1": "11b7792bd26adce29b03ab4b314ebaa067fdaabc"
+        },
+        {
+          "path": "externals\/styles\/mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 5453,
+          "sha1": "ccdd6d9a97a659a507e460d443e209d16d3b9ce4"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1042,
+          "sha1": "6c835f103d253edf70bfd5ba2430ebe3fa8cacdd"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 899,
+          "sha1": "8bee0f59beace4c5f224e5269b66f28fa5b815f9"
+        },
+        {
+          "path": "views\/scripts\/photo",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/photo\/upload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 403,
+          "sha1": "86e3ddf55e60a594c66238ef714cdf2eacb34b20"
+        },
+        {
+          "path": "views\/scripts\/_FancyUpload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 10252,
+          "sha1": "7abf44af640e52edcad592f8f3adc2790ffcf7fe"
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1065,
+          "sha1": "2c3efc9e13518a9494aa2535af62e7b0d8e36a6f"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3601,
+          "sha1": "b2304c9733226375340ee0d678cac5a088a6394f"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/categories.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2908,
+          "sha1": "96c203bdd6ccb41678d9ce8cf45bb5edab45e417"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 485,
+          "sha1": "90394149b75a3fd4df3df0a3b57c0c6f4d7a1ac7"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1059,
+          "sha1": "ba3431f5ea84bdd315d426653e72553c3f7fd977"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 714,
+          "sha1": "55cbbc03fcb8d42fb8d86d14bdc8421af4b7c74a"
+        },
+        {
+          "path": "views\/scripts\/admin-fields",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-fields\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1362,
+          "sha1": "25306608ea5ea1f73e575bf9f6eff5d09261690b"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 6766,
+          "sha1": "51ef87256dc49b70c2dacf0cd8b878e2b573a382"
+        },
+        {
+          "path": "views\/scripts\/index\/success.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1035,
+          "sha1": "38e2deea95ec1f01a9a3912213677a014fcbe4fb"
+        },
+        {
+          "path": "views\/scripts\/index\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2653,
+          "sha1": "83912c6f1c13b197234c12afa8cfccc5ef4ad861"
+        },
+        {
+          "path": "views\/scripts\/index\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 338,
+          "sha1": "f55807b6f9c2f868895b2bcc605aa4c6fa54fdf3"
+        },
+        {
+          "path": "views\/scripts\/index\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 4360,
+          "sha1": "79ae87597ed9e03746d176f13af4e4ab4ee3f5ce"
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3669,
+          "sha1": "189b9488ce9bbd8851f5c0aaf3056d71f5f1735d"
+        },
+        {
+          "path": "views\/scripts\/index\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 6518,
+          "sha1": "75a7957b6e2423a3c28ae342fc6638f998c5a05e"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-search",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-search\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2771,
+          "sha1": "55ca743f95c91e3ac37e28f1c46d660088276585"
+        },
+        {
+          "path": "widgets\/browse-search\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1744,
+          "sha1": "c2eba1444d33a70763c4c3dc3e5bf75bc1951fde"
+        },
+        {
+          "path": "widgets\/list-popular-classifieds",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-popular-classifieds\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1695,
+          "sha1": "ade151ca7566eb1743020aadd247ba122c7c8740"
+        },
+        {
+          "path": "widgets\/list-popular-classifieds\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1538,
+          "sha1": "b0ac43db3a25796f1c9468a33a3e73880804c36a"
+        },
+        {
+          "path": "widgets\/browse-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 875,
+          "sha1": "3dd75e60ed85976f8a1f17967cf9ebbcec8898ea"
+        },
+        {
+          "path": "widgets\/browse-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 301,
+          "sha1": "75ec65ca96450fdb656a20f7a911822977f59d4e"
+        },
+        {
+          "path": "widgets\/profile-classifieds",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-classifieds\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1973,
+          "sha1": "51416fdf6691cd67a337a023fbd932bc084f210a"
+        },
+        {
+          "path": "widgets\/profile-classifieds\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3360,
+          "sha1": "048a29f2a8a5a859f798933d0a1f80fc9aa13087"
+        },
+        {
+          "path": "widgets\/list-recent-classifieds",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-recent-classifieds\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1874,
+          "sha1": "abb74dcd9a369176a882437ac9a013fc042ae844"
+        },
+        {
+          "path": "widgets\/list-recent-classifieds\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1520,
+          "sha1": "e8126633bc3d563ebd5868a0133379f0130a30c1"
+        },
+        {
+          "path": "widgets\/browse-menu-quick",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu-quick\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 797,
+          "sha1": "b1464855cb233fe5a0564079e4f0e256ff98f180"
+        },
+        {
+          "path": "widgets\/browse-menu-quick\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 272,
+          "sha1": "13fa164e7bca3d55c3015cf51214e75785618753"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 552,
+          "sha1": "9902e74be88152194a716fcd6a436dc5befa7c2e"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2462,
+          "sha1": "b750fed373785861f2b47cdb135ca294a5d7a6a9"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1097,
+          "sha1": "affc57178b583ad69fa677deca7a1d6d2fcbbaf8"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1948,
+          "sha1": "e1a164a02fd93d01118fa9f28b6f37630fbc8d4b"
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1171,
+          "sha1": "e2e02fdc11b3f579507e93e04c8ae87826617e0f"
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 6474,
+          "sha1": "3e59ff9c557cc15af2f1a111b2c418c16f6c4934"
+        },
+        {
+          "path": "Form\/Photo",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Photo\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2018,
+          "sha1": "a9737f526c7ae34e6477bd5957031b1bcf6d257d"
+        },
+        {
+          "path": "Form\/Photo\/Upload.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1913,
+          "sha1": "cf1c36c5adc33da7c9ac79c19b08a5a7a6d126db"
+        },
+        {
+          "path": "Form\/Custom",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Custom\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2421,
+          "sha1": "8d3a2fc787ff8b1ae607f0021fd308eaf8071af9"
+        },
+        {
+          "path": "Form\/Custom\/Fields.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1208,
+          "sha1": "d7dfab95c1cdba174c724d1f691738e0583630af"
+        },
+        {
+          "path": "Form\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1506,
+          "sha1": "3839905befb651414e5afb277d0a32bf6ce6df09"
+        },
+        {
+          "path": "Form\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 6252,
+          "sha1": "6ce70bcdd82f627039f0d10f84de55ab3491f0e6"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 4987,
+          "sha1": "fc793ca3222b68940bb78a61cfc25de0e3e89ff1"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job\/Maintenance",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job\/Maintenance\/RebuildPrivacy.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 4056,
+          "sha1": "014c41dfd3b4f9224ed3e0cf5ee3a0ff45efbc70"
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 3222,
+          "sha1": "bb62d7f37f5f5c3f613aefdba8b984a1cf60f7d0"
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 1332,
+          "sha1": "fc9d6fb066706ce2bb90a65849fe5530cd62d5d3"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/PhotoController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 8750,
+          "sha1": "9568fada25a4b28075ffde26a74d55b29050b1de"
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2246,
+          "sha1": "41ecfb55227429ca1911575be544016f66b5cea4"
+        },
+        {
+          "path": "controllers\/AdminFieldsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2421,
+          "sha1": "b7ec3b06641678f090fdc2dff247ff089157828d"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 22876,
+          "sha1": "ee9ddfd13f3662b38329da86c80dc86e743bfdc1"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 5692,
+          "sha1": "c8d8b2f75fcd6cbcba5fb3c5b83699c0d779874b"
+        },
+        {
+          "path": "controllers\/AdminLevelController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 2254,
+          "sha1": "ca3ef77c89c0536a85f18a924808f2b87ceb9206"
+        }
+      ]
+    },
+    "application\/languages\/en\/classified.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/classified.csv",
+      "structure": {
+        "path": "classified.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0777",
+        "size": 18671,
+        "sha1": "95b5de73694cd4755b63de8d1de0f6cfbef5b933"
+      }
+    }
+  }
+}

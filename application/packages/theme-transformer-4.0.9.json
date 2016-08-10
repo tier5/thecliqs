@@ -1,0 +1,349 @@
+{
+  "type": "theme",
+  "name": "transformer",
+  "version": "4.0.9",
+  "revision": "9378",
+  "path": "application\/themes\/transformer",
+  "repository": null,
+  "date": "Tue, 25 Dec 2012 06:48:49 +0000",
+  "title": "Transformer",
+  "description": "Responsive theme from seTweaks Team",
+  "thumb": "theme.jpg",
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/setweaks.com\" target=\"_blank\">seTweaks.com Team<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Tue, 25 Dec 2012 06:48:49 +0000",
+    "title": "Transformer",
+    "description": "Responsive theme from seTweaks Team",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/setweaks.com\" target=\"_blank\">seTweaks.com Team<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/transformer": {
+      "type": "directory",
+      "path": "application\/themes\/transformer",
+      "structure": [
+        {
+          "path": ".htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 177,
+          "sha1": "e51b2e8002a4a28259a41707c941afc2c8698231"
+        },
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7777,
+          "sha1": "dd312e8288e95ea78093f61af2f46c0f446cb46d"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 8192,
+          "sha1": null
+        },
+        {
+          "path": "images\/btn_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1047,
+          "sha1": "ba7353ac159f519fc5a079fe639a58d85bc03fd9"
+        },
+        {
+          "path": "images\/bullet.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 229,
+          "sha1": "84d0fad8b57c0bb22f4a854e46782504ee3f898d"
+        },
+        {
+          "path": "images\/bullet_active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 234,
+          "sha1": "07c391fc4acffd04842d52ad8ab91a8446d727e7"
+        },
+        {
+          "path": "images\/bullet_hover.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 232,
+          "sha1": "20edf2f73f92f3d0575645d8b2e2d80cc25ff5ad"
+        },
+        {
+          "path": "images\/buttonbg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 110,
+          "sha1": "3b9fdebc28732665c1837230250b8027e17b470d"
+        },
+        {
+          "path": "images\/col_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 964,
+          "sha1": "b0d8e74cfadfcdbc97ecb033dc92ef4c7302d9ae"
+        },
+        {
+          "path": "images\/divider.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 962,
+          "sha1": "23df98fd66bb8eb45e2d65ad9f39a22cfeae91e9"
+        },
+        {
+          "path": "images\/divider_small.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 939,
+          "sha1": "c4472f46a96ce0a32f1a112c4f99f5dc816e5688"
+        },
+        {
+          "path": "images\/feed_img.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1095,
+          "sha1": "eabcc1c378a5e49c22089adb9d7f8b236ec63a29"
+        },
+        {
+          "path": "images\/feed_item_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 926,
+          "sha1": "2538e6498917654b2e258058b7e94ed705a6dd10"
+        },
+        {
+          "path": "images\/feed_item_bg2.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 929,
+          "sha1": "44417edf32057558da84fae639decdfccbbf4de5"
+        },
+        {
+          "path": "images\/icon_admin.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1058,
+          "sha1": "16dd6ed73a46d641863df3520352f3a048636521"
+        },
+        {
+          "path": "images\/icon_green.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1010,
+          "sha1": "0601967fc059717220a5521bf3f819cde52ec98b"
+        },
+        {
+          "path": "images\/icon_home.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1454,
+          "sha1": "869cdbcf6d393d516a8fb5470b88d263467d55db"
+        },
+        {
+          "path": "images\/icon_logout.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1258,
+          "sha1": "c37f116c524fc24d0ff59ff73662cf6c1ab42bc0"
+        },
+        {
+          "path": "images\/icon_msg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1250,
+          "sha1": "60ac1a98c3b4d9e095fa5a9ec0ab839990932525"
+        },
+        {
+          "path": "images\/icon_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1233,
+          "sha1": "4851fed41ef9d5dc18e62d305d0bd0775d28029b"
+        },
+        {
+          "path": "images\/icon_settings.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1352,
+          "sha1": "d8a4f62c022258131dc0448510d43adb95ae7a7f"
+        },
+        {
+          "path": "images\/left_bg.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3857,
+          "sha1": "1cadf245d81f6a6d49c1111dbed964059f6e742f"
+        },
+        {
+          "path": "images\/menu_item_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11299,
+          "sha1": "7cfcf2c7e3f17a61294e0783d784f75437abe3db"
+        },
+        {
+          "path": "images\/menu_search_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 937,
+          "sha1": "3a4ade687f8f1c543a0432f050512a2c4bb8a77b"
+        },
+        {
+          "path": "images\/menu_search_btn.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1478,
+          "sha1": "ef567e51ff5b0e1c2428fb60e877202adcdf8f94"
+        },
+        {
+          "path": "images\/menu_sep.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1169,
+          "sha1": "fc56969a74d0820b8e7ebeb174b969e343ecff57"
+        },
+        {
+          "path": "images\/mini_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1662,
+          "sha1": "73b07d6097814eb5eaf04f6760a1de3a21d425b6"
+        },
+        {
+          "path": "images\/pagebg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7713,
+          "sha1": "2af1725da6b978cb858d648bfa0aad127baeaeab"
+        },
+        {
+          "path": "images\/tab_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 942,
+          "sha1": "d6c8edb0dbc6efa77c32673e287caddb04f976f1"
+        },
+        {
+          "path": "images\/title_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2809,
+          "sha1": "75d612e26ff324a23aab4187604308b092afb070"
+        },
+        {
+          "path": "images\/topbar.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2775,
+          "sha1": "415c8159822186e5877a8701aaccf088761ec89f"
+        },
+        {
+          "path": "images\/topbar_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 170,
+          "sha1": "565dda63d0039d02852e14ef58766797f25ee2f7"
+        },
+        {
+          "path": "images\/updates_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2358,
+          "sha1": "c4f4f025f956f55b2fd8be1f721642da8d7c41f3"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 839,
+          "sha1": "743b7cd5370d310a7903e0b042d5166b30c0b525"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 19227,
+          "sha1": "2fdf2f20e0f24eb14a9ad8d4517f2f2a2cdcd3ed"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 45553,
+          "sha1": "a9853865628c3da28bf8daa226b942b6b0cf4e96"
+        },
+        {
+          "path": "theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9550,
+          "sha1": "dcdc3cead186c230d0bbda907b0db5cea26a89a9"
+        }
+      ]
+    }
+  }
+}

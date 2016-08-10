@@ -1,0 +1,14 @@
+/* $Id: main.css 2013-01-21 19:05 ratbek $ */
+
+.he_advanced_album_admin_icon > img {
+    margin-right: 5px;
+}
+.he_advanced_album_admin_icon:hover {
+    text-decoration: none;
+}
+
+.he_advanced_album_admin_featured_icon {
+    position: absolute;
+    left: 2px;
+    top: 0;
+}

@@ -1,0 +1,659 @@
+{
+  "type": "module",
+  "name": "daylogo",
+  "version": "4.2.1p1",
+  "revision": null,
+  "path": "application\/modules\/Daylogo",
+  "repository": null,
+  "date": "Thu, 25 Oct 2012 10:22:07 +0000",
+  "title": "Day-logo Plugin",
+  "description": "Day-logo Plugin",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Hire-Experts LLC"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Thu, 25 Oct 2012 10:22:07 +0000",
+    "title": "Day-logo Plugin",
+    "description": "Day-logo Plugin",
+    "developer": null,
+    "authors": [
+      "Hire-Experts LLC"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Daylogo\/settings\/install.php",
+    "class": "Daylogo_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.8",
+      "maxVersion": null,
+      "excludeExcept": null
+    },
+    "module-hecore": {
+      "type": "module",
+      "name": "hecore",
+      "guid": "module-hecore",
+      "minVersion": "4.2.0",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Daylogo": {
+      "type": "directory",
+      "path": "application\/modules\/Daylogo",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4384,
+          "sha1": "422cf4970f19dfaa8426e11b4e33e2ce165f1871"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 630,
+          "sha1": "dc086edfa59cfaef4190c7bd0f0f598d79eb249f"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminIndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6266,
+          "sha1": "be0a3446af10f91ddcee344d67e811f9959128e5"
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5939,
+          "sha1": "f972303b37f25b3b13e9093a8ff28c5ad1be1bb1"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1438,
+          "sha1": "620c8fe28ac6dc3bc5ad99cc7866ffeaba9caa08"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 609,
+          "sha1": "4bda18f824e6fe561c77221c07a153ae261e2509"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 67,
+          "sha1": "fd79fb27a5ff31ac7548c6f9904505fb5c10f78e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/buttons.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 758,
+          "sha1": "421c3daf063c9d580ac6cee9b76e3afc38a53867"
+        },
+        {
+          "path": "externals\/images\/calendar.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 548,
+          "sha1": "55af34feb809c87638f47b1d01a77d68f7dd1d48"
+        },
+        {
+          "path": "externals\/images\/days.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 530,
+          "sha1": "c6efaccebef0d29a458e6e8bb8e6f571c9dd198a"
+        },
+        {
+          "path": "externals\/images\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 715,
+          "sha1": "8f0ebcb45d7ba71a541d4781329f4a6900c7ee65"
+        },
+        {
+          "path": "externals\/images\/disabled0.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 690,
+          "sha1": "576580a0d7259c9859deb99df59cd7eb9e860ff1"
+        },
+        {
+          "path": "externals\/images\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 450,
+          "sha1": "62a1b41ac5eefbf3d0ad578a19572d4096d88146"
+        },
+        {
+          "path": "externals\/images\/enabled1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 781,
+          "sha1": "8872adf860a379cf6eab4faf35a67301b38325c6"
+        },
+        {
+          "path": "externals\/images\/frame.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1929,
+          "sha1": "4c7d195710128eb34ddbd26312ac72271d03c28d"
+        },
+        {
+          "path": "externals\/images\/loader.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 723,
+          "sha1": "ba9bbff717ce29176d5cbb283aa25c6aafd32b28"
+        },
+        {
+          "path": "externals\/images\/months.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 682,
+          "sha1": "95faf98c70c8bc4ed8b7d4a75281d8d92457dc06"
+        },
+        {
+          "path": "externals\/images\/plus.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 197,
+          "sha1": "896197e015eaffa179710ebff45a708ee12c27b3"
+        },
+        {
+          "path": "externals\/images\/upload.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 653,
+          "sha1": "124dd7319ae3eebfe028991d6c3b162180b73e14"
+        },
+        {
+          "path": "externals\/images\/years.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 673,
+          "sha1": "6a9bfaa4dc9f8068bff57832481ca363d0ae8b12"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/datepicker.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 26080,
+          "sha1": "0429fe579ae4b06bdc694b3a8b40545d1612a440"
+        },
+        {
+          "path": "externals\/scripts\/Daylogo.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6111,
+          "sha1": "381df3658cfcca7e86fc4a6f85bbebdae260974d"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/admin\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 14536,
+          "sha1": "894341e6ec2cdbf3f083698457d44de834d8e633"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2670,
+          "sha1": "8bf6fb9e106ee7d46132d4963c455d5112074501"
+        },
+        {
+          "path": "Form\/Admin\/Settings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1404,
+          "sha1": "b6bd514eccdf6ee0043c9543e46178836f0f880d"
+        },
+        {
+          "path": "Form\/Admin\/Widget",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Widget\/Sitelogo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2409,
+          "sha1": "68d67d5bac16a67acb8fdef9462e0dcaa5413a23"
+        },
+        {
+          "path": "Form\/Element",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Element\/Logodatepicker.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2179,
+          "sha1": "db6da465860ad9737e578376e1ed3d477880a257"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Logos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8165,
+          "sha1": "7a88b1d7fcc094d114f3c17a255cb513f0ff98f6"
+        },
+        {
+          "path": "Model\/Logo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4454,
+          "sha1": "533111e48a14069ff2238dbf72b1b5daba3bc4bc"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 800,
+          "sha1": "945aa7c701cfa733be3f15fd8a6aef327c865d8a"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3664,
+          "sha1": "32e52aea48748a769bfac6bc81c9f8616c876418"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3075,
+          "sha1": "1dbbbaeeaaea4ff9d5afeb67fbc01d70470411b9"
+        },
+        {
+          "path": "settings\/my-upgrade-4.2.0-4.2.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 116,
+          "sha1": "04795ac2aa5ebcea6ed334998137cc5e5e5dd012"
+        },
+        {
+          "path": "settings\/my-upgrade-4.2.1-4.2.1p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 118,
+          "sha1": "98cde0150b6e3aae8e1613d835526b0456bae50f"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 228,
+          "sha1": "86ab782dff08d1a9c958a08dfb80c71c68419b06"
+        },
+        {
+          "path": "View",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper\/Logodatepicker.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1669,
+          "sha1": "bf7a0738e0f22a30c88381a3427c0dbe41e8dade"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-index\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1462,
+          "sha1": "828bf4c892e0ec6ea12387a5715b7d151b182a0e"
+        },
+        {
+          "path": "views\/scripts\/admin-index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4863,
+          "sha1": "5f451117138674a44dfda0925f6053277593c28e"
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1792,
+          "sha1": "2e11e973400948f407892413bc608422e7b22f97"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/remove.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 314,
+          "sha1": "e6e97327d126b52fe753e49e75fff1ddeb1a87c0"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 704,
+          "sha1": "c1474b692bd30db55dbfae42fc292a79d54c605d"
+        },
+        {
+          "path": "views\/scripts\/edit_photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 835,
+          "sha1": "8691fb7947391b0d75921fade26a14cda98a28c1"
+        },
+        {
+          "path": "views\/scripts\/fancy_upload_photo.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7248,
+          "sha1": "c8af5a719fc199f97dbc11ecf5ab845730acb394"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 266,
+          "sha1": "f08690f414f6258bef45cff8b2c7d6512132c48d"
+        },
+        {
+          "path": "views\/scripts\/index\/preview.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 472,
+          "sha1": "2fb8ee75925cf11f1127a128cfc850f0ee9dc06a"
+        },
+        {
+          "path": "views\/scripts\/message.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 405,
+          "sha1": "4c7a2fab8bc652b48d4723e29cac8d109afcc8b1"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/day-logo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/day-logo\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1619,
+          "sha1": "2ba6783de69e96163679cada2965768d7de88b58"
+        },
+        {
+          "path": "widgets\/day-logo\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 962,
+          "sha1": "ef5047376e7766bdaf51a84ba320a31da235f493"
+        }
+      ]
+    },
+    "application\/languages\/en\/daylogo.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/daylogo.csv",
+      "structure": {
+        "path": "daylogo.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 4504,
+        "sha1": "36c28b190d73cda472e2f26b5cae91fc9261b88b"
+      }
+    }
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "type": "module",
+  "name": "photoviewer",
+  "version": "4.2.9p1",
+  "revision": null,
+  "path": "application\/modules\/Photoviewer",
+  "repository": null,
+  "date": "Tue, 12 Mar 2013 11:50:10 +0000",
+  "title": "Photo Viewer",
+  "description": "Photo Viewer",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Hire-Experts LLC"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Tue, 12 Mar 2013 11:50:10 +0000",
+    "title": "Photo Viewer",
+    "description": "Photo Viewer",
+    "developer": null,
+    "authors": [
+      "Hire-Experts LLC"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Photoviewer\/settings\/install.php",
+    "class": "Photoviewer_Installer",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Photoviewer": {
+      "type": "directory",
+      "path": "application\/modules\/Photoviewer",
+      "structure": [
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9365,
+          "sha1": "97bfb9606385d20e945b2ee14e6e791013d55e53"
+        },
+        {
+          "path": "controllers\/AdminIndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1167,
+          "sha1": "7630f058931fb102a98339fc1e45363357085d5f"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1342,
+          "sha1": "6cab7f8b80e33b740319f3e07b5be80fff95c118"
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index\/comments.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8158,
+          "sha1": "9ba491f49cce79d23089d23878eb3e32f6f19d43"
+        },
+        {
+          "path": "views\/scripts\/index\/download.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/admin-index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 232,
+          "sha1": "d45957f4b60d39302b771d3cb6dd189b669f0da6"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 766,
+          "sha1": "863e2f2a65c0c3463a5ff3335f9efab6a3e2a72b"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/jquery.mousewheel.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2485,
+          "sha1": "5271c20e334bf280ad7b149c699b9ea1520d5737"
+        },
+        {
+          "path": "externals\/scripts\/PhotoViewer.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29339,
+          "sha1": "9b01087dc8a0b2460c0722be024085343db09a69"
+        },
+        {
+          "path": "externals\/scripts\/jquery.jscrollpane.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15146,
+          "sha1": "6b0fe1321265f883a657b50e336090f3b4ffe2a4"
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts\/PhotoViewer.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17755,
+          "sha1": "373c48c11425d4b1ac4db0e26d98bd57a56ed613"
+        },
+        {
+          "path": "externals\/scripts\/jquery-1.9.0.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 93071,
+          "sha1": "677b5f392aa1f9de26617953bc6104553a5a9043"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/loader16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/css",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/css\/font-awesome.min.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15757,
+          "sha1": "edc2c217b35657a61348d8f8a2647c459fd0ad5f"
+        },
+        {
+          "path": "externals\/css\/jquery.jscrollpane.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1722,
+          "sha1": "cb2cdaeb2a8568137ee81908973210d5725b63bc"
+        },
+        {
+          "path": "externals\/css\/font-awesome-ie7.min.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 24819,
+          "sha1": "57451f32de348dd9f658f686f591c686562f2bbe"
+        },
+        {
+          "path": "externals\/css\/font-awesome.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22136,
+          "sha1": "068cd0de27fc880af61c66d23ddd350e0ff659e0"
+        },
+        {
+          "path": "externals\/font",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/font\/FontAwesome.otf",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 48748,
+          "sha1": "c178dfa03582fbcc74bae98b49b528c93b27e945"
+        },
+        {
+          "path": "externals\/font\/fontawesome-webfont.ttf",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 55096,
+          "sha1": "feaeb2059df1152b61b26755f7b2a4f36e25894f"
+        },
+        {
+          "path": "externals\/font\/fontawesome-webfont.svg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 138488,
+          "sha1": "b4fb88f37b50e10fdcff849d236123500242dd6a"
+        },
+        {
+          "path": "externals\/font\/fontawesome-webfont.eot",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25395,
+          "sha1": "c13c3982e5ee27352a43d9c36cff710c408e92eb"
+        },
+        {
+          "path": "externals\/font\/fontawesome-webfont.woff",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29380,
+          "sha1": "1f0bdc58aa59ab954ce78a94e4d0ea94ab436554"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/PhotoViewer.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 24943,
+          "sha1": "9a2d9c33f7a4c983ac9480bf98c6af5630198c2e"
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 125,
+          "sha1": "9414f88b64a4d9a0063f90b0dcf0d62af10095af"
+        },
+        {
+          "path": "externals\/styles\/PhotoViewer.min.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 19389,
+          "sha1": "da55b74abe40217dab165bd741a38b136cd76dc6"
+        },
+        {
+          "path": "Controller",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Controller\/Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Controller\/Plugin\/Photoviewer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5274,
+          "sha1": "72c8152f672589d32021a5281b2433bb41700933"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/my-install.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 185,
+          "sha1": "507787531b9b9fe2a3d5bbc63ebc424c9eb95cf2"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1316,
+          "sha1": "a1ad4f8a0229aab18594ae4654b17016bb78ba0e"
+        },
+        {
+          "path": "settings\/changelog.log",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11,
+          "sha1": "0c6858fb1d92f20d348bdd2759aac25107fbf944"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1630,
+          "sha1": "237051cb57c038301729132e7da6234d7c1a001a"
+        }
+      ]
+    },
+    "application\/languages\/en\/photoviewer.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/photoviewer.csv",
+      "structure": {
+        "path": "photoviewer.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0777",
+        "size": 626,
+        "sha1": "1fd4e4b107638dabbb33872687db5fc3564e4fac"
+      }
+    }
+  }
+}

@@ -1,0 +1,756 @@
+"The payment account is not set. Please contact admin for more details!";"The payment account is not set. Please contact admin for more details!"
+"INACTIVED";"INACTIVED"
+"You can submit %s entries more";"You can submit %s entries more"
+"You have %1$s videos. You can also %2$supload new video%3$s";"You have %1$s videos. You can also %2$supload new video%3$s"
+"Filter your videos";"Filter your videos"
+"Category:";"Category:"
+"Contest Duration";"Contest Duration"
+"%s day left";"%s day left";"%s days left"
+"%s month left";"%s month left";"%s months left"
+"%s year left";"%s year left";"%s years left"
+"%s hour %s minute left";"%s hour %s minute left";"%s hours %s minutes left"
+"Submit Entries <i>(Opening)";"Submit Entries <i>(Opening)"
+"Submit Entries <i>(On Going)</i>";"Submit Entries <i>(On Going)</i>"
+"Voting <i>(Opening)</i>";"Voting <i>(Opening)</i>"
+"Voting <i>(On Going)</i>";"Voting <i>(On Going)</i>"
+"End Contest On";"End Contest On"
+"My Entries";"My Entries"
+"You have only one entry";"You have only one entry"
+"Submit Entries";"Submit Entries"
+"UNACTIVATED";"UNACTIVATED"
+"<i>(Opening)</i>";"<i>(Opening)</i>"
+"End";"End"
+"Blog";"Blog"
+"Music";"Music"
+"Video";"Video"
+"Photo";"Photo"
+"Category";"Category"
+"Contest Image*";"Contest Image*"
+"Start Date Contest Period*";"Start Date Contest Period*"
+"End Date Contest Period*";"End Date Contest Period*"
+"Start Date Submit Entries Period*";"Start Date Submit Entries Period*"
+"End Date Submit Entries Period*";"End Date Submit Entries Period*"
+"Start Date Vote Entries Period*";"Start Date Vote Entries Period*"
+"End Date Vote Entries Period*";"End Date Vote Entries Period*"
+"%s must be greater than or equal to Current Date.";"%s must be greater than or equal to Current Date."
+"%s must be less than %s.";"%s must be less than %s."
+"%s is between %s and %s.";"%s is between %s and %s."
+"End: ";"End: "
+"View more...";"View more..."
+"Copy to Clipboard";"Copy to Clipboard"
+"FEATURE";"FEATURE"
+"PREMIUM";"PREMIUM"
+"ENDING SOON";"ENDING SOON"
+"Most Voted Entries";"Most Voted Entries"
+"There are no entries wins by owner";"There are no entries wins by owner"
+"There are no entries wins by vote";"There are no entries wins by vote"
+"There is no contest meets your criteria.";"There is no contest meets your criteria."
+
+
+"Start date";"Start date"
+"Description*";"Description*"
+"Start Date must be greater than or equal to Current Date.";"Start Date must be greater than or equal to Current Date."
+"Start Date must be less than End Date.";"Start Date must be less than End Date."
+"The uploaded file is not supported or is corrupt.";"The uploaded file is not supported or is corrupt."
+"Allow members to comment on my contest.";"Allow members to comment on my contest."
+"Allow members to comment on entries.";"Allow members to comment on entries."
+"User must join in order to submit entries.";"User must join in order to submit entries."
+"New Entries can approve immediately.";"New Entries can approve immediately."
+"Send me an email when there is a posted entry.";"Send me an email when there is a posted entry."
+"Maximum entries which a member can submit.";"Maximum entries which a member can submit."
+"Contest Settings";"Contest Settings"
+"0 means no limit";"0 means no limit"
+"Close Contest?";"Close Contest?"
+"Unfollow";"Unfollow"
+"On";"On"
+"Entry {item:$subject} has just lost award in contest {item:$object}.";"Entry {item:$subject} has just lost award in contest {item:$object}."
+"Your entry {item:$subject} has just lost award in contest {item:$object}.";"Your entry {item:$subject} has just lost award in contest {item:$object}."
+"{item:$subject}  has just voted your entry {item:$object}.";"{item:$subject}  has just voted your entry {item:$object}."
+"Votes";"Votes"
+"Entry Name*";"Entry Name*"
+"{item:$subject} has just denied your contest {item:$object}.";"{item:$subject} has just denied your contest {item:$object}."
+"{item:$subject} has just edited contest {item:$object}.";"{item:$subject} has just edited contest {item:$object}."
+"{item:$subject} has requested to join the contest {item:$object}.";"{item:$subject} has requested to join the contest {item:$object}."
+"Your entry {item:$subject} won in contest {item:$object}.";"Your entry {item:$subject} won in contest {item:$object}."
+"Entry {item:$subject} won in contest {item:$object}.";"Entry {item:$subject} won in contest {item:$object}."
+"Your entry {item:$subject} has just denied in contest {item:$object}.";"Your entry {item:$subject} has just denied in contest {item:$object}."
+"{item:$subject} has just closed your contest {item:$object}.";"{item:$subject} has just closed your contest {item:$object}."
+"{item:$subject} has just closed contest {item:$object}";"{item:$subject} has just closed contest {item:$object}"
+"Your request to join the contest {item:$subject} has been approved.";"Your request to join the contest {item:$subject} has been approved."
+"You have submited new entry in contest {item:$object}.";"You have submited new entry in contest {item:$object}."
+"{item:$subject} has submited new entry in contest {item:$object}.";"{item:$subject} has submited new entry in contest {item:$object}."
+"You have been new participant in contest {item:$object}.";"You have been new participant in contest {item:$object}."
+"{item:$subject} has been new participant in contest {item:$object}.";"{item:$subject} has been new participant in contest {item:$object}."
+"{item:$subject} has just approved your contest {item:$object}";"{item:$subject} has just approved your contest {item:$object}"
+"{item:$subject} has just created new announcement contest {item:$object}";"{item:$subject} has just created new announcement contest {item:$object}"
+"You have successfully registered contest {item:$object}";"You have successfully registered contest {item:$object}"
+"You have joined in contest {item:$object} as participant.";"You have joined in contest {item:$object} as participant."
+"{item:$subject} created a new contest";"{item:$subject} created a new contest"
+"Hide Selected";"Hide Selected"
+"Contest name : ";"Contest name : "
+"Your entry {item:$subject} has just been denied in contest {item:$object}.";"Your entry {item:$subject} has just been denied in contest {item:$object}."
+"ACTIVITY_TYPE_CLOSE_CONTEST";"when contest is closed, system will send notify and email to owner contest."
+"ACTIVITY_TYPE_CLOSE_CONTEST_MEMBERS";"when contest is closed, system will send notify and email to member of contest."
+"ACTIVITY_TYPE_CONTEST_INVITE";"When someone invite you to the contest."
+"ACTIVITY_TYPE_CONTEST_DENIED";"When someone deny your contest."
+"ACTIVITY_TYPE_CONTEST_EDITED";"When someone edit your contest."
+"ACTIVITY_TYPE_CONTEST_APPROVE";"When someone request to join the contest."
+"ACTIVITY_TYPE_CONTEST_APPROVED";"When someone approve your contest."
+"ACTIVITY_TYPE_CONTEST_CANCEL_INVITE";"When someone cancel the invitation to join the contest."
+"ACTIVITY_TYPE_CONTEST_ACCEPTED";"Your request to join the contest has been approved. "
+"ACTIVITY_TYPE_CREATE_ANNOUCEMENT";"When you create new announcement contest."
+"ACTIVITY_TYPE_ENTRY_DENIED";"When your entry is denied by owner contest."
+"ACTIVITY_TYPE_ENTRY_WIN_VOTE";"When your entry won in the contest."
+"ACTIVITY_TYPE_ENTRY_WIN_VOTE_F";"When someone's entry won in the contest."
+"ACTIVITY_TYPE_ENTRY_NO_WIN_VOTE";"When your entry has just lost award in the contest."
+"ACTIVITY_TYPE_ENTRY_NO_WIN_VOTE_F";"When someone's entry has just lost award in the contest."
+"ACTIVITY_TYPE_NEW_PARTICIPANT";"When you have been new participant in the contest."
+"ACTIVITY_TYPE_NEW_PARTICIPANT_F";"When you have new participant in the contest."
+"ACTIVITY_TYPE_NEW_VOTE";"When someone has just voted your entry."
+"ACTIVITY_TYPE_REGISTER_SERVICE";"When you have successfully registered contest."
+"ACTIVITY_TYPE_SUBMIT_ENTRY";"When you have submited new entry in contest."
+"ACTIVITY_TYPE_SUBMIT_ENTRY_F";"When someone has submited new entry in contest."
+"Votes:";"Votes:"
+"Views:";"Views:"
+"Likes:";"Likes:"
+"Save";"Save"
+"Contests";"Contests"
+"Created by";"Created by"
+"Promote Contest Code";"Promote Contest Code"
+"{item:$subject} has new participant in contest {item:$object}.";"{item:$subject} has new participant in contest {item:$object}."
+"{item:$subject} updated a contest";"{item:$subject} updated a contest"
+"{item:$subject} commented on {item:$owner}''s {item:$object:Page}: {body:$body}";"{item:$subject} commented on {item:$owner}''s {item:$object:Page}: {body:$body}"
+"Unfavorite";"Unfavorite"
+"Are you sure that you want to close this contest?";"Are you sure that you want to close this contest?"
+"Joined date:";"Joined date:"
+"Number of entries win by votes";"Number of entries win by votes"
+"Title for entries win by votes";"Title for entries win by votes"
+"Win by votes";"Win by votes"
+"Win by other reason";"Win by other reason"
+"Reason";"Reason"
+"Keywords";"Keywords"
+"Contest Status";"Contest Status"
+"Draft";"Draft"
+"Closed";"Closed"
+"Published";"Published"
+"Publish";"Publish"
+"success";"success"
+"Denied";"Denied"
+"Search";"Search"
+"Submit";"Submit"
+"Approved date:";"Approved date:"
+"Promote Entry";"Promote Entry"
+"Pending Entries";"Pending Entries"
+"Denied Entries";"Denied Entries"
+"Order by";"Order by"
+"Joined date";"Joined date"
+"On going";"On going"
+"User name";"User name"
+"Search a blog";"Search a blog"
+"Search a photo";"Search a photo"
+"Search a video";"Search a video"
+"If you do not have any items, please %1$screate new%2$s";"If you do not have any items, please %1$screate new%2$s"
+"You do not have any items.";"You do not have any items."
+"Submit Entry";"Submit Entry"
+"Post New Announcement";"Post New Announcement"
+"Please compose your new announcement below.";"Please compose your new announcement below."
+"Choose item...";"Choose item..."
+"Title*";"Title*"
+"Body*";"Body*"
+"Post Announcement";"Post Announcement"
+"Edit Announcement";"Edit Announcement"
+"Delete Announcement?";"Delete Announcement?"
+"Are you sure that you want to delete this announcement?";"Are you sure that you want to delete this announcement?"
+"Announcement is deleted successfully.";"Announcement is deleted successfully."
+"You have successfully left this contest.";"You have successfully left this contest."
+"You are already a member of this contest.";"You are already a member of this contest."
+"You are now a member of this contest.";"You are now a member of this contest."
+"Contest is deleted successfully.";"Contest is deleted successfully."
+"Contest is closed successfully.";"Contest is closed successfully."
+"Thanks to update service!";"Thanks to update service!"
+"You have just choosen services.";"You have just choosen services."
+"The contest have not completed. Please complete before publishing.";"The contest have not completed. Please complete before publishing."
+"Unfollow successfully.";"Unfollow successfully."
+"Currently, there are no members you can invite.";"Currently, there are no members you can invite."
+"Members invited";"Members invited"
+"No members invited";"No members invited"
+"Announcement is deleted successfully.";"Announcement is deleted successfully."
+"Unfavourite successfully.";"Unfavourite successfully."
+"votes";"votes"
+"Promote Entry Code";"Promote Entry Code"
+"By:";"By:"
+"Start Date*";"Start Date*"
+"End Date*";"End Date*"
+"Award*";"Award*"
+"Winners Congratulation*";"Winners Congratulation*"
+"Winners Congratulation";"Winners Congratulation"
+"Author";"Author"
+"Assignment ends";"Assignment ends"
+"Submited date:";"Submited date:"
+"Status:";"Status:"
+"approved";"approved"
+"Deny Entry?";"Deny Entry?"
+"View Winning Entries";"View Winning Entries"
+"Manage Winning Entries";"Manage Winning Entries"
+"Winning Entries";"Winning Entries"
+"There are no entries.";"There are no entries."
+"There are no winning entries.";"There are no winning entries."
+"Publish Contest";"Publish Contest"
+"To post contest on our website, you have to pay publishing-contest fee.";"To post contest on our website, you have to pay publishing-contest fee."
+"Fee for Publishing";"Fee for Publishing"
+"Fee for Feature Contest";"Fee for Feature Contest"
+"Fee for Premium Contest";"Fee for Premium Contest"
+"Fee for Ending Soon Contest";"Fee for Ending Soon Contest"
+"You have successfully published contest <b>%1$s</b>. Please wait for approving!";"You have successfully published contest <b>%1$s</b>. Please wait for approving!"
+"You have successfully published contest <b>%1$s</b>.";"You have successfully published contest <b>%1$s</b>."
+"Thank you!";"Thank you!"
+"You have canceled the transaction";"You have canceled the transaction"
+"Approve from admin";"Approve from admin"
+"Approve from admin:";"Approve from admin:"
+"all";"all"
+"Pending";"Pending"
+"Thanks to publish!";"Thanks to publish!"
+"Entry Status";"Entry Status"
+"Entry's Name";"Entry's Name"
+"Update service";"Update service"
+"There are no transactions yet.";"There are no transactions yet."
+"Select a gateway to purchase";"Select a gateway to purchase"
+"Please choose the gateway which is used to purchase";"Please choose the gateway which is used to purchase"
+"Total Participants";"Total Participants"
+"Waiting";"Waiting"
+"Are you sure that you want to deny this entry?";"Are you sure that you want to deny this entry?"
+"pending";"pending"
+"denied";"denied"
+"Participants";"Participants"
+"Entries";"Entries"
+"Total awards";"Total awards"
+"View detail";"View detail"
+"Lasted Winning";"Lasted Winning"
+"By ";"By "
+"Submit date:";"Submit date:"
+"Entry_ID:";"Entry_ID:"
+"View more";"View more"
+"Start";"Start"
+"Summary:";"Summary:"
+"Give Award";"Give Award"
+"Vote";"Vote"
+"Like";"Like"
+"Owner";"Owner"
+"Compare";"Compare"
+"Choose one to compare";"Choose one to compare"
+"By %s";"By %s"
+"Vote : ";"Vote : "
+"Like : ";"Like : "
+"Choose";"Choose"
+"Have not contest.";"Have not contest."
+"Listing contest";"Listing contest"
+"Nobody has written an contest with that criteria.";"Nobody has written an contest with that criteria."
+"Compare to";"Compare to"
+" days left";" days left"
+"Days left";"Days left"
+"Contest";"Contest"
+"Tags";"Tags"
+"Tag";"Tag"
+"show all";"show all"
+"hide";"hide"
+"Award:";"Award:"
+"Participants : ";"Participants : "
+"Entries : ";"Entries : "
+"Contest Name*";"Contest Name*"
+"Contest Type*";"Contest Type*"
+"Contest type";"Contest type"
+"Tips: separate tags with commas.";"Tips: separate tags with commas."
+"Photo Contest";"Photo Contest"
+"Photo Contests";"Photo Contests"
+"Video Contests";"Video Contests"
+"Blog Contests";"Blog Contests"
+"Winners";"Winners"
+"Blog Contest";"Blog Contest"
+"Video Contest";"Video Contest"
+"Contest Photo*";"Contest Photo*"
+"Age only for";"Age only for"
+"No limit";"No limit"
+"Limit";"Limit"
+"Under";"Under"
+"Older";"Older"
+"years old";"years old"
+"Category*";"Category*"
+"Summary*";"Summary*"
+"About Contest";"About Contest"
+"Terms and Conditions*";"Terms and Conditions*"
+"Tips: This is Terms and Conditions applied for contest.";"Tips: This is Terms and Conditions applied for contest."
+"Contest Email*";"Contest Email*"
+"We will send email alert to you if there is a submitted entry.";"We will send email alert to you if there is a submitted entry."
+"Save & Continue";"Save & Continue"
+"cancel";"cancel"
+"Basic Information";"Basic Information"
+"Created by:";"Created by:"
+"Contest Type:";"Contest Type:"
+"Start Date:";"Start Date:"
+"End Date:";"End Date:"
+"Entry is approved.";"Entry is approved."
+"Entry is denied.";"Entry is denied."
+"Participants:";"Participants:"
+"Entries:";"Entries:"
+"View(s):";"View(s):"
+"(Filter the search box and press Enter to search)";"(Filter the search box and press Enter to search)"
+"Currently, there are no users that you can invite.";"Currently, there are no users that you can invite."
+"Views";"Views"
+"Likes";"Likes"
+"Invite Members";"Invite Members"
+"Choose the people you want to invite to this contest.";"Choose the people you want to invite to this contest."
+"Filter the search box and press Enter to search";"Filter the search box and press Enter to search"
+"Send Invites";"Send Invites"
+"Choose All";"Choose All"
+"View";"View"
+"Like(s):";"Like(s):"
+"Tags:";"Tags:"
+"Announcement";"Announcement"
+"Edit";"Edit"
+"Delete";"Delete"
+"Print";"Print"
+"Contest status:";"Contest status:"
+"Close Contest";"Close Contest"
+"Follow";"Follow"
+"Favorite";"Favorite"
+"Contest ID";"Contest ID"
+"Promote Contest";"Promote Contest"
+"Shares";"Shares"
+"You have no favorite contests.";"You have no favorite contests."
+"You have no follow contests.";"You have no follow contests."
+"Clicks";"Clicks"
+"Viral Lift";"Viral Lift"
+"Share";"Share"
+"Invite Friends";"Invite Friends"
+"All Contests";"All Contests"
+"My Contests";"My Contests"
+"All Entries";"All Entries"
+"My Entries";"My Entries"
+"Favorite Contest";"Favorite Contest"
+"Create New Contest";"Create New Contest"
+"Manage Transactions";"Manage Transactions"
+"Follow Contests";"Follow Contests"
+"Join Contest";"Join Contest"
+"I have read and agree to the terms and conditions.";"I have read and agree to the terms and conditions."
+"Join This Contest";"Join This Contest"
+"Would you like to join this contest?";"Would you like to join this contest?"
+"Terms and Conditions";"Terms and Conditions"
+"Join";"Join"
+"You have new participant in contest {item:$object}.";"You have new participant in contest {item:$object}."
+"{item:$subject} has invited you to the contest {item:$object}.";"{item:$subject} has invited you to the contest {item:$object}."
+"Leave Contest";"Leave Contest"
+"Submit an entry";"Submit an entry"
+"Terms of Service";"Terms of Service"
+"Leave This Contest";"Leave This Contest"
+"Contest's type";"Contest's type"
+"Thank you for your voting";"Thank you for your voting"
+"Browse By";"Browse By"
+"By";"By"
+"Awards";"Awards"
+"Search";"Search"
+"%1$s vote(s)";"%1$s vote(s)"
+"Top Contests";"Top Contests"
+"Hot Contests";"Hot Contests"
+"New Entries";"New Entries"
+"New Contests";"New Contests"
+"View more";"View more"
+"Are you sure you want to leave this contest?";"Are you sure you want to leave this contest?"
+"Submitted date";"Submitted date"
+"Approved date";"Approved date"
+"Lastest Winner";"Lastest Winner"
+"Close";"Close"
+"Are you sure you want to hide the selected entries?";"Are you sure you want to hide the selected entries?"
+
+"Delete Category?";"Delete Category?"
+"Are you sure that you want to delete this category? It will not be recoverable after being deleted.";"Are you sure that you want to delete this category? It will not be recoverable after being deleted."
+" or ";" or "
+"or";"or"
+"cancel";"cancel"
+"Contest Plugin";"Contest Plugin"
+"Manage Categories";"Manage Categories"
+"+ Add Root Category";"+ Add Root Category"
+"+ Add Category";"+ Add Category"
+"Home";"Home"
+"Category Name";"Category Name"
+"Sub-Categories";"Sub-Categories"
+"Options";"Options"
+"edit";"edit"
+"add sub-category";"add sub-category"
+"view sub-categories";"view sub-categories"
+"There are currently no categories. Click here to <a href='%s' class='smoothbox'>post</a> a new one";"There are currently no categories. Click here to <a href='%s' class='smoothbox'>post</a> a new one"
+"Latest Winning Entries";"Latest Winning Entries"
+
+"Currencies";"Currencies"
+"Name";"Name"
+"Currency Code";"Currency Code"
+"Symbol";"Symbol"
+"There are currently no currencies.";"There are currently no currencies."
+"CONTEST_VIEWS_ADMIN_GATEWAYS_INDEX_DESCRIPTION";"Browse and manage payment gateways."
+"CONTEST_FORM_ADMIN_CURRENCY_DESCRIPTION";"Browse and manage payment gateways."
+"PAYMENT_FORM_ADMIN_GATEWAY_PAYPAL_DESCRIPTION";""
+"%s gateway found", "%s gateways found";"%s gateway found", "%s gateways found"
+"Enabled";"Enabled"
+
+"Are you sure you want to delete the selected contest?";"Are you sure you want to delete the selected contest?"
+"ID";"ID"
+"Title";"Title"
+"Type";"Type"
+"Featured";"Featured"
+"Feature";"Feature"
+"Premium";"Premium"
+"Filter By";"Filter By"
+"There are no contest.";"There are no contest."
+
+"Manage Contest";"Manage Contest"
+"Manage Service";"Manage Service"
+"Statistics";"Statistics"
+"Contest Statistics";"Contest Statistics"
+"Member Level Settings";"Member Level Settings"
+"Global Settings";"Global Settings"
+"Email Templates";"Email Templates"
+"Gateway";"Gateway"
+"Categories";"Categories"
+"Create an Announcement";"Create an Announcement"
+"Contest Plugin";"Contest Plugin"
+"Contest Statistic";"Contest Statistic"
+"Total Contests";"Total Contests"
+"Approved Contests";"Approved Contests"
+"Featured Contests";"Featured Contests"
+"Premium Contests";"Premium Contests"
+"Ending Soon Contests";"Ending Soon Contests"
+"Ending Soon";"Ending Soon"
+"Followed Contests";"Followed Contests"
+"Favorite Contests";"Favorite Contests"
+"Entries Statistic";"Entries Statistic"
+"Total Entries";"Total Entries"
+"Followed Entries";"Followed Entries"
+"Favorite Entries";"Favorite Entries"
+"Faid Fee";"Faid Fee"
+"Published Fee";"Published Fee"
+"Publish";"Publish"
+"Feature Service";"Feature Service"
+"Premium Service";"Premium Service"
+"Ending Soon Service";"Ending Soon Service"
+"ID";"ID"
+"Title";"Title"
+"Start date";"Start date"
+"End date";"End date"
+"End Date";"End Date"
+"Type";"Type"
+"Status";"Status"
+"Members";"Members"
+"Entries";"Entries"
+"Winning";"Winning"
+"Service";"Service"
+"Paid Fee";"Paid Fee"
+"Creator";"Creator"
+"Options";"Options"
+"Deny";"Deny"
+"Approve";"Approve"
+"Full Name";"Full Name"
+"Email Address";"Email Address"
+"Phone Number";"Phone Number"
+"Gender";"Gender"
+"Location";"Location"
+"Birthday";"Birthday"
+"Participated Contest";"Participated Contest"
+"Participated Date";"Participated Date"
+"Male";"Male"
+"Approved";"Approved"
+"Deny";"Deny"
+"Ban";"Ban"
+"There are no participants.";"There are no participants."
+"+ Add new Rule";"+ Add new Rule"
+"Rule Title";"Rule Title"
+"Actions";"Actions"
+"Edit";"Edit"
+"Add New Rule";"Add New Rule"
+"Rule titles*";"Rule titles*"
+"Description";"Description"
+"Contest Name";"Contest Name"
+"Contest name";"Contest name"
+"ADMIN_ACTIVITY_TYPE_YNCONTEST_NEW";"When a user (subject) creates a new contest (object)."
+"_ACTIVITY_ACTIONTYPE_YNCONTEST_NEW";"New Contest"
+"Registered Date";"Registered Date"
+"Approved Date";"Approved Date"
+"Service Type";"Service Type"
+"Fee";"Fee"
+"Status";"Status"
+"From";"From"
+"To";"To"
+"Organizers";"Organizers"
+"List of My Contest Members";"List of My Contest Members"
+"My Contest";"My Contest"
+"Contest Statictis";"Contest Statictis"
+"Manage Rule";"Manage Rule"
+"Manage Contest Member";"Manage Contest Member"
+"Manage Transaction";"Manage Transaction"
+"Age range";"Age range"
+"Entry name";"Entry name"
+"Entry's type";"Entry's type"
+"Award";"Award"
+"Please choose items to compare";"Please choose items to compare"
+"Rules";"Rules"
+
+#Email Template
+# header
+"_EMAIL_STORE_HEADER_TITLE";"Header (Non-members)"
+"_EMAIL_STORE_HEADER_DESCRIPTION";"This can be added to other emails using the [header] placeholder."
+"_EMAIL_STORE_HEADER_SUBJECT";""
+"_EMAIL_STORE_HEADER_BODY";"Hello,"
+
+# footer
+"_EMAIL_STORE_FOOTER_TITLE";"Footer (Non-members)"
+"_EMAIL_STORE_FOOTER_DESCRIPTION";"This can be added to other emails using the [footer] placeholder."
+"_EMAIL_STORE_FOOTER_SUBJECT";""
+"_EMAIL_STORE_FOOTER_BODY";"Best Regards,
+Social Network Administration"
+
+# header_member
+"_EMAIL_STORE_HEADERMEMBER_TITLE";"Header (Members)"
+"_EMAIL_STORE_HEADERMEMBER_DESCRIPTION";"This can be added to other emails using the [header] placeholder."
+"_EMAIL_STORE_HEADERMEMBER_SUBJECT";""
+"_EMAIL_STORE_HEADERMEMBER_BODY";"Hello [recipient_title],"
+
+# footer_member
+"_EMAIL_STORE_FOOTERMEMBER_TITLE";"Footer (Members)"
+"_EMAIL_STORE_FOOTERMEMBER_DESCRIPTION";"This can be added to other emails using the [footer] placeholder."
+"_EMAIL_STORE_FOOTERMEMBER_SUBJECT";""
+"_EMAIL_STORE_FOOTERMEMBER_BODY";"Best Regards,
+Social Network Administration"
+
+Congratulation! Your contest is live and ready to access. Please visit http://[host][object_link]
+
+[footer]"
+
+# notify_register_service
+"_EMAIL_NOTIFY_REGISTER_SERVICE_TITLE";"Notification when register service a contest"
+"_EMAIL_NOTIFY_REGISTER_SERVICE_DESCRIPTION";"This is the email that gets sent to owner contest whose contest got register."
+"_EMAIL_NOTIFY_REGISTER_SERVICE_SUBJECT";"Notification when register a contest"
+"_EMAIL_NOTIFY_REGISTER_SERVICE_BODY";"[header]
+
+You have successfully registered. Thank you for using our service. We will contact you shortly.
+ If you have any questions, don’t hesitate to contact us.
+
+[footer]"
+
+# notify_contest_denied
+"_EMAIL_NOTIFY_CONTEST_DENIED_TITLE";"Notification when contest is denied"
+"_EMAIL_NOTIFY_CONTEST_DENIED_DESCRIPTION";"This is the email that gets sent to owner contest. Your contest is denied."
+"_EMAIL_NOTIFY_CONTEST_DENIED_SUBJECT";"Notification when contest is denied"
+"_EMAIL_NOTIFY_CONTEST_DENIED_BODY";"[header]
+
+We are very sorry for your contest has not been denied. Please contact admin for more detail.
+
+[footer]"
+
+# notify_contest_approved
+"_EMAIL_NOTIFY_CONTEST_APPROVED_TITLE";"Notification when contest is approved"
+"_EMAIL_NOTIFY_CONTEST_APPROVED_DESCRIPTION";"This is the email that gets sent to owner contest. Your contest is approved."
+"_EMAIL_NOTIFY_CONTEST_APPROVED_SUBJECT";"Notification when contest is approved"
+"_EMAIL_NOTIFY_CONTEST_APPROVED_BODY";"[header]
+
+Congratulation! Your contest is live and ready to access. Please visit http://[host][object_link]
+
+[footer]"
+
+#notify_submit_entry
+"_EMAIL_NOTIFY_SUBMIT_ENTRY_TITLE";"Thanks when submit an entry"
+"_EMAIL_NOTIFY_SUBMIT_ENTRY_DESCRIPTION";"This is the email that gets sent to members when submit an entry"
+"_EMAIL_NOTIFY_SUBMIT_ENTRY_SUBJECT";"Thanks when submit an entry"
+"_EMAIL_NOTIFY_SUBMIT_ENTRY_BODY";"[header]
+
+Thanks! You are already submitted to us your entry. For waiting, please visit at http://[host][object_link] to vote or comment as you like.
+
+[footer]"
+#notify_close_contest
+"_EMAIL_NOTIFY_CLOSE_CONTEST_TITLE";"Notification when close a contest "
+"_EMAIL_NOTIFY_CLOSE_CONTEST_DESCRIPTION";"This is the email that gets sent to members when close a contest "
+"_EMAIL_NOTIFY_CLOSE_CONTEST_SUBJECT";"Notification when close a contest "
+"_EMAIL_NOTIFY_CLOSE_CONTEST_BODY";"[header]
+
+We notice you that your contest has been closed. To view the results of this competition, please go to here http://[host][object_link] to see more details.
+
+[footer]"
+
+#notify_new_participant
+"_EMAIL_NOTIFY_NEW_PARTICIPANT_TITLE";"Thanks when participate as a participant"
+"_EMAIL_NOTIFY_NEW_PARTICIPANT_DESCRIPTION";"This is the email that gets sent to members when participate as a participant"
+"_EMAIL_NOTIFY_NEW_PARTICIPANT_SUBJECT";"Thanks when participate as a participant"
+"_EMAIL_NOTIFY_NEW_PARTICIPANT_BODY";"[header]
+
+Thank you for participation our contest. Please visit at http://[host][object_link] and submit entries for us.
+
+[footer]"
+
+#notify_entry_denied
+"_EMAIL_NOTIFY_ENTRY_DENIED_TITLE";"Notification when the entry is denied"
+"_EMAIL_NOTIFY_ENTRY_DENIED_DESCRIPTION";"This is the email that gets sent to members when the entry is denied"
+"_EMAIL_NOTIFY_ENTRY_DENIED_SUBJECT";"Notification when the entry is denied"
+"_EMAIL_NOTIFY_ENTRY_DENIED_BODY";"[header]
+
+We are very sorry for your entry has not been selected or denied to publish. We hope to receive your other entry.
+
+[footer]"
+
+#notify_entry_win_vote
+"_EMAIL_NOTIFY_ENTRY_WIN_VOTE_TITLE";"Congratulations when get awards"
+"_EMAIL_NOTIFY_ENTRY_WIN_VOTE_DESCRIPTION";"This is the email that gets sent to members when get awards"
+"_EMAIL_NOTIFY_ENTRY_WIN_VOTE_SUBJECT";"Congratulations when get awards"
+"_EMAIL_NOTIFY_ENTRY_WIN_VOTE_BODY";"[header]
+
+Congratulation! Your entry http://[host][sender_link] has been won in contest http://[host][object_link] by [vote_desc]. For see more details, please contact us.
+
+[footer]"
+
+#participate_organizer
+"_EMAIL_PARTICIPATE_ORGANIZER_TITLE";"Thanks when participate as an organizer"
+"_EMAIL_PARTICIPATE_ORGANIZER_DESCRIPTION";"This is the email that gets sent to members when participate as an organizer"
+"_EMAIL_PARTICIPATE_ORGANIZER_SUBJECT";"Thanks when participate as an organizer"
+"_EMAIL_PARTICIPATE_ORGANIZER_BODY";"[header]
+
+Thank you for participation our contest. You can join as an organizer. Please visit at [contest_link]
+
+[footer]
+"
+
+#organizers_re-used
+"_EMAIL_ORGANIZERS_RE-USED_TITLE";"Notification when organizers are re-used"
+"_EMAIL_ORGANIZERS_RE-USED_DESCRIPTION";"This is the email that gets sent to members when organizers are re-used"
+"_EMAIL_ORGANIZERS_RE-USED_SUBJECT";"Notification when organizers are re-used"
+"_EMAIL_ORGANIZERS_RE-USED_BODY";"[header]
+
+You are invited join into the contest â€œContest Name linkâ€� as an organizer. Please visit at [contest_link]
+
+[footer]
+"
+
+#members_banned
+"_EMAIL_MEMBERS_BANNED_TITLE";"Notification when members are banned"
+"_EMAIL_MEMBERS_BANNED_DESCRIPTION";"This is the email that gets sent to members when members are banned"
+"_EMAIL_MEMBERS_BANNED_SUBJECT";"Notification when members are banned"
+"_EMAIL_MEMBERS_BANNED_BODY";"[header]
+
+You have been banned because you had violated our rules. However, you can view our contest at [contest_link] 
+[footer]
+"
+
+
+
+#post_announcement
+"_EMAIL_POST_ANNOUNCEMENT_TITLE";"Notification when post an announcement"
+"_EMAIL_POST_ANNOUNCEMENT_DESCRIPTION";"This is the email that gets sent to members when post an announcement"
+"_EMAIL_POST_ANNOUNCEMENT_SUBJECT";"Notification when post an announcement"
+"_EMAIL_POST_ANNOUNCEMENT_BODY";"[header]
+
+We have already noticed you. Please see it at [contest_link]
+
+[footer]
+"
+
+
+
+
+
+#ban_participant
+"_EMAIL_BAN_PARTICIPANT_TITLE";"Notification when ban a participant"
+"_EMAIL_BAN_PARTICIPANT_DESCRIPTION";"This is the email that gets sent to members when ban a participant"
+"_EMAIL_BAN_PARTICIPANT_SUBJECT";"Notification when ban a participant"
+"_EMAIL_BAN_PARTICIPANT_BODY";"[header]
+
+You have been banned because you had violated our rules. However, you can view our contest at [contest_link] 
+
+[footer]
+"
+
+#ban_organizer
+"_EMAIL_BAN_ORGANIZER_TITLE";"Notification when ban an organizer"
+"_EMAIL_BAN_ORGANIZER_DESCRIPTION";"This is the email that gets sent to members when ban an organizer"
+"_EMAIL_BAN_ORGANIZER_SUBJECT";"Notification when ban an organizer"
+"_EMAIL_BAN_ORGANIZER_BODY";"[header]
+
+You have been banned because you had violated our rules. However, you can view our contest at [contest_link]
+
+[footer]
+"
+
+#entry_approved
+"_EMAIL_ENTRY_APPROVED_TITLE";"Notification when the entry is approved"
+"_EMAIL_ENTRY_APPROVED_DESCRIPTION";"This is the email that gets sent to members when the entry is approved"
+"_EMAIL_ENTRY_APPROVED_SUBJECT";"Notification when the entry is approved"
+"_EMAIL_ENTRY_APPROVED_BODY";"[header]
+
+Congratulation! Your entry has been selected to publish on our contest. Please view at [contest_link]
+
+[footer]
+"
+
+
+
+#entry_edited
+"_EMAIL_ENTRY_EDITED_TITLE";"Notification when a special entry  is edited"
+"_EMAIL_ENTRY_EDITED_DESCRIPTION";"This is the email that gets sent to members when a special entry  is edited"
+"_EMAIL_ENTRY_EDITED_SUBJECT";"Notification when a special entry  is edited"
+"_EMAIL_ENTRY_EDITED_BODY";"[header]
+
+Your entry has been edited by us to get more suits for our rules. Please view these changes at [contest_link]
+
+[footer]"
+
+#information_edited
+"_EMAIL_INFORMATION_EDITED_TITLE";"Notification when participant's information is edited"
+"_EMAIL_INFORMATION_EDITED_DESCRIPTION";"This is the email that gets sent to members when participant's information is edited"
+"_EMAIL_INFORMATION_EDITED_SUBJECT";"Notification when participant's information is edited"
+"_EMAIL_INFORMATION_EDITED_BODY";"[header]
+
+Your information has been edited by us to get more suits for our rules. Please view these changes at [contest_link]
+
+[footer]"
+"There are no plug-in %s";"There are no plug-in %s"
+"Friend's Contests";"Friend's Contests"
+"Edit Photos";"Edit Photos"
+"ITEM_TYPE_CONTEST";"Contest"
+"ITEM_TYPE_YNCONTEST_ENTRY";"Entry"
+"ITEM_TYPE_ENTRY";"Entry"
+"_ACTIVITY_ACTIONTYPE_COMMENT_YNCONTEST";"Comments on your contests"
+"_ACTIVITY_ACTIONTYPE_YNCONTEST_UPDATE";"Updating your contest"
+
+#notify_contest_activated
+"_EMAIL_NOTIFY_CONTEST_ACTIVATED_TITLE";"Your contest has been activated"
+"_EMAIL_NOTIFY_CONTEST_ACTIVATED_DESCRIPTION";"This is the email that gets sent to owner when contest has been activated"
+"_EMAIL_NOTIFY_CONTEST_ACTIVATED_SUBJECT";"Your contest has been activated"
+"_EMAIL_NOTIFY_CONTEST_ACTIVATED_BODY";"[header]
+
+Your contest has been activated. Please visit at http://[host][object_link] to more information.
+
+[footer]"
+
+#notify_contest_inactivated
+"_EMAIL_NOTIFY_CONTEST_INACTIVATED_TITLE";"Your contest has been in-activated"
+"_EMAIL_NOTIFY_CONTEST_INACTIVATED_DESCRIPTION";"This is the email that gets sent to owner when contest has been in-activated"
+"_EMAIL_NOTIFY_CONTEST_INACTIVATED_SUBJECT";"Your contest has been in-activated"
+"_EMAIL_NOTIFY_CONTEST_INACTIVATED_BODY";"[header]
+
+Your contest has been in-activated. Please visit at http://[host][object_link] to more information.
+
+[footer]"
+
+#notify_entry_activated
+"_EMAIL_NOTIFY_ENTRY_ACTIVATED_TITLE";"Your entry has been activated"
+"_EMAIL_NOTIFY_ENTRY_ACTIVATED_DESCRIPTION";"This is the email that gets sent to owner when entry has been activated"
+"_EMAIL_NOTIFY_ENTRY_ACTIVATED_SUBJECT";"Your entry has been activated"
+"_EMAIL_NOTIFY_ENTRY_ACTIVATED_BODY";"[header]
+
+Your entry has been activated. Please visit at http://[host][object_link] to more information.
+
+[footer]"
+
+#notify_entry_inactivated
+"_EMAIL_NOTIFY_ENTRY_INACTIVATED_TITLE";"Your entry has been in-activated"
+"_EMAIL_NOTIFY_ENTRY_INACTIVATED_DESCRIPTION";"This is the email that gets sent to owner when entry has been in-activated"
+"_EMAIL_NOTIFY_ENTRY_INACTIVATED_SUBJECT";"Your entry has been in-activated"
+"_EMAIL_NOTIFY_ENTRY_INACTIVATED_BODY";"[header]
+
+Your entry has been in-activated. Please visit at http://[host][object_link] to more information.
+
+[footer]"

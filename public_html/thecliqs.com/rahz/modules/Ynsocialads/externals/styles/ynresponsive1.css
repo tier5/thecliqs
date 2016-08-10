@@ -1,0 +1,181 @@
+.fixed-scrolling {
+	max-width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.yn_filter .global_form_box,	
+#my_campaigns .global_form_box,
+#statistic_form {
+	+foreground;
+	+rounded;
+	border: 1px solid $theme_border_medium_color;
+	padding: 1.5em !important;
+
+	.buttons { margin-top: 20px !important; }
+
+	input[type=text], 
+	input[type=email], 
+	input[type=password], 
+	input.text, 
+	textarea {
+		max-width: 100%;
+	}
+}
+
+#preview_ad { 
+	padding: 1em 0; 
+}
+
+#global_page_ynsocialads-ads-create-step-one #global_content,
+#global_page_ynsocialads-ads-create-choose-package #global_content {
+	padding-top: 30px;
+}
+
+.datepicker_dashboard {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+
+	z-index: 10;
+	th { font-size: 11px; }
+	td { font-size: 12px; }
+}
+
+.content_right {
+	width: 75%;
+}
+
+body[id^=global_page_ynsocialads] {
+	input[type="radio"], input[type="checkbox"]	{
+		margin-top: 2px;
+	}
+
+	#button {
+		background: $theme_button_background_color;
+		padding: .5em .8em;
+		font-weight: normal;
+		font-family: inherit;
+		border: 0;
+	}		
+
+	#button:hover {
+		background: $theme_button_background_color_hover;
+	}
+}
+
+.form_content {
+	h3 {
+		margin-top: 0;
+	}
+}
+
+#audience_div select,
+.campaign_div select, 
+.campaign_div input,
+.ynsocial_ads_cont_image #preview_ad_img {
+	max-width: 100%;
+}
+
+#audience_div input[type="radio"], #audience_div label {
+	display: inherit;
+}
+
+.review_your_ads li {
+	min-height: 20px;
+}
+
+.package-item {
+	.package-price span.price {
+		width: 180px;
+	}
+
+	.package-content p {
+		margin: 0;
+	}
+}
+
+.yn_filter .global_form_box > div,
+#my_campaigns .global_form_box > div,
+#filter_form > div {
+	margin-bottom: 10px;
+}
+
+table.admin_table.ynsocial_table thead tr th {
+	background: $theme_main_color_scheme !important;
+	border-bottom: 1px solid $theme_border_color !important;
+
+	a {
+		color: $theme_body_background_color;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.left_content,
+	.right_content {
+		width: 100%;
+	}
+
+	.price_div, .campaign_div, .schedule_div {
+		display: block;
+		width: 100%;
+		border: 0;		
+		padding: 0;
+	}
+
+	.price_div, .campaign_div {
+		margin-bottom: 1em;
+		border-bottom: 1px solid $theme_border_medium_color;
+	}
+
+	#ad_statistics {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.ad_type_div {
+		display: block;
+		margin: 10px 0;
+		width: 100%;
+	}
+	
+	.label_left,
+	.content_right {
+		width: 100%;
+		text-align: left;
+		margin-left: 0;
+		max-width: 100%;
+	}
+
+	.ynsocial_ads { max-width: 100%; }
+	.review_your_ads li > div:nth-child(1) {
+		float: none;
+	}
+
+	.package-item {
+		.package-price {
+			background-color: transparent;
+			height: auto;
+
+			span.price {
+				width: 100%;
+
+				&:after {
+					margin-left: 0;
+					right: 15px;
+				}
+			}
+
+			span.title {
+				padding: 10px 10px 0 10px;
+			}
+		}
+
+		.package-content {
+			padding-top: 0;
+		}
+	}
+	
+}

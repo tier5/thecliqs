@@ -1,0 +1,23 @@
+"Advanced Messages Plugin";"Advanced Messages Plugin"
+"HEADVMESSAGES_Admin general settings description";"Admin general settings description"
+"HEADVMESSAGES_Admin user levels settings description";"Admin user levels settings description"
+
+"HEADVMESSAGES_Enable messages";"Enable Advanced Messages?"
+"HEADVMESSAGES_Enable messages enter send";"HEADVMESSAGES_Enable messages enter send"
+
+"HEADVMESSAGES_Settings have been successfully saved";"Settings have been successfully saved"
+
+"HEADVMESSAGES_Form Admin Levels Description";"These settings are applied on a per member level basis. Start by selecting the member level you want to modify, then adjust the settings for that level below."
+"HEADVMESSAGES_Allow using advanced messaging?";"Allow using advanced messaging?"
+"HEADVMESSAGES_No, do not allow use advanced messages.";"No, do not allow use advanced messages."
+"HEADVMESSAGES_Yes, allow use advanced messages.";"Yes, allow use advanced messages."
+
+"HEADVMESSAGES_Send To";"Start typing friend name here"
+"HEADVMESSAGES_Subject";"Subject"
+"HEADVMESSAGES_Message body";"Message body"
+
+"HEADVMESSAGES_New";"new"
+"HEADVMESSAGES_No active dialogs";"No active dialogs"
+"HEADVMESSAGES_Enable messages enter send";"Enable sending messages by pressing Enter"
+
+"HEADVMESSAGES_With %1$s";"with %1$s"

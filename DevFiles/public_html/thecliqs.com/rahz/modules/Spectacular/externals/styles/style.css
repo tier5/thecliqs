@@ -1,0 +1,415 @@
+.wrapper-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top:0;
+}
+.screen-image {
+    position: absolute;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+.screen-image img {
+    width: 100%;
+}
+/* Image content css */
+/* Case of inclusion of header and footer */
+.layout_spectacular_images{
+    position:absolute;
+    left:0;
+    width:100%;	
+    background-color:#000 !important;
+}
+.layout_spectacular_images + div{
+    margin-top:720px;
+}
+/* Case of inclusion of header and footer ends here*/
+.spectacular_images_image_content {
+    float:left;
+    position:absolute;
+    top:0;
+    width:100%;
+    z-index:10;
+    bottom:0;
+    background:rgba(0, 0, 0, .2);
+}
+.spectacular_images_image_content a{
+    transition: all 0.2s ease-in 0s;	
+}
+.spectacular_images_page_container{
+    width:1200px;
+    margin:0 auto;
+    display:table;	
+}
+.spectacular_images_top_head{
+    float:left;
+    width:100%;
+    margin:10px 0 0;
+}
+.spectacular_images_image_content .layout_core_menu_logo{
+    float:left;
+    margin-top: 18px;
+}
+.spectacular_images_image_content .layout_core_menu_logo a {
+    color:#fff;
+    height:50px;
+    float:left;
+}
+.spectacular_images_image_content .layout_core_menu_logo a img{
+    margin-top:-16px;
+}
+.spectacular_images_image_content .seao_browse_btn {
+    border: medium none;
+    margin-top: 7px;
+}
+.spectacular_images_image_content .seao_browse_btn > a, .spectacular_images_image_content .seao_browse_btn > a:hover {
+    color: #fff;
+}
+.spectacular_images_image_content .seao_browse_btn > a::after, 
+.spectacular_images_image_content .seao_browse_btn:hover > a::after {
+    border-top-color: #fff;
+}
+.spectacular_images_top_head_right{
+    float:right;
+    margin:15px 0 0 0;	
+}
+.spectacular_images_top_head_right span{
+    font-size:12px;
+    text-transform:capitalize;
+}
+.spectacular_images_top_head_right span a{
+    color:#fff;
+    letter-spacing:1px;
+}
+.sign_up_login_btn{
+    margin:0 26px 0 0;
+}
+.sign_up_login_btn a{
+    margin:0 8px;
+    font-size:14px;
+}
+.spectacular_images_create_account_btn a {
+    padding:8px 14px;
+    border-bottom:none;
+}
+/* Middle caption */
+.spectacular_images_middle_caption{
+    color:#fff;
+    float:left;
+    width:100%;
+    text-align:center;
+    margin:130px 0 0 0;
+    min-height:220px;
+}
+.spectacular_images_middle_caption h3{
+    font-size:55px;
+    color:#fff;
+    letter-spacing:3px;
+    margin-bottom:30px;
+    text-transform:uppercase;
+    font-weight:bold !important;
+		line-height: 55px;
+}
+.spectacular_images_middle_caption p{
+    font-size:20px;	
+    letter-spacing:2px;
+}
+.spectacular_images_middle_caption a {
+    background:rgba(255, 255, 255, 0.3);
+    color:#FFFFFF;
+    display:table;
+    font-size:18px;
+    margin:35px auto 70px auto;
+    padding:13px 30px;
+    letter-spacing:1px;
+}
+.spectacular_images_middle_caption a:hover{
+    background:rgba(0, 0, 0, 0.3);	
+}
+/* sign up login btn css */
+.layout_spectacular_images .spec_btnsblock{
+    width:100%;
+    margin:0 auto;
+    margin-top:1%;
+    text-align:center;
+    float:left;
+}
+[dir="rtl"] .layout_spectacular_images .spec_btnsblock{
+    text-align:center;
+}
+.layout_spectacular_images .spec_btnsblock a{
+    color:#fff!important;
+    font-size:18px;
+    text-decoration:none;
+    background-color:rgba(255,255,255,.5);
+    border-radius:0;
+    padding:12px 45px;
+    box-shadow:none;
+}
+.layout_spectacular_images .spec_btnsblock a + a{
+    margin-left:12px;
+    opacity:.7 
+}
+.layout_spectacular_images .spec_btnsblock a:hover{
+    background-color:#fff;
+    text-shadow:none;
+}
+.layout_spectacular_images .spec_btnsblock a + a:hover{
+    color:#fff!important;
+    text-shadow:none;
+    opacity:1;
+}
+/*Landing Search widget + Advanced Search widget*/
+.layout_spectacular_landing_search form{
+    text-align:center;
+}
+#global_content .layout_siteadvsearch_search_box,
+span#global_content_simple .layout_siteadvsearch_search_box{
+    width:100%;
+    position:absolute;
+    z-index:10;
+    margin-bottom:0;
+    right:0;
+    left:0;
+}
+.layout_spectacular_landing_search{
+    width:100%;
+    position:absolute;
+    z-index:10;
+    margin-top:-90px;
+    margin-bottom:0;
+    right:0;
+    left:0;
+    background:rgba(0, 0, 0, .4);
+    padding:36px 0;
+    bottom:0;
+}
+.layout_spectacular_landing_search .siteadvsearch_search_box_wrap {
+    float:none!important;
+    border:none!important;
+}
+.layout_spectacular_landing_search #siteadv_menu_mini_menu{
+    text-align:center;
+}
+.layout_spectacular_landing_search #global_search_form{
+    position:relative;
+}
+.layout_spectacular_landing_search form input[type="text"]{
+    padding:11px 5px!important;
+    border-radius:0;
+    min-width:492px;
+    max-width:492px;
+}
+.layout_spectacular_landing_search ul.adsearch-autosuggest{
+    position:inherit;
+    margin:0 auto;
+    min-width:500px;
+}
+html #global_content .layout_spectacular_landing_search ul + button{
+    width:45px!important;
+    height:40px!important;
+    margin-left:-48px!important;
+    border-radius:0px;
+    vertical-align:top!important;
+    background-image:url(../images/search-icon.png) !important;
+    position:absolute;
+    top:0;
+    right:0;
+    border-bottom:none !important;
+}
+[dir="rtl"] .layout_spectacular_landing_search ul + button{
+    border-radius:2px 0px 0px 2px;
+    margin-right:-48px!important;
+    left:0;
+}
+.layout_spectacular_landing_search button{
+    width:45px;
+    height:42px;
+    margin-left:-48px;
+    border:none;
+    border-radius:0;
+    vertical-align:top;
+    background-image: url(../images/search-icon.png);
+    border-bottom:none;
+    background-repeat:no-repeat;
+    background-position:50% center;
+} 
+[dir="rtl"] .layout_spectacular_landing_search button{
+    border-radius:2px 0px 0px 2px;
+    margin-right:-48px;
+} 
+
+/* How it works button css */
+#how_it_works {
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    right:0;
+    left:0;
+    height:100%;
+    z-index: 1000;
+    float:left;
+    display:table-cell;
+}
+/* Advanced search inside image container */
+body .layout_spectacular_images .layout_spectacular_landing_search .layout_siteadvsearch_search_wrapper {
+    border: medium none;
+    float: none;
+}
+#global_content .spectacular_images_image_content .layout_siteadvsearch_search_box {
+    margin: -20px 0 0;
+}
+/* Advanced events bottom search */
+.layout_spectacular_landing_search .layout_siteevent_searchbox_siteevent {
+    margin: 0 auto;
+    width: 860px;
+}
+div.layout_spectacular_landing_search .layout_siteevent_searchbox_siteevent input, div.layout_spectacular_landing_search .layout_siteevent_searchbox_siteevent select{
+    box-sizing: border-box;
+    max-width: inherit;
+    min-width: inherit;
+    padding-left: 13px !important;
+    width: 210px !important;
+    height:38px;
+}
+div.layout_spectacular_landing_search .siteevent-search-box .form-elements{
+    border-radius:0;	
+}
+.layout_spectacular_images .siteevent-search-box #buttons-element button::after, 
+.layout_spectacular_images .siteevent-search-box #submitButton-element button::after{
+    content:none;	
+}
+.layout_spectacular_images .siteevent-search-box #buttons-wrapper, 
+.layout_spectacular_images .siteevent-search-box #submitButton-element{
+    margin-left:49px;
+    margin-top:-1px;	
+}
+.layout_spectacular_images .siteevent-search-box #buttons-element button, 
+.layout_spectacular_images .siteevent-search-box #submitButton-element button{
+    width:39px;
+    height:40px;	
+}
+/* Advanced events bottom search  ends here*/
+/* Navigation btns on hover effect */
+#next-btn, #prev-btn {
+    opacity: 0;
+    transition: all 0.2s ease-in 0s;
+} 
+.layout_spectacular_images:hover #next-btn, 
+.layout_spectacular_images:hover #prev-btn {
+    opacity: 1;
+}
+/* Navigation btns on hover effect ends here */
+/* IF image is inside layout top */
+.layout_top .layout_middle{display:inherit;}
+/* Inner page image widget caption content */
+.spectacular_inner_image .spectacular_images_middle_caption {
+    margin: 300px 0 0;
+}
+/* Spectacular search box widget */
+.layout_spectacular_search_box {
+    float: left;
+    margin:10px 0 0 24px;
+    position:relative;
+}
+.layout_spectacular_search_box input {
+    border-radius: 2px;
+    font-size: 11px;
+    padding: 7px 10px;
+}
+.layout_spectacular_search_box button {
+    background-color: transparent;
+    background-image: url("../images/search-icon-big.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    min-height: 20px;
+    padding: 0;
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    width: 20px;
+}
+/* Inner page image widget caption content ends here */
+
+
+/*_________________________Responsive css__________________________*/
+
+@media screen and (max-width:920px){
+    /* Content container */
+    .spectacular_images_page_container{width:100%;padding:0 2%;box-sizing:border-box;}
+    #next-btn, #prev-btn{display:none;}
+    /* How it works page content */
+    #show_help_content, #show_help_content > div{width:100% !important;box-sizing:border-box;}
+    /* Advanced events search */
+    div.layout_spectacular_landing_search .siteevent-search-box .form-elements{width:100% !important;position:relative;}
+    div.layout_spectacular_landing_search .siteevent-search-box #buttons-wrapper, div.layout_spectacular_landing_search .siteevent-search-box #submitButton-element {margin: 0 !important;position: absolute;right: 0 !important;top: 0;}
+    .layout_spectacular_landing_search .siteevent-search-box button{margin-left:-40px;margin-top:-1px;}
+    .layout_spectacular_landing_search .layout_siteevent_searchbox_siteevent{width:100%; padding:0 10px; box-sizing:border-box;}
+    div.layout_spectacular_landing_search .layout_siteevent_searchbox_siteevent input, div.layout_spectacular_landing_search .layout_siteevent_searchbox_siteevent select{width:100% !important;}
+    .layout_spectacular_images .siteevent-search-box {width: 100%;}
+    .layout_siteevent_searchbox_siteevent #searchBox.siteevent-search-box .form-elements .form-wrapper {width: 23%;}
+    /* advanced search */
+    .layout_spectacular_landing_search .layout_siteadvsearch_search_box {display: block !important;}
+    /* Help button bottom spacing */
+    .spectacular_images_middle_caption a{margin-bottom:40px;}
+}
+
+@media screen and (max-width:768px){
+    /* Home page video search */
+    .layout_spectacular_landing_search form {width: 60%;}	
+    .layout_spectacular_landing_search form input[type="text"]{max-width:inherit !important;min-width:inherit !important;}
+    #global_content .layout_spectacular_images .layout_spectacular_landing_search .layout_siteadvsearch_search_box input[type="text"]{width:95% !important;}
+    .layout_spectacular_landing_search ul.adsearch-autosuggest {display:none !important;}
+    /* How it woks */
+    #how_it_works{min-height:410px;}
+    /*#how_it_works{display:table;}*/
+    #show_help_content > div div{ background-size: 100% auto;width:33% !important;}
+    #show_help_content div a span:last-child{font-size:12px !important;}
+    #show_help_content div{margin-bottom:0 !important;margin-top:40px !important;}
+    div#show_help_content > div div > div {height: auto !important;min-height: 100px !important;}
+    /* Logo */
+    .spectacular_images_image_content .layout_core_menu_logo {margin: 14px 0 0 0;width: 52%;}
+    .spectacular_images_image_content .layout_core_menu_logo a {font-size: 20px;}
+    .spectacular_images_image_content div.layout_core_menu_logo a img {margin-top: 0; max-width:80%;}
+    /* Browse main menu */
+    .seao_browse_btn{padding:0;}	
+    /*Browse Button*/
+    .spectacular_images_image_content .seao_browse_btn {background:#fff;border-radius: 0;margin: 0;padding: 4px 20px; position: absolute;left: 0;right: 0;top: 0;}
+    .seao_menu_toggle {cursor: pointer;display: block;float: left;font-size: 22px !important;padding: 6px 14px;}
+    .seao_browse_btn a {display:none;}
+    .seao_browse_btn:hover .navigation{display:none;}
+    .seao_browse_btn .navigation {box-sizing: border-box;float: left;left: 0;margin:32px auto !important;right: 0;width: 100%;}
+    .seao_browse_btn .navigation::after, .seao_browse_btn .navigation::before{content:none;}
+    /* Video top head container */
+    .spectacular_images_top_head{margin-top:40px;}
+    /*Create Event button*/
+    .spectacular_images_create_account_btn{left:0; position:absolute; right:0; text-align:center; width:100%; margin:35px 0 0;}
+    .spectacular_images_create_account_btn a {padding: 5px 14px;}	
+    /* top sigup-sign in buttons */
+    .spectacular_images_top_head_right {width:45%;text-align: right;}	
+    .spectacular_images_middle_caption{margin-top:55px; min-height: 130px;}
+    .spectacular_images_middle_caption > h3 {font-size: 20px;margin-bottom:5px;line-height:25px;letter-spacing: normal;}
+    .spectacular_images_middle_caption p{font-size:14px; letter-spacing: normal;}
+    .spectacular_images_middle_caption a{margin-bottom: 8px; padding: 5px 20px; font-size: 14px;}
+    .spectacular_images_page_container .spec_btnsblock a {padding: 5px 20px; font-size: 14px;}
+    /* slider images */
+    .layout_spectacular_images .slideblok_image img, .layout_spectacular_images #slide-images{height:410px;}
+    div.layout_spectacular_images + div { margin-top: 410px;}	
+    /*Advanced Search*/
+    div.layout_spectacular_landing_search {padding: 15px 0; position:relative; margin-top:340px;margin-right:-2%;margin-left: -2%;width: auto;}	
+}
+
+@media screen and (max-width:580px){
+    /* How it works */
+    div#show_help_content > div div > div {min-height: 50px !important;}
+    #show_help_content div div span{font-size:16px !important;}
+    /* Advanced search */
+    .layout_spectacular_images .layout_siteadvsearch_search_box form{width:92%;}
+}
+

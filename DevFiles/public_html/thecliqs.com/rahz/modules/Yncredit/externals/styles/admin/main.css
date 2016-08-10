@@ -1,0 +1,171 @@
+.yncredit-menu-tab {
+	width: 100%;
+	border: 1px solid #DDD;
+	padding-bottom: 9px;
+	padding-top: 8px;
+	padding-left: 3px;	
+	margin-bottom: 3px;
+	text-align: center;
+}
+.active-menu-tab
+{
+	background-color: #d7e7f0;
+}
+.active-menu-tab a
+{
+	font-weight: bold;
+}
+.yncredit_admin_level_form_heading
+{
+	font-weight: bold;
+}
+.yncredit_ticket_text_input
+{
+	width: 25px;
+	height: 8px;
+}
+.yncredit_assign_credits
+{
+	width: 100%;
+}
+.yncredit_assign_credits  th
+{
+	font-weight: bold !important;
+	height: 45px;
+}
+.yncredit_assign_credits tr
+{
+	background-color: #FFF;
+	height: 35px;
+}
+.admin_yncredit_module
+{
+	background-color: #d7e7f0 !important;
+	font-weight: bold !important;
+	padding-left: 5px;
+}
+.center
+{
+	text-align: center;
+}
+.yncredit_form_assign_credit div
+{
+	padding-top: 0px !important;
+	padding-right: 0px !important;
+	padding-bottom: 6px !important;
+	padding-left: 1px !important;
+	border: none !important;
+	background: none !important;
+}
+#global_page_yncredit-admin-member-credit-index .pages
+{
+	clear: none;
+}
+
+.yncredit-color { color: #f7941e; }
+.yncredit-color-up { color: #b3d97e; font-weight: bold;}
+.yncredit-color-down { color: #ed1c24; font-weight: bold;}
+#global_page_yncredit-admin-member-credit-transactions .my-credit-data 
+{
+    margin-top: 1em;
+    
+    .yncredit-table-title {
+        background-color: $theme_link_color;
+        font-weight: bold;
+        padding: .4em 0;
+        +rounded();
+        
+        & > div { color: $theme_body_background_color; }
+    }
+    
+    .yncredit-table-content {
+        padding: .7em 0;    
+    }
+    
+    .yncredit-table-content + .yncredit-table-content {
+        border-top: 1px solid $theme_border_color;
+    }
+    
+    .yncredit-table-title,
+    .yncredit-table-content {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        & > div {
+            padding: .4em .7em;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -o-box-flex: 1;
+            -ms-flex:1;            
+            box-flex:1;
+            flex: 1;
+            width: 100%;
+        }        
+    }
+    
+    .yncredit-table-content > div:nth-child(3) { font-weight: bold; }
+}
+
+#global_page_yncredit-admin-member-credit-send-mass-credits {
+    .yncredit_mass_levles, .yncredit_mass_credit {
+        margin-top: 1em;
+    }   
+    
+    fieldset {
+        border: 1px solid $theme_border_color;
+        padding: 1em;
+    }
+    
+    legend {
+        font-weight: bold;
+    }
+    
+    .yncredit_mass_credit > * {
+        display: inline-block;
+        
+        li { 
+            display: inline-block;
+            margin-left: 1em; 
+        }
+    } 
+    
+    .yncredit_mass_members {
+        ul {
+            height: 65px;
+            overflow-y: auto;    
+        }
+        
+        li { 
+            display: inline-block;
+            position: relative;
+            margin-right: 1em;
+            padding-top: 1em;
+        }
+        
+        li .member-delete {
+            background-image: url(~/application/modules/Core/externals/images/admin/referrers_clear.png);
+            background-position: center;
+            position: absolute;
+            top: 5px;
+            right: -5px;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+#global_page_yncredit-admin-transactions-index #filter_form
+{
+	input#member,
+	input#start_date,
+	input#start_date,
+	input#end_date,
+	select#group,
+	select#modu,
+	select#action_type
+	{
+		width: 100px;
+	}
+}

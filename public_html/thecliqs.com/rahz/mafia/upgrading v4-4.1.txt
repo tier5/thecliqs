@@ -1,0 +1,13 @@
+upload all crons and change line 2 in each cron file
+5mins.php
+10mins.php
+1hour.php
+24hour.php
+newsletter-cron.php
+
+Overwrite the following files
+setup.php
+signup.php
+new$letta.php
+
+in setup.php adjust and insert all your information in this file for the mysql connection

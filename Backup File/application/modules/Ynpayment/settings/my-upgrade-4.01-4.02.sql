@@ -1,0 +1,2 @@
+INSERT IGNORE INTO `engine4_payment_gateways` (`gateway_id`, `title`, `description`, `enabled`, `plugin`, `config`, `test_mode`) VALUES 
+(101, 'iTransact', NULL, '0', 'Ynpayment_Plugin_Gateway_ITransact',NULL, '0');

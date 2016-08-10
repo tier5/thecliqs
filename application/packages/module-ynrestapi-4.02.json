@@ -1,0 +1,2107 @@
+{
+  "type": "module",
+  "name": "ynrestapi",
+  "version": "4.02",
+  "revision": null,
+  "path": "application\/modules\/Ynrestapi",
+  "repository": null,
+  "date": "Tue, 07 Jun 2016 03:53:55 +0000",
+  "title": "YN - SE API",
+  "description": "YN - SE API",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"https:\/\/socialengine.younetco.com\/\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Tue, 07 Jun 2016 03:53:55 +0000",
+    "title": "YN - SE API",
+    "description": "YN - SE API",
+    "developer": null,
+    "authors": [
+      "<a href=\"https:\/\/socialengine.younetco.com\/\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Module",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.2",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Ynrestapi": {
+      "type": "directory",
+      "path": "application\/modules\/Ynrestapi",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 544,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Activity.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 34170,
+          "sha1": "e78b5bd26282140f1cd28a7685a6a6b1e143c4de"
+        },
+        {
+          "path": "Api\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 39168,
+          "sha1": "1107c592f44e576e5198140edc8ef24305462a04"
+        },
+        {
+          "path": "Api\/Base.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 28535,
+          "sha1": "bc5e798b3a3bd1dfdc9558b15d93925200e5eecf"
+        },
+        {
+          "path": "Api\/Blog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 24124,
+          "sha1": "f524733b9e8a294563115b99bd3358e5333ebc12"
+        },
+        {
+          "path": "Api\/Classified.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 39571,
+          "sha1": "4a0ff082318bb86c5c96cf4b524bf0767b4a422f"
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 43426,
+          "sha1": "f8992008a01b1b7a729317709f9068fb1a33be2f"
+        },
+        {
+          "path": "Api\/Event.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 75026,
+          "sha1": "dc844dbd6a5b487d025d97bd7d9cd3dea71a3419"
+        },
+        {
+          "path": "Api\/Forum.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1968,
+          "sha1": "ed7b01cc34d79eb1348ff4291d2e17befe4a8e89"
+        },
+        {
+          "path": "Api\/Group.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 78266,
+          "sha1": "09fd11d04fb46c1210801706ac9a6c9b340f1b90"
+        },
+        {
+          "path": "Api\/Message.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22444,
+          "sha1": "0606cba739f2b60cbb2417236d3a55beba03ee71"
+        },
+        {
+          "path": "Api\/Music.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25844,
+          "sha1": "daffa2486a7814d4e049e6ba2b747c5ca5a62c02"
+        },
+        {
+          "path": "Api\/Notification.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4363,
+          "sha1": "b8c68faef38d43410f7f85a9ccd081b91042bd08"
+        },
+        {
+          "path": "Api\/User.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 96347,
+          "sha1": "ef2955b8df7c54daa942310104f3d056d9e3d8f7"
+        },
+        {
+          "path": "Api\/Video.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 45774,
+          "sha1": "a176e1615f011f76b1aac5a78522ad9b8fe2b695"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2710,
+          "sha1": "1e9ad8f0d3c3b62082e570bec1f2ace1fc4ba380"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6110,
+          "sha1": "98de76f76dfb2eabfac1f88dc9fbfa67d481155b"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6731,
+          "sha1": "941bf9bd3ae5277c33df4182021d6a7590aa7709"
+        },
+        {
+          "path": "controllers\/OauthController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2721,
+          "sha1": "e9d468a7947af9ac3692529726f3a125022a6807"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/libraries",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 340,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/.travis.yml",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 803,
+          "sha1": "48ef2ed4286e98207fc5849a3691fab0f8bfc662"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/CHANGELOG.md",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7885,
+          "sha1": "cf6d074b62bc72af9db2f6123d90efe2b1241be7"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/composer.json",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 836,
+          "sha1": "2a40ece21eab660c88db9e2b5c4a8ef75184a609"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/LICENSE",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1074,
+          "sha1": "b73dbe014b4b0c4fd59df5ef853ee5bdfbcaf12d"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/phpunit.xml",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 657,
+          "sha1": "597ce7d7a1a94a57c5a7b75f672e61d13631675b"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/README.md",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 405,
+          "sha1": "ce9fcc608956fb1798d688bbf9294bdc54ee9cdc"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 612,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Autoloader.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1048,
+          "sha1": "fc1e6976276efb1825257799028722d6e197bec2"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ClientAssertionType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ClientAssertionType\/ClientAssertionTypeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 336,
+          "sha1": "2c5cbd5c887a70cd2eb97bfa93988b5cfda2c31d"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ClientAssertionType\/HttpBasic.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4971,
+          "sha1": "e09ff4325528b90fcd6162000e4f26e99ad116d2"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Controller",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Controller\/AuthorizeController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16057,
+          "sha1": "65b1ba64511f6e12908971d2c4e0977e51709170"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Controller\/AuthorizeControllerInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1475,
+          "sha1": "c2c15a2d137b6dafdf22228278b210ff0f434bd0"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Controller\/ResourceController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4020,
+          "sha1": "fc27265e55f835e3beb3a884e8417906dc9c8863"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Controller\/ResourceControllerInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 807,
+          "sha1": "eef4d3af6d67c4802a9e03e4fcbba9220abe094d"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Controller\/TokenController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10754,
+          "sha1": "41515ebf000d0d2987e191bcf1e5805beab34893"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Controller\/TokenControllerInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 933,
+          "sha1": "93944bd3626efefda12646acd1b1f9ad41d81c22"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Encryption",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Encryption\/EncryptionInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 286,
+          "sha1": "9ba6819f9557d50ebcd7895939cfdfd8e658ed94"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Encryption\/FirebaseJwt.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1236,
+          "sha1": "7e9ec9a40286fd6564f33386ff91d548bdd0bb44"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Encryption\/Jwt.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4989,
+          "sha1": "ec7428a483917e331f3c4394a300f4335ffbf65a"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/GrantType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/GrantType\/AuthorizationCode.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3096,
+          "sha1": "50c96ffaa3ed065618400f2318fca8b1648aad26"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/GrantType\/ClientCredentials.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1807,
+          "sha1": "a4fbca16d88362a2df27ed12f16f7ef00539e803"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/GrantType\/GrantTypeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 568,
+          "sha1": "f91af955a8831b3e0a660944957ad07762ffe513"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/GrantType\/JwtBearer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7281,
+          "sha1": "aee5f65858e88b9afd7d1ec0c26d6d67cd291ddd"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/GrantType\/RefreshToken.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4030,
+          "sha1": "47a09606baad2196635ccb20695d4ce747d2c692"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/GrantType\/UserCredentials.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2234,
+          "sha1": "1cd7b47c3f905fb0107ae1d893a5f9ee72a619d0"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Controller",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Controller\/AuthorizeController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3551,
+          "sha1": "d4818e7e6e92a16f06f590159d16ad299e7f6435"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Controller\/AuthorizeControllerInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 251,
+          "sha1": "243bc9c7443161c5c3a6b05678e093e47c582ea6"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Controller\/UserInfoController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1831,
+          "sha1": "6bb9df5bf1cc696699d37eb21559f09116d3eda0"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Controller\/UserInfoControllerInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 565,
+          "sha1": "08ec6647a5c71805449e13a554ee987aece66bd5"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/GrantType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/GrantType\/AuthorizationCode.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1078,
+          "sha1": "e938bb21de4e40621b470da7b35c771db3c94afd"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 340,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/AuthorizationCode.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2124,
+          "sha1": "49c2e6a391efe11e5ca945acbf7367a0734e99e6"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/AuthorizationCodeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1112,
+          "sha1": "5187ff4051c9738da415effffe41d9eabc950441"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/CodeIdToken.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 666,
+          "sha1": "c6cdeedd5bc28d8a7e0f8140c0820b4158e1c929"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/CodeIdTokenInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 159,
+          "sha1": "d53f222d5302e81b042fe6d970b1e249e8faa2dd"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/IdToken.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4228,
+          "sha1": "c5d51385851d6103982171521f067a513c371107"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/IdTokenInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1082,
+          "sha1": "e4e6fc4225835af71e901a511e374bb448e44e68"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/IdTokenToken.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 812,
+          "sha1": "b0379daf0ec8822752c6abd8b7d1663f7ffbd897"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/ResponseType\/IdTokenTokenInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 160,
+          "sha1": "b9aedb051233f3564a9c17e73896edb0a24893d8"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Storage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Storage\/AuthorizationCodeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1553,
+          "sha1": "4adfc0a08ffb4cfaf33366f9adb3e59efe62c812"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/OpenID\/Storage\/UserClaimsInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1387,
+          "sha1": "c65230b452e2a4f46986282bea04127d5d4f956e"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Request.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7962,
+          "sha1": "ce4474711bedd1be49aeeaedee6d53abf96fba6e"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/RequestInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 315,
+          "sha1": "32c70b1642797fb8bcdd895bb0a003627b82bb35"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Response.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10292,
+          "sha1": "727d7731195212bc316547bae0870934a4bde1e4"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 642,
+          "sha1": "c499d8bacbb5f8bef7ce0a9eba7a2c701804ca80"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseType\/AccessToken.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7696,
+          "sha1": "02f0ae91b30493fa1f8cfdc3726e22d416b2fd67"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseType\/AccessTokenInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1181,
+          "sha1": "3185fc21be54ab3994d53a7fd6eaca9e32756afb"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseType\/AuthorizationCode.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3258,
+          "sha1": "14fcb0da6155d50a4364a009a84000dc6edd2c7e"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseType\/AuthorizationCodeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1010,
+          "sha1": "dc099dda2167a67a2e0bb41f4709656be4b9073f"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseType\/JwtAccessToken.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4758,
+          "sha1": "e504eef03bdf2e5e09243f88cb97eb4d67fb4fc3"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ResponseType\/ResponseTypeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 143,
+          "sha1": "764cc488bcc1c8d9a7b2a8f9a703c834b1dc9407"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Scope.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2903,
+          "sha1": "34fa83538d87677152554e63f9dfa0b3e86ab15b"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/ScopeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 984,
+          "sha1": "aac26c7a7045b8b3794c10a4aa571e20e1e6d27f"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Server.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 34328,
+          "sha1": "d7d21ee0ead8e9bce6925893087970618bd6e35e"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 680,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/AccessTokenInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2089,
+          "sha1": "b345abd7bd69ccb038e91aad1f4ed4db5fb6d8ee"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/AuthorizationCodeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3170,
+          "sha1": "2d2cc2e135811c2e755f295da41e849b722467f2"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/Cassandra.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14508,
+          "sha1": "25168aae6dbc11d6b02c24d512ec24236cb422dd"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/ClientCredentialsInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1372,
+          "sha1": "2f93e6684209e768731fe1f21b6db2e32a46dd75"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/ClientInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2340,
+          "sha1": "310a4a73325b382b0a1c1de7600c11af401ba8cc"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/CouchbaseDB.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10335,
+          "sha1": "b9c4831a18edf612d21f97c7fcaf1647c7f873f1"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/DynamoDB.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17273,
+          "sha1": "c8848b871d94708d27c87bdec8c4981ca62716cb"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/JwtAccessToken.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3157,
+          "sha1": "3d2276dd947d8791081831179ef6ababaea165ed"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/JwtAccessTokenInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 272,
+          "sha1": "4231fe0b73e4bbe968b5d2eb5b11453b5bd9c83a"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/JwtBearerInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1993,
+          "sha1": "927b5304abeeb59214587a5a09d175db62bb32fe"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/Memory.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11327,
+          "sha1": "964a2b1296adfdf37e29232752dfbdc31db198b2"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/Mongo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10589,
+          "sha1": "98523a926fc3ff61c9e2235b01c91918320941aa"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/Pdo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21264,
+          "sha1": "f93d2ea96be41668ad4720eff777851d95067712"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/PublicKeyInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 407,
+          "sha1": "86979c56eb9f714827d45ec8176a856ee2737477"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/Redis.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9298,
+          "sha1": "cb697c232ddef9dd2b479562589e16c7a4c6c07d"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/RefreshTokenInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2675,
+          "sha1": "254298cdf44cf4050f644e1eddc9f8ed9b6374b6"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/ScopeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1192,
+          "sha1": "c10dcd70b5735eda17e9b02fd461a00c448578c6"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/Storage\/UserCredentialsInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1647,
+          "sha1": "86958b1292ca906f271134b198d71732d47ad1f8"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/TokenType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/TokenType\/Bearer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4666,
+          "sha1": "f1a7eaa148ce98d5d4e5ba081a47dc44e56b2098"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/TokenType\/Mac.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 410,
+          "sha1": "ecccfdc9a8c6284c01becdb6683d210bf5ee0b8f"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/src\/OAuth2\/TokenType\/TokenTypeInterface.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 433,
+          "sha1": "b73a78d78acbd04b461aea3cca35e50682fdb566"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 326,
+          "sha1": "1a31baf80cc013accc2c9c56b1b812313d3f7b2f"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/cleanup.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 457,
+          "sha1": "e3df9a3d2ac0067f5d1c052e400bf658a84f9fb8"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/config",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/config\/keys",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/config\/keys\/id_rsa",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 886,
+          "sha1": "da92c0c0944f895b17f8751629d5b3b6784cf1d7"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/config\/keys\/id_rsa.pub",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 939,
+          "sha1": "a73773ec016bf1b457868c51ef4066278ec236af"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/config\/storage.json",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8348,
+          "sha1": "794909543c25625eca5a083e5cc0a097ec705bb9"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib\/OAuth2",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib\/OAuth2\/Request",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib\/OAuth2\/Request\/TestRequest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1294,
+          "sha1": "b8c24cea07c505e00b3d7ef9fc61307da65b2c09"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib\/OAuth2\/Storage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib\/OAuth2\/Storage\/BaseTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1148,
+          "sha1": "23f5c7e8de4f75a9ddd184aba0484ecb52dd114a"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib\/OAuth2\/Storage\/Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 35286,
+          "sha1": "5e4d6bc433fe187c2e8225b6fb0dd5e3a36b230c"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/lib\/OAuth2\/Storage\/NullStorage.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 503,
+          "sha1": "7fe3e3785d63bceb85cee3389fd4b07d0bf754f7"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 476,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/AutoloadTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 528,
+          "sha1": "fa2bb5d59ef8cc668fd2a7cbf51e7933433c97c3"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Controller",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Controller\/AuthorizeControllerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20073,
+          "sha1": "15f1dff0bc75eb6cf11b2131faa6b30b2c23b760"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Controller\/ResourceControllerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7429,
+          "sha1": "4d8f0c70ba7bf0cfb0b25ed2be1e483e704e96df"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Controller\/TokenControllerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12558,
+          "sha1": "c1a0917c133aa6a35cde4df0c07e591ab1028583"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Encryption",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Encryption\/FirebaseJwtTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3496,
+          "sha1": "8e835cf321ee3e4f4f3958456c52c579cd1bf95c"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Encryption\/JwtTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3448,
+          "sha1": "5696ed3f25be712e86cb1debd1221ab40bead4cd"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/GrantType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/GrantType\/AuthorizationCodeTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9067,
+          "sha1": "6259d2fd421038c2c3b58faf7d7a8d9f8974cb48"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/GrantType\/ClientCredentialsTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6460,
+          "sha1": "a394a8359b8eea8088aaa621abf3205d179aaba8"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/GrantType\/ImplicitTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5997,
+          "sha1": "3534b1d6b45ef54aa3eb4d9f7b67ec1bd64c512c"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/GrantType\/JwtBearerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14507,
+          "sha1": "8f1708871d846d02873993f127b593c94deaddb4"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/GrantType\/RefreshTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9346,
+          "sha1": "689e94ca99bf5cf082550a6cc7e2693ff36b43fd"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/GrantType\/UserCredentialsTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7287,
+          "sha1": "740bf040d3cc5d36d5962804a482242df4d12633"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/Controller",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/Controller\/AuthorizeControllerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7196,
+          "sha1": "e1a360d625a1203852e8975d55f5876ad14f3063"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/Controller\/UserInfoControllerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1384,
+          "sha1": "23f5a7f93f7cbd184db83bfaa9ad35552811137b"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/GrantType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/GrantType\/AuthorizationCodeTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2054,
+          "sha1": "ed6d324745d97e4b9e6c811c1b3ddc7b9fd5b3d4"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/ResponseType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/ResponseType\/CodeIdTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3269,
+          "sha1": "cc43312897552c6fc1bf6e1f916c4ecefbe3c6b9"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/ResponseType\/IdTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6871,
+          "sha1": "ffa3bd9e819eaabb40dc918cb9471f2b185c71f5"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/ResponseType\/IdTokenTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3301,
+          "sha1": "9a43cdc4da08f32fd559ee6eeda7fcbbfd6e06b3"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/Storage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/Storage\/AuthorizationCodeTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3965,
+          "sha1": "15f0c4ac0d7284e08037c773bd2e297f7970792f"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/OpenID\/Storage\/UserClaimsTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1117,
+          "sha1": "1e901632ab359db709d7a750be0904551811304b"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/RequestTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2971,
+          "sha1": "f6338c7ec60f49efbc6ab838c445b7c817ca32e8"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/ResponseTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 406,
+          "sha1": "29e4c3cbdd34dc955d261118d1415a9124b9aeb3"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/ResponseType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/ResponseType\/AccessTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3647,
+          "sha1": "b9062f6f702337b72ee40f2d412e1e89c5fe0474"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/ResponseType\/JwtAccessTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7062,
+          "sha1": "616a19b8913d363bb801cd057d93fe936bf10bf3"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/ScopeTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1554,
+          "sha1": "6a49455e228b46fbabb87ecbc98f1ae8af9e63e0"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/ServerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 27569,
+          "sha1": "71e157eb9d83d3d1044bb7afafa8fa5c76493773"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 476,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/AccessTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3135,
+          "sha1": "bfb8df76676021b1bc5c7213abe8f15d33a7d192"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/AuthorizationCodeTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4224,
+          "sha1": "31f9363323f0b7d3cad8e4d0f7c731bc0aff6779"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/ClientCredentialsTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 828,
+          "sha1": "cd91f0cd03709eb07a62a0cfbd55aa06a56fd907"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/ClientTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2913,
+          "sha1": "9ea2dc3786a29d926a64a1bdc675abe7685c31b3"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/DynamoDBTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1120,
+          "sha1": "352d2bd3a59e375493e969591379b4824c62e4ac"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/JwtAccessTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1201,
+          "sha1": "ce735e9943ec5609021615709f9e96163e67851f"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/JwtBearerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 728,
+          "sha1": "6f85553661693313c681e9a9bb5d7366d15e6eed"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/PdoTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1154,
+          "sha1": "de7d84cd0151be0f1ac07b8db8a79ca7e99332c0"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/PublicKeyTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 864,
+          "sha1": "d69034bad2cfc91b6670935b5db6b228955d498d"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/RefreshTokenTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1519,
+          "sha1": "77aed1f33f078332e84a7f0fb170d7fc19d24516"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/ScopeTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1580,
+          "sha1": "6d47de8a6b4d8f3b967e39799c6f4d67f4af79dd"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/Storage\/UserCredentialsTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1467,
+          "sha1": "006a416fe441f78da303675b0e2935b2764448eb"
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/TokenType",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/libraries\/oauth2-server-php\/test\/OAuth2\/TokenType\/BearerTest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2211,
+          "sha1": "eabaed2a9bdc176fa31497571d3cb8187e841be4"
+        },
+        {
+          "path": "externals\/libraries\/SmartDOMDocument.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1613,
+          "sha1": "dbf8d07b95c0a26a912fadb96390035d0f022a6a"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 600,
+          "sha1": "97261729f4023c1015579c1c4b6bf47494f6e22f"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2369,
+          "sha1": "49f7ad60e5181502da688b1e65a33ea8374f417d"
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 73,
+          "sha1": "670fe74ac3a06235d68f0a3b157b46193347b7e9"
+        },
+        {
+          "path": "Form\/Admin\/Manage\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 296,
+          "sha1": "e37aaa5da95ce2c3264bc28ca062ca6a1d984c4c"
+        },
+        {
+          "path": "Helper",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 714,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Activity.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5324,
+          "sha1": "75fb1d6e6878ccfcb2a88ef5733f90092bf41497"
+        },
+        {
+          "path": "Helper\/ActivityLoop.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1699,
+          "sha1": "3d918558f6ef50b6d88d53536e857c50e7c7d428"
+        },
+        {
+          "path": "Helper\/Album",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Album\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3333,
+          "sha1": "c1fdf431611795c3eeffbccf52c9b93e14204b7d"
+        },
+        {
+          "path": "Helper\/Album\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5457,
+          "sha1": "bd8872e5a85920a7006df51935a532e3376ef712"
+        },
+        {
+          "path": "Helper\/Base.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 26572,
+          "sha1": "25f5213cab25746d20076605cef2d59918c255d5"
+        },
+        {
+          "path": "Helper\/Blog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2566,
+          "sha1": "4f40ba9606f18bbf98b5bdc3c0a12d5fa5a2170a"
+        },
+        {
+          "path": "Helper\/Classified",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Classified\/Classified.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5614,
+          "sha1": "4241b24b1145cd376991239ad6064d66e8a5be3c"
+        },
+        {
+          "path": "Helper\/Classified\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 299,
+          "sha1": "fb116428456ddbea259bceafb7a99735618070b9"
+        },
+        {
+          "path": "Helper\/Comment.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1448,
+          "sha1": "0f8ec5b7419273e05bac17cf1cf56fc2c09b497e"
+        },
+        {
+          "path": "Helper\/Event",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Event\/Event.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6665,
+          "sha1": "0a8e3399c9f1f98f9ea8d109071806a514d7161e"
+        },
+        {
+          "path": "Helper\/Event\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4337,
+          "sha1": "8ae3dd5d80cb7d736a0c5a4458a26c05111384eb"
+        },
+        {
+          "path": "Helper\/Forum",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Forum\/Forum.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1498,
+          "sha1": "eff3dcd5b3322d5d90d95310c9fec92e5faef5f9"
+        },
+        {
+          "path": "Helper\/Forum\/Post.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 533,
+          "sha1": "002aa832c723556b7cd8f067f0016f8f5feeace8"
+        },
+        {
+          "path": "Helper\/Forum\/Topic.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 870,
+          "sha1": "9b428744495f2d8f82e09eb132d291edb38cecef"
+        },
+        {
+          "path": "Helper\/Group",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Group\/Group.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7782,
+          "sha1": "7e5543be353fbd5f6ad0e349e15e1d0e8e1b30fb"
+        },
+        {
+          "path": "Helper\/Group\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4337,
+          "sha1": "7d4247a5f195b9ac2b7c0bc4d222ce2fde40806a"
+        },
+        {
+          "path": "Helper\/ItemPhoto.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2759,
+          "sha1": "e6b2cfb9de5b02107d45619817c2acfeb54ca483"
+        },
+        {
+          "path": "Helper\/Like.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 191,
+          "sha1": "fade646691dfda77b273114b358af35367a5648e"
+        },
+        {
+          "path": "Helper\/Message",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Message\/Conversation.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7577,
+          "sha1": "3355baabe33bebe98566adc56131d1ce7cecf84d"
+        },
+        {
+          "path": "Helper\/Message\/Message.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4119,
+          "sha1": "ff9cf54404a80e551c40334215940d34d80e078c"
+        },
+        {
+          "path": "Helper\/Meta.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16548,
+          "sha1": "f3913009ef7d9fcaaa3ac12ae3f284cee1f56ad9"
+        },
+        {
+          "path": "Helper\/Music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Helper\/Music\/Playlist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2075,
+          "sha1": "6a32d0cf8b53804d832947423678e078fc810ffe"
+        },
+        {
+          "path": "Helper\/Music\/PlaylistSong.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 518,
+          "sha1": "7b97c0de68b900eeb927a588a10e7d77bf58d35b"
+        },
+        {
+          "path": "Helper\/Notification.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 846,
+          "sha1": "88be5bbcfaa45da859f3540dc0a272170b50ea91"
+        },
+        {
+          "path": "Helper\/User.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 26486,
+          "sha1": "f69ba531413bd32fdf3c122cfad8e6a525730508"
+        },
+        {
+          "path": "Helper\/Utils.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2346,
+          "sha1": "89fe66c20eb21d3dc52b7d5576888b8044e1f672"
+        },
+        {
+          "path": "Helper\/Video.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8296,
+          "sha1": "8aabf39e1107b65eb7884ce2f12a76643231a89c"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/OauthClients.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 257,
+          "sha1": "e091de07cc914391d57599829d570c53686788dc"
+        },
+        {
+          "path": "Model\/DbTable\/OauthScopes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 254,
+          "sha1": "5c13fcb5e0df67b74f776bccb62aa8803ef1cb6b"
+        },
+        {
+          "path": "Model\/OauthClient.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 152,
+          "sha1": "c54f87170c8b0e0c92333a025bfe88122cad6f6c"
+        },
+        {
+          "path": "Model\/OauthScope.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 151,
+          "sha1": "eedc38aedf10038adb1adb62189c13464fa554f1"
+        },
+        {
+          "path": "Service",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Service\/Oauth",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Service\/Oauth\/Server.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2465,
+          "sha1": "89dca81b2ebde41d55f4453aed940b821197c9eb"
+        },
+        {
+          "path": "Service\/Oauth\/Storage.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20792,
+          "sha1": "d1c562fd231527f111fc2401007c81656b69a5d5"
+        },
+        {
+          "path": "Service\/Oauth\/UserCredentials.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20952,
+          "sha1": "182ebb02a8be89b93e714737d68d1cc3a41256e8"
+        },
+        {
+          "path": "Service\/Response.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5285,
+          "sha1": "7d0e2b1f3b35323a57dfc75ee49022c3042d97c2"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4101,
+          "sha1": "002fae76a16201bd7db7157be8868c08fd6acf56"
+        },
+        {
+          "path": "settings\/my-upgrade-4.01-4.02.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 190,
+          "sha1": "da5f5ceb6c20e7f96da0f86e51748a88035f33ff"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3378,
+          "sha1": "e52243d2ec512eef9c735a93537bad1436635fc0"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 402,
+          "sha1": "0e063f92fed994f4c77a6068798a07e1f140ab69"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 814,
+          "sha1": "bc32c4bdfa05dc816e3e6c84c42817bb66572d6f"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 401,
+          "sha1": "96d13ac9dd7bee9ddb698f517f6b6dd9142808f8"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2322,
+          "sha1": "5807a320c544b0e2a50368f1060943f7dd2f7112"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/oauth",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/oauth\/authorize.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 911,
+          "sha1": "4163f291556ee22f934a9e31dba6bc5626c10144"
+        },
+        {
+          "path": "views\/scripts\/oauth\/token.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        }
+      ]
+    },
+    "application\/languages\/en\/ynrestapi.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/ynrestapi.csv",
+      "structure": {
+        "path": "ynrestapi.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 12391,
+        "sha1": "104d7ae3a32b930da62f4ae509b4270c9d32f7b4"
+      }
+    }
+  }
+}

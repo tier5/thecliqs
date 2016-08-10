@@ -1,0 +1,3203 @@
+{
+  "type": "module",
+  "name": "mp3music",
+  "version": "4.04p4",
+  "revision": null,
+  "path": "application\/modules\/Mp3music",
+  "repository": null,
+  "date": "Tue, 28 Apr 2015 13:09:31 +0000",
+  "title": "Mp3 Music",
+  "description": "This is module Mp3 Music.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Tue, 28 Apr 2015 13:09:31 +0000",
+    "title": "Mp3 Music",
+    "description": "This is module Mp3 Music.",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Mp3music\/settings\/install.php",
+    "class": "Mp3music_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.2",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Mp3music": {
+      "type": "directory",
+      "path": "application\/modules\/Mp3music",
+      "structure": [
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 12779,
+          "sha1": "c3e08aad789dae3d47062178d3c88db57945c1f2"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03p5-4.04.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 79,
+          "sha1": "6b5fac27110e0a8fb7e951a80967d6b69e6db46d"
+        },
+        {
+          "path": "settings\/my-upgrade-4.02-4.03.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1285,
+          "sha1": "62b54324b950518ced8df95db2c9db00b383b19c"
+        },
+        {
+          "path": "settings\/my-upgrade-4.02p4-4.03.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1391,
+          "sha1": "bc59e3ff5540ed3ea0b0cba4640f0474b4f66496"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03p4-4.03p5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 81,
+          "sha1": "3596638313b5340304903ef8ac5641ae5bc00c23"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03p3-4.03p4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 81,
+          "sha1": "3596638313b5340304903ef8ac5641ae5bc00c23"
+        },
+        {
+          "path": "settings\/my-upgrade-4.01-4.02.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 590,
+          "sha1": "1207f0cae60a9c75e108e4ec8311199bd7c22198"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03-4.03p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 81,
+          "sha1": "0f2b089c1232bef857e59ce01a4698f235e0edfd"
+        },
+        {
+          "path": "settings\/my-upgrade-4.01-4.01.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03p2-4.03p3.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 81,
+          "sha1": "c145337f090102dc1e645af98af77c442c09d244"
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9879,
+          "sha1": "aaf0cdf8b0ae110e1c12ec493082a877b3e705fb"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21783,
+          "sha1": "cbbc398bc72ad58749eaf0e4339b8ed90ceb1105"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03p1-4.03p2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 81,
+          "sha1": "62b208255ce171f03fc6a8bfdde559920044a1ec"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29097,
+          "sha1": "06425abc788eed614e8f8f2243b88b6711233677"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Mp3.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12803,
+          "sha1": "67033dd3943faf36353d1a6112fd68cee9f5935f"
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11645,
+          "sha1": "2dafcf065989f83fc9287f2a8b0859feaecda6e2"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/player-playlist",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/player-playlist\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 143,
+          "sha1": "e1cde8f21b427395117c7731a3204e3975a86de6"
+        },
+        {
+          "path": "widgets\/player-playlist\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 564,
+          "sha1": "7e45cd2aa09ca6afec8a098c02e86444f3c17bdb"
+        },
+        {
+          "path": "widgets\/other-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/other-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1995,
+          "sha1": "d1cdf99a2fcfe611a3a10b32d85241957a5e280c"
+        },
+        {
+          "path": "widgets\/other-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 998,
+          "sha1": "650c2bee03780beb560552004a81e3298da325a7"
+        },
+        {
+          "path": "widgets\/search-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/search-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3627,
+          "sha1": "1993ce9a10ae8c9bfb4c00b0bba27e7966ca6ed4"
+        },
+        {
+          "path": "widgets\/search-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 430,
+          "sha1": "009c8df54fc8d79a9b172fbfa376ae9dca96b0e2"
+        },
+        {
+          "path": "widgets\/new-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/new-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2178,
+          "sha1": "ecad223576d5bc91fa772f1df67120fab5bb46d0"
+        },
+        {
+          "path": "widgets\/new-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 653,
+          "sha1": "bd3812ac7d08c97b7ce498311d64b12c033015c3"
+        },
+        {
+          "path": "widgets\/featured-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/featured-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2434,
+          "sha1": "b928a1ff695819bd7fa71b6c4ae3a34d54d7905d"
+        },
+        {
+          "path": "widgets\/featured-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 530,
+          "sha1": "07886ba0207f5d224d626aebe3b9e54ab16fb397"
+        },
+        {
+          "path": "widgets\/related-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/related-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1993,
+          "sha1": "797bc4a6269cea4dde5579799a903f36ccdf2198"
+        },
+        {
+          "path": "widgets\/related-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1185,
+          "sha1": "54ed8a5ba0b0a2a6bc9c01e1bb8feb1377c0d0b8"
+        },
+        {
+          "path": "widgets\/new-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/new-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1826,
+          "sha1": "f00351d115352917bcc67824b74fa0f6ce568828"
+        },
+        {
+          "path": "widgets\/new-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 132,
+          "sha1": "534dadc4542500d0c121d361c2ecdf108e3f8dc4"
+        },
+        {
+          "path": "widgets\/browse-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 240,
+          "sha1": "38896c436441d64e9830c06bfa804068745fe309"
+        },
+        {
+          "path": "widgets\/browse-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 773,
+          "sha1": "b7f1106a2d41406034ed8fb16f043fca0d48a0cb"
+        },
+        {
+          "path": "widgets\/singers-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/singers-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1796,
+          "sha1": "c97d856552ad2e06cd849a6064c044a53af88dd6"
+        },
+        {
+          "path": "widgets\/singers-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 400,
+          "sha1": "70577124d4e5a2c4f3f72e2a3df1a55f9f09895e"
+        },
+        {
+          "path": "widgets\/top-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/top-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1663,
+          "sha1": "ec080a4e513e260193c35ed39f51e2c813bcc7a6"
+        },
+        {
+          "path": "widgets\/top-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 130,
+          "sha1": "ea1219f998e2f51549dc2cc4c18919b14e14d6c0"
+        },
+        {
+          "path": "widgets\/new-albums-right",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/new-albums-right\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2160,
+          "sha1": "5555aa823d984058a0205778ea9f7f3a2e776b84"
+        },
+        {
+          "path": "widgets\/new-albums-right\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 571,
+          "sha1": "2214b940f0973beec71b7f67aff652e699bd3a9c"
+        },
+        {
+          "path": "widgets\/related-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/related-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 950,
+          "sha1": "fc06c8f3565fe43d2d2f87263f21f5631a2e5f52"
+        },
+        {
+          "path": "widgets\/related-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 582,
+          "sha1": "eab4b8943f0f99944875f094de62fdfe27ac2c60"
+        },
+        {
+          "path": "widgets\/profile-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1031,
+          "sha1": "6e347e0b2a3cf92f8855cde8e8278e96abcafc4b"
+        },
+        {
+          "path": "widgets\/profile-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1341,
+          "sha1": "44a10c48724b53bacf2e732928e52d99774584a7"
+        },
+        {
+          "path": "widgets\/statistics-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/statistics-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 892,
+          "sha1": "9ce94a5c2b35e0b05ff7fa020c6f72bf0439bc74"
+        },
+        {
+          "path": "widgets\/statistics-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 548,
+          "sha1": "d5d8e1622a31dedc2a6fa9d561ad9cb57021c4c1"
+        },
+        {
+          "path": "widgets\/top-downloads",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/top-downloads\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2531,
+          "sha1": "be81940e598c0e267dfba80c75ce187634d240b3"
+        },
+        {
+          "path": "widgets\/top-downloads\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 631,
+          "sha1": "1ea6b3df2ce724ebcbd902eb2758e88c3b746497"
+        },
+        {
+          "path": "widgets\/profile-player",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-player\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1143,
+          "sha1": "d01a2c9f37bfd1f6b21e4455b59ab229b1d20344"
+        },
+        {
+          "path": "widgets\/profile-player\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1159,
+          "sha1": "91b852acc760dc4a8764dfd6f6ff68247e25079c"
+        },
+        {
+          "path": "widgets\/browse-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 504,
+          "sha1": "5312036e56b7a61bf27d1c4177644e3fb0ae9f94"
+        },
+        {
+          "path": "widgets\/browse-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 888,
+          "sha1": "fd29473dcd3c179895828bf2af930791f4200d2a"
+        },
+        {
+          "path": "widgets\/categories-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/categories-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2669,
+          "sha1": "fb4878c239585318c0d387b9d71cdcee8341285b"
+        },
+        {
+          "path": "widgets\/categories-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 149,
+          "sha1": "f949d4fbeed552fe1f1bba91c1b10f3600db23f6"
+        },
+        {
+          "path": "widgets\/menu-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/menu-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 274,
+          "sha1": "81b8b05906207e57cfc0347c15192021732f4f4e"
+        },
+        {
+          "path": "widgets\/menu-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1615,
+          "sha1": "90609238fb1fdb12abeb00be7619e9a5350a180e"
+        },
+        {
+          "path": "widgets\/related-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/related-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2069,
+          "sha1": "9664d86a7d0796cc669f6f43570b1efabf25ff95"
+        },
+        {
+          "path": "widgets\/related-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 909,
+          "sha1": "2c66e8b819340431bd3462f52d45d45e421e104a"
+        },
+        {
+          "path": "widgets\/other-playlists",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/other-playlists\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2118,
+          "sha1": "40be7a9e0cfc5cd450a1666ee4adc4f07c9be8c7"
+        },
+        {
+          "path": "widgets\/other-playlists\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 781,
+          "sha1": "a9ee0a84be5497bcb80037e000d3e08f477495f8"
+        },
+        {
+          "path": "widgets\/browse-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 235,
+          "sha1": "5da65f08ad87b4871fb540b81a01385bb2def3a1"
+        },
+        {
+          "path": "widgets\/browse-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 862,
+          "sha1": "9f784d3e5c91648f053de234b353d6f40a3f7c75"
+        },
+        {
+          "path": "widgets\/top-songs",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/top-songs\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2459,
+          "sha1": "a54ce00347622dfbf4012475e0a971f1979268f2"
+        },
+        {
+          "path": "widgets\/top-songs\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 578,
+          "sha1": "01c3729128650c7094f2692338cf1cc196f5dbad"
+        },
+        {
+          "path": "widgets\/artists-music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/artists-music\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2225,
+          "sha1": "9bbfad57fa2870bd5a2a339722ac2a788fb15b34"
+        },
+        {
+          "path": "widgets\/artists-music\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 492,
+          "sha1": "4de39f1fcfd85595de058fdf3af9db5e6c9c76c3"
+        },
+        {
+          "path": "widgets\/top-albums-right",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/top-albums-right\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1987,
+          "sha1": "50bbde72041d60731216f59e97ee147b5886b367"
+        },
+        {
+          "path": "widgets\/top-albums-right\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 574,
+          "sha1": "de668944815718054a247ce4a5aa46d172160799"
+        },
+        {
+          "path": "widgets\/player-album",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/player-album\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 137,
+          "sha1": "1c21a0e8acb58ff9bcbeba94737090a8703b8307"
+        },
+        {
+          "path": "widgets\/player-album\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1109,
+          "sha1": "ec4f9f96fc12b0fd90d94aaf27926aa8f5b9003a"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 144,
+          "sha1": "47bb36a5f03278d4b6ea5804e494c00ccb02e8e1"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/nophoto_artist_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1143,
+          "sha1": "cabbff4dafb43f642d8e1079d902b7c49e5e893a"
+        },
+        {
+          "path": "externals\/images\/player_add_active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 953,
+          "sha1": "efadcfdc0f5b496ded324ac2eadadf31d231b534"
+        },
+        {
+          "path": "externals\/images\/nophoto_album_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1796,
+          "sha1": "d4fb2b65fcddf62c0555eb9b4d4ff2ab2fbf25b1"
+        },
+        {
+          "path": "externals\/images\/main-cat.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 165,
+          "sha1": "c3f4ceebfec81b3a78057283392b9924f4a4e729"
+        },
+        {
+          "path": "externals\/images\/nophoto_music_playlist.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8930,
+          "sha1": "f540c3591e7a260a6f8b66898598e65b4e40924f"
+        },
+        {
+          "path": "externals\/images\/bubble_bottom.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2027,
+          "sha1": "664accf7f22974c9b45535bba11eec3ece3266ed"
+        },
+        {
+          "path": "externals\/images\/play.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 710,
+          "sha1": "ac0429f6d1a531fe49b97c2c33accfb7d23a8a72"
+        },
+        {
+          "path": "externals\/images\/Thumbs.db",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 99328,
+          "sha1": "24313c264be670bd801f1b3dc9396f93daaa6e37"
+        },
+        {
+          "path": "externals\/images\/nophoto_album_thumb.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2878,
+          "sha1": "ff76b170a85d0228653670491bb24fa9f6169c3f"
+        },
+        {
+          "path": "externals\/images\/player_add_active1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 134,
+          "sha1": "9bf03b79c0ebe3a607704280461a787d9a6f6cf7"
+        },
+        {
+          "path": "externals\/images\/more.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 250,
+          "sha1": "e90346d849a29a3c679b6b3b01f406d6e88dd188"
+        },
+        {
+          "path": "externals\/images\/small-icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3152,
+          "sha1": "d6d24aee518be6373594ce82dcc6f65ad5bb84b9"
+        },
+        {
+          "path": "externals\/images\/nophoto_playlist_main.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8930,
+          "sha1": "f540c3591e7a260a6f8b66898598e65b4e40924f"
+        },
+        {
+          "path": "externals\/images\/slide_bg_info.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 998,
+          "sha1": "014f799a6d50247cd3be99b33c3235d306a18d0e"
+        },
+        {
+          "path": "externals\/images\/ajax-loader.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 723,
+          "sha1": "d9f8de4816af47072a35ff380a58c5f8e122a318"
+        },
+        {
+          "path": "externals\/images\/unsubscribe.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 827,
+          "sha1": "f9d248a504ee3e870e4b183ac8f848e18b30a5c3"
+        },
+        {
+          "path": "externals\/images\/sub-category.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 161,
+          "sha1": "0a614d7c45c7a9242d4e3d83f2cbe8f6845e73c2"
+        },
+        {
+          "path": "externals\/images\/music_noart.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8930,
+          "sha1": "f540c3591e7a260a6f8b66898598e65b4e40924f"
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/nophoto_album_song_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3521,
+          "sha1": "8e56db5312cf9f9ec08e20cea5b16967ccccd16b"
+        },
+        {
+          "path": "externals\/images\/upload_waiting.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 461,
+          "sha1": "3f620e5f8d9f83f63fd4ed7a1938561e5e210d7e"
+        },
+        {
+          "path": "externals\/images\/music",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/music\/icon_download_disable.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 270,
+          "sha1": "82d4819ebc84b8926f4b6c119cd76a4777505212"
+        },
+        {
+          "path": "externals\/images\/music\/cter_search_2.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 170,
+          "sha1": "c0c5122d0e58ec7a06a1c0199c3e66c069d48778"
+        },
+        {
+          "path": "externals\/images\/music\/icon_top.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1243,
+          "sha1": "feebf36303adcff8e03db0d7218cd71dcec887e4"
+        },
+        {
+          "path": "externals\/images\/music\/musicbox_bottom_bg.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 542,
+          "sha1": "57f3fdc73547a2a3e4694e5ec5b34e5f52dfc3a8"
+        },
+        {
+          "path": "externals\/images\/music\/cter_left.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 109,
+          "sha1": "f5f009927cf051eefee80067651ea79161dba5de"
+        },
+        {
+          "path": "externals\/images\/music\/search_tab_active_over_bg.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 102,
+          "sha1": "64ac55540efbe9f415508d1142261b7b8b41ef55"
+        },
+        {
+          "path": "externals\/images\/music\/Thumbs.db",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 101376,
+          "sha1": "b8a3f75856f609663b83bbfcce2625b728151d85"
+        },
+        {
+          "path": "externals\/images\/music\/tip.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 624,
+          "sha1": "cfd541a644503af71a35fb731e7427e37c2db29b"
+        },
+        {
+          "path": "externals\/images\/music\/box_top_left.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 423,
+          "sha1": "02f34536346b428c614b4e36edbdebeecd5f3ce7"
+        },
+        {
+          "path": "externals\/images\/music\/bg_media.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 116,
+          "sha1": "1ded282def10970f2c5a8618afdb54524a5af7ff"
+        },
+        {
+          "path": "externals\/images\/music\/music_tab_bg.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 114,
+          "sha1": "3d678b9aa6cc9e7f4dd7744679db876c99a6a93e"
+        },
+        {
+          "path": "externals\/images\/music\/left_timkiem.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 181,
+          "sha1": "ff147c904b428c38e4b8c125758ec7b93ec53bdd"
+        },
+        {
+          "path": "externals\/images\/music\/right_search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 227,
+          "sha1": "3b76a236f73bd93019c1791df2072515ec92789e"
+        },
+        {
+          "path": "externals\/images\/music\/right_timkiem.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 188,
+          "sha1": "b51c0a2f92735d9d7c7775dc2e9f8bfa5aa72ce5"
+        },
+        {
+          "path": "externals\/images\/music\/down.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1509,
+          "sha1": "b08755f32407e5d7f03f9cb8877c6022819029b7"
+        },
+        {
+          "path": "externals\/images\/music\/box_top_right.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 432,
+          "sha1": "2e29c1a27f215856c54d6b64027af254d4c7fb80"
+        },
+        {
+          "path": "externals\/images\/music\/search_btn_music.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 325,
+          "sha1": "8f354a8ebb6d188d17bb4580c5203322028c024f"
+        },
+        {
+          "path": "externals\/images\/music\/bg_red.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 129,
+          "sha1": "5a154b50830ede72642f00913dad5757ea4a1cca"
+        },
+        {
+          "path": "externals\/images\/music\/boxmusic_top_center_search.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17914,
+          "sha1": "a402e5e66f259f8b3a34d378eb2429c047527090"
+        },
+        {
+          "path": "externals\/images\/music\/boxmusic_btom_right.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 213,
+          "sha1": "2796da3f6f60ff742f3c9be2a9cfeefa1fc0e4b9"
+        },
+        {
+          "path": "externals\/images\/music\/icon_add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 237,
+          "sha1": "6b53948add6add57ec14d57d4fbdb58c1e0d0b6f"
+        },
+        {
+          "path": "externals\/images\/music\/tr.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 168,
+          "sha1": "6ec228544922d96014dd279ff15c6f0fb9fc3da8"
+        },
+        {
+          "path": "externals\/images\/music\/success.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 612,
+          "sha1": "af6c38505f11da189aebda86815ae0ef03244b3c"
+        },
+        {
+          "path": "externals\/images\/music\/loading2.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22260,
+          "sha1": "3a51ee604cb6e40e7900b22e042bca6dbe149967"
+        },
+        {
+          "path": "externals\/images\/music\/icon_dsachcasi.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1174,
+          "sha1": "911b8cb2053b611acd80a659a7cbc7c408b8947e"
+        },
+        {
+          "path": "externals\/images\/music\/top_cter.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 197,
+          "sha1": "aa87cf0a506c873322dd5b0be33201b10ac0a35e"
+        },
+        {
+          "path": "externals\/images\/music\/icon_download.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 269,
+          "sha1": "1ed30bafefb04f114b1c6f3679098c4bc689fa85"
+        },
+        {
+          "path": "externals\/images\/music\/search_tab_active_over_bg_r.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 332,
+          "sha1": "d5d583b3d6ddecf3f4b4df37408005514904dabc"
+        },
+        {
+          "path": "externals\/images\/music\/vertical_menu_bg.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 136,
+          "sha1": "a0707949fb30803f53f152c7fb4d3d83044f74d4"
+        },
+        {
+          "path": "externals\/images\/music\/boxmusic_top_left.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 411,
+          "sha1": "38f99f4833c006087c824a15cde3d79decbf1ea1"
+        },
+        {
+          "path": "externals\/images\/music\/up.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1483,
+          "sha1": "d28beae7e1ddb4c491fd2dcbf1dad289c4e740a2"
+        },
+        {
+          "path": "externals\/images\/music\/error.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 609,
+          "sha1": "3b2625201431f4664f50bb639e0348c340435d3b"
+        },
+        {
+          "path": "externals\/images\/music\/boxmusic_top_right.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 422,
+          "sha1": "ccae5d4849d14876938fcde3c67a5a7badde322f"
+        },
+        {
+          "path": "externals\/images\/music\/icon_arrow_casi.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 72,
+          "sha1": "2253b7e95746e157cb0bbe654b2539a178f1d8d2"
+        },
+        {
+          "path": "externals\/images\/music\/icon_add_in.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3422,
+          "sha1": "a6180acb80affe247bc01629465bf758976eda66"
+        },
+        {
+          "path": "externals\/images\/music\/boxmusic_top_center.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 335,
+          "sha1": "053a708284a9382d7a679c94c79064cebb771ac9"
+        },
+        {
+          "path": "externals\/images\/music\/musicbox_bottom_bg.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 55,
+          "sha1": "39ce750e99722bab77537d494223f8cd684eee6c"
+        },
+        {
+          "path": "externals\/images\/music\/tl.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 159,
+          "sha1": "f994d482b3125ad1e28c9051026a3deb3892b811"
+        },
+        {
+          "path": "externals\/images\/music\/header_top_bg.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 191,
+          "sha1": "2e17d88a69336d90e6e84cd2c6d5e24a2cc5bb1d"
+        },
+        {
+          "path": "externals\/images\/music\/header_bg.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 227,
+          "sha1": "7eab36a3dc40ae76b06017fe6ad7847ffd5a1c83"
+        },
+        {
+          "path": "externals\/images\/music\/boxmusic_btom_center.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 302,
+          "sha1": "3cf2c2425508ea7ea492cc2830634a3244e7e734"
+        },
+        {
+          "path": "externals\/images\/music\/dot.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 43,
+          "sha1": "aa10c90a73ede90cb1c6c3bbcc845b95b010c0cb"
+        },
+        {
+          "path": "externals\/images\/music\/box_top_center.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 346,
+          "sha1": "4487b014d78615243853fb2e2feaf17da67f43f9"
+        },
+        {
+          "path": "externals\/images\/music\/split_search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 117,
+          "sha1": "55cba983650edb09a77007329f59110a6e09e3d6"
+        },
+        {
+          "path": "externals\/images\/music\/cter_cter.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 109,
+          "sha1": "0722b983befa0879cb477191ce2f82f6bb123628"
+        },
+        {
+          "path": "externals\/images\/music\/br.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 158,
+          "sha1": "035571207810e2eaff8fabfb657ff6e9faa8aa54"
+        },
+        {
+          "path": "externals\/images\/music\/cter_timkiem.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 140,
+          "sha1": "25b5a8a48b6508641c7f658abc8f1b076788d9cd"
+        },
+        {
+          "path": "externals\/images\/music\/top_left.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 129,
+          "sha1": "dd678024b8c7d91dfcbb6b9b5d70b023adbacdb9"
+        },
+        {
+          "path": "externals\/images\/music\/icon_play.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 239,
+          "sha1": "a8f65c8a74903b5d2b613f56ea58671521f1c4fc"
+        },
+        {
+          "path": "externals\/images\/music\/musical.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 546,
+          "sha1": "f80f3c8e5268f613ee1cf5bb76cc203af7bd3c42"
+        },
+        {
+          "path": "externals\/images\/music\/left_search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 229,
+          "sha1": "a8fbb064361dfeee494ef9356691ec7ccaa809c0"
+        },
+        {
+          "path": "externals\/images\/music\/menu_arrow3.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 58,
+          "sha1": "da86b0c98dde21270e8a7195fe354712c46cba38"
+        },
+        {
+          "path": "externals\/images\/music\/boxmusic_btom_left.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 212,
+          "sha1": "7d36673c96564a65b0c6b203bb2622d58d8ef470"
+        },
+        {
+          "path": "externals\/images\/music\/menu_arrow2.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 58,
+          "sha1": "d18e2405f911e1f4cd1c709598bf7283e3bf1334"
+        },
+        {
+          "path": "externals\/images\/music\/icon_arrow_casi.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 747,
+          "sha1": "9e9892c3eb5ec7c052bac47f74f158019a46acf1"
+        },
+        {
+          "path": "externals\/images\/music\/icon_themvaoplaysist.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 718,
+          "sha1": "ed3e48b470d4b2a0247d8b2ababa1f0d5073c86c"
+        },
+        {
+          "path": "externals\/images\/music\/bl.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 160,
+          "sha1": "0db4dd549ae54e9d8354583b88c6f9c609eb945f"
+        },
+        {
+          "path": "externals\/images\/music\/icon_delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 186,
+          "sha1": "716aadc0d70e83ce3c764dd253a8233a43f3d1a7"
+        },
+        {
+          "path": "externals\/images\/music\/cter_search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 152,
+          "sha1": "860545c41812e4dea96d8af2fa7c721ed17eef16"
+        },
+        {
+          "path": "externals\/images\/music\/search_tab_active_over_bg_l.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 331,
+          "sha1": "8c4ee3c5efdec9e925e1aadc2e23e978f6a2c65c"
+        },
+        {
+          "path": "externals\/images\/upload_success.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 517,
+          "sha1": "75efc475d52e7ff1393eee140e30bf59fab5a651"
+        },
+        {
+          "path": "externals\/images\/star-off.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 361,
+          "sha1": "87e2fc2ce02a45bc2ac38958cc6c74ac319217a7"
+        },
+        {
+          "path": "externals\/images\/pagination.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 724,
+          "sha1": "ab498e33629dc6e8547dd33c10cd038eb24dd05f"
+        },
+        {
+          "path": "externals\/images\/vline.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3759,
+          "sha1": "7fc50d8093c2389094667e7ac8e8628b959ca3a8"
+        },
+        {
+          "path": "externals\/images\/play_on_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 241,
+          "sha1": "1b9f1d7bf44afd9421b8bcdcacf876a5a773ac1b"
+        },
+        {
+          "path": "externals\/images\/player_launch.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 682,
+          "sha1": "e553e8e40b78825ba291be19e0a1419959a0d5da"
+        },
+        {
+          "path": "externals\/images\/types",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/types\/Thumbs.db",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8704,
+          "sha1": "15a56a5895fef7448b9c3fa7fe96c1b24f30b021"
+        },
+        {
+          "path": "externals\/images\/types\/music.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 385,
+          "sha1": "64b959f3975586119cde2bd5c7141038330678da"
+        },
+        {
+          "path": "externals\/images\/bubble_middle.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 292,
+          "sha1": "12234e5b275a41dbb0a16bb1e4e4fdd0c27dd1aa"
+        },
+        {
+          "path": "externals\/images\/star-dis.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1264,
+          "sha1": "e73be967a3a78dfa0fca6db90c0404b35ec6b5f0"
+        },
+        {
+          "path": "externals\/images\/star-onl.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1219,
+          "sha1": "9637287f08859f5075db231c9d6d0ffc8355afb5"
+        },
+        {
+          "path": "externals\/images\/audio.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16016,
+          "sha1": "99c2cb0c367f5f10b21c796f39e1ef73e8448da2"
+        },
+        {
+          "path": "externals\/images\/others.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 320,
+          "sha1": "2b35bd494e574031e7739b7035d20df747fbf03f"
+        },
+        {
+          "path": "externals\/images\/icons",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/icons\/music_upload16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 626,
+          "sha1": "6d1dba49e6e94e08bf88e2e5977411a265ddaa96"
+        },
+        {
+          "path": "externals\/images\/icons\/audio_small.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1241,
+          "sha1": "044084eb60b1e2c9ecad6020f32d7ea835805a55"
+        },
+        {
+          "path": "externals\/images\/icons\/Thumbs.db",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 33792,
+          "sha1": "ed645ca90953ad8c3531903303f2f6a425871805"
+        },
+        {
+          "path": "externals\/images\/icons\/image48.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1510,
+          "sha1": "bc9a95d74cebfcfa50ba4d11f6897473beba777a"
+        },
+        {
+          "path": "externals\/images\/icons\/music_settings16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 643,
+          "sha1": "f9358d3cf84811638b3e48dd5e59303ef8a83f88"
+        },
+        {
+          "path": "externals\/images\/icons\/addimages16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 626,
+          "sha1": "95d67cef636d71a3be484e27c944470d6d53318d"
+        },
+        {
+          "path": "externals\/images\/icons\/music_action_newmusic.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 330,
+          "sha1": "83893e3dbe5ae6b462858364074c926bb553e8a7"
+        },
+        {
+          "path": "externals\/images\/icons\/music_music16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 330,
+          "sha1": "83893e3dbe5ae6b462858364074c926bb553e8a7"
+        },
+        {
+          "path": "externals\/images\/icons\/audio_medium.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1241,
+          "sha1": "044084eb60b1e2c9ecad6020f32d7ea835805a55"
+        },
+        {
+          "path": "externals\/images\/icons\/music_3.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 356,
+          "sha1": "a7400d0b2f7033e10ddb6673075cf85a61d93f76"
+        },
+        {
+          "path": "externals\/images\/icons\/audio_big.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2018,
+          "sha1": "834e52a8531690d91d5fcd0ce8db9f943f03cd9d"
+        },
+        {
+          "path": "externals\/images\/icons\/music_music48.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1233,
+          "sha1": "8fa43d527869a131b5c5d4f88e30dd88a6d8ea8e"
+        },
+        {
+          "path": "externals\/images\/icons\/music_add16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 610,
+          "sha1": "7e81ed9bde765f9b96cbfd2bc27537e0a685d9d7"
+        },
+        {
+          "path": "externals\/images\/icons\/gs16.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 537,
+          "sha1": "d0a90047653afcdac85171e6b34d599538b89773"
+        },
+        {
+          "path": "externals\/images\/icons\/music_1.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 569,
+          "sha1": "953cc09d341aa21e0fb5c4085551721e57244c98"
+        },
+        {
+          "path": "externals\/images\/icons\/music_working.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22260,
+          "sha1": "3a51ee604cb6e40e7900b22e042bca6dbe149967"
+        },
+        {
+          "path": "externals\/images\/icons\/music_clear16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 592,
+          "sha1": "5d0bc6e210eb3d8babeef286d120814ec3c6aa29"
+        },
+        {
+          "path": "externals\/images\/icons\/minus16_disabled.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 124,
+          "sha1": "d35ee112bd95565a1fd7941e29f3cfb35926fdca"
+        },
+        {
+          "path": "externals\/images\/cancel.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 961,
+          "sha1": "ecf5f13c0b50d21378b14aab060576b5eb98b431"
+        },
+        {
+          "path": "externals\/images\/upload.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 385,
+          "sha1": "64b959f3975586119cde2bd5c7141038330678da"
+        },
+        {
+          "path": "externals\/images\/bubble_top.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 473,
+          "sha1": "10798accd41d996be624594f77a5f5ff1025a1e5"
+        },
+        {
+          "path": "externals\/images\/nophoto_singer_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1240,
+          "sha1": "3c6ed334ccf29373099b1a327366962d953fab52"
+        },
+        {
+          "path": "externals\/images\/new.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 352,
+          "sha1": "f5ce0f018feb3a80843bf0fd420247ebb59878b3"
+        },
+        {
+          "path": "externals\/images\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/nophoto_album_main.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8930,
+          "sha1": "f540c3591e7a260a6f8b66898598e65b4e40924f"
+        },
+        {
+          "path": "externals\/images\/nophoto_playlist_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 24221,
+          "sha1": "20766ab436823dce40eece8923f08b3c00152dbb"
+        },
+        {
+          "path": "externals\/images\/nophoto_music_album.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8930,
+          "sha1": "f540c3591e7a260a6f8b66898598e65b4e40924f"
+        },
+        {
+          "path": "externals\/images\/subscribe.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 749,
+          "sha1": "9a226cb5378e6ceea11007b59132cfc19dbcbaf2"
+        },
+        {
+          "path": "externals\/images\/player.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 603,
+          "sha1": "98f6bc19ae360ac951796ce5f81f9f77113f1d99"
+        },
+        {
+          "path": "externals\/images\/music_noart_thumb.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2878,
+          "sha1": "ff76b170a85d0228653670491bb24fa9f6169c3f"
+        },
+        {
+          "path": "externals\/images\/nophoto_playlist_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5249,
+          "sha1": "3e2460bd9caca9c725e453c724467b3d394c17bf"
+        },
+        {
+          "path": "externals\/images\/volume-current.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1039,
+          "sha1": "21f8068769f9883aae3174c6cbda853dbf6d8f35"
+        },
+        {
+          "path": "externals\/images\/nophoto_artist_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1240,
+          "sha1": "3c6ed334ccf29373099b1a327366962d953fab52"
+        },
+        {
+          "path": "externals\/images\/audio_small.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5004,
+          "sha1": "7f959495217624bd37b8641dcd11b96330fd374a"
+        },
+        {
+          "path": "externals\/images\/nophoto_album_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2878,
+          "sha1": "ff76b170a85d0228653670491bb24fa9f6169c3f"
+        },
+        {
+          "path": "externals\/images\/nophoto_playlist_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2878,
+          "sha1": "ff76b170a85d0228653670491bb24fa9f6169c3f"
+        },
+        {
+          "path": "externals\/images\/nophoto_singer_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1143,
+          "sha1": "cabbff4dafb43f642d8e1079d902b7c49e5e893a"
+        },
+        {
+          "path": "externals\/images\/arrowup.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1052,
+          "sha1": "ccf770cabd8738e842b070d2c16375cfe1741df2"
+        },
+        {
+          "path": "externals\/images\/volume-off.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1014,
+          "sha1": "10830f7e506fd7ce3efb4e52da6dd5d0b84318ea"
+        },
+        {
+          "path": "externals\/images\/nophoto_playlist_thumb.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2878,
+          "sha1": "ff76b170a85d0228653670491bb24fa9f6169c3f"
+        },
+        {
+          "path": "externals\/images\/upload_loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/nophoto_album_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 24221,
+          "sha1": "20766ab436823dce40eece8923f08b3c00152dbb"
+        },
+        {
+          "path": "externals\/images\/arrowdown.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1061,
+          "sha1": "64cf398b1c7ac05454effebbc8a606049e2a4138"
+        },
+        {
+          "path": "externals\/images\/removecart.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1665,
+          "sha1": "50df0cad69d5cbfdeb736ee6b842b994ac9df4f6"
+        },
+        {
+          "path": "externals\/images\/player_add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 953,
+          "sha1": "efadcfdc0f5b496ded324ac2eadadf31d231b534"
+        },
+        {
+          "path": "externals\/images\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 186,
+          "sha1": "716aadc0d70e83ce3c764dd253a8233a43f3d1a7"
+        },
+        {
+          "path": "externals\/images\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 179,
+          "sha1": "02933aa411db98e8fdd30b51397b8bd8bf199625"
+        },
+        {
+          "path": "externals\/images\/bgtitle.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 96,
+          "sha1": "275bc83c2de9dbd6193d774afc39f6679c9fedec"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/slideshow",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/slideshow\/Loop.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 776,
+          "sha1": "2597ffae8c266050fe93c9809175ac5d6449e5b2"
+        },
+        {
+          "path": "externals\/scripts\/slideshow\/SlideShow.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7690,
+          "sha1": "6e9884e274ca82d7214cec21a8c772e6a1f3aa0b"
+        },
+        {
+          "path": "externals\/scripts\/slideshow\/Navigation.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1187,
+          "sha1": "90bc04b299e7a0e6482630107871297a0324a522"
+        },
+        {
+          "path": "externals\/scripts\/core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22007,
+          "sha1": "c565109f8d73fd28d6db4620294459724e796c4d"
+        },
+        {
+          "path": "externals\/scripts\/m2bmusic_tabcontent.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8866,
+          "sha1": "c2a3fcd0224b14ad6b6a562992c3802cc711e6a2"
+        },
+        {
+          "path": "externals\/scripts\/player.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16328,
+          "sha1": "1dace8ed5d126ef4f6e7a5a2f34cb23f4592991c"
+        },
+        {
+          "path": "externals\/scripts\/music_function.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 916,
+          "sha1": "bd438ad049f8ee19d35ba38e8346e144f664b457"
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts\/jquery.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 249159,
+          "sha1": "d26763498c38c5f245e81eb26d46604c39040d6d"
+        },
+        {
+          "path": "externals\/scripts\/download.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5990,
+          "sha1": "33d6c8f17b55d65d81d2b74381ec674740e01898"
+        },
+        {
+          "path": "externals\/scripts\/slimScroll.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9609,
+          "sha1": "b6c1b235e607a7ad58ca77d2a0fc96993dae1bc6"
+        },
+        {
+          "path": "externals\/scripts\/js",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/js\/jquery.iframe-transport.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10313,
+          "sha1": "fc7b66ea5e5ebfd52adf7da80fdee65b567efefe"
+        },
+        {
+          "path": "externals\/scripts\/js\/jquery.fileupload.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 59269,
+          "sha1": "fa815273deb0eb040d531dadd36b78d1eda47382"
+        },
+        {
+          "path": "externals\/scripts\/js\/vendor",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/js\/vendor\/jquery.ui.widget.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15324,
+          "sha1": "c9c3f488adb65e4331e3ddfbc93888934388925a"
+        },
+        {
+          "path": "externals\/scripts\/mediaelement-and-player.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 102841,
+          "sha1": "2d249bb44ffea4cc6cfc08a33e7c096364920100"
+        },
+        {
+          "path": "externals\/scripts\/downloads.log",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 801,
+          "sha1": "073e4ef243c40371d8c584be0783f9159a62f34d"
+        },
+        {
+          "path": "externals\/scripts\/slimScroll.min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3660,
+          "sha1": "69c288040668a328264738aa5eccdbbae7a6f6f6"
+        },
+        {
+          "path": "externals\/scripts\/navigation.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1097,
+          "sha1": "41dc04c6ea2589a907418a5a6074070ee5732cb8"
+        },
+        {
+          "path": "externals\/scripts\/m2bmusic_class.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2451,
+          "sha1": "252bd94c7af790816103570f67b33a689a4bf3a2"
+        },
+        {
+          "path": "externals\/scripts\/jquery.scrollTo-1.4.3.1-min.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2434,
+          "sha1": "2b7bb6c2288b3a947db88a9cac4792b6666a5db0"
+        },
+        {
+          "path": "externals\/scripts\/flashmediaelement.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 27763,
+          "sha1": "504da07bb4cc1f26f3e7ed04e8e33ea51f5761e9"
+        },
+        {
+          "path": "externals\/scripts\/noconflict.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 36,
+          "sha1": "34abe102e915e4466b120a65d39d970266c2eea2"
+        },
+        {
+          "path": "externals\/scripts\/composer_music.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8529,
+          "sha1": "b3547c0d080e9aef78ad09f9421138c6e23128ce"
+        },
+        {
+          "path": "externals\/scripts\/swfobject.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8868,
+          "sha1": "1643fb49adc94f570d9a6be5796da32b015605df"
+        },
+        {
+          "path": "externals\/scripts\/mp3music.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22949,
+          "sha1": "b80377677c08543247ea53ac32eccded67e96a9d"
+        },
+        {
+          "path": "externals\/scripts\/jquery-ui.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 365231,
+          "sha1": "31d0cb90f7b82088df6c4e00b5765f9dccc48329"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 61483,
+          "sha1": "3a8868149c9d019947065fe02074db71113332cb"
+        },
+        {
+          "path": "externals\/styles\/upload_song",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/upload_song\/jquery.fileupload.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 655,
+          "sha1": "0335108afc5cd8c47d5d3485204d3a5e70a0259b"
+        },
+        {
+          "path": "externals\/styles\/upload_song\/style.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 294,
+          "sha1": "39d788d2799c0ada558fc752273ff6e0465ef96c"
+        },
+        {
+          "path": "externals\/styles\/mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 57812,
+          "sha1": "c32ab467601c7864ea60b19b0c2e04e2af00c37b"
+        },
+        {
+          "path": "externals\/styles\/ynresponsive1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2967,
+          "sha1": "b59a60540a1993aec0bd0e0f6c60ea5dc5ac729a"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/EditPlaylist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3733,
+          "sha1": "4fc7aa2fc3643c2abe28b39ff12e2c9508dbbdad"
+        },
+        {
+          "path": "Form\/EditSong.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6553,
+          "sha1": "70d1673ac35ea927f1726bbe905e47044d315999"
+        },
+        {
+          "path": "Form\/CreateArtist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1826,
+          "sha1": "658593ebad7d4128ed9e85211559f58f6e7e5a1b"
+        },
+        {
+          "path": "Form\/EditArtist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1538,
+          "sha1": "423813fccbcd33849a99e83bc691f28981a28366"
+        },
+        {
+          "path": "Form\/CreatePlaylist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6641,
+          "sha1": "6378fa97e494b2bd77a11ea4da3d6dfa4ffcd066"
+        },
+        {
+          "path": "Form\/Playlist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7521,
+          "sha1": "07703f79aa061c4b9e94a173bb12862df8aba3a8"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Levelplaylist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5366,
+          "sha1": "632415de7bed7d438b157e3e8684325becf824ff"
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6346,
+          "sha1": "0e068ab201f645fda6e214baa36b1d3f8ae5f181"
+        },
+        {
+          "path": "Form\/Admin\/Searchalbum.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1639,
+          "sha1": "ef1471f2cd9aaf21019a18500908f90547c1e8ce"
+        },
+        {
+          "path": "Form\/Admin\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1634,
+          "sha1": "3984a143d15096bfe999a76b626c616003ba31e9"
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2503,
+          "sha1": "ac268310050a9f4562ace92338b4305ea04b42fa"
+        },
+        {
+          "path": "Form\/CreateSinger.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3259,
+          "sha1": "30725b7cf9dd21d7dd014882266850d11df1e03f"
+        },
+        {
+          "path": "Form\/EditAlbum.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4926,
+          "sha1": "0c4fcbf078ab346e516d61f49f77bb3e122737e2"
+        },
+        {
+          "path": "Form\/CreateAlbum.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10403,
+          "sha1": "5811f833724237516cb9f2f56d7c585a47bf526d"
+        },
+        {
+          "path": "Form\/EditSinger.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2545,
+          "sha1": "99e8ba60a9ff1bbb2b1f8d6cbb33295803cb8670"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4846,
+          "sha1": "830420d8d5c0b81630d6fc4d12918e83475f697c"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/PlaylistSongs.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 220,
+          "sha1": "56e888e54dc4b148991b23aed888a2744b25619a"
+        },
+        {
+          "path": "Model\/DbTable\/Videos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 119,
+          "sha1": "981abab054f8567652d0343bd9e26563a4b84e7c"
+        },
+        {
+          "path": "Model\/DbTable\/SingerTypes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 220,
+          "sha1": "fc888af6ec05278f89aef75a69f648270dcc1f94"
+        },
+        {
+          "path": "Model\/DbTable\/Artists.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 206,
+          "sha1": "3fb10a68515f15d663612e574fd8b6ee735a97d2"
+        },
+        {
+          "path": "Model\/DbTable\/Singers.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 120,
+          "sha1": "e2eef876a61ec77cce0ae6244607741c328a7e8b"
+        },
+        {
+          "path": "Model\/DbTable\/Songs.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 147,
+          "sha1": "0b16e98c2990f70abb34cf1ac6f3a35be0d94728"
+        },
+        {
+          "path": "Model\/DbTable\/Playlists.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 124,
+          "sha1": "9d638f8750a21b73bac74decdcffdd046bfcff95"
+        },
+        {
+          "path": "Model\/DbTable\/AlbumSongs.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 211,
+          "sha1": "31581ecd9f1fad936d3300a6c433c499e104bd1b"
+        },
+        {
+          "path": "Model\/DbTable\/Subscriptions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2060,
+          "sha1": "0b99855157d2c346612ea480cd5450352fb90cef"
+        },
+        {
+          "path": "Model\/DbTable\/Cats.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 114,
+          "sha1": "31b0a350141ced48333dc91f5f72796e111bfc59"
+        },
+        {
+          "path": "Model\/DbTable\/Ratings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 120,
+          "sha1": "1fd1ae966d381af0458381a289820b1586f40f17"
+        },
+        {
+          "path": "Model\/DbTable\/Albums.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 118,
+          "sha1": "cc1ea2c4ca4599201a30b9af770e5e9fb3d3b275"
+        },
+        {
+          "path": "Model\/PlaylistSong.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2288,
+          "sha1": "0e1f3784dc4052375804243a559f6387ef90905e"
+        },
+        {
+          "path": "Model\/Singer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3033,
+          "sha1": "7e90c0c4fdaf299a5d3fa6035d948e11f79f9c4e"
+        },
+        {
+          "path": "Model\/AlbumSong.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2872,
+          "sha1": "ec907f1aa8445c496b44fccf40bcc848eb649e61"
+        },
+        {
+          "path": "Model\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 20382,
+          "sha1": "1aca98ed81bb018b5a3699e5c0ee07685699b76f"
+        },
+        {
+          "path": "Model\/Artist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2449,
+          "sha1": "dc7e40bec8ea7526bdba56715cee6e961366cfe7"
+        },
+        {
+          "path": "Model\/Video.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5608,
+          "sha1": "e6a3c0898b11ee6ea7147394075d958f676ef179"
+        },
+        {
+          "path": "Model\/Playlist.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7882,
+          "sha1": "4e7f826e116bf737b3a0365d9e9d05dd8899ebbe"
+        },
+        {
+          "path": "Model\/SingerType.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 689,
+          "sha1": "dcde6700876476f3faedb3c5edab825698faaaf8"
+        },
+        {
+          "path": "Model\/Cat.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 444,
+          "sha1": "ac242d91948d6601fce07fc273ea5ecdbfeaa1ac"
+        },
+        {
+          "path": "Model\/Song.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1733,
+          "sha1": "21f241bf03294282291016a86bfbc937e0d81608"
+        },
+        {
+          "path": "Model\/Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 64,
+          "sha1": "c9704f1e0de33e0997b9a62386454358b9a1d32a"
+        },
+        {
+          "path": "Model\/Rating.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 606,
+          "sha1": "12aa414062bc50ba623a91c90b6049388ba77b35"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AlbumController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 32645,
+          "sha1": "1a9df4da85663ec440cf65b6c85258b3aac19ee8"
+        },
+        {
+          "path": "controllers\/AdminCategoryController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11743,
+          "sha1": "2fc153fea04400ebf1baa94f2a4ea74bc296f80a"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1088,
+          "sha1": "0e0e33f189e8daf53b1e0565e5c242d6156a5fd7"
+        },
+        {
+          "path": "controllers\/AdminManagesongController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1845,
+          "sha1": "1685514e0576ea907507f80c8bd544943eedbaf8"
+        },
+        {
+          "path": "controllers\/AdminManageplaylistController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1943,
+          "sha1": "572a7a3647a69d0d8f5a232f87ed6a8db150ddfa"
+        },
+        {
+          "path": "controllers\/PlaylistController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12149,
+          "sha1": "c1657411727f9d4d55418d4a33cf5415a24b4765"
+        },
+        {
+          "path": "controllers\/AdminLevelplaylistController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2872,
+          "sha1": "ece58fd48446a31de9520d8b9dcd5aeff785ccb8"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9056,
+          "sha1": "1daab8029ea9da6bc3f0f22b9d18066df4888122"
+        },
+        {
+          "path": "controllers\/AdminLevelController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3698,
+          "sha1": "96a022fd28dddfdaedf22536c21cab3a21b18f57"
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2392,
+          "sha1": "e468d1b9973a0b9613fd57548f6423a277695fca"
+        },
+        {
+          "path": "cli.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1513,
+          "sha1": "3ec0c153cbcd6f0c651c647fbb33e152de196a17"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/music_browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7580,
+          "sha1": "2d12b018d6fa5ba8ea4ff18cb54804b1f8065be1"
+        },
+        {
+          "path": "views\/scripts\/album",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/album\/unsubscribe.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 329,
+          "sha1": "0237f4c6520529f562b35a88c9cfc098c27003f4"
+        },
+        {
+          "path": "views\/scripts\/album\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2809,
+          "sha1": "026fe0bd61a36c70065737f65c013c9849d1069f"
+        },
+        {
+          "path": "views\/scripts\/album\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 709,
+          "sha1": "acf03b1ca886d1f1e600b4bdce1679ffb9b776b9"
+        },
+        {
+          "path": "views\/scripts\/album\/iframe-html.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 138,
+          "sha1": "a6bc79906189ae7404f9f406012217a77aca1f17"
+        },
+        {
+          "path": "views\/scripts\/album\/delete-song.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 701,
+          "sha1": "d5b1b4d9e59b87ee65d9a4f848ddc1656125c5ee"
+        },
+        {
+          "path": "views\/scripts\/album\/subscribe.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 326,
+          "sha1": "a1e42e69335ae76cd0eafafdd58516f776860caf"
+        },
+        {
+          "path": "views\/scripts\/album\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4769,
+          "sha1": "7063056c0f243edb303604086c0636cb156a32c5"
+        },
+        {
+          "path": "views\/scripts\/album\/edit-song.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1877,
+          "sha1": "67b2d672c675b4b31efc35b5f997cbc0a90405b7"
+        },
+        {
+          "path": "views\/scripts\/album\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2501,
+          "sha1": "31be6652187d34fda15d7f1f0f23333303f3802b"
+        },
+        {
+          "path": "views\/scripts\/_Html5Upload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5014,
+          "sha1": "fc6f58e1c5764b55b92cc9c90adee9fc05a31942"
+        },
+        {
+          "path": "views\/scripts\/admin-managesong",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-managesong\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3118,
+          "sha1": "61dcbed2a9590595af0eef797a98cf3d38705418"
+        },
+        {
+          "path": "views\/scripts\/_composeMp3Music.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2242,
+          "sha1": "bc356d76712b3bde88dd069c09a0dc354d30bde8"
+        },
+        {
+          "path": "views\/scripts\/_mainPlayer.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 9931,
+          "sha1": "1c1e09b8b3bc230d5bb12d8f7574841857a34989"
+        },
+        {
+          "path": "views\/scripts\/_Player.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2971,
+          "sha1": "b057f78826f91667f97497f5242b7ae523c7bba0"
+        },
+        {
+          "path": "views\/scripts\/admin-level",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1196,
+          "sha1": "0743817b47fa339bd42e44fe75dc7516603d7ec7"
+        },
+        {
+          "path": "views\/scripts\/playlist",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/playlist\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2740,
+          "sha1": "6b68158103cae5cc4b68b9077fed69c23dfa6577"
+        },
+        {
+          "path": "views\/scripts\/playlist\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 716,
+          "sha1": "b3d3f45c945309729090ffd9b5afd668af85a128"
+        },
+        {
+          "path": "views\/scripts\/playlist\/playlist-append.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 433,
+          "sha1": "0cf8ee13374290732864842cfcebc1289f732333"
+        },
+        {
+          "path": "views\/scripts\/playlist\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5009,
+          "sha1": "9c82f504f14421d2963f6da3458fab14f5cc2675"
+        },
+        {
+          "path": "views\/scripts\/playlist\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2114,
+          "sha1": "8821dd142c3ed79cb6b0b4f5a413d2c14d3404cb"
+        },
+        {
+          "path": "views\/scripts\/admin-levelplaylist",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-levelplaylist\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1206,
+          "sha1": "886c34b48c17b3558b7ce1d1ca3fc20503579798"
+        },
+        {
+          "path": "views\/scripts\/admin-manageplaylist",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manageplaylist\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2995,
+          "sha1": "51687471c4679622f034d54f3d7a79bbce31d83a"
+        },
+        {
+          "path": "views\/scripts\/_formButtonCancel.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 516,
+          "sha1": "732a97b53eda8f6f56b3f36fe7868ec67c998669"
+        },
+        {
+          "path": "views\/scripts\/_sharePlayer.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2340,
+          "sha1": "d23ad233aed2f8234b421374df49a5bd4a0fd11e"
+        },
+        {
+          "path": "views\/scripts\/_player_ajax.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3370,
+          "sha1": "2c68c2b7a2f200ab84ffa2cb0619e7bb57ff278c"
+        },
+        {
+          "path": "views\/scripts\/music_browse_new_albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3055,
+          "sha1": "d6584015a63625a18b19deed9fa39be433600a42"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 348,
+          "sha1": "7b4d2d6f71a875d40961198ac876be4bec7bf813"
+        },
+        {
+          "path": "views\/scripts\/_edit_playlist.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 136,
+          "sha1": "5862183b977141089f4c0f97f8bf4a6f81ee7a04"
+        },
+        {
+          "path": "views\/scripts\/admin-category",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-category\/create-artist.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 816,
+          "sha1": "700bb2028fe9fd7f4d803d08a48460425fd880b0"
+        },
+        {
+          "path": "views\/scripts\/admin-category\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14879,
+          "sha1": "6002c739c6168d9ac75cf609a2f447c7f738fd34"
+        },
+        {
+          "path": "views\/scripts\/admin-category\/edit-artist.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 816,
+          "sha1": "700bb2028fe9fd7f4d803d08a48460425fd880b0"
+        },
+        {
+          "path": "views\/scripts\/admin-category\/edit-singer.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 816,
+          "sha1": "700bb2028fe9fd7f4d803d08a48460425fd880b0"
+        },
+        {
+          "path": "views\/scripts\/admin-category\/create-singer.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 816,
+          "sha1": "700bb2028fe9fd7f4d803d08a48460425fd880b0"
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4751,
+          "sha1": "37680cb923aa2c278e15e9602c841238ea878c54"
+        },
+        {
+          "path": "views\/scripts\/music_browse_playlists.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3393,
+          "sha1": "101ad069b4f3cd5c71356814d21d3d43398f9002"
+        },
+        {
+          "path": "views\/scripts\/music_browse_albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2618,
+          "sha1": "7bfdb9eab75eee854ac5ede7db347187ee15d374"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1786,
+          "sha1": "3ae422751736fb667e88f63999b8d9436005b3b8"
+        },
+        {
+          "path": "Plugin\/Composer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 386,
+          "sha1": "b3eed46634a8d4282591aad3d83acb13475d0866"
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1350,
+          "sha1": "6a234ac0095e5c8ef30d6075a79be06d4171a779"
+        }
+      ]
+    },
+    "application\/languages\/en\/mp3music.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/mp3music.csv",
+      "structure": {
+        "path": "mp3music.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0777",
+        "size": 22899,
+        "sha1": "8f6d7cedfe859bc44506ff4d4df684c1dce43fa7"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+ALTER TABLE  `engine4_viewed_membercounts` ADD  `exclude` VARCHAR( 50 ) NOT NULL DEFAULT  '0';

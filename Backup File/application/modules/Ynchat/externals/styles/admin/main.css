@@ -1,0 +1,17 @@
+.add_link {
+	margin: 10px 0px;
+	background-image: url(~/application/modules/Ynchat/externals/images/add_banword.png);
+	background-repeat: no-repeat;
+}
+
+#global_page_ynchat-admin-banwords-create .settings .form-label, #global_page_ynchat-admin-banwords-edit .settings .form-label {
+	width: 100px !important;
+}
+
+.admin_table {
+	margin-bottom: 10px;	
+}
+
+#manage_banwords_form {
+	overflow: auto;
+}

@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('hetips', 'Hire-Experts Tips', '', '4.0.0p3', 1, 'extra') ;

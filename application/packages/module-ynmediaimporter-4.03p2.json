@@ -1,0 +1,1475 @@
+{
+  "type": "module",
+  "name": "ynmediaimporter",
+  "version": "4.03p2",
+  "revision": null,
+  "path": "application\/modules\/Ynmediaimporter",
+  "repository": null,
+  "date": "Fri, 26 Dec 2014 07:19:08 +0000",
+  "title": "YN - Social Media Importer",
+  "description": "Social Media Importer is a right tool for your members if you want to enrich your site. It imports Photo from other top social networks like Facebook, Flickr, Picasa, etc.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 26 Dec 2014 07:19:08 +0000",
+    "title": "YN - Social Media Importer",
+    "description": "Social Media Importer is a right tool for your members if you want to enrich your site. It imports Photo from other top social networks like Facebook, Flickr, Picasa, etc.",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNet Company\" target=\"_blank\">YouNet Company/MisterWizard<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Ynmediaimporter\/settings\/install.php",
+    "class": "Ynmediaimporter_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.1.2",
+      "maxVersion": null,
+      "excludeExcept": null
+    },
+    "module-album": {
+      "type": "module",
+      "name": "album",
+      "guid": "module-album",
+      "minVersion": "4.2.0",
+      "maxVersion": null,
+      "excludeExcept": null
+    },
+    "module-socialbridge": {
+      "type": "module",
+      "name": "socialbridge",
+      "guid": "module-socialbridge",
+      "minVersion": "4.04p4",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Ynmediaimporter": {
+      "type": "directory",
+      "path": "application\/modules\/Ynmediaimporter",
+      "structure": [
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Node.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 274,
+          "sha1": "6b732b52df400a0c1da35cc0929a714b9fa19c53"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model\/DbTable\/Schedulers.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 135,
+          "sha1": "798a48d1376d7de3d9feeea2c363fa624dbd866c"
+        },
+        {
+          "path": "Model\/DbTable\/Nodes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 183,
+          "sha1": "9f88a493e8c7b3e97db21e190ad80ab39ab20eb9"
+        },
+        {
+          "path": "export.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 6878,
+          "sha1": "164fc58a6a2391b838cf0f9e81a1754bed03e015"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 292,
+          "sha1": "42c825b004630ffd3bf50d0035d03b587cf797f5"
+        },
+        {
+          "path": "widgets\/browse-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 343,
+          "sha1": "3394cdda5dfc1e7010e94e80d0b507f2e0649626"
+        },
+        {
+          "path": "widgets\/media-browse",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/media-browse\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 122,
+          "sha1": "312c52b676db4bc1fe13e21e78f53b59dca0657f"
+        },
+        {
+          "path": "widgets\/media-browse\/album",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/media-browse\/album\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 2650,
+          "sha1": "cf562b4da944d8cd599f023c4d6fb82df5ee256e"
+        },
+        {
+          "path": "widgets\/media-browse\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1352,
+          "sha1": "81d4de09fe8c18dd1fdc9821ad7e6ed5c4eaaca6"
+        },
+        {
+          "path": "widgets\/media-browse\/photo",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/media-browse\/photo\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 2650,
+          "sha1": "cf562b4da944d8cd599f023c4d6fb82df5ee256e"
+        },
+        {
+          "path": "widgets\/picasa-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/picasa-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1280,
+          "sha1": "bde890fb69cfeb779dbae340ae16a47448d2c684"
+        },
+        {
+          "path": "widgets\/picasa-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 193,
+          "sha1": "4ac3c1f309ed516da3ff816892642f112ee86de4"
+        },
+        {
+          "path": "widgets\/twitpic-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/twitpic-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 784,
+          "sha1": "8149848a158a39e3c0c6e859d07dc745c89dbbaa"
+        },
+        {
+          "path": "widgets\/twitpic-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 195,
+          "sha1": "b6febbed5febbea6e9e2d80db4a8a0dbecdf3295"
+        },
+        {
+          "path": "widgets\/flickr-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/flickr-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1880,
+          "sha1": "f2c1900bf67ee485b5c977ed357d2a497a25e955"
+        },
+        {
+          "path": "widgets\/flickr-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 193,
+          "sha1": "cac6c011ffecbf554a6d4a50f93e2cf2f45806c8"
+        },
+        {
+          "path": "widgets\/yfrog-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/yfrog-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 970,
+          "sha1": "ce0a41736eb99ce17094cdf387afaba2ca88d5f4"
+        },
+        {
+          "path": "widgets\/yfrog-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 191,
+          "sha1": "56e62d42f283a09ce4f1c5668e72aed2834383c6"
+        },
+        {
+          "path": "widgets\/instagram-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/instagram-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 970,
+          "sha1": "ce0a41736eb99ce17094cdf387afaba2ca88d5f4"
+        },
+        {
+          "path": "widgets\/instagram-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 199,
+          "sha1": "ce00aff696444d760c95c18397127b0af1d3b726"
+        },
+        {
+          "path": "widgets\/facebook-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/facebook-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1602,
+          "sha1": "ff6aee84611f752645a2fd9f43a9785cfb853e63"
+        },
+        {
+          "path": "widgets\/facebook-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 197,
+          "sha1": "9729ab2c73004701c666394ef73788925244b6de"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1562,
+          "sha1": "67bc43f1883d55e9b0c11c28b3fcc946120902eb"
+        },
+        {
+          "path": "controllers\/TwitpicController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 783,
+          "sha1": "4190af08424e83248be15a3ee204ef7128b3acd6"
+        },
+        {
+          "path": "controllers\/InstagramController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 793,
+          "sha1": "b9f881cf340b99767e7bfcadb731670c58b5a9ec"
+        },
+        {
+          "path": "controllers\/LinkController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 509,
+          "sha1": "76d680ce63fa68c73731a22745ddd357ceacd990"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3546,
+          "sha1": "2433c96ff288fd4dcf8668b9b39446395b7b5f9b"
+        },
+        {
+          "path": "controllers\/FacebookController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 951,
+          "sha1": "d2d74fa7a8ba56dd07892d336ea5db68fc336ff2"
+        },
+        {
+          "path": "controllers\/FlickrController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 784,
+          "sha1": "10b018ede0cef09c8c8dc2b3042c6d3b4afca9c2"
+        },
+        {
+          "path": "controllers\/ImportController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3552,
+          "sha1": "27d805f3abdd1ff2e9813ee7d43b40b5348236b4"
+        },
+        {
+          "path": "controllers\/PicasaController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 784,
+          "sha1": "c2a3ee017c4736e335fb7054327ac2cfd0f57348"
+        },
+        {
+          "path": "getdata.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1551,
+          "sha1": "47ae29b329c2de99b8e5de0abf9cb73e602e94e7"
+        },
+        {
+          "path": "cron.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1648,
+          "sha1": "729ad7893c9d4f6285c2ac658efb14de3e2a655f"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Form\/ImportAlbums.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 8658,
+          "sha1": "da29d69d6da53105cc84f6a84d7904f632cc0b23"
+        },
+        {
+          "path": "Form\/SelectAlbum.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 11233,
+          "sha1": "12f2c967d51cb2ca7e398d517c29d672ab706738"
+        },
+        {
+          "path": "Form\/Check.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 9003,
+          "sha1": "034aedb2430cc56bf7c95d0bd0b8c35c662161f4"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 5408,
+          "sha1": "74d9fa0ec2ffb6a749cfd31f8ba087cd9d864fd3"
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Provider.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3203,
+          "sha1": "b50d066ee98098071cbba16e371cf93b274b5e98"
+        },
+        {
+          "path": "Form\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 10359,
+          "sha1": "712e92b934bb8453f4f4982c1ed47a910bc691e7"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts\/core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 6188,
+          "sha1": "7fde7ed0422229b06b9cc03cc9420ab0e11c2b29"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 4456,
+          "sha1": "232bb652f4b819dd50835a600cc7d502f1657208"
+        },
+        {
+          "path": "externals\/styles\/ynresponsive1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 2521,
+          "sha1": "4fa9cc88014cdbcf00fa58e98c92f4e0df276ee5"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 144,
+          "sha1": "47bb36a5f03278d4b6ea5804e494c00ccb02e8e1"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 878,
+          "sha1": "54fc32753d51a95f7c61b10f0b8a0bfa1b2a2e57"
+        },
+        {
+          "path": "externals\/images\/unselectall.png",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 687,
+          "sha1": "3e8cc205e983579887faae7511a24d85f2c15def"
+        },
+        {
+          "path": "externals\/images\/import.png",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 687,
+          "sha1": "3e8cc205e983579887faae7511a24d85f2c15def"
+        },
+        {
+          "path": "externals\/images\/disconnect.png",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 537,
+          "sha1": "d0a90047653afcdac85171e6b34d599538b89773"
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/ajax-loader.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 2892,
+          "sha1": "7e7bc46e4cea26e9b2fe47e2781c1b23088ae346"
+        },
+        {
+          "path": "externals\/images\/facebook_64_64.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 4911,
+          "sha1": "d1f2e9a9735c4771a092df4a818fa53f9dfca187"
+        },
+        {
+          "path": "externals\/images\/service",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/service\/facebook.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 4995,
+          "sha1": "50683118c5fa6973a44bd5bfd466749078920ecb"
+        },
+        {
+          "path": "externals\/images\/service\/yfrog.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 2135,
+          "sha1": "6d3d0fe79683dabf8e8c7d2df4cd22bc6b2808f0"
+        },
+        {
+          "path": "externals\/images\/service\/picasa.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 4880,
+          "sha1": "7b0ea008338eb4ecc37071491f2554adb3a4ca51"
+        },
+        {
+          "path": "externals\/images\/service\/flickr.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 6670,
+          "sha1": "59c75416701cd43db420c9c332357c8a3c38a80d"
+        },
+        {
+          "path": "externals\/images\/service\/instagram.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 7030,
+          "sha1": "f24614ecfc9313c3b05d49458d04a10d0dc8f66a"
+        },
+        {
+          "path": "externals\/images\/service\/twitpic.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 6505,
+          "sha1": "2ce0ce4203270e9c3621126a928c43ea28a0846d"
+        },
+        {
+          "path": "externals\/images\/selectall.png",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 687,
+          "sha1": "3e8cc205e983579887faae7511a24d85f2c15def"
+        },
+        {
+          "path": "externals\/images\/type",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/type\/photo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 705,
+          "sha1": "5e8675f43036c6079d95c4546c27d51048feabf2"
+        },
+        {
+          "path": "externals\/images\/type\/album.png",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 661,
+          "sha1": "ca8fa077f56d5a5f2b6b4bcde921eff1cb76bf94"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/my-upgrade-4.01p2-4.02.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 149,
+          "sha1": "9ffa998888b83ac75fe733fb24294ad284c3b297"
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3998,
+          "sha1": "ec6b474ab7566c4aa79e8d09b2c48d3bfe234097"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2629,
+          "sha1": "fa25406f99e550cb2c4aec044f9f0dbc7d9162f6"
+        },
+        {
+          "path": "settings\/my-upgrade-4.01p1-4.01p2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "settings\/structure.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 27584,
+          "sha1": "95b321ce8b50ba0ada1883aa595a8d51ae06caa6"
+        },
+        {
+          "path": "settings\/my-upgrade-4.02p1-4.03.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 86,
+          "sha1": "f6720c4f388f887f14cc851c436885dba127a155"
+        },
+        {
+          "path": "settings\/my-upgrade-4.02-4.02p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 161,
+          "sha1": "7d25f1742031602e90400a7e010b1bc9b82c4f78"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 84,
+          "sha1": "5b383ce77175bd8e5fe5b623352fe2026adc31af"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03-4.03p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 88,
+          "sha1": "cb899655959c6c157289b6287f9e351ee0e420df"
+        },
+        {
+          "path": "settings\/setup.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 9244,
+          "sha1": "43c848f39a1eda9ad433dd30394c0d701b19be13"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 2062,
+          "sha1": "a693f3f5ec8ff742fadfc27c5573ec7d0d6aafff"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03p1-4.03p2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 88,
+          "sha1": "7aa6c05401150829700a9917887a4ba6d02407f2"
+        },
+        {
+          "path": "settings\/my-upgrade-4.01-4.01p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 6597,
+          "sha1": "f7a60a8ae64e0acd51d51648f7eb4b711a1e99be"
+        },
+        {
+          "path": "Provider",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Provider\/Picasa.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 6699,
+          "sha1": "e4a5bc0455dc38177e6483f99fe4b2f073eed62c"
+        },
+        {
+          "path": "Provider\/Yfrog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 4190,
+          "sha1": "3a02460fdb8dfc152c0ff5e6f0121f711af74325"
+        },
+        {
+          "path": "Provider\/Service.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 16776,
+          "sha1": "3c878718eb3d3ea1d6440a365fbae4368f479d0c"
+        },
+        {
+          "path": "Provider\/Instagram.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 4646,
+          "sha1": "070bc348ac59cc51c4372af32d1ce86d8b30779f"
+        },
+        {
+          "path": "Provider\/Abstract.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 16597,
+          "sha1": "52d4c01482205b9d05c0382d14ac4f413f802855"
+        },
+        {
+          "path": "Provider\/Twitpic.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 4039,
+          "sha1": "77dde58f0b1634aab0313d62df9671553ad931af"
+        },
+        {
+          "path": "Provider\/Link.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 834,
+          "sha1": "e1b30a8c919d2b3e7c6449e929d5c7fca09b6d60"
+        },
+        {
+          "path": "Provider\/Flickr.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 15475,
+          "sha1": "1e99182761851143952c6cd7799c115dfd2016bb"
+        },
+        {
+          "path": "Provider\/Facebook.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 6874,
+          "sha1": "4283f5061591416fb44c3793d0eda9b8d725eed2"
+        },
+        {
+          "path": "Provider\/libs",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Provider\/libs\/phpFlickr.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 86354,
+          "sha1": "40f5f65b7e8eb019a06b4c44b71056a879a3da57"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 987,
+          "sha1": "f79c95e9764061c39125ea955643c95bddbc5703"
+        },
+        {
+          "path": "postimport.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3931,
+          "sha1": "f64fa45c43f5409502c513a90d96e98120f602c9"
+        },
+        {
+          "path": "schedule.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 2540,
+          "sha1": "b9398782b89eb6b5885f2959f4ec3256936560d9"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 401,
+          "sha1": "40554ffa2bac68fafae679d2f7076f3c687e588b"
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1883,
+          "sha1": "07632dc0dc47b9e1163e7d5c91b95478a279e399"
+        },
+        {
+          "path": "crontab.txt",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 130,
+          "sha1": "9540a4e28998a0e47d2b1dca9748dc2979b83ec6"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/import",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/import\/import-albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/import\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 851,
+          "sha1": "492ec599f18298b0036e2b156600ae3f0e5c0df4"
+        },
+        {
+          "path": "views\/scripts\/import\/select-album.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 781,
+          "sha1": "017e25292ea683152f7f24afcc513ae0cbf53732"
+        },
+        {
+          "path": "views\/scripts\/import\/process.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1223,
+          "sha1": "22ce6e1cc8c833b19f2b4d634dbca472492b6965"
+        },
+        {
+          "path": "views\/scripts\/import\/check.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 1441,
+          "sha1": "7e5384fbf6075206bd7f4abb0b51eed7a24cbaea"
+        },
+        {
+          "path": "views\/scripts\/import\/media.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 410,
+          "sha1": "7a132fabbcafb07a32c479eccf9939003f641158"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/providers.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 410,
+          "sha1": "7a132fabbcafb07a32c479eccf9939003f641158"
+        },
+        {
+          "path": "views\/scripts\/facebook",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/facebook\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 132,
+          "sha1": "8900404350536734660d463c1b8bafc276497641"
+        },
+        {
+          "path": "views\/scripts\/facebook\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/facebook\/album.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/facebook\/photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/twitpic",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/twitpic\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/twitpic\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/twitpic\/photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/picasa",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/picasa\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/picasa\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/picasa\/photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/link",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/link\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/link\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/link\/photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/flickr",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/flickr\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/flickr\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/flickr\/album.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/flickr\/photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/yfrog",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/yfrog\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/yfrog\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/yfrog\/photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/instagram",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/instagram\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/instagram\/albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/instagram\/photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0775",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/__photos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3465,
+          "sha1": "745e5f14363113b1a32fca05ca732826775b532a"
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3406,
+          "sha1": "8beb6749dbcb12524fbb6ee9890c82c0e41d9393"
+        },
+        {
+          "path": "views\/scripts\/index\/disconnect.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index\/select-album.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 543,
+          "sha1": "0d6d135090f971f54163c522f8cd4f8810ec39bd"
+        },
+        {
+          "path": "views\/scripts\/index\/disconnect-facebook.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index\/import-album.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 543,
+          "sha1": "0d6d135090f971f54163c522f8cd4f8810ec39bd"
+        },
+        {
+          "path": "views\/scripts\/index\/callback.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index\/connect.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/index\/__albums.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 3982,
+          "sha1": "0c2c4badb616bb15bc549e7f089eff79a08f434d"
+        },
+        {
+          "path": "views\/scripts\/index\/session.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0674",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        }
+      ]
+    },
+    "application\/languages\/en\/ynmediaimporter.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/ynmediaimporter.csv",
+      "structure": {
+        "path": "ynmediaimporter.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 5601,
+        "sha1": "e1bc2afbaebe85daaa9f862c38a2877652312031"
+      }
+    }
+  }
+}

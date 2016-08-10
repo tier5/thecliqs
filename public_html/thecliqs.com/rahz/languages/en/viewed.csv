@@ -1,0 +1,20 @@
+"_EMAIL_NOTIFY_PROFILE_VIEW_TITLE";"Who Viewed Me Notification"
+"_EMAIL_NOTIFY_PROFILE_VIEW_DESCRIPTION";"_EMAIL_NOTIFY_PROFILE_VIEW_DESCRIPTION"
+"_EMAIL_NOTIFY_PROFILE_VIEW_DESCRIPTION";"This email is send to user when any other user viewed his/her profile."
+"_EMAIL_NOTIFY_PROFILE_VIEW_SUBJECT";"_EMAIL_NOTIFY_PROFILE_VIEW_SUBJECT"
+"_EMAIL_NOTIFY_PROFILE_VIEW_SUBJECT";"[sender_title] has viewed your profile."
+"_EMAIL_NOTIFY_PROFILE_VIEW_BODY";"_EMAIL_NOTIFY_PROFILE_VIEW_BODY"
+"_EMAIL_NOTIFY_PROFILE_VIEW_BODY";" Hii  [recipient_title],
+[sender_title] has viewed your profile.
+
+http://[host][sender_link]"
+
+"Who Viewed Me";"Who Viewed Me"
+"Manage Subscription Plans";"Manage Subscription Plans"
+"No one has viewed your profile yet.";"No one has viewed your profile yet."
+"View All";"View All"
+"Buy";"Buy"
+"{item:$subject} has viewed your profile.";"{item:$subject} has viewed your profile."
+"ACTIVITY_TYPE_PROFILE_VIEW";"When People visit your profile"
+"Please buy subscription.";"Please buy subscription."
+"View Count:";"View Count:"

@@ -1,0 +1,85 @@
+td {font-family: Tahoma; font-weight: normal; font-size: 12px; color: #FFFFFF}
+p {color: #FFFFFF; font-family: Tahoma; font-size: 12px; font-weight: normal; margin: 0px; margin-bottom: 3px}
+a {
+font-family: Tahoma; 
+font-size: 12px;  
+color: #CC0000; 
+text-decoration: none
+}
+a:hover {
+color: #FF0000
+font-family: Tahoma; 
+font-size: 12px; 
+}
+img {border: 0px}
+td {font-family: Tahoma; font-size: 12px}
+select, textarea {background-color: #000000; color: #FFFFFF; border: solid 1px #FFFFFF; font-family: Verdana; font-size: 10px; font-weight: normal}
+input {background-color: #000000; color: #FFFFFF; font-family: Verdana; font-size: 10px; font-weight: normal}
+h2 {font-family: Arial; font-size: 18px; color: #FFFFFF; font-weight: normal;}
+
+.extended {font-family: Verdana}
+.bolded {font-weight: bold}
+.small {font-size: 11px}
+.xsmall {font-size: 10px; font-family: Verdana}
+.bk {color: #BB0000}
+.hk {color: #990000; font-weight: bold; text-align: center}
+.lk {color: #F0EEDD}
+.centered {text-align: center
+}
+
+.boxlink:link, .boxlink:visited {
+color: #FF0000; 
+font-family: Tahoma; 
+text-decoration: none; 
+font-size: 12px; 
+font-weight: normal; 
+border: 1px; 
+border-color: #CC0000; 
+padding-bottom: 2px; 
+padding-left: 5px; 
+padding-right: 5px; 
+padding-top: 2px; 
+border-style: none; 
+margin-left: 3px; 
+margin-right: 3px
+}
+.boxlink:hover {
+background-color: #660000; 
+border-style: solid; 
+padding-left: 4px; 
+padding-right: 4px
+}
+.w {color: #ffffff}
+.g {color: #bbbbbb}
+.r {color: #ff0000}
+.bgg {background-color: #444444
+}
+.b {font-weight: bold
+}
+.s {font-size: 12px
+}
+.m {font-size: 12px
+}
+.pl {padding-left: 4px
+}
+.pr {padding-right: 4px
+}
+.p {padding-left: 4px; padding-right: 4px
+}
+.ts {border: 1px solid #666666; padding: 2px
+}
+.indent {margin-left: 20px
+}
+
+.bk {
+	COLOR: #bb0000
+}
+.hk {
+	FONT-WEIGHT: bold; COLOR: #990000; TEXT-ALIGN: center
+}
+.lk {
+	mcolor: #F0EEDD
+}
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}

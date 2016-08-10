@@ -1,0 +1,424 @@
+/*FIX ON TEMPLATE METRO-PHOTO*/
+.ynresponsive-metro .ynresume-detail-cover-theme_1,
+.ynresponsive-metro .ynresume-detail-cover-theme_2,
+.ynresponsive-metro .ynresume-detail-cover-theme_3,
+.ynresponsive-metro .ynresume-detail-cover-theme_4{
+	margin: 15px !important;
+}
+
+.ynresponsive-metro .ynresume-detail-section-theme_1,
+.ynresponsive-metro .ynresume-detail-section-theme_2,
+.ynresponsive-metro .ynresume-detail-section-theme_3,
+.ynresponsive-metro .ynresume-detail-section-theme_4{
+	margin: 15px !important;
+}
+.ynresponsive-metro .ynjobposting-job-related-item{
+	margin: 0px 10px;
+}
+.ynresponsive-metro .layout_ynresume_who_viewed_your_resume .ynresume-who-viewed-resume-item{
+	margin: 0px 10px;
+}
+.ynresponsive-metro  .layout_ynresume_who_viewed_your_resume .ynresume-who-viewed-resume-description{
+	margin: 0px 10px;
+}
+
+.ynresponsive-metro .layout_right .button.fullwidth,
+.ynresponsive-metro .layout_left .button.fullwidth{
+	margin: 0 10px;
+}
+.ynresponsive-metro .layout_left>div+div, 
+.ynresponsive-metro .layout_right>div+div{
+	padding-bottom: 10px;
+}
+.ynresponsive-metro div#occupations-recommendation-wrapper{
+	margin: 15px;
+}
+.ynresponsive-metro #recomendation-give-form{
+	margin: 15px;
+}
+.ynresponsive-metro .ynresume-tabs.tabs{
+	margin: 15px;
+}
+.ynresponsive-metro form#recomendation-ask-form{
+	margin: 15px;
+}
+.ynresponsive-metro .layout_core_container_tabs .ynresume-modeview-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.ynresponsive-metro #ynresume-features-list{
+	margin: 15px;
+}
+
+.ynresponsive-metro #recommendation-pending-wrapper{
+	margin: 15px;
+}
+.ynresponsive-metro .layout_ynresume_resume_listing{
+	padding: 10px;
+}
+.ynresponsive-metro .tabs_alt>ul,
+.ynresponsive-event .tabs_alt>ul {
+	padding: 0;
+}
+.tabs_alt>ul {
+	padding: 3px 0px 0px 0px;
+}
+/*END FIX ON TEMPLATE METRO-PHOTO*/
+
+
+/*Clear padding when item active*/
+body.ynresponsive1,
+body.ynresponsive-photo{
+	.tabs.ynresume-menu-top > ul li.active>a{
+		padding: 0px;
+	}
+}
+
+
+
+/*FIX ON TEMPLATE EVENT*/
+.ynresponsive-event .layout_core_container_tabs .ynresume-modeview-button {
+	position: absolute;
+	top: 10px;
+	right: 9px;
+}
+.layout_core_container_tabs .ynresume-modeview-button{
+	top: 5px;
+}
+/*END FIX ON TEMPLATE EVENT*/
+
+
+.button
+{
+	border: 0;
+	background-image: none;
+	text-shadow: none;
+}
+
+.tabs > ul li.ynresume_more_show 
+{
+  	vertical-align: middle;
+}
+
+.tabs > ul li.ynresume_more_show ul li + li > a
+{
+	margin-left: 0;
+}
+
+@media screen and (max-width: 991px) {
+	.ynresume-user-item-list > li {
+		width: 25%;
+	}
+	.ynresume-menu-top ul.navigation
+	{
+		li a.ynresume_main_more
+		{
+			display: none;
+		}
+		li > ul
+		{
+			padding: 0;
+			background: transparent;
+			position: initial;
+			display:block;
+		}
+	}
+
+	#ynresume_cover_wrapper .ynresume-form-edit-cover .form-element.form-element-2item > * {
+		margin-bottom: 5px;
+		width: 45%;
+	}
+
+	#ynresume_cover_wrapper .ynresume-form-edit-cover .form-wrapper .form-label {
+		float: none;
+	}
+
+	.ynresume-menu-top li > ul {
+		margin-top: 0;
+		border: 0;
+	}
+
+	.ynresume-menu-top li > ul li + li {
+		border-top: 0;
+	}
+
+	.tabs.navigation-over-list > ul.navigation li > a:hover, 
+	.tabs.navigation-over-list > ul.navigation li.active > a {
+		padding: 0 15px;
+	}
+
+	body[id^=global_page_ynresume] #global_content {
+		position: relative;
+	}
+
+	body[id^=global_page_ynresume] .layout_right form[id$=filter_form].open, 
+	body[id^=global_page_ynresume] .layout_right .filters.open {
+		top: 59px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#sections-content-items .sections-content-item .section-item .sub-section-item .company-photo {
+		display: none;
+	}
+
+	#ynresume-features-list .ynresume-features-item .ynresume-features-item-thumb {
+		width: 120px;
+		height: 120px;
+	}	
+
+	#ynresume-features-list .ynresume-features-item .ynresume-features-item-footer > div {
+		top: 55px;
+		width: 60px;
+		height: 60px;
+		padding-top: 5px;
+	}
+
+	.ynresume-layout-list-modeview .ynresume-layout-content-grid-view > ul > li {
+		width: 50%;
+	}
+
+	.ynresume-layout-list-modeview .ynresume-layout-content-list-view .ynresume-layout-list-item .ynresume-layout-list-item-thumb {
+		width: 100px;
+		height: 100px;
+
+		.ynresume-layout-list-item-thumb-border:after,
+		.ynresume-layout-list-item-thumb-border {
+			width: 90px;
+			height: 90px;
+		}
+
+		.ynresume-photo-span {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	.ynresume-layout-list-modeview .ynresume-layout-content-list-view .ynresume-layout-list-item .ynresume-layout-list-item-main {
+		padding-right: 0;
+	}
+
+	.ynresume-layout-list-modeview .ynresume-layout-content-list-view .ynresume-layout-list-item .ynresume-layout-list-item-footer {
+		position: absolute;
+		top: 110px;
+		left: 0px;
+		right: inherit;
+	}
+
+	.ynresume-layout-list-modeview .ynresume-layout-content-list-view .ynresume-layout-list-item .ynresume-layout-list-item-footer > div span > i.fa,
+	.ynresume-layout-list-modeview .ynresume-layout-content-list-view .ynresume-layout-list-item .ynresume-layout-list-item-footer > div {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		display: inline-block;
+	}
+
+	.ynresume-layout-list-modeview .ynresume-layout-content-list-view .ynresume-layout-list-item .ynresume-layout-list-item-footer > div {
+		margin: 0 5px;
+	}
+
+	.ynresume-layout-list-modeview .ynresume-layout-content-list-view .ynresume-layout-list-item .ynresume-layout-list-item-footer .ynresume-layout-list-item-action ul {
+		left: 0;
+		z-index: 3;
+	}
+
+	#ynresume-manage-sections-box #sections-list .section-item {
+		width: 100%;
+	}
+
+	.ynresume-user-item-list > li {
+		width: 33.33%;
+	}
+
+	#ynresume-given-recommendation .recommendation-item .recommendation-options,
+	#recommendation-pending-wrapper .recommendation-item .recommendation-options {
+		float: none;
+
+		a {
+			margin-right: 5px;
+			border: 0 !important;
+  			padding: 0 5px 5px 0;
+		}
+	}
+
+	.layout_core_container_tabs .ynresume-modeview-button {
+		position: static;
+	}
+
+	#sections-content-items .sections-content-item label.order .ynresume-section-move {
+		display: none;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section .ynresume-add-btn {
+		margin-right: 36px;
+	}
+
+	.ynresume-detail-section-theme_4 .view_on_mobile {
+		display: none;
+	}
+
+	.layout_ynresume_manage_sections .view_on_mobile,
+	.ynresume-detail-section-theme_1 .view_on_mobile,
+	.ynresume-detail-section-theme_2 .view_on_mobile,
+	.ynresume-detail-section-theme_3 .view_on_mobile {
+		margin-top: 5px;
+		display: block !important;
+  		visibility: visible !important;
+	}	
+}
+
+@media screen and (max-width: 600px) {
+	.layout_ynresume_view_sections #language-list > li, 
+	.layout_ynresume_manage_sections #language-list > li,
+	.layout_ynresume_view_sections #ynresume-section-list-contact .contact-content > div, 
+	.layout_ynresume_manage_sections #ynresume-section-list-contact .contact-content > div,
+	.ynresume-layout-list-modeview .ynresume-layout-content-grid-view > ul > li {
+		width: 100%;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_3 .ynresume-cover-description-info:nth-child(odd):after {
+		display: none;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_3 .ynresume-cover-description-info {
+		width: 100%;
+		padding-left: 0 !important;
+		border-top: 0 !important;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_2 .ynresume-cover-photo,
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_3 .ynresume-cover-photo,
+	#ynresume_cover_wrapper .ynresume-cover-photo {
+		float: none;
+		margin: 0 auto 10px auto;
+	}
+
+	.layout_ynresume_view_sections .section-photos .photo-lists > li,
+	.layout_ynresume_manage_sections .section-photos .photo-lists > li {
+		width: 50%;
+	}
+
+	#sections-content-items .ynresume-form-wrapper > label {
+		float: none;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section h3.section-label {
+		clear: right;
+		padding-top: 10px;
+	}
+
+	#sections-content-items .sections-content-item label.order {
+		position: relative;
+		top: 0;
+		right: 0;
+		margin: 0;
+	}
+
+	#sections-content-items .sections-content-item .ynresume-section .ynresume-add-btn {
+		margin-right: 0;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-photo {
+		position: static;
+		left: 0;
+		top: 0;
+		margin: 0 auto 10px auto;
+	}
+
+	#ynresume-view-sections-content.ynresume-detail-section-theme_4 #sections-content-items .sections-content-item .ynresume-section .ynresume-add-btn,
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-position + .ynresume-cover-description-subline,
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description .ynresume-cover-description-position {
+		position: static;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-position + .ynresume-cover-description-subline + .ynresume-cover-description-subline {
+		padding: 0;
+		min-height: 0;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info {
+		width: 100%;		  
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info:nth-child(n+2) {
+		border-top: 1px solid #e6e6e6;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info:nth-child(odd),
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info:nth-child(odd) * {
+		text-align: left;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info:nth-child(odd),
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info:nth-child(even) {
+		padding-left: 45px;
+		padding-right: 0;
+	}
+
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info:nth-child(odd) i.fa,
+	#ynresume_cover_wrapper.ynresume-detail-cover-theme_4 .ynresume-cover-description-info:nth-child(even) i.fa {
+		left: 0;
+		right: inherit;
+	}
+
+	#sections-content-items .sections-content-item:not(#sections-content-item_recommendation) .occupation-recommendations .recomendation-list .recommendation-item {
+		width: 100%;
+		margin-right: 0 !important;
+	}
+
+	#sections-content-items .sections-content-item .section-item .label {
+		display: block;
+	}
+
+	#ynresume-view-sections-content.ynresume-detail-section-theme_4 #sections-content-items .sections-content-item .ynresume-section-content .section-members .member-label, 
+	#ynresume-view-sections-content.ynresume-detail-section-theme_4 #sections-content-items .sections-content-item .ynresume-section-content .section-item .label {
+		text-align: center;
+	}
+
+	.ynresume-user-item-list > li {
+		width: 50%;
+	}
+
+	#sections-content-items .ynresume-form-wrapper .ynresume-form-input.ynresume-form-input-4item textarea, 
+	#sections-content-items .ynresume-form-wrapper .ynresume-form-input.ynresume-form-input-4item select,
+	#sections-content-items .ynresume-form-wrapper .ynresume-form-input.ynresume-form-input-4item input[type=text], 
+	#sections-content-items .ynresume-form-wrapper .ynresume-form-input.ynresume-form-input-4item input[type=email], 
+	#sections-content-items .ynresume-form-wrapper .ynresume-form-input.ynresume-form-input-4item input[type=password], 
+	#sections-content-items .ynresume-form-wrapper .ynresume-form-input.ynresume-form-input-4item input.text {
+		width: 45%;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.ynresume-detail-section-theme_4 #sections-content-item_contact .ynresume-section-content .contact-content>div .inline_theme_4{
+		max-width: 100%;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.ynresume-detail-section-theme_4 #sections-content-item_contact .ynresume-section-content .contact-content>div .inline_theme_4:nth-child(even):before{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#ynresume-features-list .ynresume-features-item .ynresume-features-item-footer {
+		display: none;
+	}
+
+	.ynresume-user-item {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.layout_ynresume_view_sections .section-photos .photo-lists > li .photo-item, 
+	.layout_ynresume_manage_sections .section-photos .photo-lists > li .photo-item {
+		height: 120px;
+	}
+
+	.ynresume-user-item-list > li {
+		width: 100%;
+	}
+}

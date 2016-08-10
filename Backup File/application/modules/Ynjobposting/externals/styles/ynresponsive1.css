@@ -1,0 +1,216 @@
+.ynjobposting-browse-listings.ynjobposting-browse-job-viewmode-grid .ynjobposting-browse-listings-item .ynjobposting-browse-listings-item-content .ynjobposting-browse-listings-item-main {
+	min-height: 55px;
+}
+
+body[id^=global_page_ynjobposting] .template-ynresponsive-metro .layout_right form[id$=filter_form].open, 
+body[id^=global_page_ynjobposting] .template-ynresponsive-metro .layout_right .filters.open {
+	top: -20px !important;
+}
+
+body[id^=global_page_ynjobposting] #global_content .layout_main {
+	position: relative;
+}
+
+#smoothbox_window body {
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 991px) {
+	#ynjobposting-browse-listings.ynjobposting-browse-company-viewmode-grid > ul > li,
+	.ynjobposting-browse-listings.ynjobposting-browse-job-viewmode-grid .ynjobposting-browse-listings-item {
+		width: 33%;
+	}
+
+	.layout_ynjobposting_list_industries {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.ynjobposting-browse-listings.ynjobposting-browse-job-viewmode-list .ynjobposting-browse-listings-item .ynjobposting-browse-listings-item-content {
+		& > div {
+			float: none;
+			border: 0 !important;
+			width: 100% !important;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	#ynjobposting_list_applications {
+		.ynjobposting-table-header {
+			& > div {
+				&:nth-child(1) { width: 50%; }
+				&:nth-child(2) { display: none }
+				&:nth-child(3) { width: 50%; }
+				&:nth-child(4) { display: none }
+				&:nth-child(5) { display: none }
+			}
+		}
+
+		.ynjobposting-table-listings {
+			& > div[class$=item] {
+				& > div {
+					&:nth-child(1) { width: 50%; }
+					&:nth-child(2) { display: none }
+					&:nth-child(3) { width: 50%; }
+					&:nth-child(4) { display: none }
+					&:nth-child(5) { display: none }
+				}
+			}
+		}
+	}
+
+	#ynjobposting_list_my_jobs {
+		.ynjobposting-table-header {
+			& > div {
+				&:nth-child(1) { display: none }
+				&:nth-child(2) { width: 40%; }
+				&:nth-child(3) { width: 30%; }
+				&:nth-child(4) { width: 30%; }
+				&:nth-child(5) { display: none }
+				&:nth-child(6) { display: none }
+				&:nth-child(7) { display: none }
+			}
+		}
+
+		.ynjobposting-table-listings {
+			& > div[class$=item] {
+				& > div {
+					&:nth-child(1) { display: none }
+					&:nth-child(2) { width: 40%; }
+					&:nth-child(3) { width: 30%; }
+					&:nth-child(4) { width: 30%; }
+					&:nth-child(5) { display: none }
+					&:nth-child(6) { display: none }
+					&:nth-child(7) { display: none }
+				}
+			}
+		}
+	}
+
+	.ynjobposting-company-widget-profile-cover .ynjobposting-company-profile-cover-avatar {
+		bottom: 40px;
+	}
+
+	.ynjobposting-company-widget-profile-cover .ynjobposting-company-detail-info {
+		padding-bottom: 30px;
+	}
+
+	.ynjobposting-company-widget-profile-cover .ynjobposting-company-detail-info .ynjobposting-company-detail-setting {
+		top: 415px;
+	}
+
+	.ynjobposting-company-widget-profile-cover .ynjobposting-company-detail-info .ynjobposting-company-detail-action {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border-top: 1px solid $theme_border_color;
+
+		& > * {
+			padding: 0;
+			height: 30px;
+			line-height: 30px;
+			width: 20%;
+			text-align: center;
+			display: block;
+			float: left;
+		}
+		
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#global_page_ynjobposting-jobs-apply #company_logo-wrapper,
+	#global_page_ynjobposting-jobs-apply #job_title-wrapper, 
+	#global_page_ynjobposting-jobs-apply #job_location-wrapper, 
+	#global_page_ynjobposting-jobs-apply #company_name-wrapper {
+		width: 100%;
+		display: block;
+	}
+
+	#ynjobposting-browse-listings.ynjobposting-browse-company-viewmode-grid > ul > li,
+	.ynjobposting-browse-listings.ynjobposting-browse-job-viewmode-grid .ynjobposting-browse-listings-item {
+		width: 50%;
+	}
+
+	#ynjobposting-browse-listings.ynjobposting-browse-company-viewmode-list > ul > li .ynjobposting-company-item .ynjobposting-company-item-owner-action {
+		padding-left: 1em;
+		margin-left: 0;
+		float: none;
+		overflow: hidden;
+	}
+
+	#global_page_ynjobposting-company-edit,
+	#global_page_ynjobposting-company-create {
+		#from, #to{
+			width: 100px;
+		}
+		
+		#from-label, #from-element{
+			display: block;
+		}
+		
+		#to-label, #to-element{
+			display: block;
+		}
+		
+		#from-wrapper, #to-wrapper, #employees-wrapper{
+			display: block;
+		}
+		
+		#from-wrapper #from-element { width: auto; min-width: 0; }
+		#to-wrapper {
+			#to-label, #to-element {
+				width: 150px;
+				min-width: 0;
+				float: left;
+				display: block;
+				vertical-align: middle;
+			}  		
+		}
+		
+		#employees-wrapper {
+			margin-bottom: 3px;
+			#employees-label, #employees-element {
+				width: 150px;
+				min-width: 0;
+				float: left;
+				display: block;
+				vertical-align: middle;
+			}  		
+		}
+		#industry_id-wrapper, #add_more-wrapper{
+			display: block;
+		}
+
+		#add_more-label{
+			display:none;
+		}
+		#additional_information-label, #contact_info-label,
+		#headquarter-label, #company_size-label{
+			font-size: medium;
+		}
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	#ynjobposting-browse-listings.ynjobposting-browse-company-viewmode-grid > ul > li,
+	.ynjobposting-browse-listings.ynjobposting-browse-job-viewmode-grid .ynjobposting-browse-listings-item {
+		width: 100%;
+	}
+
+	.ynjobposting-company-widget-profile-cover .ynjobposting-company-profile-cover-avatar {
+		bottom: 125px;
+	}
+
+	.ynjobposting-company-widget-profile-cover .ynjobposting-company-detail-info {
+		margin-left: 10px;
+	}
+
+	#global_page_ynjobposting-jobs-promote .ynjobposting_promote_wrapper {
+		max-width: 280px;
+	}
+}

@@ -1,0 +1,73 @@
+{
+  "type": "widget",
+  "name": "avchat3online",
+  "version": "3041",
+  "revision": null,
+  "path": "application\/widgets\/avchat3online",
+  "repository": null,
+  "date": "Tue, 24 Sep 2013 07:17:09 +0000",
+  "title": "Who's Chatting for AVChat 3",
+  "description": "The list of users logged into the chat",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "NuSoft"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Tue, 24 Sep 2013 07:17:09 +0000",
+    "title": "Who's Chatting for AVChat 3",
+    "description": "The list of users logged into the chat",
+    "developer": null,
+    "authors": [
+      "NuSoft"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/widgets\/avchat3online": {
+      "type": "directory",
+      "path": "application\/widgets\/avchat3online",
+      "structure": [
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3573,
+          "sha1": "f55fdf8b149412067a4911b546212f461b399949"
+        },
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1430,
+          "sha1": "4726ee8a27608951bd16ac102ced1840f3e6245c"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 744,
+          "sha1": "cea1b33b084eee9ff90be2d187c4bf5322b96ec9"
+        }
+      ]
+    }
+  }
+}

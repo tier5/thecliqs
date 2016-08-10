@@ -1,0 +1,56 @@
+td {font-family: Tahoma; font-weight: normal; font-size: 12px; color: #FFFFFF}
+p {color: #FFFFFF; font-family: Tahoma; font-size: 12px; font-weight: normal; margin: 0px; margin-bottom: 3px}
+a {font-family: Tahoma; font-size: 12px; font-weight: bold; color: #FF0000; text-decoration: none}
+a:hover {color: #CCCCCC}
+img {border: 0px}
+td {font-family: Tahoma; font-size: 12px}
+select, textarea {background-color: #000000; color: #FFFFFF; border: solid 1px #FF0000; font-family: Verdana; font-size: 10px; font-weight: normal}
+input {background-color: #000000; color: #FFFFFF; font-family: Verdana; font-size: 10px; font-weight: normal}
+h2 {font-family: Arial; font-size: 18px; color: #FFFFFF; font-weight: normal;}
+
+.extended {font-family: Verdana}
+.bolded {font-weight: bold}
+.small {font-size: 11px}
+.xsmall {font-size: 10px; font-family: Verdana}
+.bk {color: #FF0000}
+.hk {color: #FF0000; font-weight: bold; text-align: center}
+.lk {color: #FF0000}
+.centered {text-align: center}
+
+.boxlink:link, .boxlink:visited {color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none; border: 1px; border-color: #FF0000; padding-bottom: 2px; padding-left: 5px; padding-right: 5px; padding-top: 2px; border-style: none; margin-left: 3px; margin-right: 3px}
+.boxlink:hover {background-color: #000000; border-style: solid; padding-left: 4px; padding-right: 4px}
+.hide {display: none}
+.w {color: #FF0000}
+.g {color: #FF0000}
+.r {color: #FF0000}
+.bgg {background-color: #444444
+}
+.b {font-weight: bold
+}
+.s {font-size: 10px
+}
+.m {font-size: 12px
+}
+.pl {padding-left: 4px
+}
+.pr {padding-right: 4px
+}
+.p {padding-left: 4px; padding-right: 4px
+}
+.ts {border: 1px solid #FF0000; padding: 2px
+}
+.indent {margin-left: 20px
+}
+
+.bk {
+	COLOR: #FF0000
+}
+.hk {
+	FONT-WEIGHT: bold; COLOR: #FFFF00; TEXT-ALIGN: center
+}
+.lk {
+	mcolor: #FF0000
+}
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}

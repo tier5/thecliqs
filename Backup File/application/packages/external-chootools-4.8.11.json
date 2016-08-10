@@ -1,0 +1,83 @@
+{
+  "type": "external",
+  "name": "chootools",
+  "version": "4.8.11",
+  "revision": "9747",
+  "path": "externals\/chootools",
+  "repository": null,
+  "date": "Thu, 07 Jul 2016 23:35:02 +0000",
+  "title": "Chootools",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.8.11": {
+      "chootools.js": "Fixed screen jumping issue with textarea while typing long content",
+      "manifest.php": "Incremented version"
+    },
+    "4.1.0": {
+      "chootools.js": "Improved javascript automatic link enabling; added Request.Post class",
+      "manifest.php": "Incremented version"
+    },
+    "4.0.3": {
+      "chootools.js": "Tweak for line endings",
+      "manifest.php": "Incremented version"
+    },
+    "4.0.2": {
+      "chootools.js": "Improved language support; fixed rare bug in javascript sprintf implementation",
+      "manifest.php": "Incremented version"
+    },
+    "4.0.1": {
+      "chootools.js": "Added console.log() error protection; changed class name to update timestamps",
+      "manifest.php": "Incremented version"
+    }
+  },
+  "meta": {
+    "date": "Thu, 07 Jul 2016 23:35:02 +0000",
+    "title": "Chootools",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/chootools": {
+      "type": "directory",
+      "path": "externals\/chootools",
+      "structure": [
+        {
+          "path": "chootools.js",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 30490,
+          "sha1": "cbcd9124fc3744a0f7bb716abbd95bba058a7709"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 1341,
+          "sha1": "a2c86ee73eb4b7c1bf772cfeb24b2cfbd7fbd9b0"
+        }
+      ]
+    }
+  }
+}

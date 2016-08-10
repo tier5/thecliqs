@@ -1,0 +1,288 @@
+
+#global_page_ynauction-photo-upload .progress
+{
+	width: 80% !important;
+}
+#global_page_ynauction-photo-upload #files
+{
+	width: 100%;
+}
+/*** btn of aution ***/
+.layout_ynauction_detail_ynauctions .baselevel_detail .active, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .pending, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .halted, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .checking, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .stopped, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .leading, 
+.layout_ynauction_detail_ynauctions .baselevel_detail .buynow {
+    height: 25px;
+    width: 96px;
+}
+.layout_ynauction_detail_ynauctions .btnwinner .btn
+{
+	padding: 3px 2px;
+}
+.layout_ynauction_detail_ynauctions .baselevel_detail .max_bid
+{
+	margin-top:8px;
+}
+
+
+body[id^=global_page_ynauction] input[type="radio"], 
+body[id^=global_page_ynauction] input[type="checkbox"] {
+    margin: 2px 5px 0 0;
+}
+/*** style ***/
+body[id^=global_page_ynauction] .ynclockcont .label {
+    color: #555;
+    font-size: 100%;   
+}
+
+body[id^=global_page_ynauction] .ynclockcont > div {
+    float: inherit;
+    display: inline-block;
+}
+
+body[id^=global_page_ynauction] #slideshow_container.slideshow_container {
+    padding: 0 15px;
+}
+#global_page_ynauction-index-participate #global_content { position: relative; }
+#global_page_ynauction-index-participate #global_content .layout_middle > ul > li, 
+.layout_page_ynauction_index_browse .global_form_box > li, 
+.layout_page_ynauction_index_detail .global_form_box > li,
+body[id^=global_page_ynauction] ul.ynauctions_browse > li {
+    float: left;
+    width: 100%;
+    clear: none;
+}
+
+.ynaution_display_index .ynaution_display_index_thumbs {
+    float: left;
+    padding-right: 10px;
+}
+
+.ynaution_display_index .ynaution_display_index_detail {
+    overflow: hidden;
+}
+
+body[id^=global_page_ynauction] .ynaction_myaccount > div {
+    width: 50%;
+    float: left;
+    padding: 0 15px !important;
+}
+
+body[id^=global_page_ynauction] #comments {
+    width: auto !important;
+}
+
+#global_page_ynauction-index-listing .contentbox,
+#global_page_ynauction-index-participate .contentbox,
+.layout_ynauction_featured_ynauctions .contentbox,
+.layout_ynauction_listing_ynauctions .contentbox {
+    width: auto !important;
+    overflow: hidden;
+    float: none !important;
+}
+
+#ynauctions_create div.event_calendar_container {
+	height: 30px;
+}
+
+#ynauctions_create div[id$=time-wrapper] select {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.layout_ynauction_bid_history_ynauctions #bids_his .global_form_box {
+    border: 0;
+}
+
+@media (max-width: 991px) {
+    body[id^=global_page_ynauction] #global_content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    body[id^=global_page_ynauction] #global_content .layout_right {
+        top: 0px;
+        right: 15px;
+    }
+    
+    #global_page_ynauction-win-index #global_content .layout_right,
+    #global_page_ynauction-index-participate #global_content .layout_right,
+    #global_page_ynauction-index-manageauction #global_content .layout_right,
+    #global_page_ynauction-proposal-index #global_content .layout_right{
+        top: 64px;
+    } 
+}
+
+@media (max-width: 767px) {    
+    body[id^=global_page_ynauction] #global_content .layout_right {
+        right: 0px;
+    }
+    
+    body[id^=global_page_ynauction] .ynaction_myaccount > div {
+        width: 100%;
+        float: inherit;
+    }
+    
+    #global_page_ynauction-index-transaction .admin_table tr > td:nth-child(2),
+    #global_page_ynauction-index-transaction .admin_table tr > th:nth-child(2),
+    #global_page_ynauction-index-transaction .admin_table tr > td:nth-child(3),
+    #global_page_ynauction-index-transaction .admin_table tr > th:nth-child(3),
+    #global_page_ynauction-index-transaction .admin_table tr > td:nth-child(7),
+    #global_page_ynauction-index-transaction .admin_table tr > th:nth-child(7),
+    #global_page_ynauction-index-transaction .admin_table tr > td:nth-child(6),
+    #global_page_ynauction-index-transaction .admin_table tr > th:nth-child(6) {    
+    
+        display: none !important;
+    }
+    
+    #global_page_ynauction-index-transaction .admin_table tr > td:first-child span,
+    #global_page_ynauction-index-transaction .admin_table tr > th:first-child span {
+        display: none;   
+    }
+    
+    #global_page_ynauction-index-transaction .admin_table tr > td:nth-child(4) a {
+        width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+        display: block;
+    }
+    
+    #global_page_ynauction-index-transaction .admin_table tr > td:nth-child(8) {
+        font-size:0;
+    }
+    
+    #global_page_ynauction-index-transaction .admin_table tr > td:nth-child(8) a {
+        font-size: 12px;
+    }
+    
+    #global_page_ynauction-index-transaction table.admin_table tbody tr td {
+        padding: 7px 5px;
+    }
+    
+    #global_page_ynauction-index-detail .ynauction_layout_left {
+        float: none;
+        width: auto;
+        margin-left: 0;
+    }
+    
+    body[id^=global_page_ynauction] .ynauction_ga_large_photo,
+    body[id^=global_page_ynauction] .ynauction_ga_thumb_photo {
+        width: auto;
+    }
+    
+    .layout_ynauction_detail_ynauctions .ynauction_layout_middle {
+        width: 100% !important;
+    }
+    
+    .layout_ynauction_bid_history_ynauctions #bids_his > div:first-child {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    
+    .layout_ynauction_bid_history_ynauctions #bids_his > div:first-child + div {
+        padding-right: 20px !important;
+    }  
+}
+
+@media (max-width: 640px) {
+    body[id^=global_page_ynauction] .ynprice .group_price {
+        float: inherit;
+    }
+    
+    .ynaution_display_index .ynaution_display_index_thumbs {
+        float: inherit;
+    }
+    
+    .ynaution_display_index .ynaution_display_index_detail {
+        overflow: visible;
+    }
+    
+    body[id^=global_page_ynauction] .ynaution_span,
+    body[id^=global_page_ynauction] #buynow_btn {
+        padding-left: 0 !important;
+    }
+    
+    body[id^=global_page_ynauction] .bid_refresh {
+        text-align: right;
+    }
+    
+    body[id^=global_page_ynauction] ul.ynauctions_browse > li .ynauctions_browse_info {
+        overflow: hidden;
+        padding-bottom: 20px;
+        width: auto !important;
+        float: inherit;
+    }
+    
+    body[id^=global_page_ynauction] ul.ynauctions_browse > li {
+        position: relative;
+    }
+    
+    body[id^=global_page_ynauction] ul.ynauctions_browse > li .ynauctions_browse_options {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    body[id^=global_page_ynauction] ul.ynauctions_browse > li .ynauctions_browse_options > a {
+        display: inline-block;
+        width: 0px;
+        color: transparent;
+    }
+    
+    
+    #global_page_ynauction-proposal-index .ynauctions_browse_options {
+        position: relative;
+    }
+    
+    #global_page_ynauction-proposal-index ul.ynauctions_browse > li .ynauctions_browse_info {
+        padding-bottom: 0px;
+    }
+    
+}
+ 
+ 
+@media (max-width: 480px) {
+    #global_page_ynauction-index-detail .pp_pic_holder {
+        max-width: 100%;
+    }
+    
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_content {
+        width: auto !important;
+        max-width: 100% !important;
+    }
+    
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_details {
+        max-width: 100% !important;
+    }
+    
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_expand,
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_pause,
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_play,    
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_gallery,
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_hoverContainer {
+        display: none !important;
+    }
+}
+
+@media (max-width: 320px) {
+    #global_page_ynauction-index-detail .pp_pic_holder {
+        max-width: 100%;
+    }
+    
+    #global_page_ynauction-index-detail .pp_pic_holder .pp_content {
+        width: auto;
+    }
+}
+
+#global_page_ynauction-index-create #featured-element{
+	min-width: 220px;
+}
+
+#ynauctions_create #buttons-element div.form-element 
+{
+     min-width: 106px;    
+}

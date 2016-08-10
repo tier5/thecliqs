@@ -1,0 +1,488 @@
+/* $Id: main.css 2010-07-02 01:29 idris $ */
+
+/*
+ * Suggestion page styles.
+ * url: /suggests/:suggest_id
+ */
+
+div.notifications_rightside ul.requests .suggest-object {
+    min-height: 140px;
+    width: 50%;
+}
+
+.suggest-object,
+.suggest-object .photo,
+.suggest-object .info,
+.suggest-object .info .title,
+.suggest-object .info .title a,
+.suggest-object .info .options,
+.suggest-object .info .options .join,
+.suggest-object .info .options .like,
+.suggest-object .info .options .friend {
+    float: left;
+}
+
+.suggest-object .photo,
+.suggest-object .info {
+    padding: 5px;
+}
+
+.suggest-object .info {
+    width: 260px;
+}
+
+.suggest-object .info .title > a {
+    font-weight: bold;
+}
+
+.suggest-object .info .description,
+.suggest-object .info .options {
+    margin-top: 5px;
+}
+
+.suggest-object .info .description {
+    font-size: 11px;
+    color: $theme_font_color_light;
+}
+
+.suggest-object .info .options * {
+    display: block;
+    float: left;
+}
+
+.suggest-object .info .options .or {
+    padding: 7px 10px;
+    color: $theme_font_color_light;
+}
+
+.suggest-object .info .options .cancel .disabled {
+    background-color: $theme_font_color_light;
+}
+
+.suggest-object .info .options .cancel .disabled:hover {
+    background-color: $theme_button_background_color_hover;
+}
+
+.suggest-object .info .title > a {
+    margin: 5px 5px 0px 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*
+ * All Suggestions page
+ * url: /suggests
+ */
+
+.suggest-container {
+    position: relative;
+}
+
+.suggest-container .suggest-item {
+    width: 47%;
+    float: left;
+    margin: 10px 10px 0px 10px;
+}
+
+.suggest-container .suggest-item .suggest-user-item {
+    float: left;
+    margin-top: 3px;
+}
+
+html[dir="rtl"] .suggest-container .suggest-item .suggest-user-item {
+    float: right;
+}
+
+html[dir="rtl"] div.suggest-widget-container .suggest-item {
+    float: right;
+}
+
+.suggest-container .suggest-item .suggest-list {
+    height: 131px;
+}
+
+.suggest-container .suggest-item .suggest-list .suggest-object {
+    width: 100%;
+    border-bottom: 1px solid $theme_form_border_color;
+    min-height: 125px;
+    margin-bottom: 15px;
+}
+
+.suggest-container .suggest-item .suggest-title {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    border-bottom: 1px solid $theme_font_color;
+    margin-bottom: 10px;
+}
+
+/*
+ * Content Suggestion Styles
+ */
+
+.classified_gutter_suggest,
+.blog_gutter_suggest {
+    background-image: url(~/application/modules/Suggest/externals/images/suggest.png);
+}
+
+
+.suggest-item-link {
+    background-image: url(~/application/modules/Suggest/externals/images/suggest.png);
+}
+
+/**
+ * Pop up box styles
+ */
+
+#he_contacts_list .all .all-title,
+#he_contacts_list .recommended .recommended-title {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px dashed $theme_foreground_border_color;
+    margin-bottom: 5px;
+}
+
+#he_contacts_list .recommended {
+    background-color: $theme_foreground_background_color;
+    border: 1px solid $theme_foreground_border_color;
+    margin-bottom: 5px;
+}
+
+#he_contacts_list .all .active .photo .inner,
+#he_contacts_list .recommended .active .photo .inner {
+    background-color: $theme_topbar_menu_background_color;
+}
+
+#he_contacts_list .all .active .name,
+#he_contacts_list .recommended .active .name {
+    color: $theme_topbar_menu_link_color;
+}
+
+#he_contacts_list .recommended .active,
+#he_contacts_list .all .active {
+    background-color: $theme_topbar_menu_background_color;
+    background-image: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.suggest-widget-container {
+    padding: 3px;
++foreground;
++rounded;
+}
+
+.suggest-widget-container .suggest-item .right .descr,
+.suggest-widget-container .suggest-item .right .title,
+.suggest-widget-container .suggest-item .right,
+.suggest-widget-container .suggest-item .photo {
+    float: left;
+}
+
+html[dir="rtl"] .suggest-widget-container .suggest-item .right .descr,
+html[dir="rtl"] .suggest-widget-container .suggest-item .right .title,
+html[dir="rtl"] .suggest-widget-container .suggest-item .right,
+html[dir="rtl"] .suggest-widget-container .suggest-item .photo {
+    float: right;
+}
+
+.suggest-widget-container .suggest-item .right {
+    width: 117px;
+    padding-left: 5px;
+    position: relative;
+}
+
+.suggest-widget-container .suggest-item {
+    position: relative;
+    padding: 5px;
+    border-top: 1px solid $theme_foreground_border_color;
+}
+
+.suggest-widget-container > div:first-child {
+    border: none;
+}
+
+.suggest-widget-container .suggest-item .right .title {
+    padding-right: 16px;
+}
+
+.suggest-widget-container .suggest-item .right .title a {
+    font-weight: bold;
+}
+
+.suggest-widget-container .suggest-item .right .descr {
+    font-size: 11px;
+    color: $theme_font_color_light;
+}
+
+.suggest-reject {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent url(~/application/modules/Suggest/externals/images/delete.gif) no-repeat center;
+}
+
+.suggest-reject:hover {
+    background: transparent url(~/application/modules/Suggest/externals/images/delete_hover.png) no-repeat center;
+}
+
+.suggest-widget-container .suggest-item .only_photo > a {
+    display: block;
+    text-align: center;
+}
+
+.layout_suggest_recommended_users,
+.layout_suggest_recommended_events,
+.layout_suggest_recommended_groups,
+.layout_suggest_recommended_albums,
+.layout_suggest_recommended_blogs,
+.layout_suggest_recommended_album_photos,
+.layout_suggest_recommended_quizzes,
+.layout_suggest_recommended_pages,
+.layout_suggest_recommended_classifieds,
+.layout_suggest_recommended_videos,
+.layout_suggest_recommended_polls,
+.layout_suggest_autorecommendations,
+.layout_suggest_recommended_music,
+.layout_suggest_recommended_articles,
+.layout_suggest_recommended_questions,
+.layout_suggest_recommended_profile_photo,
+.layout_suggest_recommended_profile_friends {
+    margin: 15px 0px;
+}
+
+.notification_type_suggest_album_photo,
+.notification_type_suggest_album,
+.notification_type_suggest_blog,
+.notification_type_suggest_video,
+.notification_type_suggest_event,
+.notification_type_suggest_poll,
+.notification_type_suggest_classified,
+.notification_type_suggest_group,
+.notification_type_suggest_user,
+.notification_type_suggest_quiz,
+.notification_type_suggest_article,
+.notification_type_suggest_question,
+.notification_type_suggest_suggest_profile_photo,
+.notification_type_suggest_music_playlist,
+.notification_type_suggest_page,
+.notification_type_suggest_store_product,
+.notification_type_suggest_pageblog,
+.notification_type_suggest_pagedocument,
+.notification_type_suggest_playlist,
+.notification_type_suggest_pageevent,
+.notification_type_suggest_pagevideo,
+.notification_type_suggest_pagediscussion_pagepost,
+.notification_type_suggest_ynmusic_album,
+.notification_type_suggest_avp_video,
+.notification_type_suggest_document,
+.notification_type_suggest_artarticle,
+.notification_type_suggest_job {
+    background-image: url(~/application/modules/Suggest/externals/images/suggest.png);
+}
+
+.he_suggest_box_container,
+.se_share_box_container,
+.twitter_share_box_container,
+.fb_share_box_container,
+.google_share_box_container,
+.linkedin_share_box_container,
+.share_container {
+    float: left;
+}
+
+.twitter_share_box_container {
+    padding: 0 2px;
+}
+
+.fb_share_box_container {
+    padding: 0 6px;
+}
+
+.google_share_box_container {
+    padding: 0 4px;
+}
+html[dir="rtl"] .share_container {
+    position: relative;
+    left: 5px;
+    padding: 5px;
+    width: 59px;
++foreground;
++rounded;
+}
+
+.share_container {
+    position: relative;
+    left: -84px;
+    padding: 5px;
+    width: 59px;
++foreground;
++rounded;
+}
+
+.he_suggest_box_container,
+.se_share_box_container,
+.fb_share_box_container,
+.google_share_box_container,
+.linkedin_share_box_container {
+    margin-top: 5px;
+}
+
+.fb_share_box_container + .se_share_box_container {
+    margin-top: 0px;
+}
+
+div.he_suggest_box_container a.buttonlink,
+div.se_share_box_container a.buttonlink {
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    background-position: left center;
+}
+
+div.se_share_box_container a.buttonlink {
+    background-image: url(~/application/modules/Activity/externals/images/activity/comment.png);
+}
+
+div.he_suggest_box_container a.buttonlink {
+    background-image: url(~/application/modules/Suggest/externals/images/suggest.png);
+}
+
+div.he_suggest_box_container a.buttonlink:hover,
+div.se_share_box_container a.buttonlink:hover {
+    text-decoration: none;
+}
+
+
+.suggest-object * .options .cancel a.button,
+.suggest-object * .options .accept a.button {
+    padding: 7px 10px;
+    font-weight: bold;
++rounded;
+}
+
+.suggest-object * .options .cancel a.button:hover,
+.suggest-object * .options .accept a.button:hover {
+    text-decoration: none;
+}
+
+.suggest-object * .options .cancel a.button {
+    color: $theme_button_font_color;
+}
+
+.suggest-object * .options .accept a.button {
+    color: $theme_button_font_color;
+    background-color: $theme_button_background_color;
+}
+
+.suggest-widget-container * a.suggest_widget_link {
+    float: right;
+    font-size: 11px;
+    display: block;
+    padding-top: 2px;
+    height: 16px;
+}
+
+.suggest_view_page {
+    background-image: url(~/application/modules/Suggest/externals/images/types/page.png);
+}
+
+.suggest_view_blog,
+.suggest_view_pageblog,
+.suggest_view_pagedocument,
+.suggest_view_document,
+.suggest_view_pagediscussion_pagepost,
+.suggest_view_artarticle,
+.suggest_view_job {
+    background-image: url(~/application/modules/Suggest/externals/images/types/blog.png);
+}
+
+.suggest_view_classified {
+    background-image: url(~/application/modules/Suggest/externals/images/types/classified.png);
+}
+
+.suggest_view_poll {
+    background-image: url(~/application/modules/Suggest/externals/images/types/poll.png);
+}
+
+.suggest_view_video,
+.suggets_view_pagevideo,
+.suggest_view_avp_video {
+    background-image: url(~/application/modules/Suggest/externals/images/types/video.png);
+}
+
+.suggest_view_album,
+.suggest_view_pagealbum {
+    background-image: url(~/application/modules/Suggest/externals/images/types/album.png);
+}
+
+.suggest_view_photo,
+.suggest_view_album_photo {
+    background-image: url(~/application/modules/Suggest/externals/images/types/photo.png);
+}
+
+.suggest_view_quiz {
+    background-image: url(~/application/modules/Suggest/externals/images/types/quiz.png);
+}
+
+.suggest_view_friend {
+    background-image: url(~/application/modules/Suggest/externals/images/suggest.png);
+}
+
+.suggest_view_music_playlist,
+.suggest_view_ynmusic_album {
+    background-image: url(~/application/modules/Suggest/externals/images/types/music.png);
+}
+
+.suggest_view_article{
+    background-image: url(~/application/modules/Suggest/externals/images/types/article.png);
+}
+
+.suggest_view_question {
+    background-image: url(~/application/modules/Suggest/externals/images/types/question.png);
+}
+
+.suggest_profile_photo_form {
+    padding: 10px;
+    height: 450px;
+}
+
+#photo-view {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#photo-view > img {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.icon_photos_new {
+    background-image: url(~/application/modules/Suggest/externals/images/types/photo.png);
+}
+
+.suggest_page_like, .suggest_page_unlike {
+    background-image: url(~/application/modules/Like/externals/images/like_button.png);
+}
+
+a.page_buttonlink {
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 200%;
+    padding-left: 16px;
+}

@@ -1,0 +1,1123 @@
+{
+  "type": "module",
+  "name": "quiz",
+  "version": "4.1.5p1",
+  "revision": null,
+  "path": "application\/modules\/Quiz",
+  "repository": null,
+  "date": "Mon, 04 Feb 2013 10:39:51 +0000",
+  "title": "Quizzes",
+  "description": "Quizzes Plugin",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Hire-Experts LLC"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Mon, 04 Feb 2013 10:39:51 +0000",
+    "title": "Quizzes",
+    "description": "Quizzes Plugin",
+    "developer": null,
+    "authors": [
+      "Hire-Experts LLC"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "preinstall",
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Quiz\/settings\/install.php",
+    "class": "Quiz_Installer",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Quiz": {
+      "type": "directory",
+      "path": "application\/modules\/Quiz",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6081,
+          "sha1": "ee3abb4d495cf5f52fccbc93afec2440093bb3e0"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 471,
+          "sha1": "c57b0b089c5db3f517b01f1f66a905d297a4ce02"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminCategoriesController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4542,
+          "sha1": "6b68d5f9c843f407b86c9310659f2216847d89e3"
+        },
+        {
+          "path": "controllers\/AdminLevelController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2195,
+          "sha1": "971d1fa44839693f7f35234f2068d3596803fab6"
+        },
+        {
+          "path": "controllers\/AdminQuizzesController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2327,
+          "sha1": "800ce5f8472aba295c0c870ffc5d0e6f87885168"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1017,
+          "sha1": "001bf2f68ad0c4e387ba35a7d65f0458b1683a5e"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 52566,
+          "sha1": "138eab97703790c5ddbe23278c1d79f64552e5ef"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 715,
+          "sha1": "8f0ebcb45d7ba71a541d4781329f4a6900c7ee65"
+        },
+        {
+          "path": "externals\/images\/edit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 592,
+          "sha1": "0ee6c7947ab619284712873f059fa8db33ebaea7"
+        },
+        {
+          "path": "externals\/images\/new.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 733,
+          "sha1": "b6244b0027a8c9f702b311cb5b2ab8cc64f3b5f2"
+        },
+        {
+          "path": "externals\/images\/next.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 736,
+          "sha1": "fa3d0ea021050d8adcc7a1f75890ea77becf8b35"
+        },
+        {
+          "path": "externals\/images\/next_disabled.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 607,
+          "sha1": "2116dd01a8a09281b01ef939729a1e21b9af1d95"
+        },
+        {
+          "path": "externals\/images\/nophoto_quiz_thumb_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1456,
+          "sha1": "5b3a96465bb08f2749334c04fe3bca691b625952"
+        },
+        {
+          "path": "externals\/images\/nophoto_quiz_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4107,
+          "sha1": "8c749adc7f1e3693c8bc7f2861c1f486c3d724b5"
+        },
+        {
+          "path": "externals\/images\/nophoto_quiz_thumb_profile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6390,
+          "sha1": "9f19a2e73fd93a8d02b2cd2e86e3da4fb5b5a8b1"
+        },
+        {
+          "path": "externals\/images\/nophoto_user_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1537,
+          "sha1": "74c4c624c9b13f1d3aedba74b34aa849dfe71e6b"
+        },
+        {
+          "path": "externals\/images\/prev.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 745,
+          "sha1": "d73a15ea047e26df9a588f00a94b4151409350f1"
+        },
+        {
+          "path": "externals\/images\/prev_disabled.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 614,
+          "sha1": "b81c37c82e24cd745025b71b78b3e6bc4e7ee0ff"
+        },
+        {
+          "path": "externals\/images\/quiz_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 654,
+          "sha1": "72742f56a5220ce5ee8935be0d24ddbf82c05a29"
+        },
+        {
+          "path": "externals\/images\/share.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 743,
+          "sha1": "355df33576c0d155b4ff9c24cc017054e62f5de9"
+        },
+        {
+          "path": "externals\/images\/suggest.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 746,
+          "sha1": "56a6f12c36ef9e5220b070830a3d36b23450ff22"
+        },
+        {
+          "path": "externals\/images\/transparent.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 195,
+          "sha1": "bd1e4b46732e290c10aa9ed00b5cabffb3a93074"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/Quiz.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 19226,
+          "sha1": "b758a24e74fd1ac72ca1ff9bcbc9f3446d70ad36"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 14220,
+          "sha1": "6fb966edc92dc8698f605a06a08ffd9e73f6b035"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1588,
+          "sha1": "c658cfb51d6731caa0eeb9017ecab7595a0ab59a"
+        },
+        {
+          "path": "Form\/Admin\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 450,
+          "sha1": "df62739fcd07c2f7f9f85d30b8de14d7e6dc57a0"
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1884,
+          "sha1": "94c279a26e6f5e6c0316fc60d8985a4c29d98d90"
+        },
+        {
+          "path": "Form\/Admin\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3992,
+          "sha1": "78631618663d9b970a57575a3ce7ed0d9d17c9b8"
+        },
+        {
+          "path": "Form\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4440,
+          "sha1": "3c4b523cbdd20eec8d8141f82276590b36d4a3db"
+        },
+        {
+          "path": "Form\/CreateQuestion.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1655,
+          "sha1": "2221dc2229f9135e1231bb3baadd0bfeb5caf2b2"
+        },
+        {
+          "path": "Form\/CreateResult.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2543,
+          "sha1": "1562a75b8772e1680f5e434c9febb3d377d475d1"
+        },
+        {
+          "path": "Form\/Decorator",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Decorator\/QuizDescription.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1056,
+          "sha1": "5b7f3eab5967692210f22d11a5943e5c0375a1b5"
+        },
+        {
+          "path": "Form\/Decorator\/QuizQuestion.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1295,
+          "sha1": "bdf1912e91a07b3ae719edf852ae4fb5f7861eac"
+        },
+        {
+          "path": "Form\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1331,
+          "sha1": "6d51b97497e5b86eb2e039748056b180ad6ad6e4"
+        },
+        {
+          "path": "Form\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 657,
+          "sha1": "fc77493af81b806af38291337b3089ad2ce31d88"
+        },
+        {
+          "path": "Form\/EditQuestion.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 741,
+          "sha1": "7a118b17542ce6c47c2def3d66d03a6910d50fdb"
+        },
+        {
+          "path": "Form\/EditResult.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 733,
+          "sha1": "b0c034f0f99d8fcaf47bb618410d4339d9e13751"
+        },
+        {
+          "path": "Form\/Publish.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1289,
+          "sha1": "40449be43c8dc54d7891df2946f58263d8c00886"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2143,
+          "sha1": "3db70f7b8c4160e23dd7470d2f0ed960b82d56cf"
+        },
+        {
+          "path": "Form\/Take.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 912,
+          "sha1": "3598c59787484b8aa5c9ff1bf3e5691afe772aee"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Answer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 699,
+          "sha1": "b06dd2ca6aa0c0de52c7a625b1a9d8cff661830c"
+        },
+        {
+          "path": "Model\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 647,
+          "sha1": "7bdf4ab6e9a0395790de1effdfab8fbde4fc2e7a"
+        },
+        {
+          "path": "Model\/Choice.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 669,
+          "sha1": "16bd37c814549e979e097c0931e3edd7a14fae64"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Answers.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 535,
+          "sha1": "3f73db19b059a0e6c50f7ea7f353f81c385ba3c4"
+        },
+        {
+          "path": "Model\/DbTable\/Categories.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 521,
+          "sha1": "86f5b24391cd417fef1e97160a1eae6d611a7c40"
+        },
+        {
+          "path": "Model\/DbTable\/Choices.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 832,
+          "sha1": "46fb08325fe14516b85bc14164d4f1b4096b0a90"
+        },
+        {
+          "path": "Model\/DbTable\/Questions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 541,
+          "sha1": "9de7a4c998ddf28f67caf82ec1792d0e7260cda4"
+        },
+        {
+          "path": "Model\/DbTable\/Quizs.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 507,
+          "sha1": "25afbc9aa879a61f9e8b4eb9e5f0947450147a22"
+        },
+        {
+          "path": "Model\/DbTable\/Results.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 535,
+          "sha1": "69ff0da5e57f3bdcf14f698df506c1a66216a243"
+        },
+        {
+          "path": "Model\/DbTable\/Takes.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 529,
+          "sha1": "7d0d57c52153763de3711d00bcd650cd39521126"
+        },
+        {
+          "path": "Model\/Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 482,
+          "sha1": "b9fabc339fabddaf8d03bc69f664cfb2e4e12a07"
+        },
+        {
+          "path": "Model\/Question.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3542,
+          "sha1": "c0f4d403d3cf1782053348d3c74ce6d0f0cd4bac"
+        },
+        {
+          "path": "Model\/Quiz.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 13688,
+          "sha1": "bfb6ccd8b4f80c3c272622249370a954da7dfe8b"
+        },
+        {
+          "path": "Model\/Rate.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 483,
+          "sha1": "d2075c3dac8472c2174361710790539c6c2b6409"
+        },
+        {
+          "path": "Model\/Result.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3334,
+          "sha1": "773090ef53b44c0c5f3490a9f4c0cf2ed74cd154"
+        },
+        {
+          "path": "Model\/Take.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 663,
+          "sha1": "ddcf7bbb31c50cfdf477e775d8b287b42f3086f4"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1491,
+          "sha1": "aac997f1217d382887cafbd53d9c9dd03c3f497e"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1528,
+          "sha1": "7bbeacd036d7ae010c69942b6bed3a4cccf35214"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11161,
+          "sha1": "9696f83ea33ae636e3433d6cf57e048b494a5383"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3978,
+          "sha1": "8fcb0b4dd05087d3496c476a5046b930557e8eff"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0-4.0.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 404,
+          "sha1": "77325bf8602242336caa3f05200469e248ea810b"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.1-4.1.0.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 81,
+          "sha1": "bf101e4fec2bf0e58c57ea929b43ea0ea9d7c058"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.0-4.1.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 228,
+          "sha1": "10127a5474dd2a41b287a99425af5e1af446bf59"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.1-4.1.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 77,
+          "sha1": "8762aa37bbef6f747634b6cb892f51ddc6a81cf3"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.2-4.1.3.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 77,
+          "sha1": "7c4a74945b638a37e12211c4ffd24c6f5b92a5ff"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.3-4.1.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 77,
+          "sha1": "533a86c64e1f6f8b69c7191d8aca1b2dcc43b78c"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.4-4.1.4p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 79,
+          "sha1": "4377d8fd33b3c3f4410ea18c660f822016f6d62b"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.4-4.1.5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 77,
+          "sha1": "a129de832053290e2e6d362c5ad4c71019276a20"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.4p1-4.1.4p2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 79,
+          "sha1": "49825acc611e33fd1f1aea1bc27858917c9c6638"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.4p2-4.1.4p3.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 79,
+          "sha1": "ff80c02e080368978d39828ac388b2465a9df4de"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.5-4.1.5p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 79,
+          "sha1": "35e941fa687dd6672af70c0eb889d955269f19c8"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 229,
+          "sha1": "575e0744b462fdb86a3860a7e610d895caa610f3"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-categories",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-categories\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 954,
+          "sha1": "4a522a17d00ff98f9a2b38b77ccd8c0eb59cb3db"
+        },
+        {
+          "path": "views\/scripts\/admin-categories\/form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 447,
+          "sha1": "ecf6fb0857dcd8c2d3bb10e52b19e85a1b23edb7"
+        },
+        {
+          "path": "views\/scripts\/admin-categories\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2519,
+          "sha1": "9909f45846deec9fc1218239c7e8364e1f64f840"
+        },
+        {
+          "path": "views\/scripts\/admin-level",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 803,
+          "sha1": "a13aba2ebf6c13cbdafa7ad020c67680e4791e25"
+        },
+        {
+          "path": "views\/scripts\/admin-quizzes",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-quizzes\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 940,
+          "sha1": "3dc2d694b24ee7a094abc5ac7fdd97c836f146c8"
+        },
+        {
+          "path": "views\/scripts\/admin-quizzes\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3747,
+          "sha1": "8449d62bdcc02744a7d4b03b6cf87dde9f1d4c3e"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 626,
+          "sha1": "b38ddd09a4833eb22f601fa1fe9fd391f0dd6803"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/create-question.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5443,
+          "sha1": "55599bc21230608e6cf729dc3d3830f3feb5c78d"
+        },
+        {
+          "path": "views\/scripts\/index\/create-result.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5186,
+          "sha1": "8a9201d02ea558d7b61ea2d53992c0f036f91dab"
+        },
+        {
+          "path": "views\/scripts\/index\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1880,
+          "sha1": "85d0814d76357c109bab2bed7a68f5ef1424bdfe"
+        },
+        {
+          "path": "views\/scripts\/index\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 409,
+          "sha1": "5d7025ee53d7b37588b1d572f37b42e40e1ba649"
+        },
+        {
+          "path": "views\/scripts\/index\/edit-question.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1212,
+          "sha1": "ba098f39212c93cd032619c08428b1e4af641d4a"
+        },
+        {
+          "path": "views\/scripts\/index\/edit-result.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1210,
+          "sha1": "880f5e5437420209594f4da83c0df396a641a4c0"
+        },
+        {
+          "path": "views\/scripts\/index\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3376,
+          "sha1": "181429a609aace2b4de4cc68fb5b04a0280c9417"
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4246,
+          "sha1": "89c73a8d42a9b01ca1d953725d47af7a12929b94"
+        },
+        {
+          "path": "views\/scripts\/index\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5432,
+          "sha1": "2e3087e04d4ad78bdad457c9fc4b915b3c6f18ed"
+        },
+        {
+          "path": "views\/scripts\/index\/publish.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2103,
+          "sha1": "1b568ac446f7c5050465b23d856deb792dadd418"
+        },
+        {
+          "path": "views\/scripts\/index\/take.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2281,
+          "sha1": "45744d991e6bc89212ed801313676ec178346523"
+        },
+        {
+          "path": "views\/scripts\/index\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 14161,
+          "sha1": "0ceff756385d65be368aba5754817572ab12862d"
+        },
+        {
+          "path": "views\/scripts\/pagination",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/pagination\/quizpagination.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1249,
+          "sha1": "e8644fbe37be4e4a18be572c3e7290daefdc5f54"
+        },
+        {
+          "path": "views\/scripts\/tabs",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/tabs\/quizJsTabs.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 604,
+          "sha1": "6b8b642ec49e509f9a9d2b740af38f6113dcb604"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-commented",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-commented\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 968,
+          "sha1": "af4ba60aa2437edd7cbae8308113d38969f628cd"
+        },
+        {
+          "path": "widgets\/most-commented\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1050,
+          "sha1": "ef60679d5f78820253e21e7c48df024787bc854a"
+        },
+        {
+          "path": "widgets\/most-popular",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-popular\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1005,
+          "sha1": "7bf7dd55105fa4e05625da369231772f8869c907"
+        },
+        {
+          "path": "widgets\/most-popular\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1033,
+          "sha1": "1c13975dfaa7dfb2502e2106a88c6d6499e2aa64"
+        },
+        {
+          "path": "widgets\/most-recent",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-recent\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 973,
+          "sha1": "efea0faf174c882157b047dc0d9a65d8bf25f477"
+        },
+        {
+          "path": "widgets\/most-recent\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 960,
+          "sha1": "b510322a32c21d5fc35284f346e2ad0a641ed711"
+        },
+        {
+          "path": "widgets\/most-taken",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/most-taken\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 961,
+          "sha1": "765e0c3d18485d2ae33997a7c29b99795d0d82fe"
+        },
+        {
+          "path": "widgets\/most-taken\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1034,
+          "sha1": "abb1b7fc8a31a6d8ee9fbe26216745f3d7d013ef"
+        },
+        {
+          "path": "widgets\/recent-taken",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/recent-taken\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1378,
+          "sha1": "5e7b84c3b67b1658a22dfe36dc93d4dddb166919"
+        },
+        {
+          "path": "widgets\/recent-taken\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 954,
+          "sha1": "4f62554138effc79798533e7281d4e15028916c8"
+        }
+      ]
+    },
+    "application\/languages\/en\/quiz.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/quiz.csv",
+      "structure": {
+        "path": "quiz.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 11120,
+        "sha1": "38401123e8fe6f10e39d24c882412a3a8feea39d"
+      }
+    }
+  }
+}

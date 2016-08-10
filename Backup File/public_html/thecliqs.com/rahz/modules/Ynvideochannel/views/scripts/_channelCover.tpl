@@ -1,0 +1,2 @@
+<div class="form-label"><label class="optional"><?php echo $this->label; ?></label></div>
+<img style="margin-bottom: 10px" width="300px" src="<?php echo $this -> cover?>" alt="<?php echo $this->translate('Error loading image, default image will be used.') ?>">
